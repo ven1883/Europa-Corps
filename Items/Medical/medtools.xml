@@ -25,8 +25,8 @@
 			<RequiredItem identifier="ethertank" mincondition="0.0" maxcondition="0.1" usecondition="false"/>
 			<RequiredItem identifier="chloralhydrate" />
 		</Fabricate>
-		<InventoryIcon texture="new_tools.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="80,254,24,66" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="80,254,24,66" depth="0.55" origin="0.5,0.5" />
 		<Body width="22" height="64" density="9.7" />
 		<Holdable canbecombined="true" slots="Any,RightHand,LeftHand" holdpos="30,-15" handle1="0,5" handle2="0,-5" msg="ItemMsgPickUpSelect">
 			<StatusEffect type="OnFire" target="This" Condition="-10.0" tags="onfire" duration="1" stackable="false" />
@@ -59,8 +59,8 @@
 			<RequiredSkill identifier="medical" level="15" />
 			<Item identifier="steel" />
 		</Fabricate>
-		<InventoryIcon texture="new_tools.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="2,308,64,9" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="2,308,64,9" depth="0.6" origin="0.5,0.5" />
 		<Body width="45" height="15" density="50" />
 		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="0,5" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredSkill identifier="medical" level="15"></RequiredSkill>
@@ -108,8 +108,8 @@
 			<RequiredSkill identifier="medical" level="15" />
 			<Item identifier="organicfiber" />
 		</Fabricate>
-		<InventoryIcon texture="new_tools.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="2,250,59,45" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="2,250,59,45" depth="0.6" origin="0.5,0.5" />
 		<Body width="65" height="35" density="20" />
 		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredSkill identifier="medical" level="20"></RequiredSkill>
@@ -157,8 +157,8 @@
 			<RequiredSkill identifier="medical" level="15" />
 			<Item identifier="steel" />
 		</Fabricate>
-		<InventoryIcon texture="new_tools.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="2,296,74,10" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="2,296,74,10" depth="0.6" origin="0.5,0.5" />
 		<Body width="80" height="15" density="20" />
 		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="0,5" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredSkill identifier="medical" level="20"></RequiredSkill>
@@ -203,8 +203,8 @@
 			<Item identifier="steel" />
 			<Item identifier="fpgacircuit" />
 		</Fabricate>
-		<InventoryIcon texture="new_tools.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="265,6,45,53" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="265,6,45,53" depth="0.6" origin="0.5,0.5" />
 		<Body width="28" height="15" density="400" />
 		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredItem items="mobilebattery" type="Contained" TargetSlot="0" />
@@ -303,8 +303,8 @@
 	<!-- Autosurgeon program: bullet extraction -->
 	<Item name="" identifier="surgeonprogrambullet" category="Medical" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,schematic,surgerytool,surgeonprogram" spritecolor="200,255,120,255" InventoryIconColor="200,255,120,200" scale="0.5" impactsoundtag="impact_metal_light">
 		<PreferredContainer primary="medcab" minamount="1" maxamount="1" spawnprobability="1.0" />
-		<InventoryIcon texture="new_tools.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="10,74,45,43" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="10,74,45,43" depth="0.6" origin="0.5,0.5" />
 		<Body width="55" height="55" density="20" />
 		<Holdable slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 		<Fabricate suitablefabricators="medicalfabricator" requiredtime="10">
@@ -318,8 +318,8 @@
 	<!-- Medical Degree: joke item, medic spawns in with one -->
 	<Item name="" identifier="meddegree" category="Misc" tags="smallitem" cargocontaineridentifier="mediccrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
-		<InventoryIcon texture="new_tools.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="132,200,111,95" depth="0.8" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="132,200,111,95" depth="0.8" origin="0.5,0.5" />
 		<Body width="100" height="60" density="40" />
 		<Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="35,-10" handle1="0,0" attachable="true" attachedbydefault="true" aimable="true">
 			<RequiredItem identifier="screwdriver" type="Equipped" />
@@ -343,8 +343,8 @@
 			<RequiredSkill identifier="medical" level="15" />
 			<Item identifier="steel" />
 		</Fabricate>
-		<InventoryIcon texture="new_tools.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="2,211,73,33" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="2,211,73,33" depth="0.6" origin="0.5,0.5" />
 		<Body width="80" height="35" density="20" />
 		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="0,5" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredSkill identifier="medical" level="30"></RequiredSkill>
@@ -396,8 +396,8 @@
 		<Deconstruct time="10">
 			<Item identifier="humanflesh" />
 		</Deconstruct>
-		<InventoryIcon texture="new_tools.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="198,69,49,55" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="198,69,49,55" depth="0.6" origin="0.5,0.5" />
 		<Body width="55" height="55" density="20" />
 		<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredSkill identifier="medical" level="25"/>
@@ -446,15 +446,15 @@
 		<Sprite name="Medic Uniform 3" texture="outfit_icon.png" sourcerect="153,91,205,75" depth="0.6" origin="0.5,0.5" />
 		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
 		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-			<sprite name="Medic Uniform 2 Torso" texture="Medic2.png" limb="Torso" hidelimb="false" inherittexturescale="true" origin="0.5,0.5" sourcerect="147,19,110,149" />
-			<sprite name="Medic Uniform 2 Right Hand" texture="Medic2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Hand" texture="Medic2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Right Lower Arm" texture="Medic2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Lower Arm" texture="Medic2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Right Upper Arm" texture="Medic2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Upper Arm" texture="Medic2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Waist" texture="Medic2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<!--sprite name="Medic Uniform 2 Right Thigh" texture="Medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" "93,13,53,107" /-->
+			<sprite name="Medic Uniform 2 Torso" texture="Sprites/medic2.png" limb="Torso" hidelimb="false" inherittexturescale="true" origin="0.5,0.5" sourcerect="147,19,110,149" />
+			<sprite name="Medic Uniform 2 Right Hand" texture="Sprites/medic2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Hand" texture="Sprites/medic2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Lower Arm" texture="Sprites/medic2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Lower Arm" texture="Sprites/medic2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Upper Arm" texture="Sprites/medic2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Upper Arm" texture="Sprites/medic2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Waist" texture="Sprites/medic2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<!--sprite name="Medic Uniform 2 Right Thigh" texture="Sprites/medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" "93,13,53,107" /-->
 			<sprite name="Medic Uniform 2 Right Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"	/>
 			<sprite name="Medic Uniform 2 Left Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
 			<sprite name="Medic Uniform 2 Right Leg" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -480,8 +480,8 @@
 			<Price locationtype="military" multiplier="1.2" minavailable="2" />
 			<Price locationtype="mine" multiplier="1.1" sold="false" />
 		</Price>
-		<InventoryIcon texture="new_tools.png" sourcerect="128,128,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="10,156,31,31" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="128,128,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="10,156,31,31" depth="0.6" origin="0.5,0.5" />
 		<Body width="31" height="31" density="30" />
 		<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredSkill identifier="medical" level="35"></RequiredSkill>
@@ -527,8 +527,8 @@
 			<Price locationtype="military" multiplier="1.2" sold="false" />
 			<Price locationtype="mine" multiplier="1.1" sold="false" />
 		</Price>
-		<InventoryIcon texture="new_tools.png" sourcerect="192,128,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="62,156,31,31" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="192,128,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="62,156,31,31" depth="0.6" origin="0.5,0.5" />
 		<Body width="31" height="31" density="30" />
 		<Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredSkill identifier="medical" level="35"></RequiredSkill>
@@ -573,8 +573,8 @@
 		<Deconstruct time="30">
 			<Item identifier="iron" />
 		</Deconstruct>
-		<InventoryIcon texture="new_tools.png" sourcerect="256,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="new_tools.png" sourcerect="7,198,67,9" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="256,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/medtools.png" sourcerect="7,198,67,9" depth="0.6" origin="0.5,0.5" />
 		<Body width="80" height="15" density="20" />
 		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="5,0" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 			<!-- Poisons -->
@@ -772,8 +772,8 @@
 	<!-- DIY version of the hospital bed, craftable, buyable; no healing benefits like stationary one -->
 	<!-- possible problem width= + height=??-->
 	<Item name="" identifier="foldingsurgerytable" tags="mediumitem,operatingtable" texturescale="1.0,1.0" scale="0.5" noninteractable="false" category="Misc,Medical" impactsoundtag="impact_metal_heavy"> <!--operatingtable tag for compat reasons-->
-		<sprite texture="new_tools.png" sourcerect="0,320,416,192" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-		<InventoryIcon texture="new_tools.png" sourcerect="256,128,64,64" origin="0.5,0.5" />
+		<sprite texture="Sprites/medtools.png" sourcerect="0,320,416,192" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+		<InventoryIcon texture="Sprites/medtools.png" sourcerect="256,128,64,64" origin="0.5,0.5" />
 		<Body width="416" height="192" density="60" />
 		<Price baseprice="100">
 			<Price locationtype="outpost" multiplier="1" minavailable="1" />
