@@ -233,6 +233,32 @@
   </Item>
 
 
+	<ConcentratedAnts name="" identifier="concentratedants" category="Medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe,sleepypenchem" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+		<PreferredContainer primary="toxcab,abandonedtoxcab" spawnprobability="0.3" />
+		<Price baseprice="750" soldeverywhere="false">
+			<Price locationtype="outpost" multiplier="1" sold="false" />
+			<Price locationtype="city" multiplier="1.1" sold="false" />
+			<Price locationtype="research" multiplier="0.9" minavailable="1" />
+			<Price locationtype="military" multiplier="1" minavailable="3" />
+			<Price locationtype="mine" multiplier="1.1" sold="false" />
+		</Price>
+		<InventoryIcon texture="Sprites/drugs.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="Sprites/drugs.png" sourcerect="152,187,37,69" depth="0.6" origin="0.5,0.5" />
+		<Body width="35" height="65" density="20" />
+		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="True">
+			<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+			<StatusEffect tags="poison" type="OnUse" Target="UseTarget">
+			<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+			<Affliction identifier="ants" amount="1" />
+			</StatusEffect>
+			<!-- Remove the item when fully used -->
+			<StatusEffect type="OnBroken" target="This">
+			<Remove />
+			</StatusEffect>
+		</MeleeWeapon>
+		</ConcentratedAnts>
 	
-  
+	
+		
+			
 </Items>
