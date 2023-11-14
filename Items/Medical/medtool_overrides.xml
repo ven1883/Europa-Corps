@@ -59,6 +59,9 @@
 				</Containable>
 			</ItemContainer>
 		</Item>
+
+
+		
 		<!-- Gives affliction that lets surgical tools know when on the bed. -->
 		<Item name="" identifier="opdeco_hospitalbed" width="416" height="192" texturescale="1.0,1.0" scale="0.5" noninteractable="false" category="Decorative">
 			<Upgrade gameversion="0.12.0.0" noninteractable="false" />
@@ -87,5 +90,8 @@
 				</StatusEffect>
 			</Controller>
 		</Item>
+
+
+		
 	</Items>
 </Override>
