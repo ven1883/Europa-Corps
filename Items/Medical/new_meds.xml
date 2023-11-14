@@ -31,8 +31,8 @@
 		<Item identifier="antibleeding3" copycondition="true" mincondition="0.1" />
 		<Item identifier="antidama2" copycondition="true" mincondition="0.1" />
 	</Deconstruct>
-	<InventoryIcon texture="new_drugs.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
-	<Sprite texture="new_drugs.png" sourcerect="115,187,37,69" depth="0.6" origin="0.5,0.5" />
+	<InventoryIcon texture="Sprites/drugs.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+	<Sprite texture="Sprites/drugs.png" sourcerect="115,187,37,69" depth="0.6" origin="0.5,0.5" />
 	<Body width="35" height="65" density="20" />
 	<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="True">
 		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -91,8 +91,8 @@
 	<SuitableTreatment identifier="methoverdose" suitability="25" />
 	<SuitableTreatment identifier="steroidoverdose" suitability="25" />
 	<SuitableTreatment identifier="drunk" suitability="50" />
-	<InventoryIcon texture="new_drugs.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-	<Sprite texture="new_drugs.png" sourcerect="0,187,37,69" depth="0.6" origin="0.5,0.5" />
+	<InventoryIcon texture="Sprites/drugs.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+	<Sprite texture="Sprites/drugs.png" sourcerect="0,187,37,69" depth="0.6" origin="0.5,0.5" />
 	<Body width="35" height="65" density="20" />
 	<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="True">
 		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -168,8 +168,8 @@
 		<Item identifier="carbon" copycondition="true" mincondition="0.1" />
 		<Item identifier="liquidoxygenite" copycondition="true" mincondition="0.1" />
 	</Deconstruct>
-	<InventoryIcon texture="new_drugs.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-	<Sprite texture="new_drugs.png" sourcerect="190,187,37,69" depth="0.6" origin="0.5,0.5" />
+	<InventoryIcon texture="Sprites/drugs.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+	<Sprite texture="Sprites/drugs.png" sourcerect="190,187,37,69" depth="0.6" origin="0.5,0.5" />
 	<Body width="35" height="65" density="20" />
 	<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="True">
 		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -199,8 +199,8 @@
 		<Price locationtype="military" multiplier="1" minavailable="2" />
 		<Price locationtype="mine" multiplier="1.1" sold="false" />
 	</Price>
-	<InventoryIcon texture="new_drugs.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
-	<Sprite texture="new_drugs.png" sourcerect="78,187,37,69" depth="0.6" origin="0.5,0.5" />
+	<InventoryIcon texture="Sprites/drugs.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
+	<Sprite texture="Sprites/drugs.png" sourcerect="78,187,37,69" depth="0.6" origin="0.5,0.5" />
 	<Body width="35" height="65" density="20" />
 	<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="True">
 		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -237,8 +237,8 @@
 		<Price locationtype="military" multiplier="1" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.1" sold="false" />
 	</Price>
-	<InventoryIcon texture="new_drugs.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
-	<Sprite texture="new_drugs.png" sourcerect="152,187,37,69" depth="0.6" origin="0.5,0.5" />
+	<InventoryIcon texture="Sprites/drugs.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+	<Sprite texture="Sprites/drugs.png" sourcerect="152,187,37,69" depth="0.6" origin="0.5,0.5" />
 	<Body width="35" height="65" density="20" />
 	<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="True">
 		<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -277,8 +277,8 @@
 		<Item identifier="aluminium" copycondition="true" mincondition="0.1" />
 		<Item identifier="sulphuricacid" copycondition="true" mincondition="0.1" />
 	</Deconstruct>
-	<InventoryIcon texture="new_drugs.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
-	<Sprite texture="new_drugs.png" sourcerect="40,187,37,69" depth="0.6" origin="0.5,0.5" />
+	<InventoryIcon texture="Sprites/drugs.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+	<Sprite texture="Sprites/drugs.png" sourcerect="40,187,37,69" depth="0.6" origin="0.5,0.5" />
 	<Body width="35" height="65" density="20" />
 	<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="True">
 		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -323,8 +323,8 @@
 		<Price locationtype="mine" multiplier="1.1" sold="false" />
 	</Price>
 	<SuitableTreatment identifier="concentratedants" suitability="100" />
-	<InventoryIcon texture="new_drugs.png" sourcerect="256,64,64,64" origin="0.5,0.5" />
-	<Sprite texture="new_drugs.png" sourcerect="152,187,37,69" depth="0.6" origin="0.5,0.5" />
+	<InventoryIcon texture="Sprites/drugs.png" sourcerect="256,64,64,64" origin="0.5,0.5" />
+	<Sprite texture="Sprites/drugs.png" sourcerect="152,187,37,69" depth="0.6" origin="0.5,0.5" />
 	<Body width="35" height="65" density="20" />
 	<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
 		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -348,8 +348,8 @@
 	</Anticide>
 	<Item name="" identifier="symbiotichuskeggs" category="medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="" useinhealthinterface="true" scale="0.5">
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
-	<InventoryIcon texture="new_drugs.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
-	<Sprite texture="new_drugs.png" sourcerect="265,186,38,70" depth="0.6" origin="0.5,0.5" />
+	<InventoryIcon texture="Sprites/drugs.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
+	<Sprite texture="Sprites/drugs.png" sourcerect="265,186,38,70" depth="0.6" origin="0.5,0.5" />
 	<!--<Fabricate suitablefabricators="medicalfabricator" requiredtime="30" >
 		<RequiredSkill identifier="medical" level="40" />
 		<RequiredItem identifier="huskeggs" />
