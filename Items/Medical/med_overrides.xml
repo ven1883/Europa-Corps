@@ -145,6 +145,8 @@
 			</Projectile>
 		</Morphine>
 
+
+
 		<!-- Fentanyl -->
 		<Fentanyl name="" identifier="antidama2" category="medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -280,6 +282,8 @@
 			</Projectile>
 		</Fentanyl>
 
+
+		
 		<Opium name="" identifier="opium" category="Material,Medical" maxstacksize="8" Tags="smallitem,chem" description="" cargocontaineridentifier="mediccrate" scale="0.5" useinhealthinterface="true">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
 			<PreferredContainer primary="medfabcab" minamount="4" maxamount="8" spawnprobability="1" />
@@ -343,6 +347,9 @@
 			</MeleeWeapon>
 		</Opium>
 
+
+
+
 		<!-- slower bleed and burn healing for just reg bandage -->
 		<Bandage name="" identifier="antibleeding1" aliases="Bandage" category="Equipment" Tags="smallitem,medical" maxstacksize="8" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_soft">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -398,6 +405,8 @@
 			</MeleeWeapon>
 		</Bandage>
 
+
+
 		<Plastiseal name="" identifier="antibleeding2" category="Equipment" Tags="smallitem,medical" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
 			<PreferredContainer primary="medcab" minamount="4" maxamount="6" />
@@ -452,6 +461,8 @@
 				</StatusEffect>
 			</MeleeWeapon>
 		</Plastiseal>
+
+
 
 		<AntibioticGlue name="" identifier="antibleeding3" category="Equipment" Tags="smallitem,medical" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -513,6 +524,8 @@
 			</MeleeWeapon>
 		</AntibioticGlue>
 
+
+
 		<TonicLiquid name="" identifier="tonicliquid" category="Material,Medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
 			<PreferredContainer primary="medcab" spawnprobability="0.5" />
@@ -564,6 +577,8 @@
 			</MeleeWeapon>
 		</TonicLiquid>
 
+
+
 		<!-- alien blood toxic to human -->
 		<Item name="" identifier="alienblood" category="Material,Medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,chem,medical" useinhealthinterface="true" scale="0.5">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -608,6 +623,8 @@
 				</StatusEffect>
 			</MeleeWeapon>
 		</Item>
+
+
 
 		<Naloxone name="" identifier="antinarc" category="Medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" description="" scale="0.5" impactsoundtag="impact_metal_light">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -678,6 +695,8 @@
 				</StatusEffect>
 			</Projectile>
 		</Naloxone>
+
+
 
 		<!-- add overdose, addiction and withdrawal -->
 		<Methamphetamine name="" identifier="meth" category="Medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
@@ -808,6 +827,8 @@
 			</Projectile>
 		</Methamphetamine>
 
+
+
 		<AnabolicSteroids name="" identifier="steroids" category="Medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
 			<PreferredContainer primary="medcab" spawnprobability="0.1" />
@@ -929,6 +950,8 @@
 				</StatusEffect>
 			</Projectile>
 		</AnabolicSteroids>
+
+
 
 		<!-- give both steroid and meth addiction -->
 		<Hyperzine name="" identifier="hyperzine" category="Medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
@@ -1077,6 +1100,8 @@
 			</Projectile>
 		</Hyperzine>
 
+
+
 		<!-- Alcoholism -->
 		<Ethanol name="" identifier="ethanol" category="Material" maxstacksize="8" cargocontaineridentifier="chemicalcrate" description="" Tags="smallitem,chem,medical,petfood2" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1122,6 +1147,8 @@
 			</Holdable>
 			<AiTarget sightrange="1000" static="true" />
 		</Ethanol>
+
+
 
 		<Calyxanide name="" identifier="calyxanide" category="Medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1208,6 +1235,8 @@
 			</Projectile>
 		</Calyxanide>
 
+
+
 		<!-- changed to fix organ rejection -->
 		<Stabilozine name="" identifier="stabilozine" category="Material,Medical" maxstacksize="8" tags="smallitem,chem,medical,syringe" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1253,6 +1282,8 @@
 				</StatusEffect>
 			</Projectile>
 		</Stabilozine>
+
+
 
 		<Item name="" identifier="combatstimulantsyringe" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="smallitem,chem,medical,syringe" allowasextracargo="true" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 			<PreferredContainer primary="medcab"/>
@@ -1308,5 +1339,7 @@
 			<SkillRequirementHint identifier="medical" level="35" />
 		</Item>
 
+
+		
 	</Items>
 </Override>
