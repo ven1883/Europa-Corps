@@ -20,6 +20,9 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
+
+
+	
 	<Item name="" identifier="basebionic" category="Material,Medical" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		<Price baseprice="450" soldeverywhere="false">
@@ -79,6 +82,9 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
+
+
+	
 	<Item name="" identifier="adrenalinebionic" category="Material" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		<Price baseprice="740" soldeverywhere="false">
@@ -134,6 +140,9 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
+
+
+	
 	<Item name="" identifier="methbionic" category="Material" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		<Price baseprice="780" soldeverywhere="false">
@@ -189,6 +198,9 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
+
+
+	
 	<Item name="" identifier="gillsbionic" category="Material" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		<Price baseprice="870" soldeverywhere="false">
@@ -244,6 +256,9 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
+
+
+	
 	<Item name="" identifier="mechanitebionic" category="Material" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		<Price baseprice="1060" soldeverywhere="false">
@@ -298,6 +313,9 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
+
+
+	
 	<Item name="" identifier="calyxanidebionic" category="medical" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		<Price baseprice="610" soldeverywhere="false">
@@ -353,6 +371,9 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
+
+
+	
 	<Item name="" identifier="bloodbionic" category="medical" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		<Price baseprice="780" soldeverywhere="false">
@@ -406,4 +427,7 @@
 			</StatusEffect>
 		</Holdable>
 	</Item>
+
+
+	
 </Items>
