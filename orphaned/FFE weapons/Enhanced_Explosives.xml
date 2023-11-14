@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--Timed Detonator-->
+  <Item name="" identifier="sgt_timedet" aliases="Timed Detonator" category="Equipment,Weapon" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="smallitem,weapon" scale="0.22" impactsoundtag="impact_metal_heavy" isshootable="true" hideinmenus="false" maxstacksize="1">
+    <Price baseprice="75" soldeverywhere="false">
+      <Price storeidentifier="merchantoutpost" multiplier="0.75" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="fpgacircuit" outcondition="0.5" />
+      <Item identifier="copper" outcondition="0.25" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="2">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" mincondition="0.5" usecondition="true" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Weapons/Explosives.png" sourcerect="0,0,100,100" />
+    <Sprite texture="%ModDir%/Weapons/Explosives.png" sourcerect="0,0,100,100" depth="0.55" origin="0.5,0.5" />
+    <Body width="104" height="86" density="18" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand+LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" holdpos="40,-10" aimpos="50,-5" handle1="0,-13" handle2="0,-13" attachable="true" Attached="false" AttachedByDefault="false" aimable="true">
+      <RequiredItem identifier="wrench" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
+    </Holdable>
+    <!-- Old Code Back-up
+    <LightComponent LightColor="255,0,0,255" range="20" blinkfrequency="1" powerconsumption="0" IsOn="false" canbeselected="false" AllowInGameEditing="false">
+      <StatusEffect type="OnActive" targettype="This" Condition="-1.667">
+        <Sound file="%ModDir%/Sounds/satchelbeep.ogg" loop="true" range="1000" />
+      </StatusEffect>
+    </LightComponent>
+  -->
+  <LightComponent LightColor="255,0,0,255" range="20" blinkfrequency="1" powerconsumption="0" IsOn="false" canbeselected="false" AllowInGameEditing="false" >
+  <!--Normal Speed-->
+  <StatusEffect type="OnActive" targettype="This" Condition="-1.667" comparison="And">
+    <Conditional condition="gt 8.3333" />
+    <Sound file="%ModDir%/Sounds/satchelbeep.ogg" loop="true" range="1000" />
+  </StatusEffect>
+  <!-- T-5s -->
+  <StatusEffect type="OnActive" targettype="This" Condition="-1.667" comparison="And">
+    <Conditional condition="lte 8.3333" />
+    <Sound file="%ModDir%/Sounds/satchelbeepfast.ogg" loop="true" range="1000" />
+  </StatusEffect>
+  </LightComponent>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnBroken" targettype="This,Contained" disabledeltatime="true" stackable="false">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="10000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="10000" />
+        <ParticleEmitter particle="weldspark" particleamount="20" distancemin="0" distancemax="128" anglemin="-360" anglemax="360" scalemin="2.5" scalemax="5.0" velocitymin="250" velocitymax="500" />
+        <ParticleEmitter particle="explosionfire" particleamount="20" distancemin="0" distancemax="128" anglemin="-360" anglemax="360" scalemin="1.5" scalemax="3.5" velocitymin="250" velocitymax="500" />
+        <ParticleEmitter particle="explosionsmoke" particleamount="4" distancemin="0" distancemax="128" anglemin="-360" anglemax="360" scalemin="2.5" scalemax="5.0" velocitymin="250" velocitymax="500" />
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" targettype="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="10000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="10000" />
+        <ParticleEmitter particle="weldspark" particleamount="20" distancemin="0" distancemax="128" anglemin="-360" anglemax="360" scalemin="2.5" scalemax="5.0" velocitymin="250" velocitymax="500" />
+        <ParticleEmitter particle="explosionfire" particleamount="10" distancemin="0" distancemax="128" anglemin="-360" anglemax="360" scalemin="1.5" scalemax="3.5" velocitymin="250" velocitymax="500" />
+        <ParticleEmitter particle="explosionsmoke" particleamount="4" distancemin="0" distancemax="128" anglemin="-360" anglemax="360" scalemin="2.5" scalemax="5.0" velocitymin="250" velocitymax="500" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <ItemContainer canbeselected="true" capacity="1" maxstacksize="1" itempos="40,-40" hideitems="false" containedstateindicatorstyle="explosive" containedspritedepth="0.81">
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="explosive" />
+    </ItemContainer>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.15,0.15" anchor="BottomLeft" absoluteoffset="20,20" style="ItemUI" />
+      <TickBox text="Armed">
+        <sound file="Content/Items/Button/Switch1.ogg" type="OnActive" range="250.0" loop="true" volume="0.3" />
+        <StatusEffect type="OnUse" targettype="This" IsOn="true" />
+        <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
+      </TickBox>
+      <Button text="Reset">
+        <StatusEffect type="OnUse" targettype="This" Condition="100" disabledeltatime="true">
+          <sound file="Content/Items/Button/Switch1.ogg" type="OnActive" range="250.0" loop="true" volume="0.3" />
+        </StatusEffect>
+      </Button>
+      <Button text="+ 10s">
+        <StatusEffect type="OnUse" targettype="This" Condition="16.667" disabledeltatime="true">
+          <sound file="Content/Items/Button/Switch1.ogg" type="OnActive" range="250.0" loop="true" volume="0.3" />
+        </StatusEffect>
+      </Button>
+      <Button text="- 10s">
+        <StatusEffect type="OnUse" targettype="This" Condition="-16.667" disabledeltatime="true">
+          <sound file="Content/Items/Button/Switch1.ogg" type="OnActive" range="250.0" loop="true" volume="0.3" />
+          <Conditional Condition="gt 17" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+  </Item>
+</Items>

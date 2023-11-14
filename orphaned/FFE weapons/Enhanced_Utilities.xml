@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--Crank that soulja boy-->
+  <Item name="" identifier="sgt_wrench" variantof="wrench" addedrepairspeedmultiplier="0.65">
+    <Preferredcontainer secondary="respawncontainer" amount="1" spawnprobability="0" notcampaign="true" />
+    <PreferredContainer primary="engcab" spawnprobability="0" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" spawnprobability="0" />
+    <PreferredContainer primary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" spawnprobability="0" />
+    <PreferredContainer secondary="outpostcrewcabinet" spawnprobability="0" />
+    <PreferredContainer secondary="outposttrashcan" spawnprobability="0" />
+    <Price baseprice="1200" sold="false" />
+    <Deconstruct>
+      <Item identifier="titanium" />
+      <Item identifier="scp_durasteel" />
+      <Item identifier="scp_durasteel" />
+      <Item identifier="physicorium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
+      <Requiredskill identifier="mechanical" level="80" />
+      <RequiredItem identifier="heavywrench" amount="1" />
+      <RequiredItem identifier="scp_durasteel" amount="4" />
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <!-- disable base inventory icon -->
+    <InventoryIcon />
+    <Sprite texture="%ModDir%/Weapons/Melee.png" sourcerect="0,81,92,28" depth="0.55" origin="0.5,0.5" />
+    <Body width="114" height="20" density="30" />
+    <MeleeWeapon slots="RightHand,LeftHand,Any" range="100" reload="0.8" controlpose="true" aimpos="45,10" handle1="-10,0" holdangle="60" combatpriority="20">
+      <Attack targetimpulse="15" structuredamage="11" itemdamage="13">
+        <Affliction identifier="blunttrauma" strength="30" />
+        <Affliction identifier="stun" strength="1" />
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+      <QualityStat stattype="repairspeed" value="0.1" />
+    </Quality>
+  </Item>
+  <!--Greytide Stationwide-->
+  <Item name="" identifier="sgt_toolbox" category="Equipment" tags="mediumitem,mobilecontainer,tool,wrench,screwdriver" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" addedrepairspeedmultiplier="1">
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" amount="1" spawnprobability="0" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0." />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="40">
+      <RequiredSkill identifier="mechanical" level="80" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <Item identifier="heavywrench" amount="1" />
+      <Item identifier="screwdriverhardened" amount="1" />
+      <Item identifier="skillbookhandyseaman" mincondition="1" />
+      <Item identifier="wire" amount="4" />
+      <Item identifier="iron" amount="2" />
+    </Fabricate>
+    <Price baseprice="1400" sold="false" />
+    <Sprite texture="%ModDir%/Weapons/Melee.png" sourcerect="116,80,124,61" origin="0.5,0.5" depth="0.6" />
+    <!--<Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="1,0,68,39"/>-->
+    <Body width="90" height="60" density="20" />
+    <MeleeWeapon slots="RightHand+LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1.8" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="0" itemdamage="1" targetimpulse="4">
+        <Affliction identifier="blunttrauma" strength="40" />
+        <Affliction identifier="stun" strength="1" />
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="3" keepopenwhenequipped="true" movableframe="true">
+      <Containable items="smallitem" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--(Dura)Steel Crowbar-->
+  <Item name="" identifier="sgt_crowbar" category="Equipment" variantof="crowbar" Tags="mediumitem,tool,simpletool,dooropeningtool,crowbaritem,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.36" impactsoundtag="impact_metal_light" RequireAimToUse="True" addedpickingspeedmultiplier="1.2">
+    <PreferredContainer primary="wreckengcab,abandonedengcab,beaconengcab" minamount="0" maxamount="1" spawnprobability="0.005" />
+    <Price baseprice="1350" sold="false" />
+    <Deconstruct time="10">
+      <Item identifier="scp_durasteel" />
+      <Item identifier="scp_durasteel" />
+      <Item identifier="fulgurium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="45">
+      <RequiredSkill identifier="mechanical" level="70" />
+      <RequiredItem identifier="scp_durasteel" amount="4" />
+      <RequiredItem identifier="fulgurium" amount="4" />
+      <RequiredItem identifier="crowbarhardened" />
+      <RequiredItem identifier="redpaint" condition="0.5" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Weapons/Melee.png" sourcerect="4,142,232,56" origin="0.5,0.2" />
+    <Sprite texture="%ModDir%/Weapons/Melee.png" sourcerect="4,142,232,56" depth="0.55" origin="0.5,0.16" />
+    <Body width="120" height="20" density="30" />
+    <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" aimpos="45,10" handle1="-10,0" handle2="0,5" holdangle="60" range="150" combatpriority="20" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFailure" target="This" reload="1.8" setvalue="true" />
+      <StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="1.4" />
+      <RequiredSkill identifier="mechanical" level="50" />
+      <Attack structuredamage="12" itemdamage="24" targetimpulse="15">
+        <Affliction identifier="blunttrauma" strength="16" />
+        <Affliction identifier="stun" strength="0.6" />
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="%ModDir%/Sounds/donk1.ogg" selectionmode="random" range="500" />
+          <Sound file="%ModDir%/Sounds/donk2.ogg" range="500" />
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+    <aitarget sightrange="1000" soundrange="500" fadeouttime="1" />
+    <Quality>
+      <QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+    </Quality>
+    <SkillRequirementHint identifier="mechanical" level="50" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--Specialist Training Handbook-->
+  <Item name="" identifier="sgt_adminskillbook" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,skillbook" maxstacksize="8" scale="0.5" spritecolor="30,40,120,255" InventoryIconColor="30,40,120,255" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="83,368,39,56" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="71,74,34,39" depth="0.6" origin="0.5,0.5" />
+    <Body width="28" height="36" density="20" />
+    <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <GiveTalentInfo giverandom="true" talentidentifiers="specops" />
+        <GiveTalentInfo giverandom="true" talentidentifiers="implacable" />
+        <GiveSkill skillidentifier="electrical" amount="30" triggertalents="false" />
+        <GiveSkill skillidentifier="helm" amount="20" triggertalents="false" />
+        <GiveSkill skillidentifier="mechanical" amount="30" triggertalents="false" />
+        <GiveSkill skillidentifier="medical" amount="20" triggertalents="false" />
+        <GiveSkill skillidentifier="weapons" amount="50" triggertalents="false" />
+        <GiveExperience amount="22050" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
+        <GiveTalentInfo giverandom="true" talentidentifiers="specops" />
+        <GiveTalentInfo giverandom="true" talentidentifiers="implacable" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!--Sailors Guide, Abridged and Refined-->
+  <Item name="" identifier="sgt_admingenbook" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,skillbook" maxstacksize="8" scale="0.5" spritecolor="61,136,255,255" InventoryIconColor="61,136,255,255" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="1,368,40,56" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="2,75,32,38" depth="0.6" origin="0.5,0.5" />
+    <Body width="28" height="36" density="20" />
+    <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <GiveSkill skillidentifier="electrical" amount="12" triggertalents="false" />
+        <GiveSkill skillidentifier="helm" amount="12" triggertalents="false" />
+        <GiveSkill skillidentifier="mechanical" amount="12" triggertalents="false" />
+        <GiveSkill skillidentifier="medical" amount="12" triggertalents="false" />
+        <GiveSkill skillidentifier="weapons" amount="12" triggertalents="false" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!--Mech Operation Manual-->
+  <Item name="" identifier="sgt_adminmechbook" cargocontaineridentifier="metalcrate" allowasextracargo="true" category="Misc" Tags="smallitem,skillbook" maxstacksize="8" scale="0.5" spritecolor="125,125,125,255" InventoryIconColor="125,125,125,255" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="42,368,40,56" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="36,74,32,39" devpth="0.6" origin="0.5,0.5" />
+    <Body width="28" height="36" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-50.0" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <GiveTalentInfo giverandom="true" talentidentifiers="powerarmor" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
+        <GiveTalentInfo giverandom="true" talentidentifiers="powerarmor" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <!--Syringe Shotgun-->
+  <Item name="" identifier="sgt_syringeshotgun" variantof="syringegun" scale="0.32">
+    <PreferredContainer primary="armcab" amount="1" spawnprobability="0" notcampaign="true" />
+    <PreferredContainer secondary="secarmcab,weaponholder" />
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab,wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0" />
+    <Price baseprice="450" sold="false"></Price>
+    <Deconstruct time="10">
+      <Item identifier="aluminium" />
+      <Item identifier="plastic" />
+      <Item identifier="oxygentank" condition="0" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="medical" level="40" />
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="syringegun" amount="1" />
+      <RequiredItem identifier="oxygentank" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="aluminium" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/weapons/renegade.png" sourcerect="822,0,72,96" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/weapons/renegade.png" sourcerect="498,0,312,102" depth="0.7" origin="0.5,0.5" />
+    <Body width="90" height="74" density="25" />
+    <Holdable slots="RightHand+LeftHand,Any" controlpose="true" holdpos="20,-15" holdangle="-15" aimpos="40,-10" handle1="-18,-18" handle2="58,-12" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.01" launchimpulse="10.0" barrelpos="71,30" spread="4" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="Content/Items/Weapons/SyringeGun1.ogg" type="OnUse" range="1000" volume="1" frequencymultiplier="0.5" />
+      <Sound file="Content/Items/Weapons/SyringeGun2.ogg" type="OnUse" range="1000" volume="1" frequencymultiplier="0.5" />
+      <StatusEffect type="OnUse" target="This" Condition="-1500" />
+      <StatusEffect type="OnBroken" target="This" delay="1">
+        <sound file="%ModDir%/Sounds/ssgreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="3" stackable="false" />
+      <RequiredItems items="syringe" type="Contained" msg="ItemMsgSyringeRequired" />
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="medical" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="4" maxstacksize="1" itempos="0,25" itemrotation="-90" hideitems="true" containedstateindicatorstyle="syringe" ShowTotalStackCapacityInContainedStateIndicator="true" containedstateindicatorslot="0">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+      <Containable items="syringe" />
+    </ItemContainer>
+    <SkillRequirementHint identifier="weapons" level="30" />
+    <SkillRequirementHint identifier="medical" level="50" />
+  </Item>
+  <!--Smoldered Journal-->
+  <Item name="" identifier="adminxpbook" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,skillbook" maxstacksize="8" scale="0.5" spritecolor="155,41,0,255" InventoryIconColor="155,41,0,255" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="123,368,38,56" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="107,74,32,38" depth="0.6" origin="0.5,0.5" />
+    <Body width="28" height="36" density="20" />
+    <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" />
+      <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+        <Conditional Condition="lte 0" />
+        <GiveExperience amount="6750" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

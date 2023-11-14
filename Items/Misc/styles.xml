@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style>
+  <scp_slugscribble color="255,255,255,242" textcolor="0,0,0,255">
+    <Sprite name="scp_slugscribble" texture="%ModDir%/Misc/strangescribble1.png" sourcerect="0,0,372,468" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </scp_slugscribble>
+  <scp_psiwarning color="255,255,255,242" textcolor="0,0,0,255">
+    <Sprite name="scp_psiwarning" texture="%ModDir%/Misc/strangescribble2.png" sourcerect="0,0,372,468" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </scp_psiwarning>
+  <scp_maskscribble color="255,255,255,242" textcolor="0,0,0,255">
+    <Sprite name="scp_maskscribble" texture="%ModDir%/Misc/strangescribble3.png" sourcerect="0,0,372,468" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </scp_maskscribble>
+  <scp_maskscribbletrag color="255,255,255,242" textcolor="0,0,0,255">
+    <Sprite name="scp_maskscribbletrag" texture="%ModDir%/Misc/strangescribble4.png" sourcerect="0,0,372,468" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </scp_maskscribbletrag>
+  <scp_scribblepictureweapon color="255,255,255,242" textcolor="0,0,0,255">
+    <Sprite name="scp_scribblepictureweapon" texture="%ModDir%/Misc/strangescribble5.png" sourcerect="0,0,284,312" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </scp_scribblepictureweapon>
+  <scp_weaponcraftinfo color="255,255,255,242" textcolor="0,0,0,255">
+    <Sprite name="scp_weaponcraftinfo" texture="%ModDir%/Misc/infodoc.png" sourcerect="0,0,800,1116" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </scp_weaponcraftinfo>
+  <scp_psiinfo color="255,255,255,242" textcolor="0,0,0,255">
+    <Sprite name="scp_psiinfo" texture="%ModDir%/Misc/infopsi.png" sourcerect="0,0,800,1116" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </scp_psiinfo>
+  <scp_cheminfo color="255,255,255,242" textcolor="0,0,0,255">
+    <Sprite name="scp_cheminfo" texture="%ModDir%/Misc/infochem.png" sourcerect="0,0,800,1116" maintainaspectratio="true" tile="false" origin="0.5,0.5" compress="true" />
+  </scp_cheminfo>
+</style>

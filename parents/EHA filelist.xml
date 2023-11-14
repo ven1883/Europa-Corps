@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="(Lobotomized) Enhanced Armaments" modversion="1.0.172" corepackage="False" gameversion="1.1.19.3" >
+  <Item file="%ModDir%/Weapons/Enhanced_Armaments.xml" />
+  <Item file="%ModDir%/Weapons/alienweapons.xml" />
+  <Item file="%ModDir%/Weapons/vintageweapons.xml" />
+  <Item file="%ModDir%/Jobgear/armor.xml" />
+  <Item file="%ModDir%/Medical/medical.xml" />
+  <NPCSets file="%ModDir%/NPCs/outpostnpcs.xml" />
+  <Item file="%ModDir%/Materials/materials.xml" />
+  <Talents file="%ModDir%/NPCs/Talents.xml" />
+  <Afflictions file="%ModDir%/Afflictions/afflictions.xml" />
+  <Item file="%ModDir%/Misc/Misc.xml" />
+  <Item file="%ModDir%/Weapons/explosives.xml" />
+  <Item file="%ModDir%/Misc/fabricators.xml" />
+  <Item file="%ModDir%/Weapons/meleeweapons.xml" />
+  <Item file="%ModDir%/Weapons/hightierweapons.xml" />
+  <Item file="%ModDir%/Weapons/renegadeweapons.xml" />
+  <Item file="%ModDir%/Weapons/misc.xml" />
+  <Item file="%ModDir%/Weapons/overrides.xml" />
+  <Jobs file="%ModDir%/Jobs/joboverrides.xml" />
+  <Item file="%ModDir%/Turrets/turrets.xml" />
+  <Item file="%ModDir%/Misc/containers.xml" />
+  <Sounds file="%ModDir%/Sounds/sounds.xml" />
+  <Particles file="%ModDir%/Particles/Particles.xml" />
+  <Missions file="%ModDir%/Missions/Missions.xml" />
+  <NPCSets file="%ModDir%/NPCs/CustomNPCs.xml" />
+  <Text file="%ModDir%/Text/english.xml" />
+  <NPCConversations file="%ModDir%/NPCs/Conversations.xml" />
+  <UIStyle file="%ModDir%/Misc/styles.xml" />
+</contentpackage>

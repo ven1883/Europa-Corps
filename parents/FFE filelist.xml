@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="(Lobotomized) Fuel for the Fire Expansion" modversion="1.4.45" corepackage="False" gameversion="1.1.19.3" >
+  <Item file="%ModDir%/Weapons/Enhanced_Armaments.xml" />
+  <Item file="%ModDir%/Weapons/Surplus_Armaments.xml" />
+  <Item file="%ModDir%/Weapons/Enhanced_Utilities.xml" />
+  <Item file="%ModDir%/Weapons/Enhanced_Explosives.xml" />
+  <Item file="%ModDir%/Jobgear/Enhanced_Equipment.xml" />
+  <Item file="%ModDir%/Items/Containers/Enhanced_Containers.xml" />
+  <Text file="%ModDir%/Text/english.xml" />
+  <Text file="%ModDir%/Text/chinese (simplified).xml" />
+  <Text file="%ModDir%/Text/chinese (traditional).xml" />
+  <Jobs file="%ModDir%/Jobs/joboverrides.xml" />
+  <Other file="%ModDir%/logo.png" />
+  <Particles file="%ModDir%/Particles/Particles.xml" />
+  <NPCConversations file="%ModDir%/NPCs/Conversations.xml" />
+  <NPCSets file="%ModDir%/NPCs/CustomNPCs.xml" />
+  <Missions file="%ModDir%/Missions/Missions.xml" />
+  <Character file="%ModDir%/Characters/Humanffehusk/Humanffehusk.xml" />
+  <Afflictions file="%ModDir%/Afflictions/Afflictions.xml" />
+</contentpackage>

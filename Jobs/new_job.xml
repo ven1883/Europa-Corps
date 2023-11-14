@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Jobs>
+  <Override>
+
+	<Job identifier="medicaldoctor"
+		maxnumber="2" minkarma="30"
+		uicolor="0.81,0.31,0.19"
+		vitalitymodifier="10"
+		pricemultiplier="1.15"
+		idlebehavior="Active">
+ <Jobicon>
+	 <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
+ </Jobicon>
+ <JobiconSmall>
+	 <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,698,28,28" origin="0.5,0.5"/>
+ </JobiconSmall>
+ <Skills>
+	 <Skill identifier="medical" level="40,50" primary="true"/>
+	 <Skill identifier="weapons" level="15,25"/>
+	 <Skill identifier="mechanical" level="15,25"/>
+	 <Skill identifier="electrical" level="15,25"/>
+	 <Skill identifier="helm" level="5,10"/>
+ </Skills>
+ <ItemSet>
+	 <Item identifier="idcard" equip="true" showpreview="false"/>
+	 <Item identifier="doctorsuniform1" equip="true" outfit="true"/>
+	 <Item identifier="healthscanner"/>
+	 <Item identifier="headset" equip="true" showpreview="false"/>
+	 <Item identifier="syringegun"/>
+	 <Item identifier="antibleeding1"/>
+	 <Item identifier="antidama1"/>
+	 <PreviewSprites dims="120,109">
+		 <sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
+		 <sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
+	 </PreviewSprites>
+ </ItemSet>
+ <ItemSet>
+	 <Item identifier="idcard" equip="true" showpreview="false"/>
+	 <Item identifier="doctorsuniform2" equip="true" outfit="true"/>
+	 <Item identifier="healthscanner"/>
+	 <Item identifier="headset" equip="true" showpreview="false"/>
+	 <Item identifier="syringegun"/>
+	 <Item identifier="antibleeding1"/>
+	 <Item identifier="antidama1"/>
+	 <PreviewSprites dims="120,109">
+		 <sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
+		 <sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
+	 </PreviewSprites>
+ </ItemSet>
+ <ItemSet>
+	<Item identifier="idcard" equip="true" showpreview="false" />
+	<Item identifier="doctorsuniform3" equip="true" outfit="true">
+		<Item identifier="scalpel" />
+		<Item identifier="suture" />
+		<Item identifier="surgeryscissors" />
+		<Item identifier="tweezers" />
+	</Item>
+	<Item identifier="healthscanner" />
+	<Item identifier="autosurgeon">
+		<Item identifier="surgeonprogrambullet" showpreview="false" />
+		<Item identifier="batterycell" showpreview="false" />
+	</Item>
+	<Item identifier="divingmask" showpreview="false">
+		<Item identifier="ethertank" showpreview="true" />
+	</Item>
+	<Item identifier="headset" equip="true" showpreview="false"/>
+	<Item identifier="antibleeding2" />
+	<Item identifier="meddegree" />
+	<PreviewSprites dims="120,109">
+		<sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_3.png" sourcerect="2,38,120,109" offset="0,0" />
+		<sprite texture="Content/Items/Jobgear/Medic/medic_torso_[GENDER]_3.png" sourcerect="121,0,76,80" offset="-20,15" />
+	</PreviewSprites>
+</ItemSet>
+ <AutonomousObjectives>
+	 <Order identifier="rescue" prioritymodifier="1"/>
+	 <Order identifier="extinguishfires" prioritymodifier ="0.5"/>
+	 <Order identifier="operatereactor" option="powerup" prioritymodifier="0.2"/>
+	 <Order identifier="fixleaks" prioritymodifier="0.1"/>
+ </AutonomousObjectives>
+ <AppropriateOrders>
+	 <Order identifier="rescue"/>
+	 <Order identifier="requestfirstaid"/>
+ </AppropriateOrders>
+		</Job>
+  </Override>
+</Jobs>

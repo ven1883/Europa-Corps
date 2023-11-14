@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" description="" identifier="scp_tankcannon" tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="scp_tankgunequipment">
+    <Sprite name="coligunbase" texture="%ModDir%/Turrets/tankturret.png" depth="0.01" sourcerect="0,176,256,256" canflipy="false" origin="0.5,0.5" />
+    <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
+    <SwappableItem price="8500" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+      <SchematicSprite name="heavycoilgunschematic" texture="%ModDir%/Turrets/turretschematics.png" sourcerect="-8,17,238,464" origin="0.5,0.5" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="scp_tankgunloader" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret canbeselected="false" characterusable="false" linkable="true" firingoffset="0,-260" barrelpos="128,150" rotationlimits="180,360" powerconsumption="8000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="2" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="6">
+      <sound file="%ModDir%/Sounds/tankcannon.ogg" volume="1.35" range="10000" type="OnUse" />
+      <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
+      <RailSprite name="coilgunrail" texture="%ModDir%/Turrets/tankturret.png" depth="0.011" sourcerect="382,185,116,221" origin="0.52377486,0.79979753" />
+      <BarrelSprite name="Coilgunbarrel" texture="%ModDir%/Turrets/tankturret.png" depth="0.012" sourcerect="255,17,117,415" origin="0.5013909,0.8638133" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="60" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" velocitymin="50" velocitymax="100" scalemultiplier="1.1,1.15" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="5.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" description="" identifier="scp_prototankcannon" tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="scp_tankgunequipment">
+    <Sprite name="coligunbase" texture="%ModDir%/Turrets/advtankturret.png" depth="0.01" sourcerect="0,164,256,256" canflipy="false" origin="0.5,0.5" />
+    <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
+    <SwappableItem price="18000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+      <SchematicSprite name="heavycoilgunschematic" texture="%ModDir%/Turrets/turretschematics.png" sourcerect="909,1,214,480" origin="0.5,0.5" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="scp_tankgunloader" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret canbeselected="false" characterusable="false" launchimpulse="120.0" linkable="true" barrelpos="128,175" firingoffset="0,-360" rotationlimits="180,360" powerconsumption="8000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="1" springstiffnesslowskill="1" springstiffnesshighskill="50" springdampinglowskill="0.1" springdampinghighskill="10" rotationspeedlowskill="0.2" rotationspeedhighskill="6">
+      <sound file="%ModDir%/Sounds/prototankcannon.ogg" volume="1.35" range="10000" type="OnUse" />
+      <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
+      <RailSprite name="coilgunrail" texture="%ModDir%/Turrets/advtankturret.png" depth="0.011" sourcerect="378,185,123,220" origin="0.52377486,0.79979753" />
+      <BarrelSprite name="Coilgunbarrel" texture="%ModDir%/Turrets/advtankturret.png" depth="0.012" sourcerect="255,17,117,415" origin="0.5013909,0.8638133" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="95" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" velocitymin="50" velocitymax="100" scalemultiplier="1.1,1.15" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="50" velocitymax="100" scalemultiplier="12,8" colormultiplier="255,100,25,255" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="5.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="scp_tankgunloader" tags="scp_tankgunequipment,scp_tankgunammosource,turretammosource,scp_tankgunammoloader" category="Machine,Weapon" linkable="true" allowedlinks="scp_tankgun" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Upgrade gameversion="0.14.7.0" rectwidth="82" rectheight="176" itempos="82,-270" />
+    <SwappableItem canbebought="false" origin="82,352" spawnwithid="tankgunammobox" />
+    <Sprite name="tankturretloader" texture="%ModDir%/Turrets/turretitems.png" depth="0.78" sourcerect="1,0,180,354" origin="0.5,0.5" />
+    <DecorativeSprite name="loaderframe" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="-0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="90,-230" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.18,0.23" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="tankturretammo" />
+      <StatusEffect type="OnUse" target="Contained">
+        <RequiredItem items="tankturretammo" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" description="" identifier="scp_tankgunbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="scp_tankgunloader" amount="1" probability="0.5" />
+    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
+    <Price baseprice="575" displaynonempty="true" minleveldifficulty="10">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="lead" mincondition="0.95" />
+      <Item identifier="steel" mincondition="0.95" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="c4block" amount="2" />
+      <RequiredItem identifier="steel" amount="3" />
+      <RequiredItem identifier="aluminium" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="c4block" amount="2" />
+      <RequiredItem identifier="steel" amount="3" />
+      <RequiredItem identifier="scp_tankgunbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
+    <Sprite name="tankammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,1,129,176" origin="0.5,0.5" />
+    <ContainedSprite name="tankammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="322,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
+    <Body width="129" height="176" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="scp_tankheatproj" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+        <RequiredItem items="scp_tankheatproj" type="Contained" />
+      </StatusEffect>
+      <Containable items="scp_tankheatproj" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="scp_tankheatproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
+    <Sprite texture="%ModDir%/Turrets/turretitems.png" sourcerect="320,3,168,17" depth="0.55" origin="0.5,0.5" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="90.0">
+      <Attack structuredamage="15" itemdamage="10" severlimbsprobability="0.25" penetration="0.2">
+        <Affliction identifier="lacerations" strength="35" />
+        <Affliction identifier="bleeding" strength="50" />
+        <Affliction identifier="stun" strength="0.025" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="3">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <Explosion range="700.0" structuredamage="15" force="10.0" itemdamage="15" severlimbsprobability="0.1" decal="explosion" decalsize="0.5">
+          <Affliction identifier="explosiondamage" strength="60" />
+        </Explosion>
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <Item name="" description="" identifier="scp_tankgunapbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="scp_tankgunloader" />
+    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
+    <Price baseprice="750" displaynonempty="true" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="uex" mincondition="0.95" />
+      <Item identifier="steel" mincondition="0.95" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="c4block" amount="2" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem identifier="aluminium" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="uex" amount="2" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem identifier="scp_tankgunapbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
+    <Sprite name="tankapammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,181,129,176" origin="0.5,0.5" />
+    <ContainedSprite name="tankapammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="322,184,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
+    <Body width="129" height="176" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="scp_tankapproj" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+        <RequiredItem items="scp_tankapproj" type="Contained" />
+      </StatusEffect>
+      <Containable items="scp_tankapproj" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="scp_tankapproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
+    <Sprite texture="%ModDir%/Turrets/turretitems.png" sourcerect="320,20,168,17" depth="0.55" origin="0.5,0.5" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="90.0">
+      <Attack structuredamage="75" itemdamage="10" severlimbsprobability="0.25" maxtargetstohit="2" penetration="0.4">
+        <Affliction identifier="lacerations" strength="80" />
+        <Affliction identifier="explosiondamage" strength="20" probability="0.3" />
+        <Affliction identifier="bleeding" strength="75" />
+        <Affliction identifier="stun" strength="0.025" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="3">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <Explosion range="75.0" structuredamage="20" force="10.0" itemdamage="15" severlimbsprobability="0.1" decal="explosion" decalsize="0.5">
+          <Affliction identifier="explosiondamage" strength="50" />
+        </Explosion>
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <Item name="" description="" identifier="scp_tankgundubox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="scp_tankgunloader" />
+    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
+    <Price baseprice="1000" displaynonempty="true" minleveldifficulty="20">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="uex" mincondition="0.95" />
+      <Item identifier="depletedfuel" mincondition="0.95" />
+      <Item identifier="lead" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="c4block" amount="2" />
+      <RequiredItem identifier="depletedfuel" amount="3" />
+      <RequiredItem identifier="lead" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="45" />
+      <RequiredItem identifier="c4block" amount="2" />
+      <RequiredItem identifier="depletedfuel" amount="3" />
+      <RequiredItem identifier="scp_tankgundubox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
+    <Sprite name="tankduammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,541,129,176" origin="0.5,0.5" />
+    <ContainedSprite name="tankduammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="436,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
+    <Body width="129" height="176" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="scp_tankduproj" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+        <RequiredItem items="scp_tankduproj" type="Contained" />
+      </StatusEffect>
+      <Containable items="scp_tankduproj" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="scp_tankduproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
+    <Sprite texture="%ModDir%/Turrets/turretitems.png" sourcerect="320,3,168,17" depth="0.55" origin="0.5,0.5" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="75.0" maxtargetstohit="4">
+      <Attack structuredamage="25" itemdamage="10" severlimbsprobability="0.25" penetration="0.65">
+        <Affliction identifier="lacerations" strength="65" />
+        <Affliction identifier="explosiondamage" strength="25" probability="0.25" />
+        <Affliction identifier="bleeding" strength="75" />
+        <Affliction identifier="stun" strength="0.025" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="3">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <Explosion range="200.0" structuredamage="20" force="10.0" itemdamage="15" severlimbsprobability="0.1" decal="explosion" decalsize="0.5">
+          <Affliction identifier="explosiondamage" strength="15" />
+          <Affliction identifier="lacerations" strength="25" />
+          <Affliction identifier="radiationsickness" strength="10" />
+        </Explosion>
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <sound file="%ModDir%/Sounds/breach.ogg" volume="1" range="1000" />
+        <ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="15" velocitymin="500" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <Item name="" description="" identifier="scp_tankgunphysbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="scp_tankgunloader" amount="1" probability="0.25" />
+    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
+    <Price baseprice="900" displaynonempty="true" minleveldifficulty="35">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="6" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="physicorium" mincondition="0.95" />
+      <Item identifier="uex" mincondition="0.95" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="85" />
+      <RequiredItem identifier="c4block" amount="3" />
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="aluminium" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="c4block" amount="3" />
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="scp_tankgunphysbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
+    <Sprite name="tankphysammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,360,129,176" origin="0.5,0.5" />
+    <ContainedSprite name="tankphysammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="322,277,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
+    <Body width="129" height="176" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="scp_tankphysproj" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+        <RequiredItem items="scp_tankphysproj" type="Contained" />
+      </StatusEffect>
+      <Containable items="scp_tankphysproj" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="scp_tankphysproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
+    <Sprite texture="%ModDir%/Turrets/turretitems.png" sourcerect="320,38,168,17" depth="0.55" origin="0.5,0.5" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="110.0">
+      <Attack structuredamage="105" itemdamage="10" severlimbsprobability="0.25" maxtargetstohit="2" penetration="0.75">
+        <Affliction identifier="lacerations" strength="100" />
+        <Affliction identifier="explosiondamage" strength="75" probability="0.3" />
+        <Affliction identifier="bleeding" strength="75" />
+        <Affliction identifier="stun" strength="0.025" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="3">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <Explosion range="300.0" structuredamage="20" force="10.0" itemdamage="15" severlimbsprobability="0.1" decal="explosion" decalsize="0.5">
+          <Affliction identifier="explosiondamage" strength="75" />
+        </Explosion>
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <Item name="" description="" identifier="scp_miniguncoilgun" Tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="coilgunequipment">
+    <Sprite name="base" texture="%ModDir%/Turrets/minigunturret.png" depth="0.01" sourcerect="8,123,242,247" canflipy="false" origin="0.5,0.5" />
+    <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
+    <SwappableItem price="12000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+      <SchematicSprite texture="%ModDir%/Turrets/turretschematics.png" sourcerect="459,59,227,423" origin="0.5,0.5" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="coilgunloader" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret canbeselected="false" launchimpulse="80.0" characterusable="false" linkable="true" firingoffset="0,-320" barrelpos="128,88" rotationlimits="180,360" powerconsumption="1750.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="25" reload="0.09" springstiffnesslowskill="2" springstiffnesshighskill="40" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="8">
+      <sound file="%ModDir%/Sounds/coilgunminigun.ogg" range="10000" type="OnUse" volume="1.35" />
+      <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
+      <RailSprite name="rail" texture="%ModDir%/Turrets/minigunturret.png" depth="0.011" sourcerect="365,120,121,240" origin="0.4963203,0.6816194" />
+      <BarrelSprite name="barrel" texture="%ModDir%/Turrets/minigunturret.png" depth="0.012" sourcerect="250,35,109,323" origin="0.6,0.8" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="75" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="50" velocitymax="100" scalemultiplier="8,2" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="50" velocitymax="100" scalemultiplier="3,6" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="5.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" description="" identifier="scp_mgturret" tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="scp_mgturretequipment">
+    <Sprite name="mgturretbase" texture="%ModDir%/Turrets/mgturret.png" depth="0.01" sourcerect="0,190,256,256" canflipy="false" origin="0.5,0.5" />
+    <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
+    <SwappableItem price="2000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+      <SchematicSprite name="mgturretschematic" texture="%ModDir%/Turrets/turretschematics.png" sourcerect="686,0,223,481" origin="0.5,0.5" />
+      <SwapConnectedItem tag="periscope" swapto="periscope" />
+      <SwapConnectedItem tag="turretammosource" swapto="scp_machinegunturretloader" />
+    </SwappableItem>
+    <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
+    <StaticBody width="80" radius="80" />
+    <Turret canbeselected="false" characterusable="false" linkable="true" barrelpos="128,165" firingoffset="0,-320" rotationlimits="180,360" powerconsumption="500.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="0.1" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="3" rotationspeedhighskill="9">
+      <sound file="%ModDir%/Sounds/mgturret.ogg" volume="1.35" range="5000" type="OnUse" />
+      <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
+      <RailSprite name="mgturretrail" texture="%ModDir%/Turrets/mgturret.png" depth="0.011" sourcerect="382,218,119,221" origin="0.52377486,0.79979753" />
+      <BarrelSprite name="mgturretbarrel" texture="%ModDir%/Turrets/mgturret.png" depth="0.012" sourcerect="261,77,115,373" origin="0.5013909,0.8638133" scale="0.55" />
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <MoveSound file="Content/Items/Weapons/RailgunLoop.ogg" />
+      <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg" />
+      <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg" />
+      <RequiredSkill identifier="weapons" level="40" />
+      <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,1.0" />
+      </LightComponent>
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="50" velocitymax="100" scalemultiplier="8,2" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="50" velocitymax="100" scalemultiplier="3,6" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="1000.0" structuredamage="0" force="0.01" camerashake="5.0" flames="false" smoke="false" sparks="false" shockwave="false" underwaterbubble="false" />
+      </StatusEffect>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5" />
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight" />
+      <input name="set_light" displayname="connection.setlight" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" identifier="scp_machinegunturretloader" tags="scp_mgturretequipment,scp_mgturretammosource,turretammosource,scp_mgturretammoloader" category="Machine,Weapon" linkable="true" allowedlinks="scp_mgturret" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Upgrade gameversion="0.14.7.0" rectwidth="82" rectheight="176" itempos="82,-270" />
+    <SwappableItem canbebought="false" origin="82,352" spawnwithid="mgturretammobox" />
+    <Sprite name="mgturretloader" texture="%ModDir%/Turrets/turretitems.png" depth="0.78" sourcerect="3,669,180,354" origin="0.5,0.5" />
+    <DecorativeSprite name="loaderframe" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <StatusEffect type="InWater" target="This" condition="-0.25" />
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="-0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particleburstamount="2" particleburstinterval="2.0" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemin="0" anglemax="359" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="1" scalemax="2.5" anglemin="0" anglemax="359" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particleburstinterval="0.25" particlespersecond="2" scalemin="2.5" scalemax="5.0" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="90,-270" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
+      <GuiFrame relativesize="0.18,0.23" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="mgturretammo" />
+      <StatusEffect type="OnUse" target="Contained">
+        <RequiredItem items="mgturretammo" type="Contained" />
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="" description="" identifier="scp_mgturretfmjbox" scale="0.5" tags="mgturretequipment,mgturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="scp_mgturretloader" amount="1" probability="0.5" />
+    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
+    <Price baseprice="150" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" minavailable="2" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="6" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" minavailable="3" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="3" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="lead" mincondition="0.95" />
+      <Item identifier="steel" mincondition="0.95" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="lead" amount="2" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="15" />
+      <RequiredItem identifier="lead" amount="2" />
+      <RequiredItem identifier="scp_mgturretfmjbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
+    <Sprite name="mgturretammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="331,528,97,80" origin="0.5,0.5" />
+    <Body width="115" height="88" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="scp_mgturretfmjproj" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-0.4" disabledeltatime="true">
+        <RequiredItem items="scp_mgturretfmjproj" type="Contained" />
+      </StatusEffect>
+      <Containable items="scp_mgturretfmjproj" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="scp_mgturretfmjproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
+    <Sprite texture="%ModDir%/Turrets/turretitems.png" sourcerect="430,530,33,8" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="180.0">
+      <Attack structuredamage="2.5" itemdamage="10" severlimbsprobability="0.25" penetration="0.05">
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="gunshotwound" strength="10" probability="0.1" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="bleeding" strength="7.5" probability="0.2" />
+        <Affliction identifier="stun" strength="0.01" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="3">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+  <Item name="" description="" identifier="scp_mgturretapbox" scale="0.5" tags="mgturretequipment,mgturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="scp_mgturretloader" amount="1" probability="0.5" />
+    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
+    <Price baseprice="275" displaynonempty="true" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" minavailable="2" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="6" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.3" minavailable="3" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="3" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="lead" mincondition="0.95" />
+      <Item identifier="titanium" mincondition="0.95" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="titanium" mincondition="0.5" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="15" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="titanium" mincondition="0.5" />
+      <RequiredItem identifier="scp_mgturretapbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
+    <Sprite name="mgturretammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="331,609,97,80" origin="0.5,0.5" />
+    <Body width="115" height="88" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifiers="scp_mgturretapproj" spawnposition="ThisInventory" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-0.4" disabledeltatime="true">
+        <RequiredItem items="scp_mgturretapproj" type="Contained" />
+      </StatusEffect>
+      <Containable items="scp_mgturretapproj" />
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="scp_mgturretapproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
+    <Sprite texture="%ModDir%/Turrets/turretitems.png" sourcerect="430,538,33,8" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="180.0">
+      <Attack structuredamage="6" itemdamage="10" severlimbsprobability="0.25" penetration="0.25">
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="explosiondamage" strength="8" probability="0.2" />
+        <Affliction identifier="bleeding" strength="5" />
+        <Affliction identifier="stun" strength="0.01" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="3">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This">
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+  </Item>
+</Items>

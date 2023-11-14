@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Conversations identifier="NOT_vanillaconversations" Language="English"> <!--vanillaconversations is taken-->
+  <Conversation line="I'd kill for some meth right now." speaker="0" flags="MethWithdrawalMedium">
+    <Conversation line="I think you should cut back on the methamphetamine for a while." speaker="1" allowedjobs="medicaldoctor" />
+    <Conversation line="Better watch what you say, junkie." speaker="1" speakertags="rude" />
+  </Conversation>
+  <Conversation line="I can't do this." speaker="0" flags="MethWithdrawalMedium" />
+  <Conversation line="I think I'm going to throw up." speaker="0" flags="MethWithdrawalMedium" />
+  <Conversation line="I shouldn't be here. I want to go home." speaker="0" flags="MethWithdrawalMedium" />
+  <Conversation line="I feel like I'm dying! I can't do this!" speaker="0" flags="MethWithdrawalHigh">
+    <!--<Conversation line="We need to do something about this." speaker="1" allowedjobs="medicaldoctor"/>-->
+    <Conversation line="Cut it out." speaker="1" speakertags="rude" />
+    <Conversation line="" speaker="0" />
+  </Conversation>
+  <Conversation line="I need some of that anabolic stuff..." speaker="0" flags="SteroidWithdrawalMedium">
+    <Conversation line="I think you should cut back on the anabolic steroids for a while." speaker="1" allowedjobs="medicaldoctor" />
+    <Conversation line="No you don't, you're fine, junkie." speaker="1" speakertags="rude" />
+  </Conversation>
+  <Conversation line="I can't do this." speaker="0" flags="SteroidWithdrawalMedium" />
+  <Conversation line="I think I'm going to throw up." speaker="0" flags="SteroidWithdrawalMedium" />
+  <Conversation line="I shouldn't be here. I want to go home." speaker="0" flags="SteroidWithdrawalMedium" />
+  <Conversation line="Craving a beer right now..." speaker="0" flags="AlcoholWithdrawalLow" />
+  <Conversation line="Could do with a beer." speaker="0" flags="AlcoholWithdrawalLow" />
+  <Conversation line="I need a beer, it's been a bit." speaker="0" flags="AlcoholWithdrawalMedium">
+    <Conversation line="You shouldn't drink on the job." speaker="1" allowedjobs="medicaldoctor" />
+  </Conversation>
+  <Conversation line="Anybody seen a beer nearby?" speaker="0" flags="AlcoholWithdrawalMedium" />
+  <Conversation line="Need me some alcohol." speaker="0" flags="AlcoholWithdrawalMedium" />
+  <Conversation line="Hey! Did someone drink my alcohol?" speaker="0" flags="AlcoholWithdrawalMedium">
+    <Conversation line="Nope, you drank it all." speaker="1" />
+    <Conversation line="Are you lying to me?" speaker="0" />
+  </Conversation>
+  <Conversation line="Goddamn, I really could use some alcohol..." speaker="0" flags="AlcoholWithdrawalHigh">
+    <Conversation line="You shouldn't drink on the job." speaker="1" allowedjobs="medicaldoctor" />
+    <Conversation line="Cut it out." speaker="1" speakertags="rude" />
+    <Conversation line="" speaker="0" />
+  </Conversation>
+  <Conversation line="I need it... I need flesh..." speaker="0" flags="FleshWithdrawalMedium">
+    <Conversation line="You need to stop eating human flesh, it could give you a disease." speaker="1" allowedjobs="medicaldoctor" />
+    <Conversation line="Are you insane?" speaker="1" speakertags="rude" />
+  </Conversation>
+  <Conversation line="I can't do this." speaker="0" flags="FleshWithdrawalMedium" />
+  <Conversation line="I think I'm going to throw up." speaker="0" flags="FleshWithdrawalMedium" />
+  <Conversation line="I shouldn't be here. I really need a slab of flesh." speaker="0" flags="FleshWithdrawalMedium" />
+  <Conversation line="I feel like I'm dying! I can't do this! I need meat!" speaker="0" flags="FleshWithdrawalHigh">
+    <Conversation line="We need to do something about the cannibalism happening around here." speaker="1" allowedjobs="medicaldoctor" />
+    <Conversation line="Cut it out." speaker="1" speakertags="rude" />
+    <Conversation line="" speaker="0" />
+  </Conversation>
+</Conversations>

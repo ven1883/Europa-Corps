@@ -1,0 +1,934 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--Civilian First Aid Kit-->
+  <Item name="" description="" identifier="scp_smallcivkit" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.35" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" minamount="0" maxamount="2" spawnprobability="0.75" />
+    <PreferredContainer primary="supplycab" minamount="0" maxamount="1" spawnprobability="0.95" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="2" spawnprobability="0.4" />
+    <Price baseprice="275">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" maxavailable="2" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" maxavailable="4" />
+      <Price storeidentifier="merchantresearch" minavailable="2" maxavailable="4" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" maxavailable="4" />
+      <Price storeidentifier="merchantmine" minavailable="2" maxavailable="4" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" maxavailable="4" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="15">
+      <RequiredSkill identifier="medical" level="15" />
+      <RequiredItem identifier="antibleeding1" amount="2" />
+      <RequiredItem identifier="antidama1" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="organicfiber" amount="2" />
+    </Deconstruct>
+    <SuitableTreatment type="bleeding" suitability="15" />
+    <SuitableTreatment type="burn" suitability="18" />
+    <SuitableTreatment type="lacerations" suitability="5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="0,4,43,69" depth="0.6" origin="0.5,0.5" />
+    <Body width="43" height="69" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="3.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-20.0" disabledeltatime="true">
+        <Sound file="%ModDir%/Medical/Sounds/Bandage1.ogg" type="OnUse" range="800" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="This, Limb" duration="7.0" delay="1.75">
+        <ReduceAffliction type="bleeding" amount="3.25" />
+        <ReduceAffliction type="lacerations" amount="2" />
+        <ReduceAffliction type="blunttrauma" amount="1.5" />
+        <ReduceAffliction type="bitewounds" amount="2" />
+        <ReduceAffliction type="explosiondamage" amount="0.5" />
+        <ReduceAffliction type="gunshotwound" amount="0.5" />
+        <ReduceAffliction type="burn" amount="1.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="0" />
+  </Item>
+  <Item name="" description="" identifier="scp_armykit" category="Medical" Tags="smallitem,medical" maxstacksize="2" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.4" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" minamount="0" maxamount="2" spawnprobability="0.1" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <Price baseprice="700" minleveldifficulty="10">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="0" maxavailable="2" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="25">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="scp_smallcivkit" />
+      <RequiredItem identifier="antibleeding2" amount="4" />
+      <RequiredItem identifier="antidama1" amount="2" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="antibleeding1" copycondition="true" />
+      <Item identifier="antidama1" copycondition="true" />
+      <Item identifier="antibleeding1" copycondition="true" />
+    </Deconstruct>
+    <SuitableTreatment type="bleeding" suitability="15" />
+    <SuitableTreatment type="lacerations, gunshotwound, blunttrauma" suitability="7" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="44,3,52,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="52" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" handle2="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="50" />
+      <StatusEffect type="OnUse" target="This" Condition="-25.0" disabledeltatime="true">
+        <Sound file="%ModDir%/Medical/Sounds/Bandage1.ogg" type="OnUse" range="800" />
+        <Sound file="%ModDir%/Medical/Sounds/Bandage2.ogg" type="OnUse" range="800" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This" Condition="-30" disabledeltatime="true">
+        <Sound file="%ModDir%/Medical/Sounds/Bandage1.ogg" type="OnUse" range="800" />
+        <Sound file="%ModDir%/Medical/Sounds/Bandage2.ogg" type="OnUse" range="800" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="This, Limb" duration="8.0" delay="2">
+        <ReduceAffliction type="bleeding" amount="7.5" />
+        <ReduceAffliction type="lacerations" amount="4" />
+        <ReduceAffliction type="gunshotwound" amount="4" />
+        <ReduceAffliction type="bitewounds" amount="2" />
+        <ReduceAffliction type="explosiondamage" amount="2" />
+        <ReduceAffliction type="blunttrauma" amount="0.25" />
+        <ReduceAffliction type="burn" amount="0.25" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Limb, This" duration="7.0" delay="2">
+        <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        <ReduceAffliction type="bleeding" amount="4" />
+        <ReduceAffliction type="lacerations" amount="1.75" />
+        <ReduceAffliction type="gunshotwound" amount="1.75" />
+        <ReduceAffliction type="explosiondamage" amount="1.5" />
+        <ReduceAffliction type="blunttrauma" amount="0.1" />
+        <ReduceAffliction type="burn" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="50" />
+  </Item>
+  <Item name="" description="" identifier="scp_surgicalkit" category="Medical" maxstacksize="2" maxstacksizecharacterinventory="1" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.5" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.03" minleveldifficulty="15" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.02" />
+    <Price baseprice="1000" minleveldifficulty="35">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="2" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="40">
+      <RequiredSkill identifier="medical" level="90" />
+      <RequiredItem identifier="scp_armykit" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="antibleeding2" amount="2" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="antibleeding2" amount="2" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <SuitableTreatment type="bleeding" suitability="35" />
+    <SuitableTreatment type="lacerations, gunshotwound, blunttrauma" suitability="25" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="97,17,85,53" depth="0.6" origin="0.5,0.5" />
+    <Body width="52" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" handle2="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="85" />
+      <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-50" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This">
+        <Sound file="%ModDir%/Medical/Sounds/surgkit.ogg" type="OnUse" range="800" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <Sound file="%ModDir%/Medical/Sounds/surgkit.ogg" type="OnUse" range="800" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="This, Limb" delay="3" duration="5.0" interval="0.2">
+        <ReduceAffliction type="bleeding" amount="24" />
+        <ReduceAffliction type="lacerations" amount="16" />
+        <ReduceAffliction type="gunshotwound" amount="24" />
+        <ReduceAffliction type="bitewounds" amount="12" />
+        <ReduceAffliction type="explosiondamage" amount="8" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="This, Limb" delay="3">
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="1200" />
+        <Affliction identifier="bleeding" amount="900" />
+        <Affliction identifier="bleeding" amount="1800" probability="0.33" />
+        <Affliction identifier="stun" amount="15" />
+        <Affliction identifier="lacerations" amount="1600" />
+        <Affliction identifier="lacerations" amount="3600" probability="0.25" />
+        <Affliction identifier="lacerations" amount="2400" probability="0.1" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="This, Limb" delay="6" duration="3.0" interval="0.25">
+        <ReduceAffliction type="bleeding" amount="1" />
+        <ReduceAffliction type="lacerations" amount="1" />
+        <ReduceAffliction type="gunshotwound" amount="3" />
+        <ReduceAffliction type="bitewounds" amount="2" />
+        <ReduceAffliction type="explosiondamage" amount="2.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="85" />
+  </Item>
+  <Item name="" description="" identifier="scp_tourniquet" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="1" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.03" minleveldifficulty="10" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="800" minleveldifficulty="20">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="2" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="40">
+      <RequiredSkill identifier="medical" level="75" />
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem identifier="rubber" amount="2" />
+      <RequiredItem identifier="antibleeding2" amount="2" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="antibleeding2" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <SuitableTreatment type="bleeding" suitability="35" />
+    <SuitableTreatment type="lacerations, gunshotwound, blunttrauma" suitability="25" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="55,98,67,69" depth="0.6" origin="0.5,0.5" />
+    <Body width="52" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" handle2="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="75" />
+      <StatusEffect type="OnUse" target="This" Condition="-100" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This">
+        <Sound file="%ModDir%/Medical/Sounds/tourniquet.ogg" type="OnUse" range="800" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <Sound file="%ModDir%/Medical/Sounds/tourniquet.ogg" type="OnUse" range="800" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="This, Limb" delay="3" duration="2.0" interval="0.2">
+        <ReduceAffliction type="bleeding" amount="64" />
+        <ReduceAffliction type="damage" amount="4" />
+        <Affliction identifier="blunttrauma" amount="5" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="This, Limb" delay="3">
+        <Sound file="Content/Sounds/Damage/LimbBlunt4.ogg" range="1200" volume="1.25" />
+        <Affliction identifier="blunttrauma" amount="2400" />
+        <Affliction identifier="bleeding" amount="1800" probability="0.33" />
+        <Affliction identifier="stun" amount="15" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="75" />
+  </Item>
+  <Item name="" description="" identifier="scp_painkillers" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.55" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" minamount="1" maxamount="2" spawnprobability="0.5" />
+    <PreferredContainer primary="supplycab" minamount="0" maxamount="1" spawnprobability="0.5" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="1" spawnprobability="0.15" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="2" spawnprobability="0.25" />
+    <Price baseprice="125">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="2" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="3" />
+      <Price storeidentifier="merchantmine" minavailable="0" maxavailable="2" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" maxavailable="3" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="20">
+      <RequiredSkill identifier="medical" level="30" />
+      <RequiredItem identifier="opium" mincondition="0.25" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="plastic" mincondition="0.1" outcondition="0.5" />
+    </Deconstruct>
+    <SuitableTreatment type="organdamage" suitability="10" />
+    <InventoryIcon texture="%ModDir%/Medical/medical.png" sourcerect="264,30,22,38" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="264,30,22,38" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-20" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="120.0">
+        <Sound file="%ModDir%/Medical/Sounds/Pill.ogg" type="OnUse" range="900" />
+        <ReduceAffliction identifier="organdamage" amount="0.25" />
+        <ReduceAffliction identifier="blunttrauma" amount="0.25" />
+        <ReduceAffliction identifier="bitewounds" amount="0.25" />
+        <ReduceAffliction identifier="gunshotwound" amount="0.25" />
+        <ReduceAffliction identifier="explosiondamage" amount="0.25" />
+        <Affliction identifier="opiateoverdose" amount="0.02" />
+        <Affliction identifier="opiateaddiction" amount="0.05" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="20" />
+  </Item>
+  <Item name="" identifier="scp_firelatexhot" category="Weapon" subcategory="Chemical Weapons" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="toxcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="750" minleveldifficulty="15">
+      <Price locationtype="outpost" multiplier="1" sold="false" />
+      <Price locationtype="city" multiplier="0.9" sold="false" />
+      <Price locationtype="research" multiplier="0.9" minavailable="4" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.75" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="chemstation" requiredtime="15" amount="2">
+      <RequiredSkill identifier="medical" level="65" />
+      <RequiredItem identifier="scp_firelatex" />
+      <RequiredItem identifier="flashpowder" amount="2" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="scp_firelatex" outcondition="0.5" />
+      <Item identifier="flashpowder" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Medical/medical.png" sourcerect="287,9,33,69" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="287,9,33,69" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <RequiredSkill identifier="medical" level="65" />
+      <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="15" interval="0.75">
+        <Sound file="%ModDir%/Medical/Sounds/Syringelatex.ogg" range="500" />
+        <Affliction identifier="scp_firelatexburn" amount="6" />
+        <Affliction identifier="organdamage" amount="2" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="7.5">
+        <Sound file="%ModDir%/Medical/Sounds/Syringelatexfail.ogg" range="1200" />
+        <Affliction identifier="scp_firelatexburn" amount="4" />
+        <Affliction identifier="organdamage" amount="1.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="30.0" sticktocharacters="true" launchrotation="-90" maxtargetstohit="1">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="%ModDir%/Medical/Sounds/latexfail.ogg" range="1000" volume="1.2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" duration="5" interval="0.75">
+        <Affliction identifier="scp_firelatexburn" amount="5" />
+        <Affliction identifier="organdamage" amount="2.5" />
+      </StatusEffect>
+    </Projectile>
+    <SkillRequirementHint identifier="medical" level="65" />
+  </Item>
+  <Item name="" identifier="scp_replicatinglatexrefined" category="Weapon" subcategory="Chemical Weapons" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="medcab" minamount="0" maxamount="4" spawnprobability="0.2" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="800" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="2" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="3" />
+      <Price storeidentifier="merchantmine" minavailable="0" maxavailable="2" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" maxavailable="3" />
+    </Price>
+    <SuitableTreatment type="scp_presolatexinfection" suitability="50" />
+    <SuitableTreatment type="burn" suitability="50" />
+    <Fabricate suitablefabricators="chemstation" requiredtime="20">
+      <RequiredSkill identifier="medical" level="70" />
+      <RequiredItem identifier="scp_replicatinglatex" />
+      <RequiredItem identifier="plastic" mincondition="0.25" />
+      <RequiredItem identifier="stabilozine" />
+      <RequiredItem identifier="flashpowder" mincondition="0.5" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="scp_replicatinglatex" copycondition="true" mincondition="0.1" />
+      <Item identifier="plastic" copycondition="true" mincondition="0.1" />
+      <Item identifier="flashpowder" copycondition="true" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Medical/medical.png" sourcerect="322,9,32,69" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="322,9,32,69" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFailure" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-25.0" disabledeltatime="true" />
+      <RequiredSkill identifier="medical" level="70" />
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="15">
+        <Sound file="%ModDir%/Medical/Sounds/Syringelatex.ogg" range="500" />
+        <ReduceAffliction type="nausea" amount="5" />
+        <ReduceAffliction type="burn" amount="8" />
+        <ReduceAffliction identifier="radiationsickness" amount="6" />
+        <ReduceAffliction identifier="blunttrauma" amount="3" />
+        <ReduceAffliction identifier="lacerations" amount="3" />
+        <ReduceAffliction identifier="organdamage" amount="2" />
+        <ReduceAffliction identifier="scp_presolatexinfection" amount="10" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="10">
+        <Sound file="%ModDir%/Medical/Sounds/Syringelatexfail.ogg" range="1200" />
+        <Affliction identifier="nausea" amount="8" />
+        <ReduceAffliction type="burn" amount="8" />
+        <ReduceAffliction identifier="radiationsickness" amount="4" />
+        <ReduceAffliction identifier="blunttrauma" amount="1" />
+        <ReduceAffliction identifier="lacerations" amount="1" />
+        <ReduceAffliction identifier="scp_presolatexinfection" amount="5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="25.0" sticktocharacters="true" launchrotation="-90">
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Sound file="%ModDir%/Medical/Sounds/Syringelatexfail.ogg" range="1000" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="10">
+        <ReduceAffliction type="nausea" amount="5" />
+        <ReduceAffliction type="burn" amount="4" />
+        <ReduceAffliction identifier="radiationsickness" amount="7" />
+        <ReduceAffliction identifier="blunttrauma" amount="5" />
+        <ReduceAffliction identifier="lacerations" amount="5" />
+      </StatusEffect>
+    </Projectile>
+    <SkillRequirementHint identifier="medical" level="70" />
+  </Item>
+  <Item name="" identifier="scp_diamorphine" description="" category="Material" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" minamount="0" maxamount="4" spawnprobability="0.2" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="1" spawnprobability="0.15" />
+    <PreferredContainer primary="outposttrashcan" minamount="0" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="locker" />
+    <Price baseprice="600">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="2" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="3" />
+      <Price storeidentifier="merchantmine" minavailable="0" maxavailable="2" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" maxavailable="3" />
+    </Price>
+    <SuitableTreatment type="damage" suitability="50" />
+    <SuitableTreatment identifier="huskinfection" suitability="30" />
+    <SuitableTreatment identifier="opiatewithdrawal" suitability="5" />
+    <SuitableTreatment type="burn" suitability="1" />
+    <SuitableTreatment identifier="opiateoverdose" suitability="-100" />
+    <SuitableTreatment identifier="opiateaddiction" suitability="-5" />
+    <SuitableTreatment identifier="oxygenlow" suitability="-20" />
+    <Fabricate suitablefabricators="chemstation" requiredtime="30">
+      <RequiredSkill identifier="medical" level="65" />
+      <RequiredItem identifier="opium" amount="2" />
+      <RequiredItem identifier="scp_replicatinglatex" mincondition="0.5" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="opium" copycondition="true" mincondition="0.1" />
+      <Item identifier="opium" copycondition="true" mincondition="0.1" />
+    </Deconstruct>
+    <InventoryIcon name="diainv" texture="%ModDir%/Medical/medical.png" sourcerect="1,354,56,55" origin="0.5,0.5" />
+    <Sprite texture="medical.png" sourcerect="356,11,37,68" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <RequiredSkill identifier="medical" level="75" />
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="10">
+        <Sound file="%ModDir%/Medical/Sounds/Syringe.ogg" range="500" />
+        <ReduceAffliction type="damage" amount="20" />
+        <ReduceAffliction type="burn" amount="5" />
+        <ReduceAffliction type="huskinfection" amount="2.5" />
+        <ReduceAffliction type="poison" amount="1.5" />
+        <Affliction identifier="opiateaddiction" amount="6" />
+        <Affliction identifier="psychosis" amount="3" />
+        <Affliction identifier="opiateoverdose" amount="3" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="60" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="7">
+        <Sound file="%ModDir%/Medical/Sounds/Syringe.ogg" range="500" />
+        <ReduceAffliction type="damage" amount="10" />
+        <ReduceAffliction type="burn" amount="1" />
+        <ReduceAffliction type="huskinfection" amount="1" />
+        <Affliction identifier="oxygenlow" amount="6" />
+        <Affliction identifier="nausea" amount="10" />
+        <Affliction identifier="organdamage" amount="5" />
+        <Affliction identifier="psychosis" amount="8" />
+        <Affliction identifier="opiateaddiction" amount="12" />
+        <Affliction identifier="opiateoverdose" amount="6" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="30" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
+    <SkillRequirementHint identifier="medical" level="65" />
+  </Item>
+  <Item name="" identifier="scp_vodka" description="" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,petfood2" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab" amount="2" spawnprobability="0.175" />
+    <PreferredContainer secondary="abandonedcrewcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+    <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.5" notcampaign="true" />
+    <PreferredContainer primary="medfabcab" secondary="medcab" />
+    <Price baseprice="175" minleveldifficulty="3">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" minavailable="2" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" minavailable="8" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30">
+      <RequiredSkill identifier="medical" level="35" />
+      <RequiredSkill identifier="helm" level="20" />
+      <RequiredItem identifier="ethanol" amount="4" />
+      <RequiredItem identifier="plastic" amount="2" />
+    </Fabricate>
+    <InventoryIcon name="vodkainv" texture="%ModDir%/Medical/medical.png" sourcerect="118,367,57,58" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="328,90,21,72" depth="0.6" origin="0.5,0.5" />
+    <Body width="30" height="55" density="20" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse">
+        <Sound file="%ModDir%/Sounds/ethanoldrink.ogg" range="600" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" delay="2" duration="20">
+        <ReduceAffliction identifier="radiationsickness" amount="0.75" />
+        <ReduceAffliction identifier="poison" amount="0.5" />
+        <ReduceAffliction identifier="oxygenlow" amount="5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" delay="10" duration="10">
+        <Affliction identifier="drunk" amount="4" />
+        <ReduceAffliction identifier="psychosis" amount="4" />
+        <ReduceAffliction identifier="hallucinating" amount="4" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" delay="20" duration="20">
+        <Affliction identifier="nausea" amount="2.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
+        <Affliction identifier="psychosisresistance" amount="600" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  <Item name="" identifier="scp_pomegrenadedrink" description="" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,petfood2" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab" amount="2" spawnprobability="0.175" />
+    <PreferredContainer secondary="abandonedcrewcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+    <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.5" notcampaign="true" />
+    <PreferredContainer primary="medfabcab" secondary="medcab" />
+    <Price baseprice="275">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="8" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" minavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" minavailable="6" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30">
+      <RequiredSkill identifier="medical" level="35" />
+      <RequiredSkill identifier="helm" level="20" />
+      <RequiredItem identifier="scp_vodka" mincondition="0.5" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="creepingorange" />
+    </Fabricate>
+    <InventoryIcon name="vodkainv" texture="%ModDir%/Medical/medical.png" sourcerect="347,383,59,59" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="328,175,21,72" depth="0.6" origin="0.5,0.5" />
+    <Body width="30" height="55" density="20" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse">
+        <Sound file="%ModDir%/Sounds/ethanoldrink.ogg" range="600" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" delay="2" duration="35">
+        <ReduceAffliction identifier="radiationsickness" amount="0.5" />
+        <ReduceAffliction identifier="poison" amount="0.5" />
+        <ReduceAffliction identifier="airborneinfection" amount="0.5" />
+        <ReduceAffliction identifier="damage" amount="1" />
+        <ReduceAffliction identifier="oxygenlow" amount="2.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" delay="10" duration="15">
+        <Affliction identifier="drunk" amount="1.5" />
+        <ReduceAffliction identifier="psychosis" amount="4" />
+        <ReduceAffliction identifier="hallucinating" amount="4" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" delay="20" duration="20">
+        <Affliction identifier="nausea" amount="1.1" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
+        <Affliction identifier="psychosisresistance" amount="600" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  <Item name="" description="" identifier="scp_propital" category="Medical" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" />
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="2" spawnprobability="0.06" />
+    <PreferredContainer secondary="abandonedcrewcab" minamount="0" maxamount="2" spawnprobability="0.02" />
+    <Price baseprice="500" sold="false"></Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30">
+      <RequiredSkill identifier="medical" level="65" />
+      <RequiredItem identifier="antidama1" />
+      <RequiredItem identifier="scp_vodka" mincondition="0.5" />
+      <RequiredItem identifier="steroids" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="steroids" />
+    </Deconstruct>
+    <InventoryIcon name="propitinv" texture="%ModDir%/Medical/medical.png" sourcerect="5,291,56,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="360,84,65,10" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="10" density="15" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <RequiredSkill identifier="medical" level="65" />
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="360.0">
+        <Sound file="%ModDir%/Medical/Sounds/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="oxygenlow" amount="3" />
+        <ReduceAffliction identifier="bleeding" amount="1.5" />
+        <ReduceAffliction identifier="damage" amount="0.75" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" disabledeltatime="true">
+        <Affliction identifier="strengthen" amount="200" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="120.0">
+        <Sound file="%ModDir%/Medical/Sounds/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="oxygenlow" amount="1.5" />
+        <ReduceAffliction identifier="bleeding" amount="0.5" />
+        <ReduceAffliction identifier="damage" amount="0.25" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" disabledeltatime="true">
+        <Affliction identifier="strengthen" amount="100" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="65" />
+  </Item>
+  <Item name="" description="" identifier="scp_condensedstabilozine" maxstacksize="2" maxstacksizecharacterinventory="1" category="Medical" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" minamount="1" maxamount="2" spawnprobability="0.2" />
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="2" spawnprobability="0.1" />
+    <Price baseprice="475" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" maxavailable="6" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" minavailable="1" maxavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.1" minavailable="0" maxavailable="2" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="stabilozine" amount="2" />
+      <RequiredItem identifier="steroids" mincondition="0.5" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="steroids" />
+    </Deconstruct>
+    <InventoryIcon name="constabinv" texture="%ModDir%/Medical/medical.png" sourcerect="124,292,56,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="360,106,65,10" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="10" density="15" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <RequiredSkill identifier="medical" level="65" />
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="35.0">
+        <Sound file="%ModDir%/Medical/Sounds/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="poison" amount="8" />
+        <ReduceAffliction identifier="huskinfection" amount="4" />
+        <ReduceAffliction identifier="radiationsickness" amount="2" />
+        <ReduceAffliction identifier="damage" amount="0.2" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="25.0">
+        <Sound file="%ModDir%/Medical/Sounds/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="poison" amount="4" />
+        <ReduceAffliction identifier="radiationsickness" amount="1" />
+        <Affliction identifier="organdamage" amount="1.5" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" disabledeltatime="true">
+        <Affliction identifier="strengthen" amount="50" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="65" />
+  </Item>
+  <Item name="" description="" identifier="scp_adrenaline" category="Medical" maxstacksize="2" maxstacksizecharacterinventory="1" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" minamount="0" maxamount="2" spawnprobability="0.25" />
+    <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="2" spawnprobability="0.06" />
+    <PreferredContainer secondary="abandonedcrewcab" minamount="0" maxamount="2" spawnprobability="0.02" />
+    <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.05" notcampaign="true" />
+    <Price baseprice="350" sold="false"></Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30">
+      <RequiredSkill identifier="medical" level="40" />
+      <RequiredItem identifier="sodium" />
+      <RequiredItem identifier="adrenaline" amount="3" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="steroids" />
+    </Deconstruct>
+    <InventoryIcon name="adrenalineinv" texture="%ModDir%/Medical/medical.png" sourcerect="66,291,56,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="360,95,65,10" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="10" density="15" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <RequiredSkill identifier="medical" level="35" />
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="20.0">
+        <Sound file="%ModDir%/Medical/Sounds/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="oxygenlow" amount="6" />
+        <ReduceAffliction identifier="bleeding" amount="0.25" />
+        <ReduceAffliction identifier="damage" amount="0.1" />
+        <Affliction identifier="haste" amount="18" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" disabledeltatime="true" duration="10.0">
+        <Sound file="%ModDir%/Medical/Sounds/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="oxygenlow" amount="2" />
+        <ReduceAffliction identifier="bleeding" amount="0.1" />
+        <ReduceAffliction identifier="damage" amount="0.05" />
+        <Affliction identifier="haste" amount="9" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="35" />
+  </Item>
+  <Item name="" identifier="scp_devilsblood" maxstacksize="2" description="" category="Weapon" subcategory="Chemical Weapons" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="toxcab" amount="1" spawnprobability="0.075" />
+    <PreferredContainer secondary="toxcontainer" />
+    <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,wreckmedcab" amount="1" spawnprobability="0.05" />
+    <Price baseprice="650" sold="false"></Price>
+    <Fabricate suitablefabricators="chemstation" requiredtime="40">
+      <RequiredSkill identifier="medical" level="65" />
+      <RequiredItem identifier="sulphuricacid" amount="2" />
+      <RequiredItem identifier="scp_firelatex" mincondition="0.5" />
+      <RequiredItem identifier="scp_replicatinglatex" mincondition="0.5" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="sulphuricacid" />
+      <Item identifier="scp_firelatex" outcondition="0.5" />
+    </Deconstruct>
+    <InventoryIcon name="devilsinv" texture="%ModDir%/Medical/medical.png" sourcerect="177,371,56,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="439,121,35,66" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="600" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnUse" target="UseTarget">
+        <Affliction identifier="scp_devilpoisoning" amount="1" />
+        <Affliction identifier="nausea" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="17.5" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
+  </Item>
+  <Item name="" identifier="scp_wastingdiseasesyringe" description="" category="Medical" subcategory="Biological Weapons" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="toxcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="toxcontainer" />
+    <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,wreckmedcab" amount="1" spawnprobability="0.03" />
+    <Price baseprice="650" sold="false"></Price>
+    <Fabricate suitablefabricators="chemstation" requiredtime="35">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="alienblood" />
+      <RequiredItem identifier="sufforin" />
+      <RequiredItem identifier="scp_replicatinglatex" mincondition="0.5" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="alienblood" />
+      <Item identifier="sufforin" outcondition="0.5" />
+    </Deconstruct>
+    <InventoryIcon name="prioninv" texture="%ModDir%/Medical/medical.png" sourcerect="234,377,55,56" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="476,122,36,66" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="600" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnUse" target="UseTarget">
+        <Affliction identifier="scp_wastingdisease" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="" identifier="scp_wastingdiseasecure" description="" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="toxcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="toxcontainer" />
+    <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,wreckmedcab" amount="1" spawnprobability="0.01" />
+    <Price baseprice="650" sold="false"></Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="35" amount="2">
+      <RequiredSkill identifier="medical" level="35" />
+      <RequiredItem identifier="antibloodloss1" mincondition="0.5" />
+      <RequiredItem identifier="stabilozine" amount="2" />
+      <RequiredItem identifier="scp_wastingdiseasesyringe" mincondition="0.5" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="stabilozine" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <SuitableTreatment type="scp_wastingdisease" suitability="90" />
+    <InventoryIcon name="antiprioninv" texture="%ModDir%/Medical/medical.png" sourcerect="289,384,54,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="476,122,36,66" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="600" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="60">
+        <ReduceAffliction type="scp_wastingdisease" amount="5" />
+        <ReduceAffliction type="paralysis" amount="3" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="" identifier="scp_lineavirussyringe" description="" category="Medical" subcategory="Biological Weapons" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="toxcab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="toxcontainer" />
+    <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,wreckmedcab" amount="2" spawnprobability="0.01" />
+    <Price baseprice="650" sold="false"></Price>
+    <Fabricate suitablefabricators="chemstation" requiredtime="30">
+      <RequiredSkill identifier="medical" level="50" />
+      <RequiredItem identifier="antibloodloss1" />
+      <RequiredItem identifier="sufforin" mincondition="0.5" />
+      <RequiredItem identifier="scp_replicatinglatex" mincondition="0.25" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="antibloodloss2" />
+      <Item identifier="sulphuricacid" outcondition="0.5" />
+    </Deconstruct>
+    <InventoryIcon name="virusinv" texture="%ModDir%/Medical/medical.png" sourcerect="175,435,55,56" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="514,122,37,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="600" />
+      </StatusEffect>
+      <StatusEffect tags="poison" type="OnUse" target="UseTarget">
+        <Affliction identifier="scp_lineavirus" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="" identifier="scp_lineaviruscure" description="" category="Material" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <PreferredContainer primary="toxcab" amount="2" spawnprobability="0.075" />
+    <PreferredContainer secondary="toxcontainer" />
+    <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,wreckmedcab" amount="2" spawnprobability="0.025" />
+    <Price baseprice="650" sold="false"></Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="35">
+      <RequiredSkill identifier="medical" level="35" />
+      <RequiredItem identifier="antibiotics" />
+      <RequiredItem identifier="stabilozine" amount="2" />
+      <RequiredItem identifier="scp_lineavirussyringe" mincondition="0.5" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="stabilozine" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <SuitableTreatment type="scp_lineavirus" suitability="90" />
+    <InventoryIcon name="antivarusinv" texture="%ModDir%/Medical/medical.png" sourcerect="233,436,54,55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="476,122,36,66" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="600" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="60">
+        <ReduceAffliction type="scp_lineavirus" amount="5" />
+        <ReduceAffliction type="oxygenlow" amount="5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="Follower Protective Serum" identifier="scp_npcprotectionsepfollower" description="Not meant for player characters, is used to prevent easy cheesing of abandoned outposts" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="protectedbot" />
+        <Afflicion identfier="npcprotection" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" description="" identifier="scp_psyblock" category="Medical" Tags="smallitem,medical" maxstacksize="4" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.55" impactsoundtag="impact_soft" RequireAimToUse="True">
+    <PreferredContainer primary="medcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="wreckmedcab,abandonedmedcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="10" />
+    <PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="2" spawnprobability="0.05" minleveldifficulty="15" />
+    <Price baseprice="550" minleveldifficulty="10">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="0" maxavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="2" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="false" />
+      <Price storeidentifier="merchantmine" minavailable="0" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="20">
+      <RequiredSkill identifier="medical" level="75" />
+      <RequiredItem identifier="dementonite" mincondition="0.5" />
+      <RequiredItem identifier="stabilozine" amount="2" />
+      <RequiredItem identifier="antipsychosis" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="stabilozine" />
+    </Deconstruct>
+    <SuitableTreatment type="scp_psidamage" suitability="100" />
+    <Sprite texture="%ModDir%/Medical/medical.png" sourcerect="6,104,30,20" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="psyblockinv" texture="%ModDir%/Medical/medical.png" sourcerect="1,129,45,45" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="20" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
+      <RequiredSkill identifier="medical" level="20" />
+      <StatusEffect type="OnUse" target="This" Condition="-25" disabledeltatime="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-50" disabledeltatime="true" />
+      <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="15.0">
+        <Sound file="%ModDir%/Medical/Sounds/pillantipsy.ogg" type="OnUse" volume="1.5" range="900" />
+        <ReduceAffliction identifier="scp_psidamage" amount="0.75" />
+        <ReduceAffliction identifier="psychosis" amount="6" />
+        <Affliction identifier="scp_psiresistance" amount="5" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="15">
+        <Conditional scp_ae035curse="lt 100" />
+        <ReduceAffliction identifier="scp_ae035curse" amount="1" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="7.5">
+        <Conditional scp_ae035curse="lt 100" />
+        <ReduceAffliction identifier="scp_ae035curse" amount="0.25" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="15">
+        <Conditional scp_psidamagechronic="lt 15" />
+        <ReduceAffliction identifier="scp_psidamagechronic" amount="0.2" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="7.5">
+        <ReduceAffliction identifier="scp_psidamage" amount="0.25" />
+        <ReduceAffliction identifier="psychosis" amount="3" />
+        <Affliction identifier="scp_psiresistance" amount="2.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="35" />
+  </Item>
+</Items>
