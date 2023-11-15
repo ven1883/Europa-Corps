@@ -547,7 +547,9 @@
 		</Holdable>
 	</Item>
 
-	<!--++++++++++++++++++++++++++++++++++++-->
+	<!--++++-->
+	<!--MISC-->
+	<!--++++-->
 
 	<!-- Uniform 3 for 3rd medic: fortunately there was already a sprite, nice -->
 	<Item name="" identifier="doctorsuniform3" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
