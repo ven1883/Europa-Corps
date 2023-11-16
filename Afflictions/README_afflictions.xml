@@ -1,0 +1,51 @@
+<!--~This file does not go in the filelist.-->
+
+<!-- 
+!All new afflictions go here.
+
+!CATEGORIZATION IS AS FOLLOWS:
+!addiction.xml: Addictions, Withdrawals.
+!poisons.xml: Increase in strength over time or afflict additional afflictions. (Radiation sickness technically is not a poison affliction but might fit here.)
+!buffs.xml: Increases in stats or vitality. 
+!damage.xml: Decreases in vitality.
+!bionics.xml: Afflictions caused by surgically implanting anything.
+!misc.xml: None of the above.
+-->
+
+<!-- 
+
+	! Formatting for afflictions. Follow this if adding any. 
+	! Names, descriptions and anything similar must be defined in texts.
+	^ Note: This style of formatting afflictions is uncommon in modding, which makes no sense because it's how afflictions are formatted in vanilla and also drastically easier to read.
+
+	<Affliction 
+		name="name_here" 
+		identifier="afflictionexample" 
+		description="here to teach YOU" 
+		type="affliction" 
+		causeofdeathdescription="Killed for not knowing how to format afflictions properly" 
+		selfcauseofdeathdescription="You were murdered for not formatting your afflictions properly" 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="50" 
+		maxstrength="100">
+
+		<Effect 
+			minstrength="0" maxstrength="50" 
+			strengthchange="" 
+			minvisualeffect1="" minvisualeffect1="">
+		</Effect>
+
+		<Effect 
+			minstrength="50" maxstrength="100" 
+			minvitalitydecrease="" maxvitalitydecrease="" 
+			strengthchange="" 
+			minvisualeffect1="" maxvisualeffect1=""
+			minvisualeffect2="" maxvisualeffect2="">
+		</Effect>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,768,128,128" color="103,103,103,255" origin="0,0" />
+	</Affliction>
+
+-->
+
+<!--!	Put these markers inbetween EVERY affliction. They are there to make it easier to tell when afflictions start and stop.-->
+<!--++++++++++++++++++++++++++++++++++++-->

@@ -106,6 +106,8 @@
 		</Affliction>
 	</Override>
 
+	<!--++++++++++++++++++++++++++++++++++++-->
+
 	<!-- changed type so vigor doesnt affect it -->
 	<Override>
 		<InternalDamage
@@ -134,6 +136,8 @@
 		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,384,128,128" color="195,136,60,255" origin="0,0"/>
 	</InternalDamage>
 	</Override>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
 	
 	<!-- added constant damage adding when present -->
 	<Override>
@@ -183,6 +187,8 @@
 		</InternalDamage>
 	</Override>
 
+	<!--++++++++++++++++++++++++++++++++++++-->
+
 	<!--completely redid functionality - provides a flat health boost and increased stun resistance instead of healing and depletes much faster. you will die if you don't seek medical attention before it wears off-->
 	<Override>
 		<Affliction
@@ -220,7 +226,9 @@
 	</Affliction>
 	</Override>
 
-<Override>
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Override>
 	<Affliction
 		name="Chem Addiction"
 		identifier="chemaddiction"
@@ -257,6 +265,8 @@
 		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,768,128,128" color="195,180,60,255" origin="0,0"/>
 	</Affliction>
 </Override>
+
+<!--++++++++++++++++++++++++++++++++++++-->
 
 <Override>
 	<Affliction

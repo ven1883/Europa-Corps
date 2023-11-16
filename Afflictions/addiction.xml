@@ -1,0 +1,606 @@
+<Afflictions>
+	
+	<!--++++++++++-->
+	<!--ADDICTIONS--> 
+	<!--++++++++++-->
+	<!--TODO: Tear out and re-do all of the values here. These are years old. barring combat stimulant, which is a recent addition.-->
+
+	<!--~METH ADDICTION START~-->
+
+	<Affliction
+		name="Methamphetamine withdrawal"
+		identifier="methwithdrawal"
+		description="Agitation and a tremor are obvious, as are the signs of nausea."
+		type="addiction"
+		causeofdeathdescription="Died of methamphetamine withdrawal"
+		selfcauseofdeathdescription="You have died of methamphetamine withdrawal." 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="20" 
+		maxstrength="100">
+
+		<Effect 
+			minstrength="20" maxstrength="40" 
+			minvitalitydecrease="0" maxvitalitydecrease="20" 
+			strengthchange="-0.05" 
+			minchromaticaberration="0.0" maxchromaticaberration="1.0" 
+			dialogflag="OpiateWithdrawalLow">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="methaddiction" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional methaddiction="lt 20" />
+				<ReduceAffliction identifier="methwithdrawal" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="15" probability="0.05" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="40" maxstrength="80" 
+			minvitalitydecrease="20" maxvitalitydecrease="50" 
+			strengthchange="-0.1" 
+			minchromaticaberration="1.0" maxchromaticaberration="5.0" 
+			dialogflag="MethWithdrawalMedium">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.7" setvalue="true" />
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="methaddiction" strength="0.05" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional methaddiction="lt 20" />
+				<ReduceAffliction identifier="methwithdrawal" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="15" probability="0.1" />
+			</StatusEffect>
+		</Effect>
+		
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			minvitalitydecrease="50" maxvitalitydecrease="200" 
+			strengthchange="-0.2" 
+			minchromaticaberration="5.0" maxchromaticaberration="10.0" 
+			minradialdistort="0.0" maxradialdistort="10.0"
+			minscreendistort="0.0" maxscreendistort="3.0"  
+			dialogflag="MethWithdrawalHigh">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.5" color="195,136,60,255" setvalue="true" />
+			<StatusEffect target="Character">
+				<Conditional methaddiction="lt 20" />
+				<ReduceAffliction identifier="methwithdrawal" strength="0.05" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="15" probability="0.15" />
+			</StatusEffect>
+
+		</Effect>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,768,128,128" color="209,121,84,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Methamphetamine overdose" 
+		identifier="methoverdose" 
+		description="The patient has pinpoint pupils and icy cold skin. They struggle to breathe and swallow." 
+		type="poison" 
+		causeofdeathdescription="Died of methamphetamine overdose" 
+		selfcauseofdeathdescription="You have died of methamphetamine overdose." 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="50" 
+		karmachangeonapplied="-1"
+		maxstrength="100">
+
+		<Effect 
+			minstrength="0" maxstrength="50" 
+			strengthchange="-0.5" 
+			minchromaticaberration="0.0" maxchromaticaberration="1.0">
+		</Effect>
+
+		<Effect 
+			minstrength="50" maxstrength="100" 
+			minvitalitydecrease="0" maxvitalitydecrease="200" 
+			strengthchange="-0.5" 
+			minchromaticaberration="0.0" maxchromaticaberration="10.0" 
+			minradialdistort="0.0" maxradialdistort="10.0"
+			minscreendistort="0.0" maxscreendistort="3.0">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" />
+		</Effect>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,768,128,128" color="103,103,103,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction
+		name="Methamphetamine addiction" 
+		identifier="methaddiction" 
+		description="The patient is happy enough... so long as they get what they need." 
+		type="addiction" 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="20" 
+		maxstrength="100" 
+		karmachangeonapplied="-0.1">
+
+		<Effect 
+			minstrength="0" maxstrength="20" 
+			strengthchange="-0.05">
+		</Effect>
+
+		<Effect
+			minstrength="20" maxstrength="40" 
+			strengthchange="-0.05">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="methwithdrawal" strength="0.1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="40" maxstrength="80" 
+			strengthchange="-0.1">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="methwithdrawal" strength="0.25" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			strengthchange="-0.1" 
+			minvitalitydecrease="0" maxvitalitydecrease="20">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="methwithdrawal" strength="0.5" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,768,128,128" color="195,180,60,255" origin="0,0" />
+	</Affliction>
+
+	<!--~METH ADDICTION END~-->
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+	
+	<!--~STEROID ADDICTION START~-->
+
+	<Affliction 
+		name="Steroid withdrawal" 
+		identifier="steroidwithdrawal" 
+		description="Agitation and a tremor are obvious, as are the signs of nausea." 
+		type="addiction" causeofdeathdescription="Died of steroid withdrawal" 
+		selfcauseofdeathdescription="You have died of steroid withdrawal." 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="20" 
+		maxstrength="100">
+
+		<Effect 
+			minstrength="20" maxstrength="40" 
+			minvitalitydecrease="0" maxvitalitydecrease="20" 
+			strengthchange="-0.05" 
+			minchromaticaberration="0.0" maxchromaticaberration="1.0" 
+			dialogflag="OpiateWithdrawalLow">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="steroidaddiction" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional steroidaddiction="lt 20" />
+				<ReduceAffliction identifier="steroidwithdrawal" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="15" probability="0.05" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="40" maxstrength="80" 
+			minvitalitydecrease="20" maxvitalitydecrease="50" 
+			strengthchange="-0.1" 
+			minchromaticaberration="1.0" maxchromaticaberration="5.0" 
+			dialogflag="SteroidWithdrawalMedium">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.7" setvalue="true" />
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="steroidaddiction" strength="0.05" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional steroidaddiction="lt 20" />
+				<ReduceAffliction identifier="steroidwithdrawal" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="15" probability="0.1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			minvitalitydecrease="50" maxvitalitydecrease="200" 
+			strengthchange="-0.2" 
+			minchromaticaberration="5.0" maxchromaticaberration="10.0" 
+			minradialdistort="0.0" maxradialdistort="10.0" 
+			minscreendistort="0.0" maxscreendistort="3.0" 
+			dialogflag="MethWithdrawalHigh">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.5" color="195,136,60,255" setvalue="true" />
+			<StatusEffect target="Character">
+				<Conditional steroidaddiction="lt 20" />
+				<ReduceAffliction identifier="steroidwithdrawal" strength="0.05" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="15" probability="0.15" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,768,128,128" color="209,121,84,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Steroid overdose" 
+		identifier="steroidoverdose" 
+		description="The patient has pinpoint pupils and icy cold skin. They struggle to breathe and swallow." 
+		type="poison" 
+		causeofdeathdescription="Died of steroid overdose" 
+		selfcauseofdeathdescription="You have died of steroid overdose." 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="70" 
+		karmachangeonapplied="-1" 
+		maxstrength="100">
+
+		<Effect 
+			minstrength="0" maxstrength="60" 
+			strengthchange="-0.5" 
+			minchromaticaberration="0.0" maxchromaticaberration="1.0">
+		</Effect>
+
+		<Effect 
+			minstrength="60" maxstrength="100" 
+			minvitalitydecrease="0" maxvitalitydecrease="400" 
+			minscreendistort="0.0" maxscreendistort="3.0" 
+			strengthchange="-0.5" 
+			minchromaticaberration="0.0" maxchromaticaberration="10.0" 
+			minradialdistort="0.0" maxradialdistort="10.0">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" />
+		</Effect>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,768,128,128" color="103,103,103,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+	
+	<Affliction 
+		name="Steroid addiction" 
+		identifier="steroidaddiction" 
+		description="The patient is happy enough... so long as they get what they need." 
+		type="addiction" 
+		limbspecific="false" indicatorlimb="Head"
+		showiconthreshold="20" 
+		maxstrength="100"
+		karmachangeonapplied="-0.1">
+
+		<Effect 
+			minstrength="0" maxstrength="20" 
+			strengthchange="-0.05">
+		</Effect>
+
+		<Effect 
+			minstrength="20" maxstrength="40" 
+			strengthchange="-0.05">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="steroidwithdrawal" strength="0.1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+		minstrength="40" maxstrength="80" 
+		strengthchange="-0.1">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="steroidwithdrawal" strength="0.25" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+		minstrength="80" maxstrength="100" 
+		strengthchange="-0.1" 
+		minvitalitydecrease="0" maxvitalitydecrease="20">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="steroidwithdrawal" strength="0.5" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,768,128,128" color="195,180,60,255" origin="0,0" />
+	</Affliction>
+
+	<!--~STEROID ADDICTION END~-->
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--massive increase to damage taken and lots of chromatic abberation-->
+	<Affliction 
+		name="Stimulant Overdose" 
+		identifier="combatstimulantoverdose" 
+		description="The patient has pinpoint pupils and icy cold skin. They struggle to breathe and swallow." 
+		type="poison" 
+		causeofdeathdescription="Died of combat stiumulant overdose" 
+		selfcauseofdeathdescription="You have died of combat stimulant overdose." 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="50" 
+		karmachangeonapplied="-1" 
+		maxstrength="100">
+
+		<Effect minstrength="0"
+		 maxstrength="45" 
+		 strengthchange="-0.5" 
+		 minchromaticaberration="0.0"
+		 maxchromaticaberration="1.0">
+		</Effect>
+
+		<Effect
+		 minstrength="50" 
+		 maxstrength="100" 
+		 minvitalitydecrease="0" 
+		 maxvitalitydecrease="-25" 
+		 strengthchange="-1" 
+		 minchromaticaberration="0.0" 
+		 maxchromaticaberration="10.0"
+		 resistancefor="damage" 
+		 minresistance="0" 
+		 maxresistance="-1">
+		</Effect> 
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,768,128,128" color="103,103,103,255" origin="0,0" />
+	</Affliction>
+	
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--~ALCOHOL ADDICTION START~-->
+	
+	<!-- alcoholism -->
+	<Affliction 
+		name="Alcoholism" 
+		identifier="alcoholaddiction" 
+		description="The patient is happy enough... so long as they get what they need." 
+		type="addiction" 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="20" 
+		maxstrength="100" 
+		karmachangeonapplied="-0.1">
+
+		<Effect 
+			minstrength="0" maxstrength="20" 
+			strengthchange="-0.05">
+		</Effect>
+
+		<Effect 
+			minstrength="20" maxstrength="40" 
+			strengthchange="-0.05">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="alcoholwithdrawal" strength="0.1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="40" maxstrength="80" 
+			strengthchange="-0.05">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="alcoholwithdrawal" strength="0.25" />
+			</StatusEffect>
+		</Effect>
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			strengthchange="-0.1" 
+			minvitalitydecrease="0" maxvitalitydecrease="20">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="alcoholwithdrawal" strength="0.5" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="384,0,128,128" color="195,180,60,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+	name="Alcohol withdrawal" 
+	identifier="alcoholwithdrawal" 
+	description="The patient seems angry and stressed." 
+	type="addiction" 
+	causeofdeathdescription="Died of alcohol withdrawal" 
+	selfcauseofdeathdescription="You have died of alcohol withdrawal." 
+	limbspecific="false" indicatorlimb="Head" 
+	showiconthreshold="20" 
+	maxstrength="100">
+
+		<Effect 
+			minstrength="20" maxstrength="40" 
+			minvitalitydecrease="0" maxvitalitydecrease="0.5" 
+			strengthchange="-0.05" 
+			minchromaticaberration="0.0" maxchromaticaberration="1.0" 
+			dialogflag="AlcoholWithdrawalLow">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.9" setvalue="true" />
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="alcoholaddiction" strength="0.05" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional alcoholaddiction="lt 20" />
+				<ReduceAffliction identifier="alcoholwithdrawal" strength="0.1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="40" maxstrength="80" 
+			minvitalitydecrease="0" maxvitalitydecrease="0.5" 
+			strengthchange="-0.1" 
+			minchromaticaberration="1.0" maxchromaticaberration="5.0" 
+			dialogflag="AlcoholWithdrawalMedium">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="alcoholaddiction" strength="0.05" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional alcoholaddiction="lt 20" />
+				<ReduceAffliction identifier="alcoholwithdrawal" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character"  disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="12" probability="0.3" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			minvitalitydecrease="0" maxvitalitydecrease="0.5" 
+			strengthchange="-0.2" 
+			minchromaticaberration="5.0" maxchromaticaberration="10.0"
+			minradialdistort="0.0" maxradialdistort="10.0" 
+			minscreendistort="0.0" maxscreendistort="3.0" 
+			dialogflag="AlcoholWithdrawalHigh">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.7" color="195,136,60,255" setvalue="true" />
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="alcoholaddiction" strength="0.025" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional alcoholaddiction="lt 20" />
+				<ReduceAffliction identifier="alcoholwithdrawal" strength="0.05" />
+			</StatusEffect>
+			<StatusEffect target="Character"  disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="30" probability="0.5" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="512,0,128,128" color="209,121,84,255" origin="0,0" />
+	</Affliction>
+
+	<!--~ALCOHOL ADDICTION END~-->
+	
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--~FLESH ADDICTION START~-->
+
+	<Affliction 
+		name="Flesh withdrawal" 
+		identifier="fleshwithdrawal" 
+		description="Agitation and a tremor are obvious, as are the signs of nausea." 
+		type="addiction" 
+		causeofdeathdescription="Died of human flesh withdrawal" 
+		selfcauseofdeathdescription="You have died of human flesh withdrawal." 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="20" 
+		maxstrength="100">
+
+		<Effect 
+			minstrength="20" maxstrength="40" 
+			minvitalitydecrease="0" maxvitalitydecrease="15" 
+			strengthchange="-0.05" 
+			minchromaticaberration="0.0" maxchromaticaberration="1.0" 
+			dialogflag="OpiateWithdrawalLow">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="fleshaddiction" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional fleshaddiction="lt 20" />
+				<ReduceAffliction identifier="fleshwithdrawal" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="30" probability="0.1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="40" maxstrength="80" 
+			minvitalitydecrease="15" maxvitalitydecrease="40" 
+			strengthchange="-0.1" minchromaticaberration="1.0" 
+			maxchromaticaberration="5.0" 
+			dialogflag="FleshWithdrawalMedium">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.7" setvalue="true" />
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="fleshaddiction" strength="0.05" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional fleshaddiction="lt 20" />
+				<ReduceAffliction identifier="fleshwithdrawal" strength="0.1" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="30" probability="0.3" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			minvitalitydecrease="40" maxvitalitydecrease="130" 
+			strengthchange="-0.2"
+			minchromaticaberration="5.0" maxchromaticaberration="10.0" 
+			minradialdistort="0.0" maxradialdistort="10.0" 
+			minscreendistort="0.0" maxscreendistort="3.0"
+			dialogflag="FleshWithdrawalHigh">
+
+			<StatusEffect target="Character" SpeedMultiplier="0.5" color="195,136,60,255" setvalue="true" />
+			<StatusEffect target="Character">
+				<Conditional fleshaddiction="lt 20" />
+				<ReduceAffliction identifier="fleshwithdrawal" strength="0.05" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" interval="1">
+				<Affliction identifier="nausea" strength="30" probability="0.5" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="640,128,128,128" color="209,121,84,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Cannibalism" 
+		identifier="fleshaddiction" 
+		description="The patient is happy enough... so long as they get what they need." 
+		type="addiction" 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="20" 
+		maxstrength="100">
+
+		<Effect 
+			minstrength="0" maxstrength="20" 
+			strengthchange="-0.05">
+		</Effect>
+
+		<Effect 
+			minstrength="20" maxstrength="40" 
+			strengthchange="-0.05">
+			
+			<StatusEffect target="Character">
+				<Affliction identifier="fleshwithdrawal" strength="0.1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="40" maxstrength="80" 
+			strengthchange="-0.1">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="fleshwithdrawal" strength="0.25" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			strengthchange="-0.1" 
+			minvitalitydecrease="0" maxvitalitydecrease="10">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="fleshwithdrawal" strength="0.5" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="512,128,128,128" color="195,180,60,255" origin="0,0" />
+	</Affliction>
+
+</Afflictions>

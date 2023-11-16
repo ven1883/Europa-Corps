@@ -1,0 +1,156 @@
+<Afflictions>
+
+	<!--+++++++-->
+	<!--BIONICS--> 
+	<!--+++++++-->
+
+	<Affliction 
+		name="Bionic adrenaline gland" 
+		identifier="bionicadrenalineaffliction" 
+		description="The patient had a synthetic and robotically controlled organ working in the body." 
+		type="resistance" 
+		isbuff="true" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		maxstrength="10">
+
+		<Effect 
+			minstrength="0"	maxstrength="100" 
+			resistancefor="damage" 
+			minresistance="0" maxresistance="0.85">
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="128,256,128,128" color="215,252,104,255" origin="0,0" />
+	</Affliction>
+		
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Bionic hyperactive gland" 
+		identifier="bionicmethaffliction"
+		description="The patient had a synthetic and robotically controlled organ working in the body." 
+		type="resistance" 
+		isbuff="true" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso"
+		maxstrength="10">
+
+		<Effect 
+			minstrength="0" maxstrength="10">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="haste" amount="3" />
+				<ReduceAffliction identifier="methwithdrawal" amount="100" />
+			</StatusEffect>
+			<StatusEffect target="Character">
+				<Conditional methaddiction="lt 70" />
+				<Affliction identifier="methaddiction" amount="0.5" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="512,256,128,128" color="215,252,104,255" origin="0,0" />
+	</Affliction>
+		
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Bionic gills" 
+		identifier="bionicgillsaffliction" 
+		description="The patient had a synthetic and robotically controlled organ working in the body." 
+		type="resistance" 
+		isbuff="true" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		maxstrength="10">
+
+		<Effect 
+			minstrength="0" maxstrength="10">
+
+			<StatusEffect type="InWater" target="Character" OxygenAvailable="1000.0" setvalue="true" />
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="0,256,128,128" color="215,252,104,255" origin="0,0" />
+	</Affliction>
+		
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Bionic mechanite gland" 
+		identifier="bionicmechaniteaffliction" 
+		description="The patient had a synthetic and robotically controlled organ working in the body." 
+		type="resistance" 
+		isbuff="true" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		maxstrength="10">
+
+		<Effect 
+			minstrength="0" maxstrength="10">
+
+			<StatusEffect target="Character" PressureProtection="10000.0" setvalue="true" />
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="256,256,128,128" color="215,252,104,255" origin="0,0" />
+	</Affliction>
+		
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Bionic calyxanide gland" 
+		identifier="bioniccalyxanideaffliction" 
+		description="The patient had a synthetic and robotically controlled organ working in the body." 
+		type="resistance" isbuff="true"
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" 
+		indicatorlimb="Torso" 
+		maxstrength="10">
+
+		<Effect 
+			minstrength="0" maxstrength="10">
+
+			<StatusEffect target="Character">
+				<ReduceAffliction identifier="huskinfection" amount="100" />
+				<ReduceAffliction identifier="symbiotichuskmedoverhaul" amount="100" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="640,256,128,128" color="215,252,104,255" origin="0,0" />
+	</Affliction>
+		
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Bionic blood transmutator" 
+		identifier="bionicbloodaffliction" 
+		description="The patient had a synthetic and robotically controlled organ working in the body." 
+		type="resistance" 
+		isbuff="true" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		maxstrength="10">
+
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="384,256,128,128" color="215,252,104,255" origin="0,0" />
+	</Affliction>
+
+	<Affliction 
+		name="Surgery Implant" 
+		identifier="surgeryreadyimplant" 
+		type="resistance" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="1000" 
+		maxstrength="10">
+
+		<Effect 
+			minstrength="0" maxstrength="10" 
+			strengthchange="1">
+			
+			<StatusEffect target="Character">
+				<Affliction identifier="surgeryready" amount="1" />
+			</StatusEffect>
+		</Effect>
+		<!-- no need for sprite, not ever seen in hud -->
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0" />
+	</Affliction>
+
+</Afflictions>

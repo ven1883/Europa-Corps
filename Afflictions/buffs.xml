@@ -1,0 +1,62 @@
+<Afflictions>
+
+	<!--+++++-->
+	<!--BUFFS--> 
+	<!--+++++-->
+
+	<Affliction 
+		name="Painkillers" 
+		identifier="morphineaffliction" 
+		type="resistance" 
+		isbuff="true" 
+		limbspecific="false" indicatorlimb="Torso" 
+		maxstrength="300">
+
+		<Effect 
+			minstrength="0" maxstrength="300" 
+			strengthchange="-1" 
+			resistancefor="pain" 
+			minresistance="0" maxresistance="0.5" >
+
+			<StatusEffect target="Character"	ConditionalComparison="And">
+				<Conditional Pain="lte 10"/>
+				<Affliction identifier="pain" amount="-6" />
+			</StatusEffect>
+			<StatusEffect target="Character"	ConditionalComparison="And">
+				<Conditional Pain="gt 10"/>
+				<Conditional Pain="lte 30"/>
+				<Affliction identifier="pain" amount="-10" />
+			</StatusEffect>
+			<StatusEffect target="Character"	ConditionalComparison="And">
+				<Conditional Pain="gt 30"/>
+				<Conditional Pain="lte 50"/>
+				<Affliction identifier="pain" amount="-14" />
+			</StatusEffect>
+			<StatusEffect target="Character"	ConditionalComparison="And">
+				<Conditional Pain="gt 50"/>
+				<Affliction identifier="pain" amount="-18" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="256,0,128,128" color="70,199,66,255" origin="0,0" />
+	</Affliction>
+	
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+  <Affliction
+		name="" 
+		identifier="scp_psiresistance" 
+		description=""
+		type="psibuff" isbuff="true" 
+		limbspecific="false" indicatorlimb="Head" 
+		maxstrength="100">
+
+    <Effect 
+			minstrength="0" maxstrength="100" 
+			strengthchange="-0.2" 
+			resistancefor="psiradiation" 
+			minresistance="0" maxresistance="0.6">
+		</Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+
+</Afflictions>

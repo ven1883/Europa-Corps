@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Override>
 	<Items>
-		<!-- Overrided to include ether tank -->
+		<!--
+		Overrided to include ether tank. 
+		TODO: Add ether tank compatibility to all oxygentank usages.
+		 -->
 		<Item name="" identifier="divingmask" scale="0.5" category="Diving,Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
 			<Price baseprice="100">
 				<Price storeidentifier="merchantoutpost" multiplier="0.9" minavailable="5" />
@@ -60,7 +63,7 @@
 			</ItemContainer>
 		</Item>
 
-
+	<!--++++++++++++++++++++++++++++++++++++-->
 		
 		<!-- Gives affliction that lets surgical tools know when on the bed. -->
 		<Item name="" identifier="opdeco_hospitalbed" width="416" height="192" texturescale="1.0,1.0" scale="0.5" noninteractable="false" category="Decorative">
@@ -90,8 +93,5 @@
 				</StatusEffect>
 			</Controller>
 		</Item>
-
-
-		
 	</Items>
 </Override>
