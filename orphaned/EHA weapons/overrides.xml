@@ -918,58 +918,63 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item name="" identifier="stungrenade" description="" category="Weapon" maxstacksize="16" maxstacksizecharacterinventory="2" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" minamount="1" maxamount="4" spawnprobability="1" />
-    <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.15" />
-    <PreferredContainer primary="armcab" secondary="locker" />
-    <Upgrade gameversion="0.9.2.0" scale="0.5" />
-    <Price baseprice="175">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="3" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="iron" />
-      <Item identifier="phosphorus" mincondition="0.9" />
-      <Item identifier="flashpowder" mincondition="0.9" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="2">
-      <RequiredItem identifier="sgt_ammocoinadv" amount="1" />
-    </Fabricate>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="130,312,27,54" depth="0.55" origin="0.5,0.5" />
-    <Body width="26" height="50" density="30" />
-    <ItemComponent characterusable="false">
-      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
-      <StatusEffect type="OnBroken" target="This">
-        <sound file="%ModDir%/Sounds/flashbang.ogg" range="2500" volume="1.5" />
-        <Explosion range="450" force="0.5" smoke="false" flames="false" flashrange="650" flashduration="0.5" screencolor="255,255,255,255" screencolorrange="1000" screencolorduration="0.75">
-          <Affliction identifier="explosiondamage" strength="5" />
-          <Affliction identifier="concussion" strength="100" />
-          <Affliction identifier="stun" strength="3" />
-          <Affliction identifier="stun" strength="6" probability="0.75" />
-          <Affliction identifier="progressivestun" strength="20" probability="0.3" />
-        </Explosion>
-      </StatusEffect>
-    </ItemComponent>
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="1.5" disabledeltatime="true" checkconditionalalways="true" />
-      <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-        <sound file="%ModDir%/Sounds/flashbangthrow.ogg" range="1000" />
-        <ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="200,200,200,255" />
-      </StatusEffect>
-      <StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">
-        <ParticleEmitter particle="scp_grenadespoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.55" scalemax="0.55" anglemin="-35" anglemax="35" />
-      </StatusEffect>
-    </Throwable>
-    <Quality>
-      <QualityStat stattype="ExplosionRadius" value="0.1" />
-      <QualityStat stattype="ExplosionDamage" value="0.1" />
-    </Quality>
-  </Item>
+      <PreferredContainer primary="secarmcab" minamount="1" maxamount="4" spawnprobability="1" />
+      <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.1" />
+      <PreferredContainer secondary="abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.15" />
+      <PreferredContainer primary="armcab" secondary="locker" />
+      <Upgrade gameversion="0.9.2.0" scale="0.5" />
+      <Price baseprice="175">
+        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="3" sold="false" />
+        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" />
+        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="iron" />
+        <Item identifier="phosphorus" mincondition="0.9" />
+        <Item identifier="flashpowder" mincondition="0.9" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="20">
+        <RequiredSkill identifier="weapons" level="30" />
+        <RequiredItem identifier="steel" mincondition="0.5" />
+        <RequiredItem identifier="phosphorus" amount="2" />
+        <RequiredItem identifier="flashpowder" />
+      </Fabricate>
+      <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="366,254,31,54" depth="0.55" origin="0.5,0.5" />
+      <Body width="26" height="50" density="30" />
+      <ItemComponent characterusable="false">
+        <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+        <StatusEffect type="OnBroken" target="This">
+          <sound file="%ModDir%/Sounds/flashbang.ogg" range="2500" volume="1.5" />
+          <Explosion range="450" force="0.5" smoke="false" flames="false" flashrange="650" flashduration="0.5" screencolor="255,255,255,255" screencolorrange="1000" screencolorduration="0.75">
+            <Affliction identifier="explosiondamage" strength="5" />
+            <Affliction identifier="concussion" strength="100" />
+            <Affliction identifier="stun" strength="3" />
+            <Affliction identifier="stun" strength="6" probability="0.75" />
+            <Affliction identifier="progressivestun" strength="20" probability="0.3" />
+          </Explosion>
+        </StatusEffect>
+      </ItemComponent>
+      <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" aimpos="35,-18" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="1.5" disabledeltatime="true" checkconditionalalways="true" />
+        <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
+          <sound file="%ModDir%/Sounds/flashbangthrow.ogg" range="1000" />
+          <ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="200,200,200,255" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">
+          <ParticleEmitter particle="scp_grenadespoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.55" scalemax="0.55" anglemin="-35" anglemax="35" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This" delay="2">
+          <Remove />
+        </StatusEffect>
+      </Throwable>
+      <Quality>
+        <QualityStat stattype="ExplosionRadius" value="0.1" />
+        <QualityStat stattype="ExplosionDamage" value="0.1" />
+      </Quality>
+    </Item>
   <Item name="" description="" identifier="shotgunshellblunt" category="Weapon" maxstacksize="64" maxstacksizecharacterinventory="16" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="shotgun,autoshotgun,shotgununique" />
     <PreferredContainer primary="armcab" minamount="6" maxamount="16" spawnprobability="1" notcampaign="true" />
