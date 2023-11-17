@@ -310,13 +310,14 @@
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" HideFace="true"></StatusEffect>
-      <damagemodifier afflictionidentifiers="scp_presolatexinfection,scp_hexgasdamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="armourmedimpact" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="scp_presolatexinfection,scp_hexgasdamage,scp_ae035damage,scp_psidamage" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourmedimpact" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage,bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="armourmedimpact" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.35" damagesound="armourmedimpact" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourmedimpact" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.65" damagesound="armourmedimpact" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="armourmedimpact" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <StatusEffect tags="cbrnsuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
       <sprite name="HazOp Helmet Wearable" texture="%ModDir%/Jobgear/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.85" hidewearablesoftype="hair" sourcerect="0,319,87,75" origin="0.5015118,0.5489462" />
       <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" ObstructVision="false" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
@@ -446,11 +447,12 @@
       <sprite name="Heavy Gear Left Leg" texture="%ModDir%/Jobgear/boarmor2.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
       <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" PressureProtection="3000.0"></StatusEffect>
       <SkillModifier skillidentifier="medical" skillvalue="10" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection,scp_ae035damage" damagemultiplier="0.1" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_hexgasdamage,scp_psidamage" damagemultiplier="0.25" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn,acidburn,radiationsickness" damagemultiplier="0.25" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection,scp_ae035damage" damagemultiplier="0.05" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_hexgasdamage,scp_psidamage" damagemultiplier="0.10" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn,acidburn,radiationsickness" damagemultiplier="0.20" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.35" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bleeding,bitewounds,stun" damagemultiplier="0.85" />
+      <StatusEffect tags="cbrnsuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
     </Wearable>
     <ItemContainer capacity="6" maxstacksize="2" hideitems="true" containedstateindicatorslot="0" containedspritedepth="0.56" containedstateindicatorstyle="syringe">
       <Containable items="medical,smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
