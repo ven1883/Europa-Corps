@@ -150,4 +150,40 @@
     origin="0.5,0.4"
     premultiplyalpha="false" />
 </fireconeflame>
+
+<singulobig 
+	LifeTime="2" 
+	LifeTimeMin="0" 
+	StartDelayMin="0" 
+	StartDelayMax="0" 
+	AngularVelocityMin="1" 
+	AngularVelocityMax="100" 
+	StartRotationMin="0" 
+	StartRotationMax="0" 
+	RotateToDirection="False" 
+	Drag="0"
+	WaterDrag="0" 
+	VelocityChange="0,0" 
+	VelocityChangeWater="0,0" 
+	CollisionRadius="1" 
+	UseCollision="False" 
+	DeleteOnCollision="False" 
+	Friction="0.5" Restitution="0.5" 
+	StartSizeMin="2,2" 
+	StartSizeMax="2,2" 
+	SizeChangeMin="-2,-2" 
+	SizeChangeMax="-2,-2" 
+	GrowTime="1" 
+	StartColor="255,255,255,255" 
+	MiddleColor="255,255,255,255" 
+	EndColor="255,255,255,255" 
+	UseMiddleColor="True"
+	DrawTarget="Both" 
+	DrawOnTop="True" 
+	BlendState="AlphaBlend" 
+	Priority="5" 
+	AnimDuration="0.5" 
+	LoopAnim="False">
+	<sprite texture="%ModDir%/particles/singularity.png" sourcerect="0,0,400,400" origin="0.5,0.5" premultiplyalpha="false" />
+</singulobig>
 </prefabs>
