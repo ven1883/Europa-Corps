@@ -1,0 +1,153 @@
+<prefabs>
+
+	<!--cosmetic water, without actually having water.-->
+	<!-- 
+		<ParticleEmitter particle="waterstream" HighQualityCollisionDetection="True" VelocityMin="450" VelocityMax="550" ScaleMultiplier="1,1" ParticlesPerSecond="50" ColorMultiplier="255,255,255,200" Velocity="450" />
+	-->
+	<waterstream
+  startalpha="255,255,255,0"
+  LifeTime="6"
+  LifeTimeMin="0"
+  StartDelayMin="0"
+  StartDelayMax="0"
+  AngularVelocityMin="50"
+  AngularVelocityMax="100"
+  StartRotationMin="0"
+  StartRotationMax="360"
+  RotateToDirection="False"
+  Drag="0"
+  WaterDrag="0"
+  VelocityChange="0,-9.8"
+  VelocityChangeWater="0,-9.8"
+  CollisionRadius="20"
+  InvariantCollisionSize="False"
+  UseCollision="True"
+  DeleteOnCollision="False"
+  Friction="0.01"
+  Restitution="0.1"
+  StartSizeMin="0.8,0.8"
+  StartSizeMax="1.2,1.2"
+  SizeChangeMin="0.1,0.1"
+  SizeChangeMax="0,0"
+  GrowTime="0.05"
+  StartColor="255,255,255,255"
+  MiddleColor="255,255,255,255"
+  EndColor="255,255,255,0"
+  UseMiddleColor="True"
+  DrawTarget="Air"
+  DrawOnTop="False"
+  DrawAlways="False"
+  BlendState="AlphaBlend"
+  Priority="-1"
+  AnimDuration="1"
+  LoopAnim="True">
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="256,128,128,128" />
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="256,254,128,128" />
+  <sprite
+    texture="Content/Particles/ParticleAtlas.png"
+    sourcerect="384,128,128,128" />
+	</waterstream>
+
+	<!--big, billowing industrial smoke, the kind you see coming out of a chimney-->
+	<!--
+		<ParticleEmitter particle="hydrosmokesmall" AngleMin="80" AngleMax="100" VelocityMin="250" VelocityMax="300" ScaleMultiplier="1,1" ParticlesPerSecond="5" ColorMultiplier="255,255,255,255" Angle="80" Velocity="250" />
+	-->
+	<smokepillar
+  LifeTime="15"
+  LifeTimeMin="0"
+  StartDelayMin="0"
+  StartDelayMax="0"
+  AngularVelocityMin="-10"
+  AngularVelocityMax="10"
+  StartRotationMin="-60"
+  StartRotationMax="60"
+  RotateToDirection="False"
+  Drag="0"
+  WaterDrag="0.1"
+  VelocityChange="0,0"
+  VelocityChangeWater="-0.5,0.5"
+  CollisionRadius="1"
+  InvariantCollisionSize="False"
+  UseCollision="False"
+  DeleteOnCollision="False"
+  Friction="0.5"
+  Restitution="0.5"
+  StartSizeMin="1.8,1.8"
+  StartSizeMax="2.2,2.2"
+  SizeChangeMin="0.25,0.25"
+  SizeChangeMax="0.3,0.3"
+  GrowTime="1"
+  StartColor="104,104,104,255"
+  MiddleColor="26,26,26,255"
+  EndColor="0,0,0,0"
+  UseMiddleColor="True"
+  DrawTarget="Both"
+  DrawOnTop="False"
+  DrawAlways="False"
+  BlendState="AlphaBlend"
+  Priority="-1"
+  AnimDuration="15"
+  LoopAnim="True">
+  <animatedsprite
+    texture="Content/Particles/SmokeParticleSheet.png"
+    sourcerect="0,0,1024,1024"
+    columns="5"
+    rows="5" />
+</smokepillar>
+
+	<!--a camp-fire like cone of fire.-->
+	<!--
+	small	<ParticleEmitter particle="fireconeflame" AngleMin="225" AngleMax="315" DistanceMin="100" DistanceMax="100" VelocityMin="-100" VelocityMax="-100" ScaleMultiplier="0.5,0.5" ParticlesPerSecond="50" ColorMultiplier="255,255,255,255" LifeTimeMultiplier="0.9" Distance="100" Velocity="-100" /> />
+	medium	<ParticleEmitter particle="fireconeflame" AngleMin="225" AngleMax="315" DistanceMin="250" DistanceMax="250" VelocityMin="-100" VelocityMax="-100" ScaleMultiplier="1,1" ParticlesPerSecond="50" ColorMultiplier="255,255,255,255" LifeTimeMultiplier="2.5" Distance="250" Velocity="-100" />
+	large 	<ParticleEmitter particle="fireconeflame" AngleMin="225" AngleMax="315" DistanceMin="500" DistanceMax="500" VelocityMin="-150" VelocityMax="-200" ScaleMultiplier="1,1" ParticlesPerSecond="100" ColorMultiplier="255,255,255,255" LifeTimeMultiplier="4" Distance="500" Velocity="-150" />
+	!Warning: Large creates a constant 480~ particles. Use sparingly, as even maximum particle settings can only render 3 at a time.	
+	-->
+<fireconeflame
+  LifeTime="1.2"
+  LifeTimeMin="0"
+  StartDelayMin="0"
+  StartDelayMax="0"
+  AngularVelocityMin="-20"
+  AngularVelocityMax="10"
+  StartRotationMin="-20"
+  StartRotationMax="20"
+  RotateToDirection="False"
+  Drag="0.1"
+  WaterDrag="0.1"
+  VelocityChange="0,1"
+  VelocityChangeWater="0,1"
+  CollisionRadius="75"
+  InvariantCollisionSize="True"
+  UseCollision="True"
+  DeleteOnCollision="False"
+  Friction="0"
+  Restitution="0.2"
+  StartSizeMin="0.5,0.3"
+  StartSizeMax="0.8,0.5"
+  SizeChangeMin="0,0"
+  SizeChangeMax="0,0"
+  GrowTime="0.4"
+  StartColor="255,255,255,255"
+  MiddleColor="255,92,0,255"
+  EndColor="255,92,0,0"
+  UseMiddleColor="True"
+  DrawTarget="Air"
+  DrawOnTop="False"
+  DrawAlways="False"
+  BlendState="Additive"
+  Priority="1"
+  AnimDuration="1.2"
+  LoopAnim="True">
+  <animatedsprite
+    texture="Content/Particles/FlameRoundParticleSheet.png"
+    sourcerect="0,0,2048,2048"
+    columns="10"
+    rows="5"
+    origin="0.5,0.4"
+    premultiplyalpha="false" />
+</fireconeflame>
+</prefabs>
