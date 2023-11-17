@@ -806,7 +806,7 @@
       <StatValue stattype="WalkingSpeed" value="0.025" />
       <StatValue stattype="SwimmingSpeed" value="0.025" />
     </Wearable>
-    <ItemContainer capacity="4">
+    <ItemContainer capacity="2">
       <Containable items="smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
     </ItemContainer>
   </Item>
