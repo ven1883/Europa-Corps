@@ -1,0 +1,56 @@
+<!--This file does not go in the filelist.-->
+
+<!--
+!All new weapons go here (and old ones, too.
+
+!CATEGORIZATION IS AS FOLLOWS:
+!melee.xml: Melee weapons.
+!pistols.xml: Handguns and pistols.
+!smgs.xml: SMGs of various caliber.
+!shotguns.xml: Shotguns.
+!rifles.xml: Biggest file. Rifles.
+!heavy.xml: Heavy weapons of differing types.
+!alien.xml: Alien weapons. Not important
+!special.xml: Fits none of the above.
+-->
+
+<!--
+
+    ! Formatting for afflictions. Follow this if adding any. 
+	! Names, descriptions and anything similar must be defined in texts.
+	^ Note: This style of formatting afflictions is uncommon in modding, which makes no sense because it's how afflictions are formatted in vanilla and also drastically easier to read.
+
+    <Item>
+
+    </Item
+-->
+
+<!--!	Put these markers inbetween every item PACKET. They are there to make it easier to tell when packets start and stop.-->
+<!--++++++++++++++++++++++++++++++++++++-->
+
+<!--!   Put these between every GROUPED item. These are here to make it easier to group alike objects without making it difficult to pick apart each item.-->
+<!--###-->
+
+<!--EXAMPLE BELOW-->
+
+<!-- 
+    <Item magazine>
+        ...
+    </Item>
+-->
+
+    <!--!###!-->
+
+<!--
+   <Item projectile>
+        ...
+   </Item>
+-->
+
+<!--++++++++++++++++++++++++++++++++++++-->
+
+<!--
+   <Item 3>
+        ...
+   </Item>
+-->
