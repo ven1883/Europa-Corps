@@ -1,0 +1,49 @@
+<!-- 
+
+!Item categorization is as follows:
+//put your own damn list here venmus
+
+!Item formatting is as follows:
+
+
+	<Item 
+		name="GladOS" 
+		identifier="glados" 
+		category="technicallymedical" 
+		cargocontaineridentifier="metalcrate" 
+		tags="reallybigitem" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<InventoryIcon texture="%ModDir%/glados_inventory.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/glados.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+		<Body width="" height="" density="" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<component1 property1="the cake is a lie">
+
+			<StatusEffect type="OnActive" target="Chell">
+				<Conditional IsDead="False">
+				<Affliction identifier="sufforinpoisoning" amount="1">
+			</StatusEffect>
+
+			<StatusEffect type="OnDeath" target="This">
+				<sound file="%ModDir%/glados.ogg" volume="1" property1="wuh?" property2="wah?"/>
+			</StatusEffect>
+		</component1>
+
+		<componentwithalotoffuckingproperties
+			property1
+			property2
+			property
+			property4
+			property5
+			propertyimnotevencountinganymore
+		/>
+	</Item>
+
+
+^ the values here are all placeholders, don't use them. use your own.
+-->
