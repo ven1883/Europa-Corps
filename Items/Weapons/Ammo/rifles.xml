@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!--!MARKED FOR FIXING-->
+
+<Items>
+
+	<!--5.56x45 mag-->
+	<Item 
+		identifier="scp_556mag" 
+		name="" 
+		description="" 
+		category="Weapon" 
+		subcategory="Coalition" 
+		cargocontaineridentifier="scp_ammocrate" 
+		impactsoundtag="impact_metal_light" 
+		maxstacksize="12" 
+		maxstacksizecharacterinventory="4" 
+		tags="smallitem,556ammo,ehaammo,55630mag" 
+		linkable="true" 
+		interactthroughwall="true"
+		scale="0.48">
+
+		<Sprite 
+			texture="%ModDir%/Ammo/improvedammo.png" 
+			depth="0.54" 
+			sourcerect="82,3,29,56" 
+			origin="0.5,0.5" 
+		/>
+		<Body 
+			width="30" 
+			height="40" 
+			density="50" 
+		/>
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_556projectile" 
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+			<Containable items="scp_556projectile" />
+			<StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+				<SpawnItem identifier="scp_556projectile" spawnposition="ThisInventory" />
+				<ParticleEmitter 
+					particle="scp_spentcasingriflesmall" 
+					emitinterval="1.5" 
+					particleamount="1" 
+					particlespersecond="50" 
+					anglemin="70" 
+					anglemax="100" 
+					velocitymin="250" 
+					velocitymax="500"
+					copyentityangle="true" 
+					scalemin="0.5" 
+					scalemax="0.5" 
+				/>
+			</StatusEffect>
+		</ItemContainer>
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+		<PreferredContainer spawnprobability="1" maxamount="1" minamount="0" primary="scp_sg550" />
+		<PreferredContainer spawnprobability="1" maxamount="8" minamount="2" primary="secarmcab" />
+		<PreferredContainer spawnprobability="0.06" maxamount="4" minamount="0" primary="wrecksecarmcab" />
+
+		<Price baseprice="200" displaynonempty="true">
+			<Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="3" multiplier="1.5" />
+			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="3" />
+			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" maxavailable="6">
+				<Reputation faction="coalition" min="5" />
+			</Price>
+			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+			<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" maxavailable="6">
+				<Reputation faction="coalition" min="5" />
+			</Price>
+		</Price>
+
+		<Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="4">
+			<RequiredItem identifier="sgt_ammocoinbasic" />
+		</Fabricate>
+
+		<Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="5" amount="1">
+			<RequiredSkill identifier="weapons" level="25" />
+			<RequiredItem tag="55630mag" mincondition="0.0" maxcondition="0.0" />
+			<RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
+			<RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
+			<RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
+		</Fabricate>
+
+		<Deconstruct time="10">
+			<Item identifier="plastic" outcondition="0.2" />
+		</Deconstruct>
+	</Item>
+
+		<!--###-->
+
+		<!--5.56x45 extended mag-->
+  	<Item 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5" 
+		maxstacksize="4" 
+		maxstacksizecharacterinventory="1" 
+		cargocontaineridentifier="scp_ammocrate" 
+		description="" 
+		category="Weapon" 
+		subcategory="Coalition" 
+		identifier="scp_556extmag" 
+		name="" 
+		tags="smallitem,556ammo,ehaammo" 
+		linkable="true" 
+		interactthroughwall="true">
+
+		<Sprite 
+			texture="%ModDir%/Ammo/improvedammo.png" 
+			depth="0.54" 
+			sourcerect="141,3,30,56" 
+			origin="0.5,0.5" 
+		/>
+		<Body 
+			width="30" 
+			height="40" 
+			density="50" 
+		/>
+
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_556projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+			<Containable items="scp_556projectile" />
+			<StatusEffect type="OnUse" target="This" condition="-1.6" disabledeltatime="true">
+				<SpawnItem identifier="scp_556projectile" spawnposition="ThisInventory" />
+				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+			</StatusEffect>
+		</ItemContainer>
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+		<PreferredContainer spawnprobability="0.1" maxamount="1" minamount="0" primary="scp_sg550" />
+		<PreferredContainer spawnprobability="0.1" maxamount="1" minamount="0" primary="secarmcab" />
+		<PreferredContainer spawnprobability="0.01" maxamount="1" minamount="0" primary="wrecksecarmcab" />
+
+		<Price baseprice="600" displaynonempty="true" minleveldifficulty="5">
+			<Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
+			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+			<Price storeidentifier="merchantmilitary" multiplier="1" minavailable="0" maxavailable="2">
+				<Reputation faction="coalition" min="15" />
+			</Price>
+			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+			<Price storeidentifier="merchantarmory" multiplier="1" minavailable="0" maxavailable="2">
+				<Reputation faction="coalition" min="15" />
+			</Price>
+		</Price>
+
+		<Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="1">
+			<RequiredItem identifier="sgt_ammocoinbasic" />
+		</Fabricate>
+
+		<Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="20">
+			<RequiredSkill identifier="weapons" level="25" />
+			<RequiredItem identifier="scp_556extmag" mincondition="0.0" maxcondition="0.0" />
+			<RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
+			<RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+			<RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
+		</Fabricate>
+
+		<Deconstruct time="15">
+			<Item identifier="plastic" />
+		</Deconstruct>
+	</Item>
+
+		<!--###-->
+
+	<!--5.56x45 round-->
+	<Item 
+		name="5.56 Round" 
+		identifier="scp_556projectile" 
+		category="Weapon" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true" 
+		scale="0.5">
+
+		<InventoryIcon 
+			texture="%ModDir%/Ammo/scp_556round.png" 
+			sourcerect="896,960,64,54" 
+			origin="0.5,0.5" 
+		/>
+		<Sprite 
+			texture="%ModDir%/Ammo/scp_556round.png" 
+			sourcerect="896,960,64,54" 
+			origin="0.5,0.5" />
+		<Body 
+			width="40" 
+			height="15" 
+			density="40" 
+		/>
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" hitscan="true" removeonhit="true">
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+			<Attack structuredamage="1.0" targetforce="1" itemdamage="1" severlimbsprobability="0.05" penetration="0.05">
+				<Affliction identifier="bleeding" strength="12.5" />
+				<Affliction identifier="bleeding" strength="12.5" probability="0.25" />
+				<Affliction identifier="gunshotwound" strength="12" />
+				<Affliction identifier="gunshotwound" strength="7" probability="0.1" />
+				<Affliction identifier="stun" strength="0.15" probability="0.15" />
+			</Attack>
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+		</Projectile>
+	</Item>
+
+</Items>
