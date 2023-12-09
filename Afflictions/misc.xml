@@ -162,7 +162,7 @@
 			multiplybymaxvitality="true" 
 			minvitalitydecrease="0" maxvitalitydecrease="2">
 		</Effect>
-    <icon texture="afflictions.png" sourcerect="780,0,128,128" color="195,60,60,255" origin="0,0" />
+    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="780,0,128,128" color="195,60,60,255" origin="0,0" />
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -458,7 +458,7 @@
 			minspeedmultiplier="1" maxspeedmultiplier="0.7" 
 			strengthchange="-0.6">
 		</Effect>
-    <icon texture="afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
+    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
   </Affliction>
 	
 	<Affliction 
