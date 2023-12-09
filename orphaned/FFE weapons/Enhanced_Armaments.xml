@@ -1000,8 +1000,8 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
-  <!--SMC 45-->
-  <Item name="" identifier="sgt_bosmg" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.36" impactsoundtag="weaponlightdrop">
+  <!--MP9-->
+  <Item name="" identifier="sgt_bosmg" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="weaponlightdrop">
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" minleveldifficulty="45" />
     <PreferredContainer secondary="weaponholder" />
     <Price baseprice="760" displaynonempty="true" minleveldifficulty="60">
@@ -1027,14 +1027,14 @@
     <InventoryIcon texture="%ModDir%/Weapons/Coalition.png" sourcerect="308,289,52,58" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Coalition.png" sourcerect="0,480,271,80" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="49,8" handle1="-17,-26" handle2="28,8" holdangle="-35" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.04" barrelpos="58,-6" spread="4" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="49,8" handle1="-10,-26" handle2="28,8" holdangle="-35" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.08" barrelpos="58,-3" spread="4" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
       <Sound file="%ModDir%/Sounds/45s1.ogg" type="OnUse" range="800" volume="1.1" />
       <StatusEffect type="OnUse">
-        <Explosion range="150.0" force="1.2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+        <Explosion range="150.0" force="0.6" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
@@ -1044,7 +1044,7 @@
     </RangedWeapon>
     <aitarget sightrange="2000" soundrange="500" fadeouttime="5" />
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="45ammo,45pistolammo" hide="false" itempos="-2,-5" rotation="-15" />
+      <Containable items="45ammo,45pistolammo" hide="false" itempos="-1.5,-13" rotation="-1" />
       <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
         <Containable items="flashlight" hide="false" itempos="27,2" setactive="true" />
