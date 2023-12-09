@@ -162,7 +162,7 @@
 			multiplybymaxvitality="true" 
 			minvitalitydecrease="0" maxvitalitydecrease="2">
 		</Effect>
-    <icon texture="%ModDir%/Afflictions/afflictions.png" sourcerect="780,0,128,128" color="195,60,60,255" origin="0,0" />
+    <icon texture="afflictions.png" sourcerect="780,0,128,128" color="195,60,60,255" origin="0,0" />
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -196,7 +196,7 @@
         <sound file="%ModDir%/Sounds/ae035scare.ogg" volume="1.75" dontmuffle="True" />
       </StatusEffect>
     </Effect>
-    <AfflictionOverlay texture="%ModDir%/Afflictions/curseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="curseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -228,7 +228,7 @@
         <sound file="%ModDir%/Sounds/horrortrag.ogg" volume="3" dontmuffle="True" />
       </StatusEffect>
     </Effect>
-    <AfflictionOverlay texture="%ModDir%/Afflictions/tragiccurseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="tragiccurseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
 	<!--~MASK AFFLICTIONS END~-->
@@ -458,7 +458,7 @@
 			minspeedmultiplier="1" maxspeedmultiplier="0.7" 
 			strengthchange="-0.6">
 		</Effect>
-    <icon texture="%ModDir%/Afflictions/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
+    <icon texture="afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
   </Affliction>
 	
 	<Affliction 
