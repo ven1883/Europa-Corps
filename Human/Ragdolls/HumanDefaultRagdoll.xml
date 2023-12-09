@@ -67,8 +67,8 @@
 			<Affliction identifier="pain" strength="16"/>
 		</StatusEffect>
 
-		<StatusEffect type="Always" target="Character" interval="0.5" duration="1" stackable="false">
-			<Conditional CurrentSpeed="gt 3"/>
+		<StatusEffect type="Always" target="Character">
+			<Conditional CurrentSpeed="gt 2.3" targettype="Character"/> <!--walkspeed is 1.7, runspeed is 4.7-->
 			<Affliction identifier="fatigue" amount="1"/>
 		</StatusEffect>
   </limb>

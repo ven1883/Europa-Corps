@@ -196,7 +196,7 @@
         <sound file="%ModDir%/Sounds/ae035scare.ogg" volume="1.75" dontmuffle="True" />
       </StatusEffect>
     </Effect>
-    <AfflictionOverlay texture="curseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/curseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -228,7 +228,7 @@
         <sound file="%ModDir%/Sounds/horrortrag.ogg" volume="3" dontmuffle="True" />
       </StatusEffect>
     </Effect>
-    <AfflictionOverlay texture="tragiccurseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/tragiccurseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
 	<!--~MASK AFFLICTIONS END~-->
@@ -468,21 +468,40 @@
 		type="stamina" 
 		causeofdeathdescription="Died of Exhaustion" 
 		selfcauseofdeathdescription="You got a little too tired for a little too long." 
-		limbspecific="false" indicatorlimb="torso" 
-		showiconthreshold="10" 
+		limbspecific="false"
+		showicontoothersthreshold="1000"
+		showinhealthscannerthreshold="3"
+		showiconthreshold="3" 
 		maxstrength="30">
 
+		<Description
+      textidentifier="afflictiondescription.fatigue.low"
+      target="Self"
+      minstrength="0"
+      maxstrength="10"/>
+    <Description
+      textidentifier="afflictiondescription.fatigue.high"
+      target="Self"
+      minstrength="10"
+      maxstrength="30"/>
+
 		<Effect 
-			minstrength="0" maxstrength="10" 
+			minstrength="0" maxstrength="3" 
 			strengthchange="-0.5">
 		</Effect>
 
 		<Effect 
-			minstrength="10" maxstrength="30" 
+			minstrength="3" maxstrength="6" 
 			strengthchange="-0.5"
-			minspeedmultiplier="1" maxspeedmultiplier="0.5">
+			minspeedmultiplier="1" maxspeedmultiplier="0.7">
 		</Effect>
-		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,768,128,128" color="103,103,103,255" origin="0,0" />
+		
+		<Effect 
+			minstrength="6" maxstrength="30" 
+			strengthchange="-0.5"
+			minspeedmultiplier="0.7" maxspeedmultiplier="0.7">
+		</Effect>
+		<icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1428,0,128,128" color="103,103,103,255" origin="0,0" />
 	</Affliction>
 
 </Afflictions>

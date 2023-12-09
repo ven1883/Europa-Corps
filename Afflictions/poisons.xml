@@ -96,7 +96,7 @@
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="2,0,128,128" color="106,106,106,255" origin="-3.6302634E-08,0" />
-    <AfflictionOverlay texture="presolatexoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/presolatexoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -302,7 +302,7 @@
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="133,1,128,128" color="106,106,106,255" origin="0,1.2100878E-09" />
-    <AfflictionOverlay texture="devilsblood.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/devilsblood.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -522,7 +522,7 @@
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="262,1,128,128" color="106,106,106,255" origin="0,1.2100878E-09" />
-    <AfflictionOverlay texture="wastingdisease.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/wastingdisease.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -692,7 +692,7 @@
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="392,1,127,128" color="15,190,15,255" origin="0,-1.8151317E-08" />
-    <AfflictionOverlay texture="lineavirus.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/lineavirus.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -890,7 +890,7 @@
     </PeriodicEffect>
 
     <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="651,1,128,128" color="106,106,106,255" origin="0,-5.056044E-09" />
-    <AfflictionOverlay texture="curseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/curseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
