@@ -12,17 +12,17 @@
 	<!--blahblahblah shorty put your stuff here-->
 
 	<!--Medical-->
-	<Items file="%ModDir%/Items/Medical/bionics.xml"/>
-	<Items file="%ModDir%/Items/Medical/buffs.xml"/>
-	<Items file="%ModDir%/Items/Medical/med_overrides.xml"/>
-	<Items file="%ModDir%/Items/Medical/meds.xml"/>
-	<Items file="%ModDir%/Items/Medical/medtool_overrides.xml"/>
-	<Items file="%ModDir%/Items/Medical/medtools.xml"/>
-	<Items file="%ModDir%/Items/Medical/misc.xml"/>
-	<Items file="%ModDir%/Items/Medical/poisons.xml"/>
+	<Item file="%ModDir%/Items/Medical/bionics.xml"/>
+	<Item file="%ModDir%/Items/Medical/buffs.xml"/>
+	<Item file="%ModDir%/Items/Medical/med_overrides.xml"/>
+	<Item file="%ModDir%/Items/Medical/meds.xml"/>
+	<Item file="%ModDir%/Items/Medical/medtool_overrides.xml"/>
+	<Item file="%ModDir%/Items/Medical/medtools.xml"/>
+	<Item file="%ModDir%/Items/Medical/misc.xml"/>
+	<Item file="%ModDir%/Items/Medical/poisons.xml"/>
 
 	<!--Misc-->
-	<Items file="%ModDir%/Items/Mapping/emitters.xml"/>
+	<Item file="%ModDir%/Items/Mapping/particleemitters.xml"/>
 
 	<!--+++++++++++-->
 	<!--AFFLICTIONS--> 
