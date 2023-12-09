@@ -1,3 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="Europa-Corps Content"  corepackage="False" gameversion="1.0.21.0">
+
+	<!--+++++-->
+	<!--ITEMS--> 
+	<!--+++++-->
+
+	<!--Weapons-->
+
+	<!--Armor-->
+
+	<!--blahblahblah shorty put your stuff here-->
+
+	<!--Medical-->
+	<Items file="%ModDir%/Items/Medical/bionics.xml"/>
+	<Items file="%ModDir%/Items/Medical/buffs.xml"/>
+	<Items file="%ModDir%/Items/Medical/med_overrides.xml"/>
+	<Items file="%ModDir%/Items/Medical/meds.xml"/>
+	<Items file="%ModDir%/Items/Medical/medtool_overrides.xml"/>
+	<Items file="%ModDir%/Items/Medical/medtools.xml"/>
+	<Items file="%ModDir%/Items/Medical/misc.xml"/>
+	<Items file="%ModDir%/Items/Medical/poisons.xml"/>
+
+	<!--Misc-->
+	<Items file="%ModDir%/Items/Mapping/emitters.xml"/>
+
+	<!--+++++++++++-->
+	<!--AFFLICTIONS--> 
+	<!--+++++++++++-->
+	<Afflictions file="%ModDir%/Afflictions/addiction.xml"/>
+	<Afflictions file="%ModDir%/Afflictions/affliction_overrides.xml"/>
+	<Afflictions file="%ModDir%/Afflictions/bionics.xml"/>
+	<Afflictions file="%ModDir%/Afflictions/buffs.xml"/>
+	<Afflictions file="%ModDir%/Afflictions/damage.xml"/>
+	<Afflictions file="%ModDir%/Afflictions/misc.xml"/>
+	<Afflictions file="%ModDir%/Afflictions/poisons.xml"/>
+	<Afflictions file="%ModDir%/Afflictions/surgery.xml"/>
+
+	<!--++++++++++-->
+	<!--CHARACTERS-->
+	<!--++++++++++-->
+	<Character file="%ModDir%/Human/human.xml"/>
+
+	<!--++++-->
+	<!--MISC-->
+	<!--++++-->
+
+	<!---->
+
 </contentpackage>
