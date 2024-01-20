@@ -111,10 +111,14 @@
   <entitydescription.scp_meusoc>An 11.43x23mm recoil operated pistol derived from an old American design, using a cartridge which provides more energy on target than 9mm pistol cartridges.</entitydescription.scp_meusoc>
   <entityname.scp_45mag>Heavy Pistol Magazine</entityname.scp_45mag>
   <entitydescription.scp_45mag>A 10 round 11.43x23mm pistol magazine containing JHP ammunition, the large projectiles providing semi-decent stopping power, though is completely useless against armour.</entitydescription.scp_45mag>
-  <entityname.scp_45projectile>11.43mm round</entityname.scp_45projectile>
+  <entityname.scp_45projectile>11.4mm round</entityname.scp_45projectile>
   <entitydescription.scp_45projectile></entitydescription.scp_45projectile>
-  <entityname.scp_45pprojectile>11.43mm round</entityname.scp_45pprojectile>
+  <entityname.scp_45pprojectile>11.4mm round</entityname.scp_45pprojectile>
   <entitydescription.scp_45pprojectile></entitydescription.scp_45pprojectile>
+  <entityname.scp_45incendmag>Heavy Pistol Burner Magazine</entityname.scp_45incendmag>
+  <entitydescription.scp_45incendmag>A 10 round 11.4x23mm magazine meant for pistols, containing FMJ-IL cartridges meant to cause severe burns upon impact.</entitydescription.scp_45incendmag>
+  <entityname.scp_45incendproj>11.4mm round</entityname.scp_45incendproj>
+  <entitydescription.scp_45incendproj></entitydescription.scp_45incendproj>
   <entityname.scp_p226>Service Pistol</entityname.scp_p226>
   <entitydescription.scp_p226>A 9x19mm recoil-operated pistol. It is a near fool-proof design found all across Europa, being adopted by the Coalition as its primary sidearm despite the cartridge's inherently lackluster capabilities.</entitydescription.scp_p226>
   <entityname.scp_mxa1>Tactical Caseless Assault Rifle</entityname.scp_mxa1>
@@ -159,6 +163,8 @@
   <entitydescription.scp_ump45>A boxy 11.43x23mm Submachine Gun suited for close quarters. It uses a larger cartridge and bigger projectile than it's lighter counterpart, but the heavier bolt carrier used reduces firerate in order to accomodate for the higher recoil impulses.</entitydescription.scp_ump45>
   <entityname.scp_umpmag>Heavy Submachine Gun Magazine</entityname.scp_umpmag>
   <entitydescription.scp_umpmag>A 25 round 11.43x23mm stick magazine containing JHP cartridges. It provides bit more punch than 9x19mm though still performs terribly against armour.</entitydescription.scp_umpmag>
+  <entityname.scp_umpincendmag>Heavy Submachine Gun Burner Magazine</entityname.scp_umpincendmag>
+  <entitydescription.scp_umpincendmag>A 25 round 11.4x23mm stick magazine containing FMJ-IL cartridges, designed to cause severe burns on contact with skin.</entitydescription.scp_umpincendmag>
   <entityname.scp_ar50>Precision Anti-Materiel Rifle</entityname.scp_ar50>
   <entitydescription.scp_ar50>A very heavy 12.7x99mm, single shot bolt action Anti-Materiel Rifle, capable of taking on significantly larger creatures and penetrating almost any wearable armour.</entitydescription.scp_ar50>
   <entityname.scp_50bmgfmj>Anti-Materiel Cartridge</entityname.scp_50bmgfmj>
