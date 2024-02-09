@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
+  <!--!not added-->
   <!--M107-->
   <Item name="" identifier="scp_m107" description="" tags="mediumitem,weapon,gun,gunsmith,specialgun,mountableweapon,bulkyweapon" Scale="0.43" category="Weapon" subcategory="Prototype" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
@@ -68,6 +69,8 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="95" />
   </Item>
+
+  <!--!unconfirmed-->
   <!--RPT-93-->
   <Item name="" description="" identifier="scp_rpt93" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.47" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
@@ -144,6 +147,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="90" />
   </Item>
+  <!--!unconfirmed-->
   <!--UTS-15-->
   <Item name="" identifier="scp_uts15" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.39" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
@@ -221,6 +225,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
+  <!--!unconfirmed-->
   <!--KS-23-->
   <Item name="" identifier="scp_ks23" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.48" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
@@ -300,6 +305,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="90" />
   </Item>
+  <!--!not added-->
   <!--23x75mm Shrapnel-25 Shell-->
   <Item name="" description="" identifier="scp_4gshell" category="Weapon" subcategory="Prototype" maxstacksize="10" maxstacksizecharacterinventory="5" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,ks23ammo,ehaammo" Scale="0.2" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" />
@@ -338,6 +344,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
+  <!--!not added-->
   <!--23x75mm Slug Shell-->
   <Item name="" description="" identifier="scp_4gslug" category="Weapon" subcategory="Prototype" maxstacksize="10" maxstacksizecharacterinventory="5" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,ks23ammo,ehaammo" Scale="0.2" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" />
@@ -376,6 +383,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
+  <!--!unconfirmed-->
   <!--MA-37-->
   <Item name="" identifier="scp_ma37" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.37" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
@@ -455,6 +463,8 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="85" />
   </Item>
+  <!--!unconfirmed-->
+  <!--Particle Cannon-->
   <Item name="" description="" identifier="scp_taucannon" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,bulkyweapon" Scale="0.3" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
     <Price baseprice="3000" sold="false"></Price>
@@ -719,6 +729,8 @@
       </StatusEffect>
     </Projectile>
   </Item>
+
+  <!--!unconfirmed-->
   <!--HK433-->
   <Item name="" identifier="scp_hk433" description="" cargocontaineridentifier="metalcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.365" impactsoundtag="weaponlightdrop">
     <PreferredContainer primary="secarmcab" />
@@ -816,6 +828,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
+  <!--!unconfirmed-->
   <!--Ruger-9-->
   <Item name="" identifier="scp_ruger9" description="" category="Weapon" subcategory="Prototype" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.32" impactsoundtag="weaponlightdrop">
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
@@ -872,6 +885,8 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
+  <!--!unconfirmed-->
+  <!--Microgun-->
   <Item name="" identifier="scp_microgun" category="Weapon" subcategory="Prototype" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,bulkyweapon" Scale="0.5" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
     <Price baseprice="2000" sold="false"></Price>
@@ -1001,6 +1016,8 @@
       </StatusEffect>
     </Projectile>
   </Item>
+  <!--!unconfirmed-->
+  <!--FNX-45-->
   <Item name="" identifier="scp_fnx45" description="" category="Weapon" subcategory="Prototype" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.34" impactsoundtag="weaponlightdrop">
     <PreferredContainer primary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="20" />
@@ -1056,6 +1073,8 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
+  <!--!unconfirmed-->
+  <!--unidentified-->
   <Item name="" identifier="scp_m6" description="" category="Weapon" subcategory="Prototype" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.325" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponlightdrop">
     <PreferredContainer primary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
@@ -1130,6 +1149,8 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="90" />
   </Item>
+  <!--!unconfirmed-->
+  <!--Shoulder-fired railgun-->
   <Item name="" identifier="scp_railgunlauncher" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.53">
     <PreferredContainer primary="secarmcab" />
     <Price baseprice="2500" sold="false" />
@@ -1203,6 +1224,8 @@
     <SkillRequirementHint identifier="weapons" level="100" />
     <SkillRequirementHint identifier="electrical" level="100" />
   </Item>
+  <!--!unconfirmed-->
+  <!--Portable Coilgun-->
   <Item name="" identifier="scp_portablecoilgun" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.38">
     <PreferredContainer primary="secarmcab" />
     <Price baseprice="2500" sold="false" />
@@ -1309,7 +1332,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
-  <!--6.5x39 Caseless round-->
+  <!--Portable Coilgun projectile-->
   <Item name="" identifier="scp_coilgunproj" interactthroughwalls="true" tags="smallitem,handheldcoilgunammo" Scale="0.3" category="Weapon" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.4">
     <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
@@ -1334,6 +1357,8 @@
       </StatusEffect>
     </Projectile>
   </Item>
+  <!--!unconfirmed-->
+  <!--Vector SMG-->
   <Item name="" identifier="scp_vector" description="" category="Weapon" subcategory="Prototype" tags="smallitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
     <PreferredContainer primary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
@@ -1397,6 +1422,8 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
+  <!--!unconfirmed-->
+  <!--AK-15-->
   <Item name="" identifier="scp_ak15zlobin" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.38" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
@@ -1496,6 +1523,8 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.05" />
     </Quality>
   </Item>
+  <!--!unconfirmed-->
+  <!--Arma 3 MX-->
   <Item name="" identifier="scp_mxa3" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
@@ -1597,6 +1626,8 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.05" />
     </Quality>
   </Item>
+  <!--!unconfirmed-->
+  <!--AA12-->
   <Item name="" identifier="scp_aa12" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
     <PreferredContainer primary="secarmcab" />
     <PreferredContainer primary="abandonedsecarmcab,wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.004" minleveldifficulty="25" />
@@ -1670,6 +1701,8 @@
       </TickBox>
     </CustomInterface>
   </Item>
+  <!--!unconfirmed-->
+  <!--unidentified-->
   <Item name="" identifier="scp_magnus" description="" category="Weapon" subcategory="Prototype" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" scale="0.445" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.004" minleveldifficulty="35" />
