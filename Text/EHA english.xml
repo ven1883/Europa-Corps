@@ -59,11 +59,11 @@
   <entitydescription.scp_556extmag>A Polymer 60 round high capacity 5.56x45mm magazine that takes advantage of the cartridge's light weight and small dimensions, however is liable to make reliability worse.</entitydescription.scp_556extmag>
   <!--entityname.scp_556projectile>5.56 Round</entityname.scp_556projectile>
     <entitydescription.scp_556projectile></entitydescription.scp_556projectile>-->
-  <entityname.scp_m4s90>Coalition Combat Shotgun</entityname.scp_m4s90>
+  <entityname.scp_m4s90>Semi-Auto Combat Shotgun</entityname.scp_m4s90>
   <entitydescription.scp_m4s90>A high quality 12 Gauge Semi Automatic Shotgun which has a large magazine tube and can fire relatively quickly.</entitydescription.scp_m4s90>
-  <entityname.scp_m590>Coalition Pump Action Shotgun</entityname.scp_m590>
+  <entityname.scp_m590>Tactical Pump Action Shotgun</entityname.scp_m590>
   <entitydescription.scp_m590>A common 12 gauge shotgun mainly used as a more robust and combat effective alternative to the clunky and dated Riot Shotgun that preceded it.</entitydescription.scp_m590>
-  <entityname.scp_rm93>Renegade Pump Action Shotgun</entityname.scp_rm93>
+  <entityname.scp_rm93>Civilian Pump Action Shotgun</entityname.scp_rm93>
   <entitydescription.scp_rm93>A 12 gauge shotgun used by the Separatists when Coalition shotguns aren't an option, featuring a meagre 6 round tube and a semi-stiff pump action. Regardless it gets the job done in a similar fashion.</entitydescription.scp_rm93>
   <entityname.scp_rsh12>Assault Revolver</entityname.scp_rsh12>
   <entitydescription.scp_rsh12>A large 12.7x55mm revolver with questionable practicality given it's intense recoil, but regardless provides nigh unmatched power in a handgun. It has a heavy double action trigger mechanism.</entitydescription.scp_rsh12>
@@ -81,7 +81,7 @@
   <entitydescription.scp_python>A 9x33mm revolver utilising a larger, higher pressure cartridge than the Coalition's older defensive revolver, but can also use its predecessor's cartridges. It has a light double action trigger mechanism.</entitydescription.scp_python>
   <entityname.scp_357round>Service Revolver Round</entityname.scp_357round>
   <entitydescription.scp_357round>A 9x33mm cartridge with a longer casing and larger projectile than 9x29mm for greater performance.</entitydescription.scp_357round>
-  <entityname.scp_sg550>Coalition Assault Rifle</entityname.scp_sg550>
+  <entityname.scp_sg550>Combat Assault Rifle</entityname.scp_sg550>
   <entitydescription.scp_sg550>A standard issue 5.56x45mm Assault Rifle designed to be a general purpose weapon for flexibility in almost any situation. It is a very common sight on submarines and in the hands of Coalition forces.</entitydescription.scp_sg550>
   <entityname.scp_val>Covert Assault Rifle</entityname.scp_val>
   <entitydescription.scp_val>A 9x39mm Assault Rifle with an integral suppressor designed for close quarters, being favoured by both the Separatists and Coalition for it's close range lethality. The suppressor however retains a massive amount of heat despite the subsonic ammunition.</entitydescription.scp_val>
@@ -93,7 +93,7 @@
   <entitydescription.scp_valextmag>A quite long polymer 30 round 9x39mm magazine housing subsonic projectiles that can shred through unarmoured targets.</entitydescription.scp_valextmag>
   <entityname.scp_ash12>Oppressor Battle Rifle</entityname.scp_ash12>
   <entitydescription.scp_ash12>A top of the line Bullpup 12.7x55mm Battle Rifle designed for close quarter engagements, making it a favourite for assault teams for attacking vessels and outposts. Due to the cartridge and operating system however, feeding issues can quickly arise.</entitydescription.scp_ash12>
-  <entityname.scp_malyuk12>Renegade Oppressor Battle Rifle</entityname.scp_malyuk12>
+  <entityname.scp_malyuk12>Aggressor Battle Rifle</entityname.scp_malyuk12>
   <entitydescription.scp_malyuk12>A semi-crude looking 12.7x55mm AK style rifle, evidently being a more available option for the Separatists. It fires significantly faster though as a result puts a lot of demand on the shooter.</entitydescription.scp_malyuk12>
   <entityname.scp_ash12mag>Oppressor Battle Rifle Durasteel Magazine</entityname.scp_ash12mag>
   <entitydescription.scp_ash12mag>A 10 round 12.7x55mm magazine loaded with incredibly hot Durasteel cartridges, significantly increasing it's already devastating effect against body armour though puts immense wear on the gun.</entitydescription.scp_ash12mag>
@@ -107,17 +107,21 @@
   <entitydescription.scp_9x19projectile></entitydescription.scp_9x19projectile>
   <entityname.scp_9x19pprojectile>9mm round</entityname.scp_9x19pprojectile>
   <entitydescription.scp_9x19pprojectile></entitydescription.scp_9x19pprojectile>
-  <entityname.scp_meusoc>Coalition Heavy Pistol</entityname.scp_meusoc>
+  <entityname.scp_meusoc>Military Heavy Pistol</entityname.scp_meusoc>
   <entitydescription.scp_meusoc>An 11.43x23mm recoil operated pistol derived from an old American design, using a cartridge which provides more energy on target than 9mm pistol cartridges.</entitydescription.scp_meusoc>
   <entityname.scp_45mag>Heavy Pistol Magazine</entityname.scp_45mag>
   <entitydescription.scp_45mag>A 10 round 11.43x23mm pistol magazine containing JHP ammunition, the large projectiles providing semi-decent stopping power, though is completely useless against armour.</entitydescription.scp_45mag>
-  <entityname.scp_45projectile>11.43mm round</entityname.scp_45projectile>
+  <entityname.scp_45projectile>11.4mm round</entityname.scp_45projectile>
   <entitydescription.scp_45projectile></entitydescription.scp_45projectile>
-  <entityname.scp_45pprojectile>11.43mm round</entityname.scp_45pprojectile>
+  <entityname.scp_45pprojectile>11.4mm round</entityname.scp_45pprojectile>
   <entitydescription.scp_45pprojectile></entitydescription.scp_45pprojectile>
-  <entityname.scp_p226>Coalition Pistol</entityname.scp_p226>
+  <entityname.scp_45incendmag>Heavy Pistol Burner Magazine</entityname.scp_45incendmag>
+  <entitydescription.scp_45incendmag>A 10 round 11.4x23mm magazine meant for pistols, containing FMJ-IL cartridges meant to cause severe burns upon impact.</entitydescription.scp_45incendmag>
+  <entityname.scp_45incendproj>11.4mm round</entityname.scp_45incendproj>
+  <entitydescription.scp_45incendproj></entitydescription.scp_45incendproj>
+  <entityname.scp_p226>Service Pistol</entityname.scp_p226>
   <entitydescription.scp_p226>A 9x19mm recoil-operated pistol. It is a near fool-proof design found all across Europa, being adopted by the Coalition as its primary sidearm despite the cartridge's inherently lackluster capabilities.</entitydescription.scp_p226>
-  <entityname.scp_mxa1>Coalition Caseless Assault Rifle</entityname.scp_mxa1>
+  <entityname.scp_mxa1>Tactical Caseless Assault Rifle</entityname.scp_mxa1>
   <entitydescription.scp_mxa1>A mostly polymer 6.5x39mm Assault Rifle using an unusual cartridge and acts as a stop-gap between 5.56 and 7.62mm rifles. Whilst not as prolific as its conventional counterparts given it's very poor heat convection, it has found some favourites due to its accuracy and low weight.</entitydescription.scp_mxa1>
   <entityname.scp_65mag>Caseless Assault Rifle Magazine</entityname.scp_65mag>
   <entitydescription.scp_65mag>A polymer 30 round 6.5x39mm magazine containing unconventional C-FMJ cartridges.</entitydescription.scp_65mag>
@@ -125,21 +129,21 @@
   <entitydescription.scp_65incendmag>A polymer 30 round 6.5x39mm magazine containing highly unusual C-AP-I cartridges, having a better effect against body armour though increases heat stress on the gun and has a tendency to cauterize wounds.</entitydescription.scp_65incendmag>
   <entityname.scp_65projectile>6.5x39mm round</entityname.scp_65projectile>
   <entitydescription.scp_65projectile></entitydescription.scp_65projectile>
-  <entityname.scp_mag>Coalition General Purpose Machine Gun</entityname.scp_mag>
+  <entityname.scp_mag>General Purpose Machine Gun</entityname.scp_mag>
   <entitydescription.scp_mag>A heavy and long 7.62x51mm machine gun designed to be a more powerful alternative to the Light Machine Gun, using a rifle cartridge to provide significantly better performance at the cost of more weight and recoil.</entitydescription.scp_mag>
   <entityname.scp_pkpboxmag>General Purpose Machine Gun Box Magazine</entityname.scp_pkpboxmag>
   <entitydescription.scp_pkpboxmag>A bulky 100 round 7.62x51mm belt fed box magazine for General Purpose Machine Guns.</entitydescription.scp_pkpboxmag>
   <entityname.scp_762pkpprojectile>7.62x51mm GPMG round</entityname.scp_762pkpprojectile>
   <entitydescription.scp_762pkpprojectile></entitydescription.scp_762pkpprojectile>
-  <entityname.scp_ksg>Coalition Oppressor Shotgun</entityname.scp_ksg>
+  <entityname.scp_ksg>Oppressor Shotgun</entityname.scp_ksg>
   <entitydescription.scp_ksg>A modern 12 gauge pump action shotgun derived from an unconventional American design, utilising 2 switchable tubes allowing for significantly greater capacity over most shotguns.</entitydescription.scp_ksg>
-  <entityname.scp_scar17>Coalition Battle Rifle</entityname.scp_scar17>
+  <entityname.scp_scar17>Combat Battle Rifle</entityname.scp_scar17>
   <entitydescription.scp_scar17>A large 7.62x51mm short stroke Battle Rifle chambering a powerful, battle tested cartridge. It is favoured by Coalition members who use it given it's effectiveness against both unarmoured and armoured targets.</entitydescription.scp_scar17>
-  <entityname.scp_g3>Renegade Battle Rifle</entityname.scp_g3>
+  <entityname.scp_g3>Heavy Battle Rifle</entityname.scp_g3>
   <entitydescription.scp_g3>A 7.62x51mm Battle Rifle based off an old German design and is used predominantly by the Separatists, with it's longer barrel providing more muzzle energy. However, the weapon uses a large, heavy bolt and off-axis stock, which significantly worsens recoil.</entitydescription.scp_g3>
-  <entityname.scp_scar20>Coalition Marksman Rifle</entityname.scp_scar20>
+  <entityname.scp_scar20>Combat Marksman Rifle</entityname.scp_scar20>
   <entitydescription.scp_scar20>A 7.62x51mm Marksman Rifle based off of the Battle Rifle, providing a longer free floating barrel for excellent accuracy, the large optic and long dimensions however make it very difficult for an inexperienced user to quickly fire accurately.</entitydescription.scp_scar20>
-  <entityname.scp_tabuk>Renegade Marksman Rifle</entityname.scp_tabuk>
+  <entityname.scp_tabuk>Crude Marksman Rifle</entityname.scp_tabuk>
   <entitydescription.scp_tabuk>A 7.62x39mm Marksman Rifle based off of the Separatist's mainstay Assault Rifle. It is a strange choice given the calibre it uses has poor long range ballistic coefficiency, however that evidently doesn't stop the Separatists.</entitydescription.scp_tabuk>
   <entityname.scp_scarmag>Battle Rifle Magazine</entityname.scp_scarmag>
   <entitydescription.scp_scarmag>A steel 20 round 7.62x51mm box magazine containing FMJ cartridges, being naturally more bulky than magazines meant for intermediate cartridges.</entitydescription.scp_scarmag>
@@ -149,14 +153,6 @@
   <entitydescription.scp_scarextmag>A large steel 40 round 7.62x51mm box magazine containing FMJ cartridges, remediating the main downside of most 7.62 rifles however is liable to malfunction.</entitydescription.scp_scarextmag>
   <entityname.scp_762natoprojectile>7.62x51mm round</entityname.scp_762natoprojectile>
   <entitydescription.scp_762natoprojectile></entitydescription.scp_762natoprojectile>
-  <entityname.scp_t5000>Coalition Precision Rifle</entityname.scp_t5000>
-  <entitydescription.scp_t5000>A large 8.6x70mm rifle designed for quickly and precisely taking out a single person, it is a rare sight on Europa given it's long range niche is very situational.</entitydescription.scp_t5000>
-  <entityname.scp_t5000boxmag>Precision Rifle Magazine</entityname.scp_t5000boxmag>
-  <entitydescription.scp_t5000boxmag>A small 5 round 8.6x70mm box magazine containing FMJ ammunition.</entitydescription.scp_t5000boxmag>
-  <entityname.scp_86projectile>8.6x70mm round</entityname.scp_86projectile>
-  <entityname.scp_m24>Renegade Precision Rifle</entityname.scp_m24>
-  <entitydescription.scp_m24>An 8.6x70mm rifle made to be an alternative to the Coalition's more fine-crafted Precision Rifle. The cartridge's recoil is intense as it clearly was a design that wasn't meant to use it.</entitydescription.scp_m24>
-  <entitydescription.scp_86projectile></entitydescription.scp_86projectile>
   <entityname.scp_smg9>Submachine Gun</entityname.scp_smg9>
   <entitydescription.scp_smg9>A compact and easy to operate 9x19mm Submachine Gun designed to provide better accuracy and controllability than a pistol offers. It is a very common weapon in use by civilians and security officers alike.</entitydescription.scp_smg9>
   <entityname.scp_9mmsmgmag>Submachine Gun Magazine</entityname.scp_9mmsmgmag>
@@ -167,7 +163,9 @@
   <entitydescription.scp_ump45>A boxy 11.43x23mm Submachine Gun suited for close quarters. It uses a larger cartridge and bigger projectile than it's lighter counterpart, but the heavier bolt carrier used reduces firerate in order to accomodate for the higher recoil impulses.</entitydescription.scp_ump45>
   <entityname.scp_umpmag>Heavy Submachine Gun Magazine</entityname.scp_umpmag>
   <entitydescription.scp_umpmag>A 25 round 11.43x23mm stick magazine containing JHP cartridges. It provides bit more punch than 9x19mm though still performs terribly against armour.</entitydescription.scp_umpmag>
-  <entityname.scp_ar50>Coalition Anti-Materiel Rifle</entityname.scp_ar50>
+  <entityname.scp_umpincendmag>Heavy Submachine Gun Burner Magazine</entityname.scp_umpincendmag>
+  <entitydescription.scp_umpincendmag>A 25 round 11.4x23mm stick magazine containing FMJ-IL cartridges, designed to cause severe burns on contact with skin.</entitydescription.scp_umpincendmag>
+  <entityname.scp_ar50>Precision Anti-Materiel Rifle</entityname.scp_ar50>
   <entitydescription.scp_ar50>A very heavy 12.7x99mm, single shot bolt action Anti-Materiel Rifle, capable of taking on significantly larger creatures and penetrating almost any wearable armour.</entitydescription.scp_ar50>
   <entityname.scp_50bmgfmj>Anti-Materiel Cartridge</entityname.scp_50bmgfmj>
   <entitydescription.scp_50bmgfmj>A large 12.7x99mm FMJ cartridge which is easily the largest available for a handheld weapon. It is incredibly powerful when used against even armoured targets, capable of penetrating submarine hulls.</entitydescription.scp_50bmgfmj>
@@ -219,13 +217,13 @@
   <entitydescription.scp_44round>A 10.9x33mm Full Metal Jacket Cartridge, it was for a long time in the mid 20th century considered the most powerful handgun cartridge on Earth, a title which was revoked by cartridges such as 12.7x33mm and 12.7x55mm, which are currently the largest (and least practical) handgun cartridges on Europa.</entitydescription.scp_44round>
   <entityname.scp_44apround>Light Hand Cannon AP Round</entityname.scp_44apround>
   <entitydescription.scp_44apround>A 10.9x33mm Cartridge using a titanium penetrator used to impart more kinetic energy into a smaller surface area, however this design significantly reduces the amount of local tissue damage due to a lack of expansion.</entitydescription.scp_44apround>
-  <entityname.scp_m249>Coalition Light Machine Gun</entityname.scp_m249>
-  <entitydescription.scp_m249>An old and boxy 5.56x45mm Light Machine Gun using the same ammunition as the commonly found Coalition Assault Rifle, making ammunition interchangable and accumulated heat lower.</entitydescription.scp_m249>
+  <entityname.scp_m249>Squad Machine Gun</entityname.scp_m249>
+  <entitydescription.scp_m249>An old and boxy 5.56x45mm Light Machine Gun using the same ammunition as the commonly found Tactical Assault Rifle, making ammunition interchangable and accumulated heat lower.</entitydescription.scp_m249>
   <entityname.scp_m249mag>Light Machine Gun Box Magazine</entityname.scp_m249mag>
-  <entitydescription.scp_m249mag>A 100 round 5.56x45mm box magazine for use in the Coalition Light Machine Gun.</entitydescription.scp_m249mag>
+  <entitydescription.scp_m249mag>A 100 round 5.56x45mm box magazine for use in the Squad Machine Gun.</entitydescription.scp_m249mag>
   <entityname.scp_556m249projectile>5.56x45 M249 round</entityname.scp_556m249projectile>
   <entitydescription.scp_556m249projectile></entitydescription.scp_556m249projectile>
-  <entityname.scp_mdr>Coalition Precision Assault Rifle</entityname.scp_mdr>
+  <entityname.scp_mdr>Burst Assault Rifle</entityname.scp_mdr>
   <entitydescription.scp_mdr>A 5.56x45mm Assault Rifle in a bullpup configuration designed to house a full length barrel within a package the same size as a conventional rifle, it has found favourites despite the burst trigger mechanism meant to conserve ammo.</entitydescription.scp_mdr>
   <entityname.scp_railgunpiercingshell>Railgun Piercing Shell</entityname.scp_railgunpiercingshell>
   <entitydescription.scp_railgunpiercingshell>A large railgun shell using a smaller diameter Titanium kinetic penetrator housed in a sabot. The projectile is propelled at higher velocities and is meant to pierce through hulls and thick armour.</entitydescription.scp_railgunpiercingshell>
@@ -260,7 +258,7 @@
   <entitydescription.scp_m67>A baseball style fragmentation grenade with a Depleted Uranium shell, the resulting fragmentation being very effective against body armour. It has a 4.5m explosion radius and a 10m frag radius.</entitydescription.scp_m67>
   <entityname.scp_latexgrenade>Preso Latex Grenade</entityname.scp_latexgrenade>
   <entitydescription.scp_latexgrenade>A nasty chemical weapon that can be thrown to coat an area in Preso Latex. Usage without protection is ill-advised.</entitydescription.scp_latexgrenade>
-  <entityname.scp_rpg7>Renegade Anti-Sub Grenade Launcher</entityname.scp_rpg7>
+  <entityname.scp_rpg7>Anti-Sub Grenade Launcher</entityname.scp_rpg7>
   <entitydescription.scp_rpg7>A simple 40mm recoilless weapon system based on a Russian design for use against outposts and submarines.</entitydescription.scp_rpg7>
   <entityname.scp_rpg7he>Anti-Sub Fragmentation Grenade</entityname.scp_rpg7he>
   <entitydescription.scp_rpg7he>A 40mm fragmentation warhead for use against enemies in close proximity, using a thin steel sleeve akin to standard hand grenades.</entitydescription.scp_rpg7he>
@@ -274,7 +272,7 @@
   <entitydescription.scp_rpg7devilblood>A 40mm warhead with a chemical payload containing Devil's Blood, allowing for long distance chemical warfare.</entitydescription.scp_rpg7devilblood>
   <entityname.scp_rpg7du>Anti-Sub DU Grenade</entityname.scp_rpg7du>
   <entitydescription.scp_rpg7du>A 40mm warhead made mostly of Depleted Uranium, lacking much of any raw explosive power but allows for vastly better penetration of submarines, causing heavy spalling upon penetration.</entitydescription.scp_rpg7du>
-  <entityname.scp_mgl>Oppressor Grenade Launcher</entityname.scp_mgl>
+  <entityname.scp_mgl>Rotary Grenade Launcher</entityname.scp_mgl>
   <entitydescription.scp_mgl>A 40mm Grenade Launcher utilising a 6 round revolving cylinder, whilst providing a massive amount of indirect firepower, the cylinder is liable to fail to cycle.</entitydescription.scp_mgl>
   <entityname.scp_pipebomb>Pipe Bomb</entityname.scp_pipebomb>
   <entitydescription.scp_pipebomb>An improvised explosive device that is easy to produce and is popular among Separatist insiders, despite it's low explosive potential compared to standard issue grenades.</entitydescription.scp_pipebomb>
@@ -300,21 +298,13 @@
   <entitydescription.scp_40mmdirtygrenade>A 40mm grenade containing a Uranium shell underneath the main warhead, intended to spread around and contaminate an area.</entitydescription.scp_40mmdirtygrenade>
   <entityname.scp_psigrenade>Strange Grenade</entityname.scp_psigrenade>
   <entitydescription.scp_psigrenade>A strange and unwieldy device, it presumably explodes.</entitydescription.scp_psigrenade>
-  <entityname.scp_at4>Coalition Anti-Sub Grenade Launcher</entityname.scp_at4>
+  <entityname.scp_at4>Disposable Anti-Sub Grenade Launcher</entityname.scp_at4>
   <entitydescription.scp_at4>A lightweight 84mm Disposable Launcher which has become an excellent tool against submarines and outposts, it is loaded with a single HEDP projectile for effect against both groups and armour.</entitydescription.scp_at4>
   <!--weapons_hightierweapons-->
   <entityname.scp_m107>Prototype Anti-Materiel Rifle</entityname.scp_m107>
   <entitydescription.scp_m107>A very large and intimidating 12.7x99mm semi-automatic Anti-Materiel Rifle, the sheer heft of the bolt recoiling back can easily knock someone unprepared off their feet, or worse.</entitydescription.scp_m107>
-  <entityname.scp_m107fmjmag>Prototype Anti-Materiel Rifle FMJ Magazine</entityname.scp_m107fmjmag>
-  <entitydescription.scp_m107fmjmag>A big and boxy 10 round 12.7x99mm magazine containing Full Metal Jacket ammunition.</entitydescription.scp_m107fmjmag>
-  <entityname.scp_m107apimag>Prototype Anti-Materiel Rifle AP-I Magazine</entityname.scp_m107apimag>
-  <entitydescription.scp_m107apimag>A big and boxy 10 round 12.7x99mm magazine contaning armour Piercing-Incendiary ammunition.</entitydescription.scp_m107apimag>
   <entityname.scp_rpt93>Prototype Heavy Machine Gun</entityname.scp_rpt93>
-  <entitydescription.scp_rpt93>An unconventional Multi-Calibre Heavy Machine Gun, capable of feeding from HMG magazines and it's own proprietary magazines containing faster and hotter cartridges.</entitydescription.scp_rpt93>
-  <entityname.scp_rpt93mag>Prototype Heavy Machine Gun Box Magazine</entityname.scp_rpt93mag>
-  <entitydescription.scp_rpt93mag>A bulky and very heavy 150 round 9.3x64mm belt fed box magazine.</entitydescription.scp_rpt93mag>
-  <entityname.scp_rpt93projectile>9.3x64 Brenneke round</entityname.scp_rpt93projectile>
-  <entitydescription.scp_rpt93projectile></entitydescription.scp_rpt93projectile>
+  <entitydescription.scp_rpt93>A large and powerful 8.6x70mm Heavy Machine Gun, acting as the prime choice for large hordes of creatures or keeping someone pinned down.</entitydescription.scp_rpt93>
   <entityname.scp_uts15>Prototype Oppressor Shotgun</entityname.scp_uts15>
   <entitydescription.scp_uts15>A heavy and boxy 12 Gauge shotgun with unprecidented capacity and close range firepower compared to other shotguns, making it perfect for dealing with a particularly hardy enemy or a large group of targets.</entitydescription.scp_uts15>
   <entityname.scp_ks23>Big Bore Shotgun</entityname.scp_ks23>
@@ -323,22 +313,8 @@
   <entitydescription.scp_4gshell>A 6 Gauge shotgun shell containing large and heavy buckshot. Such buckshot is utterly devastating against unarmoured targets and to some degree can cause serious damage to armoured targets.</entitydescription.scp_4gshell>
   <entityname.scp_4gslug>Big Bore Shotgun Slug</entityname.scp_4gslug>
   <entitydescription.scp_4gslug>A 6 Gauge shotgun shell with a very large armour-penetrating slug, its sheer mass capable of blasting apart soft tissue and armour alike.</entitydescription.scp_4gslug>
-  <entityname.scp_rsh14>Experimental Assault Revolver</entityname.scp_rsh14>
-  <entitydescription.scp_rsh14>A large 14.5x114mm revolver using a ridiculously large calibre for a pistol, as a result making it immensely recoil intense but can stop almost anything in it's tracks.</entitydescription.scp_rsh14>
-  <entityname.scp_erevolverround>Experimental Assault Revolver Round</entityname.scp_erevolverround>
-  <entitydescription.scp_erevolverround>A 14.5x114mm Anti-Materiel round providing unsurpassable stopping power.</entitydescription.scp_erevolverround>
   <entityname.scp_ma37>Prototype Battle Rifle</entityname.scp_ma37>
   <entitydescription.scp_ma37>A 7.62x51mm Battle Rifle in a bullpup configuration, housing a full sized barrel for maximum cartridge effectiveness.</entitydescription.scp_ma37>
-  <entityname.scp_ma37mag>Prototype Bullpup Battle Rifle Magazine</entityname.scp_ma37mag>
-  <entitydescription.scp_ma37mag>A 32 round 7.62x51mm box magazine containing special, high velocity cartridges.</entitydescription.scp_ma37mag>
-  <entityname.scp_762ma37projectile>7.62x51mm M330 round</entityname.scp_762ma37projectile>
-  <entitydescription.scp_762ma37projectile></entitydescription.scp_762ma37projectile>
-  <entityname.scp_mk18>Prototype Precision Rifle</entityname.scp_mk18>
-  <entitydescription.scp_mk18>A long 8.6x70mm Precision Rifle that is the pinaccle of long range stopping power and precision, acting as an in-between for 7.62mm rifles and 12.7mm rifles.</entitydescription.scp_mk18>
-  <entityname.scp_mk18mag>Prototype Precision Rifle Magazine</entityname.scp_mk18mag>
-  <entitydescription.scp_mk18mag>A 10 round 8.6x70mm box magazine containing armour piercing ammunition for the greatest amount of armour penetration and stopping power against any armoured Europan creatures.</entitydescription.scp_mk18mag>
-  <entityname.scp_86mk18projectile>8.6x70mm Mk18 round</entityname.scp_86mk18projectile>
-  <entitydescription.scp_86mk18projectile></entitydescription.scp_86mk18projectile>
   <entityname.scp_taucannon>Particle Accelerator Cannon</entityname.scp_taucannon>
   <entitydescription.scp_taucannon>A highly experimental device using a miniaturized particle accelerator, fuelled by fissile material cells to lanch high mass elementary particles at .10C, the immense kinetic energy and heat of the projectile capable of blowing most things apart and penetrate deep into materials even with extremely high compressive strength.</entitydescription.scp_taucannon>
   <entityname.scp_taucannonuranium>Particle Cannon Uranium Cell</entityname.scp_taucannonuranium>
@@ -355,8 +331,8 @@
   <entitydescription.scp_taufulgshot></entitydescription.scp_taufulgshot>
   <entityname.scp_hk433>Prototype Assault Rifle</entityname.scp_hk433>
   <entitydescription.scp_hk433>A lightweight 5.56x45mm Assault Rifle with an excellent cyclic rate and accuracy without producing significant recoil due to its calibre and muzzle brake. Comes with a 40mm UGL.</entitydescription.scp_hk433>
-  <entityname.scp_ak15zlobin>Prototype Renegade Oppressor Assault Rifle</entityname.scp_ak15zlobin>
-  <entitydescription.scp_ak15zlobin>A modernized Renegade Oppressor Assault Rifle, featuring heavily updated furniture and an unconventional magwell and auto-regulating gas system, able to feed both 7.62x39mm and 5.45x39mm cartridges. Comes with a 40mm UGL.</entitydescription.scp_ak15zlobin>
+  <entityname.scp_ak15zlobin>Prototype Aggressor Assault Rifle</entityname.scp_ak15zlobin>
+  <entitydescription.scp_ak15zlobin>A modernized Aggressor Assault Rifle, featuring heavily updated furniture and an unconventional magwell and auto-regulating gas system, able to feed both 7.62x39mm and 5.45x39mm cartridges. Comes with a 40mm UGL.</entitydescription.scp_ak15zlobin>
   <entityname.scp_mxa3>Prototype Caseless Assault Rifle</entityname.scp_mxa3>
   <entitydescription.scp_mxa3>A heavy revised Caseless Assault Rifle designed to overcome the flaws of the previous design, utilizing lighter and tougher durasteel recoil springs and a 40mm Grenade Launcher for greater offensive capabilities.</entitydescription.scp_mxa3>
   <entityname.scp_smaw>Shoulder Mounted Assault Weapon</entityname.scp_smaw>
@@ -390,7 +366,7 @@
   <entityname.scp_customrifle>Veteran's Rifle</entityname.scp_customrifle>
   <entitydescription.scp_customrifle>A 12.7x55mm Bolt Action Rifle not often seen given it's calibre, however is significantly more powerful than it's predecessor and is very hard to handle upon firing.</entitydescription.scp_customrifle>
   <entityname.scp_aa12>Prototype Combat Shotgun</entityname.scp_aa12>
-  <entitydescription.scp_aa12>An advanced 12 Gauge Semi-Automatic shotgun feeding from Renegade Combat Shotgun magazines, capable of quickly decimating anything inside a corridor or nest. The trigger however is extremely clunky for an individual not used to it.</entitydescription.scp_aa12>
+  <entitydescription.scp_aa12>An advanced 12 Gauge Semi-Automatic shotgun feeding from Combat Shotgun magazines, capable of quickly decimating anything inside a corridor or nest. The trigger however is extremely clunky for an individual not used to it.</entitydescription.scp_aa12>
   <entityname.scp_magnus>Prototype Assault Revolver</entityname.scp_magnus>
   <entitydescription.scp_magnus>An Assault Revolver utilizing an unorthodox and unconventional cylinder and barrel to allow for firing 9x33, 10.9x33 and 12.7x55mm cartridges. As a result of the strange trigger linkage to the cylinder it takes a lot of skill to fire quickly.</entitydescription.scp_magnus>
   <entityname.scp_portablecoilgun>Portable Coilgun</entityname.scp_portablecoilgun>
@@ -400,24 +376,16 @@
   <!--weapons_meleeweapons-->
   <entityname.scp_m9bayonet>Combat Knife</entityname.scp_m9bayonet>
   <entitydescription.scp_m9bayonet>A rugged fighting knife intended for hand to hand combat, being significantly more capable than the more common Diving Knife.</entitydescription.scp_m9bayonet>
-  <entityname.scp_m9bayonettitan>Titanium Combat Knife</entityname.scp_m9bayonettitan>
-  <entitydescription.scp_m9bayonettitan>A combat knife made mostly out of Titanium, providing better characteristics against armoured targets.</entitydescription.scp_m9bayonettitan>
-  <entityname.scp_improvmachete>Makeshift Machete</entityname.scp_improvmachete>
-  <entitydescription.scp_improvmachete>A crude looking machete ideal for an engineer or mechanic to defend themselves, but does a poor job against armour.</entitydescription.scp_improvmachete>
   <entityname.scp_machete>Machete</entityname.scp_machete>
   <entitydescription.scp_machete>A multi-purpose blade originally designed for combat and cutting through fauna. Unlike most blades this has the capability of penetrating armour to some degree.</entitydescription.scp_machete>
   <entityname.scp_dementonitemachete>Dementonite Machete</entityname.scp_dementonitemachete>
   <entitydescription.scp_dementonitemachete>A heavy and sturdy blade capable of inflicting significantly more damage upon unarmoured and armoured targets alike.</entitydescription.scp_dementonitemachete>
   <entityname.scp_physicoriumsword>Physicorium Tactical Sword</entityname.scp_physicoriumsword>
   <entitydescription.scp_physicoriumsword>A large yet light blade made of Physicorium, capable of cutting through significant amounts of armour.</entitydescription.scp_physicoriumsword>
-  <entityname.scp_dementonitemachetelatex>Preso Latex Coated Dementonite Machete</entityname.scp_dementonitemachetelatex>
-  <entitydescription.scp_dementonitemachetelatex>A Dementonite Machete which has a thin coating of Preso Latex, allowing for a hit and run on a target or disorienting them in combat, this however means there is reduced impact on the target.</entitydescription.scp_dementonitemachetelatex>
   <entityname.scp_baton>Baton</entityname.scp_baton>
   <entitydescription.scp_baton>A simple collapsable steel baton with a rubber coating, for use as a cheap, non-lethal means of discouragement.</entitydescription.scp_baton>
   <entityname.scp_sledge>Sledgehammer</entityname.scp_sledge>
   <entitydescription.scp_sledge>A large, heavy tool used for bashing down doors or breaking hulls though can be used as an improvised weapon.</entitydescription.scp_sledge>
-  <entityname.scp_sledgetitan>Titanium Sledgehammer</entityname.scp_sledgetitan>
-  <entitydescription.scp_sledgetitan>A sledgehammer with a hardened head designed to bash straight through most hulls.</entitydescription.scp_sledgetitan>
   <entityname.scp_submissionbaton>Submission Baton</entityname.scp_submissionbaton>
   <entitydescription.scp_submissionbaton>A heavy duty baton capable of storing a significantly more power for quickly disabling a dangerous individual. Its large capacitors require metal shielding around the base of the baton for durability's sake, increasing weight and making it more difficult to wield.</entitydescription.scp_submissionbaton>
   <!--weapons_misc-->
@@ -479,15 +447,15 @@
   <entityname.shotgunshellblunt>12 Gauge Rubber Shotgun Slug</entityname.shotgunshellblunt>
   <entitydescription.shotgunshellblunt>A 12 gauge slug made completely out of rubber, made for pain compliance and subduing troublemakers without needing other options. However due to its less-lethal nature it is a terrible choice for a person who is armed and an immediate threat to others.</entitydescription.shotgunshellblunt>
   <!--weapons_renegadeweapons-->
-  <entityname.scp_ak103>Renegade Oppressor Assault Rifle</entityname.scp_ak103>
+  <entityname.scp_ak103>Aggressor Assault Rifle</entityname.scp_ak103>
   <entitydescription.scp_ak103>A rugged and highly infamous 7.62x39mm Assault Rifle that has become an icon of the Separatist movement, it's relative ease of manufacturing and powerful cartridges making it the go-to choice for an insurrection against armoured belligerents.</entitydescription.scp_ak103>
-  <entityname.scp_akmag>Renegade Oppressor Assault Rifle Magazine</entityname.scp_akmag>
+  <entityname.scp_akmag>Aggressor Assault Rifle Magazine</entityname.scp_akmag>
   <entitydescription.scp_akmag>A polymer 30 round 7.62x39mm magazine containing FMJ cartridges, which are powerful at close range though tend to fair horrendously at longer distances.</entitydescription.scp_akmag>
-  <entityname.scp_akdrummag>Renegade Oppressor Assault Rifle Drum Magazine</entityname.scp_akdrummag>
+  <entityname.scp_akdrummag>Aggressor Assault Rifle Drum Magazine</entityname.scp_akdrummag>
   <entitydescription.scp_akdrummag>A 50 round 7.62x39mm Drum Magazine predominantly containing FMJ cartridges used within RPK style rifles, however can fit in any magwell designed for 7.62x39 magazines.</entitydescription.scp_akdrummag>
-  <entityname.scp_akapmag>Renegade Oppressor Assault Rifle AP Magazine</entityname.scp_akapmag>
+  <entityname.scp_akapmag>Aggressor Assault Rifle AP Magazine</entityname.scp_akapmag>
   <entitydescription.scp_akapmag>A polymer 30 round 7.62x39mm magazine containing Titanium AP cartridges, providing greater penetration at the cost of very poor yawing and fragmentation.</entitydescription.scp_akapmag>
-  <entityname.scp_akdumag>Renegade Oppressor Assault Rifle DU Magazine</entityname.scp_akdumag>
+  <entityname.scp_akdumag>Aggressor Assault Rifle DU Magazine</entityname.scp_akdumag>
   <entitydescription.scp_akdumag>A polymer 30 round 7.62x39mm magazine containing Depleted Uranium ammunition, capable of penetrating through thick body armour and poisoning the target, though this results in near non-existent yawing and frag.</entitydescription.scp_akdumag>
   <entityname.scp_762x39projectile>7.62x39 round</entityname.scp_762x39projectile>
   <entitydescription.scp_762x39projectile></entitydescription.scp_762x39projectile>
@@ -495,19 +463,19 @@
   <entitydescription.scp_762x39renapprojectile></entitydescription.scp_762x39renapprojectile>
   <entityname.scp_762x39duprojectile>7.62x39 DU round</entityname.scp_762x39duprojectile>
   <entitydescription.scp_762x39duprojectile></entitydescription.scp_762x39duprojectile>
-  <entityname.scp_aks74u>Renegade Assault Carbine</entityname.scp_aks74u>
+  <entityname.scp_aks74u>Crude Assault Carbine</entityname.scp_aks74u>
   <entitydescription.scp_aks74u>A rugged 5.45x39mm Assault Carbine for use in confined spaces. It is easily concealable alongside having a high fire rate, however is very inaccurate and has a significantly higher gas intake.</entitydescription.scp_aks74u>
-  <entityname.scp_ak74mag>Renegade Assault Rifle Magazine</entityname.scp_ak74mag>
+  <entityname.scp_ak74mag>Crude Assault Rifle Magazine</entityname.scp_ak74mag>
   <entitydescription.scp_ak74mag>A polymer 30 round 5.45x39mm magazine, the cartridge is easier to fabricate than 5.56x45, though comes at the cost of accuracy and less direct wounding.</entitydescription.scp_ak74mag>
-  <entityname.scp_ak74apmag>Renegade Assault Rifle AP Magazine</entityname.scp_ak74apmag>
+  <entityname.scp_ak74apmag>Crude Assault Rifle AP Magazine</entityname.scp_ak74apmag>
   <entitydescription.scp_ak74apmag>A polymer 30 round 5.45x39mm magazine containing AP ammunition for use against armour, though sacrifices a degree of yawing and frag.</entitydescription.scp_ak74apmag>
-  <entityname.scp_ak74dumag>Renegade Assault Rifle DU Magazine</entityname.scp_ak74dumag>
+  <entityname.scp_ak74dumag>Crude Assault Rifle DU Magazine</entityname.scp_ak74dumag>
   <entitydescription.scp_ak74dumag>A polymer 30 round 5.45x39mm magazine containing Depleted Uranium ammunition, capable of taking on significantly more sophisticated armour and poisoning the target, though this results in near non-existent yawing and frag.</entitydescription.scp_ak74dumag>
-  <entityname.scp_ak74extmag>Renegade Assault Rifle Extended Magazine</entityname.scp_ak74extmag>
+  <entityname.scp_ak74extmag>Crude Assault Rifle Extended Magazine</entityname.scp_ak74extmag>
   <entitydescription.scp_ak74extmag>A bulky polymer 60 round 5.45x39mm casket magazine.</entitydescription.scp_ak74extmag>
-  <entityname.scp_ak74m>Renegade Assault Rifle</entityname.scp_ak74m>
+  <entityname.scp_ak74m>Crude Assault Rifle</entityname.scp_ak74m>
   <entitydescription.scp_ak74m>A rugged 5.45x39mm Assault Rifle that has become a primary armament for the Separatists. Being easily produced and hidden away, this rifle is the go-to for a quick and basic mugging or mutiny.</entitydescription.scp_ak74m>
-  <entityname.scp_g36>Renegade Precision Assault Rifle</entityname.scp_g36>
+  <entityname.scp_g36>Automatic Precision Assault Rifle</entityname.scp_g36>
   <entitydescription.scp_g36>A 5.56x45mm Assault Rifle that is quite well designed for a Separatist weapon, using the Coalition's cartridge of choice for better accuracy. Whilst it's better in close quarters than it's more precise and burst fire Coalition counterpart, it's polymer furniture is awful for heat regulation.</entitydescription.scp_g36>
   <entityname.scp_545x39projectile>5.45x39 round</entityname.scp_545x39projectile>
   <entitydescription.scp_545x39projectile></entitydescription.scp_545x39projectile>
@@ -515,73 +483,39 @@
   <entitydescription.scp_545x39approjectile></entitydescription.scp_545x39approjectile>
   <entityname.scp_545x39duprojectile>5.45x39 DU round</entityname.scp_545x39duprojectile>
   <entitydescription.scp_545x39duprojectile></entitydescription.scp_545x39duprojectile>
-  <entityname.scp_mp443>Renegade Pistol</entityname.scp_mp443>
+  <entityname.scp_mp443>Civilian Pistol</entityname.scp_mp443>
   <entitydescription.scp_mp443>A boxy 9x19mm pistol seen in the hands of separatists given it's less complex nature and ease of disassembly, though such rudimentary parts are prone to heat retention.</entitydescription.scp_mp443>
-  <entityname.scp_pm>Improvised Pistol</entityname.scp_pm>
-  <entitydescription.scp_pm>A quickly crafted 9x19mm pistol using an incredibly basic recoil system and using as little materials as possible, making it excellent as a disposable pistol. Due to this however it has significant recoil impulses due to the primitive recoil system and has an awful habit of misfeeding.</entitydescription.scp_pm>
-  <entityname.scp_rpk74m>Renegade Light Machine Gun</entityname.scp_rpk74m>
-  <entitydescription.scp_rpk74m>A rugged 5.45x39mm Light Machine Gun featuring a longer, thicker barrel for sustained fire, however due to its length and lack of a folding stock, it is very difficult to conceal.</entitydescription.scp_rpk74m>
-  <entityname.scp_kh2020>Renegade Caseless Assault Rifle</entityname.scp_kh2020>
+  <entityname.scp_kh2020>Bullpup Caseless Assault Rifle</entityname.scp_kh2020>
   <entitydescription.scp_kh2020>A 6.5x39mm Bullpup Assault Rifle favoured by the more notable Separatist members given it's balance between power and fire rate. It is however much less accurate than it's conventional counterpart despite the same barrel length in a more compact package.</entitydescription.scp_kh2020>
-  <entityname.scp_65bullmag>Renegade Caseless Assault Rifle Magazine</entityname.scp_65bullmag>
-  <entitydescription.scp_65bullmag>A stamped steel 25 round 6.5x39mm caseless magazine used in the Renegade Caseless Assault Rifle, being easier to produce however carries less ammunition.</entitydescription.scp_65bullmag>
-  <entityname.scp_rhino>Renegade Revolver</entityname.scp_rhino>
-  <entitydescription.scp_rhino>A 9x33mm revolver which has the barrel positioned at the bottom chamber of the cylinder, reducing muzzle climb when firing, however increases height over bore, reducing accuracy.</entitydescription.scp_rhino>
-  <entityname.scp_sawnoff>Sawn-off Shotgun</entityname.scp_sawnoff>
-  <entitydescription.scp_sawnoff>An incredibly short 12 gauge shotgun that is designed for concealment in mind, however the short twin barrels significantly reduce accuracy and velocity as well as limiting the user to only 2 shots.</entitydescription.scp_sawnoff>
-  <entityname.scp_pkp>Renegade General Purpose Machine Gun</entityname.scp_pkp>
+  <entityname.scp_pkp>Medium Machine Gun</entityname.scp_pkp>
   <entitydescription.scp_pkp>A somewhat old, heavy but rugged 7.62x51mm GPMG designed for providing powerful sustained fire against a large group of targets.</entitydescription.scp_pkp>
-  <entityname.scp_saiga12>Renegade Combat Shotgun</entityname.scp_saiga12>
+  <entityname.scp_saiga12>Mag-Fed Combat Shotgun</entityname.scp_saiga12>
   <entitydescription.scp_saiga12>A 12 Gauge magazine fed combat shotgun, is much easier to load to full with it's dedicated magazines, but has significant recoil due to the basic AK style recoil system.</entitydescription.scp_saiga12>
-  <entityname.scp_saigamag>Renegade Combat Shotgun Magazine</entityname.scp_saigamag>
+  <entityname.scp_saigamag>Combat Shotgun Magazine</entityname.scp_saigamag>
   <entitydescription.scp_saigamag>A 5 round 12 gauge magazine containing buckshot, whilst it has poor capacity, quite a few can be carried around.</entitydescription.scp_saigamag>
-  <entityname.scp_saigaextmag>Renegade Combat Shotgun Extended Magazine</entityname.scp_saigaextmag>
+  <entityname.scp_saigaextmag>Combat Shotgun Extended Magazine</entityname.scp_saigaextmag>
   <entitydescription.scp_saigaextmag>A 10 round 12 gauge extended magazine containing buckshot.</entitydescription.scp_saigaextmag>
-  <entityname.scp_saigadrummag>Renegade Combat Shotgun Drum</entityname.scp_saigadrummag>
+  <entityname.scp_saigadrummag>Combat Shotgun Drum</entityname.scp_saigadrummag>
   <entitydescription.scp_saigadrummag>A bulky 20 round 12 gauge drum magazine containing buckshot shells that rattle a lot.</entitydescription.scp_saigadrummag>
-  <entityname.scp_uzi>Renegade Submachine Gun</entityname.scp_uzi>
+  <entityname.scp_uzi>Compact Submachine Gun</entityname.scp_uzi>
   <entitydescription.scp_uzi>A 9x19mm open bolt Submachine Gun hailing from a simple stamped steel design, making it significantly easier to produce, however sacrifices ergonomics and accuracy as a result.</entitydescription.scp_uzi>
   <entityname.scp_pkpsmallboxmag>Small General Purpose Machine Gun Box Magazine</entityname.scp_pkpsmallboxmag>
   <entitydescription.scp_pkpsmallboxmag>A 50 round 7.62x51mm belt fed box magazine for General Purpose Machine Guns.</entitydescription.scp_pkpsmallboxmag>
-  <entityname.scp_sr1>Renegade Heavy Pistol</entityname.scp_sr1>
+  <entityname.scp_sr1>Civilian Heavy Pistol</entityname.scp_sr1>
   <entitydescription.scp_sr1>An 11.43x23mm pistol used as an easily producable version of the Coalition's Heavy Pistol, with evidence to it originally not being produced in this cartridge. Due to less precision machining it is less accurate alongside having a weaker recoil spring, however this has the side effect of allowing the slide to cycle faster.</entitydescription.scp_sr1>
-  <entityname.scp_osv96>Renegade Anti-Materiel Rifle</entityname.scp_osv96>
+  <entityname.scp_osv96>Crude Anti-Materiel Rifle</entityname.scp_osv96>
   <entitydescription.scp_osv96>A 12.7x99mm Anti-Materiel Rifle made to be more of an accessible weapon than the Coalition's precision machined, higher quality AMR. Due to the fact that it uses basic parts it is significantly more unwieldy and innacurate, alongside having a horrendous tendency to fail to eject. Regardless it will still fire a 12.7x99mm projectile into an object with considerable lethality.</entitydescription.scp_osv96>
-  <entityname.scp_sr2>Renegade Heavy Submachine Gun</entityname.scp_sr2>
+  <entityname.scp_sr2>Compact Heavy Submachine Gun</entityname.scp_sr2>
   <entitydescription.scp_sr2>An 11.43x23mm SMG that has been derived from an already existing SMG design, it is extremely compact however due to the very short barrel accuracy is atrocious.</entitydescription.scp_sr2>
   <!--weapons_vintageweapons-->
-  <entityname.scp_nagant>Samorodok</entityname.scp_nagant>
-  <entitydescription.scp_nagant>An old 7.62x54mmR bolt action rifle with a just as old optic attached to it.</entitydescription.scp_nagant>
-  <entityname.scp_nagantmag>Samorodok Stripper Clip</entityname.scp_nagantmag>
-  <entitydescription.scp_nagantmag>A simple and old 5 round 7.62x54mmR clip.</entitydescription.scp_nagantmag>
-  <entityname.scp_nagantprojectile>Vintage Bolt Action Rifle Round</entityname.scp_nagantprojectile>
-  <entitydescription.scp_nagantprojectile>a 7.62mm cartridge that is known for being the oldest cartridge in military service.</entitydescription.scp_nagantprojectile>
-  <entityname.scp_sr3>Potroshitel</entityname.scp_sr3>
-  <entitydescription.scp_sr3>A worn specialist 9x39mm Assault Rifle, it appears to have Cyrllic gravings of the weapon's name etched onto the receiver.</entitydescription.scp_sr3>
-  <entityname.scp_valbigmag>Potroshitel Magazine</entityname.scp_valbigmag>
-  <entitydescription.scp_valbigmag>A very large 40 round 9x39mm magazine that is obtrusively long.</entitydescription.scp_valbigmag>
+  <entityname.scp_sr3>Infiltrator Covert Assault Rifle</entityname.scp_sr3>
+  <entitydescription.scp_sr3>A custom built 9x39mm assault rifle using a Covert AR as a base, featuring a Physicorium baffle suppressor for excellent heat properties whilst retaining a good rate of fire.</entitydescription.scp_sr3>
+  <entityname.scp_valbigmag>Infiltrator Covert AR Magazine</entityname.scp_valbigmag>
+  <entitydescription.scp_valbigmag>A very large custom built 9x39mm magazine holding 40 rounds.</entitydescription.scp_valbigmag>
   <entityname.scp_9x19approjectile>9x19 AP round</entityname.scp_9x19approjectile>
   <entitydescription.scp_9x19approjectile></entitydescription.scp_9x19approjectile>
-  <entityname.scp_kir>Tikhiy</entityname.scp_kir>
-  <entitydescription.scp_kir>An Oppressor Battle Rifle heavily modified by an Infiltrator featuring personalised furniture and an experimental Physicorium baffle suppressor, almost entirely neutralizing heat retention.</entitydescription.scp_kir>
-  <entityname.scp_kirmag>Tikhiy Box Magazine</entityname.scp_kirmag>
-  <entitydescription.scp_kirmag>A somewhat heavy 12.7x55mm magazine full of subsonic ammunition capable of imparting a large degree of kinetic energy upon the target.</entitydescription.scp_kirmag>
-  <entityname.scp_127kirprojectile>12.7x55mm Kir round</entityname.scp_127kirprojectile>
-  <entitydescription.scp_127kirprojectile></entitydescription.scp_127kirprojectile>
-  <entityname.scp_fal>Fusil</entityname.scp_fal>
-  <entitydescription.scp_fal>An old 7.62x51mm Battle Rifle titled as the Right Arm of the Free World back on Earth. Now mostly serving as a relic of a long lost past.</entitydescription.scp_fal>
-  <entityname.scp_ar15762>Murphy's Lawmaker</entityname.scp_ar15762>
-  <entitydescription.scp_ar15762>An old looking 7.62x35mm assault rifle that appears to have a lot of wear and blood on it, its original owner likely long parted from it.</entitydescription.scp_ar15762>
-  <entityname.scp_300mag>Murphy's Lawmaker Magazine</entityname.scp_300mag>
-  <entitydescription.scp_300mag>A worn looking magazine containing 25 7.62x35mm cartridges.</entitydescription.scp_300mag>
-  <entityname.scp_300projectile>7.62x35 Round</entityname.scp_300projectile>
-  <entitydescription.scp_300projectile></entitydescription.scp_300projectile>
-  <entityname.scp_gm6>Hiuz</entityname.scp_gm6>
-  <entitydescription.scp_gm6>A sleek, bullpup style 12.7x108mm Anti-Materiel Rifle that is very much a rare specimen, likely brought over from Earth by a very select few.</entitydescription.scp_gm6>
-  <entityname.scp_gm6mag>Hiuz Magazine</entityname.scp_gm6mag>
-  <entitydescription.scp_gm6mag>A big and boxy 5 round 12.7x108mm magazine containing Full Metal Jacket ammunition.</entitydescription.scp_gm6mag>
-  <entityname.scp_gm6round>GM6 Round</entityname.scp_gm6round>
-  <entitydescription.scp_gm6round></entitydescription.scp_gm6round>
+  <entityname.scp_kir>Infiltrator Oppressor Battle Rifle</entityname.scp_kir>
+  <entitydescription.scp_kir>An Oppressor Battle Rifle heavily modified for assassinations, featuring a semi-auto control group and an experimental Physicorium baffle suppressor, which almost entirely neutralizes heat retention.</entitydescription.scp_kir>
   <entityname.scp_dmr540>Raptor</entityname.scp_dmr540>
   <entitydescription.scp_dmr540>A highly modernized 7.62x51mm Marksman Rifle hailing from the same failed weapons program as the Hammerhead, being made to replace both the Battle Rifle and the Marksman Rifle. As this rifle is no longer produced, it is extremely rare.</entitydescription.scp_dmr540>
   <entityname.scp_dmr540mag>Raptor Box Magazine</entityname.scp_dmr540mag>
@@ -590,24 +524,14 @@
   <entitydescription.scp_dmr540projectile></entitydescription.scp_dmr540projectile>
   <entityname.scp_m35a2>Hammerhead</entityname.scp_m35a2>
   <entitydescription.scp_m35a2>A strangely pristine 5.56x45mm Bullpup Assault Rifle. Hailing from a cancelled Coalition weapons program from recent events, these rifles are incredibly rare despite their overall superior characteristics to the current issue rifles.</entitydescription.scp_m35a2>
-  <entityname.scp_m35a2mag>Hammerhead Box Magazine</entityname.scp_m35a2mag>
-  <entitydescription.scp_m35a2mag>A surprisingly lightweight quad stack 50 round 5.7x48mm Box Magazine.</entitydescription.scp_m35a2mag>
-  <entityname.scp_m35projectile>5.7x48mm round</entityname.scp_m35projectile>
-  <entitydescription.scp_m35projectile></entitydescription.scp_m35projectile>
-  <entityname.scp_mxa1warsky>Battle Hardened Caseless Assault Rifle</entityname.scp_mxa1warsky>
-  <entitydescription.scp_mxa1warsky>A modified Coalition Caseless Assault Rifle that appears to have been very heavily used by its original owner. The phrase 'Beta mayor got trashed.' has been etched onto the left side of the lower receiver.</entitydescription.scp_mxa1warsky>
   <entityname.scp_ash12unique>Protectorate Oppressor Battle Rifle </entityname.scp_ash12unique>
   <entitydescription.scp_ash12unique>An Oppressor Battle Rifle heavily modified by a Protectorate, having a custom gas tube for a significantly higher fire rate and a custom muzzle brake to mitigate the added recoil somewhat.</entitydescription.scp_ash12unique>
-  <entityname.scp_hk21>Maschinegewehr</entityname.scp_hk21>
-  <entitydescription.scp_hk21>A small and lighter 7.62x51mm Machine Gun that appears to have been left abandoned for a long time.</entitydescription.scp_hk21>
-  <entityname.scp_sa80a3>Imperialist</entityname.scp_sa80a3>
-  <entitydescription.scp_sa80a3>A 6.5x39mm Assault Rifle based on a British design with a bullpup configuration, providing greater accuracy and velocity, though noticably increases recoil.</entitydescription.scp_sa80a3>
   <entityname.scp_g3ka4>Sturmgewehr</entityname.scp_g3ka4>
   <entitydescription.scp_g3ka4>A compact 7.62x51mm Battle Rifle utilising a roller delayed blowback operation for more reliable cycling, however requires an overall heavier bolt to accomplish, increasing recoil impulses.</entitydescription.scp_g3ka4>
   <entityname.scp_m29>Lucky Punk</entityname.scp_m29>
   <entitydescription.scp_m29>An old 10.9x33mm revolver that looks relatively well kept.</entitydescription.scp_m29>
-  <entityname.scp_r8>Pocket 8 Shooter</entityname.scp_r8>
-  <entitydescription.scp_r8>A 9x33mm revolver using a larger frame and an 8 round cylinder for slightly greater volume of fire.</entitydescription.scp_r8>
+  <entityname.scp_r8>Aftermarket Service Revolver</entityname.scp_r8>
+  <entitydescription.scp_r8>A modified 9x33mm Service Revolver that has been almost entirely overhauled, featuring a light trigger and an 8 round cylinder.</entitydescription.scp_r8>
   <entityname.scp_spas12>Franchi</entityname.scp_spas12>
   <entitydescription.scp_spas12>A blocky 12 gauge shotgun with no stock, though is able to quickly empty its tube at anything unfortunate enough to be close.</entitydescription.scp_spas12>
   <entityname.scp_akms>Avtomat</entityname.scp_akms>
@@ -619,11 +543,17 @@
   <entityname.scp_g17>Gaston</entityname.scp_g17>
   <entitydescription.scp_g17>A rather blocky but reliable 9x19mm pistol, evidently being an older design of self-loading pistol. It has kept surprisingly intact despite it's apparent age.</entitydescription.scp_g17>
   <entityname.scp_rsh50>Hand Breaker</entityname.scp_rsh50>
-  <entitydescription.scp_rsh50>A 12.7x99mm Assault Revolver that has been modified to take Anti-Materiel Cartridges, who did this and why is unknown given the immense recoil.</entitydescription.scp_rsh50>
+  <entitydescription.scp_rsh50>A 12.7x99mm Assault Revolver that has been modified to take Anti-Materiel Cartridges, who did this and why is unknown given the ridiculous recoil.</entitydescription.scp_rsh50>
   <entityname.scp_domique>Domique</entityname.scp_domique>
-  <entitydescription.scp_domique>A very old 12 gauge shotgun using the first prototype of dual environment bolt systems, it was a standard issue gun for security until more capable firearms were adapted and produced.</entitydescription.scp_domique>
+  <entitydescription.scp_domique>A very old 12 gauge shotgun being one the first examples of dual environment bolt systems, it was a standard issue gun for security until more capable firearms were adapted and produced.</entitydescription.scp_domique>
   <entityname.scp_g36c>Karabiner</entityname.scp_g36c>
   <entitydescription.scp_g36c>A 5.56x45mm Assault Carbine that was once used by the Coalition, however the Separatists used this design for their Precision AR.</entitydescription.scp_g36c>
+  <entityname.scp_akliv>Vanguard Oppressor Assault Rifle</entityname.scp_akliv>
+  <entitydescription.scp_akliv>A heavily modified Renegade Oppressor AR chambered in 7.62x39mm, with a custom gas block and more ergonomic furniture.</entitydescription.scp_akliv>
+  <entityname.scp_sg550mli>Aftermarket Coalition Assault Rifle</entityname.scp_sg550mli>
+  <entitydescription.scp_sg550mli>A heavily modified Coalition AR with substantially better furniture, being rechambered for 6.5x39mm to further increase it's viability.</entitydescription.scp_sg550mli>
+  <entityname.scp_usp45>Seitenwaffe</entityname.scp_usp45>
+  <entitydescription.scp_usp45>A rather blocky 11.4x23mm pistol likely of Separatist origin, being heavily modified by the previous owner.</entitydescription.scp_usp45>
   <!--afflictions_afflictions-->
   <afflictionname.scp_presolatexinfection>Preso Latex Petrification</afflictionname.scp_presolatexinfection>
   <afflictiondescription.scp_presolatexinfection>The patient's dermal, subcutaneous and muscle tissues are rapidly being converted into Preso Latex. The affected areas beginning to rapidly shut down, with the patient's skin turning an anoxic black.</afflictiondescription.scp_presolatexinfection>

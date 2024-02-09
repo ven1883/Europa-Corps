@@ -402,7 +402,7 @@
 				<Affliction identifier="alcoholwithdrawal" strength="0.5" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="384,0,128,128" color="195,180,60,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="384,0,128,128" color="195,180,60,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -476,7 +476,7 @@
 				<Affliction identifier="nausea" strength="30" probability="0.5" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="512,0,128,128" color="209,121,84,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="512,0,128,128" color="209,121,84,255" origin="0,0" />
 	</Affliction>
 
 	<!--~ALCOHOL ADDICTION END~-->
@@ -554,7 +554,7 @@
 				<Affliction identifier="nausea" strength="30" probability="0.5" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="640,128,128,128" color="209,121,84,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="640,128,128,128" color="209,121,84,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -600,7 +600,7 @@
 				<Affliction identifier="fleshwithdrawal" strength="0.5" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="512,128,128,128" color="195,180,60,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="512,128,128,128" color="195,180,60,255" origin="0,0" />
 	</Affliction>
 
 </Afflictions>

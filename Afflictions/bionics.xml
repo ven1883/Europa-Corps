@@ -20,7 +20,7 @@
 			resistancefor="damage" 
 			minresistance="0" maxresistance="0.85">
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="128,256,128,128" color="215,252,104,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="128,256,128,128" color="215,252,104,255" origin="0,0" />
 	</Affliction>
 		
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -48,7 +48,7 @@
 				<Affliction identifier="methaddiction" amount="0.5" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="512,256,128,128" color="215,252,104,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="512,256,128,128" color="215,252,104,255" origin="0,0" />
 	</Affliction>
 		
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -69,7 +69,7 @@
 
 			<StatusEffect type="InWater" target="Character" OxygenAvailable="1000.0" setvalue="true" />
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="0,256,128,128" color="215,252,104,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="0,256,128,128" color="215,252,104,255" origin="0,0" />
 	</Affliction>
 		
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -90,7 +90,7 @@
 
 			<StatusEffect target="Character" PressureProtection="10000.0" setvalue="true" />
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="256,256,128,128" color="215,252,104,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="256,256,128,128" color="215,252,104,255" origin="0,0" />
 	</Affliction>
 		
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -114,7 +114,7 @@
 				<ReduceAffliction identifier="symbiotichuskmedoverhaul" amount="100" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="640,256,128,128" color="215,252,104,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="640,256,128,128" color="215,252,104,255" origin="0,0" />
 	</Affliction>
 		
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -130,7 +130,7 @@
 		limbspecific="false" indicatorlimb="Torso" 
 		maxstrength="10">
 
-		<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="384,256,128,128" color="215,252,104,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="384,256,128,128" color="215,252,104,255" origin="0,0" />
 	</Affliction>
 
 	<Affliction 

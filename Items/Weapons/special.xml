@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--Chemthrower-->
+  <Item name="" identifier="sgt_chemthrower" category="Weapon" subcategory="Coalition" Tags="mediumitem,weapon,gun,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <Price baseprice="105" sold="false">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="1.25" minavailable="1" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantarmory" multiplier="1.25" minavailable="1" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Weapons/Coalition.png" sourcerect="0,149,274,123" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Coalition.png" sourcerect="0,149,274,123" depth="0.55" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="scp_durasteel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weaponfabricator" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="flamer" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+      <RequiredItem identifier="scp_durasteel" amount="2" />
+    </Fabricate>
+    <Body width="150" height="77" density="25" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="12,-50" holdangle="60" aimpos="50,-40" handle1="-118,4" handle2="-4,-6" msg="ItemMsgPickUpSelect" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="wornchemthrower" texture="%ModDir%/Weapons/Coalition.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,149,274,123" limb="Torso" scale="0.5" origin="0.5,0.1" />
+    </Wearable>
+    <RepairTool firedamage="50.0" structurefixamount="0.0" usablein="Air" range="600" barrelpos="54,4" fireprobability="0.1" repairmultiple="true" RepairMultipleWalls="false" repairthroughwalls="false" repairthroughholes="true" combatpriority="90" spread="25" unskilledspread="25">
+      <!-- the item must contain a welding fuel tank for it to work -->
+      <RequiredItems items="chemfuel" type="Contained" msg="ItemMsgWeldingFuelRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="50" velocitymax="500" />
+      <ParticleEmitter particle="flamethrower" particlespersecond="80" anglemin="0" anglemax="0" velocitymin="1000" velocitymax="1500" highqualitycollisiondetection="true" />
+      <ParticleEmitter particle="flamethrowersmoke" particlespersecond="80" anglemin="0" anglemax="0" velocitymin="500" velocitymax="1000" />
+      <sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse" range="750.0" loop="true" />
+      <StatusEffect type="OnFailure" target="This">
+        <ParticleEmitter particle="bubbles" particlespersecond="20" anglemin="-10" anglemax="10" scalemin="0.3" scalemax="0.7" velocitymin="5" velocitymax="100" copyentityangle="true" />
+        <ParticleEmitter particle="fleshsmoke" particlespersecond="10" anglemin="-10" anglemax="10" scalemin="1" scalemax="1.5" velocitymin="5" velocitymax="200" copyentityangle="true" />
+      </StatusEffect>
+      <StatusEffect type="OnSuccess" targettype="UseTarget" targetidentifiers="item" Condition="-15.0">
+        <Conditional HasTag="neq door" />
+      </StatusEffect>
+      <!-- make the item unusable when there's less than 10% oxygen -->
+      <StatusEffect type="OnUse" target="Hull,This" UsableIn="None">
+        <Conditional OxygenPercentage="lt 10" />
+      </StatusEffect>
+      <!-- make the item usable again when there's more than 10% oxygen -->
+      <StatusEffect type="OnUse" target="Hull,This" UsableIn="Air">
+        <Conditional OxygenPercentage="gt 10" />
+      </StatusEffect>
+      <!-- when using, the contained welding fuel tank will detoriate (= lose fuel) -->
+      <StatusEffect type="OnUse" targettype="Contained" targets="sgt_napalm" Condition="-5.0" />
+      <!-- do burn damage to characters -->
+      <StatusEffect type="OnSuccess" target="UseTarget">
+        <Affliction identifier="burn" amount="8" />
+      </StatusEffect>
+      <!-- consume oxygen from the hull -->
+      <StatusEffect type="OnUse" target="Hull" Oxygen="-10000" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Conditional InWater="false" />
+        <Affliction identifier="burn" strength="0.5" probability="0.5" />
+      </StatusEffect>
+      <LightComponent LightColor="255,174,121,255" Flicker="0.5" Range="500">
+        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="-0.8,0.55" />
+      </LightComponent>
+    </RepairTool>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-63,-47" itemrotation="-37.5" containedspritedepth="0.56" containedstateindicatorstyle="tank">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <Containable items="chemfuel" />
+    </ItemContainer>
+    <aitarget sightrange="5000" soundrange="500" fadeouttime="5" />
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+  <!--Pocket Extinguisher-->
+  <Item name="" identifier="sgt_ext" category="Equipment" Tags="mediumitem,fireextinguisher,provocative" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light" donttransferbetweensubs="true">
+    <Upgrade gameversion="0.9.600.0" Tags="mediumitem,fireextinguisher,provocative" />
+    <PreferredContainer primary="engcab,reactorcab" spawnprobability="0.5" maxamount="2" />
+    <Price baseprice="20" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" minavailable="3" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantresearch" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" minavailable="2" />
+      <Price storeidentifier="merchantmine" minavailable="2" />
+    </Price>
+    <Deconstruct time="2">
+      <Item identifier="aluminium" outcondition="0.5" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="2">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <RequiredItem identifier="aluminium" />
+      <RequiredItem identifier="sodium" mincondition="0.5" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="4" amount="1">
+      <RequiredSkill identifier="mechanical" level="10" />
+      <RequiredItem identifier="sgt_ext" maxcondition="0" />
+      <RequiredItem identifier="sodium" mincondition="0.25" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Ammo/fireext.png" sourcerect="52,0,56,53" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/fireext.png" depth="0.55" sourcerect="0,0,45,77" origin="0.5,0.5" />
+    <Body width="30" height="40" density="8" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="40,-20" handle1="-6,2" msg="ItemMsgPickUpSelect" />
+    <RepairTool extinguishamount="200.0" range="500" barrelpos="21,4" repairthroughholes="true" hititems="false" IgnoreCharacters="true">
+      <ParticleEmitter particle="extinguisher" velocitymin="1000.0" velocitymax="1650.0" particlespersecond="100" />
+      <StatusEffect type="OnUse" targettype="This" Condition="-100.0" />
+      <sound file="Content/Items/Tools/Extinguisher.ogg" type="OnUse" range="500.0" loop="true" />
+    </RepairTool>
+    <Propulsion force="-80" usablein="water" particles="bubbles" />
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="1" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--M79 Sawed-Off-->
+  <Item name="" description="" identifier="sgt_m79" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.26" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.125" minleveldifficulty="20" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15" minleveldifficulty="20" />
+    <PreferredContainer primary="armcab" secondary="locker" />
+    <Price baseprice="420" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="scp_basicparts" mincondition="0.5" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon name="M79inv" texture="%ModDir%/Weapons/Renegade.png" sourcerect="196,210,63,78" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Renegade.png" sourcerect="0,213,179,65" depth="0.55" origin="0.5,0.5" />
+    <Body width="170" height="40" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="74,6" handle1="-62,-14" />
+    <RangedWeapon barrelpos="38,6" spread="12" reload="2" unskilledspread="30" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
+      <ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
+      <Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2.25" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="8.0" />
+      </StatusEffect>
+      <RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="65" />
+      <StatusEffect type="OnUse" target="This" delay="0.4">
+        <Sound file="%ModDir:2764968387%/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="grenade" />
+    </ItemContainer>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="3" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--Heavy Blaster-->
+  <Item name="" identifier="sgt_heavyblaster" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="secarmcab" secondary="weaponholder,armcab" />
+    <Price baseprice="900" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="2" sold="true">
+        <Reputation faction="coalition" min="70" />
+      </Price>
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="tin" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weaponfabricator" requiredtime="120">
+      <RequiredSkill identifier="electrical" level="70" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="aluminium" amount="4" />
+      <RequiredItem identifier="tin" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      <RequiredItem identifier="fulgurium" amount="2" />
+    </Fabricate>
+    <Sprite texture="%ModDir%/Weapons/alt.png" sourcerect="0,0,177,65" depth="0.55" origin="0.5,0.5" />
+    <Body width="238" height="63" density="25" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="55,2" handle1="-45,-15" handle2="90,-10" holdangle="-25" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="wornheavyblaster" texture="%ModDir%/Weapons/Alt.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,0,177,65" limb="Torso" scale="0.5" origin="0.5,-0.3" />
+    </Wearable>
+    <RangedWeapon reload="1.0" holdtrigger="true" barrelpos="55,4" spread="0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" minchargetime="1.5" maxchargetime="1.5">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <LightComponent LightColor="255,255,255,255" Flicker="0.2" range="0" IsOn="false" drawbehindsubs="false" ignorecontinuoustoggle="true" copyentityangle="true" powerconsumption="1">
+        <Sprite texture="%ModDir%/Particles/HeavyBlasterHeat.png" origin="0.48,0.55" alpha="1.0" />
+        <!--Turn lights on when shooting-->
+        <StatusEffect type="OnUse" target="This" IsOn="true" setvalue="true" disabledeltatime="true" comparison="And" stackable="false">
+          <Conditional IsOn="false" />
+        </StatusEffect>
+        <!--Tag weapon with "shooting" when used and the battery cell has power left in it to prevent the light from turning off-->
+        <StatusEffect type="OnUse" target="This" disabledeltatime="false" comparison="And" tags="shooting" duration="0.1" CheckConditionalAlways="true">
+          <Conditional Voltage="gt 0.01" />
+        </StatusEffect>
+        <!--Turn lights off when not shooting-->
+        <StatusEffect type="Always" target="This" IsOn="false" setvalue="true" disabledeltatime="true" comparison="And" interval="1" stackable="false">
+          <Conditional IsOn="true" />
+          <Conditional HasStatusTag="neq shooting" />
+        </StatusEffect>
+      </LightComponent>
+      <Sound file="%ModDir%/Sounds/blastershot.ogg" type="OnUse" range="3000" />
+      <ChargeSound file="%ModDir%/Sounds/blaster1.ogg" range="1000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="true" flames="false" underwaterbubble="true" camerashake="12.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="hbcell" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="25" />
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand+RightHand">
+        <Conditional skillrequirement="true" weapons="lt 25" />
+        <Affliction identifier="burn" strength="4" probability="0.35" />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="15,-5" containedspritedepths="0.562,0.561" containedstateindicatorstyle="default" containedstateindicatorslot="0">
+      <Containable items="hbcell" rotation="270">
+        <!--Provide power to the item when battery cell is contained and has a condition of at least 1-->
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true">
+          <Conditional condition="gt 0" />
+        </StatusEffect>
+      </Containable>
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="25,0" setactive="true" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <SkillRequirementHint identifier="weapons" level="25" />
+  </Item>
+  <!--ASMD Shock Rifle-->
+  <Item name="" identifier="sgt_asmd" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.7" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="secarmcab" secondary="weaponholder,armcab" />
+    <Price baseprice="2000" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="2" sold="true">
+        <Reputation faction="coalition" min="70" />
+      </Price>
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="tin" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weaponfabricator" requiredtime="120">
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="sgt_heavyblaster" />
+      <RequiredItem identifier="scp_riflekit" />
+      <RequiredItem identifier="dementonite" amount="6" />
+      <RequiredItem identifier="scp_durasteel" amount="4" />
+      <RequiredItem identifier="fulgurium" amount="4" />
+    </Fabricate>
+    <Sprite texture="%ModDir%/Weapons/alt.png" sourcerect="0,65,183,49" depth="0.55" origin="0.5,0.5" />
+    <Body width="238" height="58" density="25" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="70,2" handle1="-54,-8" handle2="90,-10" holdangle="-25" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="wornasmd" texture="%ModDir%/Weapons/Alt.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,65,183,49" limb="Torso" scale="0.7" origin="0.5,-0.3" />
+    </Wearable>
+    <RangedWeapon reload="2" holdtrigger="true" barrelpos="55,4" spread="0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <LightComponent LightColor="255,255,255,255" Flicker="0.2" range="0" IsOn="false" drawbehindsubs="false" ignorecontinuoustoggle="true" copyentityangle="true" powerconsumption="1" fadeouttime="2">
+        <Sprite texture="%ModDir%/Particles/shockrifleheat.png" origin="0.5074421,0.5350049" alpha="1.0" sourcerect="0,0,202,96" />
+        <!--Turn lights on when shooting-->
+        <StatusEffect type="OnUse" target="This" IsOn="true" setvalue="true" disabledeltatime="true" comparison="And" stackable="false">
+          <Conditional IsOn="false" />
+        </StatusEffect>
+        <!--Tag weapon with "shooting" when used and the battery cell has power left in it to prevent the light from turning off-->
+        <StatusEffect type="OnUse" target="This" disabledeltatime="false" comparison="And" tags="shooting" duration="0.1" CheckConditionalAlways="true">
+          <Conditional Voltage="gt 0.01" />
+        </StatusEffect>
+        <!--Turn lights off when not shooting-->
+        <StatusEffect type="Always" target="This" IsOn="false" setvalue="true" disabledeltatime="true" comparison="And" interval="1" stackable="false">
+          <Conditional IsOn="true" />
+          <Conditional HasStatusTag="neq shooting" />
+        </StatusEffect>
+      </LightComponent>
+      <Sound file="%ModDir%/Sounds/shockrifle.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="true" flames="false" underwaterbubble="true" camerashake="12.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="0.3">
+        <Sound file="%ModDir%/Sounds/shockriflerecharge.ogg" />
+      </StatusEffect>
+      <RequiredItems items="hbcell" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="45" />
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand+RightHand">
+        <Conditional skillrequirement="true" weapons="lt 45" />
+        <Affliction identifier="burn" strength="20" probability="0.35" />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="15,-5" containedspritedepths="0.562,0.561" containedstateindicatorstyle="default" containedstateindicatorslot="0">
+      <Containable items="hbcell" rotation="270">
+        <!--Provide power to the item when battery cell is contained and has a condition of at least 1-->
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true">
+          <Conditional condition="gt 0" />
+        </StatusEffect>
+      </Containable>
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="25,0" setactive="true" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <SkillRequirementHint identifier="weapons" level="45" />
+  </Item>
+  <!--AR-50-->
+  <Item name="" identifier="scp_ar50" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.45" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponheavydrop">
+    <PreferredContainer primary="secarmcab" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.02" minleveldifficulty="30" />
+    <PreferredContainer secondary="weaponholder" />
+    <Price baseprice="1600" displaynonempty="true" minleveldifficulty="20">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="1">
+        <Reputation faction="coalition" min="65" />
+      </Price>
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="1">
+        <Reputation faction="coalition" min="65" />
+      </Price>
+    </Price>
+    <Deconstruct time="30">
+      <Item identifier="steel" amount="2" />
+      <Item identifier="titaniumaluminiumalloy" amount="2" />
+      <Item identifier="scp_durasteel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem identifier="scp_sniperkit" />
+      <RequiredItem identifier="steel" amount="4" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="5" />
+      <RequiredItem identifier="scp_durasteel" amount="2" />
+    </Fabricate>
+    <InventoryIcon name="ar50inv" texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="70,327,69,81" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/heavyweapons.png" sourcerect="4,549,346,80" depth="0.55" origin="0.5,0.5" />
+    <Body width="346" height="80" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="80,-5" aimpos="85,3" handle1="-90,-18" handle2="35,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="AR50 Worn" texture="%ModDir%/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="4,549,346,80" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.43" origin="0.5,1" />
+      <StatValue stattype="WalkingSpeed" value="-0.15" />
+      <StatValue stattype="SwimmingSpeed" value="-0.15" />
+    </Wearable>
+    <RangedWeapon reload="4" barrelpos="200,9" spread="1" unskilledspread="8" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="16.0,6.0" colormultiplier="255,200,200,200" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,20.0" colormultiplier="255,200,200,200" />
+      <Sound file="%ModDir%/Sounds/ar50.ogg" type="OnUse" range="5500" volume="1.2" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="60.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="127ammo" />
+      <RequiredSkill identifier="weapons" level="85" />
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+        <Conditional skillrequirement="true" weapons="lt 90" />
+        <Conditional skillrequirement="true" weapons="gte 70" />
+        <Affliction identifier="blunttrauma" strength="6" probability="0.2" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+        <Conditional skillrequirement="true" weapons="lt 70" />
+        <Conditional skillrequirement="true" weapons="gte 50" />
+        <Affliction identifier="stun" strength="0.1" probability="0.75" />
+        <Affliction identifier="blunttrauma" strength="12" probability="0.6" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+        <Conditional skillrequirement="true" weapons="lt 50" />
+        <Affliction identifier="stun" strength="0.75" />
+        <Affliction identifier="blunttrauma" strength="24" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+      <StatusEffect type="OnUse" delay="0.5" target="Character">
+        <Conditional skillrequirement="true" weapons="gte 100" />
+        <Sound file="%ModDir%/Sounds/riflebolt50.ogg" type="OnUse" range="1000" frequencymultiplier="0.85" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="0.5" target="Character" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 75" />
+        <Conditional skillrequirement="true" weapons="gte 50" />
+        <Sound file="%ModDir%/Sounds/riflebolt2050.ogg" type="OnUse" range="1000" frequencymultiplier="0.85" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="1" target="Character">
+        <Conditional skillrequirement="true" weapons="lt 50" />
+        <Sound file="%ModDir%/Sounds/riflebolt20.ogg" type="OnUse" range="1000" frequencymultiplier="0.85" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" delay="0.6">
+        <Conditional skillrequirement="true" weapons="gte 50" />
+        <ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" delay="2.3">
+        <Conditional skillrequirement="true" weapons="lt 50" />
+        <ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="127ammo" />
+    </ItemContainer>
+    <aitarget sightrange="5000" soundrange="10000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <SkillRequirementHint identifier="weapons" level="85" />
+  </Item>
+  <!--RPG-7-->
+  <Item name="" identifier="scp_rpg7" description="" category="Weapon" subcategory="Grenades and Explosives" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert" scale="0.53">
+    <PreferredContainer primary="secarmcab" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
+    <Price baseprice="850" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="0" maxavailable="2" />
+    </Price>
+    <Fabricate suitablefabricators="weaponfabricator" requiredtime="70">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem identifier="scp_basicparts" amount="4" />
+      <RequiredItem identifier="steel" amount="4" />
+      <RequiredItem identifier="plastic" amount="2" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="steel" />
+      <Item identifier="rubber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon name="rpg7inv" texture="%ModDir%/Weapons/explosives.png" sourcerect="0,251,60,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/explosives.png" sourcerect="0,63,292,71" depth="0.55" origin="0.5,0.5" />
+    <Body width="292" height="71" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,6" aimpos="35,7.2" handle1="12,-22" handle2="-7,-23" holdangle="-35" msg="ItemMsgPickUpSelect" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="RPG-7 Worn" texture="%ModDir%/Weapons/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,63,292,71" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
+    </Wearable>
+    <RangedWeapon reload="5" reloadnoskill="7.5" reloadskillrequirement="80" barrelpos="102,9" spread="4" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="13.0,5.0" colormultiplier="255,200,200,200" />
+      <ParticleEmitter particle="impactfirearm" particleamount="8" velocitymin="300" velocitymax="900" minsize="1" maxsize="2" anglemin="-15" anglemax="15" copyentityangle="true" colormultiplier="255,200,200,200" />
+      <ParticleEmitter particle="weldspark" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="-25" anglemax="25" copyentityangle="true" colormultiplier="255,200,200,200" />
+      <ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="260" anglemax="280" copyentityangle="true" />
+      <Sound file="%ModDir%/Sounds/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="0.3" shockwave="true" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="25.0" />
+      </StatusEffect>
+      <RequiredItems items="rpgammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="90" />
+      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0" setvalue="true" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" itempos="62.3,6.85" hideitems="false" containedspritedepth="0.551" containedstateindicatorstyle="bullet">
+      <Containable items="rpgammo" />
+    </ItemContainer>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="3" />
+  </Item>
+  <Item name="" identifier="scp_mgl" description="" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.55" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.02" minleveldifficulty="25" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.0075" minleveldifficulty="25" />
+    <Price baseprice="1250">
+      <Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="weaponfabricator" requiredtime="60">
+      <RequiredSkill identifier="weapons" level="70" />
+      <RequiredItem identifier="scp_ag36" />
+      <RequiredItem identifier="scp_durasteel" amount="2" />
+      <RequiredItem identifier="scp_explosiveskit" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="steel" amount="2" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <InventoryIcon name="m32inv" texture="%ModDir%/Weapons/explosives.png" sourcerect="124,251,60,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/explosives.png" sourcerect="0,134,182,54" depth="0.55" origin="0.5,0.5" />
+    <Body width="170" height="40" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,-20" aimpos="50,-2" handle1="-36,-14" handle2="26,5" holdangle="-25" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="MGL Worn" texture="%ModDir%/Weapons/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,134,182,54" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,1.2" />
+    </Wearable>
+    <RangedWeapon barrelpos="80,10" spread="8" reload="1.1" reloadnoskill="3" reloadskillrequirement="75" unskilledspread="25" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" scalemin="0.1" scalemax="0.15" />
+      <Sound file="%ModDir%/Sounds/m321.ogg" type="OnUse" selectionmode="Random" />
+      <Sound file="%ModDir%/Sounds/m321.ogg" type="OnUse" frequencymultiplier="0.95" />
+      <Sound file="%ModDir%/Sounds/m321.ogg" type="OnUse" frequencymultiplier="1.05" />
+      <StatusEffect type="OnUse" target="This" Condition="-800" />
+      <StatusEffect type="Always" target="This" Condition="1.25">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.5">
+        <sound file="%ModDir%/Sounds/mgljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="75" disabledeltatime="true" delay="4.9" stackable="false" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="4" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="50.0" />
+      </StatusEffect>
+      <RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="75" />
+    </RangedWeapon>
+    <ItemContainer capacity="6" maxstacksize="1" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="grenade" />
+    </ItemContainer>
+    <aitarget sightrange="2500" soundrange="3000" fadeouttime="3" />
+  </Item>
+  <Item name="" identifier="scp_at4" description="" category="Weapon" health="100" subcategory="Grenades and Explosives" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.57">
+    <PreferredContainer primary="secarmcab" spawnprobability="0.05" notcampaign="true" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
+    <Price baseprice="900" displaynonempty="true" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
+        <Reputation faction="coalition" min="65" />
+      </Price>
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="1">
+        <Reputation faction="coalition" min="65" />
+      </Price>
+    </Price>
+    <Fabricate suitablefabricators="weaponfabricator" requiredtime="70">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem identifier="scp_explosiveskit" mincondition="0.25" />
+      <RequiredItem identifier="c4block" amount="2" />
+      <RequiredItem identifier="plastic" amount="4" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="steel" />
+      <Item identifier="rubber" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <InventoryIcon name="at4inv" texture="%ModDir%/Weapons/explosives.png" sourcerect="63,251,60,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/explosives.png" sourcerect="2,4,203,48" depth="0.55" origin="0.5,0.5" />
+    <Body width="292" height="71" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,6" aimpos="30,7" handle1="6,-7" handle2="27,-21" holdangle="-35" msg="ItemMsgPickUpSelect" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="AT-4 Worn" texture="%ModDir%/Weapons/explosives.png" canbehiddenbyotherwearables="false" sourcerect="2,4,203,48" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
+    </Wearable>
+    <RangedWeapon reload="3" reloadnoskill="6" reloadskillrequirement="80" barrelpos="102,9" spread="4" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="13.0,5.0" colormultiplier="255,200,200,200" />
+      <ParticleEmitter particle="impactfirearm" particleamount="8" velocitymin="300" velocitymax="900" minsize="1" maxsize="2" anglemin="-15" anglemax="15" copyentityangle="true" colormultiplier="255,200,200,200" />
+      <ParticleEmitter particle="weldspark" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="-25" anglemax="25" copyentityangle="true" colormultiplier="255,200,200,200" />
+      <ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="260" anglemax="280" copyentityangle="true" />
+      <Sound file="%ModDir%/Sounds/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="0.3" shockwave="true" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="25.0" />
+      </StatusEffect>
+      <RequiredSkill identifier="weapons" level="90" />
+      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.25" setvalue="true" />
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true" condition="-1000"></StatusEffect>
+    </RangedWeapon>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_at4proj" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="scp_at4proj" />
+      <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+        <SpawnItem identifier="scp_at4proj" spawnposition="This" />
+      </StatusEffect>
+    </ItemContainer>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="3" />
+  </Item>
+  <Item name="" description="" identifier="scp_taucannon" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,bulkyweapon" Scale="0.3" impactsoundtag="weaponheavydrop">
+    <PreferredContainer primary="secarmcab" />
+    <Price baseprice="3000" sold="false"></Price>
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="lead" />
+      <Item identifier="copper" />
+      <Item identifier="titaniumaluminiumalloy" amount="3" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="60">
+      <RequiredSkill identifier="electrical" level="95" />
+      <RequiredSkill identifier="weapons" level="65" />
+      <RequiredItem identifier="scp_prototypeusb" />
+      <RequiredItem identifier="nucleargun" />
+      <RequiredItem identifier="scp_taucannonparts" />
+      <RequiredItem identifier="fulgurium" amount="8" />
+    </Fabricate>
+    <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,675,360,121" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="taucannoninv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="495,2,70,80" depth="0.55" origin="0.5,0.5" />
+    <Body width="238" height="63" density="70" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,4" handle1="-51,-13" handle2="10,-3" holdangle="-25" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="taucannonbag" texture="%ModDir%/Weapons/hightierweapons.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="0,675,360,120" limb="Torso" scale="0.3" origin="0.4992217,0.86976707" />
+    </Wearable>
+    <RangedWeapon reload="1.5" reloadnoskill="2.5" reloadskillrequirement="100" holdtrigger="true" barrelpos="120,18" spread="0" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="1.25">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      <ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,90,0,255" />
+      <ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="1,1" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" colormultiplier="255,90,0,255" />
+      <Sound file="%ModDir%/Sounds/taushot.ogg" type="OnUse" range="3000" />
+      <ChargeSound file="%ModDir%/Sounds/taucharge.ogg" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="250.0" force="5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="75.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="tauammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="electrical" level="125" />
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="Torso">
+        <Conditional skillrequirement="true" electrical="lt 125" />
+        <Conditional skillrequirement="true" electrical="gte 100" />
+        <Affliction identifier="radiationsickness" strength="6" />
+        <Affliction identifier="radiationsickness" strength="12" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="Torso">
+        <Conditional skillrequirement="true" electrical="lt 100" />
+        <Conditional skillrequirement="true" electrical="gte 85" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="radiationsickness" strength="15" />
+        <Affliction identifier="radiationsickness" strength="15" probability="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="Torso">
+        <Conditional skillrequirement="true" electrical="lt 85" />
+        <Affliction identifier="stun" strength="0.25" />
+        <Affliction identifier="organdamage" strength="10" />
+        <Affliction identifier="organdamage" strength="15" probability="0.5" />
+        <Affliction identifier="radiationsickness" strength="35" />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-35,9" containedspritedepth="0.56" containedstateindicatorstyle="tank">
+      <Containable items="tauammo" rotation="270" />
+    </ItemContainer>
+    <aitarget sightrange="6000" soundrange="20000" fadeouttime="5" />
+    <SkillRequirementHint identifier="electrical" level="125" />
+  </Item>
+  <Item name="" identifier="scp_railgunlauncher" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.53">
+    <PreferredContainer primary="secarmcab" />
+    <Price baseprice="2500" sold="false" />
+    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="70">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredSkill identifier="electrical" level="85" />
+      <RequiredItem identifier="scp_prototypeusb" />
+      <RequiredItem identifier="scp_explosiveskit" />
+      <RequiredItem identifier="scp_durasteel" amount="8" />
+      <RequiredItem identifier="dementonite" amount="8" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="steel" amount="3" />
+      <Item identifier="dementonite" />
+      <Item identifier="scp_durasteel" />
+    </Deconstruct>
+    <InventoryIcon name="railguninv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="170,82,88,88" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="447,549,280,95" depth="0.55" origin="0.5,0.5" />
+    <Body width="190" height="60" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,6" aimpos="30,7.2" handle1="0,-5" handle2="16,-19" holdangle="-35" msg="ItemMsgPickUpSelect" setvalue="true">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.65" setvalue="true" />
+    </Holdable>
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="railgun Worn" texture="%ModDir%/Weapons/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="447,549,280,95" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
+    </Wearable>
+    <RangedWeapon reload="4" launchimpulse="50" reloadnoskill="7" reloadskillrequirement="100" barrelpos="120,9" spread="3" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="0" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/Railgun2.ogg" type="OnUse" range="6500" volume="2.5" />
+      <Sound file="%ModDir%/Sounds/prototankcannon.ogg" type="OnUse" range="6500" volume="1.5" frequencymultiplier="1.1" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="8" shockwave="true" smoke="true" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="300.0" />
+      </StatusEffect>
+      <RequiredItems items="railgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="mobilebattery" type="Contained" targetslot="1" msg="Battery Required" />
+      <RequiredSkill identifier="weapons" level="125" />
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+        <Conditional skillrequirement="true" electrical="lt 125" />
+        <Conditional skillrequirement="true" electrical="gte 90" />
+        <Affliction identifier="blunttrauma" strength="15" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+        <Conditional skillrequirement="true" electrical="lt 90" />
+        <Conditional skillrequirement="true" electrical="gte 75" />
+        <Affliction identifier="stun" strength="1" probability="0.75" />
+        <Affliction identifier="blunttrauma" strength="25" probability="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+        <Conditional skillrequirement="true" electrical="lt 75" />
+        <Affliction identifier="stun" strength="3" />
+        <Affliction identifier="blunttrauma" strength="50" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-100" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.1" setvalue="true" />
+    </RangedWeapon>
+    <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+      <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="2,184,120,32" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="railgunammo" excludeditems="railguncanistershell" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery">
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="500" soundrange="500" fadeouttime="3" />
+    <SkillRequirementHint identifier="weapons" level="100" />
+    <SkillRequirementHint identifier="electrical" level="100" />
+  </Item>
+  <Item name="" identifier="scp_portablecoilgun" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.38">
+    <PreferredContainer primary="secarmcab" />
+    <Price baseprice="2500" sold="false" />
+    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="70">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredSkill identifier="electrical" level="85" />
+      <RequiredItem identifier="scp_prototypeusb" />
+      <RequiredItem identifier="scp_explosiveskit" />
+      <RequiredItem identifier="scp_durasteel" amount="4" />
+      <RequiredItem identifier="dementonite" amount="6" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="steel" amount="3" />
+      <Item identifier="dementonite" />
+      <Item identifier="scp_durasteel" />
+    </Deconstruct>
+    <InventoryIcon name="coilguninv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="731,110,60,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="489,380,291,80" depth="0.55" origin="0.5,0.5" />
+    <Body width="190" height="60" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="65,-5" aimpos="65,5" handle1="-60,-15" handle2="11,-23" holdangle="-35" msg="ItemMsgPickUpSelect" setvalue="true">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.65" setvalue="true" />
+    </Holdable>
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="c worn" texture="%ModDir%/Weapons/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="489,380,291,80" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.38" origin="0.45,0.96" />
+    </Wearable>
+    <RangedWeapon reload="1.75" reloadnoskill="4" barrelpos="120,9" spread="1" reloadskillrequirement="85" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="13.0,5.0" colormultiplier="50,50,200,200" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,10.0" colormultiplier="50,50,200,200" />
+      <Sound file="%ModDir%/Sounds/m107.ogg" type="OnUse" range="6500" volume="1" frequencymultiplier="1.25" selectionmode="all" />
+      <Sound file="Content/Items/Weapons/Coilgun5.ogg" type="OnUse" range="4000" volume="1.5" frequencymultiplier="1.25" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="5" shockwave="true" smoke="true" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="150.0" />
+      </StatusEffect>
+      <RequiredItems items="scp_coilgunclip" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="mobilebattery" type="Contained" targetslot="1" msg="Battery Required" />
+      <RequiredSkill identifier="electrical" level="90" />
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+        <Conditional skillrequirement="true" electrical="lt 95" />
+        <Conditional skillrequirement="true" electrical="gte 75" />
+        <Affliction identifier="blunttrauma" strength="10" probability="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+        <Conditional skillrequirement="true" electrical="lt 75" />
+        <Conditional skillrequirement="true" electrical="gte 65" />
+        <Affliction identifier="stun" strength="1" probability="0.75" />
+        <Affliction identifier="blunttrauma" strength="15" probability="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+        <Conditional skillrequirement="true" electrical="lt 65" />
+        <Affliction identifier="stun" strength="2" />
+        <Affliction identifier="blunttrauma" strength="25" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" targetslot="0">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-10" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.25" setvalue="true" />
+    </RangedWeapon>
+    <ItemContainer capacity="0" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
+      <SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="2,184,120,32" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="scp_coilgunclip" hide="false" itempos="-8,-9" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery" hide="true">
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="7000" fadeouttime="3" />
+    <SkillRequirementHint identifier="electrical" level="90" />
+  </Item>
+</Items>

@@ -12,9 +12,9 @@
   <entitydescription.sgt_longrangeradio>Links up with the user's headset to broadcast at a significantly longer range than normal. Has a few pockets on the sides for spare equipment.</entitydescription.sgt_longrangeradio>
   <entityname.sgt_bobag>Coalition Black-Ops Specialist Hardcase</entityname.sgt_bobag>
   <entitydescription.sgt_bobag>A Hardcase with a built-in range extender for radio equipment. It comes with a few deeper-than-usual pockets for spare munitions, as well as a sling for putting heavy weapons away, and out of sight.</entitydescription.sgt_bobag>
-  <entityname.sgt_exogear>Coalition Exoskeleton</entityname.sgt_exogear>
+  <entityname.sgt_exogear>Utility Exoskeleton</entityname.sgt_exogear>
   <entitydescription.sgt_exogear>A semi-experimental suit used predominantly by miners and logistics teams for easy transport of materials and heavy equipment, whilst having a decent degree of ballistic protection. This suit however hampers movement given it's overall weight and the servomotors require a significant amount of power to function under load. Pressure rated for 2km/2000m.</entitydescription.sgt_exogear>
-  <entityname.sgt_fieldcap>Coalition Patrol Cap</entityname.sgt_fieldcap>
+  <entityname.sgt_fieldcap>Patrol Cap</entityname.sgt_fieldcap>
   <entitydescription.sgt_fieldcap>Regulation wear, when a ballistic helmet is updressing the job, but you still want something on your noggin'.</entitydescription.sgt_fieldcap>
   <entityname.sgt_combatmedicuniform>Combat Medic Uniform (Style 2)</entityname.sgt_combatmedicuniform>
   <entitydescription.sgt_combatmedicuniform>A uniform with a unique looking digital camouflage printed onto it. It features thick aramid padding and larger pockets for equipment. Bloodstains are hard to wash out of clothing.</entitydescription.sgt_combatmedicuniform>
@@ -58,11 +58,11 @@
   <entitydescription.sgt_xms>An odd rifle loading the natively subsonic 9x39, it squeezes every bit of extra energy for the round, giving it more power and armor piercing. It's cyclical rate is somewhat low, designed to keep it little more than a hoarse whisper, to the preference of Black-Ops Operatives.</entitydescription.sgt_xms>
   <entityname.sgt_vhs>Coalition Suppressed Battle Rifle</entityname.sgt_vhs>
   <entitydescription.sgt_vhs>Loading 7.62x51, Coalition Black-Ops teams needed something with more "Knockdown Potential," in a more compact package. The bullpup design was used to keep the weapon relatively small and light, alongside integral suppressors to mask their presence when deep in enemy territory. The weapon uses a quick 4-round burst firemode to help with overall accuracy, and reduce ammunition waste.</entitydescription.sgt_vhs>
-  <entityname.sgt_m90t>Coalition Assault Shotgun</entityname.sgt_m90t>
+  <entityname.sgt_m90t>Pump-Action Assault Shotgun</entityname.sgt_m90t>
   <entitydescription.sgt_m90t>Designed for multi-role, the Assault Shotgun has a long and complicated service history. Sporting the 8-Gauge shell, it has a nasty habit of breaking faces, doors, and the occasional shoulder, as it's recoil is unforgiving, though there are some who take no less for traitors.</entitydescription.sgt_m90t>
-  <entityname.sgt_dbs>Renegade Assault Shotgun</entityname.sgt_dbs>
+  <entityname.sgt_dbs>Double-Barrel Assault Shotgun</entityname.sgt_dbs>
   <entitydescription.sgt_dbs>A retooled Double-Barrel shotgun, favored by Veterans of any side for it's reliability and commanding feel. With the ability to quickly drop both 8-Gauge shells in a moments notice, it often gets used in a defensive manner, as exchanging shells takes a while-too-long for gunfights.</entitydescription.sgt_dbs>
-  <entityname.sgt_gunslinger>Renegade Light Hand Cannon</entityname.sgt_gunslinger>
+  <entityname.sgt_gunslinger>Single-Action Light Hand Cannon</entityname.sgt_gunslinger>
   <entitydescription.sgt_gunslinger>A 10.9x33mmR Single-Action revolver, great choice for self-defense, due to it's light trigger pull, but requires the hammer to be drawn back for every subsequent shot. However, the simplicity allows for single-handed use, and more skilled individuals can re-balance it in their hands faster, allowing for quicker shots.</entitydescription.sgt_gunslinger>
   <entityname.sgt_levergun>Service Repeater</entityname.sgt_levergun>
   <entitydescription.sgt_levergun>A 9x29mm rifle utilizing a very old lever action system that is heavily outdated compared to most firearms on Europa. Despite the inherent antiquity, it is favoured by Coalition captains and citizens for making a rather puny cartridge more viable with it's longer barrel and 9 round tube.</entitydescription.sgt_levergun>
@@ -90,7 +90,7 @@
   <entitydescription.sgt_bosmg>A 11.43x23 SMG with an extreme firerate and integral suppressor, it's favored by Black-Ops Scouts for its quick knock-down and ammo availablity, though it has a nasty habit of running through ammo very quickly, leading to users firing in short, controlled bursts</entitydescription.sgt_bosmg>
   <entityname.sgt_arpistol>Prototype Short-Barreled Rifle</entityname.sgt_arpistol>
   <entitydescription.sgt_arpistol>Chambered in the intermediate 5.56x45, it has native armor piercing and capacity over any other pistol, but at the cost of a larger profile.</entitydescription.sgt_arpistol>
-  <entityname.sgt_usp>Coalition Assault Pistol</entityname.sgt_usp>
+  <entityname.sgt_usp>Combat Assault Pistol</entityname.sgt_usp>
   <entitydescription.sgt_usp>A boxy looking 10x25mm handgun, being favoured by most Coalition operators for it's substantially better power and penetration than both 9x19 and 11.43x23 pistols. Such power however comes at the cost of a heavy pistol and significant recoil impulses that most shooters can't handle.</entitydescription.sgt_usp>
   <entityname.sgt_mk23>Covert Assault Pistol</entityname.sgt_mk23>
   <entitydescription.sgt_mk23>A 10x25mm combat pistol, with integrated light and suppressor for use by Coalition Black-Ops. Needing something maneuverable, but hardy to keep as backup, the employment of more expensive alloys helps to lighten the overall weapon without compromising reliability.</entitydescription.sgt_mk23>
@@ -98,15 +98,15 @@
   <entitydescription.sgt_n99>This 10x25mm pistol has seen some better days, with dents and scratches from every discernable source, but just as reliable as ever. Recoil is extremely manageable, so don't worry about a Kick in the Head.</entitydescription.sgt_n99>
   <entityname.sgt_auto10>Prototype Assault Pistol</entityname.sgt_auto10>
   <entitydescription.sgt_auto10>An unorthodox 10x25mm design, with ported barrel and weight distribution for ease of handling during firing. It fires in 2-round bursts to maximize rounds on target, with it doing nothing more but a gentle bounce during its' function.</entitydescription.sgt_auto10>
-  <entityname.sgt_apc>Coalition Assault SMG</entityname.sgt_apc>
+  <entityname.sgt_apc>Rapid Assault SMG</entityname.sgt_apc>
   <entitydescription.sgt_apc>Loaded in 10x25mm, the weapon is often favored by boarding parties and ship defense crews for the quick output of damage, while the chunky design and stock mitigate the recoil considerably. The magwell accepts both extended and standard magazine types.</entitydescription.sgt_apc>
-  <entityname.sgt_hpp>Renegade Assault Pistol</entityname.sgt_hpp>
+  <entityname.sgt_hpp>Civilian Assault Pistol</entityname.sgt_hpp>
   <entitydescription.sgt_hpp>Designed to fire 10x25mm, the "Plastic Pistol" has lead weights in its' slide to cycle properly, giving it a weighty feel, though doing nothing for the recoil.</entitydescription.sgt_hpp>
-  <entityname.sgt_hpc>Renegade Assault SMG</entityname.sgt_hpc>
+  <entityname.sgt_hpc>Semi-Auto Assault SMG</entityname.sgt_hpc>
   <entitydescription.sgt_hpc>Firing 10x25mm, it took the design for the Assault Pistol, added a stock, and extended the barrel, allowing for more accurate fire from less skilled individuals.</entitydescription.sgt_hpc>
   <entityname.sgt_pasmg>Prototype Assault SMG</entityname.sgt_pasmg>
   <entitydescription.sgt_pasmg>A brisk-paced 10x25mm submachine gun with a specialty design, it sacrifices speed for accuracy, leaving the user open to close combat during operations. Though, it seems the 8-Gauge underbarrel was the solution to save this Alien of a weapon.</entitydescription.sgt_pasmg>
-  <entityname.sgt_m79>Renegade Compact Grenade Launcher</entityname.sgt_m79>
+  <entityname.sgt_m79>Sawed-Off Grenade Launcher</entityname.sgt_m79>
   <entitydescription.sgt_m79>A short-and-simple 40mm grenade launcher, used by boarding crews to displace crowds and devastate rooms before lead starts flying. Made for use by one hand.</entitydescription.sgt_m79>
   <entityname.sgt_napalm>Chemfuel Canister</entityname.sgt_napalm>
   <entitydescription.sgt_napalm>A high density flammable fuel mixture, designed specifically for the Chemthrower to start an inferno.</entitydescription.sgt_napalm>
@@ -118,7 +118,7 @@
   <entitydescription.sgt_10mmmag>Holding 10 rounds of 10x25mm, the cartidge has a few fans due to native AP abilities, but the wrist-wrecking recoil will deter some users.</entitydescription.sgt_10mmmag>
   <entityname.sgt_10mmmagext>Assault Pistol Extended Magazine</entityname.sgt_10mmmagext>
   <entitydescription.sgt_10mmmagext>Holding 20 rounds of 10x25mm, some weapons cannot use this magazine due to it's bulky nature, though the separatists accounted for this in their designs.</entitydescription.sgt_10mmmagext>
-  <entityname.sgt_s63>Renegade Light Machine Gun</entityname.sgt_s63>
+  <entityname.sgt_s63>Combat Light Machine Gun</entityname.sgt_s63>
   <entitydescription.sgt_s63>Another work-around to use Coalition ammunition stores, this 5.56x45 LMG can take both Coalition standard rifle magazines and belt boxes. It's assembly is crude at best, so don't expect much from it.</entitydescription.sgt_s63>
   <entityname.sgt_medgas>Sedative Gas Grenade</entityname.sgt_medgas>
   <entitydescription.sgt_medgas>A deployable canister of Chloral Hydrate, used to knock out P.O.I. without injury and allow easier apprehension. The dispersion is quick, but inefficient.</entitydescription.sgt_medgas>
@@ -134,7 +134,7 @@
   <entitydescription.sgt_crowbar>A weighty and durable wrecking bar made from durasteel. Sometimes it has to be a crowbar coming at them down a steel corridor.</entitydescription.sgt_crowbar>
   <entityname.sgt_syringeshotgun>Syringe Shotgun</entityname.sgt_syringeshotgun>
   <entitydescription.sgt_syringeshotgun>A design questionable by most, it discharges all of it's held syringes in a moments notice. Good for injecting concoxions or intensifying one toxin. Pressure chambers require all others to discharge before they will refill automatically.</entitydescription.sgt_syringeshotgun>
-  <entityname.sgt_rifle>Renegade Semi-Auto Rifle</entityname.sgt_rifle>
+  <entityname.sgt_rifle>Semi-Auto Rifle</entityname.sgt_rifle>
   <entitydescription.sgt_rifle>A stark comparison to the more reliable bolt-action Coalition counterpart, it has a deeper internal magazine, with a self-actuating bolt. The gas system is incredibly rudimentary, and pulls enough away from the round to cause decreased performance.</entitydescription.sgt_rifle>
   <entityname.sgt_rifleprototype>Prototype Automatic Rifle</entityname.sgt_rifleprototype>
   <entitydescription.sgt_rifleprototype>A more dated design, with some odd touches, it uses a hinged magazine with intent to be fed .30 caliber rounds individually. It's barrel assembly was never truly finished, as it's rifling causes some rounds to yaw in-air, losing penetrative power in the process.</entitydescription.sgt_rifleprototype>
@@ -143,12 +143,12 @@
   <entitydescription.scp_heavymechanicsuit1>A set of clothing with all the bells and whistles for the tradesman, including a few pockets to store the tools or snacks. Though the inlaid padding helps with the comfort and protection of the wearer, it does hinder movement a little.</entitydescription.scp_heavymechanicsuit1>
   <entityname.sgt_heavymechanicsuit>Engineering Overalls (Style 2)</entityname.sgt_heavymechanicsuit>
   <entitydescription.sgt_heavymechanicsuit>A set of clothing with all the bells and whistles for the tradesman, including a few pockets to store the tools or snacks. Though the inlaid padding helps with the comfort and protection of the wearer, it does hinder movement a little. Maybe blue isn't your color.</entitydescription.sgt_heavymechanicsuit>
-  <entityname.scp_t5000>Coalition Precision Rifle</entityname.scp_t5000>
+  <entityname.scp_t5000>Military Precision Rifle</entityname.scp_t5000>
   <entitydescription.scp_t5000>A large 8.6x70mm rifle designed for quickly and precisely taking out a single person, it is a rare sight on Europa given it's long range nich is very situational.</entitydescription.scp_t5000>
   <entityname.scp_t5000boxmag>Precision Rifle Magazine</entityname.scp_t5000boxmag>
   <entitydescription.scp_t5000boxmag>A small 5 round 8.6x70mm box magazine containing FMJ ammunition.</entitydescription.scp_t5000boxmag>
   <entityname.scp_86projectile>8.6x70mm round</entityname.scp_86projectile>
-  <entityname.scp_m24>Renegade Precision Rifle</entityname.scp_m24>
+  <entityname.scp_m24>Revised Precision Rifle</entityname.scp_m24>
   <entitydescription.scp_m24>An 8.6x70mm rifle made to be an alternative to the Coalition's more fine-crafted Precision Rifle. The cartridge's recoil is intense as it clearly was a design that wasn't meant to use it.</entitydescription.scp_m24>
   <entitydescription.scp_86projectile></entitydescription.scp_86projectile>
   <!--Missions-->

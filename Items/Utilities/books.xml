@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+<!--Specialist Training Handbook-->
+<Item name="" identifier="sgt_adminskillbook" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,skillbook" maxstacksize="8" scale="0.5" spritecolor="30,40,120,255" InventoryIconColor="30,40,120,255" impactsoundtag="impact_soft">
+  <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="83,368,39,56" origin="0.5,0.5" />
+  <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="71,74,34,39" depth="0.6" origin="0.5,0.5" />
+  <Body width="28" height="36" density="20" />
+  <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+    <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" />
+    <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+      <Conditional Condition="lte 0" />
+      <GiveTalentInfo giverandom="true" talentidentifiers="specops" />
+      <GiveTalentInfo giverandom="true" talentidentifiers="implacable" />
+      <GiveSkill skillidentifier="electrical" amount="30" triggertalents="false" />
+      <GiveSkill skillidentifier="helm" amount="20" triggertalents="false" />
+      <GiveSkill skillidentifier="mechanical" amount="30" triggertalents="false" />
+      <GiveSkill skillidentifier="medical" amount="20" triggertalents="false" />
+      <GiveSkill skillidentifier="weapons" amount="50" triggertalents="false" />
+      <GiveExperience amount="22050" />
+      <RemoveItem />
+    </StatusEffect>
+    <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
+      <GiveTalentInfo giverandom="true" talentidentifiers="specops" />
+      <GiveTalentInfo giverandom="true" talentidentifiers="implacable" />
+      <RemoveItem />
+    </StatusEffect>
+  </Holdable>
+</Item>
+<!--Sailors Guide, Abridged and Refined-->
+<Item name="" identifier="sgt_admingenbook" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,skillbook" maxstacksize="8" scale="0.5" spritecolor="61,136,255,255" InventoryIconColor="61,136,255,255" impactsoundtag="impact_soft">
+  <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="1,368,40,56" origin="0.5,0.5" />
+  <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="2,75,32,38" depth="0.6" origin="0.5,0.5" />
+  <Body width="28" height="36" density="20" />
+  <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+    <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" />
+    <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+      <Conditional Condition="lte 0" />
+      <GiveSkill skillidentifier="electrical" amount="12" triggertalents="false" />
+      <GiveSkill skillidentifier="helm" amount="12" triggertalents="false" />
+      <GiveSkill skillidentifier="mechanical" amount="12" triggertalents="false" />
+      <GiveSkill skillidentifier="medical" amount="12" triggertalents="false" />
+      <GiveSkill skillidentifier="weapons" amount="12" triggertalents="false" />
+      <RemoveItem />
+    </StatusEffect>
+  </Holdable>
+</Item>
+<!--Mech Operation Manual-->
+<Item name="" identifier="sgt_adminmechbook" cargocontaineridentifier="metalcrate" allowasextracargo="true" category="Misc" Tags="smallitem,skillbook" maxstacksize="8" scale="0.5" spritecolor="125,125,125,255" InventoryIconColor="125,125,125,255" impactsoundtag="impact_soft">
+  <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="42,368,40,56" origin="0.5,0.5" />
+  <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="36,74,32,39" devpth="0.6" origin="0.5,0.5" />
+  <Body width="28" height="36" density="20" />
+  <MeleeWeapon slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" holdangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+    <StatusEffect type="OnSecondaryUse" target="This" Condition="-50.0" />
+    <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+      <Conditional Condition="lte 0" />
+      <GiveTalentInfo giverandom="true" talentidentifiers="powerarmor" />
+      <RemoveItem />
+    </StatusEffect>
+    <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
+      <GiveTalentInfo giverandom="true" talentidentifiers="powerarmor" />
+      <RemoveItem />
+    </StatusEffect>
+  </MeleeWeapon>
+</Item>
+<!--Smoldered Journal-->
+<Item name="" identifier="adminxpbook" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,skillbook" maxstacksize="8" scale="0.5" spritecolor="155,41,0,255" InventoryIconColor="155,41,0,255" impactsoundtag="impact_soft">
+  <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="123,368,38,56" origin="0.5,0.5" />
+  <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="107,74,32,38" depth="0.6" origin="0.5,0.5" />
+  <Body width="28" height="36" density="20" />
+  <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+    <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" />
+    <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+      <Conditional Condition="lte 0" />
+      <GiveExperience amount="6750" />
+      <RemoveItem />
+    </StatusEffect>
+  </Holdable>
+</Item>
+</Items>
