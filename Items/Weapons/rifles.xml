@@ -1165,6 +1165,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
+  <!--!unidentified-->
   <Item name="" description="" identifier="scp_scar20" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.03" minleveldifficulty="15" />
