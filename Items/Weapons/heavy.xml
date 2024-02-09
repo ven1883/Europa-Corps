@@ -1,5 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
+
+  <!--!this may be a clone-->
+  <!--M249-->
+  <Item name="" description="" cargocontaineridentifier="scp_weaponcrate" identifier="scp_m249" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.45" impactsoundtag="weaponheavydrop">
+    <PreferredContainer primary="secarmcab" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="15" />
+    <PreferredContainer secondary="weaponholder" />
+    <Price baseprice="600" displaynonempty="true" minleveldifficulty="9">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="1">
+        <Reputation faction="coalition" min="35" />
+      </Price>
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="1">
+        <Reputation faction="coalition" min="35" />
+      </Price>
+    </Price>
+    <Deconstruct time="35">
+      <Item identifier="steel" amount="2" />
+      <Item identifier="plastic" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="scp_machinegunkit" mincondition="0.25" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="steel" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="223,415,71,79" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/heavyweapons.png" sourcerect="0,461,260,78" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="50" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="67,2.5" handle1="-47,-18" handle2="35,4" holdangle="-35" msg="ItemMsgPickUpSelect" />
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="M249 Worn" texture="%ModDir%/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="0,461,260,78" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.45" origin="0.5,1" />
+    </Wearable>
+    <RangedWeapon reload="0.095" reloadnoskill="0.15" weapondamagemodifier="0.9" reloadskillrequirement="55" barrelpos="110,14" spread="15" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,3.0" colormultiplier="255,200,200,200" />
+      <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,6.0" colormultiplier="255,200,200,200" />
+      <Sound file="%ModDir%/Sounds/m2491.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/Sounds/m2492.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse" target="This" Condition="-90" />
+      <StatusEffect type="Always" target="This" Condition="2">
+        <Conditional condition="gt 0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" frequencymultiplier="1.1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="9" stackable="false" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
+      <RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="m249ammo,556ammo" />
+      <RequiredSkill identifier="weapons" level="60" />
+      <StatusEffect type="OnUse" target="This" comparison="and">
+        <Conditional condition="lt 35" />
+        <ParticleEmitter particle="steamspray" particleamount="1" velocitymin="5" velocitymax="10" scalemin="1.5" scalemax="2.5" anglemin="0" anglemax="360" colormultiplier="15,15,15,255" />
+        <ParticleEmitter particle="weldspark" particleamount="5" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="m249ammo,556ammo" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.05" />
+      <QualityStat stattype="Condition" value="0.2" />
+    </Quality>
+    <SkillRequirementHint identifier="weapons" level="60" />
+  </Item>
+
 <!--Stoner 63 LMG-->
 <Item name="" description="" cargocontaineridentifier="scp_weaponcrate" identifier="sgt_s63" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.325" impactsoundtag="weaponheavydrop">
     <PreferredContainer primary="secarmcab" />
