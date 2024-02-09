@@ -22,12 +22,12 @@
 
 		<InventoryIcon 
 			name="pipebombinv" 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="65,263,48,62" 
 			origin="0.5,0.5" 
 		/>
 		<Sprite 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="164,192,22,63" 
 			depth="0.55" 
 			origin="0.5,0.5" 
@@ -160,7 +160,7 @@
 		impactsoundtag="impact_metal_heavy">
 
 		<Sprite 
-			texture="%ModDir%/Weapons/grenades.png"
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png"
 			sourcerect="1,113,35,71"
 			depth="0.55"
 			origin="0.5,0.5"
@@ -350,7 +350,7 @@
 		impactsoundtag="impact_metal_heavy">
 
 		<Sprite 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="39,123,38,61" 
 			depth="0.55" 
 			origin="0.5,0.5" 
@@ -507,7 +507,7 @@
 		impactsoundtag="impact_metal_heavy"
 	>
 		<Sprite 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="78,138,40,47" 
 			depth="0.55" 
 			origin="0.5,0.5" 
@@ -644,6 +644,124 @@
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Chemical Weapons-->
 
+		<!--Sedative Gas Grenade-->
+	<Item 
+		name="" 
+		identifier="sgt_medgas" 
+		category="Equipment" 
+		maxstacksize="8" 
+		cargocontaineridentifier="explosivecrate" 
+		allowasextracargo="true" 
+		tags="smallitem,weapon,explosive,demolitionsexpert" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light"
+	>
+		<InventoryIcon 
+			name="Inv" 
+			texture="%ModDir%/Ammo/medgas.png" 
+			sourcerect="0,0,66,62" 
+			origin="0.5,0.5" 
+		/>
+		<Sprite 
+			name="Main" 
+			texture="%ModDir%/Ammo/medgas.png" 
+			sourcerect="66,0,29,62" 
+			depth="0.55" 
+			origin="0.5,0.5" 
+		/>
+		<Body 
+			width="30" 
+			height="62" 
+			density="30" 
+		/>
+
+			<ItemComponent characterusable="false">
+					<!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
+				<StatusEffect type="OnUse" target="This" 
+					Condition="-75.0" 
+					disabledeltatime="true" 
+				/>
+
+				<StatusEffect type="OnBroken" target="This">
+					<sound file="Content/Items/Weapons/StunGrenade.ogg" range="2000" />
+					<Explosion range="200" force="0.5" smoke="false" flames="false" underwaterbubble="false" sparks="false" />
+				</StatusEffect>
+
+				<StatusEffect type="OnBroken" target="This" delay="0.5">
+					<Explosion 
+						range="500" 
+						force="0.0" 
+						camerashake="0" 
+						smoke="false" 
+						flames="false" 
+						flash="false" 
+						sparks="false" 
+						underwaterbubble="false"
+					>
+
+						<Affliction identifier="organdamage" amount="0.5" />
+						<Affliciton identifier="stun" amount="8" />
+						<Affliction identifier="progressivestun" amount="25.0" />
+					</Explosion>
+				</StatusEffect>
+
+				<StatusEffect type="OnBroken" target="This" duration="3.0" soundselectionmode="All">
+					<sound file="Content/Items/Tools/Sprayer.ogg" range="1000" volume="0.5" />
+					<sound file="Content/Items/Tools/FlareLoop.ogg" range="1000" />
+					<ParticleEmitter particle="extinguisher" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" />
+					<ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" particlespersecond="60" />
+					<ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" scalemultiplier="2.0,2.0" particlespersecond="20" />
+				</StatusEffect>
+			</ItemComponent>
+
+				<Throwable 
+					slots="Any,RightHand,LeftHand" 
+					holdpos="0,0" 
+					handle1="0,0" 
+					throwforce="3.5" 
+					msg="ItemMsgPickUpSelect"
+				>
+					<StatusEffect 
+						type="OnSecondaryUse" 
+						target="This" 
+						Condition="-100.0" 
+						delay="0.5" 
+						disabledeltatime="true" 
+						checkconditionalalways="true" 
+					/>
+				</Throwable>
+
+		<PreferredContainer primary="toxcab" secondary="toxcontainer" />
+		<PreferredContainer primary="wrecktoxcab,abandonedtoxcab" spawnprobability="0.05" />
+
+		<Price baseprice="120" minleveldifficulty="30">
+			<Price storeidentifier="merchantoutpost" multiplier="0.6" sold="false" />
+			<Price storeidentifier="merchantcity" multiplier="0.7" sold="false" />
+			<Price storeidentifier="merchantresearch" multiplier="1.2" sold="true" minavailable="1" maxavailable="4" />
+			<Price storeidentifier="merchantmilitary" sold="false" />
+			<Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
+		</Price>
+
+		<Deconstruct time="10">
+			<Item identifier="aluminium" mincondition="0.5" />
+		</Deconstruct>
+
+		<Fabricate suitablefabricators="chemstation" requiredtime="20" amount="2">
+			<RequiredSkill identifier="medical" level="60" />
+			<RequiredSkill identifier="mechanical" level="35" />
+			<RequiredItem identifier="aluminium" />
+			<RequiredItem identifier="chloralhydrate" amount="2" />
+		</Fabricate>
+		<Fabricate suitablefabricators="chemstation" displayname="recycleitem" requiredtime="2">
+			<RequiredSkill identifier="medical" level="30" />
+			<RequiredSkill identifier="mechanical" level="15" />
+			<RequiredItem identifier="sgt_medgas" mincondition="0" />
+			<RequiredItem identifier="chloralhydrate" />
+		</Fabricate>
+	</Item>
+
+		<!--###-->
+
 		<!--HexaNova Gas Grenade-->
 	<Item 
 		name="" 
@@ -658,13 +776,13 @@
 		impactsoundtag="impact_metal_heavy">
 
 		<InventoryIcon 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="173,285,52,52" 
 			origin="0.5,0.5" 
 		/>
 		<Sprite 
 			name="hexgrenadeground" 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="107,204,25,51" 
 			depth="0.55" 
 			origin="0.5,0.5" 
@@ -777,12 +895,12 @@
 		impactsoundtag="impact_metal_heavy">
 
 		<InventoryIcon 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="116,278,57,57" 
 			origin="0.5,0.5" 
 		/>
 		<Sprite 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="77,196,27,59" 
 			depth="0.55" 
 			origin="0.5,0.5" 
@@ -904,13 +1022,13 @@
 		impactsoundtag="impact_metal_heavy">
 
 		<InventoryIcon 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="225,289,54,54" 
 			origin="0.5,0.5" 
 		/>
 		<Sprite 
 			name="latexgrenadeground" 
-			texture="%ModDir%/Weapons/grenades.png" 
+			texture="%ModDir%/Items/Weapons/Sprites/grenades.png" 
 			sourcerect="135,201,28,54" 
 			depth="0.55" 
 			origin="0.5,0.5" 
@@ -1187,7 +1305,7 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 			<ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" scalemin="0.1" scalemax="0.15" />
 			<Sound file="%ModDir%/Sounds/m321.ogg" type="OnUse" selectionmode="Random" />
-			<Sound file="%ModDir%/Sounds/m321.ogg" type="OnUse" frequencymultiplier="0.95" />
+			<Sound file="/m321.ogg" type="OnUse" frequencymultiplier="0.95" />
 			<Sound file="%ModDir%/Sounds/m321.ogg" type="OnUse" frequencymultiplier="1.05" />
 			<StatusEffect type="OnUse" target="This" Condition="-800" />
 			<StatusEffect type="Always" target="This" Condition="1.25">
