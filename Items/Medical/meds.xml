@@ -119,21 +119,21 @@
 			<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
 			<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
 			<RequiredSkill identifier="medical" level="15" />
-			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="10">
-			<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-			<ReduceAffliction identifier="blunttrauma" amount="5" />
-			<ReduceAffliction identifier="explosiondamage" amount="5" />
-			<ReduceAffliction identifier="internaldamage" amount="2.5" />
+			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="12">
+				<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+				<ReduceAffliction identifier="blunttrauma" amount="5" />
+				<ReduceAffliction identifier="explosiondamage" amount="5" />
+				<ReduceAffliction identifier="internaldamage" amount="2.5" />
 			</StatusEffect>
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="10">
-			<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-			<ReduceAffliction identifier="blunttrauma" amount="2.5" />
-			<ReduceAffliction identifier="explosiondamage" amount="2.5" />
-			<ReduceAffliction identifier="internaldamage" amount="2.5" />
+				<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+				<ReduceAffliction identifier="blunttrauma" amount="2.5" />
+				<ReduceAffliction identifier="explosiondamage" amount="2.5" />
+				<ReduceAffliction identifier="internaldamage" amount="2.5" />
 			</StatusEffect>
 			<!-- Remove the item when fully used -->
 			<StatusEffect type="OnBroken" target="This">
-			<Remove />
+				<Remove />
 			</StatusEffect>
 		</MeleeWeapon>
 		<Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90">
