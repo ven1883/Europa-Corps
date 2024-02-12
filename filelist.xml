@@ -48,6 +48,12 @@
 	<!--+++++-->
 	<!--TEXTS-->
 	<!--+++++-->
-	<Text file="%ModDir%/Text/afflictiontexts.xml"/>
+	<Text file="%ModDir%/Text/affliction_texts.xml"/>
+	<Text file="%ModDir%/Text/armor_texts.xml"/>
+	<Text file="%ModDir%/Text/job_texts.xml"/>
+	<Text file="%ModDir%/Text/medical_texts.xml"/>
+	<Text file="%ModDir%/Text/misc_texts.xml"/>
+	<Text file="%ModDir%/Text/weapon_texts.xml"/>
+	<Text file="%ModDir%/Text/text_overrides.xml"/>
 
 </contentpackage>
