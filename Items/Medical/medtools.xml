@@ -228,7 +228,7 @@
 	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<!-- Ether tank: gives anesthized affliction, allows surgery when not on medical bed -->
-	<Item name="" identifier="ethertank" category="Equipment,Medical" maxstacksize="8" Tags="smallitem,ethertank,oxygensource" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
+	<Item name="" identifier="ethertank" category="Equipment,Medical" health="200" maxstacksize="8" Tags="smallitem,ethertank,oxygensource" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" allowdroppingonswap="true">
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		<Price baseprice="90">
 			<Price locationtype="outpost" multiplier="1.2" minavailable="3" />
