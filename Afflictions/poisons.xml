@@ -1472,4 +1472,170 @@
     <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="256,0,128,128" color="122,122,23,255" origin="0,0" />
     <AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/bloodonscreen.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
   </Affliction>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  <Affliction 
+    name="" 
+    identifier="feniterblisteragentinternal" 
+    type="chemicalagent" 
+    description="" 
+    causeofdeathdescription="" 
+    selfcauseofdeathdescription="" 
+    limbspecific="false" indicatorlimb="Torso" 
+    maxstrength="100">
+
+    <Effect 
+      minstrength="0" maxstrength="2" 
+      minvitalitydecrease="0" maxvitalitydecrease="10" 
+      strengthchange="-0.01" 
+      mingrainstrength="0" maxgrainstrength="2.0" graincolor="20,0,0,255"
+      minscreendistort="0" maxscreendistort="1" 
+      minscreenblur="0" maxscreenblur="3" 
+      minspeedmultiplier="1" maxspeedmultiplier="0.8" 
+      minskillmultiplier="1" maxskillmultiplier="0.25" 
+      minchromaticaberration="0" maxchromaticaberration="1">
+
+      <StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+        <Conditional isLocalPlayer="true" />
+        <Explosion showeffects="false" camerashake="5" camerashakerange="60" force="0" range="1" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="2" maxstrength="60" 
+      minvitalitydecrease="10" maxvitalitydecrease="30" 
+      strengthchange="-0.08" 
+      mingrainstrength="2" maxgrainstrength="10.0" graincolor="20,0,0,255"  
+      minscreendistort="1" maxscreendistort="2" 
+      minscreenblur="3" maxscreenblur="7"
+      minspeedmultiplier="1" maxspeedmultiplier="0.8" 
+      minskillmultiplier="0.25" maxskillmultiplier="0.15" 
+      minchromaticaberration="1" maxchromaticaberration="2">
+
+      <StatusEffect target="Character" comparison="and">
+        <Affliction identifier="organdamage" amount="0.05" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+        <Conditional isLocalPlayer="true" />
+        <Conditional feniterblisteragentinternal="gte 2" />
+        <Conditional feniterblisteragentinternal="lt 10" />
+        <Explosion showeffects="false" camerashake="1" camerashakerange="200" force="0" range="1" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+        <Conditional isLocalPlayer="true" />
+        <Conditional feniterblisteragentinternal="gte 10" />
+        <Explosion showeffects="false" camerashake="2" camerashakerange="200" force="0" range="1" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="60" maxstrength="95" 
+      minvitalitydecrease="30" maxvitalitydecrease="99" 
+      strengthchange="-0.04" 
+      mingrainstrength="10" maxgrainstrength="20.0" graincolor="20,0,0,255" 
+      minscreendistort="2" maxscreendistort="4" 
+      minscreenblur="7" maxscreenblur="8" 
+      minspeedmultiplier="0.8" maxspeedmultiplier="0" 
+      minskillmultiplier="0.15" maxskillmultiplier="0" 
+      minchromaticaberration="1" maxchromaticaberration="3">
+
+      <StatusEffect target="Character" comparison="and">
+        <Affliction identifier="organdamage" amount="0.15" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+        <Conditional isLocalPlayer="true" />
+        <Explosion showeffects="false" camerashake="4" camerashakerange="250" force="0" range="1" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="95" maxstrength="100" 
+      minvitalitydecrease="60" maxvitalitydecrease="10000" 
+      strengthchange="0.02" 
+      mingrainstrength="20" maxgrainstrength="40.0" graincolor="20,0,0,255" 
+      minscreendistort="4" maxscreendistort="8" 
+      minscreenblur="8" maxscreenblur="8" 
+      minspeedmultiplier="0" maxspeedmultiplier="0" 
+      minskillmultiplier="0" maxskillmultiplier="0" 
+      minchromaticaberration="3" maxchromaticaberration="3">
+
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="stun" amount="100" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" comparison="and">
+        <Affliction identifier="organdamage" amount="0.5" />
+      </StatusEffect>
+    </Effect>
+
+    <Description textidentifier="afflictiondescription.feniterblisteragentinternal.self" target="Self" />
+    <Description textidentifier="afflictiondescription.feniterblisteragentinternal" target="OtherCharacter" />
+
+    <PeriodicEffect 
+      mininterval="8" maxinterval="9">
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional feniterblisteragentinternal="gte 20" />
+        <Affliction identifier="bloodloss" amount="1.15" />
+        <Affliction identifier="organdamage" amount="0.185" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional feniterblisteragentinternal="gte 5" />
+        <Conditional hasspecifiertag="male" />
+        <Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
+        <Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
+        <Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional feniterblisteragentinternal="gt 5" />
+        <Conditional hasspecifiertag="female" />
+        <Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
+        <Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
+        <Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" targetlimbs="Head" duration="1" SpeedMultiplier="0.0" comparison="and">
+        <Conditional feniterblisteragentinternal="gte 5" />
+        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="25" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" colormultiplier="100,0,0,255" />
+        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="25" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" colormultiplier="176,153,0,255" />
+        <Conditional HideFace="eq False" />
+      </StatusEffect>
+    </PeriodicEffect>
+    
+    <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="128,128,128,128" color="122,122,23,255" origin="0,0" />
+  </Affliction>
+  
+  <Affliction 
+    name="" 
+    identifier="feniterblisteragentcon" 
+    description="" 
+    type="chemicalcontamination" 
+    limbspecific="false" indicatorlimb="Torso" 
+    showiconthreshold="101" 
+    showinhealthscannerthreshold="1" 
+    maxstrength="100" 
+    affectmachines="true">
+
+    <Effect 
+      minstrength="0" maxstrength="100" 
+      strengthchange="-0.215">
+    </Effect>
+
+    <PeriodicEffect 
+      mininterval="2" maxinterval="5">
+
+      <StatusEffect target="NearbyCharacters" range="200">
+        <Affliction identifier="feniterblisteragentinternal" amount="0.325" />
+        <Affliction identifier="acidburn" amount="0.325" />
+      </StatusEffect>
+    </PeriodicEffect>
+  </Affliction>
 </Afflictions>
