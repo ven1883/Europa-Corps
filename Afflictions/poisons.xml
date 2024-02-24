@@ -984,6 +984,7 @@
 			multiplybymaxvitality="true" 
 			minvitalitydecrease="0" maxvitalitydecrease="1" 
 			strengthchange="1">
+
 			<StatusEffect target="Character">
 				<Affliction identifier="bloodloss" amount="1.5" />
 				<Affliction identifier="organdamage" amount="1" />
@@ -991,5 +992,196 @@
 		</Effect>
 		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="640,0,128,128" color="195,101,60,255" origin="0,0" />
 	</Affliction>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  <!--~FENITER CHEMICAL-AGENTS START~-->
+  <!--Credit to feniter for these. Made the original chemical agents mod that I'm integrating here.-->
+
+  <Affliction
+    name="" 
+    identifier="feniternerveagent" 
+    description="" 
+    type="chemicalagent" 
+    causeofdeathdescription="" 
+    selfcauseofdeathdescription="" 
+    limbspecific="false" indicatorlimb="Torso" 
+    showiconthreshold="35" showinhealthscannerthreshold="10" 
+    maxstrength="100" 
+    affectmachines="false" 
+    medicalskillgain="9.0" 
+    damageoverlayalpha="0">
+
+    <Effect
+      minstrength="0" maxstrength="1" 
+      minvitalitydecrease="0" maxvitalitydecrease="0" 
+      strengthchange="-0.1">
+    </Effect>
+
+    <Effect 
+      minstrength="1" maxstrength="20" 
+      minvitalitydecrease="0" maxvitalitydecrease="0" 
+      strengthchange="0.1" 
+      minscreendistort="0.01" maxscreendistort="0.02" 
+      minscreenblur="0.0" maxscreenblur="0.02" 
+      minspeedmultiplier="0.99" maxspeedmultiplier="0.9" 
+      minskillmultiplier="1" maxskillmultiplier="1" 
+      MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.09" 
+      minchromaticaberration="0.1" maxchromaticaberration="0.3" 
+      dialogflag="feniternerveagent">
+
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Conditional IsHuman="false" />
+        <Affliction identifier="feniternerveagent" amount="0.95" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="20" maxstrength="40" 
+      minvitalitydecrease="0" maxvitalitydecrease="0" 
+      strengthchange="0.2" 
+      minscreendistort="0.02" maxscreendistort="0.06" 
+      minscreenblur="0.02" maxscreenblur="0.1" 
+      minspeedmultiplier="0.9" maxspeedmultiplier="0.6" 
+      minskillmultiplier="1" maxskillmultiplier="1" 
+      MinAfflictionOverlayAlphaMultiplier="0.09" MaxAfflictionOverlayAlphaMultiplier="0.17" 
+      minchromaticaberration="0.3" maxchromaticaberration="0.5" 
+      dialogflag="feniternerveagent">
+
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Conditional IsHuman="false" />
+        <Affliction identifier="feniternerveagent" amount="1.5" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="40" maxstrength="80" 
+      minvitalitydecrease="0" maxvitalitydecrease="3" 
+      strengthchange="0.6" 
+      minscreendistort="0.06" maxscreendistort="1.6" 
+      minscreenblur="0.1" maxscreenblur="1.5" 
+      minspeedmultiplier="0.6" maxspeedmultiplier="0.1" 
+      minskillmultiplier="1" maxskillmultiplier="0.01" 
+      MinAfflictionOverlayAlphaMultiplier="0.17" MaxAfflictionOverlayAlphaMultiplier="1" 
+      minchromaticaberration="0.5" maxchromaticaberration="0.7">
+
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Conditional IsHuman="false" />
+        <Affliction identifier="feniternerveagent" amount="3" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="80" maxstrength="95" 
+      minvitalitydecrease="3" maxvitalitydecrease="140" 
+      strengthchange="1" 
+      minscreendistort="1.6" maxscreendistort="2" 
+      minscreenblur="1.5" maxscreenblur="2" 
+      minspeedmultiplier="0.1" maxspeedmultiplier="0" 
+      minskillmultiplier="0.1" maxskillmultiplier="0" 
+      MinAfflictionOverlayAlphaMultiplier="1" 
+      MaxAfflictionOverlayAlphaMultiplier="2" 
+      minchromaticaberration="0.6" 
+      maxchromaticaberration="0.95">
+
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Conditional IsHuman="false" />
+        <Affliction identifier="feniternerveagent" amount="6" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" OxygenAvailable="-1000.0" setvalue="true">
+        <Affliction identifier="stun" amount="100" />
+      </StatusEffect>
+    </Effect>
+    
+    <Effect 
+      minstrength="95" maxstrength="100" 
+      minvitalitydecrease="140" maxvitalitydecrease="10000" 
+      strengthchange="100"
+      minscreendistort="1" maxscreendistort="1" 
+      minscreenblur="1" maxscreenblur="1" 
+      minspeedmultiplier="0" maxspeedmultiplier="0" 
+      minskillmultiplier="0" maxskillmultiplier="0" 
+      MinAfflictionOverlayAlphaMultiplier="2" MaxAfflictionOverlayAlphaMultiplier="2.5" 
+      minchromaticaberration="1" maxchromaticaberration="1">
+      
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="stun" amount="100" />
+      </StatusEffect>
+    </Effect>
+
+    <Description textidentifier="afflictiondescription.feniternerveagent.self" target="Self" minstrength="35" maxstrength="60" />
+    <Description textidentifier="afflictiondescription.feniternerveagent" target="OtherCharacter" minstrength="35" maxstrength="60" />
+    <Description textidentifier="afflictiondescription.feniternerveagent.high.self" target="Self" minstrength="60" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.feniternerveagent.high" target="OtherCharacter" minstrength="60" maxstrength="100" />
+
+    <PeriodicEffect 
+      mininterval="2" maxinterval="5" 
+      multiplyafflictionsbymaxvitality="true">
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional feniternerveagent="gte 40" />
+        <Affliction identifier="stun" amount="2" />
+      </StatusEffect>
+    </PeriodicEffect>
+    
+    <PeriodicEffect 
+      mininterval="14" maxinterval="15" 
+      multiplyafflictionsbymaxvitality="true">
+
+      <StatusEffect target="Character" OxygenAvailable="-2000.0" duration="6" comparison="and">
+        <Conditional feniternerveagent="gte 35" />
+        <Conditional feniternerveagent="lt 60" />
+        <Conditional ishuman="true" />
+        <Sound file="%ModDir%/thecodelol/Others/outofbreath1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/thecodelol/Others/outofbreath2.ogg" />
+        <Sound file="%ModDir%/thecodelol/Others/outofbreath3.ogg" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <PeriodicEffect 
+      mininterval="24" maxinterval="30" 
+      multiplyafflictionsbymaxvitality="true">
+
+      <StatusEffect target="Character" OxygenAvailable="-2000.0" duration="12" comparison="and">
+        <Conditional feniternerveagent="gte 60" />
+        <Conditional feniternerveagent="lt 100" />
+        <Conditional ishuman="true" />
+        <Sound file="%ModDir%/thecodelol/Others/outofbreath1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/thecodelol/Others/outofbreath2.ogg" />
+        <Sound file="%ModDir%/thecodelol/Others/outofbreath3.ogg" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/respiratoryfailure.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+    <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="0,0,128,128" color="122,122,23,255" origin="0,0" />
+  </Affliction>
+  
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  <Affliction 
+    name="" 
+    identifier="feniternerveagentcon" 
+    description="" 
+    type="chemicalcontamination" 
+    limbspecific="false" indicatorlimb="Torso" 
+    showiconthreshold="101" showinhealthscannerthreshold="1"
+    maxstrength="100" 
+    affectmachines="true">
+
+    <Effect 
+      minstrength="0" maxstrength="100" 
+      minvitalitydecrease="0" maxvitalitydecrease="0" 
+      strengthchange="-0.2">
+    </Effect>
+
+    <PeriodicEffect 
+      mininterval="2" maxinterval="5">
+      
+      <StatusEffect target="NearbyCharacters" range="200">
+        <Affliction identifier="feniternerveagent" amount="1" />
+      </StatusEffect>
+    </PeriodicEffect>
+  </Affliction>
 
 </Afflictions>
