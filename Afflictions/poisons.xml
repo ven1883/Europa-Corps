@@ -1613,6 +1613,8 @@
     <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="128,128,128,128" color="122,122,23,255" origin="0,0" />
   </Affliction>
   
+  <!--++++++++++++++++++++++++++++++++++++-->
+
   <Affliction 
     name="" 
     identifier="feniterblisteragentcon" 
@@ -1637,5 +1639,140 @@
         <Affliction identifier="acidburn" amount="0.325" />
       </StatusEffect>
     </PeriodicEffect>
+  </Affliction>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  
+  <Affliction 
+    name="" 
+    identifier="feniternonlethalagent" 
+    description="" 
+    causeofdeathdescription="" 
+    selfcauseofdeathdescription="" 
+    type="chemicalcontamination" 
+    limbspecific="false" indicatorlimb="Head" 
+    showiconthreshold="1" showinhealthscannerthreshold="1"
+    maxstrength="100" 
+    affectmachines="false">
+
+    <Effect
+      minstrength="0" maxstrength="1" 
+      minvitalitydecrease="0" maxvitalitydecrease="3" 
+      strengthchange="-0.1"
+      minscreendistort="0" maxscreendistort="0.8" 
+      minscreenblur="0" maxscreenblur="0.8" 
+      minspeedmultiplier="1" maxspeedmultiplier="0.95" 
+      minchromaticaberration="0.015" maxchromaticaberration="0.95" 
+      minskillmultiplier="1" maxskillmultiplier="0.95" 
+      dialogflag="feniternonlethalagent">
+
+      <StatusEffect target="Character" targetlimbs="Torso">
+        <Affliction identifier="organdamage" amount="0.1" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="1" maxstrength="45" 
+      minvitalitydecrease="3" maxvitalitydecrease="45" 
+      strengthchange="-0.5" 
+      mingrainstrength="0" maxgrainstrength="10.0" graincolor="20,20,20,255" 
+      minscreendistort="0.8" maxscreendistort="4" 
+      minscreenblur="0.8" maxscreenblur="3" 
+      minspeedmultiplier="0.95" maxspeedmultiplier="0.9" 
+      minchromaticaberration="0.95" maxchromaticaberration="5" 
+      minskillmultiplier="0.45" maxskillmultiplier="0.1" 
+      dialogflag="feniternonlethalagent">
+
+      <StatusEffect target="Character" targetlimbs="Torso">
+        <Affliction identifier="organdamage" amount="0.2" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+        <Conditional isLocalPlayer="true" />
+        <Conditional feniternonlethalagent="lt 10" />
+        <Explosion showeffects="false" camerashake="10" camerashakerange="100" force="0" range="1" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+        <Conditional isLocalPlayer="true" />
+        <Conditional feniternonlethalagent="gte 10" />
+        <Explosion showeffects="false" camerashake="20" camerashakerange="100" force="0" range="1" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect
+      minstrength="45" maxstrength="100" 
+      minvitalitydecrease="45" maxvitalitydecrease="80" 
+      strengthchange="-1" 
+      mingrainstrength="10" maxgrainstrength="20.0" graincolor="20,20,20,255" 
+      minscreendistort="4" maxscreendistort="6" 
+      minscreenblur="3" maxscreenblur="3" 
+      minspeedmultiplier="0.9" maxspeedmultiplier="0" 
+      minchromaticaberration="5" maxchromaticaberration="5" 
+      minskillmultiplier="0.1" maxskillmultiplier="0" 
+      dialogflag="feniternonlethalagent">
+
+      <StatusEffect target="Character" targetlimbs="Torso">
+        <Affliction identifier="organdamage" amount="0.8" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" interval="0.1" disabledeltatime="true">
+        <Conditional isLocalPlayer="true" />
+        <Explosion showeffects="false" camerashake="50" camerashakerange="150" force="0" range="1" />
+      </StatusEffect>
+    </Effect>
+
+    <Description textidentifier="afflictiondescription.feniternonlethalagent.self" target="Self" />
+    <Description textidentifier="afflictiondescription.feniternonlethalagent" target="OtherCharacter" />
+
+    <PeriodicEffect 
+      mininterval="1" maxinterval="2">
+
+      <StatusEffect target="Character">
+        <Affliction identifier="stun" amount="0.5" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <PeriodicEffect 
+      mininterval="3" maxinterval="4" multiplyafflictionsbymaxvitality="true">
+
+      <StatusEffect target="Character" targetlimbs="Torso" comparison="and">
+        <Conditional feniternonlethalagent="gte 1" />
+        <Conditional feniternonlethalagent="lt 50" />
+        <Affliction identifier="organdamage" amount="0.25" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" targetlimbs="Torso" comparison="and">
+        <Conditional feniternonlethalagent="gte 50" />
+        <Conditional feniternonlethalagent="lte 100" />
+        <Affliction identifier="organdamage" amount="0.45" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Conditional feniternonlethalagent="gte 1" />
+        <Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
+        <Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
+        <Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Conditional feniternonlethalagent="gte 1" />
+        <Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
+        <Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
+        <Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" targetlimbs="Head" duration="1" SpeedMultiplier="0.0" comparison="and">
+        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="25" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" colormultiplier="176,153,0,255" />
+        <Conditional HideFace="eq False" />
+        <Conditional feniternonlethalagent="gte 1" />
+      </StatusEffect>
+    </PeriodicEffect>
+    
+    <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="512,128,128,128" color="122,122,23,255" origin="0,0" />
   </Affliction>
 </Afflictions>
