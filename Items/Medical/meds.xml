@@ -644,10 +644,278 @@
     </MeleeWeapon>
   </Item>
 
-
+	<!--+++++++++++++++++++++++++++++++++++-->
 	
+  <FenAtropine name="" identifier="feniternerveagentcure" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer secondary="abandonedmedcab,wreckmedcab" minamount="1" maxamount="2" spawnprobability="0.1" />
+    <Price baseprice="1190">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" sold="false" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="0.9" minavailable="2" maxavailable="3" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="1.1" minavailable="1" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
+      <Price storeidentifier="merchantmedical" sold="false" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="60">
+      <RequiredSkill identifier="medical" level="75" />
+      <RequiredItem identifier="steroids" />
+      <RequiredItem identifier="stabilozine" amount="2" />
+      <RequiredItem identifier="liquidoxygenite" />
+      <RequiredItem identifier="Chlorine" />
+      <RequiredItem identifier="antiparalysis" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="stabilozine" />
+      <Item identifier="liquidoxygenite" />
+      <Item identifier="steroids" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="230,0,70,70" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="160,0,70,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="5" />
+    <SuitableTreatment identifier="feniternerveagent" suitability="10" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" holdangle="-180" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="20" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="60">
+        <ReduceAffliction identifier="feniternerveagent" amount="3" />
+        <Affliction identifier="organdamage" amount="0.3" />
+        <Affliction identifier="nausea" amount="1.5" />
+        <Affliction identifier="psychosis" amount="0.4" />
+        <Affliction identifier="hallucinating" amount="3" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="60">
+        <ReduceAffliction identifier="feniternerveagent" amount="1.5" />
+        <Affliction identifier="organdamage" amount="0.22" />
+        <Affliction identifier="nausea" amount="1.2" />
+        <Affliction identifier="psychosis" amount="0.3" />
+        <Affliction identifier="hallucinating" amount="2" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="20" />
+  </FenAtropine>
 
+	<!--+++++++++++++++++++++++++++++++++++-->
 	
+  <FenPulmonaryflush name="" identifier="feniterpulmonaryagentcure1" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer secondary="abandonedmedcab,wreckmedcab" minamount="1" maxamount="2" spawnprobability="0.1" />
+    <Price baseprice="2890">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" sold="false" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="0.9" minavailable="2" maxavailable="3" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="1.1" minavailable="1" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
+      <Price storeidentifier="merchantmedical" sold="false" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="80">
+      <RequiredSkill identifier="medical" level="75" />
+      <RequiredItem identifier="steroids" />
+      <RequiredItem identifier="antibloodloss1" />
+      <RequiredItem identifier="morphine" />
+      <RequiredItem identifier="sodium" amount="3" />
+      <RequiredItem identifier="liquidoxygenite" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="stabilozine" />
+      <Item identifier="liquidoxygenite" amount="3" />
+      <Item identifier="steroids" amount="2" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="230,80,80,80" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="160,80,70,80" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="5" />
+    <SuitableTreatment identifier="feniterpulmonaryagent1" suitability="1" />
+    <SuitableTreatment identifier="feniterblisteragentinternal" suitability="1" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" holdangle="-180" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="20" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" comparison="and" duration="30">
+        <Conditional feniterpulmonaryagent1="gte 40" />
+        <Conditional feniterpulmonaryagent1="lt 60" />
+        <ReduceAffliction identifier="feniterpulmonaryagent1" amount="0.135" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="100">
+        <Conditional feniterblisteragentinternal="gte 1" />
+        <ReduceAffliction identifier="feniterblisteragentinternal" amount="0.435" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" comparison="and" duration="30">
+        <Conditional feniterpulmonaryagent1="gte 40" />
+        <Conditional feniterpulmonaryagent1="lt 60" />
+        <ReduceAffliction identifier="feniterpulmonaryagent1" amount="0.085" />
+        <ReduceAffliction identifier="feniterblisteragentinternal" amount="0.435" />
+        <Affliction identifier="internaldamage" amount="0.85" />
+        <Affliction identifier="nausea" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="40" />
+  </FenPulmonaryflush>
+	
+	<!--+++++++++++++++++++++++++++++++++++-->
   
-			
+  <FenPulmonarybinder name="" identifier="feniterpulmonaryagentcure2" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer secondary="abandonedmedcab,wreckmedcab" minamount="1" maxamount="2" spawnprobability="0.1" />
+    <Price baseprice="1020">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" sold="false" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="0.9" minavailable="2" maxavailable="3" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="1.1" minavailable="1" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
+      <Price storeidentifier="merchantmedical" sold="false" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="80">
+      <RequiredSkill identifier="medical" level="75" />
+      <RequiredItem identifier="stabilozine" amount="2" />
+      <RequiredItem identifier="liquidoxygenite" />
+      <RequiredItem identifier="deusizine" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="stabilozine" />
+      <Item identifier="liquidoxygenite" />
+      <Item identifier="deusizine" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="230,175,70,80" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="160,175,70,80" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="5" />
+    <SuitableTreatment identifier="feniterpulmonaryagent1" suitability="10" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" holdangle="-180" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="70" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="100">
+        <Conditional feniterpulmonaryagent1="lt 40" />
+        <ReduceAffliction identifier="feniterpulmonaryagent1" amount="0.095" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="100">
+        <Conditional feniterpulmonaryagent1="lt 40" />
+        <ReduceAffliction identifier="feniterpulmonaryagent1" amount="0.095" />
+        <Affliction identifier="organdamage" amount="0.3" />
+        <Affliction identifier="nausea" amount="0.85" />
+        <Affliction identifier="stun" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="70" />
+  </FenPulmonarybinder>
+
+	<!--+++++++++++++++++++++++++++++++++++-->
+
+  <FenHaloperidolStr name="" identifier="feniterpsychoagentcure" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer secondary="abandonedmedcab,wreckmedcab" minamount="1" maxamount="2" spawnprobability="0.1" />
+    <Price baseprice="1020">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" sold="false" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="0.9" minavailable="2" maxavailable="3" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="1.1" minavailable="1" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
+      <Price storeidentifier="merchantmedical" sold="false" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="80">
+      <RequiredSkill identifier="medical" level="75" />
+      <RequiredItem identifier="stabilozine" amount="2" />
+      <RequiredItem identifier="antidama1" />
+      <RequiredItem identifier="antipsychosis" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="stabilozine" />
+      <Item identifier="antidama1" />
+      <Item identifier="antipsychosis" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="240,355,65,70" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="170,355,50,70" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="5" />
+    <SuitableTreatment identifier="feniterpsychoagent" suitability="10" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" holdangle="-180" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="60" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="100.0">
+        <Conditional feniterpsychoagent="lt 80" />
+        <ReduceAffliction identifier="feniterpsychoagent" amount="0.8" />
+        <ReduceAffliction identifier="psychosis" amount="3" />
+        <ReduceAffliction identifier="hallucinating" amount="0.6" />
+        <ReduceAffliction identifier="hallucinatingshortduration" amount="0.6" />
+        <ReduceAffliction identifier="feniterhallucination1" amount="8" />
+        <ReduceAffliction identifier="feniterhallucination2" amount="8" />
+        <ReduceAffliction identifier="invertcontrols" amount="3" />
+        <Affliction identifier="psychosisresistance" amount="5" />
+        <Affliction identifier="stun" amount="1" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="100.0">
+        <Conditional feniterpsychoagent="lt 80" />
+        <ReduceAffliction identifier="feniterpsychoagent" amount="0.4" />
+        <ReduceAffliction identifier="psychosis" amount="1.5" />
+        <ReduceAffliction identifier="hallucinating" amount="0.3" />
+        <ReduceAffliction identifier="hallucinatingshortduration" amount="0.3" />
+        <ReduceAffliction identifier="feniterhallucination1" amount="4" />
+        <ReduceAffliction identifier="feniterhallucination2" amount="4" />
+        <ReduceAffliction identifier="invertcontrols" amount="1.5" />
+        <Affliction identifier="psychosisresistance" amount="2.5" />
+        <Affliction identifier="stun" amount="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="20" />
+  </FenHaloperidolStr>
+  
+	<!--+++++++++++++++++++++++++++++++++++-->
+
+  <FenGenDecon name="" identifier="feniterdecontaminant" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="1.2" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <PreferredContainer secondary="abandonedmedcab,wreckmedcab" minamount="1" maxamount="2" spawnprobability="0.1" />
+    <Price baseprice="2890">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" sold="false" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" sold="true" multiplier="0.9" minavailable="2" maxavailable="3" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="1.1" minavailable="1" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.1" />
+      <Price storeidentifier="merchantmedical" sold="false" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="10">
+      <RequiredSkill identifier="medical" level="10" />
+      <RequiredItem identifier="ethanol" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="ethanol" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareextraicon.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremisc.png" sourcerect="147,42,12,26" depth="0.6" origin="0.5,0.5" />
+    <Body width="25" height="40" density="5" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <RequiredSkill identifier="medical" level="10" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" comparison="and" duration="30">
+        <ReduceAffliction type="chemicalcontamination" amount="30" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="UseTarget" comparison="and" duration="30">
+        <ReduceAffliction type="chemicalcontamination" amount="25" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <SkillRequirementHint identifier="medical" level="10" />
+  </FenGenDecon>
+  
+	<!--+++++++++++++++++++++++++++++++++++-->
+  
 </Items>
