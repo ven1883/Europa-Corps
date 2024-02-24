@@ -1772,7 +1772,179 @@
         <Conditional feniternonlethalagent="gte 1" />
       </StatusEffect>
     </PeriodicEffect>
-    
+
     <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="512,128,128,128" color="122,122,23,255" origin="0,0" />
+  </Affliction>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  <Affliction 
+    name="" 
+    identifier="feniterpsychoagent" 
+    description="" 
+    causeofdeathdescription="" 
+    selfcauseofdeathdescription="" 
+    type="chemicalagent" 
+    limbspecific="false" indicatorlimb="Head" 
+    showiconthreshold="10" 
+    showinhealthscannerthreshold="10" 
+    maxstrength="100" affectmachines="false">
+
+    <Effect 
+      minstrength="0" maxstrength="80" 
+      minvitalitydecrease="0" maxvitalitydecrease="0" 
+      strengthchange="-0.05" 
+      minscreendistort="0.0" maxscreendistort="5.0" 
+      minscreenblur="0.0" maxscreenblur="2" 
+      minradialdistort="0" maxradialdistort="2" 
+      minchromaticaberration="0" maxchromaticaberration="15" 
+      minskillmultiplier="1" maxskillmultiplier="0.2" 
+      minspeedmultiplier="1" maxspeedmultiplier="0.8" 
+      mingrainstrength="0" maxgrainstrength="2" 
+      MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.8" 
+      dialogflag="feniterpsychoagent">
+
+      <StatusEffect target="Character">
+        <Affliction identifier="psychosis" amount="1" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="80" maxstrength="100" 
+      minvitalitydecrease="0" maxvitalitydecrease="1000" 
+      strengthchange="-0.05" 
+      minscreendistort="5" maxscreendistort="10" 
+      minscreenblur="2" maxscreenblur="4" 
+      minradialdistort="0" maxradialdistort="2" 
+      minchromaticaberration="15" maxchromaticaberration="15" 
+      minspeedmultiplier="0.8" maxspeedmultiplier="0" 
+      minskillmultiplier="0.2" maxskillmultiplier="0" 
+      mingrainstrength="2" maxgrainstrength="4" 
+      MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="1">
+
+      <StatusEffect target="Character">
+        <Affliction identifier="psychosis" amount="1" />
+      </StatusEffect>
+    </Effect>
+
+    <Description textidentifier="afflictiondescription.feniterpsychoagent.self" target="Self" />
+    <Description textidentifier="afflictiondescription.feniterpsychoagent" target="OtherCharacter" />
+
+    <PeriodicEffect 
+      mininterval="5" maxinterval="10">
+
+      <StatusEffect target="Character">
+        <Conditional feniterhallucination1="lt 1" />
+        <Affliction identifier="feniterhallucination1" amount="0.1" />
+      </StatusEffect>
+
+      <StatusEffect target="Character">
+        <Conditional feniterhallucination2="lt 1" />
+        <Affliction identifier="feniterhallucination2" amount="0.1" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <PeriodicEffect 
+      mininterval="10" maxinterval="20">
+
+      <StatusEffect target="Character">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/thecodelol/Others/whisper.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/thecodelol/Others/insect.ogg" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <PeriodicEffect 
+      mininterval="100" maxinterval="200">
+
+      <StatusEffect target="Character">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/thecodelol/Others/knock.ogg" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <PeriodicEffect 
+      mininterval="2" maxinterval="3">
+      <StatusEffect target="Character">
+        <Affliction identifier="invertcontrols" amount="1" />
+      </StatusEffect>
+
+      <StatusEffect target="Character" setvalue="true">
+        <Conditional invertcontrols="gte 2" />
+        <ReduceAffliction identifier="invertcontrols" amount="1000" />
+      </StatusEffect>
+    </PeriodicEffect>
+    
+    <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="512,0,128,128" color="122,122,23,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/psychosismain.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+
+  </Affliction>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  <Affliction 
+    name="" 
+    identifier="feniterhallucination1" 
+    description="" 
+    type="chemicalagent" 
+    limbspecific="false" indicatorlimb="Torso" 
+    showiconthreshold="101" 
+    showinhealthscannerthreshold="101" 
+    maxstrength="101" 
+    affectmachines="false">
+
+    <Effect 
+      minstrength="0" maxstrength="80" 
+      strengthchange="0.1" 
+      MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="1">
+    </Effect> 
+
+    <Effect 
+      minstrength="80" maxstrength="100" 
+      strengthchange="2" 
+      MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="0">
+
+      <StatusEffect target="Character" setvalue="true">
+        <Conditional feniterhallucination1="gte 99" />
+        <ReduceAffliction identifier="feniterhallucination1" amount="1000" />
+      </StatusEffect>
+    </Effect>
+
+    <AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/psychosishallucination1.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+
+  </Affliction>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  <Affliction 
+    name="" 
+    identifier="feniterhallucination2" 
+    description="" 
+    type="chemicalagent" 
+    limbspecific="false" indicatorlimb="Torso" 
+    showiconthreshold="101" 
+    showinhealthscannerthreshold="101" 
+    maxstrength="101" 
+    affectmachines="false">
+
+    <Effect 
+      minstrength="0" maxstrength="80" 
+      strengthchange="0.1" 
+      MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="1">
+    </Effect>
+
+    <Effect 
+      minstrength="80" maxstrength="100" 
+      strengthchange="2" 
+      MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="0">
+
+      <StatusEffect target="Character" setvalue="true">
+        <Conditional feniterhallucination2="gte 99" />
+        <ReduceAffliction identifier="feniterhallucination2" amount="1000" />
+      </StatusEffect>
+    </Effect>
+
+    <AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/psychosishallucination2.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+
   </Affliction>
 </Afflictions>
