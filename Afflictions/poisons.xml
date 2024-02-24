@@ -1177,11 +1177,201 @@
 
     <PeriodicEffect 
       mininterval="2" maxinterval="5">
-      
+
       <StatusEffect target="NearbyCharacters" range="200">
         <Affliction identifier="feniternerveagent" amount="1" />
       </StatusEffect>
     </PeriodicEffect>
   </Affliction>
 
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  <Affliction 
+    name="" 
+    identifier="feniterpulmonaryagent1" 
+    type="chemicalagent" 
+    description="" 
+    causeofdeathdescription="" 
+    selfcauseofdeathdescription="" 
+    limbspecific="false" indicatorlimb="Torso" 
+    showiconthreshold="40" showinhealthscannerthreshold="20" 
+    maxstrength="100" 
+    affectmachines="true">
+
+    <Effect 
+      minstrength="0" maxstrength="20" 
+      minvitalitydecrease="0" maxvitalitydecrease="0" 
+      strengthchange="0.035" 
+      minscreendistort="0" maxscreendistort="0.015" 
+      minscreenblur="0" maxscreenblur="0.015" 
+      minspeedmultiplier="1" maxspeedmultiplier="0.95" 
+      minchromaticaberration="0" maxchromaticaberration="0.015">
+    </Effect>
+
+    <Effect 
+      minstrength="20" maxstrength="40" 
+      minvitalitydecrease="0" maxvitalitydecrease="1"
+      strengthchange="0.05" 
+      minscreendistort="0.015" maxscreendistort="0.040" 
+      minscreenblur="0.015" maxscreenblur="0.040" 
+      minspeedmultiplier="0.95" maxspeedmultiplier="0.9" 
+      minchromaticaberration="0.015" maxchromaticaberration="0.025">
+    </Effect>
+
+    <Effect 
+      minstrength="40" maxstrength="60" 
+      minvitalitydecrease="1" maxvitalitydecrease="2" 
+      strengthchange="0.07" 
+      minscreendistort="0.040" maxscreendistort="0.80" 
+      minscreenblur="0.040" maxscreenblur="0.80" 
+      minspeedmultiplier="0.9" maxspeedmultiplier="0.35" 
+      minskillmultiplier="1" maxskillmultiplier="0.05" 
+      minchromaticaberration="0.025" maxchromaticaberration="0.45">
+    </Effect>
+
+    <Effect 
+      minstrength="60" maxstrength="80" 
+      minvitalitydecrease="2" maxvitalitydecrease="40" 
+      strengthchange="0.08" 
+      minscreendistort="0.80" maxscreendistort="2" 
+      minscreenblur="0.80" maxscreenblur="2" 
+      minspeedmultiplier="0.4" maxspeedmultiplier="0" 
+      minskillmultiplier="0.05" maxskillmultiplier="0" 
+      minchromaticaberration="0.45" maxchromaticaberration="1">
+
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="stun" amount="100" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="80" maxstrength="100" 
+      minvitalitydecrease="40" maxvitalitydecrease="10000" 
+      strengthchange="0.5" 
+      minscreendistort="2" maxscreendistort="4" 
+      minscreenblur="2" maxscreenblur="4" 
+      minspeedmultiplier="0" maxspeedmultiplier="0" 
+      minskillmultiplier="0" maxskillmultiplier="0" 
+      minchromaticaberration="1" maxchromaticaberration="1">
+
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="stun" amount="100" />
+      </StatusEffect>
+    </Effect>
+
+    <Description textidentifier="afflictiondescription.feniterpulmonaryagent1.self" target="Self" minstrength="40" maxstrength="60" />
+    <Description textidentifier="afflictiondescription.feniterpulmonaryagent1" target="OtherCharacter" minstrength="40" maxstrength="60" />
+    <Description textidentifier="afflictiondescription.feniterpulmonaryagent1.high.self" target="Self" minstrength="60" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.feniterpulmonaryagent1.high" target="OtherCharacter" minstrength="60" maxstrength="100" />
+
+    <PeriodicEffect 
+      mininterval="14" maxinterval="16" 
+      multiplyafflictionsbymaxvitality="true">
+
+      <StatusEffect target="Character" OxygenAvailable="-2000.0" duration="5" comparison="and">
+        <Conditional feniterpulmonaryagent1="gte 40" />
+        <Conditional feniterpulmonaryagent1="lt 50" />
+        <Affliction identifier="stun" amount="2" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <PeriodicEffect
+      mininterval="24" maxinterval="28" 
+      multiplyafflictionsbymaxvitality="true">
+
+      <StatusEffect target="Character" OxygenAvailable="-2000.0" duration="10" comparison="and">
+        <Conditional feniterpulmonaryagent1="gte 50" />
+        <Conditional feniterpulmonaryagent1="lt 60" />
+        <Affliction identifier="stun" amount="3" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <PeriodicEffect 
+      mininterval="26" maxinterval="29" 
+      multiplyafflictionsbymaxvitality="true">
+
+      <StatusEffect target="Character" OxygenAvailable="-2000.0" duration="12" comparison="and">
+        <Conditional feniterpulmonaryagent1="gte 60" />
+        <Conditional feniterpulmonaryagent1="lt 101" />
+        <Affliction identifier="stun" amount="4" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="128,0,128,128" color="122,122,23,255" origin="0,0" />
+  </Affliction>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  <Affliction 
+    name="" 
+    identifier="feniterpulmonaryagent2" 
+    description="" 
+    causeofdeathdescription="Perforated lungs resulting in asphyxiation." 
+    selfcauseofdeathdescription="Your lungs are perforated by pulmonary agents." 
+    type="chemicalagent" 
+    limbspecific="false" indicatorlimb="Torso" 
+    showiconthreshold="90" 
+    showinhealthscannerthreshold="10" 
+    maxstrength="200" 
+    affectmachines="false">
+
+    <Effect 
+      minstrength="0" maxstrength="80" 
+      minvitalitydecrease="0" maxvitalitydecrease="0" 
+      strengthchange="-0.2" 
+      minscreendistort="0.015" maxscreendistort="0.040" 
+      minscreenblur="0.015" maxscreenblur="0.040" 
+      minspeedmultiplier="0.95" maxspeedmultiplier="0.9" 
+      minchromaticaberration="0.015" maxchromaticaberration="0.025">
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional feniterpulmonaryagent1="lt 1" />
+        <Conditional hastag="neq facerespirator" />
+        <Affliction identifier="feniterpulmonaryagent1" amount="0.01" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="80" maxstrength="100" 
+      minvitalitydecrease="0" maxvitalitydecrease="8" 
+      strengthchange="-0.2" 
+      minscreendistort="0.040" maxscreendistort="0.2" 
+      minscreenblur="0.040" maxscreenblur="0.2" 
+      minspeedmultiplier="0.9" maxspeedmultiplier="0.8" 
+      minchromaticaberration="0.025" maxchromaticaberration="0.4">
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional feniterpulmonaryagent1="lt 1" />
+        <Conditional hastag="neq facerespirator" />
+        <Affliction identifier="feniterpulmonaryagent1" amount="0.01" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="100" maxstrength="200" 
+      minvitalitydecrease="8" maxvitalitydecrease="1000" 
+      strengthchange="-0.1" 
+      minscreendistort="0.2" maxscreendistort="1" 
+      minscreenblur="0.2" maxscreenblur="1" 
+      minspeedmultiplier="0.8" maxspeedmultiplier="0.3" 
+      minchromaticaberration="0.4" maxchromaticaberration="0.9">
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional feniterpulmonaryagent1="lt 1" />
+        <Conditional hastag="neq facerespirator" />
+        <Affliction identifier="feniterpulmonaryagent1" amount="0.01" />
+      </StatusEffect>
+    </Effect>
+
+    <Description textidentifier="afflictiondescription.feniterpulmonaryagent2.self" target="Self" minstrength="80" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.feniterpulmonaryagent2" target="OtherCharacter" minstrength="80" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.feniterpulmonaryagent2.high.self" target="Self" minstrength="100" maxstrength="200" />
+    <Description textidentifier="afflictiondescription.feniterpulmonaryagent2.high" target="OtherCharacter" minstrength="100" maxstrength="200" />
+
+    <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="128,128,128,128" color="122,122,23,255" origin="0,0" />
+  </Affliction>
+  
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  
 </Afflictions>
