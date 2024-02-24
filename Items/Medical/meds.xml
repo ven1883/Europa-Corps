@@ -895,8 +895,8 @@
     <Deconstruct time="5">
       <Item identifier="ethanol" />
     </Deconstruct>
-    <InventoryIcon texture="sprites//chemicalwarfareextraicon.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="sprites//chemicalwarfaremisc.png" sourcerect="147,42,12,26" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="sprites/chemicalwarfareextraicon.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremisc.png" sourcerect="147,42,12,26" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="5" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="10" />
