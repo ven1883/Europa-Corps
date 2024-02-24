@@ -20,7 +20,7 @@
       <RequiredItem identifier="phosphorus" amount="2" />
       <RequiredItem identifier="paralyxis" amount="4" />
     </Fabricate>
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="20,11,27,53" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="20,11,27,53" depth="0.55" origin="0.5,0.5" />
     <Body width="26" height="54" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
@@ -114,7 +114,7 @@
       <RequiredItem identifier="chlorine" amount="2" />
       <RequiredItem identifier="oxygentank" usecondition="true" mincondition="0.99" />
     </Fabricate>
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="20,81,27,53" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="20,81,27,53" depth="0.55" origin="0.5,0.5" />
     <Body width="26" height="54" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
@@ -205,7 +205,7 @@
       <RequiredItem identifier="morbusine" amount="2" />
       <RequiredItem identifier="oxygentank" usecondition="true" mincondition="0.95" />
     </Fabricate>
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="20,151,27,53" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="20,151,27,53" depth="0.55" origin="0.5,0.5" />
     <Body width="26" height="54" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
@@ -281,7 +281,7 @@
       <RequiredItem identifier="sufforin" amount="2" />
       <RequiredItem identifier="carbon" amount="2" />
     </Fabricate>
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="19,222,27,53" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="19,222,27,53" depth="0.55" origin="0.5,0.5" />
     <Body width="26" height="54" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
@@ -377,7 +377,7 @@
       <RequiredItem identifier="sulphuricacid" />
       <RequiredItem identifier="carbon" amount="2" />
     </Fabricate>
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="19,291,27,53" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="19,291,27,53" depth="0.55" origin="0.5,0.5" />
     <Body width="26" height="54" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
@@ -467,7 +467,7 @@
       <RequiredItem identifier="deliriumine" amount="2" />
       <RequiredItem identifier="morbusine" amount="2" />
     </Fabricate>
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="19,361,27,53" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="19,361,27,53" depth="0.55" origin="0.5,0.5" />
     <Body width="26" height="54" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
@@ -555,7 +555,7 @@
       <RequiredItem identifier="antidama2" amount="2" />
       <RequiredItem identifier="chloralhydrate" amount="2" />
     </Fabricate>
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="19,431,27,53" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="19,431,27,53" depth="0.55" origin="0.5,0.5" />
     <Body width="26" height="54" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />

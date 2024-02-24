@@ -670,8 +670,8 @@
       <Item identifier="liquidoxygenite" />
       <Item identifier="steroids" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="230,0,70,70" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="160,0,70,70" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="sprites/chemicalwarfaremain.png" sourcerect="230,0,70,70" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="160,0,70,70" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="5" />
     <SuitableTreatment identifier="feniternerveagent" suitability="10" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" holdangle="-180" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
@@ -726,8 +726,8 @@
       <Item identifier="liquidoxygenite" amount="3" />
       <Item identifier="steroids" amount="2" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="230,80,80,80" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="160,80,70,80" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="sprites/chemicalwarfaremain.png" sourcerect="230,80,80,80" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="160,80,70,80" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="5" />
     <SuitableTreatment identifier="feniterpulmonaryagent1" suitability="1" />
     <SuitableTreatment identifier="feniterblisteragentinternal" suitability="1" />
@@ -784,8 +784,8 @@
       <Item identifier="liquidoxygenite" />
       <Item identifier="deusizine" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="230,175,70,80" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="160,175,70,80" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="sprites/chemicalwarfaremain.png" sourcerect="230,175,70,80" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="160,175,70,80" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="5" />
     <SuitableTreatment identifier="feniterpulmonaryagent1" suitability="10" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" holdangle="-180" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
@@ -835,8 +835,8 @@
       <Item identifier="antidama1" />
       <Item identifier="antipsychosis" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="240,355,65,70" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremain.png" sourcerect="170,355,50,70" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="sprites/chemicalwarfaremain.png" sourcerect="240,355,65,70" origin="0.5,0.5" />
+    <Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="170,355,50,70" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="5" />
     <SuitableTreatment identifier="feniterpsychoagent" suitability="10" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" holdangle="-180" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
@@ -895,8 +895,8 @@
     <Deconstruct time="5">
       <Item identifier="ethanol" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareextraicon.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremisc.png" sourcerect="147,42,12,26" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="sprites//chemicalwarfareextraicon.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="sprites//chemicalwarfaremisc.png" sourcerect="147,42,12,26" depth="0.6" origin="0.5,0.5" />
     <Body width="25" height="40" density="5" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,-5" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="10" />
