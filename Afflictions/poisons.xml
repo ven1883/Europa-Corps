@@ -1373,5 +1373,103 @@
   
   <!--++++++++++++++++++++++++++++++++++++-->
 
-  
+  <Affliction 
+    name="" 
+    identifier="feniterbloodagent" 
+    type="chemicalagent" 
+    description=""
+    causeofdeathdescription="" 
+    selfcauseofdeathdescription="" 
+    limbspecific="false" indicatorlimb="Torso" 
+    showiconthreshold="0" 
+    showinhealthscannerthreshold="1" 
+    maxstrength="100" 
+    affectmachines="false">
+
+    <Effect 
+      minstrength="0" maxstrength="60" 
+      minvitalitydecrease="0" maxvitalitydecrease="60" 
+      strengthchange="-0.08"
+      minscreendistort="0" maxscreendistort="1.2" 
+      minscreenblur="0" maxscreenblur="1.5"
+      minspeedmultiplier="1" maxspeedmultiplier="0.15" 
+      minchromaticaberration="0" maxchromaticaberration="0.45" 
+      MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.8" 
+      minskillmultiplier="1" maxskillmultiplier="0.2" 
+      minbodytint="115,115,0,40" maxbodytint="153,153,0,90" 
+      minfacetint="153,153,0,40" maxfacetint="153,153,0,90">
+
+      <StatusEffect target="Character">
+        <Affliction identifier="bloodloss" amount="0.3" />
+        <Affliction identifier="nausea" amount="1.1" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="60" maxstrength="95" 
+      minvitalitydecrease="60" maxvitalitydecrease="80" 
+      strengthchange="0.05" 
+      minscreendistort="1.2" maxscreendistort="2" 
+      minscreenblur="1.5" maxscreenblur="2"
+      minspeedmultiplier="0.4" maxspeedmultiplier="0" 
+      minchromaticaberration="0.45" maxchromaticaberration="1" 
+      MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="1" 
+      minskillmultiplier="0.2" maxskillmultiplier="0.1" 
+      minbodytint="115,115,0,90" maxbodytint="153,153,0,110" 
+      minfacetint="153,153,0,90" maxfacetint="153,153,0,110">
+
+      <StatusEffect target="Character">
+        <Affliction identifier="bloodloss" amount="2" />
+        <Affliction identifier="nausea" amount="2" />
+      </StatusEffect>
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="stun" amount="100" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect 
+      minstrength="95" maxstrength="100" 
+      minvitalitydecrease="80" maxvitalitydecrease="10000" 
+      strengthchange="0.8" 
+      minscreendistort="2" maxscreendistort="4" 
+      minscreenblur="2" maxscreenblur="4" 
+      minspeedmultiplier="0" maxspeedmultiplier="0" 
+      minchromaticaberration="1" maxchromaticaberration="3" 
+      MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1" 
+      minskillmultiplier="0.1" maxskillmultiplier="0" 
+      minbodytint="115,115,0,110" maxbodytint="153,153,0,110" 
+      minfacetint="153,153,0,110" maxfacetint="153,153,0,110">
+
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="stun" amount="100" />
+        <Affliction identifier="bloodloss" amount="2" />
+      </StatusEffect>
+    </Effect>
+
+    <Description textidentifier="afflictiondescription.feniterbloodagent.self" target="Self" />
+    <Description textidentifier="afflictiondescription.feniterbloodagent" target="OtherCharacter" />
+
+    <PeriodicEffect 
+      mininterval="2" maxinterval="5" 
+      multiplyafflictionsbymaxvitality="true">
+
+      <StatusEffect target="Character" comparison="and">
+        <Conditional feniterbloodagent="gte 10" />
+        <Affliction identifier="stun" amount="1" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <PeriodicEffect 
+      mininterval="70" maxinterval="120" 
+      multiplyafflictionsbymaxvitality="true">
+
+      <StatusEffect target="Character" duration="30">
+        <Conditional feniterbloodagent="gte 20" />
+        <Affliction identifier="stun" amount="30" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="256,0,128,128" color="122,122,23,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/bloodonscreen.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+  </Affliction>
 </Afflictions>
