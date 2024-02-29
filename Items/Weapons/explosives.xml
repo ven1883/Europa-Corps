@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--MARKED FOR CHECKING-->
+	<!--MARKED FOR CHECKING-->
 
 <Items>
 
@@ -123,15 +123,6 @@
 		<PreferredContainer primary="armcab" secondary="locker" />
 
 		<Upgrade gameversion="0.9.3.0" scale="0.5" />
-
-		<Price baseprice="150">
-			<Price storeidentifier="merchantoutpost" multiplier="1.35" minavailable="3" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="3" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="3" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-			<Price storeidentifier="merchantmine" multiplier="1.25" minavailable="3" />
-			<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-		</Price>
 
 		<Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="1">
 			<RequiredItem identifier="sgt_ammocoinbasic" amount="1" />
@@ -318,15 +309,6 @@
 		<PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.1" minleveldifficulty="10" />
 		<PreferredContainer secondary="abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.1" minleveldifficulty="10" />
 
-		<Price baseprice="500" minleveldifficulty="10">
-			<Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="4" />
-			<Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="4" />
-		</Price>
-
 		<Deconstruct time="10">
 			<Item identifier="steel" />
 			<Item identifier="uex" copycondition="true" />
@@ -476,15 +458,6 @@
 		<PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="3" spawnprobability="0.05" minleveldifficulty="20" />
 		<PreferredContainer secondary="abandonedsecarmcab" minamount="0" maxamount="3" spawnprobability="0.075" minleveldifficulty="20" />
 
-		<Price baseprice="700" minleveldifficulty="25">
-			<Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="6" />
-			<Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="6" />
-		</Price>
-
 		<Deconstruct time="10">
 			<Item identifier="scp_durasteel" outcondition="0.5" />
 		</Deconstruct>
@@ -625,15 +598,6 @@
 
 		<PreferredContainer primary="secarmcab" />
 
-		<Price baseprice="675" minleveldifficulty="25">
-			<Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="3" />
-			<Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="3" />
-		</Price>
-
 		<Deconstruct time="10">
 			<Item identifier="depletedfuel" outcondition="0.5" />
 			<Item identifier="uex" outcondition="0.5" />
@@ -733,14 +697,6 @@
 
 		<PreferredContainer primary="toxcab" secondary="toxcontainer" />
 		<PreferredContainer primary="wrecktoxcab,abandonedtoxcab" spawnprobability="0.05" />
-
-		<Price baseprice="120" minleveldifficulty="30">
-			<Price storeidentifier="merchantoutpost" multiplier="0.6" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="0.7" sold="false" />
-			<Price storeidentifier="merchantresearch" multiplier="1.2" sold="true" minavailable="1" maxavailable="4" />
-			<Price storeidentifier="merchantmilitary" sold="false" />
-			<Price storeidentifier="merchantmine" multiplier="0.9" sold="false" />
-		</Price>
 
 		<Deconstruct time="10">
 			<Item identifier="aluminium" mincondition="0.5" />
@@ -862,8 +818,6 @@
 
 		<PreferredContainer primary="toxcab" />
 		<PreferredContainer secondary="wreckmedcab" minamount="0" maxamount="2" spawnprobability="0.01" minleveldifficulty="15" />
-
-		<Price baseprice="400" sold="false"></Price>
 
 		<Deconstruct time="10">
 			<Item identifier="iron" />
@@ -989,8 +943,6 @@
 		<PreferredContainer primary="toxcab" minamount="0" maxamount="1" spawnprobability="0.075" />
 		<PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.075" minleveldifficulty="15" />
 
-		<Price baseprice="400" sold="false"></Price>
-
 		<Deconstruct time="10">
 			<Item identifier="iron" />
 			<Item identifier="scp_devilsblood" outcondition="0.25" />
@@ -1103,8 +1055,6 @@
 		<PreferredContainer primary="toxcab" />
 		<PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.075" minleveldifficulty="20" />
 
-		<Price baseprice="500" sold="false"></Price>
-
 		<Deconstruct time="10">
 			<Item identifier="iron" />
 			<Item identifier="scp_replicatinglatex" copycondition="true" />
@@ -1216,15 +1166,6 @@
 		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.125" />
 		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15" />
 
-		<Price baseprice="550" minleveldifficulty="5">
-			<Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
-			<Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
-		</Price>
-
 		<Fabricate suitablefabricators="weaponfabricator" requiredtime="20">
 			<RequiredSkill identifier="weapons" level="35" />
 			<RequiredItem identifier="plastic" />
@@ -1333,15 +1274,6 @@
 		<PreferredContainer primary="secarmcab" />
 		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.02" minleveldifficulty="25" />
 		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.0075" minleveldifficulty="25" />
-
-		<Price baseprice="1250">
-			<Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
-			<Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" />
-		</Price>
 		
 		<Fabricate suitablefabricators="weaponfabricator" requiredtime="60">
 			<RequiredSkill identifier="weapons" level="70" />
@@ -1447,15 +1379,6 @@
 		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
 		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
 
-		<Price baseprice="850" minleveldifficulty="15">
-			<Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="0" maxavailable="2" />
-			<Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantarmory" multiplier="1" minavailable="0" maxavailable="2" />
-		</Price>
-
 		<Fabricate suitablefabricators="weaponfabricator" requiredtime="70">
 			<RequiredSkill identifier="weapons" level="75" />
 			<RequiredItem identifier="scp_basicparts" amount="4" />
@@ -1560,19 +1483,6 @@
 		<PreferredContainer primary="secarmcab" spawnprobability="0.05" notcampaign="true" />
 		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
 		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
-
-		<Price baseprice="900" displaynonempty="true" minleveldifficulty="15">
-			<Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-				<Reputation faction="coalition" min="65" />
-			</Price>
-			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="1">
-				<Reputation faction="coalition" min="65" />
-			</Price>
-		</Price>
 
 		<Fabricate suitablefabricators="weaponfabricator" requiredtime="70">
 			<RequiredSkill identifier="weapons" level="75" />
