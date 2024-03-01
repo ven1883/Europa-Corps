@@ -8,42 +8,11 @@
 			<!--Magazines-->
 
 		<!--5.56x45 mag-->
-	<Item 
-		identifier="scp_556mag" 
-		name="" 
-		description="" 
-		category="Weapon" 
-		subcategory="Coalition" 
-		cargocontaineridentifier="scp_ammocrate" 
-		impactsoundtag="impact_metal_light" 
-		maxstacksize="12" 
-		maxstacksizecharacterinventory="4" 
-		tags="smallitem,556ammo,ehaammo,55630mag" 
-		linkable="true" 
-		interactthroughwall="true"
-		scale="0.48">
+	<Item identifier="scp_556mag" name="" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" maxstacksize="12" maxstacksizecharacterinventory="4" tags="smallitem,556ammo,ehaammo,55630mag" linkable="true" interactthroughwall="true" scale="0.48">
+		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="82,3,29,56" origin="0.5,0.5" />
+		<Body width="30" height="40" density="50" />
 
-		<Sprite 
-			texture="%ModDir%/Ammo/improvedammo.png" 
-			depth="0.54" 
-			sourcerect="82,3,29,56" 
-			origin="0.5,0.5" 
-		/>
-		<Body 
-			width="30" 
-			height="40" 
-			density="50" 
-		/>
-
-		<ItemContainer 
-			hideitems="true" 
-			capacity="1" 
-			drawinventory="false" 
-			canbeselected="false" 
-			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_556projectile" 
-			removecontaineditemsondeconstruct="true" 
-			containedstateindicatorstyle="bullet">
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_556projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 			<Containable items="scp_556projectile" />
 			<StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
 				<SpawnItem identifier="scp_556projectile" spawnposition="ThisInventory" />
@@ -89,32 +58,9 @@
 		<!--###-->
 
 		<!--5.56x45 extended mag-->
-  	<Item 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5" 
-		maxstacksize="4" 
-		maxstacksizecharacterinventory="1" 
-		cargocontaineridentifier="scp_ammocrate" 
-		description="" 
-		category="Weapon" 
-		subcategory="Coalition" 
-		identifier="scp_556extmag" 
-		name="" 
-		tags="smallitem,556ammo,ehaammo" 
-		linkable="true" 
-		interactthroughwall="true">
-
-		<Sprite 
-			texture="%ModDir%/Ammo/improvedammo.png" 
-			depth="0.54" 
-			sourcerect="141,3,30,56" 
-			origin="0.5,0.5" 
-		/>
-		<Body 
-			width="30" 
-			height="40" 
-			density="50" 
-		/>
+  	<Item impactsoundtag="impact_metal_light" scale="0.5" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="scp_ammocrate" description="" category="Weapon" subcategory="Coalition" identifier="scp_556extmag" name="" tags="smallitem,556ammo,ehaammo" linkable="true" interactthroughwall="true">
+		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="141,3,30,56" origin="0.5,0.5" />
+		<Body width="30" height="40" density="50" />
 
 		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_556projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 			<Containable items="scp_556projectile" />
@@ -153,31 +99,10 @@
 
 
 		<!--5.56x45 round-->
-	<Item 
-		name="5.56 Round" 
-		identifier="scp_556projectile" 
-		category="Weapon" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="metalcrate" 
-		tags="smallitem" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true" 
-		scale="0.5">
-
-		<InventoryIcon 
-			texture="%ModDir%/Ammo/scp_556round.png" 
-			sourcerect="896,960,64,54" 
-			origin="0.5,0.5" 
-		/>
-		<Sprite 
-			texture="%ModDir%/Ammo/scp_556round.png" 
-			sourcerect="896,960,64,54" 
-			origin="0.5,0.5" />
-		<Body 
-			width="40" 
-			height="15" 
-			density="40" 
-		/>
+	<Item name="5.56 Round" identifier="scp_556projectile" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Body width="40" height="15" density="40" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
@@ -215,32 +140,10 @@
 		<!--###-->
 
  		<!--5.56x45 AP round-->
-	<Item 
-		name="" 
-		identifier="scp_556approjectile" 
-		category="Weapon" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="scp_weaponcrate" 
-		tags="smallitem" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true" 
-		scale="0.5">
-
-		<InventoryIcon 
-			texture="%ModDir%/Ammo/scp_556round.png" 
-			sourcerect="896,960,64,54" 
-			origin="0.5,0.5" 
-		/>
-		<Sprite 
-			texture="%ModDir%/Ammo/scp_556round.png" 
-			sourcerect="896,960,64,54" 
-			origin="0.5,0.5" 
-		/>
-		<Body 
-			width="40" 
-			height="15" 
-			density="40" 
-		/>
+	<Item name="" identifier="scp_556approjectile" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="scp_weaponcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Body width="40" height="15" density="40" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
@@ -279,29 +182,9 @@
 
 
   		<!--30 round 6.5mm caseless magazine-->
-	<Item 
-		name="" 
-		identifier="scp_65mag" 
-		description="" 
-		cargocontaineridentifier="scp_ammocrate" 
-		tags="smallitem,65ammo,ehaammo,mx30mag" 
-		category="Weapon" subcategory="Coalition" 
-		maxstacksize="6" 
-		maxstacksizecharacterinventory="3" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
-
-		<Sprite 
-			texture="%ModDir%/Ammo/improvedammo.png" 
-			depth="0.54" 
-			sourcerect="1,76,20,52" 
-			origin="0.5,0.5" 
-		/>
-		<Body 
-			width="30" 
-			height="40" 
-			density="50" 
-		/>
+	<Item name="" identifier="scp_65mag" description="" cargocontaineridentifier="scp_ammocrate" tags="smallitem,65ammo,ehaammo,mx30mag" category="Weapon" subcategory="Coalition" maxstacksize="6" maxstacksizecharacterinventory="3" impactsoundtag="impact_metal_light" scale="0.5">
+		<Sprite texture="%ModDir%/Ammo/improvedammo.png" epth="0.54" sourcerect="1,76,20,52" origin="0.5,0.5" />
+		<Body width="30" height="40" density="50" />
 
 		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
@@ -336,30 +219,9 @@
 		<!--###-->
 
 		<!--30 Round 6.5mm Caseless Incendiary Magazine-->
-	<Item 
-		name="" 
-		identifier="scp_65incendmag" 
-		description="" 
-		cargocontaineridentifier="scp_ammocrate" 
-		tags="smallitem,65ammo,ehaammo,mx30mag" 
-		category="Weapon" 
-		subcategory="Coalition"
-		maxstacksize="6" 
-		maxstacksizecharacterinventory="3" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
-
-		<Sprite 
-			texture="%ModDir%/Ammo/improvedammo.png" 
-			depth="0.54" 
-			sourcerect="24,76,20,52" 
-			origin="0.5,0.5" 
-		/>
-		<Body 
-			width="30" 
-			height="40" 
-			density="50" 
-		/>
+	<Item name="" identifier="scp_65incendmag" description="" cargocontaineridentifier="scp_ammocrate" tags="smallitem,65ammo,ehaammo,mx30mag" category="Weapon" subcategory="Coalition" maxstacksize="6" maxstacksizecharacterinventory="3" impactsoundtag="impact_metal_light" scale="0.5">
+		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="24,76,20,52" origin="0.5,0.5" />
+		<Body width="30" height="40" density="50" />
 
 		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
@@ -397,31 +259,10 @@
 
 
   	<!--6.5x39 Caseless round-->
-	<Item 
-		name="" 
-		identifier="scp_65projectile" 
-		tags="smallitem,65ammo" 
-		Scale="0.3" 
-		category="Weapon" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true" 
-		scale="0.4">
-
-		<InventoryIcon 
-			texture="%ModDir%/Ammo/scp_556round.png" 
-			sourcerect="896,960,64,54" 
-			origin="0.5,0.5" 
-		/>
-		<Sprite 
-			texture="%ModDir%/Ammo/scp_556round.png" 
-			sourcerect="896,960,64,54"
-			origin="0.5,0.5" 
-		/>
-		<Body 
-			width="40" 
-			height="15" 
-			density="40" 
-		/>
+	<Item name="" identifier="scp_65projectile" tags="smallitem,65ammo" Scale="0.3" category="Weapon" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.4">
+		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Body width="40" height="15" density="40" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 
@@ -457,31 +298,10 @@
 
 
   <!--6.5x39 Caseless Incendiary round-->
-	<Item 
-		name="" 
-		identifier="scp_65incendprojectile" 
-		tags="smallitem,65ammo" 
-		Scale="0.3" 
-		category="Weapon" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true" 
-		scale="0.4">
-
-		<InventoryIcon 
-			texture="%ModDir%/Ammo/scp_556round.png" 
-			sourcerect="896,960,64,54" 
-			origin="0.5,0.5" 
-		/>
-		<Sprite 
-			texture="%ModDir%/Ammo/scp_556round.png" 
-			sourcerect="896,960,64,54" 
-			origin="0.5,0.5" 
-		/>
-		<Body 
-			width="40" 
-			height="15" 
-			density="40" 
-		/>
+	<Item name="" identifier="scp_65incendprojectile" tags="smallitem,65ammo" Scale="0.3" category="Weapon" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.4">
+		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Body width="40" height="15" density="40" />
 
 		<!--what?-->
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
