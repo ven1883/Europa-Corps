@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--Marked for checking-->
+
 <Items>
 
 			<!--9mm Pistols-->
@@ -1668,7 +1670,7 @@
 		<RangedWeapon reload="0.2" reloadnoskill="0.75" reloadskillrequirement="50" barrelpos="85,24" spread="3" unskilledspread="18" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-			
+
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			<Sound file="%ModDir:2764968387%/Sounds/5.561.ogg" type="OnUse" range="3000" selectionmode="Random" />
 			<Sound file="%ModDir:2764968387%/Sounds/5.561.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
