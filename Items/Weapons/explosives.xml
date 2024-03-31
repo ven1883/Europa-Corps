@@ -321,7 +321,8 @@
 		<!--Grenade Launchers-->
 
 
-		<!--Coalition Compact Grenade Launcher-->
+		<!--Compact Grenade Launcher-->
+		<!--AG36-->
 	<Item name="" description="" identifier="scp_ag36" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
 		<InventoryIcon name="ag36inv" texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="549,92,64,67" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Weapons/explosives.png" sourcerect="249,3,159,51" depth="0.55" origin="0.5,0.5" />
@@ -457,7 +458,8 @@
 		<!--Rocket Launchers-->
 
 
-		<!--Separatist Rocket Launcher-->
+		<!--Anti-sub Grenade Launcher-->
+		<!--RPG-7-->
 	<Item name="" identifier="scp_rpg7" description="" category="Weapon" subcategory="Grenades and Explosives" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert" scale="0.53">
 		<!--scale values are cursed but I get it-->
 		<InventoryIcon name="rpg7inv" texture="%ModDir%/Weapons/explosives.png" sourcerect="0,251,60,60" origin="0.5,0.5" />
@@ -515,7 +517,8 @@
 
 		<!--###-->
 
-		<!--Coalition Rocket Launcher-->
+		<!--Disposable Anti-Sub Grenade Launcher-->
+		<!--AT4-->
 	<Item name="" identifier="scp_at4" description="" category="Weapon" health="100" subcategory="Grenades and Explosives" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.57">
 		<InventoryIcon name="at4inv" texture="%ModDir%/Weapons/explosives.png" sourcerect="63,251,60,60" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Weapons/explosives.png" sourcerect="2,4,203,48" depth="0.55" origin="0.5,0.5" />

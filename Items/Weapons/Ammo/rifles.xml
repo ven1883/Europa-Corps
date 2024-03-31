@@ -296,8 +296,9 @@
 		</Projectile>
 	</Item>
 
+	<!--###-->
 
-  <!--6.5x39 Caseless Incendiary round-->
+	<!--6.5x39 Caseless Incendiary round-->
 	<Item name="" identifier="scp_65incendprojectile" tags="smallitem,65ammo" Scale="0.3" category="Weapon" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.4">
 		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
