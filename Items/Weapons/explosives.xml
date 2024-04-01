@@ -321,6 +321,74 @@
 		<!--Grenade Launchers-->
 
 
+		<!--Sawed Off Grenade Launcher-->
+		<!--M79 Sawed-Off-->
+	<Item name="" description="" identifier="sgt_m79" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.26" impactsoundtag="impact_metal_light">
+		<InventoryIcon name="M79inv" texture="%ModDir%/Weapons/Renegade.png" sourcerect="196,210,63,78" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Weapons/Renegade.png" sourcerect="0,213,179,65" depth="0.55" origin="0.5,0.5" />
+		<Body width="170" height="40" density="50" />
+
+		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="74,6" handle1="-62,-14" />
+
+		<RangedWeapon barrelpos="38,6" spread="12" reload="2" unskilledspread="30" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
+			<ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
+			<Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="Random" />
+			<Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
+			<Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
+			<StatusEffect type="OnUse">
+				<Explosion range="150.0" force="2.25" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="8.0" />
+			</StatusEffect>
+			<RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+			<RequiredSkill identifier="weapons" level="65" />
+			<StatusEffect type="OnUse" target="This" delay="0.4">
+				<Sound file="%ModDir:2764968387%/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+			</StatusEffect>
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+			<Containable items="grenade" />
+		</ItemContainer>
+
+		<aitarget sightrange="500" soundrange="500" fadeouttime="3" />
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+
+		<Upgrade gameversion="0.10.0.0" scale="0.5" />
+
+		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.125" minleveldifficulty="20" />
+		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15" minleveldifficulty="20" />
+		<PreferredContainer primary="armcab" secondary="locker" />
+
+		<Price baseprice="420" minleveldifficulty="5">
+			<Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
+			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
+			<Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+			<Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+			<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+		</Price>
+
+		<Fabricate suitablefabricators="fabricator" requiredtime="20">
+			<RequiredSkill identifier="weapons" level="35" />
+			<RequiredItem identifier="plastic" />
+			<RequiredItem identifier="steel" />
+			<RequiredItem identifier="scp_basicparts" mincondition="0.5" />
+		</Fabricate>
+
+		<Deconstruct time="10">
+			<Item identifier="steel" />
+			<Item identifier="plastic" />
+		</Deconstruct>
+	</Item>
+
+		<!--###-->
+
 		<!--Compact Grenade Launcher-->
 		<!--AG36-->
 	<Item name="" description="" identifier="scp_ag36" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
