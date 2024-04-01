@@ -817,4 +817,89 @@
     <aitarget sightrange="2000" soundrange="7000" fadeouttime="3" />
     <SkillRequirementHint identifier="electrical" level="90" />
   </Item>
+
+	<!--ASh-12.7 Pistol-->
+	<Item name="" identifier="sgt_bolter" description="" category="Weapon" subcategory="Prototype" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="weaponheavydrop">
+		<Price baseprice="3000" sold="false" />
+		<Fabricate suitablefabricators="advweaponfabricator" requiredtime="35">
+			<RequiredSkill identifier="weapons" level="50" />
+			<requireditem identifier="scp_prototypeusb" mincondition="0.50" />
+			<RequiredItem identifier="scp_riflekit" mincondition="1" />
+			<RequiredItem identifier="scp_ash12" />
+			<RequiredItem identifier="scp_durasteel" amount="6" />
+			<RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+		</Fabricate>
+		<Deconstruct time="12">
+			<Item identifier="titaniumaluminiumalloy" />
+			<Item identifier="scp_durasteel" amount="2" />
+		</Deconstruct>
+		<InventoryIcon texture="%ModDir%/Weapons/prototype.png" sourcerect="359,0,56,62" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Weapons/prototype.png" sourcerect="14,282,142,71" depth="0.55" origin="0.5,0.5" />
+		<Body width="227" height="75" density="50" />
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-8" aimpos="52,-3" handle1="-45,-15" handle2="5,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
+		<RangedWeapon reload="0.125" reloadnoskill="1" reloadskillrequirement="80" barrelpos="105,15" spread="10" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="13.0,5.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,10.0" colormultiplier="255,200,200,200" />
+			<Sound file="%ModDir:2764968387%/Sounds/ash121.ogg" type="OnUse" range="3000" selectionmode="Random" volume="2.5" frequencymultiplier="0.8" />
+			<Sound file="%ModDir:2764968387%/Sounds/ash121.ogg" type="OnUse" range="3000" volume="2.5" frequencymultiplier="0.85" />
+			<Sound file="%ModDir:2764968387%/Sounds/ash121.ogg" type="OnUse" range="3000" volume="2.5" frequencymultiplier="0.75" />
+			<StatusEffect type="OnUse" target="This" Condition="-175" />
+			<StatusEffect type="Always" target="This" Condition="6">
+				<Conditional condition="gt 0" />
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This">
+				<sound file="%ModDir:2764968387%/Sounds/ash12jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.15" />
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="4.4" stackable="false" />
+			<StatusEffect type="OnUse">
+				<Explosion range="150.0" force="2" shockwave="true" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="60.0" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="ashammo,kirammo" />
+			<RequiredSkill identifier="weapons" level="60" />
+			<!--StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+				<Conditional skillrequirement="true" weapons="lt 75" />
+				<Conditional skillrequirement="true" weapons="gte 60" />
+				<Affliction identifier="blunttrauma" strength="1.5" probability="0.1" />
+			</StatusEffect-->
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+				<Conditional skillrequirement="true" weapons="lt 60" />
+				<Conditional skillrequirement="true" weapons="gte 35" />
+				<Affliction identifier="stun" strength="0.1" probability="0.3" />
+				<Affliction identifier="blunttrauma" strength="2" probability="0.25" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+				<Conditional skillrequirement="true" weapons="lt 35" />
+				<Affliction identifier="stun" strength="0.12" />
+				<Affliction identifier="blunttrauma" strength="4" />
+				<Affliction identifier="blunttrauma" strength="4" probability="0.2" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" comparison="and">
+				<Conditional condition="lt 35" />
+				<ParticleEmitter particle="steamspray" particleamount="1" velocitymin="5" velocitymax="10" scalemin="1.5" scalemax="2.5" anglemin="0" anglemax="360" colormultiplier="15,15,15,255" />
+				<ParticleEmitter particle="weldspark" particleamount="12" velocitymin="2000" velocitymax="3000" scalemin="0.85" scalemax="1.1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" condition="-100">
+				<RequiredItem items="scp_ash12mag" type="Contained" />
+			</StatusEffect>
+		</RangedWeapon>
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="ashammo" hide="false" itempos="-2,-8" />
+			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+				<Containable items="flashlight" hide="false" itempos="16,-2" setactive="true" />
+			</SubContainer>
+		</ItemContainer>
+		<aitarget sightrange="3000" soundrange="8000" fadeouttime="5" />
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
+			<QualityStat stattype="Condition" value="0.2" />
+		</Quality>
+		<SkillRequirementHint identifier="weapons" level="60" />
+	</Item>
+
 </Items>
