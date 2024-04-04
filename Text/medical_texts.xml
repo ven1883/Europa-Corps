@@ -1,127 +1,453 @@
 <infotexts language="English" nowhitespace="false" translatedname="English">
   <!--medical_medical-->
-  <entityname.scp_smallcivkit>First Aid Kit</entityname.scp_smallcivkit>
-  <entitydescription.scp_smallcivkit>A small kit full of common treatments for nonlife-threatening injuries, it is found all across Europa as a result of it's ease of production and is mostly required by Coalition safety standards.</entitydescription.scp_smallcivkit>
-  <entityname.scp_largecivkit>Large First Aid Kit</entityname.scp_largecivkit>
-  <entitydescription.scp_largecivkit>A large derivative of the smaller first aid kit, containing more supplies for greater injuries or simply dealing with minor injuries in a large crew.</entitydescription.scp_largecivkit>
-  <entityname.scp_largearmykit>Large Military First Aid Kit</entityname.scp_largearmykit>
-  <entitydescription.scp_largearmykit>A large medical kit designed for use by combat medics out in the field where they will be distant from any sort of intensive care, coming with various tools and chemical compounds to deal with most injuries caused by weapons, however requires a skilled user to utilise properly.</entitydescription.scp_largearmykit>
-  <entityname.scp_armykit>Combat First Aid Kit</entityname.scp_armykit>
-  <entitydescription.scp_armykit>a medical kit specifically designed for dealing with injuries caused by firearms and blades, as a result it is excellent for stabilising most severe physical injuries.</entitydescription.scp_armykit>
-  <entityname.scp_surgicalkit>Combat Surgical Kit</entityname.scp_surgicalkit>
-  <entitydescription.scp_surgicalkit>A medical kit containing surgical equipment for dealing with immediately life threatening physical injuries, though requires a dedicated medic to use as such equipment needs extensive training.</entitydescription.scp_surgicalkit>
-  <entityname.scp_tourniquet>Combat Tourniquet</entityname.scp_tourniquet>
-  <entitydescription.scp_tourniquet>A device meant to effectively stop even the most severe of bleeding, making it useful in immediately life threatening cases, however using it incorrectly can cause significant damage.</entitydescription.scp_tourniquet>
-  <entityname.scp_healthpills>Rejuvination Pills</entityname.scp_healthpills>
-  <entitydescription.scp_healthpills>a plastic bottle containing capsuled pills with a highly experimental powdered mutagenic chemical, remaining in the body for a long period of time and treating most physical and biological abnormalities. Caution must be taken however due to the sheer stress this imparts on the patient's vital structures.</entitydescription.scp_healthpills>
-  <entityname.scp_painkillers>Painkillers</entityname.scp_painkillers>
-  <entitydescription.scp_painkillers>a plastic bottle containing capsuled pills of powdered opiates, remediating minor pain caused by phyiscal trauma and is an excellent option in conjunction with bed rest.</entitydescription.scp_painkillers>
+<Override>
   <entityname.scp_firelatexhot>Refined Ignis Latex Syringe</entityname.scp_firelatexhot>
   <entitydescription.scp_firelatexhot>A sample of Ignis Latex which has been modified to further enhance it's exothermic reaction, causing severe burns within seconds after contact with skin.</entitydescription.scp_firelatexhot>
+  
   <entityname.scp_replicatinglatexrefined>Diluted Preso Latex Syringe</entityname.scp_replicatinglatexrefined>
   <entitydescription.scp_replicatinglatexrefined>A sample of Preso Latex which has been chemically modified to take advantage of Preso latex's mutagenic properties, directly counteracting any Preso Latex reactions alongside partially inverting celluar atrophy caused by Ionizing Radiation.</entitydescription.scp_replicatinglatexrefined>
-  <entityname.scp_diamorphine>Diamorphine</entityname.scp_diamorphine>
-  <entitydescription.scp_diamorphine>An incredibly potent opiate with immensely high addictivity and potential danger. It can be used to treat the most excruciating pain and to a degree flush out chemicals and infections.</entitydescription.scp_diamorphine>
+  
   <entityname.scp_concoction>The Concoction</entityname.scp_concoction>
   <entitydescription.scp_concoction>A syringe containing a mixture of Morbusine, Radiotoxin and Sufforin, capable of inflicting a horrendous death upon an individual you are especially not fond of in addition to being difficult to remediate. This practice of combining toxins is outlawed due to the intense degree of suffering it causes to an individual.</entitydescription.scp_concoction>
+  
   <entityname.scp_vodka>Condensed Ethanol</entityname.scp_vodka>
   <entitydescription.scp_vodka>A bottle of high quality ethanol that should be used in small doses as a result of its potency. It is capable of flushing out free-radicals and poisons from the circulatory system as veins and arteries vasolidate.</entitydescription.scp_vodka>
+  
   <entityname.scp_pomegrenadedrink>Pomegrenade Punch</entityname.scp_pomegrenadedrink>
   <entitydescription.scp_pomegrenadedrink>A bottle of Pomegrenade juice and Condensed Ethanol, providing an excellent drink for thirsty submariners who want a quick break from something.</entitydescription.scp_pomegrenadedrink>
-  <entityname.scp_propital>Combat Stimulant Autoinjector</entityname.scp_propital>
-  <entitydescription.scp_propital>An autoinjector using long lasting Anabolic Steroids and analgesics to boost both tissue regeneration and blood coagulation, making it an excellent choice for imminent combat scenarios.</entitydescription.scp_propital>
+  
   <entityname.scp_condensedstabilozine>Condensed Stabilozine Autoinjector</entityname.scp_condensedstabilozine>
   <entitydescription.scp_condensedstabilozine>An autoinjector containing Anabolic Steroids and high levels of Stabilozine for use against most poisons and minor radiation exposure. It features a multi-stage injection system allowing for multiple small doses, though is liable to fail due to being fairly experimental.</entitydescription.scp_condensedstabilozine>
-  <entityname.scp_adrenaline>Adrenaline Autoinjector</entityname.scp_adrenaline>
-  <entitydescription.scp_adrenaline>An autoinjector comprised of Adrenaline, which is useful for reviving unconscious patients from oxygen deprivation and marginally increasing combat capabilities.</entitydescription.scp_adrenaline>
-  <entityname.scp_themedicbag>The Medic Bag.</entityname.scp_themedicbag>
-  <entitydescription.scp_themedicbag>AAAAAAAH!</entitydescription.scp_themedicbag>
-  <entityname.scp_panacea>Panacea</entityname.scp_panacea>
-  <entitydescription.scp_panacea>A mysterious and near perfect looking capsule that is impossible to open regardless of technique. The chemical inside through an unknown and non-replicable process directly reads from the consumer's genetic information and causes a body-wide 'reset' to abnormal and normal cellular structures, freeing the consumer from any injuries. This works especially well against foreign pathogens such as Prionic, Viral and Bacterial infections.</entitydescription.scp_panacea>
+
   <entityname.scp_devilsblood>Devil's Blood Syringe</entityname.scp_devilsblood>
   <entitydescription.scp_devilsblood>A syringe of processed Sulphuric Acid and Ignis Latex that actively liquefies organic tissues and causes massive internal haemorrhaging. This process as expected is excruciatingly painful and traumatic for the victim.</entitydescription.scp_devilsblood>
+  
   <entityname.scp_wastingdiseasesyringe>Submariner's Wasting Disease Syringe</entityname.scp_wastingdiseasesyringe>
   <entitydescription.scp_wastingdiseasesyringe>A syringe containing a poorly understood neurodegenerative prion disease commonly found dormant within various Europan creatures. These prions are activated through stimulating alien blood with the highly mutagenic Preso Latex and Sufforin, allowing for the proteins to misfold and become malignant.</entitydescription.scp_wastingdiseasesyringe>
+  
   <entityname.scp_wastingdiseasecure>Wasting Disease Antidote</entityname.scp_wastingdiseasecure>
   <entitydescription.scp_wastingdiseasecure>A syringe predominantly containing Stabilozine, capable of neutralising the malignant protein structures responsible for SWD.</entitydescription.scp_wastingdiseasecure>
+  
   <entityname.scp_lineavirussyringe>Brunhes Lineavirus Syringe</entityname.scp_lineavirussyringe>
   <entitydescription.scp_lineavirussyringe>A syringe containing an extremely contagious specimen of an airborne and waterborne virus that has been identified since humanity arrived, primarily affecting the respiratory and gastrointestinal system. Using Sufforin and Preso Latex as a potent activating agent, this specimen is ready for use in biological warfare. CBRN protection will be mandatory once this begins to spread.</entitydescription.scp_lineavirussyringe>
+  
   <entityname.scp_lineaviruscure>Brunhes Lineavirus Antidote</entityname.scp_lineaviruscure>
   <entitydescription.scp_lineaviruscure>A syringe predominantly containing Stabilozine and ABX, capable of dissolving the protein coating of the lineavirus virions and allowing fast recovery in addition to temporary immunity.</entitydescription.scp_lineaviruscure>
+  
   <entityname.scp_volatilereplicatinglatex>Volatile Preso Latex Canister</entityname.scp_volatilereplicatinglatex>
   <entitydescription.scp_volatilereplicatinglatex>A highly unstable form of Preso Latex that readily and spotaneously attempts to react with any organic tissue within close proximity of itself. Holding onto this for a long period of time is highly discouraged.</entitydescription.scp_volatilereplicatinglatex>
+  
   <entityname.scp_psyblock>Antipsychotic Pills</entityname.scp_psyblock>
   <entitydescription.scp_psyblock>A set of pills designed to protect against various mental ailments and the mysterious electromagnetic radiation emitting from Alien Ruins.</entitydescription.scp_psyblock>
+  
   <entityname.ethertank>Ether Tank</entityname.ethertank>
   <entitydescription.ethertank>Portable anesthetic container.</entitydescription.ethertank>
+  
   <entityname.suture>Suture Kit</entityname.suture>
-  <entitydescription.suture>Stitches up surgical incisions.</entitydescription.suture>
+  <entitydescription.suture>Stitches up surgical incisions.
+    
+  On Use:
+  ‖color:243,162,50,255‖-100% Surgical Incision‖color:end‖</entitydescription.suture>
   <entityname.scalpel>Scalpel</entityname.scalpel>
-  <entitydescription.scalpel>Can make very precise cuts, perfect for surgery.</entitydescription.scalpel>
+  <entitydescription.scalpel>Can make very precise cuts, perfect for surgery.
+    
+  On Use:
+  ‖color:243,162,50,255‖+100% Surgical Incision‖color:end‖</entitydescription.scalpel>
+
+
   <entityname.tweezers>Tweezers</entityname.tweezers>
-  <entitydescription.tweezers>Allows the retrieval of objects through incisions.</entitydescription.tweezers>
+  <entitydescription.tweezers>Allows the retrieval of a variety foreign objects through incisions. Mostly bullets though.
+    
+  On Use:
+  ‖color:154,213,163,255‖-30% Gunshot Wound‖color:end‖
+  ‖color:245,105,105,255‖+4% Blood Loss‖color:end‖
+  ‖color:245,105,105,255‖+2% Bleeding‖color:end‖
+  ‖color:243,162,50,255‖(Requires an open surgical incision)‖color:end‖</entitydescription.tweezers>
+
+
   <entityname.meddegree>Medical Degree</entityname.meddegree>
   <entitydescription.meddegree>A reminder of the good times you had before your medical license was revoked.</entitydescription.meddegree>
+
+
   <entityname.surgeryscissors>Surgical Scissors</entityname.surgeryscissors>
-  <entitydescription.surgeryscissors>Can make very precise snips, perfect for surgery.</entitydescription.surgeryscissors>
+  <entitydescription.surgeryscissors>Can make very precise snips, perfect for liberating someone of their organs.
+    
+  On Use:
+  ‖color:154,213,163,255‖-20% Organ Damage‖color:end‖
+  ‖color:245,105,105,255‖+9% Missing Organs‖color:end‖
+  ‖color:245,105,105,255‖+8% Blood Loss‖color:end‖
+  ‖color:245,105,105,255‖+4% Bleeding‖color:end‖
+  ‖color:243,162,50,255‖(Requires an open surgical incision)‖color:end‖</entitydescription.surgeryscissors>
   <entityname.humanorgan>Human Organ</entityname.humanorgan>
-  <entitydescription.humanorgan>An organ, of a human.</entitydescription.humanorgan>
+  <entitydescription.humanorgan>An organ, of a human. ‖color:245,105,105,255‖Edible when processed.‖color:end‖
+    
+  When implanted via surgery:
+  ‖color:154,213,163,255‖-10% Missing Organs‖color:end‖</entitydescription.humanorgan>
+
+
+  <entityname.basebionic>Bionic Organ</entityname.basebionic>
+  <entitydescription.basebionic>A bionic contraption to mimic the function of a normal human organ, can be used to replace missing organs.
+    
+  When implanted via surgery:
+  ‖color:154,213,163,255‖-10% Missing Organs‖color:end‖
+  ‖color:245,105,105,255‖+9% Organ Rejection‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.basebionic>
+ 
+ 
   <entityname.humanflesh>Human Flesh</entityname.humanflesh>
-  <entitydescription.humanflesh>A flesh sample of the human species.</entitydescription.humanflesh>
+  <entitydescription.humanflesh>A flesh sample of the human species.
+    
+  When eaten:
+  ‖color:154,213,163,255‖-30% Flesh Withdrawal‖color:end‖
+  ‖color:245,105,105,255‖+15% Flesh Addiction‖color:end‖
+  </entitydescription.humanflesh>
+
+
   <entityname.surgeryimplant>Surgery Implant</entityname.surgeryimplant>
-  <entitydescription.surgeryimplant>An implant that triggers the production of hormones like adrenaline to aid surgery when not in a medical bed or anesthized.</entitydescription.surgeryimplant>
+  <entitydescription.surgeryimplant>An implant that triggers the production of hormones like adrenaline to aid surgery when not in a medical bed or anesthized.
+
+  When implanted via surgery:
+  ‖color:154,213,163,255‖Allows surgery to be performed without ether tanks or a surgical bed.
+  Allows self surgery.‖color:end‖
+  </entitydescription.surgeryimplant>
+
+
   <entityname.addictionimplant>Addiction Implant</entityname.addictionimplant>
-  <entitydescription.addictionimplant>A one-use implant that reprograms the brain to lose its dependence on any drugs.</entitydescription.addictionimplant>
+  <entitydescription.addictionimplant>A one-use implant that reprograms the brain to lose its dependence on any drugs.
+
+  When implanted via surgery:
+  ‖color:154,213,163,255‖-100% All Addictions‖color:end‖
+  ‖color:154,213,163,255‖-100% All Overdoses‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.addictionimplant>
+
   <entityname.omnizine>Omnizine</entityname.omnizine>
-  <entitydescription.omnizine>A medicine capable of healing multiple internal injuries and burns at once.</entitydescription.omnizine>
+  <entitydescription.omnizine>A medicine capable of healing multiple internal injuries and burns at once.
+
+  On Use:
+  ‖color:154,213,163,255‖-50% Damage‖color:end‖
+  ‖color:154,213,163,255‖-50% Organ Damage‖color:end‖
+  ‖color:154,213,163,255‖-50% Burns‖color:end‖
+  ‖color:154,213,163,255‖-50% Organ Rejection‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.omnizine>
+
+
   <entityname.calomel>Calomel</entityname.calomel>
-  <entitydescription.calomel>An aggressive purging agent designed to rid of poisons in early stages.</entitydescription.calomel>
+  <entitydescription.calomel>An aggressive purging agent designed to rid of poisons in early stages.
+
+  On Use:
+  ‖color:245,105,105,255‖-60% All Buffs‖color:end‖
+  ‖color:245,105,105,255‖-30% Slow Metabolism‖color:end‖
+  ‖color:154,213,163,255‖-10% Drunk ‖color:end‖
+  ‖color:154,213,163,255‖-100% Poison (if below 15%) ‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.calomel>
+
+
   <entityname.heparin>Heparin</entityname.heparin>
-  <entitydescription.heparin>An anti-coagulant for dealing with blood clots.</entitydescription.heparin>
+  <entitydescription.heparin>An anti-coagulant for dealing with blood clots.
+
+  On Use:
+  ‖color:154,213,163,255‖-1200% Blood Clot‖color:end‖
+  ‖color:243,162,50,255‖(No healing if skill requirement not met.)‖color:end‖
+  </entitydescription.heparin>
+
+
   <entityname.proconvertin>Proconvertin</entityname.proconvertin>
-  <entitydescription.proconvertin>An coagulant that helps heal bleeding wounds faster.</entitydescription.proconvertin>
+  <entitydescription.proconvertin>A coagulant that helps heal bleeding wounds faster.
+
+  On Use:
+  ‖color:154,213,163,255‖-100% Surgical Incision‖color:end‖
+  ‖color:154,213,163,255‖-5% Bleeding‖color:end‖
+  ‖color:245,105,105,255‖+3% Blood Clot ‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.proconvertin>
+
+  
   <entityname.stypticpowder>Styptic Powder</entityname.stypticpowder>
-  <entitydescription.stypticpowder>A powder designed to heal brute force and deep tissure injuries.</entitydescription.stypticpowder>
+  <entitydescription.stypticpowder>A powder designed to heal brute force and deep tissue injuries.
+
+  On Use:
+  ‖color:154,213,163,255‖-60% Blunt Force Trauma‖color:end‖
+  ‖color:154,213,163,255‖-60% Deep Tissue Injury‖color:end‖
+  ‖color:154,213,163,255‖-30% Internal Damage‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.stypticpowder>
+
+
   <entityname.concentratedants>Concentrated Ants</entityname.concentratedants>
-  <entitydescription.concentratedants>A bunch of ants in a syringe; often used as a torture method.</entitydescription.concentratedants>
+  <entitydescription.concentratedants>A bunch of ants in a syringe; often used as a torture method
+    
+  ‖color:154,213,163,255‖+100% Ants‖color:end‖
+  ‖color:243,162,50,255‖(No skill requirement.)‖color:end‖
+  </entitydescription.concentratedants>
+
+
   <entityname.anticide>Anticide</entityname.anticide>
-  <entitydescription.anticide>A pesticide designed specifically for ants.</entitydescription.anticide>
-  <entityname.symbiotichuskeggs>Lexaneps Calyx Eggs</entityname.symbiotichuskeggs>
-  <entitydescription.symbiotichuskeggs>A special compound of velanaceps calyx eggs and special chemicals developed for advanced husk communion repressing the husk infection's ability to fully take over the body. Provides the pros and cons of being a husk without losing sentience.</entitydescription.symbiotichuskeggs>
+  <entitydescription.anticide>A pesticide designed specifically for ants.
+
+  On Use:
+  ‖color:154,213,163,255‖-300% Ants‖color:end‖
+  ‖color:245,105,105,255‖+15% Burns‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.anticide>
+
+
+  <entityname.autosurgeon>Autosurgeon</entityname.autosurgeon>
+  <entitydescription.autosurgeon>An automated device that complete surgeries very quickly. Not exactly efficient, using it's entire internal battery content for a single use; suggested only to be used in an emergency event. Recharges when a battery is placed inside it.
+
+  ‖color:243,162,50,255‖Effects depend on contained items.‖color:end‖
+  </entitydescription.autosurgeon>
+
+
+  <entityname.surgeonprogrambullet>Autosurgeon Program: Bullet Removal</entityname.surgeonprogrambullet>
+  <entitydescription.surgeonprogrambullet>Datachip containing autosurgeon instructions for the removal of a bullet lodged in the body.
+
+  On Autosurgeon Use:
+  ‖color:154,213,163,255‖-30% Gunshot Wound‖color:end‖
+  </entitydescription.surgeonprogrambullet>
+
+
+  <entityname.surgeonprogramorgan>Autosurgeon Program: Organ Removal</entityname.surgeonprogramorgan>
+  <entitydescription.surgeonprogramorgan>Datachip containing autosurgeon instructions for the removal of a organ, primarily for transplant reasons.
+
+  On Autosurgeon Use:
+  ‖color:154,213,163,255‖-20% Organ Damage‖color:end‖
+  </entitydescription.surgeonprogramorgan>
+
+  
+  <entityname.antibloodloss1>Saline</entityname.antibloodloss1>
+  <entitydescription.antibloodloss1>A sodium chloride infusion mildly useful in the treatment of blood loss.
+
+  On Use:
+  ‖color:154,213,163,255‖-25% Blood Loss‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.antibloodloss1>
+
+
+  <entityname.antibloodloss2>Blood Pack</entityname.antibloodloss2>
+  <entitydescription.antibloodloss2>A pack of blood substitute for the treatment of blood loss.
+
+  On Use:
+  ‖color:154,213,163,255‖-120% Blood Loss‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.antibloodloss2>
+
+
+  <entityname.deusizine>Deusizine</entityname.deusizine>
+  <entitydescription.deusizine>A highly potent stimulant effective in the treatment of internal damage, oxygen deprivation and, to a lesser extent, blood loss. Produces mild burns as a side effect.
+
+  On Use:
+  ‖color:154,213,163,255‖-40% Damage‖color:end‖
+  ‖color:154,213,163,255‖-5% Oxygen Low/s ~ 20s‖color:end‖
+  ‖color:245,105,105,255‖+10% Burns‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.deusizine>
+
+
+  <entityname.pomegrenadeextract>Pomegrenade Extract</entityname.pomegrenadeextract>
+  <entitydescription.pomegrenadeextract>Concentrated pomegrenade juice mixed with a very small amount of more expensive medicinal compounds. ‖color:245,105,105,255‖A label on the side warns not to take more than 2.‖color:end‖
+
+  On Use:
+  ‖color:154,213,163,255‖-15% Damage‖color:end‖
+  ‖color:245,105,105,255‖+3% Oxygen Low/s ~ 60s‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.pomegrenadeextract>
+
+
+  <entityname.antibleeding1>Bandage</entityname.antibleeding1>
+  <entitydescription.antibleeding1>Basic bandages, useful in the treatment of bleeding wounds, burns and certain surface injuries.
+
+  On Use:
+  ‖color:154,213,163,255‖-40% Bleeding‖color:end‖
+  ‖color:154,213,163,255‖-30% Bite Wounds‖color:end‖
+  ‖color:154,213,163,255‖-30% Lacerations‖color:end‖
+  ‖color:154,213,163,255‖-20% Burns‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.antibleeding1>
+
+
+  <entityname.antibleeding2>Plastiseal</entityname.antibleeding2>
+  <entitydescription.antibleeding2>A synthetic skin with hemostatic properties, able to quickly seal most wounds.
+
+  On Use:
+  ‖color:154,213,163,255‖-50% Bleeding‖color:end‖
+  ‖color:154,213,163,255‖-40% Bite Wounds‖color:end‖
+  ‖color:154,213,163,255‖-40% Lacerations‖color:end‖
+  ‖color:154,213,163,255‖-40% Burns‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.antibleeding2>
+
+  
+  <entityname.calyxanide>Calyxanide</entityname.calyxanide>
+  <entitydescription.calyxanide>An antiparasitic drug used in the treatment of husk parasite infections. Might require higher dosage to cure the infection at later stages.
+    
+  On Use:
+  ‖color:154,213,163,255‖-100% Husk Infection‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.calyxanide>
+
+  
+  <entityname.antibiotics>Broad-spectrum Antibiotics</entityname.antibiotics>
+  <entitydescription.antibiotics>An aggressive antibiotic that acts against a wide range of disease-causing bacteria, though with the side effect of moderate organ damage in the process.
+    
+  On Use:
+  ‖color:154,213,163,255‖-30% Husk Infection‖color:end‖
+  ‖color:154,213,163,255‖+600% Husk Infection Resistance‖color:end‖
+  ‖color:245,105,105,255‖+15% Organ Damage‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.antibiotics>
+
+  
+  <entityname.meth>Methamphetamine</entityname.meth>
+  <entitydescription.meth>A potent nervous system stimulant.
+    
+  On Use:
+  ‖color:154,213,163,255‖+420% Hyperactivity‖color:end‖
+  ‖color:154,213,163,255‖-30% Meth Withdrawal‖color:end‖
+  ‖color:245,105,105,255‖+5% Meth Addiction‖color:end‖
+  ‖color:245,105,105,255‖+6% Organ Damage‖color:end‖
+  ‖color:243,162,50,255‖(Buff reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.meth>
+
+
+  <entityname.steroids>Anabolic Steroids</entityname.steroids>
+  <entitydescription.steroids>Temporarily increases muscular strength and physical performance.
+    
+  On Use:
+  ‖color:154,213,163,255‖+420% Vigor‖color:end‖
+  ‖color:154,213,163,255‖-3% Oxygen low/s 60s ‖color:end‖
+  ‖color:154,213,163,255‖-30% Steroid Withdrawal‖color:end‖
+  ‖color:245,105,105,255‖+5% Steroid Addiction‖color:end‖
+  ‖color:245,105,105,255‖+60% Psychosis‖color:end‖
+  ‖color:243,162,50,255‖(Buff reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.steroids>
+
+  
+  <entityname.hyperzine>Hyperzine</entityname.hyperzine>
+  <entitydescription.hyperzine>An extremely potent muscle stimulant for those moments when you gotta go fast.
+    
+  On Use:
+  ‖color:154,213,163,255‖+400% Vigor‖color:end‖
+  ‖color:154,213,163,255‖+400% Hyperactivity‖color:end‖
+  ‖color:154,213,163,255‖-5% Oxygen low/s 60s ‖color:end‖
+  ‖color:154,213,163,255‖-24% Meth + Steroid Withdrawal‖color:end‖
+  ‖color:245,105,105,255‖+4% Meth + Steroid Addiction‖color:end‖
+  ‖color:245,105,105,255‖+20% Psychosis‖color:end‖
+  ‖color:243,162,50,255‖(Buff reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.hyperzine>
+  
+
+  <entityname.combatstimulantsyringe>Combat Stimulant</entityname.combatstimulantsyringe>
+  <entitydescription.combatstimulantsyringe>A highly advanced stimulant that makes the user rapidly recover from physical injuries and bloodloss.
+    
+  On Use:
+  ‖color:154,213,163,255‖+75% Combat Stimulant‖color:end‖
+  ‖color:245,105,105,255‖+25% Combat Stimulant Overdose‖color:end‖
+  ‖color:245,105,105,255‖+20% Chem Addiction‖color:end‖
+  ‖color:243,162,50,255‖(Buff reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.combatstimulantsyringe>
+
+  
+  <entityname.antirad>Antirad</entityname.antirad>
+  <entitydescription.antirad>Slows down cellular degradation caused by radiation.
+    
+  On Use:
+  ‖color:154,213,163,255‖-100% Radiation Sickness‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.antirad>
+
+  
+  <entityname.stabilozine>Stabilozine</entityname.stabilozine>
+  <entitydescription.stabilozine>Used as an ingredient in the manufacture of various medicines. On its own, can be used to slow down the effects of most toxins.
+    
+  On Use:
+  ‖color:154,213,163,255‖-120% Organ Rejection‖color:end‖
+  ‖color:154,213,163,255‖-1% Poison/s ~ 30s‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.stabilozine>
+
+  <!--These are not part of DSM, but if DSM is enabled then the tooltip standard should be universal.-->
+
+  <entityname.feniternerveagentcure>2-PAM/CL</entityname.feniternerveagentcure>
+  <entitydescription.feniternerveagentcure>Pralidoxime Chloride/Atropine, used to treat nerve agent exposure.
+
+  On Use:
+  ‖color:154,213,163,255‖-120% Nerve Agent Exposure‖color:end‖
+  ‖color:243,162,50,255‖+180% Hallucinating‖color:end‖
+  ‖color:245,105,105,255‖+18% Organ Damage‖color:end‖
+  ‖color:245,105,105,255‖+24% Psychosis‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.feniternerveagentcure>
+
+
+  <entityname.feniterpulmonaryagentcure1>General Purpose Pulmonary Flush</entityname.feniterpulmonaryagentcure1>
+  <entitydescription.feniterpulmonaryagentcure1>A blood diuretic used to treat heavy pulmonary agent buildup and lung damage from blistering agents. Only effective against pulmonary agents before symptoms show. 
+
+  On Use:
+  ‖color:154,213,163,255‖-50% Pulmonary Agent Buildup‖color:end‖
+  ‖color:154,213,163,255‖-40% Blistering Agent Exposure‖color:end‖
+  ‖color:245,105,105,255‖Only effective against pulmonary agent below 50% buildup.‖color:end‖
+  </entitydescription.feniterpulmonaryagentcure1>
+
+
+  <entityname.feniterpulmonaryagentcure2>Pulmonary/Blood Antidote</entityname.feniterpulmonaryagentcure2>
+  <entitydescription.feniterpulmonaryagentcure2>A blood diuretic used to treat pulmonary agent buildup. Effective for a while even after symptoms appear.
+
+  On Use:
+  ‖color:154,213,163,255‖-60% Pulmonary Agent Buildup‖color:end‖
+  ‖color:243,162,50,255‖(Harmful effects applied if skill requirement not met.)‖color:end‖
+  </entitydescription.feniterpulmonaryagentcure2>
+
+
+  <entityname.feniterpsychoagentcure>Psychochemical Antidote</entityname.feniterpsychoagentcure>
+  <entitydescription.feniterpsychoagentcure>A blood diuretic used to treat psychochemical agent exposure. Shuts down the central nervous system as well as causing extreme drowsiness.
+
+  On Use:
+  ‖color:154,213,163,255‖-125% Psychochemical Agent Exposure‖color:end‖
+  ‖color:243,162,50,255‖-75% Hallucinating‖color:end‖
+  ‖color:154,213,163,255‖-75% Psychosis‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+  </entitydescription.feniterpsychoagentcure>
+
+
+  <entityname.feniterdecontaminant>Multi-Purpose Decontaminant</entityname.feniterdecontaminant>
+  <entitydescription.feniterdecontaminant>A cleaning mixture of primarily ethanol, extremely effective in cleaning dangerous chemicals off of the skin and clothes.
+
+  On Use:
+  ‖color:154,213,163,255‖-900% Chemical Contamination‖color:end‖
+  ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
+  </entitydescription.feniterdecontaminant>
+
   <entityname.foldingsurgerytable>Folding Surgical Table</entityname.foldingsurgerytable>
   <entitydescription.foldingsurgerytable>A folding surgical table used in the event of missing a hospital bed.</entitydescription.foldingsurgerytable>
   <itemmsglaydownselect>[[select]] Lay down</itemmsglaydownselect>
   <itemmsgfoldtableselect>[[use]] Fold up</itemmsgfoldtableselect>
+  
   <entityname.basebionic>Bionic Organ</entityname.basebionic>
   <entitydescription.basebionic>A bionic contraption to mimic the function of a normal human organ, can be used to replace missing organs. Mostly used to create complex bionic organs with new functions to offer to the body.</entitydescription.basebionic>
+  
   <entityname.adrenalinebionic>Bionic Adrenaline Gland</entityname.adrenalinebionic>
   <entitydescription.adrenalinebionic>A bionic organ designed to produce advanced and alien variations of natural hormones to increase body performance.</entitydescription.adrenalinebionic>
+  
   <entityname.methbionic>Bionic Hyperactive Gland</entityname.methbionic>
   <entitydescription.methbionic>An experimental bionic organ designed to produce stimulants like methamphetamine. Do not ingest alcohol while in body.</entitydescription.methbionic>
+  
   <entityname.gillsbionic>Bionic Gills</entityname.gillsbionic>
   <entitydescription.gillsbionic>A bionic organ designed to allow the supply of oxygen underwater. Does not protect against pressure.</entitydescription.gillsbionic>
+  
   <entityname.mechanitebionic>Bionic Mechanite Gland</entityname.mechanitebionic>
   <entitydescription.mechanitebionic>A bionic organ designed to produce nanomachines (called mechanites) that support and strengthen the empidermis to protect from barotrauma.</entitydescription.mechanitebionic>
+  
   <entityname.calyxanidebionic>Bionic Calyxanide Gland</entityname.calyxanidebionic>
   <entitydescription.calyxanidebionic>An experimental bionic organ designed to produce calyxanide in the system, sort of like a husk vaccine. Shunned by the church of the husk.</entitydescription.calyxanidebionic>
+  
   <entityname.bloodbionic>Bionic Blood Transmutator</entityname.bloodbionic>
   <entitydescription.bloodbionic>A bionic organ designed to transmutate any alien or foreign blood efficiently into usable human blood.</entitydescription.bloodbionic>
-  <entityname.sleepypen>Sleepy Pen</entityname.sleepypen>
-  <entitydescription.sleepypen>A auto syringe injector with the design of a regular pen, does not make any noise like any other syringe; all chemicals injected with this special syringe have their effects delayed as well.</entitydescription.sleepypen>
-  <entityname.autosurgeon>Autosurgeon</entityname.autosurgeon>
-  <entitydescription.autosurgeon>An automated device that complete surgeries very quickly. Not exactly efficient, using it's entire internal battery content for a single use; suggested only to be used in an emergency event. Recharges when a battery is placed inside it.</entitydescription.autosurgeon>
-  <entityname.surgeonprogrambullet>Autosurgeon Program: Bullet Removal</entityname.surgeonprogrambullet>
-  <entitydescription.surgeonprogrambullet>Datachip containing autosurgeon instructions for the removal of a bullet lodged in the body.</entitydescription.surgeonprogrambullet>
-  <entityname.surgeonprogramorgan>Autosurgeon Program: Organ Removal</entityname.surgeonprogramorgan>
-  <entitydescription.surgeonprogramorgan>Datachip containing autosurgeon instructions for the removal of a organ, primarily for transplant reasons.</entitydescription.surgeonprogramorgan>
-  <jobname.medicaldoctor3>Surgeon</jobname.medicaldoctor3>
-  <jobdescription.medicaldoctor3>These specialists are prepared to quickly and effectively perform surgery in a submarine ship for extended amounts of time.</jobdescription.medicaldoctor3>
+
   <entityname.doctorsuniform3>Surgeon's Uniform</entityname.doctorsuniform3>
   <entitydescription.doctorsuniform3>Makes you look like you might be useful if your forged medical degree didn't already show that.</entitydescription.doctorsuniform3>
-  <entitydescription.antidama1>A powerful opiate for treating pain and stabilizing critical patients, but will cause shortness of breath and eventual dependency with overuse.</entitydescription.antidama1>
-  <entitydescription.antidama2>A powerful opiate for treating pain and stabilizing critical patients, but will cause shortness of breath and eventual dependency with overuse.</entitydescription.antidama2>
-  <entitydescription.tonicliquid>A medical solution that's commonly used as an ingredient in more complex medical compounds.</entitydescription.tonicliquid>
-  <entitydescription.antinarc>An emergency use opioid antagonist for the treatment of overdose.</entitydescription.antinarc>
-  <entitydescription.stabilozine>Used as an ingredient in the manufacture of various medicines. On its own, can be used to slow down the effects of most toxins. Also good for treating organ rejection.</entitydescription.stabilozine>
-
+</Override>
 </infotexts>
