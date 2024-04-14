@@ -5,7 +5,7 @@ Hook.Add("character.applyDamage", "Human.ApplyAttackPain", function (characterHe
   if character.SpeciesName ~= "human" then return end
   
   local limb = character.AnimController.GetLimb(LimbType.Torso)
-  local painPrefab = AfflictionPrefab.Prefabs["internaldamage"]
+  local painPrefab = AfflictionPrefab.Prefabs["pain"]
   local totalattackpain = 0
   local globalpainmult = 1 -- Every pain type multiplied by this. Makes it so we can kee
   local painmult = {
