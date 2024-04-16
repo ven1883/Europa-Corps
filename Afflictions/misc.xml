@@ -12,7 +12,8 @@
 	activationthreshold="1.0"
 	showiconthreshold="5"
 	maxstrength="100"
-	limbspecific="false">
+	limbspecific="false"
+  indicatorlimb="Head">
 	 <Description
 		textidentifier="afflictiondescription.pain"
 		target="OtherCharacter" />
