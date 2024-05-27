@@ -1,0 +1,219 @@
+<Items>
+  <Item 
+    name="" 
+    identifier="heavyshotshell" 
+    category="Weapon" subcategory="Coalition" 
+    maxstacksize="12" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="metalcrate" 
+    tags="smallitem,heavyshotshell" 
+    Scale="0.025" 
+    impactsoundtag="impact_metal_light">
+
+    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="12">
+      <RequiredItem identifier="sgt_ammocoinadv" amount="1" />
+    </Fabricate>
+
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,0,580,228" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,0,580,228" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="15" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="12" 
+      removeonhit="true" 
+      spread="12">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+      <Attack 
+        structuredamage="2" itemdamage="5"
+        targetforce="8" 
+        severlimbsprobability="0.75" 
+        penetration="0.20">
+
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="stun" strength="0.15" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+    </Projectile>
+
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+
+  <!--8-Gauge Stun Shot-->
+  <Item 
+    name="" 
+    identifier="heavystunshell" 
+    category="Weapon" subcategory="Coalition" 
+    maxstacksize="12" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="metalcrate" 
+    tags="smallitem,heavyshotshell" 
+    Scale="0.025" 
+    impactsoundtag="impact_metal_light">
+    
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,228,580,228" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,228,580,228" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="15" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="4" 
+      removeonhit="true" 
+      spread="8">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+      <Attack 
+        structuredamage="2" 
+        targetforce="8" 
+        itemdamage="5" 
+        severlimbsprobability="0.25">
+        
+        <Affliction identifier="blunttrauma" strength="6" />
+        <Affliction identifier="bleeding" strength="0.5" />
+        <Affliction identifier="stun" strength="1" />
+        <Affliction identifier="progressivestun" strength="4" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+    </Projectile>
+
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  
+  <!--8-Gauge Shredder Slug-->
+  <Item 
+    name="" 
+    identifier="heavysliceshell" 
+    category="Weapon" subcategory="Coalition"
+    maxstacksize="12" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="metalcrate" 
+    tags="smallitem,heavyshotshell" 
+    Scale="0.025" 
+    impactsoundtag="impact_metal_light">
+
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,456,580,228" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,456,580,228" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="15" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="1" 
+      removeonhit="true" 
+      spread="4">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+      <Attack structuredamage="8" targetforce="12" itemdamage="10" severlimbsprobability="1" penetration="0.8">
+        <Affliction identifier="blunttrauma" strength="16" />
+        <Affliction identifier="lacerations" strength="40" />
+        <Affliction identifier="bleeding" strength="65" />
+        <Affliction identifier="stun" strength="0.4" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+
+  </Item>
+
+  <!--++++++++++++++++++++++++++++++++++++-->
+  
+  <!--8-Gauge Incendiary Shotshell-->
+  <Item 
+    name="" 
+    identifier="heavyhotshell" 
+    category="Weapon" subcategory="Coalition" 
+    maxstacksize="12" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="metalcrate" 
+    tags="smallitem,heavyshotshell" 
+    Scale="0.025" 
+    impactsoundtag="impact_metal_light">
+
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,684,580,228" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,684,580,228" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="15" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="10" 
+      removeonhit="true" 
+      spread="22">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      
+      <Attack 
+        structuredamage="1" 
+        targetforce="2" 
+        itemdamage="1" 
+        severlimbsprobability="0.25" 
+        penetration="0.10">
+
+        <Affliction identifier="burn" strength="10" />
+        <Affliction identifier="stun" strength="0.05" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+    </Projectile>
+
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  
+</Items>
