@@ -214,6 +214,278 @@
     </Projectile>
 
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
+
+  </Item>
+  
+  <Item 
+    name="" 
+    description="" 
+    identifier="scp_12gslug" 
+    category="Weapon" 
+    maxstacksize="40" maxstacksizecharacterinventory="10" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="scp_ammocrate" 
+    tags="smallitem,shotgunammo,ehaammo" 
+    Scale="0.5" 
+    impactsoundtag="impact_metal_light">
+    
+    <InventoryIcon name="12gsluginv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,0,45,46" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      hitscancount="1" 
+      removeonhit="true" 
+      spread="1">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+      
+      <Attack 
+        structuredamage="0.5" itemdamage="8" 
+        targetforce="10" 
+        severlimbsprobability="0.2" 
+        penetration="0.15">
+
+        <Affliction identifier="bleeding" strength="35" />
+        <Affliction identifier="bleeding" strength="25" probability="0.25" />
+        <Affliction identifier="gunshotwound" strength="45" />
+        <Affliction identifier="gunshotwound" strength="15" probability="0.3" />
+        <Affliction identifier="stun" strength="0.2" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <Item 
+    name="" 
+    description="" 
+    identifier="scp_12gbreachslug" 
+    category="Weapon" 
+    maxstacksize="40" maxstacksizecharacterinventory="10" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="scp_ammocrate" 
+    tags="smallitem,shotgunammo,ehaammo" 
+    Scale="0.5" 
+    impactsoundtag="impact_metal_light">
+
+    <InventoryIcon name="12gsluginv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="98,48,45,46" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="1" 
+      removeonhit="true" 
+      spread="15">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+      <Attack 
+        structuredamage="0.5" itemdamage="30" 
+        targetforce="9" 
+        severlimbsprobability="0.2">
+
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="explosiondamage" strength="10" probability="0.25" />
+        <Affliction identifier="stun" strength="0.2" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="10" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <Item 
+    name="" 
+    description="" 
+    identifier="scp_12gapslug" 
+    category="Weapon" 
+    maxstacksize="20" maxstacksizecharacterinventory="10" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="scp_ammocrate" 
+    tags="smallitem,shotgunammo,ehaammo" 
+    Scale="0.5" 
+    impactsoundtag="impact_metal_light">
+
+    <InventoryIcon name="12gapsluginv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="187,2,49,50" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="24,145,29,10" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="1" 
+      removeonhit="true"
+      spread="0.5">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.65" />
+
+      <Attack 
+        structuredamage="0.5" itemdamage="8"
+        targetforce="4" 
+        severlimbsprobability="0.35" 
+        penetration="0.45">
+
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="bleeding" strength="10" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="40" />
+        <Affliction identifier="explosiondamage" strength="15" probability="0.25" />
+        <Affliction identifier="stun" strength="0.2" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <Item 
+    name="" 
+    description="" 
+    identifier="scp_12gmagbuck" 
+    category="Weapon" 
+    maxstacksize="30" maxstacksizecharacterinventory="10" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="scp_ammocrate" 
+    tags="smallitem,shotgunammo,ehaammo" 
+    Scale="0.5" 
+    impactsoundtag="impact_metal_light">
+
+    <InventoryIcon name="12gmagbuckinv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="93,0,46,46" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,156,22,10" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="8" 
+      removeonhit="true" 
+      spread="17.5">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+      <Attack 
+        structuredamage="0.5" itemdamage="0.05"
+        targetforce="5" 
+        severlimbsprobability="0.3" 
+        penetration="0.02">
+
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="bleeding" strength="10" probability="0.33" />
+        <Affliction identifier="gunshotwound" strength="12" />
+        <Affliction identifier="gunshotwound" strength="6" probability="0.25" />
+        <Affliction identifier="stun" strength="0.05" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <Item 
+    name="" 
+    description="" 
+    identifier="scp_12devilslug" 
+    category="Weapon" subcategory="Chemical Weapons" 
+    maxstacksize="20" maxstacksizecharacterinventory="10" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="scp_ammocrate"
+    tags="smallitem,shotgunammo,ehaammo" 
+    Scale="0.5" 
+    impactsoundtag="impact_metal_light">
+
+    <InventoryIcon name="12gdevilinv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="46,48,52,49" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
+    
+    <Body width="23" height="10" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="1" 
+      removeonhit="true" 
+      spread="1">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+      <Attack 
+        structuredamage="0.5" itemdamage="0"
+        targetforce="6" 
+        severlimbsprobability="0.2">
+
+        <Affliction identifier="bleeding" strength="5" />
+        <Affliction identifier="blunttrauma" strength="15" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="scp_devilpoisoning" strength="1" probability="0.15" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <SpawnItem identifiers="scp_devilgasshotgun" spawnposition="This" />
+      </StatusEffect>
+
+    </Projectile>
+
   </Item>
   
 </Items>

@@ -128,4 +128,171 @@
     
   </Item>
 
+  
+  <!--.50 BMG FMJ-->
+  <Item 
+    name="" 
+    identifier="scp_50bmgfmj" 
+    interactthroughwalls="true" 
+    description="" 
+    tags="smallitem,127ammo,ehaammo" 
+    maxstacksize="15" maxstacksizecharacterinventory="5"
+    cargocontaineridentifier="scp_ammocrate" 
+    Scale="0.3" 
+    category="Weapon" subcategory="Coalition" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.4">
+
+    <InventoryIcon name="50bmgfmjinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="324,127,60,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="1,282,10,69" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      maxtargetstohit="2" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="175,150,125,150" scalemultiplier="1,2" />
+
+      <Attack 
+        structuredamage="35.0" itemdamage="20" 
+        targetforce="15" 
+        severlimbsprobability="1"
+        penetration="0.5">
+
+        <Affliction identifier="bleeding" strength="125" />
+        <Affliction identifier="gunshotwound" strength="100" />
+        <Affliction identifier="gunshotwound" strength="50" probability="0.75" />
+        <Affliction identifier="stun" strength="0.25" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3,3" colormultiplier="255,200,225,180" />
+        <ParticleEmitter particle="weldspark" particleamount="12" anglemin="0" anglemax="360" velocitymin="650" velocitymax="1500" scalemin="1.5" scalemax="2.5" drawontop="true" colormultiplier="255,200,225,180" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+  <!--.50 BMG AP-I-->
+  <Item 
+    name="" 
+    identifier="scp_50bmgapi" 
+    interactthroughwalls="true" 
+    description="" 
+    cargocontaineridentifier="scp_ammocrate"
+    tags="smallitem,127ammo,ehaammo" 
+    maxstacksize="10" maxstacksizecharacterinventory="5" 
+    Scale="0.3" 
+    category="Weapon" subcategory="Coalition" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.4">
+
+    <InventoryIcon name="50bmgapiinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="450,129,60,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="12,282,11,69" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      maxtargetstohit="3" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,50,50,200" scalemultiplier="1,2.5" />
+
+      <Attack 
+        structuredamage="65.0" 
+        targetforce="15" 
+        itemdamage="35" 
+        severlimbsprobability="1" 
+        penetration="0.65">
+
+        <Affliction identifier="bleeding" strength="85" />
+        <Affliction identifier="gunshotwound" strength="70" />
+        <Affliction identifier="explosiondamage" strength="25" probability="0.4" />
+        <Affliction identifier="scp_firelatexburn" strength="15" />
+        <Affliction identifier="stun" strength="0.3" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3,3" colormultiplier="255,100,100,225" />
+        <ParticleEmitter particle="flame" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.4" scalemax="0.6" />
+        <ParticleEmitter particle="weldspark" particleamount="10" anglemin="0" anglemax="360" velocitymin="500" velocitymax="650" scalemin="1" scalemax="1.25" drawontop="true" colormultiplier="255,200,225,180" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <Item 
+    name="" 
+    identifier="scp_50bmgdura" 
+    interactthroughwalls="true" 
+    description="" 
+    cargocontaineridentifier="scp_ammocrate" 
+    tags="smallitem,127ammo,ehaammo" 
+    maxstacksize="5" 
+    Scale="0.3" 
+    category="Weapon" subcategory="Coalition" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.4">
+
+    <InventoryIcon name="50bmgdurainv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="387,127,60,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="24,282,10,69" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      maxtargetstohit="3" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="50,50,255,200" scalemultiplier="1,2.5" />
+
+      <Attack 
+        structuredamage="65.0" itemdamage="50" 
+        targetforce="15" 
+        severlimbsprobability="0.65" 
+        penetration="0.85">
+
+        <Affliction identifier="bleeding" strength="55" />
+        <Affliction identifier="gunshotwound" strength="70" />
+        <Affliction identifier="explosiondamage" strength="70" probability="0.5" />
+        <Affliction identifier="stun" strength="0.3" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3,3" colormultiplier="255,100,100,225" />
+        <ParticleEmitter particle="weldspark" particleamount="10" anglemin="0" anglemax="360" velocitymin="500" velocitymax="650" scalemin="1.25" scalemax="1.5" drawontop="true" colormultiplier="50,50,255,255" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+    
+  </Item>
+
 </Items>
