@@ -1,0 +1,280 @@
+<Items>
+  <!--Chemthrower Napalm Fuel-->
+  <Item 
+    name="" 
+    identifier="sgt_napalm" 
+    category="Equipment,Fuel" 
+    maxstacksize="2" 
+    Tags="smallitem,chemfuel" 
+    cargocontaineridentifier="metalcrate" 
+    scale="0.5" 
+    impactsoundtag="impact_metal_light">
+
+    <InventoryIcon texture="%ModDir%/Ammo/Chemfuel.png" sourcerect="1,1,34,68" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/Chemfuel.png" sourcerect="2,2,33,67" depth="0.55" origin="0.5026745,0.5045908" />
+
+    <Body width="20" height="65" density="9.7" />
+
+    <Holdable 
+      canbecombined="true" 
+      slots="Any,RightHand,LeftHand" 
+      holdpos="30,-15" handle1="0,5" handle2="0,-5" 
+      msg="ItemMsgPickUpSelect">
+
+      <StatusEffect type="OnFire" target="This" Condition="-10.0" tags="onfire" duration="1" stackable="false" />
+
+      <StatusEffect type="OnBroken" target="This" delay="1" stackable="true">
+        <Conditional HasStatusTag="onfire" />
+
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="2000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" range="2000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="2000" />
+
+        <Explosion 
+          range="150.0" 
+          force="3">
+
+          <Affliction identifier="burn" strength="25" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+
+      </StatusEffect>
+
+    </Holdable>
+
+    <Quality>
+      <QualityStat stattype="Condition" value="0.05" />
+    </Quality>
+
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+
+  </Item>
+
+  <!--Blaster Cell-->
+  <Item 
+    name="" 
+    identifier="sgt_hbcell" 
+    Category="Weapon" 
+    Tags="smallitem,hbcell,ehaammo" 
+    maxstacksize="2" 
+    cargocontaineridentifier="metalcrate" 
+    scale="0.5">
+
+    <InventoryIcon texture="%ModDir%/Ammo/blastercell.png" sourcerect="19,0,21,21" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/blastercell.png" depth="0.55" sourcerect="0,1,18,68" origin="0.5,0.5" />
+
+    <Body radius="6" height="55" density="20" />
+    
+    <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect"/>
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      itemrotation="90" 
+      drawinventory="false"
+      canbeselected="false" 
+      SpawnWithId="sgt_blasterbolt" 
+      removecontaineditemsondeconstruct="true" 
+      showcontainedstateindicator="true" 
+      ShowConditionInContainedStateIndicator="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="sgt_blasterbolt" />
+
+      <StatusEffect type="OnUse" target="This" condition="-100.0" disabledeltatime="true">
+        <SpawnItem identifiers="sgt_blasterbolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Quality>
+      <QualityStat stattype="Condition" value="1.0" />
+    </Quality>
+
+  </Item>
+  <!--Blaster Round-->
+  <Item 
+    name="blasterbolt" 
+    identifier="sgt_blasterbolt" 
+    category="Weapon" 
+    scale="0.5" 
+    sonarsize="2" 
+    hideinmenus="true">
+
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" origin="0.5,0.5" />
+    <Body width="170" height="10" density="20" />
+
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.75" colormultiplier="180,180,255,180" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+
+      <Attack 
+        structuredamage="35" 
+        targetforce="5" 
+        itemdamage="35" 
+        severlimbsprobability="0.5" 
+        penetration="0.5">
+        <Affliction identifier="explosiondamage" strength="50" />
+        <Affliction identifier="blunttrauma" strength="40" />
+        <Affliction identifier="stun" strength="0.5" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="0.75,0.75" colormultiplier="120,255,0,180" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget" disabledeltatime="true">
+
+        <Explosion 
+          range="125.0" 
+          ballastfloradamage="50" structuredamage="0" itemdamage="0" 
+          force="5.0" 
+          flames="false" smoke="false" sparks="true" underwaterbubble="false" flashcolor="255,0,0,255" 
+          penetration="1">
+
+          <Affliction identifier="burn" strength="45" />
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+
+      </StatusEffect>
+
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+  <!--Multi Blaster Cell-->
+
+  <Item 
+    name="" 
+    identifier="sgt_hbcell2"
+    Category="Weapon" 
+    Tags="smallitem,hbcell,ehaammo" 
+    maxstacksize="2" 
+    cargocontaineridentifier="metalcrate" 
+    scale="0.5">
+
+    <InventoryIcon texture="%ModDir%/Ammo/blastercell.png" sourcerect="59,0,21,21" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/blastercell.png" depth="0.55" sourcerect="40,1,18,68" origin="0.5,0.5" />
+
+    <Body radius="6" height="55" density="20" />
+
+    <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect"/>
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      itemrotation="90" 
+      drawinventory="false" 
+      canbeselected="false" 
+      SpawnWithId="sgt_blasterbolt2" 
+      removecontaineditemsondeconstruct="true" 
+      showcontainedstateindicator="true" 
+      ShowConditionInContainedStateIndicator="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="sgt_blasterbolt2" />
+
+      <StatusEffect type="OnUse" target="This" condition="-100.0" disabledeltatime="true">
+        <SpawnItem identifiers="sgt_blasterbolt2" spawnposition="ThisInventory" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Quality>
+      <QualityStat stattype="Condition" value="1.0" />
+    </Quality>
+
+  </Item>
+
+  <!--Multi Blaster Round-->
+
+  <Item 
+    name="blasterbolt2" 
+    identifier="sgt_blasterbolt2" 
+    category="Weapon" 
+    scale="0.5" 
+    sonarsize="2"
+    hideinmenus="true">
+
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="170" height="10" density="20" />
+
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      removeonhit="true" 
+      spread="6" staticspread="true" 
+      hitscancount="3" 
+      damagedoors="true">
+
+      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.75" colormultiplier="180,255,180,180" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+
+      <Attack 
+        structuredamage="15" itemdamage="15"
+        targetforce="2" 
+        severlimbsprobability="0.3" 
+        penetration="0.3">
+
+        <Affliction identifier="explosiondamage" strength="20" />
+        <Affliction identifier="blunttrauma" strength="250" />
+        <Affliction identifier="stun" strength="0.2" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="0.75,0.75" colormultiplier="120,255,0,180" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget" disabledeltatime="true">
+        <Explosion
+          range="45.0" 
+          ballastfloradamage="50" structuredamage="0" itemdamage="0" 
+          force="5.0" 
+          flames="false" smoke="false" sparks="true" underwaterbubble="false" flashcolor="255,0,0,255" 
+          penetration="1">
+
+          <Affliction identifier="burn" strength="20" />
+          <Affliction identifier="stun" strength="0.4" />
+        </Explosion>
+
+      </StatusEffect>
+
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+        <Remove />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+  
+</Items>

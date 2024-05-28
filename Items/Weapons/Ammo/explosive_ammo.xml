@@ -361,66 +361,66 @@
 	    </StatusEffect>
 
 	  </Projectile>
-    </Item>
+  </Item>
 
-    <Item 
-			name="" 
-			description="" 
-			identifier="scp_rpg7incend" 
-			category="Weapon" subcategory="Grenades and Explosives" 
-			maxstacksize="2" maxstacksizecharacterinventory="1" 
-			interactthroughwalls="true" 
-			cargocontaineridentifier="metalcrate" 
-			tags="smallitem,rpgammo" 
-			Scale="0.5" 
-			impactsoundtag="impact_metal_light">
+  <Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7incend" 
+		category="Weapon" subcategory="Grenades and Explosives" 
+		maxstacksize="2" maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
 
-	  	<InventoryIcon name="rpg7incendinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="67,0,66,67" origin="0.5,0.5" />
-	  	<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,103,197,25" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="rpg7incendinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="67,0,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,103,197,25" depth="0.55" origin="0.5,0.5" />
 
-	  	<Body width="190" height="40" density="30" />
+		<Body width="190" height="40" density="30" />
 
-	  	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-			
-	  	<Projectile 
-				characterusable="false" 
-				launchimpulse="35.0"
-				sticktocharacters="false">
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="35.0"
+			sticktocharacters="false">
 
-	  	  <Attack 
-					structuredamage="40" 
-					penetration="0.5">
-	  			<Affliction identifier="explosiondamage" strength="50" />
-	  	  </Attack>
+		  <Attack 
+				structuredamage="40" 
+				penetration="0.5">
+				<Affliction identifier="explosiondamage" strength="50" />
+		  </Attack>
 
-	  	  <sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
-	  	  <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+		  <sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+		  <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
 
-	  	  <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+		  <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
 
-	  			<Explosion 
-						range="650.0" 
-						ballastfloradamage="80" structuredamage="20" levelwalldamage="120" itemdamage="400" 
-						force="10.0" 
-						severlimbsprobability="0.65" 
-						decal="explosion" decalsize="1">
+				<Explosion 
+					range="650.0" 
+					ballastfloradamage="80" structuredamage="20" levelwalldamage="120" itemdamage="400" 
+					force="10.0" 
+					severlimbsprobability="0.65" 
+					decal="explosion" decalsize="1">
 
-	  			  <Affliction identifier="bleeding" strength="400" probability="0.05" />
-	  			  <Affliction identifier="burn" strength="200" />
-	  			  <Affliction identifier="stun" strength="2.5" />
-	  			</Explosion>
+				  <Affliction identifier="bleeding" strength="400" probability="0.05" />
+				  <Affliction identifier="burn" strength="200" />
+				  <Affliction identifier="stun" strength="2.5" />
+				</Explosion>
 
-	  			<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
-	  			<Fire size="200.0" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+				<Fire size="200.0" />
 
-	  			<Remove />
-	  	  </StatusEffect>
+				<Remove />
+		  </StatusEffect>
 
-	  	  <StatusEffect type="OnActive" target="This">
-	  		<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
-	  	  </StatusEffect>
+		  <StatusEffect type="OnActive" target="This">
+			<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
+		  </StatusEffect>
 
-	  	</Projectile>
+		</Projectile>
 
   </Item>
 
@@ -705,6 +705,57 @@
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 
   </Item>
+
+	  <!--40mm Shotshell-->
+	<Item 
+		name="" 
+		identifier="glshotshell" 
+		category="Weapon" subcategory="Coalition" 
+		maxstacksize="8" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade,ehaammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon texture="%ModDir%/Ammo/40mmgl.png" sourcerect="2,2,35,35" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Ammo/40mmgl.png" sourcerect="0,38,32,16" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="23" height="10" density="15" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" hitscancount="24" 
+			removeonhit="true" 
+			spread="18">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+			<Attack 
+				structuredamage="1" itemdamage="2"
+				targetforce="4" 
+				severlimbsprobability="0.75">
+
+				<Affliction identifier="gunshotwound" strength="3" />
+				<Affliction identifier="bleeding" strength="4" />
+				<Affliction identifier="stun" strength="0.02" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+				<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+			
+		</Projectile>
+		<Upgrade gameversion="0.10.0.0" scale="0.5" />
+	</Item>
 
   <Item 
 		name="" 

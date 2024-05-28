@@ -1,0 +1,337 @@
+<Items>
+  <!--AS Val 20 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_valmag" 
+    description="" 
+    tags="smallitem,valammo,ehaammo" 
+    Scale="0.7" 
+    category="Weapon" subcategory="Renegade" 
+    maxstacksize="12" maxstacksizecharacterinventory="4" 
+    cargocontaineridentifier="scp_ammocrate" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.5">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="0,166,25,43" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1"
+      drawinventory="false"
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_valapprojectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_valapprojectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+        <SpawnItem identifier="scp_valapprojectile" spawnposition="ThisInventory" />
+        <ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="300" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+      </StatusEffect>
+
+    </ItemContainer>
+    
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+
+  <!--9x39mm round-->
+  <Item 
+    name="" 
+    identifier="scp_valprojectile" 
+    category="Weapon" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="metalcrate" 
+    tags="smallitem" 
+    impactsoundtag="impact_metal_light" 
+    hideinmenus="true" 
+    scale="0.5">
+
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,255,75" scalemultiplier="1,0.6" />
+
+      <Attack 
+        structuredamage="1.0" itemdamage="1"
+        targetforce="1" 
+        severlimbsprobability="0.05" 
+        penetration="0.025">
+
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="bleeding" strength="15" probability="0.25" />
+        <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="stun" strength="0.175" probability="0.1" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+      
+    </Projectile>
+
+  </Item>
+
+  <Item 
+    name="" 
+    identifier="scp_valapprojectile" 
+    category="Weapon" 
+    interactthroughwalls="true"
+    cargocontaineridentifier="metalcrate" 
+    tags="smallitem" 
+    impactsoundtag="impact_metal_light" 
+    hideinmenus="true" 
+    scale="0.5">
+
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,255,75" scalemultiplier="1,0.6" />
+
+      <Attack 
+        structuredamage="1.0" itemdamage="1"
+        targetforce="1" 
+        severlimbsprobability="0.05" 
+        penetration="0.1">
+
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="bleeding" strength="6" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="9" />
+        <Affliction identifier="explosiondamage" strength="6" probability="0.2" />
+        <Affliction identifier="stun" strength="0.075" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,200,225,180" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+  <!--SR-3 30 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_valextmag" 
+    description="" 
+    tags="smallitem,valammo,ehaammo" 
+    cargocontaineridentifier="scp_ammocrate" 
+    Scale="0.5" 
+    category="Weapon" subcategory="Renegade" 
+    maxstacksize="6" maxstacksizecharacterinventory="3" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.5">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="26,165,33,54" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_valprojectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_valprojectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-3.4" disabledeltatime="true">
+        <SpawnItem identifier="scp_valprojectile" spawnposition="ThisInventory" />
+        <ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="300" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+  <!--9x19 30 round magazine-->
+  <Item 
+    name="" 
+    identifier="scp_9mmsmgmag" 
+    description="" 
+    tags="smallitem,9mmammo,ehaammo,9mmsmgmag" 
+    category="Weapon" subcategory="Coalition" 
+    maxstacksize="12" maxstacksizecharacterinventory="3" 
+    cargocontaineridentifier="scp_ammocrate" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.5">
+
+    <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="2,142,37,66" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true"
+      SpawnWithId="scp_9x19projectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_9x19projectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-3.4" disabledeltatime="true">
+        <SpawnItem identifier="scp_9x19projectile" spawnposition="ThisInventory" />
+        <ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+  
+  <Item 
+    name="" 
+    identifier="scp_9mmsmgdrummag" 
+    description="" 
+    tags="smallitem,9mmammo,ehaammo,9mmsmgmag" 
+    category="Weapon" 
+    subcategory="Coalition" 
+    maxstacksize="2" 
+    cargocontaineridentifier="scp_ammocrate" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.5">
+
+    <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="104,142,37,66" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1"
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_9x19projectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_9x19projectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true">
+        <SpawnItem identifier="scp_9x19projectile" spawnposition="ThisInventory" />
+        <ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+  <!--25 round 11.43 box magazine-->
+  <Item 
+    name="" 
+    identifier="scp_umpmag" 
+    description="" 
+    tags="smallitem,45ammo,ehaammo,ump45mag" 
+    category="Weapon" subcategory="Coalition" 
+    maxstacksize="6" maxstacksizecharacterinventory="3" 
+    cargocontaineridentifier="scp_ammocrate" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.5">
+
+    <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="160,142,15,66" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_45projectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_45projectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-4" disabledeltatime="true">
+        <SpawnItem identifier="scp_45projectile" spawnposition="ThisInventory" />
+        <ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+
+  <Item 
+    name="" 
+    identifier="scp_umpincendmag" 
+    description="" 
+    tags="smallitem,45ammo,ehaammo,ump45mag" 
+    category="Weapon" subcategory="Coalition" 
+    maxstacksize="6" maxstacksizecharacterinventory="3" 
+    cargocontaineridentifier="scp_ammocrate" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.5">
+
+    <InventoryIcon texture="%ModDir%/Ammo/improvedammo.png" sourcerect="196,143,14,66" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="196,143,14,66" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false"
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true"
+      SpawnWithId="scp_45incendprojectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_45incendprojectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-4" disabledeltatime="true">
+        <SpawnItem identifier="scp_45incendprojectile" spawnposition="ThisInventory" />
+        <ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+  
+</Items>
