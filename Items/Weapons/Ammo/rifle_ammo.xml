@@ -913,4 +913,638 @@
 
   </Item>
 
+    <!--AK-103 30 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_akmag" 
+    description="" 
+    tags="smallitem,akammo,ehaammo,ak30mag" 
+    category="Weapon" subcategory="Renegade" 
+    cargocontaineridentifier="scp_ammocrate" 
+    maxstacksize="8" maxstacksizecharacterinventory="4" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="0,1,42,51" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false"
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_762x39projectile"
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_762x39projectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+
+        <SpawnItem identifier="scp_762x39projectile" spawnposition="ThisInventory" />
+
+        <ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+  <!--AK-103 75 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_akdrummag" 
+    description="" 
+    tags="smallitem,akammo,ehaammo" 
+    category="Weapon" subcategory="Renegade" 
+    cargocontaineridentifier="scp_ammocrate" 
+    maxstacksize="3" maxstacksizecharacterinventory="1" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="0,52,42,52" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_762x39projectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_762x39projectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true">
+
+        <SpawnItem identifier="scp_762x39projectile" spawnposition="ThisInventory" />
+
+        <ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+  <!--AK-103 AP 30 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_akapmag" 
+    description="" 
+    tags="smallitem,akammo,ehaammo,ak30mag" 
+    category="Weapon" subcategory="Renegade" 
+    cargocontaineridentifier="scp_ammocrate" 
+    maxstacksize="6" maxstacksizecharacterinventory="4" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+    
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="44,1,42,51" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_762x39renapprojectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_762x39renapprojectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+
+        <SpawnItem identifier="scp_762x39renapprojectile" spawnposition="ThisInventory" />
+
+        <ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+
+  <!--AK-103 DU 30 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_akdumag" 
+    description="" 
+    tags="smallitem,akammo,ehaammo,ak30mag" 
+    category="Weapon" subcategory="Renegade" 
+    cargocontaineridentifier="scp_ammocrate" 
+    maxstacksize="4" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="88,1,42,51" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_762x39duprojectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_762x39duprojectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+        <SpawnItem identifier="scp_762x39duprojectile" spawnposition="ThisInventory" />
+        <ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+  <!--7.62x39mm round-->
+  <Item 
+    name="" 
+    identifier="scp_762x39projectile" 
+    tags="smallitem,akammo" 
+    Scale="0.3" 
+    category="Weapon" 
+    impactsoundtag="impact_metal_light" 
+    hideinmenus="true" 
+    scale="0.4">
+    
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colourmultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+
+      <Attack 
+        structuredamage="1.0" 
+        targetforce="3" 
+        itemdamage="3" 
+        severlimbsprobability="0.05" 
+        penetration="0.075">
+
+        <Affliction identifier="bleeding" strength="20" />
+        <Affliction identifier="bleeding" strength="10" probability="0.2" />
+        <Affliction identifier="gunshotwound" strength="17" />
+        <Affliction identifier="gunshotwound" strength="9" probability="0.2" />
+        <Affliction identifier="stun" strength="0.2" probability="0.275" />
+      </Attack>
+      
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <!--7.62x39mm AP round-->
+  <Item 
+    name="" 
+    identifier="scp_762x39renapprojectile" 
+    tags="smallitem,akammo" 
+    Scale="0.3" 
+    category="Weapon" 
+    impactsoundtag="impact_metal_light" 
+    hideinmenus="true" 
+    scale="0.4">
+
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colourmultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+
+      <Attack 
+        structuredamage="1.0" itemdamage="4" 
+        targetforce="2" 
+        severlimbsprobability="0.05" 
+        penetration="0.15">
+
+        <Affliction identifier="bleeding" strength="13" />
+        <Affliction identifier="bleeding" strength="6.5" probability="0.2" />
+        <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="explosiondamage" strength="8" probability="0.2" />
+        <Affliction identifier="stun" strength="0.2" probability="0.25" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="weldspark" particleamount="8" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1" scalemax="1.75" drawontop="true" colormultiplier="255,200,225,180" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <!--7.62x39mm DU round-->
+  <Item 
+    name="" 
+    identifier="scp_762x39duprojectile" 
+    tags="smallitem,akammo" 
+    Scale="0.3" 
+    interactthroughwalls="true"
+    category="Weapon" 
+    impactsoundtag="impact_metal_light" 
+    hideinmenus="true" 
+    scale="0.4">
+
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colourmultiplier="50,50,225,200" scalemultiplier="1,0.6" />
+
+      <Attack 
+        structuredamage="1.0" itemdamage="5" 
+        targetforce="1" 
+        severlimbsprobability="0.05" 
+        penetration="0.25">
+
+        <Affliction identifier="bleeding" strength="8" />
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="explosiondamage" strength="10" probability="0.2" />
+        <Affliction identifier="radiationsickness" strength="6" />
+        <Affliction identifier="radiationsickness" strength="6" probability="0.2" />
+        <Affliction identifier="stun" strength="0.2" probability="0.2" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="50,50,225,255" />
+        <ParticleEmitter particle="weldspark" particleamount="8" anglemin="0" anglemax="360" velocitymin="400" velocitymax="650" scalemin="1.1" scalemax="1.75" drawontop="true" colormultiplier="100,100,225,180" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <!--AK-74 30 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_ak74mag"
+    description="" 
+    cargocontaineridentifier="scp_ammocrate" 
+    tags="smallitem,ak74ammo,ehaammo,ak7430mag" 
+    category="Weapon" subcategory="Renegade" 
+    maxstacksize="16" maxstacksizecharacterinventory="8" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="1,106,37,54" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_545x39projectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_545x39projectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+
+        <SpawnItem identifier="scp_545x39projectile" spawnposition="ThisInventory" />
+
+        <ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+
+  <!--AK-74 AP 30 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_ak74apmag" 
+    description="" 
+    cargocontaineridentifier="scp_ammocrate" 
+    tags="smallitem,ak74ammo,ehaammo,ak7430mag" 
+    category="Weapon" subcategory="Renegade"
+    maxstacksize="12" maxstacksizecharacterinventory="8" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="40,106,37,54" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false"
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_545x39approjectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_545x39approjectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+        
+        <SpawnItem identifier="scp_545x39approjectile" spawnposition="ThisInventory" />
+
+        <ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+  <!--AK-74 DU 30 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_ak74dumag" 
+    description="" 
+    cargocontaineridentifier="scp_ammocrate" 
+    tags="smallitem,ak74ammo,ehaammo,ak7430mag" 
+    category="Weapon" subcategory="Renegade"
+    maxstacksize="4" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="79,106,36,54" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+    
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_545x39duprojectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_545x39duprojectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+
+        <SpawnItem identifier="scp_545x39duprojectile" spawnposition="ThisInventory" />
+
+        <ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+
+  <!--AK-74 60 round mag-->
+  <Item 
+    name="" 
+    identifier="scp_ak74extmag" 
+    description="" 
+    tags="smallitem,ak74ammo,ehaammo"
+    maxstacksize="4" maxstacksizecharacterinventory="2" 
+    category="Weapon" subcategory="Renegade" 
+    cargocontaineridentifier="scp_ammocrate" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="116,106,37,56" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true"
+      SpawnWithId="scp_545x39projectile" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_545x39projectile" />
+
+      <StatusEffect type="OnUse" target="This" condition="-1.66" disabledeltatime="true">
+
+        <SpawnItem identifier="scp_545x39projectile" spawnposition="ThisInventory" />
+
+        <ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+
+  <!--5.45x39mm round-->
+  <Item 
+    name="" 
+    identifier="scp_545x39projectile" 
+    tags="smallitem,ak74ammo" 
+    Scale="0.3" 
+    category="Weapon" 
+    impactsoundtag="impact_metal_light" 
+    hideinmenus="true" 
+    scale="0.4">
+
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false"
+      hitscan="true" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colourmultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+
+      <Attack 
+        structuredamage="1.0" itemdamage="2" 
+        targetforce="2.5" 
+        severlimbsprobability="0.05" 
+        penetration="0.05">
+
+        <Affliction identifier="bleeding" strength="9" />
+        <Affliction identifier="bleeding" strength="6" probability="0.2" />
+        <Affliction identifier="gunshotwound" strength="12" />
+        <Affliction identifier="gunshotwound" strength="8" probability="0.2" />
+        <Affliction identifier="stun" strength="0.15" probability="0.15" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <!--5.45x39mm AP round-->
+  <Item 
+    name="" 
+    identifier="scp_545x39approjectile" 
+    tags="smallitem,ak74ammo" 
+    Scale="0.3" 
+    category="Weapon" 
+    impactsoundtag="impact_metal_light" 
+    hideinmenus="true" 
+    scale="0.4">
+
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colourmultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+
+      <Attack 
+        structuredamage="1.0" itemdamage="3"
+        targetforce="2" 
+        severlimbsprobability="0.05" 
+        penetration="0.15">
+
+        <Affliction identifier="bleeding" strength="7" />
+        <Affliction identifier="bleeding" strength="4" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="explosiondamage" strength="8" probability="0.25" />
+        <Affliction identifier="stun" strength="0.2" probability="0.15" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="0.8" scalemax="1" drawontop="true" colormultiplier="255,200,225,180" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <!--5.45x39mm DU round-->
+  <Item 
+    name="" 
+    identifier="scp_545x39duprojectile" 
+    tags="smallitem,ak74ammo" 
+    Scale="0.3" 
+    interactthroughwalls="true" 
+    category="Weapon" 
+    impactsoundtag="impact_metal_light" 
+    hideinmenus="true" 
+    scale="0.4">
+    
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" 
+      removeonhit="true">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colourmultiplier="50,50,225,200" scalemultiplier="1,0.6" />
+
+      <Attack 
+        structuredamage="1.0" itemdamage="4" 
+        targetforce="1.75" 
+        severlimbsprobability="0.05" 
+        penetration="0.25">
+        <Affliction identifier="bleeding" strength="5" />
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="explosiondamage" strength="5" probability="0.2" />
+        <Affliction identifier="radiationsickness" strength="4" />
+        <Affliction identifier="radiationsickness" strength="4" probability="0.25" />
+        <Affliction identifier="stun" strength="0.2" probability="0.1" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="50,50,225,255" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="650" scalemin="0.8" scalemax="1.25" drawontop="true" colormultiplier="50,50,225,200" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
 </Items>

@@ -487,5 +487,292 @@
     </Projectile>
 
   </Item>
+
+    <!--Shotgun Shell Projectiles-->
+  <Item 
+    name="" 
+    identifier="scp_12gbucksaiga" 
+    tags="smallitem,saigaammo" 
+    Scale="0.3" 
+    category="Weapon" 
+    impactsoundtag="impact_metal_light" 
+    hideinmenus="true" 
+    scale="0.4">
+
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+    <Body width="40" height="15" density="40" />
+    
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="8" 
+      removeonhit="true" 
+      spread="15">
+      
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+      <Attack 
+        structuredamage="1.0" 
+        targetforce="1" 
+        itemdamage="0.05" 
+        severlimbsprobability="0.15">
+
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="gunshotwound" strength="6" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="stun" strength="0.075" probability="0.25" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+  <!--5 round 12 gauge saiga magazine-->
+  <Item 
+    name="" 
+    identifier="scp_saigamag" 
+    description="" 
+    tags="smallitem,saigaammo,ehaammo" 
+    maxstacksize="12" maxstacksizecharacterinventory="6" 
+    cargocontaineridentifier="scp_ammocrate" 
+    category="Weapon" subcategory="Renegade" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+    
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="279,105,40,61" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_12gbucksaiga" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_12gbucksaiga" />
+
+      <StatusEffect type="OnUse" target="This" condition="-20" disabledeltatime="true">
+        
+        <SpawnItem identifier="scp_12gbucksaiga" spawnposition="ThisInventory" />
+
+        <ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+      </StatusEffect>
+      
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+
+  <!--10 round 12 gauge saiga magazine-->
+  <Item 
+    name="" 
+    identifier="scp_saigaextmag" 
+    description="" 
+    tags="smallitem,saigaammo,ehaammo" 
+    maxstacksize="6" maxstacksizecharacterinventory="3" 
+    category="Weapon" subcategory="Renegade" 
+    cargocontaineridentifier="scp_ammocrate" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+    
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="188,86,49,81" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+
+    <ItemContainer 
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_12gbucksaiga" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_12gbucksaiga" />
+
+      <StatusEffect type="OnUse" target="This" condition="-10" disabledeltatime="true">
+
+        <SpawnItem identifier="scp_12gbucksaiga" spawnposition="ThisInventory" />
+
+        <ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
+
+  <!--20 round 12 gauge saiga drum-->
+  <Item 
+    name="" 
+    identifier="scp_saigadrummag" 
+    description="" 
+    tags="smallitem,saigaammo,ehaammo" 
+    category="Weapon" 
+    maxstacksize="2" maxstacksizecharacterinventory="1" 
+    subcategory="Renegade" 
+    cargocontaineridentifier="scp_ammocrate" 
+    impactsoundtag="impact_metal_light" 
+    scale="0.45">
+
+    <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="239,108,39,59" origin="0.5,0.5" />
+
+    <Body width="30" height="40" density="50" />
+    
+    <ItemContainer
+      hideitems="true" 
+      capacity="1" 
+      drawinventory="false" 
+      canbeselected="false" 
+      ShowConditionInContainedStateIndicator="true" 
+      SpawnWithId="scp_12gbucksaiga" 
+      removecontaineditemsondeconstruct="true" 
+      containedstateindicatorstyle="bullet">
+
+      <Containable items="scp_12gbucksaiga" />
+
+      <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+
+        <SpawnItem identifier="scp_12gbucksaiga" spawnposition="ThisInventory" />
+        
+        <ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+      </StatusEffect>
+
+    </ItemContainer>
+
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+  </Item>
   
+  <!--23x75mm Shrapnel-25 Shell-->
+  <Item 
+    name="" 
+    description="" 
+    identifier="scp_4gshell" 
+    category="Weapon" subcategory="Prototype" 
+    maxstacksize="10" maxstacksizecharacterinventory="5" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="metalcrate" 
+    tags="smallitem,ks23ammo,ehaammo" 
+    Scale="0.2" 
+    impactsoundtag="impact_metal_light">
+
+    <InventoryIcon name="4gshellinv" texture="%ModDir%/Ammo/ammo.png" sourcerect="3,69,55,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/ammo.png" sourcerect="2,131,25,69" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile
+      characterusable="false"
+      hitscan="true" 
+      hitscancount="8" 
+      removeonhit="true" 
+      spread="10">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+      <Attack 
+        structuredamage="1" itemdamage="2" 
+        targetforce="5" 
+        severlimbsprobability="0.5" 
+        penetration="0.1">
+
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="bleeding" strength="15" probability="0.2" />
+        <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="gunshotwound" strength="7.5" probability="0.2" />
+        <Affliction identifier="stun" strength="0.1" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+    
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
+  <!--23x75mm Slug Shell-->
+  <Item 
+    name="" 
+    description="" 
+    identifier="scp_4gslug" 
+    category="Weapon" subcategory="Prototype"
+    maxstacksize="10" maxstacksizecharacterinventory="5" 
+    interactthroughwalls="true" 
+    cargocontaineridentifier="metalcrate" 
+    tags="smallitem,ks23ammo,ehaammo" 
+    Scale="0.2" 
+    impactsoundtag="impact_metal_light">
+
+    <InventoryIcon name="4gsluginv" texture="%ModDir%/Ammo/ammo.png" sourcerect="58,70,56,57" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/ammo.png" sourcerect="29,131,25,69" depth="0.55" origin="0.5,0.5" />
+
+    <Body width="23" height="10" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile 
+      characterusable="false" 
+      hitscan="true" hitscancount="1" 
+      removeonhit="true" 
+      spread="1">
+
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+      <Attack 
+        structuredamage="1" itemdamage="12" 
+        targetforce="25"
+        severlimbsprobability="0.2" 
+        penetration="0.4">
+
+        <Affliction identifier="bleeding" strength="35" />
+        <Affliction identifier="bleeding" strength="35" probability="0.5" />
+        <Affliction identifier="gunshotwound" strength="75" />
+        <Affliction identifier="gunshotwound" strength="25" probability="0.25" />
+        <Affliction identifier="stun" strength="0.2" />
+      </Attack>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+    </Projectile>
+
+  </Item>
+
 </Items>
