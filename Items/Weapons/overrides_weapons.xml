@@ -540,7 +540,7 @@
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		</Item>
 
-		<!--###-->
+			<!--###-->
 
 			<!--Surplus Heavy Machiengun-->
 			<!-- Vanilla HMG-->
@@ -677,7 +677,7 @@
 			<Upgrade gameversion="0.10.0.0" scale="0.5" />
 		</Item>
 
-		<!--###-->
+			<!--###-->
 
 			<!--Rapid Fissile Accelerator-->
 		<Item name="" identifier="nucleargun" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
