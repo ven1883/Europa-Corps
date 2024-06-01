@@ -4,125 +4,14 @@
 
 <Override>
 	<Items>
-		<Item name="" identifier="bodyarmor" category="Equipment" subcategory="Coalition" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
-			<Upgrade gameversion="0.9.3.0" scale="0.35" />
-			<PreferredContainer primary="secarmcab" spawnprobability="0.8" amount="1" />
-			<PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
-			<PreferredContainer secondary="armcab" />
-			<Price baseprice="500">
-				<Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-				<Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
-				<Price storeidentifier="merchantresearch" sold="false" />
-				<Price storeidentifier="merchantmilitary" multiplier="1" minavailable="2" />
-				<Price storeidentifier="merchantmine" sold="false" />
-				<Price storeidentifier="merchantarmory" multiplier="1" minavailable="2" />
-			</Price>
-			<Deconstruct time="40">
-				<Item identifier="ballisticfiber" amount="2" />
-			</Deconstruct>
-			<Fabricate suitablefabricators="fabricator" requiredtime="30">
-				<RequiredSkill identifier="weapons" level="40" />
-				<RequiredItem identifier="ballisticfiber" amount="3" />
-				<RequiredItem identifier="titaniumaluminiumalloy" />
-				<RequiredItem identifier="steel" amount="2" />
-			</Fabricate>
-			<Sprite name="Body Armour" texture="%ModDir%/Jobgear/bodyarmor.png" sourcerect="11,8,97,114" depth="0.6" origin="0.5,0.5" />
-			<Body width="85" height="90" density="25" />
-			<Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
-				<damagemodifier afflictionidentifiers="lacerations,bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="armourmedimpact" deflectprojectiles="true" />
-				<damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="armourmedimpact" deflectprojectiles="true" />
-				<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="armourmedimpact" deflectprojectiles="true" />
-				<sprite name="Security Vest Wearable" texture="%ModDir%/Jobgear/bodyarmor.png" limb="Torso" hidelimb="false" inheritscale="true" scale="1" inheritorigin="false" origin="0.5,0.565" inheritsourcerect="false" sourcerect="11,7,97,115" />
-			</Wearable>
-			<ItemContainer capacity="4" slotsperrow="4" keepopenwhenequipped="false" movableframe="true">
-				<Containable items="smallitem" excludeditems="toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
-			</ItemContainer>
-		</Item>
-		<Item name="" identifier="machinepistol" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-			<PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" />
-			<PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
-			<PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.2" />
-			<PreferredContainer secondary="armcab,weaponholder" />
-			<Price baseprice="200">
-				<Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-				<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
-				<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-				<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
-				<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-				<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
-			</Price>
-			<Deconstruct time="10">
-				<Item identifier="steel" />
-				<Item identifier="plastic" />
-			</Deconstruct>
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="10,741,116,55" depth="0.55" origin="0.5,0.5" />
-			<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="69,499,63,68" origin="0.5,0.5" />
-			<Body width="100" height="44" density="20" />
-			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,5" handle1="-36,-8.5" msg="ItemMsgPickUpSelect" />
-			<RangedWeapon reload="0.12" reloadnoskill="0.175" reloadskillrequirement="40" weapondamagemodifier="0.85" holdtrigger="true" barrelpos="54,9" spread="15" unskilledspread="35" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
-				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-				<Sound file="%ModDir%/Sounds/machinepistol1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-				<Sound file="%ModDir%/Sounds/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
-				<StatusEffect type="OnUse">
-					<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
-				</StatusEffect>
-				<StatusEffect type="OnUse" target="Contained">
-					<Use />
-				</StatusEffect>
-				<StatusEffect type="OnUse" target="This" Condition="-350" />
-				<StatusEffect type="Always" target="This" Condition="5">
-					<Conditional condition="gt 0" />
-				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
-				<StatusEffect type="OnUse">
-					<Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
-				</StatusEffect>
-				<StatusEffect type="OnUse" target="Contained">
-					<Use />
-				</StatusEffect>
-				<RequiredItems items="smgammo" type="Contained" msg="ItemMsgAmmoRequired" />
-				<RequiredSkill identifier="weapons" level="45" />
-			</RangedWeapon>
-			<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-				<Containable items="smgammo" hide="false" itempos="4.5,-6.5" rotation="10" />
-			</ItemContainer>
-			<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
-			<Quality>
-				<QualityStat stattype="FirepowerMultiplier" value="0.1" />
-			</Quality>
-			<SkillRequirementHint identifier="weapons" level="45" />
-		</Item>
-		<!--Ballistic Helmet-->
+
+			<!--Helmets-->
+
+			<!--Ballistic Helmet-->
 		<Item name="" identifier="ballistichelmet1" aliases="ballistichelmet" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
-			<Upgrade gameversion="0.9.6.0" scale="0.325" />
-			<PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
-			<PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
-			<PreferredContainer secondary="armcab" />
-			<Price baseprice="325" minleveldifficulty="5" maxavailable="3">
-				<Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-				<Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
-				<Price storeidentifier="merchantresearch" sold="false" />
-				<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
-				<Price storeidentifier="merchantmine" sold="false" />
-				<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
-			</Price>
-			<Deconstruct time="10">
-				<Item identifier="ballisticfiber" />
-			</Deconstruct>
-			<Fabricate suitablefabricators="fabricator" requiredtime="25">
-				<RequiredSkill identifier="weapons" level="35" />
-				<RequiredItem identifier="ballisticfiber" amount="2" />
-				<RequiredItem identifier="titaniumaluminiumalloy" />
-				<RequiredItem identifier="plastic" />
-			</Fabricate>
 			<Sprite name="Ballistic Helmet 1" texture="%ModDir%/Jobgear/helmets.png" sourcerect="0,324,86,77" depth="0.6" origin="0.5,0.5" />
 			<Body radius="30" density="25" />
+
 			<Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
 				<damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
 				<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -131,28 +20,14 @@
 				<sprite name="Ballistic Helmet 1 Wearable" texture="%ModDir%/Jobgear/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" hidewearablesoftype="Hair" sourcerect="0,324,86,77" origin="0.48,0.5" />
 			</Wearable>
 		</Item>
-		<!--Gunners Helmet-->
+
+			<!--###-->
+
+			<!--Gunners Helmet-->
 		<Item name="" identifier="ballistichelmet2" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
-			<PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
-			<PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
-			<PreferredContainer secondary="armcab" />
-			<Price baseprice="250">
-				<Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-				<Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
-				<Price storeidentifier="merchantresearch" sold="false" />
-				<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-				<Price storeidentifier="merchantmine" sold="false" />
-				<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-			</Price>
-			<Deconstruct time="10">
-				<Item identifier="ballisticfiber" />
-			</Deconstruct>
-			<Fabricate suitablefabricators="fabricator" requiredtime="20">
-				<RequiredSkill identifier="weapons" level="30" />
-				<RequiredItem identifier="ballisticfiber" amount="2" />
-			</Fabricate>
 			<Sprite name="Ballistic Helmet 2" texture="%ModDir%/Jobgear/helmets.png" sourcerect="97,321,85,92" depth="0.6" origin="0.5,0.5" />
 			<Body radius="30" density="25" />
+
 			<Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
 				<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
 				<damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -162,29 +37,14 @@
 				<sprite name="Ballistic Helmet 2 Wearable" texture="%ModDir%/Jobgear/helmets.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.67" sourcerect="97,321,85,92" origin="0.59,0.53" />
 			</Wearable>
 		</Item>
-		<!--Riot Helmet-->
+
+			<!--###-->
+
+			<!--Riot Helmet-->
 		<Item name="" identifier="ballistichelmet3" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
-			<PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
-			<PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
-			<PreferredContainer secondary="armcab" />
-			<Price baseprice="250">
-				<Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-				<Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
-				<Price storeidentifier="merchantresearch" sold="false" />
-				<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-				<Price storeidentifier="merchantmine" sold="false" />
-				<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-			</Price>
-			<Deconstruct time="10">
-				<Item identifier="ballisticfiber" />
-			</Deconstruct>
-			<Fabricate suitablefabricators="fabricator" requiredtime="20">
-				<RequiredSkill identifier="weapons" level="20" />
-				<RequiredItem identifier="ballisticfiber" />
-				<RequiredItem identifier="rubber" />
-			</Fabricate>
 			<Sprite name="Ballistic Helmet 3" texture="%ModDir%/Jobgear/helmets.png" sourcerect="209,320,98,98" depth="0.6" origin="0.5,0.5" />
 			<Body radius="30" density="25" />
+
 			<Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
 				<damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
 				<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -194,21 +54,45 @@
 			</Wearable>
 		</Item>
 
+
+			<!--++++++++++++++++++++++++++++++++++++-->
+			<!--Outerwear-->
+
+
+			<!--Body Armor-->
+		<Item name="" identifier="bodyarmor" category="Equipment" subcategory="Coalition" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+			<Sprite name="Body Armour" texture="%ModDir%/Jobgear/bodyarmor.png" sourcerect="11,8,97,114" depth="0.6" origin="0.5,0.5" />
+			<Body width="85" height="90" density="25" />
+
+			<Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+				<damagemodifier afflictionidentifiers="lacerations,bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="armourmedimpact" deflectprojectiles="true" />
+				<damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="armourmedimpact" deflectprojectiles="true" />
+				<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="armourmedimpact" deflectprojectiles="true" />
+				<sprite name="Security Vest Wearable" texture="%ModDir%/Jobgear/bodyarmor.png" limb="Torso" hidelimb="false" inheritscale="true" scale="1" inheritorigin="false" origin="0.5,0.565" inheritsourcerect="false" sourcerect="11,7,97,115" />
+			</Wearable>
+
+			<ItemContainer capacity="4" slotsperrow="4" keepopenwhenequipped="false" movableframe="true">
+				<Containable items="smallitem" excludeditems="toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+			</ItemContainer>
+		</Item>
+
+
+			<!--++++++++++++++++++++++++++++++++++++-->
+			<!--Backpacks-->
+	
+
+			<!--Utility Backpack-->
 		<Item name="" identifier="backpack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
-			<PreferredContainer primary="armcab" />
 			<InventoryIcon name="smolpaccinv" texture="%ModDir%/Jobgear/backpack.png" sourcerect="122,5,61,61" origin="0.5,0.5" />
 			<Sprite name="smolpaccground" texture="%ModDir%/Jobgear/backpack.png" depth="0.6" sourcerect="117,68,80,49" origin="0.5,0.5" />
 			<Body width="100" height="50" density="15" />
-			<Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
-				<Item identifier="organicfiber" amount="4" />
-				<Item identifier="plastic" amount="3" />
-				<Item identifier="steel" amount="2" />
-			</Fabricate>
-			<Price baseprice="400" sold="false" />
+
 			<ItemContainer capacity="12" depth="0.5">
 				<Containable items="smallitem,ammo,explosive" excludeditems="toolbelt,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack,bulkyweapon" />
 			</ItemContainer>
+
 			<Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+			
 			<Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
 				<sprite name="Assault Backpack Wearable" texture="%ModDir%/Jobgear/backpack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="5,7,94,89" origin="0.7110833,0.6007368" scale="0.6" />
 				<StatValue stattype="SwimmingSpeed" value="-0.1" />
