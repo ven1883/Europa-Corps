@@ -38,6 +38,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+  
+  <!--###-->
 
   <!--9x39mm round-->
   <Item 
@@ -89,6 +91,8 @@
     </Projectile>
 
   </Item>
+  
+  <!--###-->
 
   <Item 
     name="" 
@@ -141,6 +145,9 @@
     </Projectile>
 
   </Item>
+  
+  <!--###-->
+
   <!--SR-3 30 round mag-->
   <Item 
     name="" 
@@ -179,6 +186,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+  
+  <!--###-->
 
   <!--AS Val 40 round mag-->
   <Item 
@@ -218,6 +227,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+  
+  <!--###-->
 
   <!--9x19 AP round-->
   <Item 
@@ -269,6 +280,8 @@
 
   </Item>
   
+  <!--###-->
+  
   <!--9x19 30 round magazine-->
   <Item 
     name="" 
@@ -308,6 +321,8 @@
 
   </Item>
   
+  <!--###-->
+  
   <Item 
     name="" 
     identifier="scp_9mmsmgdrummag" 
@@ -346,6 +361,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+  
+  <!--###-->
+
   <!--25 round 11.43 box magazine-->
   <Item 
     name="" 
@@ -384,6 +402,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+  
+  <!--###-->
 
   <Item 
     name="" 

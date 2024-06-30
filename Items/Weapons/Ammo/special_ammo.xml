@@ -1,4 +1,7 @@
 <Items>
+  
+  <!--###-->
+
   <!--Chemthrower Napalm Fuel-->
   <Item 
     name="" 
@@ -50,6 +53,8 @@
 
   </Item>
 
+  <!--###-->
+
   <!--Blaster Cell-->
   <Item 
     name="" 
@@ -92,6 +97,9 @@
     </Quality>
 
   </Item>
+
+  <!--###-->
+
   <!--Blaster Round-->
   <Item 
     name="blasterbolt" 
@@ -160,6 +168,9 @@
     </Projectile>
 
   </Item>
+
+  <!--###-->
+
   <!--Multi Blaster Cell-->
 
   <Item 
@@ -203,6 +214,8 @@
     </Quality>
 
   </Item>
+
+  <!--###-->
 
   <!--Multi Blaster Round-->
 
@@ -277,6 +290,8 @@
 
   </Item>
 
+  <!--###-->
+
   <Item 
     name="" 
     identifier="scp_taucannonuranium" 
@@ -314,6 +329,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
 
   <Item 
     name="tauuraniumshot" 
@@ -386,6 +403,8 @@
     
   </Item>
 
+  <!--###-->
+
   <Item
     name="" 
     identifier="scp_taucannonthorium" 
@@ -424,6 +443,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
 
   <Item 
     name="tauthoriumshot" 
@@ -496,6 +517,8 @@
 
   </Item>
 
+  <!--###-->
+
   <Item 
     name="" 
     identifier="scp_taucannonfulgurium" 
@@ -554,6 +577,8 @@
 
   </Item>
   
+  <!--###-->
+
   <Item 
     name="taufulgshot" 
     identifier="scp_taufulgshot" 

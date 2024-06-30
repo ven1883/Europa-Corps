@@ -82,7 +82,7 @@
 
   </Item>
 
-  <!--++++++++++++++++++++++++++++++++++++-->
+  <!--###-->
 
   <Item 
     name="" 
@@ -165,7 +165,7 @@
 
   </Item>
 
-  <!--++++++++++++++++++++++++++++++++++++-->
+  <!--###-->
 
   <Item 
     name="" 
@@ -237,6 +237,9 @@
 
     </Projectile>
   </Item>
+
+  <!--###-->
+  
   <Item 
     name="" 
     description="" 
@@ -301,7 +304,7 @@
 
   </Item>
 
-  <!--++++++++++++++++++++++++++++++++++++-->
+  <!--###-->
 
   <Item 
     name="" 
@@ -362,6 +365,8 @@
 
 	  </Projectile>
   </Item>
+
+  <!--###-->
 
   <Item 
 		name="" 
@@ -424,6 +429,7 @@
 
   </Item>
 
+  <!--###-->
 
   <Item 
 		name="" 
@@ -483,6 +489,8 @@
 
   </Item>
 
+  <!--###-->
+
   <Item 
 		name="" 
 		identifier="scp_40mmgrenadedevil" 
@@ -540,8 +548,10 @@
 		</Projectile>
 
   </Item>
-	
-	<Item 
+
+  <!--###-->
+
+  <Item 
 		name="" 
 		identifier="scp_40mmgrenadehex" 
 		category="Weapon" subcategory="Chemical Weapons" 
@@ -600,6 +610,8 @@
 
   </Item>
 
+  <!--###-->
+
   <Item 
 		name="" 
 		identifier="scp_40mmdugrenade" 
@@ -642,6 +654,8 @@
 		</Projectile>
 
   </Item>
+
+  <!--###-->
 
   <Item 
 		name="" 
@@ -706,8 +720,10 @@
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 
   </Item>
+  
+  <!--###-->
 
-	  <!--40mm Shotshell-->
+	<!--40mm Shotshell-->
 	<Item 
 		name="" 
 		identifier="glshotshell" 
@@ -757,6 +773,8 @@
 		</Projectile>
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 	</Item>
+
+  <!--###-->
 
   <Item 
 		name="" 

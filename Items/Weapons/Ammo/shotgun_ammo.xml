@@ -55,7 +55,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
-  <!--++++++++++++++++++++++++++++++++++++-->
+  <!--###-->
 
   <!--8-Gauge Stun Shot-->
   <Item 
@@ -111,7 +111,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
-  <!--++++++++++++++++++++++++++++++++++++-->
+  <!--###-->
   
   <!--8-Gauge Shredder Slug-->
   <Item 
@@ -161,7 +161,7 @@
 
   </Item>
 
-  <!--++++++++++++++++++++++++++++++++++++-->
+  <!--###-->
   
   <!--8-Gauge Incendiary Shotshell-->
   <Item 
@@ -216,6 +216,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
 
   </Item>
+
+  <!--###-->
   
   <Item 
     name="" 
@@ -324,6 +326,8 @@
 
   </Item>
 
+  <!--###-->
+
   <Item 
     name="" 
     description="" 
@@ -378,6 +382,8 @@
 
   </Item>
 
+  <!--###-->
+
   <Item 
     name="" 
     description="" 
@@ -431,6 +437,8 @@
     </Projectile>
 
   </Item>
+
+  <!--###-->
 
   <Item 
     name="" 
@@ -488,7 +496,8 @@
 
   </Item>
 
-    <!--Shotgun Shell Projectiles-->
+  <!--###-->
+
   <Item 
     name="" 
     identifier="scp_12gbucksaiga" 
@@ -538,6 +547,9 @@
     </Projectile>
 
   </Item>
+
+  <!--###-->
+
   <!--5 round 12 gauge saiga magazine-->
   <Item 
     name="" 
@@ -578,6 +590,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
 
   <!--10 round 12 gauge saiga magazine-->
   <Item 
@@ -620,6 +634,8 @@
 
   </Item>
 
+  <!--###-->
+
   <!--20 round 12 gauge saiga drum-->
   <Item 
     name="" 
@@ -661,6 +677,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
   
   <!--23x75mm Shrapnel-25 Shell-->
   <Item 
@@ -718,6 +736,8 @@
     </Projectile>
 
   </Item>
+
+  <!--###-->
 
   <!--23x75mm Slug Shell-->
   <Item 

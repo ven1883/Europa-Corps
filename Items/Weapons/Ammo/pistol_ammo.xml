@@ -41,6 +41,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+  
+  <!--###-->
+
   <!--10mm 20-round magazine-->
   <Item 
     name="" 
@@ -82,6 +85,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+  
+  <!--###-->
+
   <!--10mm Pistol round-->
   <Item 
     name="" 
@@ -132,7 +138,10 @@
     </Projectile>
 
   </Item>
-    <!--12.7x55mm Round-->
+  
+  <!--###-->
+
+  <!--12.7x55mm Round-->
   <Item 
     name="" 
     identifier="scp_arevolverround" 
@@ -187,6 +196,8 @@
     </Projectile>
 
   </Item>
+  
+  <!--###-->
 
   <Item 
     name=""
@@ -243,6 +254,8 @@
     </Projectile>
     
   </Item>
+  
+  <!--###-->
 
   <!--9x33mmR AP round-->
   <Item 
@@ -296,8 +309,10 @@
     </Projectile>
 
   </Item>
+  
+  <!--###-->
 
-    <!--10.9x33mmR round-->
+  <!--10.9x33mmR round-->
   <Item 
     name="" 
     identifier="scp_44round" 
@@ -349,6 +364,9 @@
     </Projectile>
 
   </Item>
+  
+  <!--###-->
+
   <!--10.9x33mmR AP round-->
   <Item 
     name="" 
@@ -402,6 +420,8 @@
     </Projectile>
     
   </Item>
+  
+  <!--###-->
 
   <!--Deagle magazine-->
   <Item 
@@ -440,6 +460,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+  
+  <!--###-->
+
   <!--12.7x33 round-->
   <Item 
     name="" 
@@ -492,6 +515,8 @@
     </Projectile>
 
   </Item>
+  
+  <!--###-->
 
   <!--9x19 16 round magazine-->
   <Item 
@@ -530,8 +555,10 @@
 
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
+  
+  <!--###-->
 
-    <!--9x19 16 round magazine-->
+  <!--9x19 16 round magazine-->
   <Item
     name="" 
     identifier="scp_9mmapmag" 
@@ -569,6 +596,8 @@
     </ItemContainer>
 
   </Item>
+  
+  <!--###-->
   
   <!--9x19mm AP round-->
   <Item 
@@ -620,6 +649,8 @@
     </Projectile>
 
   </Item>
+  
+  <!--###-->
 
   <!--9x19mm Pistol AP round-->
   <Item 
@@ -672,6 +703,8 @@
     </Projectile>
 
   </Item>
+  
+  <!--###-->
 
   <!--9x19 30 round magazine-->
   <Item 
@@ -711,6 +744,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+  
+  <!--###-->
+
   <!--9x19mm SMG round-->
   <Item 
     name="" 
@@ -761,6 +797,9 @@
     </Projectile>
 
   </Item>
+  
+  <!--###-->
+
   <!--9x19mm Pistol round-->
   <Item 
     name="" 
@@ -809,8 +848,10 @@
     </Projectile>
     
   </Item>
+  
+  <!--###-->
 
-    <!--11.43x23 10 round magazine-->
+  <!--11.43x23 10 round magazine-->
   <Item 
     name="" 
     identifier="scp_45incendmag" 
@@ -850,6 +891,9 @@
 
 
   </Item>
+  
+  <!--###-->
+
   <!--11.43x23 AP round-->
   <Item 
     name="" 
@@ -898,6 +942,8 @@
       </StatusEffect>
 
     </Projectile>
+  
+    <!--###-->  
      
   </Item>
 

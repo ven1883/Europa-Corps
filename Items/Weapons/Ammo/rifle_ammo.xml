@@ -4,10 +4,7 @@
 
 <Items>
 
-			<!--Assault Rifle Ammo-->
-			<!--Magazines-->
-
-		<!--5.56x45 mag-->
+	<!--5.56x45 mag-->
 	<Item 
     identifier="scp_556mag" 
     name="" 
@@ -46,9 +43,9 @@
 
 	</Item>
 
-		<!--###-->
+	<!--###-->
 
-		<!--5.56x45 extended mag-->
+	<!--5.56x45 extended mag-->
   <Item
     identifier="scp_556extmag" 
     name=""
@@ -76,6 +73,8 @@
 		</ItemContainer>
 
 	</Item>
+
+  <!--###-->
 
   <!--5.56x45 M995 mag-->
   <Item 
@@ -118,6 +117,8 @@
 
   </Item>
 
+  <!--###-->
+
   <Item
     identifier="scp_556duramag"
     name=""
@@ -157,6 +158,8 @@
     </ItemContainer>
     
   </Item>
+
+  <!--###-->
 
   <!--5.56x45 Ds round-->
   <Item 
@@ -212,12 +215,9 @@
 
   </Item>
 
+	<!--###-->
 
-		<!--###-->
-		<!--Projectiles-->
-
-
-		<!--5.56x45 round-->
+	<!--5.56x45 round-->
 	<Item 
     name="5.56 Round" 
     identifier="scp_556projectile" 
@@ -268,9 +268,9 @@
 
 	</Item>
 
-		<!--###-->
+	<!--###-->
 
- 		<!--5.56x45 AP round-->
+ 	<!--5.56x45 AP round-->
 	<Item 
     name="" 
     identifier="scp_556approjectile" 
@@ -325,11 +325,9 @@
 
 	</Item>
 
-		<!--++++++++++++++++++++++++++++++++++++-->
-		<!--Caseless Ammo-->
-
-
-  		<!--30 round 6.5mm caseless magazine-->
+  <!--###-->
+  	
+  <!--30 round 6.5mm caseless magazine-->
 	<Item 
     name="" 
     identifier="scp_65mag" 
@@ -365,9 +363,9 @@
 		</ItemContainer>
 	</Item>
 
-		<!--###-->
+	<!--###-->
 
-		<!--30 Round 6.5mm Caseless Incendiary Magazine-->
+	<!--30 Round 6.5mm Caseless Incendiary Magazine-->
 	<Item 
     name="" 
     identifier="scp_65incendmag" 
@@ -403,12 +401,9 @@
 		</ItemContainer>
 	</Item>
 
+	<!--###-->
 
-		<!--###-->
-		<!--Projectiles-->
-
-
-  	<!--6.5x39 Caseless round-->
+  <!--6.5x39 Caseless round-->
 	<Item 
     name="" 
     identifier="scp_65projectile" 
@@ -517,7 +512,9 @@
     
 	</Item>
 
-    <!--10 round 12.7x55 magazine-->
+  <!--###-->
+
+  <!--10 round 12.7x55 magazine-->
   <Item 
     name="" 
     identifier="scp_ash12mag" 
@@ -556,6 +553,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
+
   <!--20 round 12.7x55 magazine-->
   <Item 
     name="" 
@@ -594,6 +594,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
 
   <!--12.7x55mm round-->
   <Item 
@@ -646,6 +648,8 @@
 
   </Item>
 
+  <!--###-->
+
   <Item 
     name="" 
     identifier="scp_127x55duraprojectile" 
@@ -697,6 +701,8 @@
 
   </Item>
 
+  <!--###-->
+
   <!--20 Round 7.62x51 box mag-->
   <Item 
     name="" 
@@ -736,6 +742,8 @@
 
   </Item>
 
+  <!--###-->
+
   <Item 
     name="" 
     identifier="scp_scarextmag" 
@@ -774,7 +782,9 @@
 
   </Item>
 
-    <!--7.62x51 Ds mag-->
+  <!--###-->
+
+  <!--7.62x51 Ds mag-->
   <Item 
     name="" 
     identifier="scp_scarduramag" 
@@ -811,6 +821,9 @@
     </ItemContainer>
 
   </Item>
+
+  <!--###-->
+
   <!--7.62x51mm Ds round-->
   <Item 
     name="" 
@@ -861,6 +874,8 @@
     </Projectile>
 
   </Item>
+
+  <!--###-->
 
   <!--7.62x51mm round-->
   <Item 
@@ -913,7 +928,9 @@
 
   </Item>
 
-    <!--AK-103 30 round mag-->
+  <!--###-->
+
+  <!--AK-103 30 round mag-->
   <Item 
     name="" 
     identifier="scp_akmag" 
@@ -953,6 +970,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
+
   <!--AK-103 75 round mag-->
   <Item 
     name="" 
@@ -993,6 +1013,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
+
   <!--AK-103 AP 30 round mag-->
   <Item 
     name="" 
@@ -1034,6 +1057,8 @@
 
   </Item>
 
+  <!--###-->
+
   <!--AK-103 DU 30 round mag-->
   <Item 
     name="" 
@@ -1071,6 +1096,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
+
   <!--7.62x39mm round-->
   <Item 
     name="" 
@@ -1123,6 +1151,8 @@
 
   </Item>
 
+  <!--###-->
+
   <!--7.62x39mm AP round-->
   <Item 
     name="" 
@@ -1174,6 +1204,8 @@
     </Projectile>
 
   </Item>
+
+  <!--###-->
 
   <!--7.62x39mm DU round-->
   <Item 
@@ -1229,6 +1261,8 @@
 
   </Item>
 
+  <!--###-->
+
   <!--AK-74 30 round mag-->
   <Item 
     name="" 
@@ -1268,6 +1302,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
 
   <!--AK-74 AP 30 round mag-->
   <Item 
@@ -1309,6 +1345,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
+
   <!--AK-74 DU 30 round mag-->
   <Item 
     name="" 
@@ -1350,6 +1389,8 @@
 
   </Item>
 
+  <!--###-->
+
   <!--AK-74 60 round mag-->
   <Item 
     name="" 
@@ -1390,6 +1431,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 
   </Item>
+
+  <!--###-->
 
   <!--5.45x39mm round-->
   <Item 
@@ -1442,6 +1485,8 @@
 
   </Item>
 
+  <!--###-->
+
   <!--5.45x39mm AP round-->
   <Item 
     name="" 
@@ -1493,6 +1538,8 @@
     </Projectile>
 
   </Item>
+
+  <!--###-->
 
   <!--5.45x39mm DU round-->
   <Item 
