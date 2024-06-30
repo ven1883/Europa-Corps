@@ -16,7 +16,7 @@
     impactsoundtag="impact_metal_light" 
     scale="0.5">
 
-    <Sprite texture="%ModDir:2764968387%/Ammo/improvedammo.png" depth="0.54" sourcerect="23,222,26,27" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="23,222,26,27" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
 
     <ItemContainer
@@ -51,8 +51,8 @@
     hideinmenus="true"
     scale="0.4">
 
-    <InventoryIcon texture="%ModDir:2764968387%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:2764968387%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 
     <Body width="40" height="15" density="40" />
 
@@ -103,8 +103,8 @@
     impactsoundtag="impact_metal_light" 
     scale="0.5">
 
-    <InventoryIcon texture="%ModDir%/Ammo/renegadeammo.png" sourcerect="155,11,75,48" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="79,219,27,42" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/renegadeammo.png" sourcerect="155,11,75,48" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="79,219,27,42" origin="0.5,0.5" />
 
     <Body width="30" height="40" density="50" />
 
@@ -145,8 +145,8 @@
     impactsoundtag="impact_metal_light" 
     scale="0.5">
 
-    <InventoryIcon texture="%ModDir%/Ammo/renegadeammo.png" sourcerect="243,23,56,36" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="51,219,27,42" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/renegadeammo.png" sourcerect="243,23,56,36" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="51,219,27,42" origin="0.5,0.5" />
 
     <Body width="30" height="40" density="50" />
 
@@ -188,7 +188,7 @@
     impactsoundtag="impact_metal_light" 
     scale="0.3">
 
-    <Sprite texture="%ModDir%/Ammo/ammo.png" depth="0.54" sourcerect="176,104,29,47" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/ammo.png" depth="0.54" sourcerect="176,104,29,47" origin="0.5,0.5" />
 
     <Body width="30" height="40" density="50" />
 
@@ -235,8 +235,8 @@
     impactsoundtag="impact_metal_light" 
     scale="0.4">
 
-    <InventoryIcon name="50bmgfmjinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="324,127,60,63" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="1,282,10,69" origin="0.5,0.5" />
+    <InventoryIcon name="50bmgfmjinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="324,127,60,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="1,282,10,69" origin="0.5,0.5" />
 
     <Body width="40" height="15" density="40" />
 
@@ -290,8 +290,8 @@
     impactsoundtag="impact_metal_light" 
     scale="0.4">
 
-    <InventoryIcon name="50bmgapiinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="450,129,60,63" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="12,282,11,69" origin="0.5,0.5" />
+    <InventoryIcon name="50bmgapiinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="450,129,60,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="12,282,11,69" origin="0.5,0.5" />
 
     <Body width="40" height="15" density="40" />
 
@@ -347,8 +347,8 @@
     impactsoundtag="impact_metal_light" 
     scale="0.4">
 
-    <InventoryIcon name="50bmgdurainv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="387,127,60,63" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="24,282,10,69" origin="0.5,0.5" />
+    <InventoryIcon name="50bmgdurainv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="387,127,60,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="24,282,10,69" origin="0.5,0.5" />
 
     <Body width="40" height="15" density="40" />
 
@@ -403,9 +403,9 @@
     scale="0.5" 
     impactsoundtag="impact_metal_heavy">
     
-    <InventoryIcon name="piercingshellinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="255,2,38,39" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="3,5,219,31" depth="0.55" origin="0.5,0.5" />
-    <BrokenSprite name="piercingshellproj" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="240,163,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
+    <InventoryIcon name="piercingshellinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="255,2,38,39" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="3,5,219,31" depth="0.55" origin="0.5,0.5" />
+    <BrokenSprite name="piercingshellproj" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="240,163,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
 
     <Body width="215" height="30" density="30" />
 
@@ -476,7 +476,7 @@
 
       <StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
 
-        <sound file="%ModDir%/Sounds/rocketgrenadebang.ogg" volume="1.25" range="10000" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="1.25" range="10000" />
 
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
 
@@ -503,9 +503,9 @@
     scale="0.5" 
     impactsoundtag="impact_metal_heavy">
     
-    <InventoryIcon name="dushellinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="331,100,40,40" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="236,268,219,31" depth="0.55" origin="0.5,0.5" />
-    <BrokenSprite name="dushellproj" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="239,209,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
+    <InventoryIcon name="dushellinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="331,100,40,40" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="236,268,219,31" depth="0.55" origin="0.5,0.5" />
+    <BrokenSprite name="dushellproj" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="239,209,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
     
     <Body width="215" height="30" density="30" />
 
@@ -544,7 +544,7 @@
         <Conditional condition="lte 100" />
         <Conditional condition="gte 75" />
 
-        <sound file="%ModDir%/Sounds/breach.ogg" volume="2" range="2500" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/breach.ogg" volume="2" range="2500" />
         
         <Explosion 
           range="100.0" 
@@ -615,7 +615,7 @@
 
       <StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
 
-        <sound file="%ModDir%/Sounds/rocketgrenadebang.ogg" volume="1" range="5000" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="1" range="5000" />
 
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
 
@@ -641,8 +641,8 @@
     scale="0.5" 
     impactsoundtag="impact_metal_heavy">
 
-    <InventoryIcon name="duflechinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="373,100,40,41" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="236,304,219,31" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="duflechinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="373,100,40,41" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="236,304,219,31" depth="0.55" origin="0.5,0.5" />
 
     <Body width="215" height="30" density="30" />
 
@@ -691,7 +691,7 @@
 
         <SpawnItem identifier="scp_duflech" spawnposition="This" count="20" aimspread="15" rotationtype="Collider" rotation="0" />
 
-        <sound file="%ModDir%/Sounds/rocketgrenadebang.ogg" volume="1" range="5000" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="1" range="5000" />
 
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
 
@@ -714,7 +714,7 @@
     sonarsize="1" 
     hideinmenus="true">
 
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
 
     <Body width="75" height="10" density="20" />
 
@@ -748,7 +748,7 @@
       </StatusEffect>
 
       <StatusEffect type="OnImpact" target="This">
-        <sound file="%ModDir%/Sounds/breach.ogg" volume="1" range="1800" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/breach.ogg" volume="1" range="1800" />
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="1" velocitymin="100" velocitymax="2000" scalemin="0.5" scalemax="0.75" />
         <ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="15" velocitymin="100" velocitymax="2000" scalemin="0.5" scalemax="0.75" />
       </StatusEffect>
@@ -772,9 +772,9 @@
     scale="0.5" 
     impactsoundtag="impact_metal_heavy">
 
-    <InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="294,54,38,39" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,118,219,31" depth="0.55" origin="0.5,0.5" />
-    <BrokenSprite name="physpiercingshellproj" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="239,184,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
+    <InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="294,54,38,39" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,118,219,31" depth="0.55" origin="0.5,0.5" />
+    <BrokenSprite name="physpiercingshellproj" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="239,184,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
 
     <Body width="215" height="30" density="30" />
 
@@ -838,7 +838,7 @@
       </StatusEffect>
 
       <StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
-        <sound file="%ModDir%/Sounds/rocketgrenadebang.ogg" volume="2.5" range="10000" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="2.5" range="10000" />
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
         <Use />
       </StatusEffect>
@@ -861,8 +861,8 @@
     scale="0.5" 
     impactsoundtag="impact_metal_heavy">
 
-    <InventoryIcon name="thermoinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="246,47,45,44" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,74,214,43" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="thermoinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="246,47,45,44" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,74,214,43" depth="0.55" origin="0.5,0.5" />
 
     <Body width="215" height="30" density="35" />
     
@@ -885,7 +885,7 @@
         <Affliction identifier="stun" strength="15" />
       </Attack>
 
-      <sound file="%ModDir%/Sounds/nuke.ogg" type="OnBroken" volume="1.8" range="50000" dontmuffle="true" forceplay="true" />
+      <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nuke.ogg" type="OnBroken" volume="1.8" range="50000" dontmuffle="true" forceplay="true" />
 
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
 
@@ -946,8 +946,8 @@
     scale="0.5" 
     impactsoundtag="impact_metal_heavy">
     
-    <InventoryIcon name="nukemirvinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="289,429,60,60" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="237,341,218,44" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="nukemirvinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="289,429,60,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="237,341,218,44" depth="0.55" origin="0.5,0.5" />
 
     <Body width="215" height="30" density="30" />
 
@@ -998,7 +998,7 @@
 
         <SpawnItem identifier="scp_mirvshell" spawnposition="This" count="6" aimspread="30" rotationtype="Collider" rotation="0" />
 
-        <sound file="%ModDir%/Sounds/rocketgrenadebang.ogg" volume="1" range="5000" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="1" range="5000" />
 
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
 
@@ -1021,7 +1021,7 @@
     sonarsize="2.5" 
     hideinmenus="true">
 
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
     <Body width="100" height="10" density="20" />
 
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -1050,7 +1050,7 @@
       </StatusEffect>
 
       <StatusEffect type="OnImpact" target="This" condition="-100">
-        <sound file="%ModDir%/Sounds/nukesmall.ogg" volume="0.8" range="10000" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nukesmall.ogg" volume="0.8" range="10000" />
         <Explosion
           range="1000.0"
           structuredamage="300" itemdamage="1000" ballastfloradamage="1000" 
@@ -1095,8 +1095,8 @@
     scale="0.5" 
     impactsoundtag="impact_metal_heavy">
 
-    <InventoryIcon name="thermoinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="283,99,45,44" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,288,216,42" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="thermoinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="283,99,45,44" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,288,216,42" depth="0.55" origin="0.5,0.5" />
 
     <Body width="215" height="30" density="35" />
 
@@ -1119,7 +1119,7 @@
         <Affliction identifier="stun" strength="15" />
       </Attack>
 
-      <sound file="%ModDir%/Sounds/erdbang.ogg" type="OnBroken" volume="2" range="25000" dontmuffle="true" forceplay="true" />
+      <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/erdbang.ogg" type="OnBroken" volume="2" range="25000" dontmuffle="true" forceplay="true" />
 
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
 
@@ -1193,7 +1193,7 @@
 
       <StatusEffect type="Always" target="This">
         <ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particlespersecond="50" velocitymin="0" velocitymax="50" scalemin="6" scalemax="12" distancemin="0" distancemax="500" />
-        <Sound file="%ModDir%/Sounds/geigercounter.ogg" type="always" range="3000" volume="1" loop="true" />
+        <Sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/geigercounter.ogg" type="always" range="3000" volume="1" loop="true" />
       </StatusEffect>
 
       <StatusEffect type="Always" target="This" condition="-1" />
@@ -1226,7 +1226,7 @@
     <ItemComponent>
 
       <StatusEffect type="Always" target="This">
-        <Sound file="%ModDir%/Sounds/geigercounter.ogg" type="always" range="700" volume="1" loop="true" />
+        <Sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/geigercounter.ogg" type="always" range="700" volume="1" loop="true" />
       </StatusEffect>
 
       <StatusEffect type="Always" target="This" condition="-1" />
@@ -1255,8 +1255,8 @@
     scale="0.5" 
     impactsoundtag="impact_metal_heavy">
 
-    <InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="336,54,43,42" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,153,219,45" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="336,54,43,42" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,153,219,45" depth="0.55" origin="0.5,0.5" />
     
     <Body width="215" height="30" density="30" />
 
@@ -1376,7 +1376,7 @@
       </StatusEffect>
 
       <StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
-        <sound file="%ModDir%/Sounds/rocketgrenadebang.ogg" volume="3.5" range="10000" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="3.5" range="10000" />
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
         <Use />
       </StatusEffect>
@@ -1400,8 +1400,8 @@
     impactsoundtag="impact_metal_heavy" 
     hideinmenus="true">
     
-    <InventoryIcon name="tsarinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="227,427,60,60" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="4,433,217,43" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="tsarinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="227,427,60,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="4,433,217,43" depth="0.55" origin="0.5,0.5" />
 
     <Body width="215" height="30" density="35" />
     
@@ -1424,7 +1424,7 @@
         <Affliction identifier="stun" strength="15" />
       </Attack>
 
-      <sound file="%ModDir%/Sounds/nuke.ogg" type="OnBroken" volume="3" range="50000" dontmuffle="true" forceplay="true" />
+      <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nuke.ogg" type="OnBroken" volume="3" range="50000" dontmuffle="true" forceplay="true" />
 
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
 
@@ -1490,8 +1490,8 @@
     hideinmenus="true" 
     impactsoundtag="impact_metal_heavy">
     
-    <InventoryIcon name="ruineddoomsdayinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="379,55,45,44" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,201,217,47" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="ruineddoomsdayinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="379,55,45,44" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,201,217,47" depth="0.55" origin="0.5,0.5" />
 
     <Body width="215" height="30" density="35" />
 
@@ -1517,14 +1517,14 @@
       <StatusEffect type="Always" target="This" Condition="-0.125" />
 
       <StatusEffect type="Always" target="This">
-        <sound file="%ModDir%/Sounds/geigerloop.ogg" range="600.0" loop="true" volume="1.25" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/geigerloop.ogg" range="600.0" loop="true" volume="1.25" />
       </StatusEffect>
 
       <StatusEffect type="Always" target="This">
         <Conditional condition="lte 10" />
         <Conditional conditon="gt 0" />
 
-        <sound file="%ModDir%/Sounds/suitalarm.ogg" range="1000" volume="0.25" loop="true" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/suitalarm.ogg" range="1000" volume="0.25" loop="true" />
 
         <ParticleEmitter particle="heavysmoke" particleburstinterval="0.075" particlespersecond="2" scalemin="0.5" scalemax="1.5" />
       </StatusEffect>
@@ -1537,7 +1537,7 @@
         <Affliction identifier="radiationsickness" strength="0.5" />
       </StatusEffect>
 
-      <sound file="%ModDir%/Sounds/nuke.ogg" type="OnBroken" volume="1.5" range="50000" dontmuffle="true" />
+      <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nuke.ogg" type="OnBroken" volume="1.5" range="50000" dontmuffle="true" />
 
       <StatusEffect type="OnBroken" target="This" setvalue="true">
 
@@ -1610,8 +1610,8 @@
 
     <Upgrade gameversion="0.20.4.0" scale="0.4" />
     
-    <InventoryIcon texture="%ModDir%/Ammo/railgunshells.png" sourcerect="175,365,45,45" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="4,341,167,89" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="175,365,45,45" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="4,341,167,89" depth="0.55" origin="0.5,0.5" />
 
     <Body width="128" height="85" density="50" />
 
@@ -1630,7 +1630,7 @@
 
       <StatusEffect type="OnBroken">
 
-        <sound file="%ModDir%/Sounds/nuke.ogg" range="20000" volume="2.5" forceplay="true" />
+        <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nuke.ogg" range="20000" volume="2.5" forceplay="true" />
 
         <Explosion 
           range="8000.0" 
@@ -1719,8 +1719,8 @@
     hideinmenus="true" 
     scale="0.4">
 
-    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 
     <Body width="40" height="15" density="40" />
 
@@ -1769,8 +1769,8 @@
     impactsoundtag="impact_metal_light" 
     scale="0.5">
 
-    <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="171,255,31,47" origin="0.5,0.5" />
-    <InventoryIcon name="cinv" texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="206,255,60,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="171,255,31,47" origin="0.5,0.5" />
+    <InventoryIcon name="cinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="206,255,60,60" origin="0.5,0.5" />
 
     <Body width="30" height="40" density="50" />
 
@@ -1808,8 +1808,8 @@
     hideinmenus="true" 
     scale="0.4">
 
-    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 
     <Body width="40" height="15" density="40" />
 

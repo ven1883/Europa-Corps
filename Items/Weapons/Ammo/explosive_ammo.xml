@@ -219,7 +219,7 @@
     	    <Affliction identifier="radiationsickness" strength="30" />
     	    <Affliction identifier="stun" strength="3" />
     	  </Explosion>
-    	  <sound file="%ModDir%/Sounds/breach.ogg" volume="1" range="1500" />
+    	  <sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/breach.ogg" volume="1" range="1500" />
       </StatusEffect>
 
       <StatusEffect type="OnImpact" target="UseTarget"> 
@@ -719,8 +719,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Ammo/40mmgl.png" sourcerect="2,2,35,35" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/40mmgl.png" sourcerect="0,38,32,16" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/40mmgl.png" sourcerect="2,2,35,35" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/40mmgl.png" sourcerect="0,38,32,16" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="15" />
 
