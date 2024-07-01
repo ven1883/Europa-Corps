@@ -344,6 +344,7 @@
   
   <!--###-->
 
+  <!--.50 BMG Durasteel-->
   <Item 
     name="" 
     identifier="scp_50bmgdura" 
@@ -400,6 +401,7 @@
 
   <!--###-->
 
+  <!--Railgun Piercing Shell-->
   <Item 
     name="" 
     identifier="scp_railgunpiercingshell" 
@@ -501,6 +503,7 @@
 
   <!--###-->
 
+  <!--railgun depleted uranium shell-->
   <Item 
     name="" 
     identifier="scp_railgundushell"
@@ -642,6 +645,7 @@
 
   <!--###-->
 
+  <!--railgun DU flechette shell-->
   <Item 
     name="" 
     identifier="scp_railgunduflechetteshell" 
@@ -721,6 +725,7 @@
 
   <!--###-->
 
+  <!--railgun depleted uranium flechette projectile-->
   <Item 
     name="" 
     identifier="scp_duflech" 
@@ -778,6 +783,7 @@
   
   <!--###-->
 
+  <!--railgun physicorium piercing shell-->
   <Item 
     name="" 
     identifier="scp_railgunphyspiercingshell" 
@@ -870,6 +876,7 @@
 
   <!--###-->
 
+  <!--thermonuclear railgun shell-->
   <Item 
     name="" 
     identifier="scp_railgunthermoshell" 
@@ -954,6 +961,7 @@
 
   <!--###-->
 
+  <!--railgun nuclear MIRV shell-->
   <Item 
     name="" 
     identifier="scp_railgunnukemirvshell" 
@@ -1036,6 +1044,7 @@
 
   <!--###-->
 
+  <!--railgun nuclear MIRV cluster bomblet-->
   <Item 
     name="" 
     identifier="scp_mirvshell" 
@@ -1110,6 +1119,7 @@
 
   <!--###-->
 
+  <!--irradiator railgun shell-->
   <Item 
     name="" 
     identifier="scp_railgunerdshell" 
@@ -1203,6 +1213,7 @@
 
   <!--###-->
 
+  <!--railgun irradiator fallout-->
   <Item 
     name="scp_erdfallout" 
     identifier="scp_erdfallout" 
@@ -1239,6 +1250,7 @@
 
   <!--###-->
 
+  <!--40mm mini nuke fallout-->
   <Item 
     name="scp_nukegrenadefallout" 
     identifier="scp_nukegrenadefallout"
@@ -1274,6 +1286,7 @@
 
   <!--###-->
 
+  <!--sub buster shell-->
   <Item 
     name="" 
     identifier="scp_railgunbunkerbuster" 
@@ -1422,6 +1435,7 @@
 
   <!--###-->
 
+  <!--prototype thermonuclear railgun shell-->
   <Item 
     name="" 
     identifier="scp_tsarshell" 
@@ -1514,6 +1528,7 @@
 
   <!--###-->
 
+  <!--TODO: ADD TO LOCALIZATION FILES, THIS HAS NO PROPER NAME OR DESCRIPTION ENTRY-->
   <Item 
     name="Strange Railgun Shell" 
     description="A very ominous shell rife with the infamous clicking of Ionizing Radiation apparent. The impact fuse is completely dead and as a result is unusable without replacing it. Heat also appears to be building and is actively making the case hotter and hotter." 
@@ -1630,6 +1645,7 @@
 
   <!--###-->
 
+  <!--thermonuclear depth charge-->
   <Item
     name="" 
     identifier="scp_thermodepthcharge" 
@@ -1708,6 +1724,7 @@
 
   <!--###-->
   
+  <!--microgun box-->
   <Item 
     name="" 
     identifier="scp_microgunmag" 
@@ -1751,6 +1768,7 @@
 
   <!--###-->
 
+  <!---->
   <Item 
     name="microgun Projectile" 
     identifier="scp_microproj" 
@@ -1802,6 +1820,7 @@
 
   <!--###-->
   
+  <!--portable coilgun clip-->
   <Item 
     name="" 
     identifier="scp_coilgunclip" 
