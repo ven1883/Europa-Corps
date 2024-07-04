@@ -4,7 +4,9 @@
 
 <Items>
 
-  <!--anti-sub fragmentation grenade-->
+			<!--Anti-Sub Rockets-->
+
+		<!--anti-sub fragmentation grenade-->
 	<Item 
 		name="" 
 		description="" 
@@ -83,9 +85,9 @@
 
 	</Item>
 
-  <!--###-->
+ 		<!--###-->
 
-  <!--anti-sub physicorium grenade-->
+		<!--anti-sub physicorium grenade-->
 	<Item 
 	name="" 
 	description="" 
@@ -435,9 +437,81 @@
 
 	</Item>
 
-	<!--###-->
 
-	<!--40mm preso latex grenade-->
+			<!--++++++++++++++++++++++++++++++++++++-->
+			<!--Disposable Rockets-->
+
+
+			<!--disposable anti-sub grenade launcher-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_at4proj" 
+		category="Weapon" subcategory="Grenades and Explosives" 
+		maxstacksize="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" spritecolor="75,75,75" />
+
+		<Body width="200" height="40" density="30" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="50.0" 
+			sticktocharacters="false">
+
+			<Attack 
+				structuredamage="75" 
+				penetration="0.5">
+
+				<Affliction identifier="explosiondamage" strength="100" />
+			</Attack>
+			
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+			
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+				
+				<Explosion 
+					range="600.0" 
+					ballastfloradamage="80" structuredamage="5" levelwalldamage="15" itemdamage="15" 
+					force="10.0" 
+					severlimbsprobability="1">
+				
+					<Affliction identifier="bleeding" strength="50" />
+					<Affliction identifier="explosiondamage" strength="75" />
+					<Affliction identifier="stun" strength="1.5" />
+				</Explosion>
+			
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+			
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="weldspark" particleamount="30" scalemin="1" scalemax="2.5" velocitymin="6000" velocitymax="8000" anglemin="-360" anglemax="360" highqualitycollisiondetection="true" />
+				<ParticleEmitter particle="impactfirearm" particleamount="1" scalemin="10" scalemax="15" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+		</Projectile>
+		
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--40mm Grenades-->
+
+
+		<!--40mm preso latex grenade-->
 	<Item 
 		name="" 
 		identifier="scp_40mmgrenadelatex" 
@@ -783,72 +857,6 @@
 			
 		</Projectile>
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
-	</Item>
-
-	<!--###-->
-
-	<!--disposable anti-sub grenade launcher-->
-	<Item 
-		name="" 
-		description="" 
-		identifier="scp_at4proj" 
-		category="Weapon" subcategory="Grenades and Explosives" 
-		maxstacksize="1" 
-		interactthroughwalls="true" 
-		cargocontaineridentifier="metalcrate" 
-		tags="smallitem,rpgammo" 
-		Scale="0.5" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true">
-
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" spritecolor="75,75,75" />
-
-		<Body width="200" height="40" density="30" />
-
-		<Projectile 
-			characterusable="false" 
-			launchimpulse="50.0" 
-			sticktocharacters="false">
-
-			<Attack 
-				structuredamage="75" 
-				penetration="0.5">
-
-				<Affliction identifier="explosiondamage" strength="100" />
-			</Attack>
-			
-			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
-			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
-			
-			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-				
-				<Explosion 
-					range="600.0" 
-					ballastfloradamage="80" structuredamage="5" levelwalldamage="15" itemdamage="15" 
-					force="10.0" 
-					severlimbsprobability="1">
-				
-					<Affliction identifier="bleeding" strength="50" />
-					<Affliction identifier="explosiondamage" strength="75" />
-					<Affliction identifier="stun" strength="1.5" />
-				</Explosion>
-			
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
-			
-				<Remove />
-			</StatusEffect>
-
-			<StatusEffect type="OnActive" target="This">
-				<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
-			</StatusEffect>
-
-			<StatusEffect type="OnImpact" target="UseTarget">
-				<ParticleEmitter particle="weldspark" particleamount="30" scalemin="1" scalemax="2.5" velocitymin="6000" velocitymax="8000" anglemin="-360" anglemax="360" highqualitycollisiondetection="true" />
-				<ParticleEmitter particle="impactfirearm" particleamount="1" scalemin="10" scalemax="15" velocitymin="0" velocitymax="0" />
-			</StatusEffect>
-
-		</Projectile>
-		
 	</Item>
 
 </Items>
