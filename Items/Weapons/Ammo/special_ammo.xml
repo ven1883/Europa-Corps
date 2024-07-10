@@ -653,4 +653,99 @@
 		</Projectile>
 	</Item>
 	
+	<!--portable coilgun clip-->
+	<Item 
+		name="" 
+		identifier="scp_coilgunclip" 
+		description="" 
+		cargocontaineridentifier="scp_ammocrate" 
+		tags="smallitem,handheldcoilgunammo" 
+		category="Weapon" subcategory="Coalition" 
+		maxstacksize="6" maxstacksizecharacterinventory="2" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="171,255,31,47" origin="0.5,0.5" />
+		<InventoryIcon name="cinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="206,255,60,60" origin="0.5,0.5" />
+
+		<Body width="30" height="40" density="50" />
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_coilgunproj"
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="scp_coilgunproj" />
+
+			<StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+				<SpawnItem identifier="scp_coilgunproj" spawnposition="ThisInventory" />
+			</StatusEffect>
+
+		</ItemContainer>
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+	</Item>
+
+	<!--###-->
+
+	<!--Coilgun Bolt-->
+	<Item 
+		name="" 
+		identifier="scp_coilgunproj" 
+		interactthroughwalls="true" 
+		tags="smallitem,handheldcoilgunammo" 
+		Scale="0.3" 
+		category="Weapon" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true" 
+		scale="0.4">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" 
+			removeonhit="true" 
+			maxtargetstohit="3">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="50,50,180,255" scalemultiplier="1,0.75" />
+
+			<Attack 
+				structuredamage="1.0" itemdamage="2"
+				targetforce="1.75" 
+				severlimbsprobability="0.05" 
+				penetration="0.85">
+
+				<Affliction identifier="bleeding" strength="25" />
+				<Affliction identifier="bleeding" strength="15" probability="0.15" />
+				<Affliction identifier="gunshotwound" strength="45" />
+				<Affliction identifier="gunshotwound" strength="25" probability="0.15" />
+				<Affliction identifier="stun" strength="0.2" probability="0.175" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+				<ParticleEmitter particle="weldspark" particleamount="16" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="2" scalemax="5" drawontop="true" colormultiplier="255,200,225,180" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+			
+		</Projectile>
+
+	</Item>
+
 </Items>
