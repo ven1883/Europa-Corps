@@ -4,10 +4,23 @@
 
 <Items>
 
-			<!--Anti-Sub Rockets-->
+		<!--Anti-Sub Rockets-->
 
-		<!--anti-sub fragmentation grenade-->
-	<Item name="" description="" identifier="scp_rpg7he" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="4" maxstacksizecharacterinventory="2" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rpgammo" Scale="0.5" impactsoundtag="impact_metal_light">
+	<!--anti-sub fragmentation grenade-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7he" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="4" 
+		maxstacksizecharacterinventory="2" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
 		<InventoryIcon name="rpg7heinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,0,66,67" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" />
 		<Body width="200" height="40" density="30" />
@@ -72,7 +85,20 @@
  		<!--###-->
 
 	<!--anti-sub physicorium grenade-->
-	<Item name="" description="" identifier="scp_rpg7phys" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="2" maxstacksizecharacterinventory="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rpgammo" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7phys" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
 		<InventoryIcon name="rpg7physinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="134,0,66,67" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,131,197,24" depth="0.55" origin="0.5,0.5" />
 		<Body width="200" height="40" density="30" />
@@ -140,10 +166,22 @@
 		<!--###-->
 
 	<!--anti-sub DU grenade-->
-	<Item name="" description="" identifier="scp_rpg7du" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="2" maxstacksizecharacterinventory="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rpgammo" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7du" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+		
 		<InventoryIcon name="rpg7duinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="337,1,66,67" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,212,197,24" depth="0.55" origin="0.5,0.5" />
-
 		<BrokenSprite name="duwarheadbroken" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="215,214,60,17" depth="0.55" origin="0.5,0.5" maxcondition="10" />
 		<Body width="200" height="40" density="30" />
 
@@ -203,10 +241,22 @@
 	<!--###-->
 
 	<!--anti-sub preso-latex grenade-->
-	<Item name="" description="" identifier="scp_rpg7latex" category="Weapon" subcategory="Chemical Weapons" maxstacksize="2" maxstacksizecharacterinventory="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rpgammo" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7latex" 
+		category="Weapon" 
+		subcategory="Chemical Weapons" 
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
 		<InventoryIcon name="rpg7latexinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="200,0,66,67" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,160,197,24" depth="0.55" origin="0.5,0.5" />
-
 		<Body width="190" height="40" density="30" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -253,7 +303,20 @@
 	<!--###-->
 
 	<!--anti-sub devils blood grenade-->
-	<Item name="" description="" identifier="scp_rpg7devilblood" category="Weapon" subcategory="Chemical Weapons" maxstacksize="2" maxstacksizecharacterinventory="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rpgammo" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7devilblood" 
+		category="Weapon" 
+		subcategory="Chemical Weapons"
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+		
 		<InventoryIcon name="rpg7devilinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="267,0,67,70" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,186,197,24" depth="0.55" origin="0.5,0.5" />
 		<Body width="190" height="40" density="30" />
@@ -299,7 +362,20 @@
 	<!--###-->
 
 	<!--anti-sub incendiary grenade-->
-	<Item name="" description="" identifier="scp_rpg7incend" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="2" maxstacksizecharacterinventory="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rpgammo" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7incend" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+		
 		<InventoryIcon name="rpg7incendinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="67,0,66,67" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,103,197,25" depth="0.55" origin="0.5,0.5" />
 		<Body width="190" height="40" density="30" />
@@ -343,12 +419,25 @@
 	</Item>
 
 
-			<!--++++++++++++++++++++++++++++++++++++-->
-			<!--Disposable Rockets-->
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Disposable Rockets-->
 
 
-			<!--disposable anti-sub grenade launcher-->
-	<Item name="" description="" identifier="scp_at4proj" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rpgammo" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
+	<!--disposable anti-sub grenade launcher-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_at4proj" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true">
+
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" spritecolor="75,75,75" />
 		<Body width="200" height="40" density="30" />
 
@@ -398,7 +487,19 @@
 
 
 		<!--40mm preso latex grenade-->
-	<Item name="" identifier="scp_40mmgrenadelatex" category="Weapon" subcategory="Chemical Weapons" maxstacksize="4" maxstacksizecharacterinventory="2" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Item 
+		name="" 
+		identifier="scp_40mmgrenadelatex" 
+		category="Weapon" 
+		subcategory="Chemical Weapons" 
+		maxstacksize="4" 
+		maxstacksizecharacterinventory="2" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
 		<InventoryIcon name="40mmlatexground" texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="52,-2,42,42" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="1,0,41,17" depth="0.55" origin="0.5,0.5" />
 		<Body width="38" height="15" density="30" />
@@ -442,7 +543,19 @@
 	<!--###-->
 
 	<!--40mm devils blood grenade-->
-	<Item name="" identifier="scp_40mmgrenadedevil" category="Weapon" subcategory="Chemical Weapons" maxstacksize="4" maxstacksizecharacterinventory="2" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Item 
+		name="" 
+		identifier="scp_40mmgrenadedevil" 
+		category="Weapon" 
+		subcategory="Chemical Weapons" 
+		maxstacksize="4" 
+		maxstacksizecharacterinventory="2" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
 		<InventoryIcon name="40mmdevilground" texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="94,-2,42,42" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="1,18,41,17" depth="0.55" origin="0.5,0.5" />
 		<Body width="38" height="15" density="30" />
@@ -608,7 +721,19 @@
 
 
 	<!--40mm du slug-->
-	<Item name="" identifier="scp_40mmdugrenade" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="16" maxstacksizecharacterinventory="4" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Item 
+		name="" 
+		identifier="scp_40mmdugrenade" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="16" 
+		maxstacksizecharacterinventory="4" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
 		<InventoryIcon name="40mmduground" texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="227,-2,42,42" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="1,70,41,17" depth="0.55" origin="0.5,0.5" />
 
