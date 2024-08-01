@@ -5,6 +5,7 @@
 <Items>
 
 		<!--9x19mm Ammo-->
+		<!--Pistol Ammo-->
 
 		<!--9x19 16 round magazine-->
 	<Item 
@@ -87,100 +88,6 @@
 
 		<!--###-->
 
-		<!--9x19 30 round AP magazine-->
-	<Item 
-		name="" 
-		identifier="scp_9mmsmgapmag" 
-		description="" 
-		tags="smallitem,9mmammo,ehaammo,9mmsmgmag" 
-		category="Weapon" subcategory="Coalition" 
-		maxstacksize="12" maxstacksizecharacterinventory="3" 
-		cargocontaineridentifier="scp_ammocrate" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
-		
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="56,142,37,66" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
-
-		<ItemContainer 
-			hideitems="true" 
-			capacity="1" 
-			drawinventory="false" 
-			canbeselected="false"
-			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_9x19capprojectile" 
-			removecontaineditemsondeconstruct="true" 
-			containedstateindicatorstyle="bullet">
-
-			<Containable items="scp_9x19capprojectile" />
-
-			<StatusEffect type="OnUse" target="This" condition="-3.4" disabledeltatime="true">
-				<SpawnItem identifier="scp_9x19capprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
-			</StatusEffect>
-
-		</ItemContainer>
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-
-	</Item>
-
-		<!--###-->
-
-		<!--9x19mm AP round-->
-	<Item 
-		name="" 
-		identifier="scp_9x19capprojectile" 
-		tags="smallitem,9mmammo,pistolammoitem" 
-		Scale="0.3"
-		category="Weapon" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true" 
-		scale="0.4">
-
-		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-
-		<Body width="40" height="15" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-
-		<Projectile 
-			characterusable="false" 
-			hitscan="true" 
-			removeonhit="true">
-
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,135" scalemultiplier="1,0.6" />
-
-			<Attack 
-				structuredamage="1.0" itemdamage="3" 
-				targetforce="0.2" 
-				severlimbsprobability="0.05" 
-				penetration="0.15">
-
-				<Affliction identifier="bleeding" strength="5" />
-				<Affliction identifier="bleeding" strength="5" probability="0.25" />
-				<Affliction identifier="gunshotwound" strength="12" />
-				<Affliction identifier="explosiondamage" strength="6" probability="0.1" />
-				<Affliction identifier="stun" strength="0.05" />
-			</Attack>
-			
-			<StatusEffect type="OnImpact" target="UseTarget">
-				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-			</StatusEffect>
-
-			<StatusEffect type="OnImpact" target="UseTarget">
-				<Conditional entitytype="eq Structure" />
-				<Conditional hastag="eq door" />
-			</StatusEffect>
-		
-		</Projectile>
-
-	</Item>
-
-		<!--###-->
-
 		<!--9x19mm Pistol AP round-->
 	<Item 
 		name="" 
@@ -222,59 +129,6 @@
 			<StatusEffect type="OnImpact" target="UseTarget">
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
 				<ParticleEmitter particle="weldspark" particleamount="3" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,200,225,180" />
-			</StatusEffect>
-
-			<StatusEffect type="OnImpact" target="UseTarget">
-				<Conditional entitytype="eq Structure" />
-				<Conditional hastag="eq door" />
-			</StatusEffect>
-
-		</Projectile>
-
-	</Item>
-
-		<!--###-->
-
-		<!--9x19mm SMG round-->
-	<Item 
-		name="" 
-		identifier="scp_9x19projectile" 
-		tags="smallitem,9mmammo,pistolammoitem" 
-		Scale="0.3" 
-		category="Weapon" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true" 
-		scale="0.4">
-
-		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-
-		<Body width="40" height="15" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-
-		<Projectile 
-			characterusable="false" 
-			hitscan="true" 
-			removeonhit="true">
-
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,135" scalemultiplier="1,0.6" />
-
-			<Attack 
-				structuredamage="1.0" 
-				targetforce="1" 
-				itemdamage="0.1" 
-				severlimbsprobability="0.05">
-				
-				<Affliction identifier="bleeding" strength="8" />
-				<Affliction identifier="bleeding" strength="6" probability="0.2" />
-				<Affliction identifier="gunshotwound" strength="10" />
-				<Affliction identifier="gunshotwound" strength="5" probability="0.1" />
-				<Affliction identifier="stun" strength="0.1" probability="0.1" />
-			</Attack>
-
-			<StatusEffect type="OnImpact" target="UseTarget">
-				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
 			</StatusEffect>
 
 			<StatusEffect type="OnImpact" target="UseTarget">
@@ -337,9 +191,63 @@
 		
 	</Item>
 
+		<!--###-->
+
+		<!--9x19mm AP round-->
+	<Item 
+		name="" 
+		identifier="scp_9x19capprojectile" 
+		tags="smallitem,9mmammo,pistolammoitem" 
+		Scale="0.3"
+		category="Weapon" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true" 
+		scale="0.4">
+
+		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" 
+			removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,135" scalemultiplier="1,0.6" />
+
+			<Attack 
+				structuredamage="1.0" itemdamage="3" 
+				targetforce="0.2" 
+				severlimbsprobability="0.05" 
+				penetration="0.15">
+
+				<Affliction identifier="bleeding" strength="5" />
+				<Affliction identifier="bleeding" strength="5" probability="0.25" />
+				<Affliction identifier="gunshotwound" strength="12" />
+				<Affliction identifier="explosiondamage" strength="6" probability="0.1" />
+				<Affliction identifier="stun" strength="0.05" />
+			</Attack>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+		
+		</Projectile>
+
+	</Item>
+
 
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--10mm Auto-->
+		<!--Assault Pistol Ammo-->
 
 
 		<!--10mm 10-round magazine-->
@@ -487,6 +395,7 @@
 
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--.45 ACP / 11.43x23mm-->
+		<!--Heavy Pistol Ammo-->
 
 
 		<!--11.43x23 10 round Incendiary magazine-->
@@ -870,6 +779,7 @@
 
 
 		<!--12.7x55mm Round-->
+		<!--Assault Revolver Round-->
 	<Item 
 		name="" 
 		identifier="scp_arevolverround" 
@@ -928,6 +838,7 @@
 		<!--###-->
 
 		<!--12.7x55mm durasteel round-->
+		<!--Assault Revolver Durasteel Round-->
 	<Item 
 		name=""
 		identifier="scp_arevolverduraround" 
