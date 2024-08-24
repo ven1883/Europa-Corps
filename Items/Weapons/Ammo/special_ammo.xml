@@ -1,8 +1,110 @@
 <Items>
 	
-	<!--###-->
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Projectiles-->
+
+
+		<!--portable coilgun clip-->
+	<Item 
+		name="" 
+		identifier="scp_coilgunclip" 
+		description="" 
+		cargocontaineridentifier="scp_ammocrate" 
+		tags="smallitem,handheldcoilgunammo" 
+		category="Weapon" subcategory="Coalition" 
+		maxstacksize="6" maxstacksizecharacterinventory="2" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="171,255,31,47" origin="0.5,0.5" />
+		<InventoryIcon name="cinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="206,255,60,60" origin="0.5,0.5" />
+
+		<Body width="30" height="40" density="50" />
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_coilgunproj"
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="scp_coilgunproj" />
+
+			<StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+				<SpawnItem identifier="scp_coilgunproj" spawnposition="ThisInventory" />
+			</StatusEffect>
+
+		</ItemContainer>
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+	</Item>
+
+		<!--###-->
+
+		<!--Coilgun Bolt-->
+	<Item 
+		name="" 
+		identifier="scp_coilgunproj" 
+		interactthroughwalls="true" 
+		tags="smallitem,handheldcoilgunammo" 
+		Scale="0.3" 
+		category="Weapon" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true" 
+		scale="0.4">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" 
+			removeonhit="true" 
+			maxtargetstohit="3">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="50,50,180,255" scalemultiplier="1,0.75" />
+
+			<Attack 
+				structuredamage="1.0" itemdamage="2"
+				targetforce="1.75" 
+				severlimbsprobability="0.05" 
+				penetration="0.85">
+
+				<Affliction identifier="bleeding" strength="25" />
+				<Affliction identifier="bleeding" strength="15" probability="0.15" />
+				<Affliction identifier="gunshotwound" strength="45" />
+				<Affliction identifier="gunshotwound" strength="25" probability="0.15" />
+				<Affliction identifier="stun" strength="0.2" probability="0.175" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+				<ParticleEmitter particle="weldspark" particleamount="16" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="2" scalemax="5" drawontop="true" colormultiplier="255,200,225,180" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+			
+		</Projectile>
+
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Incendiary-->
 	
-	<!--Chemthrower Napalm Fuel-->
+
+		<!--Chemthrower Napalm Fuel-->
 	<Item 
 		name="" 
 		identifier="sgt_napalm" 
@@ -53,9 +155,12 @@
 
 	</Item>
 
-	<!--###-->
 
-	<!--Blaster Cell-->
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Energy Weapons-->
+
+
+		<!--Blaster Cell-->
 	<Item 
 		name="" 
 		identifier="sgt_hbcell" 
@@ -98,9 +203,55 @@
 
 	</Item>
 
-	<!--###-->
+		<!--###-->
 
-	<!--Blaster Round-->
+		<!--Multi Blaster Cell-->
+
+	<Item 
+		name="" 
+		identifier="sgt_hbcell2"
+		Category="Weapon" 
+		Tags="smallitem,hbcell,ehaammo" 
+		maxstacksize="2" 
+		cargocontaineridentifier="metalcrate" 
+		scale="0.5">
+
+		<InventoryIcon texture="%ModDir%/Ammo/blastercell.png" sourcerect="59,0,21,21" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Ammo/blastercell.png" depth="0.55" sourcerect="40,1,18,68" origin="0.5,0.5" />
+
+		<Body radius="6" height="55" density="20" />
+
+		<Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect"/>
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			itemrotation="90" 
+			drawinventory="false" 
+			canbeselected="false" 
+			SpawnWithId="sgt_blasterbolt2" 
+			removecontaineditemsondeconstruct="true" 
+			showcontainedstateindicator="true" 
+			ShowConditionInContainedStateIndicator="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="sgt_blasterbolt2" />
+
+			<StatusEffect type="OnUse" target="This" condition="-100.0" disabledeltatime="true">
+				<SpawnItem identifiers="sgt_blasterbolt2" spawnposition="ThisInventory" />
+			</StatusEffect>
+
+		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="Condition" value="1.0" />
+		</Quality>
+
+	</Item>
+
+		<!--###-->
+
+		<!--Blaster Round-->
 	<Item 
 		name="blasterbolt" 
 		identifier="sgt_blasterbolt" 
@@ -169,56 +320,9 @@
 
 	</Item>
 
-	<!--###-->
+		<!--###-->
 
-	<!--Multi Blaster Cell-->
-
-	<Item 
-		name="" 
-		identifier="sgt_hbcell2"
-		Category="Weapon" 
-		Tags="smallitem,hbcell,ehaammo" 
-		maxstacksize="2" 
-		cargocontaineridentifier="metalcrate" 
-		scale="0.5">
-
-		<InventoryIcon texture="%ModDir%/Ammo/blastercell.png" sourcerect="59,0,21,21" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/blastercell.png" depth="0.55" sourcerect="40,1,18,68" origin="0.5,0.5" />
-
-		<Body radius="6" height="55" density="20" />
-
-		<Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect"/>
-
-		<ItemContainer 
-			hideitems="true" 
-			capacity="1" 
-			itemrotation="90" 
-			drawinventory="false" 
-			canbeselected="false" 
-			SpawnWithId="sgt_blasterbolt2" 
-			removecontaineditemsondeconstruct="true" 
-			showcontainedstateindicator="true" 
-			ShowConditionInContainedStateIndicator="true" 
-			containedstateindicatorstyle="bullet">
-
-			<Containable items="sgt_blasterbolt2" />
-
-			<StatusEffect type="OnUse" target="This" condition="-100.0" disabledeltatime="true">
-				<SpawnItem identifiers="sgt_blasterbolt2" spawnposition="ThisInventory" />
-			</StatusEffect>
-
-		</ItemContainer>
-
-		<Quality>
-			<QualityStat stattype="Condition" value="1.0" />
-		</Quality>
-
-	</Item>
-
-	<!--###-->
-
-	<!--Multi Blaster Round-->
-
+		<!--Multi Blaster Round-->
 	<Item 
 		name="blasterbolt2" 
 		identifier="sgt_blasterbolt2" 
@@ -290,9 +394,12 @@
 
 	</Item>
 
-	<!--###-->
 
-	<!--particle accelerator uranium ammo-->
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Particle Accelerator Ammo-->
+
+
+		<!--particle accelerator uranium ammo-->
 	<Item 
 		name="" 
 		identifier="scp_taucannonuranium" 
@@ -331,9 +438,112 @@
 
 	</Item>
 
-	<!--###-->
+		<!--###-->
 
-	<!--particle accelerator uranium projectile-->
+		<!--particle accelerator thorium ammo-->
+	<Item
+		name="" 
+		identifier="scp_taucannonthorium" 
+		description="" 
+		tags="smallitem,tauammo,ehaammo" 
+		category="Weapon" 
+		subcategory="Prototype" 
+		cargocontaineridentifier="metalcrate" 
+		maxstacksize="1" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="128,215,18,68" origin="0.5,0.5" />
+		<InventoryIcon name="tauthorinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="208,218,35,34" origin="0.5,0.5" />
+
+		<Body width="30" height="40" density="50" />
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1"
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_tauthoriumshot" 
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="scp_tauthoriumshot" />
+
+			<StatusEffect type="OnUse" target="This" condition="-12.5" disabledeltatime="true">
+				<SpawnItem identifier="scp_tauthoriumshot" spawnposition="ThisInventory" />
+			</StatusEffect>
+
+		</ItemContainer>
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+	</Item>
+
+		<!--###-->
+
+		<!--particle accelerator fulgurium ammo-->
+	<Item 
+		name="" 
+		identifier="scp_taucannonfulgurium" 
+		description="" 
+		tags="smallitem,tauammo,ehaammo" 
+		category="Weapon" subcategory="Prototype" 
+		cargocontaineridentifier="metalcrate" 
+		maxstacksize="1" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="147,215,18,68" origin="0.5,0.5" />
+		<InventoryIcon name="taufulginv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="244,218,35,34" origin="0.5,0.5" />
+
+		<Body width="30" height="40" density="50" />
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_taufulgshot" 
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="scp_taufulgshot" />
+
+			<StatusEffect type="OnUse" target="This" condition="-20" disabledeltatime="true">
+				<SpawnItem identifier="scp_taufulgshot" spawnposition="ThisInventory" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="NearbyCharacters" disabledeltatime="true" range="600">
+
+				<Explosion 
+					range="1000.0" 
+					structuredamage="0" itemdamage="0" ballastfloradamage="0" 
+					force="0.0" 
+					severlimbsprobability="0" 
+					flames="false" smoke="false" 
+					camerashake="50" camerashakerange="2000" 
+					flashrange="2000" flashduration="1" 
+					screencolor="255,255,255,255" screencolorrange="2000" 
+					screencolorduration="1.0">
+
+					<Affliction identifier="explosiondamage" strength="5" />
+					<Affliction identifier="radiationsickness" amount="40" />
+					<Affliction identifier="organdamage" amount="5" />
+				</Explosion>
+
+			</StatusEffect>
+
+		</ItemContainer>
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+	</Item>
+	
+		<!--###-->
+
+		<!--particle accelerator uranium projectile-->
 	<Item 
 		name="tauuraniumshot" 
 		identifier="scp_tauuraniumshot" 
@@ -405,51 +615,9 @@
 		
 	</Item>
 
-	<!--###-->
+		<!--###-->
 
-	<!--particle accelerator thorium ammo-->
-	<Item
-		name="" 
-		identifier="scp_taucannonthorium" 
-		description="" 
-		tags="smallitem,tauammo,ehaammo" 
-		category="Weapon" 
-		subcategory="Prototype" 
-		cargocontaineridentifier="metalcrate" 
-		maxstacksize="1" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
-
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="128,215,18,68" origin="0.5,0.5" />
-		<InventoryIcon name="tauthorinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="208,218,35,34" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
-
-		<ItemContainer 
-			hideitems="true" 
-			capacity="1"
-			drawinventory="false" 
-			canbeselected="false" 
-			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_tauthoriumshot" 
-			removecontaineditemsondeconstruct="true" 
-			containedstateindicatorstyle="bullet">
-
-			<Containable items="scp_tauthoriumshot" />
-
-			<StatusEffect type="OnUse" target="This" condition="-12.5" disabledeltatime="true">
-				<SpawnItem identifier="scp_tauthoriumshot" spawnposition="ThisInventory" />
-			</StatusEffect>
-
-		</ItemContainer>
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-
-	</Item>
-
-	<!--###-->
-
-	<!--particle accelerator thorium projectile-->
+		<!--particle accelerator thorium projectile-->
 	<Item 
 		name="tauthoriumshot" 
 		identifier="scp_tauthoriumshot" 
@@ -521,70 +689,9 @@
 
 	</Item>
 
-	<!--###-->
+		<!--###-->
 
-	<!--particle accelerator fulgurium ammo-->
-	<Item 
-		name="" 
-		identifier="scp_taucannonfulgurium" 
-		description="" 
-		tags="smallitem,tauammo,ehaammo" 
-		category="Weapon" subcategory="Prototype" 
-		cargocontaineridentifier="metalcrate" 
-		maxstacksize="1" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
-
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="147,215,18,68" origin="0.5,0.5" />
-		<InventoryIcon name="taufulginv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="244,218,35,34" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
-
-		<ItemContainer 
-			hideitems="true" 
-			capacity="1" 
-			drawinventory="false" 
-			canbeselected="false" 
-			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_taufulgshot" 
-			removecontaineditemsondeconstruct="true" 
-			containedstateindicatorstyle="bullet">
-
-			<Containable items="scp_taufulgshot" />
-
-			<StatusEffect type="OnUse" target="This" condition="-20" disabledeltatime="true">
-				<SpawnItem identifier="scp_taufulgshot" spawnposition="ThisInventory" />
-			</StatusEffect>
-
-			<StatusEffect type="OnUse" target="NearbyCharacters" disabledeltatime="true" range="600">
-
-				<Explosion 
-					range="1000.0" 
-					structuredamage="0" itemdamage="0" ballastfloradamage="0" 
-					force="0.0" 
-					severlimbsprobability="0" 
-					flames="false" smoke="false" 
-					camerashake="50" camerashakerange="2000" 
-					flashrange="2000" flashduration="1" 
-					screencolor="255,255,255,255" screencolorrange="2000" 
-					screencolorduration="1.0">
-
-					<Affliction identifier="explosiondamage" strength="5" />
-					<Affliction identifier="radiationsickness" amount="40" />
-					<Affliction identifier="organdamage" amount="5" />
-				</Explosion>
-
-			</StatusEffect>
-
-		</ItemContainer>
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-
-	</Item>
-	
-	<!--###-->
-
-	<!-- particle accelerator fulgurium projectile-->
+		<!-- particle accelerator fulgurium projectile-->
 	<Item 
 		name="taufulgshot" 
 		identifier="scp_taufulgshot" 
@@ -653,99 +760,4 @@
 		</Projectile>
 	</Item>
 	
-	<!--portable coilgun clip-->
-	<Item 
-		name="" 
-		identifier="scp_coilgunclip" 
-		description="" 
-		cargocontaineridentifier="scp_ammocrate" 
-		tags="smallitem,handheldcoilgunammo" 
-		category="Weapon" subcategory="Coalition" 
-		maxstacksize="6" maxstacksizecharacterinventory="2" 
-		impactsoundtag="impact_metal_light" 
-		scale="0.5">
-
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="171,255,31,47" origin="0.5,0.5" />
-		<InventoryIcon name="cinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="206,255,60,60" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="50" />
-
-		<ItemContainer 
-			hideitems="true" 
-			capacity="1" 
-			drawinventory="false" 
-			canbeselected="false" 
-			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_coilgunproj"
-			removecontaineditemsondeconstruct="true" 
-			containedstateindicatorstyle="bullet">
-
-			<Containable items="scp_coilgunproj" />
-
-			<StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
-				<SpawnItem identifier="scp_coilgunproj" spawnposition="ThisInventory" />
-			</StatusEffect>
-
-		</ItemContainer>
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-
-	</Item>
-
-	<!--###-->
-
-	<!--Coilgun Bolt-->
-	<Item 
-		name="" 
-		identifier="scp_coilgunproj" 
-		interactthroughwalls="true" 
-		tags="smallitem,handheldcoilgunammo" 
-		Scale="0.3" 
-		category="Weapon" 
-		impactsoundtag="impact_metal_light" 
-		hideinmenus="true" 
-		scale="0.4">
-
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-
-		<Body width="40" height="15" density="40" />
-
-		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-
-		<Projectile 
-			characterusable="false" 
-			hitscan="true" 
-			removeonhit="true" 
-			maxtargetstohit="3">
-
-			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="50,50,180,255" scalemultiplier="1,0.75" />
-
-			<Attack 
-				structuredamage="1.0" itemdamage="2"
-				targetforce="1.75" 
-				severlimbsprobability="0.05" 
-				penetration="0.85">
-
-				<Affliction identifier="bleeding" strength="25" />
-				<Affliction identifier="bleeding" strength="15" probability="0.15" />
-				<Affliction identifier="gunshotwound" strength="45" />
-				<Affliction identifier="gunshotwound" strength="25" probability="0.15" />
-				<Affliction identifier="stun" strength="0.2" probability="0.175" />
-			</Attack>
-
-			<StatusEffect type="OnImpact" target="UseTarget">
-				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
-				<ParticleEmitter particle="weldspark" particleamount="16" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="2" scalemax="5" drawontop="true" colormultiplier="255,200,225,180" />
-			</StatusEffect>
-
-			<StatusEffect type="OnImpact" target="UseTarget">
-				<Conditional entitytype="eq Structure" />
-				<Conditional hastag="eq door" />
-			</StatusEffect>
-			
-		</Projectile>
-
-	</Item>
-
 </Items>
