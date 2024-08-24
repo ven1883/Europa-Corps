@@ -1,13 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="" identifier="scp_armory" description="" tags="locker,container,securecontainer,secarmcab" linkable="false" spritecolor="255,255,255,255" pickdistance="150" waterproof="true" scale="0.5">
+
     <Sprite texture="%ModDir%/Misc/containers.png" depth="0.84" sourcerect="0,0,346,371" origin="0.5,0.5" />
-    <ItemContainer capacity="45" slotsperrow="5" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+
+    <ItemContainer 
+      capacity="45" slotsperrow="5" 
+      canbeselected="true" 
+      hideitems="true" 
+      msg="ItemMsgInteractSelect">
+
       <GuiFrame relativesize="0.24,0.64" anchor="Center" style="ItemUI" />
       <RequiredItem items="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" ignoreineditor="true" />
       <Containable items="smallitem,mediumitem" />
     </ItemContainer>
+
   </Item>
+
+  <!--###-->
+
   <Item name="" identifier="scp_engineeringcab" tags="locker,container,securecontainer,storagecab,engcab" linkable="true" spritecolor="255,255,255,255" pickdistance="150" waterproof="true" scale="0.5">
     <Sprite texture="%ModDir%/Misc/containers.png" depth="0.84" sourcerect="350,0,509,399" origin="0.5,0.5" />
     <ItemContainer capacity="45" slotsperrow="5" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
@@ -15,72 +26,84 @@
       <Containable items="smallitem,mediumitem" />
     </ItemContainer>
   </Item>
+
+  <!--###-->
+
   <Item name="" identifier="scp_leadbox" category="Equipment" tags="mediumitem,mobilecontainer,tool,radiationshielding" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
-    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" amount="1" spawnprobability="0.05" />
-    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.01" />
-    <Deconstruct time="10">
-      <Item identifier="lead" amount="2" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="mechanical" level="45" />
-      <Item identifier="toolbox" />
-      <Item identifier="lead" amount="3" />
-      <Item identifier="rubber" amount="3" />
-    </Fabricate>
-    <Price baseprice="475" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" minavailable="1" />
-      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="1" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="1" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="1" />
-    </Price>
+
     <Sprite texture="%ModDir%/Misc/ammocrates.png" sourcerect="349,0,94,74" origin="0.5,0.5" depth="0.6" />
+
     <Body width="90" height="60" density="20" />
-    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1.5" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">
-      <Attack structuredamage="0" itemdamage="1" targetimpulse="2">
+
+    <MeleeWeapon 
+      slots="RightHand,LeftHand" 
+      controlpose="true" 
+      aimpos="45,10" handle1="0,18" holdangle="90" reload="1.5" range="50" 
+      combatpriority="6" 
+      msg="ItemMsgPickUpSelect">
+
+      <Attack 
+        structuredamage="0" itemdamage="1" 
+        targetimpulse="2">
+
         <Affliction identifier="blunttrauma" strength="6" />
         <Affliction identifier="stun" strength="0.8" />
+
         <StatusEffect type="OnUse" target="UseTarget">
           <Conditional entitytype="eq Character" />
+
           <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
           <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
         </StatusEffect>
+
       </Attack>
+
     </MeleeWeapon>
-    <ItemContainer capacity="4" keepopenwhenequipped="true" movableframe="true">
+    
+    <ItemContainer 
+      capacity="4" 
+      keepopenwhenequipped="true" 
+      movableframe="true">
+
       <Containable items="smallitem" />
     </ItemContainer>
+
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+
   </Item>
+
+  <!--###-->
+
   <Item name="" description="" identifier="scp_contrabandcontainer" tags="concealed,smallitem" category="Equipment" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
-    <Price baseprice="500" soldeverywhere="false">
-      <Price storeidentifier="outpost" multiplier="1.1" minavailable="1" />
-      <Price storeidentifier="city" multiplier="0.9" minavailable="2" />
-      <Price storeidentifier="research" multiplier="1" minavailable="1" />
-      <Price storeidentifier="military" multiplier="1" minavailable="1" />
-      <Price storeidentifier="mine" multiplier="0.8" minavailable="3" />
-    </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
-      <RequiredSkill identifier="mechanical" level="30" />
-      <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem identifier="plastic" amount="3" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
+
     <Sprite name="contrabandcontainer" texture="%ModDir%/Misc/containers.png" sourcerect="3,409,50,74" depth="0.85" origin="0.5,0.5" />
+
     <Body width="50" height="74" density="40" />
-    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="3.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="false">
+
+    <Holdable 
+      selectkey="Select" pickkey="Use" 
+      slots="Any,RightHand,LeftHand" 
+      msg="ItemMsgDetachWrench" 
+      PickingTime="3.0" 
+      aimpos="65,-10" handle1="0,0" 
+      attachable="true" 
+      aimable="false">
+
       <RequiredItem identifier="wrench" type="Equipped" />
+
       <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
         <Conditional attached="false" />
       </StatusEffect>
+
     </Holdable>
+
     <ItemContainer capacity="3" canbeselected="true" hideitems="true" slotsperrow="5" allowuioverlap="true">
       <Containable items="smallitem" excludeditems="toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,duffelbag,ammocrate" />
+      
       <StatusEffect type="OnContained" target="This" setvalue="true" drawinventory="false" />
       <StatusEffect type="OnNotContained" target="This" setvalue="true" drawinventory="true" />
     </ItemContainer>
+
   </Item>
+
 </Items>

@@ -10,84 +10,78 @@
 	<!--+++++++-->
 	
   <Item name="" identifier="scp_vodka" description="" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,petfood2" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer secondary="wreckmedcab,abandonedmedcab" amount="2" spawnprobability="0.175" />
-    <PreferredContainer secondary="abandonedcrewcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.5" notcampaign="true" />
-    <PreferredContainer primary="medfabcab" secondary="medcab" />
-    <Price baseprice="175" minleveldifficulty="3">
-      <Price storeidentifier="merchantoutpost" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="4" />
-      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="4" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.1" minavailable="2" />
-      <Price storeidentifier="merchantmine" multiplier="1.1" minavailable="8" />
-    </Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30">
-      <RequiredSkill identifier="medical" level="35" />
-      <RequiredSkill identifier="helm" level="20" />
-      <RequiredItem identifier="ethanol" amount="4" />
-      <RequiredItem identifier="plastic" amount="2" />
-    </Fabricate>
+
     <InventoryIcon name="vodkainv" texture="Sprites/EHA_medical.png" sourcerect="118,367,57,58" origin="0.5,0.5" />
     <Sprite texture="Sprites/EHA_medical.png" sourcerect="328,90,21,72" depth="0.6" origin="0.5,0.5" />
+
     <Body width="30" height="55" density="20" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.5" msg="ItemMsgPickUpSelect">
+    
+    <Holdable 
+      canBeCombined="true" removeOnCombined="true" 
+      slots="Any,RightHand,LeftHand" 
+      aimpos="40,5" handle1="-5,0" holdangle="220" 
+      reload="1.5" 
+      msg="ItemMsgPickUpSelect">
+
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+
       <StatusEffect type="OnUse">
         <Sound file="Effects/Sounds/ethanoldrink.ogg" range="600" />
       </StatusEffect>
+
       <StatusEffect type="OnUse" target="UseTarget" delay="2" duration="20">
         <ReduceAffliction identifier="radiationsickness" amount="0.75" />
         <ReduceAffliction identifier="poison" amount="0.5" />
         <ReduceAffliction identifier="oxygenlow" amount="5" />
       </StatusEffect>
+
       <StatusEffect type="OnUse" target="UseTarget" delay="10" duration="10">
         <Affliction identifier="drunk" amount="4" />
         <ReduceAffliction identifier="psychosis" amount="4" />
         <ReduceAffliction identifier="hallucinating" amount="4" />
       </StatusEffect>
+
       <StatusEffect type="OnUse" target="UseTarget" delay="20" duration="20">
         <Affliction identifier="nausea" amount="2.0" />
       </StatusEffect>
+
       <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
         <Affliction identifier="psychosisresistance" amount="600" />
       </StatusEffect>
+
       <StatusEffect type="OnBroken" target="This">
         <Remove />
       </StatusEffect>
+
     </Holdable>
+
     <AiTarget sightrange="1000" static="true" />
+
   </Item>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<!--TODO: Remove/Reduce damage healing. Some very minor, slow healing may be fine, but 35 total is too much.-->
   <Item name="" identifier="scp_pomegrenadedrink" description="" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,petfood2" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer secondary="wreckmedcab,abandonedmedcab" amount="2" spawnprobability="0.175" />
-    <PreferredContainer secondary="abandonedcrewcab" minamount="1" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="crewcab" amount="1" spawnprobability="0.5" notcampaign="true" />
-    <PreferredContainer primary="medfabcab" secondary="medcab" />
-    <Price baseprice="275">
-      <Price storeidentifier="merchantoutpost" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="4" />
-      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="8" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.1" minavailable="4" />
-      <Price storeidentifier="merchantmine" multiplier="1.1" minavailable="6" />
-    </Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="30">
-      <RequiredSkill identifier="medical" level="35" />
-      <RequiredSkill identifier="helm" level="20" />
-      <RequiredItem identifier="scp_vodka" mincondition="0.5" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="creepingorange" />
-    </Fabricate>
+
     <InventoryIcon name="vodkainv" texture="Sprites/EHA_medical.png" sourcerect="347,383,59,59" origin="0.5,0.5" />
     <Sprite texture="Sprites/EHA_medical.png" sourcerect="328,175,21,72" depth="0.6" origin="0.5,0.5" />
+
     <Body width="30" height="55" density="20" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="-5,0" holdangle="220" reload="1.5" msg="ItemMsgPickUpSelect">
+
+    <Holdable 
+      canBeCombined="true" removeOnCombined="true" 
+      slots="Any,RightHand,LeftHand" 
+      aimpos="40,5" handle1="-5,0" holdangle="220" 
+      reload="1.5" 
+      msg="ItemMsgPickUpSelect">
+
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+
       <StatusEffect type="OnUse">
         <Sound file="Effects/Sounds/ethanoldrink.ogg" range="600" />
       </StatusEffect>
+
       <StatusEffect type="OnUse" target="UseTarget" delay="2" duration="35">
         <ReduceAffliction identifier="radiationsickness" amount="0.5" />
         <ReduceAffliction identifier="poison" amount="0.5" />
@@ -95,22 +89,29 @@
         <ReduceAffliction identifier="damage" amount="1" />
         <ReduceAffliction identifier="oxygenlow" amount="2.5" />
       </StatusEffect>
+
       <StatusEffect type="OnUse" target="UseTarget" delay="10" duration="15">
         <Affliction identifier="drunk" amount="1.5" />
         <ReduceAffliction identifier="psychosis" amount="4" />
         <ReduceAffliction identifier="hallucinating" amount="4" />
       </StatusEffect>
+
       <StatusEffect type="OnUse" target="UseTarget" delay="20" duration="20">
         <Affliction identifier="nausea" amount="1.1" />
       </StatusEffect>
+
       <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
         <Affliction identifier="psychosisresistance" amount="600" />
       </StatusEffect>
+
       <StatusEffect type="OnBroken" target="This">
         <Remove />
       </StatusEffect>
+
     </Holdable>
+
     <AiTarget sightrange="1000" static="true" />
+    
   </Item>
 	
 
