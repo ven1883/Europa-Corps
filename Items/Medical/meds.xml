@@ -44,7 +44,6 @@
 
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="10">
 				<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-				
 				<ReduceAffliction identifier="burn" amount="2.5" />
 				<!-- organdamage is declared not damage so have to compensate -->
 				<ReduceAffliction identifier="organdamage" amount="2.5" />
