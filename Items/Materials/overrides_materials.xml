@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--nobody gives a shit about this file!!!!-->
+
+<Override>
+	<Items>
+        <Item name="" identifier="magnesium" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="smallitem,munition_propulsion" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+            <PreferredContainer primary="storagecab" minamount="2" maxamount="6" spawnprobability="0.4" />
+            <PreferredContainer primary="medfabcab" minamount="2" maxamount="6" spawnprobability="0.5" />
+            <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="6" spawnprobability="0.15" />
+            <PreferredContainer secondary="locker" />
+            <Price baseprice="80" soldeverywhere="false">
+                <Price locationtype="outpost" multiplier="1.3" minavailable="1" maxavailable="6" />
+                <Price locationtype="city" multiplier="1.25" minavailable="4" maxavailable="10" />
+                <Price locationtype="research" multiplier="1.1" minavailable="8" maxavailable="16" />
+                <Price locationtype="military" multiplier="1.1" minavailable="7" maxavailable="12" />
+                <Price locationtype="mine" multiplier="0.8" minavailable="4" maxavailable="18" />
+            </Price>
+            <Fabricate suitablefabricators="chemstation" displayname="chemrefined" requiredtime="25" amount="4">
+                <RequiredSkill identifier="medical" level="50" />
+                <RequiredItem identifier="sodium" />
+                <RequiredItem identifier="scp_firelatex" mincondition="0.5" />
+            </Fabricate>
+            <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,192,64,64" />
+            <Sprite texture="Content/Items/Materials/CraftingElements1.png" sourcerect="102,6,23,44" depth="0.55" origin="0.5,0.5" />
+            <Body width="22" height="42" density="15" />
+            <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+        </Item>
+
+        <Item name="" identifier="flashpowder" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,explosive" impacttolerance="8" useinhealthinterface="true" scale="0.4" impactsoundtag="impact_metal_light">
+            <PreferredContainer primary="storagecab" />
+            <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="5" spawnprobability="0.075" />
+            <Price baseprice="125">
+                <Price storeidentifier="merchantoutpost" multiplier="1.25" minavailable="0" maxavailable="4" />
+                <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" maxavailable="10" />
+                <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="3" />
+                <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="4" maxavailable="14" />
+                <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="2" maxavailable="16" />
+            </Price>
+            <Fabricate suitablefabricators="fabricator,medicalfabricator" requiredtime="15">
+                <RequiredItem identifier="magnesium" />
+                <RequiredItem identifier="potassium" amount="2" />
+            </Fabricate>
+            <Fabricate suitablefabricators="chemstation" displayname="chemrefined" requiredtime="35" amount="4">
+                <RequiredSkill identifier="medical" level="65" />
+                <RequiredItem identifier="magnesium" />
+                <RequiredItem identifier="scp_firelatex" mincondition="0.5" />
+            </Fabricate>
+            <Deconstruct time="5">
+                <Item identifier="magnesium" copycondition="true" />
+                <Item identifier="potassium" copycondition="true" />
+            </Deconstruct>
+            <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,256,64,64" />
+            <Sprite texture="Content/Items/Materials/minerals.png" depth="0.55" sourcerect="127,134,23,42" origin="0.5,0.5" />
+            <Body width="23" height="43" density="15" />
+            <Throwable characterusable="false" canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+                <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+                <StatusEffect type="OnFire" target="this" Condition="-50" />
+                <StatusEffect type="OnUse" target="This" Condition="0.0" setvalue="true" />
+                <StatusEffect type="OnBroken" target="This">
+                    <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="3000" />
+                    <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" range="3000" />
+                    <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="3000" />
+                    <Explosion range="250.0" ballastfloradamage="20" force="3">
+                        <Affliction identifier="burn" strength="50" />
+                        <Affliction identifier="stun" strength="5" />
+                    </Explosion>
+                    <Remove />
+                </StatusEffect>
+            </Throwable>
+        </Item>
+    </Items>
+</Override>
