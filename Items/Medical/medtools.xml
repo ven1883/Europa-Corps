@@ -14,8 +14,8 @@
 	<!-- Scalpel: gives incision affliction, begins surgery process; only if surgeryready -->
 	<Item name="" identifier="scalpel" category="Medical" maxstacksize="3" maxstacksizecharacterinventory="1" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgerytool" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/new_tools.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/new_tools.png" sourcerect="2,308,64,9" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="2,308,64,9" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="45" height="15" density="50" />
 
