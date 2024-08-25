@@ -116,6 +116,11 @@
     
     <Item name="" identifier="scp_assaultpack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
 
+        <Sprite name="smolpaccground" texture="Sprites/smolpacc.png" depth="0.6" sourcerect="117,68,80,49" origin="0.5,0.5" />
+        <InventoryIcon name="smolpaccinv" texture="Sprites/smolpacc.png" sourcerect="122,5,61,61" origin="0.5,0.5" />
+        
+        <Body width="100" height="50" density="15" />
+
         <ItemContainer 
             capacity="8" 
             depth="0.5">
@@ -144,6 +149,11 @@
     <!--###-->
     
     <Item name="" identifier="scp_heavypack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+
+        <InventoryIcon name="largepackinv" texture="Sprites/largepack.png" sourcerect="193,67,60,68" origin="0.5,0.5" />
+        <Sprite texture="Sprites/largepack.png" depth="0.6" sourcerect="152,138,145,72" origin="0.5,0.5" />
+
+        <Body width="100" height="70" density="15" />
 
         <ItemContainer 
             capacity="24" 
@@ -179,6 +189,10 @@
     
     <Item name="" identifier="scp_tacpack" scale="0.7" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
 
+        <InventoryIcon name="taccpaccground" texture="Sprites/tacpacc.png" sourcerect="113,5,57,58" origin="0.5,0.5" />
+        <Sprite name="taccpaccground" texture="Sprites/tacpacc.png" depth="0.6" sourcerect="104,71,103,59" origin="0.5,0.5" />
+        <Body width="100" height="50" density="15" />
+
         <ItemContainer 
             capacity="12" 
             depth="0.5">
@@ -209,6 +223,10 @@
     
     <Item name="" identifier="scp_fieldpack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
 
+        <InventoryIcon name="fieldpackinv" texture="Sprites/fieldpack.png" sourcerect="130,-2,64,64" origin="0.5,0.5" />
+        <Sprite name="fieldpack" texture="Sprites/fieldpack.png" depth="0.6" sourcerect="141,66,115,83" origin="0.5,0.5" />
+        <Body width="115" height="83" density="15" />
+
         <ItemContainer 
             capacity="16" 
             depth="0.5">
@@ -238,13 +256,17 @@
     
     <Item name="" identifier="scp_protopack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
 
+        <InventoryIcon name="protopackinv" texture="Sprites/protopack.png" sourcerect="196,69,68,69" origin="0.5,0.5" />
+        <Sprite texture="Sprites/protopack.png" depth="0.6" sourcerect="149,160,144,52" origin="0.5,0.5" />
+        <Body width="100" height="70" density="15" />
+
         <ItemContainer 
             capacity="16" 
             depth="0.5">
 
             <Containable items="smallitem,mediumitem,ammo,explosive" excludeditems="mobilecontainer,rucksack,backpack,weaponcrate,vest,bulkyweapon" />
 
-            <SlotIcon slotindex="16" texture="%ModDir%/Weapons/pistols.png" sourcerect="448,452,64,60" origin="0.5,0.5" />
+            <SlotIcon slotindex="16" texture="%ModDir%/Items/Weapons/Sprites/pistols.png" sourcerect="448,452,64,60" origin="0.5,0.5" />
 
             <SubContainer 
                 capacity="1" maxstacksize="1" 
@@ -289,7 +311,6 @@
     <Item name="" identifier="scp_hardeneddivingmask" scale="0.4" category="Diving,Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
 
         <Sprite name="hardeneddivmask" texture="Sprites/helmets.png" depth="0.55" sourcerect="685,198,86,72" origin="0.5,0.5" />
-
         <Body width="40" height="35" density="15" />
 
         <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
