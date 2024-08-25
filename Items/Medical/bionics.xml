@@ -60,7 +60,7 @@
 
 	
 
-	<Item name="" identifier="humanflesh" category="Medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft">
+	<Item name="" identifier="humanflesh" category="Medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft">
 
 		<SuitableTreatment identifier="fleshwithdrawal" suitability="30" />
 		<SuitableTreatment identifier="fleshaddiction" suitability="-10" />

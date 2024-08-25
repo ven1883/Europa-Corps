@@ -12,7 +12,7 @@
 	<!--HEALING ITEMS-->
 	<!--+++++++++++++-->
 
-	<Item name="" identifier="omnizine" category="medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+	<Item name="" identifier="omnizine" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
 		<InventoryIcon texture="Sprites/drugs.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
 		<Sprite texture="Sprites/drugs.png" sourcerect="115,187,37,69" depth="0.6" origin="0.5,0.5" />
@@ -83,7 +83,7 @@
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-	<Item name="" identifier="stypticpowder" category="medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+	<Item name="" identifier="stypticpowder" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
 		<InventoryIcon texture="Sprites/drugs.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
 		<Sprite texture="Sprites/drugs.png" sourcerect="40,187,37,69" depth="0.6" origin="0.5,0.5" />
@@ -146,7 +146,7 @@
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-	<Item name="" identifier="proconvertin" category="medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe,sleepypenchem" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+	<Item name="" identifier="proconvertin" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe,sleepypenchem" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
 		<InventoryIcon texture="Sprites/drugs.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
 		<Sprite texture="Sprites/drugs.png" sourcerect="78,187,37,69" depth="0.6" origin="0.5,0.5" />
@@ -198,7 +198,7 @@
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-	<Heparin name="" identifier="heparin" category="medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+	<Heparin name="" identifier="heparin" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
 		<InventoryIcon texture="Sprites/drugs.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
 		<Sprite texture="Sprites/drugs.png" sourcerect="190,187,37,69" depth="0.6" origin="0.5,0.5" />
@@ -354,7 +354,7 @@
 	<!--CURES/ANTIDOTES-->
 	<!--+++++++++++++++-->
 	
-	<Calomel name="" identifier="calomel" category="medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+	<Calomel name="" identifier="calomel" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
 		<SuitableTreatment identifier="morbusinepoisoning" suitability="50" />
 		<SuitableTreatment identifier="cyanidepoisoning" suitability="50" />
@@ -548,7 +548,7 @@
 	
 	<!--+++++++++++++++++++++++++++++++++++-->
 	
-	<Anticide name="" identifier="anticide" category="medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+	<Anticide name="" identifier="anticide" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
 		<SuitableTreatment identifier="concentratedants" suitability="100" />
         

@@ -177,7 +177,7 @@
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-	<ConcentratedAnts name="" identifier="concentratedants" category="Medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe,sleepypenchem" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+	<ConcentratedAnts name="" identifier="concentratedants" category="Medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe,sleepypenchem" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
 		<InventoryIcon texture="Sprites/drugs.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
 		<Sprite texture="Sprites/drugs.png" sourcerect="152,187,37,69" depth="0.6" origin="0.5,0.5" />
