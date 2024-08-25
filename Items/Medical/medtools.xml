@@ -60,8 +60,8 @@
 	<!-- Suture Kit: removes incision affliction, ends surgery, stops bleeding from incision; only if surgeryready -->
 	<Item name="" identifier="suture" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgerytool" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="Sprites/medtools.png" sourcerect="2,250,59,45" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="2,250,59,45" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="65" height="35" density="20" />
 
@@ -106,8 +106,8 @@
 	<!-- Tweezers: removes gunshot wound if surgeryready and incision -->
 	<Item name="" identifier="tweezers" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgerytool" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="Sprites/medtools.png" sourcerect="2,296,74,10" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="2,296,74,10" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="80" height="15" density="20" />
 
@@ -156,8 +156,8 @@
 	<!-- Surgical Scissors: removes organs, allowing transplants -->
 	<Item name="" identifier="surgeryscissors" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgerytool" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="Sprites/medtools.png" sourcerect="2,211,73,33" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="2,211,73,33" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="80" height="35" density="20" />
 
@@ -220,8 +220,8 @@
 	<!-- Ether tank: gives anesthized affliction, allows surgery when not on medical bed -->
 	<Item name="" identifier="ethertank" category="Equipment,Medical" maxstacksize="8" maxstacksizecharacterinventory="1" Tags="smallitem,ethertank,oxygensource" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" allowdroppingonswap="true" health="200">
 
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="Sprites/medtools.png" sourcerect="80,254,24,66" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="80,254,24,66" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="22" height="64" density="9.7" />
 
@@ -260,8 +260,8 @@
 	<!-- DIY version of the hospital bed, craftable, buyable; no healing benefits like stationary one -->
 	<Item name="" identifier="foldingsurgerytable" tags="mediumitem,operatingtable" texturescale="1.0,1.0" scale="0.5" noninteractable="false" category="Misc,Medical" impactsoundtag="impact_metal_heavy"> <!--operatingtable tag for compat reasons-->
 
-		<sprite texture="Sprites/medtools.png" sourcerect="0,320,416,192" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="256,128,64,64" origin="0.5,0.5" />
+		<sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="0,320,416,192" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="256,128,64,64" origin="0.5,0.5" />
 
 		<Body width="416" height="192" density="60" />
 
@@ -305,8 +305,8 @@
 	<!-- Autosurgeon: auto-matically does stuff, emergency use, uses whole battery per use -->
 	<Item name="" identifier="autosurgeon" category="Medical" cargocontaineridentifier="mediccrate" tags="smallitem,medical,syringe,surgerytool" useinhealthinterface="true" impactsoundtag="impact_metal_light" scale="0.4">
 
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="Sprites/medtools.png" sourcerect="265,6,45,53" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="265,6,45,53" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="28" height="15" density="400" />
 
@@ -399,8 +399,8 @@
 	<!-- +++++ Autosurgeon program: bullet extraction +++++ -->
 	<Item name="" identifier="surgeonprogrambullet" category="Medical" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,schematic,surgerytool,surgeonprogram" spritecolor="200,255,120,255" InventoryIconColor="200,255,120,200" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="Sprites/medtools.png" sourcerect="10,74,45,43" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="10,74,45,43" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 
@@ -420,8 +420,8 @@
 	<!-- allow surgery anywhere -->
 	<Item name="" identifier="surgeryimplant" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="128,128,64,64" origin="0.5,0.5" />
-		<Sprite texture="Sprites/medtools.png" sourcerect="10,156,31,31" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="128,128,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="10,156,31,31" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="31" height="31" density="30" />
 
@@ -479,8 +479,8 @@
 	<!-- one-time all addiction gone -->
 	<Item name="" identifier="addictionimplant" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="192,128,64,64" origin="0.5,0.5" />
-		<Sprite texture="Sprites/medtools.png" sourcerect="62,156,31,31" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="192,128,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="62,156,31,31" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="31" height="31" density="30" />
 
@@ -543,15 +543,15 @@
 		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
 
 		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-			<sprite name="Medic Uniform 2 Torso" texture="Sprites/medic2.png" limb="Torso" hidelimb="false" inherittexturescale="true" origin="0.5,0.5" sourcerect="147,19,110,149" />
-			<sprite name="Medic Uniform 2 Right Hand" texture="Sprites/medic2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Hand" texture="Sprites/medic2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Right Lower Arm" texture="Sprites/medic2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Lower Arm" texture="Sprites/medic2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Right Upper Arm" texture="Sprites/medic2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Upper Arm" texture="Sprites/medic2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Waist" texture="Sprites/medic2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<!--sprite name="Medic Uniform 2 Right Thigh" texture="Sprites/medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" "93,13,53,107" /-->
+			<sprite name="Medic Uniform 2 Torso" texture="%ModDir%/Items/Medical/Sprites/medic2.png" limb="Torso" hidelimb="false" inherittexturescale="true" origin="0.5,0.5" sourcerect="147,19,110,149" />
+			<sprite name="Medic Uniform 2 Right Hand" texture="%ModDir%/Items/Medical/Sprites/medic2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Hand" texture="%ModDir%/Items/Medical/Sprites/medic2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Lower Arm" texture="%ModDir%/Items/Medical/Sprites/medic2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Lower Arm" texture="%ModDir%/Items/Medical/Sprites/medic2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Upper Arm" texture="%ModDir%/Items/Medical/Sprites/medic2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Upper Arm" texture="%ModDir%/Items/Medical/Sprites/medic2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Waist" texture="%ModDir%/Items/Medical/Sprites/medic2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<!--sprite name="Medic Uniform 2 Right Thigh" texture="%ModDir%/Items/Medical/Sprites/medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" "93,13,53,107" /-->
 			<sprite name="Medic Uniform 2 Right Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"	/>
 			<sprite name="Medic Uniform 2 Left Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
 			<sprite name="Medic Uniform 2 Right Leg" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -572,8 +572,8 @@
 	<!-- Medical Degree: joke item, medic spawns in with one -->
 	<Item name="" identifier="meddegree" category="Misc" tags="smallitem" cargocontaineridentifier="mediccrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
 
-		<InventoryIcon texture="Sprites/medtools.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="Sprites/medtools.png" sourcerect="132,200,111,95" depth="0.8" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="132,200,111,95" depth="0.8" origin="0.5,0.5" />
 
 		<Body width="100" height="60" density="40" />
 
@@ -620,7 +620,7 @@
 		</Deconstruct>
 		<SuitableTreatment type="bleeding" suitability="15" />
 		<SuitableTreatment type="lacerations, gunshotwound, blunttrauma" suitability="7" />
-		<Sprite texture="Sprites/EHA_medical.png" sourcerect="44,3,52,70" depth="0.6" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="44,3,52,70" depth="0.6" origin="0.5,0.5" />
 		<Body width="52" height="70" density="20" />
 		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" handle2="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredSkill identifier="medical" level="50" />
@@ -685,7 +685,7 @@
 		</Deconstruct>
 		<SuitableTreatment type="bleeding" suitability="35" />
 		<SuitableTreatment type="lacerations, gunshotwound, blunttrauma" suitability="25" />
-		<Sprite texture="Sprites/EHA_medical.png" sourcerect="97,17,85,53" depth="0.6" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="97,17,85,53" depth="0.6" origin="0.5,0.5" />
 		<Body width="52" height="70" density="20" />
 		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="40,5" handle1="0,0" handle2="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect">
 			<RequiredSkill identifier="medical" level="85" />
