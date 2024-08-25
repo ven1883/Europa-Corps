@@ -23,23 +23,6 @@
   <descscpdevilmod>The patient's mouth is dripping with blood and the skin is developing bleeding lesions that pour out blood at an alarming rate.</descscpdevilmod>
   <descscpdevilsev>The patient is rapidly falling into hypovolemic shock as blood pours out of every oraphace, the skin all over gushing out blood.</descscpdevilsev>
   <descscpdevilmax>The patient has been completely exsanguinated, a bloody mess of ruptured veins and arteries is all that's left.</descscpdevilmax>
- 
-  <!--Wasting Disease-->
-  <afflictionname.scp_wastingdisease>Submariner's Wasting Disease</afflictionname.scp_wastingdisease>
-  <afflictiondescription.scp_wastingdisease>The patient's CNS is showing signs of severe atrophy from a rare but infamous Prion disease. The eyes fail to focus and their cognition is beginning to rapidly deteriorate.</afflictiondescription.scp_wastingdisease>
-  <afflictioncauseofdeath.scp_wastingdisease>Died from CNS atrophy via Submariner's Wasting Disease.</afflictioncauseofdeath.scp_wastingdisease>
-  <afflictioncauseofdeathself.scp_wastingdisease>Your CNS was atrophied away by Submariner's Wasting Disease.</afflictioncauseofdeathself.scp_wastingdisease>
-  
-  <!--Linea Virus-->
-  <afflictionname.scp_lineavirus>Brunhes Lineavirus</afflictionname.scp_lineavirus>
-  <afflictiondescription.scp_lineavirus>The patient is showing signs of infection with Brunhes Lineavirus, experiencing symptoms such as laboured breathing, extreme coughing fits and gastrointestinal inflammation. The epidermal tissue turning a horrifically vivid green is a significant indicator of this infection.</afflictiondescription.scp_lineavirus>
-  <afflictioncauseofdeath.scp_lineavirus>Killed by the Brunhes Lineavirus.</afflictioncauseofdeath.scp_lineavirus>
-  <afflictioncauseofdeathself.scp_lineavirus>You succumbed to the Brunhes Lineavirus.</afflictioncauseofdeathself.scp_lineavirus>
-  
-  <afflictionname.scp_lineaviruscontagion>Brunhes Lineavirus Contagion Handler</afflictionname.scp_lineaviruscontagion>
-  <afflictiondescription.scp_lineaviruscontagion>Not meant to be seen, handles infection logic</afflictiondescription.scp_lineaviruscontagion>
-  <afflictioncauseofdeath.scp_lineaviruscontagion>.</afflictioncauseofdeath.scp_lineaviruscontagion>
-  <afflictioncauseofdeathself.scp_lineaviruscontagion>.</afflictioncauseofdeathself.scp_lineaviruscontagion>
   
   <!--Vomiting-->
   <afflictionname.scp_vomiting>Profuse Vomiting</afflictionname.scp_vomiting>
@@ -51,18 +34,6 @@
   <afflictiondescription.scp_vomitingblood>The patient's GI tract is showing signs of rupturing, occasionally vomiting large volumes of blood.</afflictiondescription.scp_vomitingblood>
   <afflictioncauseofdeath.scp_vomitingblood>Bled to death internally.</afflictioncauseofdeath.scp_vomitingblood>
   <afflictioncauseofdeathself.scp_vomitingblood>You have bled to death internally.</afflictioncauseofdeathself.scp_vomitingblood>
-  
-  <!--The Mask.-->
-  <afflictionname.scp_ae035curse>Strange Curse</afflictionname.scp_ae035curse>
-  <afflictiondescription.scp_ae035curse>The patient is rapidly decomposing internally and externally, each individual tissue layer growing anoxic and necrotic. Their mind is delusional and obssessed with a specific object they refuse to elaborate on.</afflictiondescription.scp_ae035curse>
-  <afflictioncauseofdeath.scp_ae035curse>Withered away into nothing.</afflictioncauseofdeath.scp_ae035curse>
-  <afflictioncauseofdeathself.scp_ae035curse>You withered away into nothing.</afflictioncauseofdeathself.scp_ae035curse>
-  <ae035min>The patient is showing signs of rapid cognitive and emotional degredation, they blindly swat at their eyes to try and get rid of something no one else can see.</ae035min>
-  <ae035sev>The patient is deteriorating at an extreme rate, full of terror and brain activity is dwindling at an alarming rate.</ae035sev>
-  <afflictionname.scp_ae035damage>Chemical Residue Irritation</afflictionname.scp_ae035damage>
-  <afflictiondescription.scp_ae035damage>Strange, blackened marks can be seen on the patient, the mark itself and the local tissue completely numb to any sensation.</afflictiondescription.scp_ae035damage>
-  <afflictioncauseofdeath.scp_ae035damage>Atrophied away.</afflictioncauseofdeath.scp_ae035damage>
-  <afflictioncauseofdeathself.scp_ae035damage>Your cells atrophied away into nothing.</afflictioncauseofdeathself.scp_ae035damage>
   
   <!--Hexa Nova-->
   <afflictionname.scp_hexgasdamage>Hexa-Nova Gas Intoxication</afflictionname.scp_hexgasdamage>
@@ -172,5 +143,12 @@
   <!--Surgery Implant-->
   <afflictionname.surgeryreadyimplant>Surgery Implant</afflictionname.surgeryreadyimplant>
   <afflictiondescription.surgeryreadyimplant>The patient has an unnatural amount of adrenaline.</afflictiondescription.surgeryreadyimplant>
+
+  <!--Infected Wound-->
+  <afflictionname.infection>Infected wound</afflictionname.infection>
+  <afflictiondescription.infection.low>The patient's immune system is handling a wound infection somewhat well - treatments for other infections are likely to be fully effective still.</afflictiondescription.infection.low>
+  <afflictiondescription.infection>The patient's immune system is occupied with a wound infection, rendering treatments for other types of infection less effective.</afflictiondescription.infection>
+  <afflictiondescription.infection.high>The patient's immune system is spread far too thin keeping a wound infection from advancing, rendering treatments against other kinds of infection nigh useless without a very high dosage.</afflictiondescription.infection.high>
+
 
 </infotexts>
