@@ -7,9 +7,12 @@
 
 	<!--Weapons-->
 
-	<!--Armor-->
+	<!--Apparel-->
 
-	<!--blahblahblah shorty put your stuff here-->
+	<Item file="%ModDir%/Items/Apparel/coalition.xml"/>
+	<Item file="%ModDir%/Items/Apparel/separatists.xml"/>
+	<Item file="%ModDir%/Items/Apparel/universal.xml"/>
+	<Item file="%ModDir%/Items/Apparel/other.xml"/>
 
 	<!--Medical-->
 	<Item file="%ModDir%/Items/Medical/bionics.xml"/>
