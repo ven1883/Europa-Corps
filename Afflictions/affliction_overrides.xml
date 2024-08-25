@@ -163,24 +163,9 @@
 		minstrength="40"
 		maxstrength="200"/>
 
-			<Effect minstrength="0" maxstrength="25" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.25" dialogflag="GunshotWound">
+			<Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="2" dialogflag="GunshotWound">
 				<StatusEffect target="Limb">
-					<Affliction identifier="explosiondamage" strength="0.15" />
-				</StatusEffect>
-			</Effect>
-			<Effect minstrength="25" maxstrength="50" multiplybymaxvitality="true" minvitalitydecrease="0.25" maxvitalitydecrease="0.5" dialogflag="GunshotWound">
-				<StatusEffect target="Limb">
-					<Affliction identifier="explosiondamage" strength="0.25" />
-				</StatusEffect>
-			</Effect>
-			<Effect minstrength="50" maxstrength="75" multiplybymaxvitality="true" minvitalitydecrease="0.5" maxvitalitydecrease="0.75" dialogflag="GunshotWound">
-				<StatusEffect target="Limb">
-					<Affliction identifier="explosiondamage" strength="0.375" />
-				</StatusEffect>
-			</Effect>
-			<Effect minstrength="75" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="0.75" maxvitalitydecrease="2" dialogflag="GunshotWound">
-				<StatusEffect target="Limb">
-					<Affliction identifier="explosiondamage" strength="0.5" />
+					<Affliction identifier="gunshotdamage_handler" strength="20" />
 				</StatusEffect>
 			</Effect>
 			<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,768,128,128" color="195,60,60,255" origin="0,0" />

@@ -404,22 +404,25 @@
 		showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000"
 		treatmentthreshold="1000">
 
-    <Effect 
+    	<Effect 
 			minstrength="0" maxstrength="1" 
 			strengthchange="0" 
 			resistancefor="oxygenlow" 
 			minresistance="1" maxresistance="1">
-			
-      <AbilityFlag flagtype="ImmuneToPressure" />
-      <StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
-        <ReduceAffliction identifier="oxygenlow" strength="100" />
-      </StatusEffect>
-    </Effect>
+
+    		<AbilityFlag flagtype="ImmuneToPressure" />
+
+    		<StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
+    			<ReduceAffliction identifier="oxygenlow" strength="100" />
+    		</StatusEffect>
+
+    	</Effect>
+
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-  <Affliction 
+	<Affliction 
 		identifier="scp_npcprotection" 
 		type="npcprotection" 
 		isbuff="true" 
@@ -429,22 +432,25 @@
 		showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000"
 		treatmentthreshold="1000">
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="1" 
 			strengthchange="0" 
 			resistancefor="oxygenlow" 
 			minresistance="1" maxresistance="1">
 
-      <AbilityFlag flagtype="ImmuneToPressure" />
-      <StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
-        <ReduceAffliction identifier="oxygenlow" strength="100" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
+	    	<AbilityFlag flagtype="ImmuneToPressure" />
+
+	    	<StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
+	      		<ReduceAffliction identifier="oxygenlow" strength="100" />
+	    	</StatusEffect>
+
+		</Effect>
+
+	 </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-  <Affliction 
+	 <Affliction 
 		name="heavyweaponbulk" 
 		identifier="scp_protobulk" 
 		description="heavy weapon moment" 
@@ -453,15 +459,18 @@
 		maxstrength="5" 
 		affectmachines="true" 
 		showiconthreshold="6" showinhealthscannerthreshold="6">
-		
-    <Effect 
+  
+	   <Effect 
 			minstrength="0" maxstrength="5" 
 			minspeedmultiplier="1" maxspeedmultiplier="0.7" 
 			strengthchange="-0.6">
 		</Effect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
-  </Affliction>
+
+	   <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
+	 </Affliction>
 	
+	<!--++++++++++++++++++++++++++++++++++++-->
+
 	<Affliction 
 		name="eepy" 
 		identifier="fatigue" 
@@ -476,15 +485,15 @@
 		maxstrength="30">
 
 		<Description
-      textidentifier="afflictiondescription.fatigue.low"
-      target="Self"
-      minstrength="0"
-      maxstrength="10"/>
-    <Description
-      textidentifier="afflictiondescription.fatigue.high"
-      target="Self"
-      minstrength="10"
-      maxstrength="30"/>
+    		textidentifier="afflictiondescription.fatigue.low"
+    		target="Self"
+    		minstrength="0"
+    		maxstrength="10"/>
+    	<Description
+    		textidentifier="afflictiondescription.fatigue.high"
+    		target="Self"
+    		minstrength="10"
+    		maxstrength="30"/>
 
 		<Effect 
 			minstrength="0" maxstrength="3" 
@@ -502,7 +511,88 @@
 			strengthchange="-0.5"
 			minspeedmultiplier="0.7" maxspeedmultiplier="0.7">
 		</Effect>
+
 		<icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1428,0,128,128" color="103,103,103,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="bullet movement damage" 
+		identifier="gunshotdamage_handler"
+		type="wounddamage" 
+		limbspecific="true" 
+		showiconthreshold="1000" showinhealthscannerthreshold="1000" 
+		maxstrength="2">
+
+		<PeriodicEffect 
+			mininterval="1" maxinterval="5">
+
+			<StatusEffect target="Character" disabledeltatime="true">
+				<Conditional CurrentSpeed="gte 2.7"/>
+				<Conditional gunshotwound="gte 10"/>
+				<Conditional gunshotwound="lt 20"/>
+
+				<Affliction identifier="explosiondamage" amount="10"/>
+			</StatusEffect>
+
+			<StatusEffect target="Character" disabledeltatime="true">
+				<Conditional CurrentSpeed="gte 2.6"/>
+				<Conditional gunshotwound="gte 20"/>
+				<Conditional gunshotwound="lt 30"/>
+
+				<Affliction identifier="explosiondamage" amount="15"/>
+			</StatusEffect>
+
+			<StatusEffect target="Character" disabledeltatime="true">
+				<Conditional CurrentSpeed="gte 2.5"/>
+				<Conditional gunshotwound="gte 30"/>
+
+				<Affliction identifier="explosiondamage" amount="20"/>
+			</StatusEffect>
+			
+		</PeriodicEffect>
+
+		<Effect 
+			minstrength="0" maxstrength="2" 
+			strengthchange="-10"/>
+
+		<!-- no need for sprite, not ever seen -->
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="debug healing" 
+		identifier="debughealing"
+		type="debug" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="1000" showinhealthscannerthreshold="1000" 
+		maxstrength="120">
+
+		<Effect 
+			minstrength="0" maxstrength="120"
+			strengthchange="-1">
+			
+			<StatusEffect target="Character">
+				<ReduceAffliction type="damage" amount="2" />
+				<ReduceAffliction type="organdamage" amount="2" />
+				<ReduceAffliction type="burn" amount="2" />
+				<ReduceAffliction type="bloodloss" amount="2" />
+				<ReduceAffliction type="bleeding" amount="2.5" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" setvalue="true">
+				<Conditional healthpercentage="eq 100" />
+
+				<Affliction identifier="debughealing" strength="0" />
+			</StatusEffect>
+
+		</Effect>
+		
+		<!-- no need for sprite, not ever seen -->
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0" />
 	</Affliction>
 
 </Afflictions>

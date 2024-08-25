@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
 
-	<Item name="" identifier="humanorgan" category="Medical" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft">
+	<Item name="" identifier="humanorgan" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft">
 
 		<InventoryIcon texture="Sprites/medtools.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
 		<Sprite texture="Sprites/medtools.png" sourcerect="198,69,49,55" depth="0.6" origin="0.5,0.5" />
