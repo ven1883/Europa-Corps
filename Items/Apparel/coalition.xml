@@ -306,6 +306,34 @@
 		</Wearable>
 		
 	</Item>
+	
+    <!--###-->
+
+	<Item name="" identifier="scp_combathelmet" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
+
+        <Sprite name="Combat Helmet" texture="%ModDir%/Jobgear/helmets.png" sourcerect="1,1,69,72" depth="0.6" origin="0.5,0.5" />
+
+        <Body radius="30" density="50" />
+
+        <Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
+
+          <damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourmedimpact" deflectprojectiles="true" />
+          <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourmedimpact" deflectprojectiles="true" />
+          <damagemodifier afflictionidentifiers="blunttrauma,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="armourmedimpact" deflectprojectiles="true" />
+          <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+          
+          <SkillModifier skillidentifier="mechanical" skillvalue="-5" />
+          <SkillModifier skillidentifier="electrical" skillvalue="-10" />
+          
+          <sprite name="Combat Helmet Wearable" texture="%ModDir%/Jobgear/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.85" hidewearablesoftype="hair" sourcerect="1,1,69,72" origin="0.58,0.5" />
+          
+          <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"></StatusEffect>
+       
+        </Wearable>
+      
+    </Item>
+
+	<!--###-->
 
 	<Item name="" identifier="scp_veronhelmet" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
 
