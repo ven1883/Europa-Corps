@@ -9,29 +9,22 @@
     <!--helmets-->
 
     <Item name="" identifier="scp_clownbatmask" category="Equipment" subcategory="Clown" tags="smallitem,clothing,clownmask,clowns" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
-		<PreferredContainer primary="engcab,storagecab,reactorcab" minamount="0" maxamount="1" spawnprobability="0.03" />
-		<PreferredContainer primary="abandonedarmcab" minamount="0" maxamount="1" spawnprobability="0.06" />
-		<Price baseprice="275" displaynonempty="true">
-			<Price storeidentifier="merchantclown" multiplier="1" minavailable="0" maxavailable="2">
-				<Reputation faction="clowns" min="30" />
-			</Price>
-		</Price>
-		<Deconstruct time="10">
-			<Item identifier="steel" />
-		</Deconstruct>
-		<Fabricate suitablefabricators="fabricator" requiredtime="25">
-			<RequiredSkill identifier="weapons" level="30" />
-			<RequiredItem identifier="ballisticfiber" amount="3" />
-			<RequiredItem identifier="bikehorn" />
-		</Fabricate>
+
 		<Sprite name="Clownbat Helm" texture="%ModDir%/Jobgear/helmets.png" sourcerect="423,446,100,102" depth="0.6" origin="0.5,0.5" />
+
 		<Body radius="30" density="50" />
+
 		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
-			<damagemodifier afflictionidentifiers="gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+			
+            <damagemodifier afflictionidentifiers="gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
 			<damagemodifier afflictionidentifiers="lacerations,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
-			<sprite name="Clownbat Helm Wearable" texture="%ModDir%/Jobgear/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="hair" sourcerect="423,446,100,102" origin="0.50285524,0.5793666" />
-			<StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
-		</Wearable>
+			
+            <sprite name="Clownbat Helm Wearable" texture="%ModDir%/Jobgear/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidewearablesoftype="hair" sourcerect="423,446,100,102" origin="0.50285524,0.5793666" />
+			
+            <StatusEffect tags="clown" type="OnWearing" target="Character" HideFace="true" duration="0.1" stackable="false" />
+		
+        </Wearable>
+
 	</Item>
 
     <!--++++++++++++++++++++++++++++++++++++-->
@@ -39,29 +32,14 @@
 	<!--uniforms-->
 
 	<Item name="" identifier="scp_clownbatuniform" category="Equipment" subcategory="Clown" description="" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,clowngear,clowns" scale="0.5" impactsoundtag="impact_soft">
-		<PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="003" />
-		<PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.02" />
-		<PreferredContainer primary="wreckarmcab,wreckcrewcab" minamount="1" maxamount="1" spawnprobability="0.15" />
-		<Price baseprice="500" displaynonempty="true">
-			<Price storeidentifier="merchantclown" multiplier="1" minavailable="0" maxavailable="2">
-				<Reputation faction="clowns" min="30" />
-			</Price>
-		</Price>
-		<Deconstruct time="20">
-			<Item identifier="bikehorn" />
-			<Item identifier="clowncostume" />
-		</Deconstruct>
-		<Fabricate suitablefabricators="fabricator" requiredtime="30">
-			<RequiredSkill identifier="weapons" level="35" />
-			<Item identifier="bikehorn" />
-			<Item identifier="clowncostume" />
-			<Item identifier="ballisticfiber" amount="3" />
-			<Item identifier="organicfiber" amount="6" />
-		</Fabricate>
+
 		<InventoryIcon name="clownbatinv" texture="%ModDir%/Jobgear/clowncombatdress.png" sourcerect="690,2,96,86" origin="0.5,0.5" />
 		<Sprite name="clownbatinv" texture="%ModDir%/Jobgear/clowncombatdress.png" sourcerect="668,92,117,73" depth="0.6" origin="0.5,0.5" />
+
 		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
 		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+
 			<sprite name="Torso" texture="clowncombatdress.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
 			<sprite name="Right Hand" texture="clowncombatdress.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
 			<sprite name="Left Hand" texture="clowncombatdress.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
@@ -76,15 +54,23 @@
 			<sprite name="Left Leg" texture="clowncombatdress.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
 			<sprite name="Right Shoe" texture="clowncombatdress.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" sound="footstep_clown" />
 			<sprite name="Left Shoe" texture="clowncombatdress.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" sound="footstep_clown" />
+
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.8" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.75" />
 			<damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagesound="LimbClown" />
 			<damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagesound="LimbClown" />
+
 			<StatusEffect tags="clown" type="OnWearing" target="Character" duration="0.1" stackable="false" />
+
 		</Wearable>
-		<ItemContainer capacity="3">
+
+		<ItemContainer 
+            capacity="3">
+
 			<Containable items="smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest" />
+            
 		</ItemContainer>
+
 	</Item>
 
     <!--++++++++++++++++++++++++++++++++++++-->
