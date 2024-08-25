@@ -322,4 +322,86 @@
 	</Affliction>
 </Override>
 
+<!--++++++++++++++++++++++++++++++++++++-->
+
+<Override>
+	<Affliction
+	  identifier="drunk"
+	  description="The smell of alcohol rises from them like a vapor, their speech slurs a little, and their eyes fail to focus."
+	  type="debuff"
+	  causeofdeathdescription="Alcohol poisoning"
+	  selfcauseofdeathdescription="You have died of alcohol poisoning."
+	  limbspecific="false"
+	  indicatorlimb="Head"
+	  activationthreshold="20"
+	  treatmentthreshold="1000"
+	  maxstrength="100"
+	  affectmachines="false">
+	   <Description
+		textidentifier="afflictiondescription.drunk.self"
+		target="Self"
+		minstrength="0"
+		maxstrength="80"/>
+	   <Description
+		textidentifier="afflictiondescription.drunk.lethal.self"
+		target="Self"
+		minstrength="80"
+		maxstrength="100"/>
+	   <Description
+		textidentifier="afflictiondescription.drunk.low"
+		target="OtherCharacter"
+		minstrength="0"
+		maxstrength="40"/>
+	  <Description
+		textidentifier="afflictiondescription.drunk"
+		target="OtherCharacter"
+		minstrength="40"
+		maxstrength="80"/>
+	  <Description
+		textidentifier="afflictiondescription.drunk.lethal"
+		target="OtherCharacter"
+		minstrength="80"
+		maxstrength="100"/>
+			  
+	  <!-- no effects at this point -->
+	  <Effect minstrength="0" maxstrength="20" strengthchange="-0.1" />
+	  
+	  <Effect minstrength="20" maxstrength="40"
+		minscreendistort="0"
+		maxscreendistort="0.1"
+		strengthchange="-0.1"
+		minfacetint="255,0,0,0"
+		maxfacetint="255,0,0,50">
+	  </Effect>
+  
+	  <Effect minstrength="40" maxstrength="80"
+		minscreendistort="0.1"
+		maxscreendistort="1.0"
+		minscreenblur="0.1"
+		maxscreenblur="0.5"
+		strengthchange="-0.2"
+		minradialdistort="0.0"
+		maxradialdistort="2.0"
+		dialogflag="DrunkMedium"
+		minfacetint="255,0,0,50"
+		maxfacetint="255,0,0,100">
+	  </Effect>
+  
+	  <Effect minstrength="80" maxstrength="100"
+		minscreendistort="1.0"
+		maxscreendistort="3.0"
+		minscreenblur="0.5"
+		maxscreenblur="1.0"
+		strengthchange="-0.2"
+		minradialdistort="2.0"
+		maxradialdistort="3.0"
+		dialogflag="DrunkHigh"
+		minfacetint="255,0,0,150"
+		maxfacetint="255,0,0,150">
+	  </Effect>
+  
+	  <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,640,128,128" color="170,194,147,255" origin="0,0"/>
+	</Affliction>
+  </Override>
+
 </Afflictions>

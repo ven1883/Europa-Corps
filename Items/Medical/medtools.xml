@@ -311,13 +311,11 @@
 
 		<Holdable 
 			selectkey="Select" pickkey="Use" 
-			slots="RightHand+LeftHand" 
+			slots="RightHand,LeftHand" 
 			msg="ItemMsgFoldTableSelect" 
-			PickingTime="10.0" 
-			aimpos="35,15" holdpos="0,-80" handle1="-30,40" handle2="30,40" 
-			attachable="true" attachedbydefault="true" 
-			aimable="true"
-		/>
+			PickingTime="10.0" aimpos="20,-20" holdpos="10,-20" handle1="50,50" holdangle="-10" 
+			attachable="true" attachedbydefault="true" aimable="true">
+		</Holdable>
 
 	</Item>
 
