@@ -6,7 +6,8 @@
 		type="resistance" 
 		causeofdeathdescription="Died in surgery" 
 		selfcauseofdeathdescription="You have died due to a surgical incision." 
-		limbspecific="true" 
+		limbspecific="false"
+		indicatorlimb="Torso" 
 		maxstrength="10" 
 		damageoverlayalpha="1">
 
