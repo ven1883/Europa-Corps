@@ -8,7 +8,7 @@
     
     <Item name="" identifier="scp_simplehelmet" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
         
-        <Sprite name="Simple Helmet" texture="Sprites/helmets.png" sourcerect="168,0,72,55" depth="0.6" origin="0.5,0.5" />
+        <Sprite name="Simple Helmet" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" sourcerect="168,0,72,55" depth="0.6" origin="0.5,0.5" />
         
         <Body radius="30" density="50" />
         
@@ -17,7 +17,7 @@
             <damagemodifier afflictionidentifiers="gunshotwound,bleeding,lacerations" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
             
-            <sprite name="Simple Helmet Wearable" texture="Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.74" hidewearablesoftype="hair" sourcerect="168,0,72,79" origin="0.49987426,0.54756904" />
+            <sprite name="Simple Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.74" hidewearablesoftype="hair" sourcerect="168,0,72,79" origin="0.49987426,0.54756904" />
             
         </Wearable>
         
@@ -40,28 +40,28 @@
 
         </ItemContainer>
 
-        <InventoryIcon name="heavyhazmatinv" texture="Sprites/heavyhazmat.png" sourcerect="677,0,78,67" origin="0.5,0.5" />
-        <Sprite name="heavyhazmatground" texture="Sprites/heavyhazmat.png" sourcerect="640,69,115,62" depth="0.6" origin="0.5,0.5" />
+        <InventoryIcon name="heavyhazmatinv" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" sourcerect="677,0,78,67" origin="0.5,0.5" />
+        <Sprite name="heavyhazmatground" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" sourcerect="640,69,115,62" depth="0.6" origin="0.5,0.5" />
 
         <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
 
         <Wearable slots="Any,InnerClothes+Head" msg="ItemMsgPickUpSelect">
 
-            <sprite name="HAZMAT helm Wearable" texture="Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.77" hidewearablesoftype="hair,beard" sourcerect="678,13,88,86" origin="0.5065703,0.5108439" />
-            <sprite name="Heavy HAZMAT Torso" texture="Sprites/heavyhazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Right Hand" texture="Sprites/heavyhazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Left Hand" texture="Sprites/heavyhazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Right Lower Arm" texture="Sprites/heavyhazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Left Lower Arm" texture="Sprites/heavyhazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Right Upper Arm" texture="Sprites/heavyhazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Left Upper Arm" texture="Sprites/heavyhazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Waist" texture="Sprites/heavyhazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Right Thigh" texture="Sprites/heavyhazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Left Thigh" texture="Sprites/heavyhazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Right Leg" texture="Sprites/heavyhazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Left Leg" texture="Sprites/heavyhazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Left Shoe" texture="Sprites/heavyhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-            <sprite name="Heavy HAZMAT Right Shoe" texture="Sprites/heavyhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="HAZMAT helm Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.77" hidewearablesoftype="hair,beard" sourcerect="678,13,88,86" origin="0.5065703,0.5108439" />
+            <sprite name="Heavy HAZMAT Torso" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Hand" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Hand" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Waist" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Leg" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Leg" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
 
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection" damagemultiplier="0" probabilitymultiplier="0" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.15" />
@@ -116,8 +116,8 @@
     
     <Item name="" identifier="scp_assaultpack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
 
-        <Sprite name="smolpaccground" texture="Sprites/smolpacc.png" depth="0.6" sourcerect="117,68,80,49" origin="0.5,0.5" />
-        <InventoryIcon name="smolpaccinv" texture="Sprites/smolpacc.png" sourcerect="122,5,61,61" origin="0.5,0.5" />
+        <Sprite name="smolpaccground" texture="%ModDir%/Items/Apparel/Sprites/smolpacc.png" depth="0.6" sourcerect="117,68,80,49" origin="0.5,0.5" />
+        <InventoryIcon name="smolpaccinv" texture="%ModDir%/Items/Apparel/Sprites/smolpacc.png" sourcerect="122,5,61,61" origin="0.5,0.5" />
         
         <Body width="100" height="50" density="15" />
 
@@ -138,7 +138,7 @@
         
         <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
 
-            <sprite name="Assault Backpack Wearable" texture="Sprites/smolpacc.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="5,7,94,89" origin="0.7110833,0.6007368" scale="0.6" />
+            <sprite name="Assault Backpack Wearable" texture="%ModDir%/Items/Apparel/Sprites/smolpacc.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="5,7,94,89" origin="0.7110833,0.6007368" scale="0.6" />
             
             <StatValue stattype="SwimmingSpeed" value="-0.05" />
         
@@ -150,8 +150,8 @@
     
     <Item name="" identifier="scp_heavypack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
 
-        <InventoryIcon name="largepackinv" texture="Sprites/largepack.png" sourcerect="193,67,60,68" origin="0.5,0.5" />
-        <Sprite texture="Sprites/largepack.png" depth="0.6" sourcerect="152,138,145,72" origin="0.5,0.5" />
+        <InventoryIcon name="largepackinv" texture="%ModDir%/Items/Apparel/Sprites/largepack.png" sourcerect="193,67,60,68" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Items/Apparel/Sprites/largepack.png" depth="0.6" sourcerect="152,138,145,72" origin="0.5,0.5" />
 
         <Body width="100" height="70" density="15" />
 
@@ -172,7 +172,7 @@
 
         <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
             
-            <sprite name="Heavy Backpack Wearable" texture="Sprites/largepack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="17,8,117,146" origin="0.78,0.57" scale="0.6" />
+            <sprite name="Heavy Backpack Wearable" texture="%ModDir%/Items/Apparel/Sprites/largepack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="17,8,117,146" origin="0.78,0.57" scale="0.6" />
             
             <SkillModifier skillidentifier="weapons" skillvalue="-15" />
             <SkillModifier skillidentifier="mechanical" skillvalue="-25" />
@@ -189,8 +189,8 @@
     
     <Item name="" identifier="scp_tacpack" scale="0.7" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
 
-        <InventoryIcon name="taccpaccground" texture="Sprites/tacpacc.png" sourcerect="113,5,57,58" origin="0.5,0.5" />
-        <Sprite name="taccpaccground" texture="Sprites/tacpacc.png" depth="0.6" sourcerect="104,71,103,59" origin="0.5,0.5" />
+        <InventoryIcon name="taccpaccground" texture="%ModDir%/Items/Apparel/Sprites/tacpacc.png" sourcerect="113,5,57,58" origin="0.5,0.5" />
+        <Sprite name="taccpaccground" texture="%ModDir%/Items/Apparel/Sprites/tacpacc.png" depth="0.6" sourcerect="104,71,103,59" origin="0.5,0.5" />
         <Body width="100" height="50" density="15" />
 
         <ItemContainer 
@@ -210,7 +210,7 @@
         
         <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
             
-            <sprite name="Tactical Backpack Wearable" texture="Sprites/tacpacc.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="0,4,102,104" origin="0.7608965,0.49651888" scale="0.7" />
+            <sprite name="Tactical Backpack Wearable" texture="%ModDir%/Items/Apparel/Sprites/tacpacc.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="0,4,102,104" origin="0.7608965,0.49651888" scale="0.7" />
             
             <StatValue stattype="WalkingSpeed" value="-0.05" />
             <StatValue stattype="SwimmingSpeed" value="-0.1" />
@@ -223,8 +223,8 @@
     
     <Item name="" identifier="scp_fieldpack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
 
-        <InventoryIcon name="fieldpackinv" texture="Sprites/fieldpack.png" sourcerect="130,-2,64,64" origin="0.5,0.5" />
-        <Sprite name="fieldpack" texture="Sprites/fieldpack.png" depth="0.6" sourcerect="141,66,115,83" origin="0.5,0.5" />
+        <InventoryIcon name="fieldpackinv" texture="%ModDir%/Items/Apparel/Sprites/fieldpack.png" sourcerect="130,-2,64,64" origin="0.5,0.5" />
+        <Sprite name="fieldpack" texture="%ModDir%/Items/Apparel/Sprites/fieldpack.png" depth="0.6" sourcerect="141,66,115,83" origin="0.5,0.5" />
         <Body width="115" height="83" density="15" />
 
         <ItemContainer 
@@ -243,7 +243,7 @@
             allowswappingwhenpicked="false" />
         
         <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
-            <sprite name="Field Pack Wearable" texture="Sprites/fieldpack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="0,0,125,117" origin="0.84,0.51" scale="0.6" />
+            <sprite name="Field Pack Wearable" texture="%ModDir%/Items/Apparel/Sprites/fieldpack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="0,0,125,117" origin="0.84,0.51" scale="0.6" />
             <SkillModifier skillidentifier="weapons" skillvalue="-5" />
             <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
             <SkillModifier skillidentifier="electrical" skillvalue="-10" />
@@ -256,8 +256,8 @@
     
     <Item name="" identifier="scp_protopack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
 
-        <InventoryIcon name="protopackinv" texture="Sprites/protopack.png" sourcerect="196,69,68,69" origin="0.5,0.5" />
-        <Sprite texture="Sprites/protopack.png" depth="0.6" sourcerect="149,160,144,52" origin="0.5,0.5" />
+        <InventoryIcon name="protopackinv" texture="%ModDir%/Items/Apparel/Sprites/protopack.png" sourcerect="196,69,68,69" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Items/Apparel/Sprites/protopack.png" depth="0.6" sourcerect="149,160,144,52" origin="0.5,0.5" />
         <Body width="100" height="70" density="15" />
 
         <ItemContainer 
@@ -293,7 +293,7 @@
 
         <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
             
-            <sprite name="Proto Backpack Wearable" texture="Sprites/protopack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="40,13,113,147" origin="0.62,0.54" scale="0.6" />
+            <sprite name="Proto Backpack Wearable" texture="%ModDir%/Items/Apparel/Sprites/protopack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="40,13,113,147" origin="0.62,0.54" scale="0.6" />
            
             <SkillModifier skillidentifier="mechanical" skillvalue="-5" />
             <SkillModifier skillidentifier="electrical" skillvalue="-5" />
@@ -310,12 +310,12 @@
     
     <Item name="" identifier="scp_hardeneddivingmask" scale="0.4" category="Diving,Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
 
-        <Sprite name="hardeneddivmask" texture="Sprites/helmets.png" depth="0.55" sourcerect="685,198,86,72" origin="0.5,0.5" />
+        <Sprite name="hardeneddivmask" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" depth="0.55" sourcerect="685,198,86,72" origin="0.5,0.5" />
         <Body width="40" height="35" density="15" />
 
         <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
             
-            <sprite name="hardeneddivmaskwear" texture="Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" hideotherwearables="false" sourcerect="685,198,86,72" origin="0.42363268,0.46066296" hidewearablesoftype="moustache,beard" />
+            <sprite name="hardeneddivmaskwear" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" hideotherwearables="false" sourcerect="685,198,86,72" origin="0.42363268,0.46066296" hidewearablesoftype="moustache,beard" />
             
             <StatusEffect type="OnWearing" target="Character" HideFace="true" SpeedMultiplier="0.95" setvalue="true" disabledeltatime="true" />
             
