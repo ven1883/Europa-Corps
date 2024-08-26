@@ -16,7 +16,8 @@
 		tags="smallitem,556ammo,ehaammo,55630mag" 
 		linkable="true" 
 		interactthroughwall="true" 
-		scale="0.48">
+		scale="0.48"
+		health="30">
 
 		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="82,3,29,56" origin="0.5,0.5" />
 		<Body width="30" height="40" density="50" />
@@ -35,7 +36,7 @@
 
 			<Containable items="scp_556projectile" />
 
-			<StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+			<StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
 				<SpawnItem identifier="scp_556projectile" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflesmall"	emitinterval="1.5"	particleamount="1"	particlespersecond="50"	anglemin="70"	anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5"/>
 			</StatusEffect>
@@ -49,28 +50,11 @@
 	<Item
 		identifier="scp_556extmag" 
 		name=""
-		impactsoundtag="impact_metal_light" 
 		scale="0.5" 
 		maxstacksize="4" maxstacksizecharacterinventory="1" 
-		cargocontaineridentifier="scp_ammocrate" 
-		description="" 
-		category="Weapon" subcategory="Coalition" 
-		tags="smallitem,556ammo,ehaammo" 
-		linkable="true" 
-		interactthroughwall="true"> <!--i care enough about the ordering here for it to annoy me greatly, but not QUITE enough to bother fixing it-->
-
-		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+		health="60"> <!--i care enough about the ordering here for it to annoy me greatly, but not QUITE enough to bother fixing it-->
 
 		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="141,3,30,56" origin="0.5,0.5" />
-		<Body width="30" height="40" density="50" />
-
-		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_556projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-			<Containable items="scp_556projectile" />
-			<StatusEffect type="OnUse" target="This" condition="-1.6" disabledeltatime="true">
-				<SpawnItem identifier="scp_556projectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
-			</StatusEffect>
-		</ItemContainer>
 
 	</Item>
 
