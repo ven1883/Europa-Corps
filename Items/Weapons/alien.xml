@@ -13,7 +13,14 @@
 		
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="55,-3" handle1="-20,-15" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
 		
-		<RangedWeapon reload="0.09" reloadnoskill="0.175" reloadskillrequirement="75" weapondamagemodifier="1.1" penetrationmultiplier="0.1" barrelpos="80,9" spread="6" unskilledspread="18" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon 
+			reload="0.09" reloadnoskill="0.175" reloadskillrequirement="75" 
+			weapondamagemodifier="1.1" penetrationmultiplier="0.1" 
+			barrelpos="80,9" 
+			spread="6" unskilledspread="18" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
 			
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -87,7 +94,14 @@
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="75,-10" aimpos="75,-2" handle1="-55,-18" handle2="35,1" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
-		<RangedWeapon reload="0.1" reloadnoskill="0.175" weapondamagemodifier="1.2" penetrationmultiplier="0.15" reloadskillrequirement="85" barrelpos="95,10" spread="8" unskilledspread="18" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon 
+			reload="0.1" reloadnoskill="0.175" reloadskillrequirement="85"
+			weapondamagemodifier="1.2" penetrationmultiplier="0.15" 
+			barrelpos="95,10" 
+			spread="8" unskilledspread="18" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
 
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -161,7 +175,14 @@
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="100,-20" aimpos="90,10" handle1="-58,-20" handle2="-58,-20" holdangle="-45" msg="ItemMsgPickUpSelect" />
 
-		<RangedWeapon reload="0.65" reloadnoskill="2" weapondamagemodifier="3.5" penetrationmultiplier="0.25" reloadskillrequirement="95" barrelpos="64,9" spread="8" unskilledspread="24" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon 
+			reload="0.65" reloadnoskill="2" reloadskillrequirement="95" 
+			weapondamagemodifier="3.5" penetrationmultiplier="0.25"  
+			barrelpos="64,9" 
+			spread="8" unskilledspread="24" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
 
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -238,7 +259,14 @@
 			<sprite name="TBSR Worn" texture="%ModDir%/Weapons/alienweapons.png" canbehiddenbyotherwearables="false" sourcerect="0,604,391,121" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.42" origin="0.5,0.7" />
 		</Wearable>
 
-		<RangedWeapon reload="1.65" reloadnoskill="3" reloadskillrequirement="100" weapondamagemodifier="7.5" penetrationmultiplier="0.4" barrelpos="190,9" spread="2" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon 
+			reload="1.65" reloadnoskill="3" reloadskillrequirement="100" 
+			weapondamagemodifier="7.5" penetrationmultiplier="0.4" 
+			barrelpos="190,9" 
+			spread="2" unskilledspread="12" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
 			
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -318,7 +346,14 @@
 			<sprite name="TMG Worn" texture="%ModDir%/Weapons/alienweapons.png" canbehiddenbyotherwearables="false" sourcerect="3,482,384,120" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.35" origin="0.5,0.8" />
 		</Wearable>
 
-		<RangedWeapon reload="0.0925" reloadnoskill="0.2" weapondamagemodifier="1.2" penetrationmultiplier="0.3" reloadskillrequirement="85" barrelpos="110,10" spread="16" unskilledspread="27" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon 
+			reload="0.0925" reloadnoskill="0.2" reloadskillrequirement="85"
+			weapondamagemodifier="1.2" penetrationmultiplier="0.3"
+			barrelpos="110,10" 
+			spread="16" unskilledspread="27" 
+			combatPriority="80"
+			drawhudwhenequipped="true"
+			crosshairscale="0.2">
 			
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
