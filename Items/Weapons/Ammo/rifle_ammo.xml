@@ -49,6 +49,7 @@
 	<!--5.56x45 extended mag-->
 	<Item
 		identifier="scp_556extmag" 
+		variantof="scp_556mag"
 		name=""
 		scale="0.5" 
 		maxstacksize="4" maxstacksizecharacterinventory="1" 
