@@ -35,31 +35,12 @@
       <StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
         <Conditional condition="gt 0" />
         <Conditional hastag="eq armed" />
-        <SpawnItem identifier="nervegasprojectile" spawnposition="This" count="8" aimspread="360" StaticSpread="True" RotationType="Fixed"/>
+        <Explosion showeffects="false" range="500">
+          <Affliction identifier="feniternerveagent" strength="1" />
+          <Affliction identifier="feniternerveagentcon" strength="2" />
+        </Explosion>
       </StatusEffect>
     </Throwable>
-  </Item>
-
-
-  <Item name="" identifier="nervegasprojectile" Scale="0.5" tags="gas" sonarsize="0" hideinmenus="true" depth="0.1" isdangerous="false" noninteractable="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
-    <Body radius="10" density="1" />
-    <Projectile characterusable="false" launchimpulse="10" impulsespread="0.2">
-      <StatusEffect type="OnSpawn" target="This" delay="0.3">
-        <Explosion showeffects="false" range="250">
-          <Affliction identifier="feniternerveagent" strength="2" />
-          <Affliction identifier="feniternerveagentcon" strength="4" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This">
-        <Explosion showeffects="false" range="500">
-          <Affliction identifier="feniternerveagent" strength="0.1" />
-          <Affliction identifier="feniternerveagentcon" strength="0.2" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-    </Projectile>
   </Item>
 
   
@@ -124,34 +105,16 @@
       <StatusEffect type="Always" target="This" interval="0.1" comparison="And">
         <Conditional condition="gt 0" />
         <Conditional hastag="eq armed" />
-        <ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" EmitInterval="0.1" ParticleAmount="2" ColorMultiplier="0,0,155,200" />
+        <ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" EmitInterval="0.1" ParticleAmount="2" ColorMultiplier="0,0,155,150" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
         <Conditional condition="gt 0" />
         <Conditional hastag="eq armed" />
-        <SpawnItem identifier="pulmgasprojectile" spawnposition="This" count="8" aimspread="360" StaticSpread="True" RotationType="Fixed"/>
+        <Explosion showeffects="false" range="600">
+          <Affliction identifier="feniterpulmonaryagent2" strength="3" />
+        </Explosion>
       </StatusEffect>
     </Throwable>
-  </Item>
-
-
-  <Item name="" identifier="pulmgasprojectile" Scale="0.5" tags="gas" sonarsize="0" hideinmenus="true" depth="0.1" isdangerous="false" noninteractable="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
-    <Body radius="10" density="1" />
-    <Projectile characterusable="false" launchimpulse="20" impulsespread="0.2">
-      <StatusEffect type="OnSpawn" target="This" delay="0.5">
-        <Explosion showeffects="false" range="600">
-          <Affliction identifier="feniterpulmonaryagent2" strength="5" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This">
-        <Explosion showeffects="false" range="600">
-          <Affliction identifier="feniterpulmonaryagent2" strength="5" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-    </Projectile>
   </Item>
 
 
@@ -296,33 +259,13 @@
       <StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
         <Conditional condition="gt 0" />
         <Conditional hastag="eq armed" />
-        <SpawnItem identifier="blistergasprojectile" spawnposition="This" count="8" aimspread="360" StaticSpread="True" RotationType="Fixed"/>
+        <Explosion showeffects="false" range="600">
+          <Affliction identifier="feniterblisteragentinternal" strength="3" />
+          <Affliction identifier="feniterblisteragentcon" strength="5" />
+          <Affliction identifier="acidburn" strength="10" />
+        </Explosion>
       </StatusEffect>
     </Throwable>
-  </Item>
-
-
-  <Item name="" identifier="blistergasprojectile" Scale="0.5" tags="gas" sonarsize="0" hideinmenus="true" depth="0.1" isdangerous="false" noninteractable="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
-    <Body radius="10" density="1" />
-    <Projectile characterusable="false" launchimpulse="10" impulsespread="0.2">
-      <StatusEffect type="OnSpawn" target="This" delay="0.3">
-        <Explosion showeffects="false" range="250">
-          <Affliction identifier="feniterblisteragentinternal" strength="0.5" />
-          <Affliction identifier="feniterblisteragentcon" strength="1.0" />
-          <Affliction identifier="acidburn" strength="2.5" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This">
-        <Explosion showeffects="false" range="250">
-          <Affliction identifier="feniterblisteragentinternal" strength="0.5" />
-          <Affliction identifier="feniterblisteragentcon" strength="1.0" />
-          <Affliction identifier="acidburn" strength="2.5" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-    </Projectile>
   </Item>
 
 
@@ -392,29 +335,11 @@
       <StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
         <Conditional condition="gt 0" />
         <Conditional hastag="eq armed" />
-        <SpawnItem identifier="teargasprojectile" spawnposition="This" count="8" aimspread="360" StaticSpread="True" RotationType="Fixed"/>
+        <Explosion showeffects="false" range="250">
+          <Affliction identifier="feniternonlethalagent" strength="2.5" />
+        </Explosion>
       </StatusEffect>
     </Throwable>
-  </Item>
-
-
-  <Item name="" identifier="teargasprojectile" Scale="0.5" tags="gas" sonarsize="0" hideinmenus="true" depth="0.1" isdangerous="false" noninteractable="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
-    <Body radius="10" density="1" />
-    <Projectile characterusable="false" launchimpulse="10" impulsespread="0.2">
-      <StatusEffect type="OnSpawn" target="This" delay="0.3">
-        <Explosion showeffects="false" range="250">
-          <Affliction identifier="feniternonlethalagent" strength="0.5" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This">
-        <Explosion showeffects="false" range="250">
-          <Affliction identifier="feniternonlethalagent" strength="0.5" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-    </Projectile>
   </Item>
 
 
@@ -482,27 +407,11 @@
       <StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
         <Conditional condition="gt 0" />
         <Conditional hastag="eq armed" />
-        <SpawnItem identifier="psychogasprojectile" spawnposition="This" count="8" aimspread="360" StaticSpread="True" RotationType="Fixed"/>
+        <Explosion showeffects="false" range="500">
+          <Affliction identifier="feniterpsychoagent" strength="5" />
+        </Explosion>
       </StatusEffect>
     </Throwable>
-  </Item>
-  <Item name="" identifier="psychogasprojectile" Scale="0.5" tags="gas" sonarsize="0" hideinmenus="true" depth="0.1" isdangerous="false" noninteractable="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
-    <Body radius="10" density="1" />
-    <Projectile characterusable="false" launchimpulse="10" impulsespread="0.2">
-      <StatusEffect type="OnSpawn" target="This" delay="0.3">
-        <Explosion showeffects="false" range="250">
-          <Affliction identifier="feniterpsychoagent" strength="0.5" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This">
-        <Explosion showeffects="false" range="250">
-          <Affliction identifier="feniterpsychoagent" strength="0.5" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-    </Projectile>
   </Item>
 
 
@@ -570,29 +479,11 @@
       <StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
         <Conditional condition="gt 0" />
         <Conditional hastag="eq armed" />
-        <SpawnItem identifier="sleepgasprojectile" spawnposition="This" count="8" aimspread="360" StaticSpread="True" RotationType="Fixed"/>
+        <Explosion showeffects="false" range="800">
+          <Affliction identifier="anesthesia" strength="5" />
+        </Explosion>
       </StatusEffect>
     </Throwable>
-  </Item>
-
-
-  <Item name="" identifier="sleepgasprojectile" Scale="0.5" tags="gas" sonarsize="0" hideinmenus="true" depth="0.1" isdangerous="false" noninteractable="true">
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
-    <Body radius="10" density="1" />
-    <Projectile characterusable="false" launchimpulse="10" impulsespread="0.2">
-      <StatusEffect type="OnSpawn" target="This" delay="0.3">
-        <Explosion showeffects="false" range="400">
-          <Affliction identifier="incrementalstun" strength="10" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This">
-        <Explosion showeffects="false" range="400">
-          <Affliction identifier="incrementalstun" strength="10" />
-        </Explosion>
-        <Remove />
-      </StatusEffect>
-    </Projectile>
   </Item>
 
 
@@ -605,7 +496,7 @@
       <StatusEffect type="Always" interval="1" target="This">
         <Conditional IsOn="eq True"/>
         <Explosion showeffects="false" range="500">
-          <Affliction identifier="incrementalstun" strength="15" />
+          <Affliction identifier="anesthesia" strength="5" />
         </Explosion>
       </StatusEffect>
       <StatusEffect type="Always" target="This" interval="0.1" comparison="And">
