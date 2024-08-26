@@ -8,9 +8,11 @@
 
 		<!--Bayonet-->
 	<Item name="" description="" identifier="scp_m9bayonet" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-			<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" origin="0.5,0.5"/>
-			<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" depth="0.55" origin="0.5,0.5"/>
-			<Body width="125" height="15" density="50" />
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" origin="0.5,0.5"/>
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" depth="0.55" origin="0.5,0.5"/>
+
+		<Body width="125" height="15" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-18,0" holdangle="30" reload="0.9" reloadnoskill="1.6" reloadskillrequirement="50" range="150" combatPriority="25" msg="ItemMsgPickUpSelect">
 			<Attack 
@@ -63,7 +65,9 @@
 
  		<!--Machete-->
   	<Item name="" description="" identifier="scp_machete" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,41,265,39" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="180" height="15" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,45" handle1="-35,-4" handle2="-37,-2" holdangle="20" reload="0.9" range="650" combatPriority="25" msg="ItemMsgPickUpSelect">
@@ -110,7 +114,9 @@
 
 	<!--Dementonite Machete-->
 	<Item name="" description="" identifier="scp_dementonitemachete" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,81,209,39" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="180" height="15" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="55,50" handle1="-30,2" handle2="-25,2" holdangle="20" reload="0.95" reloadnoskill="1.25" reloadskillrequirement="50" range="500" combatPriority="25" msg="ItemMsgPickUpSelect">
@@ -160,7 +166,9 @@
 		
 		<!--Physicorium Tactical Sword-->
 	<Item name="" description="" identifier="scp_physicoriumsword" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,485,269,50" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="210" height="50" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="68,30" handle1="-40,1" holdangle="20" reload="0.85" reloadnoskill="3" reloadskillrequirement="85" range="250" combatPriority="25" msg="ItemMsgPickUpSelect">
@@ -209,8 +217,10 @@
 
 		<!--Batong-->
 	<Item name="" identifier="scp_baton" description="" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,stunner,gunsmith" Scale="0.45" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+		
 		<InventoryIcon name="batoninv" texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="450,20,75,78" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="3,234,221,16" depth="0.55" origin="0.4954025,0.7936202" />
+		
 		<Body width="170" height="20" density="30" />
 
 		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="45,10" handle1="-40,5" holdangle="55" reload="1.25" reloadnoskill="2" reloadskillrequirement="50" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
@@ -250,8 +260,10 @@
 
 		<!--Submission Batong-->
 	<Item name="" identifier="scp_submissionbaton" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,stunner,gunsmith,mountableweapon" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+		
 		<InventoryIcon name="pacifinv" texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="343,115,83,83" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="1,412,210,62" depth="0.55" origin="0.4954025,0.7936202" />
+		
 		<Body width="210" height="62" density="25" />
 
 		<MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="45,10" handle1="-30,15" handle2="-30,15" holdangle="20" reload="1.25" range="135" combatPriority="49" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
@@ -335,8 +347,10 @@
 
 		<!--Sledgehammer-->
 	<Item name="" description="" identifier="scp_sledge" category="Weapon" subcategory="Melee" Tags="mediumitem,weapon,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" scale="0.27" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+		
 		<InventoryIcon name="sledgeinv" texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="347,2,100,98" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="3,261,467,129" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="370" height="60" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand+LeftHand" controlpose="true" holdpos="15,-60" aimpos="45,-10" reload="2" handle1="-30,0" range="300" handle2="15,5" holdangle="45" combatpriority="40">
