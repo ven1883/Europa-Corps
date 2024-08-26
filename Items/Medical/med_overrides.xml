@@ -52,6 +52,19 @@
 					<!--doubled to compete with removal speed-->
 					<Affliction identifier="morphineaffliction" amount="4" />
 					<ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
+				</StatusEffect>			
+
+				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="30">
+					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+
+					<!--<ReduceAffliction type="burn" amount="2.5" />
+					<ReduceAffliction identifier="damage" amount="2.5" />-->
+					<Affliction identifier="oxygenlow" amount="3" />
+					<Affliction identifier="opiateaddiction" amount="2.5" />
+					<Affliction identifier="opiateoverdose" amount="2.0" />
+					<!--doubled to compete with removal speed-->
+					<Affliction identifier="morphineaffliction" amount="4" />
+					<ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
 				</StatusEffect>
 
 				<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="5">
@@ -59,46 +72,6 @@
 
 					<!--no double since there is already two different afflictions applying-->
 					<Affliction identifier="morphineaffliction" amount="14" />
-				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="0.75" />
-				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="10" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="0.75" />
-				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="15">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="10" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="15">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.5" />
 				</StatusEffect>
 
 				<!-- Remove the item when fully used -->
@@ -110,52 +83,11 @@
 
 			<Projectile 
 				characterusable="false" 
-				launchimpulse="20.0" 
+				launchimpulse="18.0" 
 				sticktocharacters="true" 
-				launchrotation="-90">
-
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="10">
-					<!--<ReduceAffliction type="burn" amount="2" />
-					<ReduceAffliction identifier="damage" amount="2" />-->
-					<Affliction identifier="oxygenlow" amount="3" />
-					<Affliction identifier="opiateaddiction" amount="2.5" />
-					<Affliction identifier="opiateoverdose" amount="2.0" />
-					<!--doubled to compete with removal speed-->
-					<Affliction identifier="morphineaffliction" amount="6" />
-					<ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="10">
-					<Conditional health="lt 10" />
-
-					<!--no double since there is already two different afflictions applying-->
-					<Affliction identifier="morphineaffliction" amount="7" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="6" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="0.75" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="0.75" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="13">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
+				launchrotation="-90" 
+				inheritstatuseffectsfrom="MeleeWeapon" 
+				inheritrequiredskillsfrom="MeleeWeapon">
 			</Projectile>
 
 		</Morphine>
@@ -218,44 +150,16 @@
 					<Affliction identifier="morphineaffliction" amount="18" />
 				</StatusEffect>
 
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="10" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
+				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="5">
+					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
 
-					<Affliction identifier="organdamage" amount="0.75" />
-				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="12" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="0.75" />
-				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="17">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="19" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="12" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="17">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.5" />
+					<!--<ReduceAffliction identifier="damage" amount="10" />
+					<ReduceAffliction type="burn" amount="10" />-->
+					<Affliction identifier="oxygenlow" amount="8" />
+					<Affliction identifier="opiateaddiction" amount="6" />
+					<Affliction identifier="opiateoverdose" amount="6" />
+					<Affliction identifier="morphineaffliction" amount="15" />
+					<ReduceAffliction identifier="opiatewithdrawal" amount="20" />
 				</StatusEffect>
 
 				<!-- Remove the item when fully used -->
@@ -265,46 +169,13 @@
 
 			</MeleeWeapon>
 
-			<Projectile
+			<Projectile 
 				characterusable="false" 
-				launchimpulse="20.0" 
+				launchimpulse="18.0" 
 				sticktocharacters="true" 
-				launchrotation="-90">
-
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true" />
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="5">
-
-					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-
-					<!--<ReduceAffliction identifier="damage" amount="5.75" />
-					<ReduceAffliction type="burn" amount="5.75" />-->
-					<Affliction identifier="oxygenlow" amount="8" />
-					<Affliction identifier="opiateaddiction" amount="6" />
-					<Affliction identifier="opiateoverdose" amount="6" />
-					<Affliction identifier="morphineaffliction" amount="50" />
-					<ReduceAffliction identifier="opiatewithdrawal" amount="20" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="6" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="0.75" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="0.75" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="13">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
+				launchrotation="-90" 
+				inheritstatuseffectsfrom="MeleeWeapon" 
+				inheritrequiredskillsfrom="MeleeWeapon">
 			</Projectile>
 
 		</Fentanyl>
@@ -703,6 +574,17 @@
 					<ReduceAffliction identifier="steroidoverdose" amount="1.5" />
 					<Affliction identifier="oxygenlow" amount="1.0" />
 				</StatusEffect>
+				
+				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="35">
+					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+
+					<!--<ReduceAffliction identifier="opiatewithdrawal" amount="1.0" />
+					<ReduceAffliction identifier="opiateaddiction" amount="1.0" />-->
+					<ReduceAffliction identifier="opiateoverdose" amount="1.5" />
+					<ReduceAffliction identifier="methoverdose" amount="1.5" />
+					<ReduceAffliction identifier="steroidoverdose" amount="1.5" />
+					<Affliction identifier="oxygenlow" amount="1.0" />
+				</StatusEffect>
 
 				<!-- Remove the item when fully used -->
 				<StatusEffect type="OnBroken" target="This">
@@ -713,23 +595,11 @@
 
 			<Projectile 
 				characterusable="false" 
-				launchimpulse="20.0" 
+				launchimpulse="18.0" 
 				sticktocharacters="true" 
-				launchrotation="-90">
-
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="35">
-					<!--<ReduceAffliction identifier="opiatewithdrawal" amount="1.0" />
-					<ReduceAffliction identifier="opiateaddiction" amount="1.0" />-->
-					<ReduceAffliction identifier="opiateoverdose" amount="1.5" />
-					<ReduceAffliction identifier="methoverdose" amount="1.5" />
-					<ReduceAffliction identifier="steroidoverdose" amount="1.5" />
-					<Affliction identifier="oxygenlow" amount="1.0" />
-				</StatusEffect>
-
+				launchrotation="-90" 
+				inheritstatuseffectsfrom="MeleeWeapon" 
+				inheritrequiredskillsfrom="MeleeWeapon">
 			</Projectile>
 
 		</Naloxone>
@@ -737,7 +607,7 @@
 		<!--++++++++++++++++++++++++++++++++++++-->
 
 		<!-- add overdose, addiction and withdrawal -->
-		<Methamphetamine name="" identifier="meth" category="Medical" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+		<Methamphetamine name="" identifier="meth" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
 			<SuitableTreatment identifier="methwithdrawal" suitability="30" />
 			<SuitableTreatment identifier="methoverdose" suitability="-10" />
@@ -752,16 +622,17 @@
 				canBeCombined="true" removeOnCombined="true" 
 				slots="Any,RightHand,LeftHand" 
 				aimpos="40,5" handle1="-5,0" holdangle="220" 
-				reload="1.0" 
-				msg="ItemMsgPickUpSelect">
+				reload="1.0"
+				 msg="ItemMsgPickUpSelect">
+
+				<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
 
 				<RequiredSkill identifier="medical" level="35" />
 
-				<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
 				<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
 
 				<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="30.0">
-					<Affliction identifier="organdamage" amount="0.375" />
+					<Affliction identifier="organdamage" amount="0.2" />
 					<ReduceAffliction identifier="oxygenlow" amount="3" />
 					<ReduceAffliction identifier="stun" amount="0.75" />
 				</StatusEffect>
@@ -779,11 +650,11 @@
 				</StatusEffect>
 
 				<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="30.0">
-					<Affliction identifier="organdamage" amount="0.7" />
-					<ReduceAffliction identifier="oxygenlow" amount="1.5" />
+					<Affliction identifier="organdamage" amount="0.5" />
+					<ReduceAffliction identifier="oxygenlow" amount="2" />
 					<ReduceAffliction identifier="stun" amount="0.75" />
 				</StatusEffect>
-				
+
 				<StatusEffect tags="medical" type="OnFailure" target="UseTarget" disabledeltatime="true">
 					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
 
@@ -796,46 +667,6 @@
 					<ReduceAffliction identifier="methwithdrawal" amount="3.0" />
 				</StatusEffect>
 
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="10" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="15">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.5" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="10" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="15">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.75" />
-				</StatusEffect>
-
 				<!-- Remove the item when fully used -->
 				<StatusEffect type="OnBroken" target="This">
 					<Remove />
@@ -845,52 +676,11 @@
 
 			<Projectile 
 				characterusable="false" 
-				launchimpulse="20.0" 
+				launchimpulse="18.0" 
 				sticktocharacters="true" 
-				launchrotation="-90">
-
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" disabledeltatime="true">
-					<Affliction identifier="haste" amount="300" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="120.0">
-					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-
-					<Affliction identifier="organdamage" amount="0.35" />
-					<ReduceAffliction identifier="oxygenlow" amount="1.5" />
-					<ReduceAffliction identifier="stun" amount="0.75" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="20.0">
-					<Affliction identifier="methaddiction" amount="1.25" />
-					<Affliction identifier="methoverdose" amount="1.0" />
-					<ReduceAffliction identifier="methwithdrawal" amount="1.5" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="6" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="13">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.5" />
-				</StatusEffect>
-
+				launchrotation="-90" 
+				inheritstatuseffectsfrom="MeleeWeapon" 
+				inheritrequiredskillsfrom="MeleeWeapon">
 			</Projectile>
 
 		</Methamphetamine>
@@ -923,7 +713,7 @@
 				<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="60.0">
 					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
 
-					<ReduceAffliction identifier="oxygenlow" amount="0.2" />
+					<ReduceAffliction identifier="oxygenlow" amount="3" />
 					<Affliction identifier="psychosis" amount="0.55" />
 				</StatusEffect>
 
@@ -940,7 +730,7 @@
 				<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="60.0">
 					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
 
-					<ReduceAffliction identifier="oxygenlow" amount="0.2" />
+					<ReduceAffliction identifier="oxygenlow" amount="2" />
 					<Affliction identifier="psychosis" amount="1.0" />
 				</StatusEffect>
 
@@ -954,98 +744,35 @@
 					<ReduceAffliction identifier="steroidwithdrawal" amount="3.0" />
 				</StatusEffect>
 
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
+				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="10">
 
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
+					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
 
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="10" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
+					<Affliction identifier="steroidaddiction" amount="2.5" />
+					<Affliction identifier="steroidoverdose" amount="2.0" />
+					<ReduceAffliction identifier="steroidwithdrawal" amount="3.0" />
 
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
+					<Affliction identifier="strengthen" amount="30" />
 
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="15">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.5" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="10" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="15">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.75" />
+					<ReduceAffliction identifier="oxygenlow" amount="12" />
+					<Affliction identifier="psychosis" amount="6" />
 				</StatusEffect>
 
 				<!-- Remove the item when fully used -->
 				<StatusEffect type="OnBroken" target="This">
 					<Remove />
 				</StatusEffect>
+				
 
 			</MeleeWeapon>
 
 			<Projectile 
 				characterusable="false" 
-				launchimpulse="20.0" 
+				launchimpulse="18.0" 
 				sticktocharacters="true" 
-				launchrotation="-90">
-
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="60.0">
-					<ReduceAffliction identifier="oxygenlow" amount="0.2" />
-					<Affliction identifier="psychosis" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" disabledeltatime="true">
-					<Affliction identifier="strengthen" amount="300" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="20.0">
-					<Affliction identifier="steroidaddiction" amount="1.25" />
-					<Affliction identifier="steroidoverdose" amount="1.0" />
-					<ReduceAffliction identifier="steroidwithdrawal" amount="1.5" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="6" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="13">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.5" />
-				</StatusEffect>
-
+				launchrotation="-90" 
+				inheritstatuseffectsfrom="MeleeWeapon" 
+				inheritrequiredskillsfrom="MeleeWeapon">
 			</Projectile>
 
 		</AnabolicSteroids>
@@ -1125,60 +852,7 @@
 					<Affliction identifier="steroidoverdose" amount="2.0" />
 					<ReduceAffliction identifier="steroidwithdrawal" amount="3.0" />
 				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="10" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect type="OnSuccess" target="UseTarget" duration="15">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.5" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="10" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
-				<StatusEffect type="OnFailure" target="UseTarget" duration="15">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.75" />
-				</StatusEffect>
-
-				<!-- Remove the item when fully used -->
-				<StatusEffect type="OnBroken" target="This">
-					<Remove />
-				</StatusEffect>
-
-			</MeleeWeapon>
-
-			<Projectile 
-				characterusable="false" 
-				launchimpulse="20.0" 
-				sticktocharacters="true" 
-				launchrotation="-90">
-
+				
 				<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
 					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
 				</StatusEffect>
@@ -1207,26 +881,20 @@
 					<ReduceAffliction identifier="steroidwithdrawal" amount="1.5" />
 				</StatusEffect>
 
-				<StatusEffect type="OnImpact" target="UseTarget" duration="6" comparison="And">
-					<Conditional drunk="gte 15" />
-					<Conditional drunk="lt 25" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
+				<!-- Remove the item when fully used -->
+				<StatusEffect type="OnBroken" target="This">
+					<Remove />
 				</StatusEffect>
 
-				<StatusEffect type="OnImpact" target="UseTarget" duration="8" comparison="And">
-					<Conditional drunk="gte 25" />
-					<Conditional drunk="lt 45" />
-
-					<Affliction identifier="organdamage" amount="1.0" />
-				</StatusEffect>
-
-				<StatusEffect type="OnImpact" target="UseTarget" duration="13">
-					<Conditional drunk="gte 45" />
-
-					<Affliction identifier="organdamage" amount="1.5" />
-				</StatusEffect>
-
+			</MeleeWeapon>
+			
+			<Projectile 
+				characterusable="false" 
+				launchimpulse="18.0" 
+				sticktocharacters="true" 
+				launchrotation="-90" 
+				inheritstatuseffectsfrom="MeleeWeapon" 
+				inheritrequiredskillsfrom="MeleeWeapon">
 			</Projectile>
 
 		</Hyperzine>

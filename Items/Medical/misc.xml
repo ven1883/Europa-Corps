@@ -11,8 +11,8 @@
 	
   <Item name="" identifier="scp_vodka" description="" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,petfood2" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <InventoryIcon name="vodkainv" texture="Sprites/EHA_medical.png" sourcerect="118,367,57,58" origin="0.5,0.5" />
-    <Sprite texture="Sprites/EHA_medical.png" sourcerect="328,90,21,72" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="vodkainv" texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="118,367,57,58" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="328,90,21,72" depth="0.6" origin="0.5,0.5" />
 
     <Body width="30" height="55" density="20" />
     
@@ -64,8 +64,8 @@
 	<!--TODO: Remove/Reduce damage healing. Some very minor, slow healing may be fine, but 35 total is too much.-->
   <Item name="" identifier="scp_pomegrenadedrink" description="" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,petfood2" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <InventoryIcon name="vodkainv" texture="Sprites/EHA_medical.png" sourcerect="347,383,59,59" origin="0.5,0.5" />
-    <Sprite texture="Sprites/EHA_medical.png" sourcerect="328,175,21,72" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="vodkainv" texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="347,383,59,59" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="328,175,21,72" depth="0.6" origin="0.5,0.5" />
 
     <Body width="30" height="55" density="20" />
 
