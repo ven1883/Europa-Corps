@@ -1,0 +1,960 @@
+<Items>
+    
+    <!--###-->
+    <!--Vests-->
+    
+    <Item name="" identifier="scp_renegadespecialrig" category="Equipment" subcategory="Renegade" tags="mediumitem,clothing,vest" scale="0.55" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+
+        <InventoryIcon name="renegadespecialriginv" texture="%ModDir%/Items/Apparel/Sprites/renegadespecialrig.png" sourcerect="160,43,98,112" origin="0.5,0.5" />
+        <Sprite name="renegadespecialrigground" texture="%ModDir%/Items/Apparel/Sprites/renegadespecialrig.png" sourcerect="160,43,98,112" depth="0.6" origin="0.53862745,0.49777433" />
+
+        <Body radius="45" height="30" density="40" />
+
+        <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
+            
+            <damagemodifier afflictionidentifiers="gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
+            <damagemodifier afflictionidentifiers="bitewounds,lacerations" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourheavyimpact" deflectprojectiles="true" />
+
+            <SkillModifier skillidentifier="weapons" skillvalue="-15" />
+            <SkillModifier skillidentifier="medical" skillvalue="-15" />
+            <SkillModifier skillidentifier="mechanical" skillvalue="-20" />
+            <SkillModifier skillidentifier="electrical" skillvalue="-30" />
+
+            <sprite name="Special Rig Wearable" texture="%ModDir%/Items/Apparel/Sprites/renegadespecialrig.png" sound="footstep_armor_heavy" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+            <sprite name="Special Rig Right Protector" texture="%ModDir%/Items/Apparel/Sprites/renegadespecialrig.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+            <sprite name="Special Rig Left Protector" texture="%ModDir%/Items/Apparel/Sprites/renegadespecialrig.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+            <sprite name="Special Rig Right Armpad" texture="%ModDir%/Items/Apparel/Sprites/renegadespecialrig.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+            <sprite name="Special Rig Left Armpad" texture="%ModDir%/Items/Apparel/Sprites/renegadespecialrig.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+            <sprite name="Special Rig Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadespecialrig.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+            <sprite name="Special Rig Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadespecialrig.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+            
+            <StatValue stattype="WalkingSpeed" value="-0.15" />
+            <StatValue stattype="SwimmingSpeed" value="-0.25" />
+
+        </Wearable>
+
+        <Holdable 
+            slots="RightHand+LeftHand" 
+            controlpose="true" 
+            holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" 
+            msg="ItemMsgPickUpUse" 
+            canbeselected="false" canbepicked="true" pickkey="Use" />
+
+    </Item>
+    
+    <!--###-->
+    
+    <Item name="" identifier="scp_renegadevest" category="Equipment" subcategory="Renegade" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+
+        <InventoryIcon name="tacvestinv" texture="%ModDir%/Items/Apparel/Sprites/renegadevest.png" sourcerect="88,34,77,75" origin="0.5,0.5" />
+        <Sprite name="Renegade Vest Item" texture="%ModDir%/Items/Apparel/Sprites/renegadevest.png" sourcerect="0,6,76,103" depth="0.6" origin="0.5,0.5" />
+
+        <Body radius="45" height="50" density="40" />
+
+        <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+
+            <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier afflictionidentifiers="blunttrauma,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+
+            <StatValue stattype="WalkingSpeed" value="-0.05" />
+
+            <sprite name="Renegade Vest Wearable" texture="%ModDir%/Items/Apparel/Sprites/renegadevest.png" limb="Torso" hidelimb="false" inheritscale="true" scale="1.11" inheritorigin="false" origin="0.5,0.59" inheritsourcerect="false" sourcerect="0,6,76,103" />
+
+        </Wearable>
+
+        <ItemContainer 
+            capacity="4" slotsperrow="6" 
+            keepopenwhenequipped="false" 
+            movableframe="true">
+
+            <Containable items="smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+
+        </ItemContainer>
+
+    </Item>
+    
+    <!--###-->
+
+    <Item name="" identifier="scp_renegadeplatecarrier" category="Equipment" subcategory="Renegade" tags="smallitem,clothing,vest" hideinmenus="false" scale="0.35" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+
+		<InventoryIcon texture="%ModDir%/Items/Apparel/Sprites/renegadeplatecarrier.png" sourcerect="625,1,58,81" origin="0.5,0.5" />
+		<Sprite name="Renegade Vest Ground" texture="%ModDir%/Items/Apparel/Sprites/renegadeplatecarrier.png" sourcerect="549,122,134,142" depth="0.6" origin="0.5,0.5" />
+
+		<Body radius="45" height="50" density="40" />
+
+		<Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+
+			<sprite name="Renegade Carrier Vest" texture="%ModDir%/Items/Apparel/Sprites/renegadeplatecarrier.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Renegade Carrier Right Armpad" texture="%ModDir%/Items/Apparel/Sprites/renegadeplatecarrier.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Renegade Carrier Holster" texture="%ModDir%/Items/Apparel/Sprites/renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+
+			<damagemodifier afflictionidentifiers="gunshotwound,lacerations" armorsector="0.0,360.0" damagemultiplier="0.33" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="armourmedimpact" deflectprojectiles="true" />
+
+			<SkillModifier skillidentifier="weapons" skillvalue="-5" />
+			<StatValue stattype="WalkingSpeed" value="-0.1" />
+			<StatValue stattype="SwimmingSpeed" value="-0.1" />
+
+		</Wearable>
+
+		<ItemContainer 
+            capacity="4" slotsperrow="8" 
+            keepopenwhenequipped="false" 
+            movableframe="true">
+
+			<Containable items="smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+
+		</ItemContainer>
+
+	</Item>
+
+    <!--###-->
+    
+	<Item name="" identifier="scp_yuirig" category="Equipment" subcategory="Renegade" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+
+		<InventoryIcon name="specriginv" texture="%ModDir%/Items/Apparel/Sprites/specopsvest.png" sourcerect="102,47,63,80" origin="0.5,0.5" />
+		<Sprite name="specrigground" texture="%ModDir%/Items/Apparel/Sprites/specopsvest.png" sourcerect="12,7,83,115" depth="0.6" origin="0.5,0.5" />
+
+		<Body radius="45" height="40" density="40" />
+
+		<Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+
+			<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourmedimpact" deflectprojectiles="true" />
+
+			<SkillModifier skillidentifier="weapons" skillvalue="5" />
+			<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+			<SkillModifier skillidentifier="electrical" skillvalue="-10" />
+
+			<StatValue stattype="WalkingSpeed" value="0.1" />
+			<StatValue stattype="SwimmingSpeed" value="0.1" />
+
+			<sprite name="Spec Ops Rig Wearable" texture="%ModDir%/Items/Apparel/Sprites/specopsvest.png" limb="Torso" hidelimb="false" inheritscale="true" scale="1" inheritorigin="false" origin="0.53,0.65" inheritsourcerect="false" sourcerect="12,7,83,115" />
+
+		</Wearable>
+
+		<ItemContainer 
+            capacity="6" slotsperrow="8" 
+            keepopenwhenequipped="false" 
+            movableframe="true">
+
+			<Containable items="smallitem" excludeditems="toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+
+		</ItemContainer>
+
+	</Item>
+
+    <!--###-->
+
+    <Item name="" identifier="scp_livrig" category="Equipment" subcategory="Renegade" tags="mediumitem,clothing,vest" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+
+		<InventoryIcon name="vriginv" texture="%ModDir%/Items/Apparel/Sprites/vanguardrig.png" sourcerect="479,1,61,64" origin="0.5,0.5" />
+		<Sprite name="vrigground" texture="%ModDir%/Items/Apparel/Sprites/vanguardrig.png" sourcerect="172,32,96,124" depth="0.6" origin="0.5,0.5" />
+
+		<Body radius="45" height="40" density="40" />
+
+		<Holdable 
+            slots="RightHand+LeftHand" 
+            controlpose="true"
+            holdpos="15,-80" handle1="-10,30" holdangle="-5" 
+            msg="ItemMsgPickUpUse" 
+            canbeselected="false" canbepicked="true" pickkey="Use" />
+
+		<Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
+
+			<damagemodifier afflictionidentifiers="burn,radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.85" />
+			<damagemodifier afflictionidentifiers="blunttrauma,gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="armourheavyimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="armourheavyimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourheavyimpact" deflectprojectiles="true" />
+
+			<SkillModifier skillidentifier="weapons" skillvalue="10" />
+			<SkillModifier skillidentifier="mechanical" skillvalue="-30" />
+			<SkillModifier skillidentifier="electrical" skillvalue="-30" />
+
+			<sprite name="Wearable" texture="%ModDir%/Items/Apparel/Sprites/vanguardrig.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Holster" texture="%ModDir%/Items/Apparel/Sprites/renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Armpad" texture="%ModDir%/Items/Apparel/Sprites/vanguardrig.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+
+		</Wearable>
+
+		<ItemContainer
+            capacity="4" slotsperrow="8" 
+            keepopenwhenequipped="false" 
+            movableframe="true">
+
+			<Containable items="smallitem" excludeditems="toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+
+		</ItemContainer>
+
+	</Item>
+
+    <!--###-->
+    
+    <!--++++++++++++++++++++++++++++++++++++-->
+    
+    <!--helmets-->
+    
+    <Item name="" identifier="scp_renegadeheavyhelmet" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
+
+        <Sprite texture="%ModDir%/Items/Apparel/Sprites/helmets.png" sourcerect="423,76,83,77" depth="0.6" origin="0.5,0.5" />
+
+        <Body radius="30" density="50" />
+
+        <Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
+
+            <damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.12" damagesound="armourheavyimpact" deflectprojectiles="true" />
+            <damagemodifier afflictionidentifiers="blunttrauma,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourheavyimpact" deflectprojectiles="true" />
+            <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourheavyimpact" deflectprojectiles="true" />
+            <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+
+            <SkillModifier skillidentifier="weapons" skillvalue="-5" />
+            <SkillModifier skillidentifier="medical" skillvalue="-15" />
+            <SkillModifier skillidentifier="mechanical" skillvalue="-15" />
+            <SkillModifier skillidentifier="electrical" skillvalue="-15" />
+
+            <StatValue stattype="WalkingSpeed" value="-0.075" />
+
+            <sprite name="renheavycombatwear" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" hidewearablesoftype="hair" sourcerect="423,76,83,77" origin="0.5422843,0.543" />
+
+            <StatusEffect type="OnWearing" target="Character" setvalue="true" HideFace="true" disabledeltatime="true" ObstructVision="true"/>
+
+        </Wearable>
+
+    </Item>
+    
+    <!--###-->
+    
+    <Item name="" description="" identifier="scp_renegadecaptainhat" subcategory="Renegade" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.4">
+
+        <Sprite texture="%ModDir%/Items/Apparel/Sprites/helmets.png" depth="0.6" sourcerect="246,179,83,48" origin="0.5,0.5" />
+
+        <Body width="75" height="40" density="30" />
+
+        <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+
+            <sprite name="rencaphatwear" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" hidewearablesoftype="Hair" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" sourcerect="246,179,83,48" origin="0.55,1.1" />
+            
+            <SkillModifier skillidentifier="helm" skillvalue="5" />
+           
+            <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" />
+        
+        </Wearable>
+
+    </Item>
+
+    <!--###-->
+
+    <Item name="" identifier="scp_renegadehelmet" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
+
+		<Sprite name="Renegade Helmet" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" sourcerect="436,257,75,79" depth="0.6" origin="0.5,0.5" />
+
+		<Body radius="30" density="50" />
+
+		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
+
+			<damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="" deflectprojectiles="true" />
+
+			<StatValue stattype="WalkingSpeed" value="-0.025" />
+
+			<sprite name="Renegade Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.75" hidewearablesoftype="hair" sourcerect="436,257,75,79" origin="0.57,0.61" rotation="-2" />
+		
+        </Wearable>
+	
+    </Item>
+
+    <!--###-->
+
+    <Item name="" identifier="scp_yuihelmet" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
+
+		<Sprite name="Spec Ops Helmet" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" sourcerect="429,668,99,89" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon name="specopsinv" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" sourcerect="549,662,60,60" origin="0.5,0.5" />
+
+		<Body radius="30" density="50" />
+
+		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
+			<damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+
+			<SkillModifier skillidentifier="weapons" skillvalue="10" />
+			<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+			<SkillModifier skillidentifier="electrical" skillvalue="-10" />
+
+			<StatValue stattype="WalkingSpeed" value="0.075" />
+			<StatValue stattype="SwimmingSpeed" value="0.025" />
+
+			<sprite name="Yui Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.68" hidewearablesoftype="hair,moustache,beard" sourcerect="429,668,99,89" origin="0.5325714,0.6" />
+			
+            <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true"/>
+
+			<StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
+				<Affliction identifier="haste" amount="0.1" />
+			</StatusEffect>
+
+		</Wearable>
+
+	</Item>
+
+    <!--###-->
+
+    <Item name="" identifier="scp_livhelmet" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
+
+		<Sprite name="Vanguard Helmet" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" sourcerect="430,561,97,98" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon name="vanguardinv" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" sourcerect="549,599,60,60" origin="0.5,0.5" />
+
+		<Body radius="30" density="50" />
+
+		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
+
+			<damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage,bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="armourheavyimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+
+			<SkillModifier skillidentifier="weapons" skillvalue="15" />
+			<SkillModifier skillidentifier="mechanical" skillvalue="-20" />
+			<SkillModifier skillidentifier="electrical" skillvalue="-20" />
+
+			<sprite name="Van Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.62" hidewearablesoftype="hair,moustache,beard" sourcerect="430,561,97,98" origin="0.55,0.6" />
+			
+            <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+
+			<StatusEffect type="OnWearing" target="Character" disabledeltatime="true">
+				<Affliction identifier="strengthen" amount="0.05" />
+			</StatusEffect>
+
+		</Wearable>
+
+	</Item>
+
+    <!--###-->
+    
+	<!--++++++++++++++++++++++++++++++++++++-->
+	
+	<!--uniforms-->
+
+    <Item name="" identifier="scp_heavyrenuniform" description="" category="Equipment" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+
+		<ItemContainer 
+            capacity="4" 
+            depth="0.5">
+
+			<Containable items="smallitem,ammo" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+
+		</ItemContainer>
+
+		<InventoryIcon name="heavyrenuniforminv" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" sourcerect="619,0,66,52" origin="0.5,0.5" />
+		<Sprite name="heavyrenuniformground" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" sourcerect="570,52,132,74" depth="0.6" origin="0.5,0.5" />
+
+		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+
+			<sprite name="Heavy Renegade Uniform Torso" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Right Hand" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Left Hand" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Waist" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Right Leg" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Left Leg" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Renegade Uniform Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/heavyrenuniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+
+			<damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.9" />
+			<damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="explosiondamage,lacerations" armorsector="0.0,360.0" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+
+			<SkillModifier skillidentifier="weapons" skillvalue="-7" />
+			<SkillModifier skillidentifier="mechanical" skillvalue="-5" />
+			<SkillModifier skillidentifier="electrical" skillvalue="-10" />
+
+			<StatValue stattype="WalkingSpeed" value="-0.075" />
+			<StatValue stattype="SwimmingSpeed" value="-0.1" />
+            
+		</Wearable>
+
+	</Item>
+
+    <!--###-->
+
+    <Item name="" identifier="scp_liquidatorsuit" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+
+		<ItemContainer 
+            capacity="1" maxstacksize="1" 
+            hideitems="true" 
+            containedstateindicatorstyle="tank">
+
+			<Containable items="oxygensource,weldingtoolfuel" />
+		</ItemContainer>
+
+		<InventoryIcon name="highperfhazmatinv" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" sourcerect="677,0,78,67" origin="0.5,0.5" />
+		<Sprite name="highperfhazmatground" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" sourcerect="640,69,115,62" depth="0.6" origin="0.5,0.5" />
+
+		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+		<Wearable slots="Any,InnerClothes+Head+OuterClothes" msg="ItemMsgPickUpSelect">
+
+			<sprite name="highperfhazmat helm Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.82" hidewearablesoftype="hair,beard" sourcerect="689,271,87,85" origin="0.59,0.51" />
+			<sprite name="highperfhazmat Torso" texture="highperfhazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Hand" texture="highperfhazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Hand" texture="highperfhazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Lower Arm" texture="highperfhazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Lower Arm" texture="highperfhazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Upper Arm" texture="highperfhazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Upper Arm" texture="highperfhazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Waist" texture="highperfhazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Thigh" texture="highperfhazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Thigh" texture="highperfhazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Leg" texture="highperfhazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Leg" texture="highperfhazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Shoe" texture="highperfhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Shoe" texture="highperfhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection,scp_hexgasdamage" damagemultiplier="0" probabilitymultiplier="0" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness,scp_psidamage" damagemultiplier="0.05" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn,burn" damagemultiplier="0.1" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,gunshotwound" damagemultiplier="0.75" />
+
+			<SkillModifier skillidentifier="electrical" skillvalue="10" />
+			<SkillModifier skillidentifier="weapons" skillvalue="-35" />
+
+			<StatValue stattype="WalkingSpeed" value="-0.2" />
+			<StatValue stattype="SwimmingSpeed" value="-0.2" />
+
+			<StatusEffect tags="cbrnsuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
+
+			<StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+
+			<StatusEffect type="OnWearing" target="Character" HideFace="true" disabledeltatime="true" />
+
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.1" comparison="Or">
+				<Conditional IsDead="false" />
+                
+				<RequiredItem items="oxygentank" type="Contained" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+				<Conditional IsDead="false" />
+
+				<RequiredItem items="weldingfueltank" type="Contained" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+				<RequiredItem items="incendiumfueltank" type="Contained" />
+
+				<Affliction identifier="burn" amount="0.1" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.05" comparison="Or">
+				<Conditional IsDead="false" />
+
+				<RequiredItem items="oxygenitetank" type="Contained" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" HideFace="true" PressureProtection="4500.0"/>
+
+			<StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
+				<RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+				<Conditional condition="lte 5.0" />
+
+				<Sound file="%ModDir%/Sounds/suitalarm.ogg" range="300" volume="0.3" />
+			</StatusEffect>
+
+		</Wearable>
+
+	</Item>
+
+    <!--###-->
+
+    <Item name="" identifier="scp_renegadecombatmedicuniform" category="Equipment" subcategory="Renegade" description="" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+
+		<InventoryIcon name="combatmedicinv" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" sourcerect="690,2,96,86" origin="0.5,0.5" />
+		<Sprite name="combatmedicground" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" sourcerect="668,92,117,73" depth="0.6" origin="0.5,0.5" />
+
+		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+
+			<sprite name="Combat Medic Torso" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Right Hand" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Left Hand" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Waist" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Right Leg" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Left Leg" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+			<sprite name="Combat Medic Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/combatmedicrenegade.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
+
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.85" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" />
+
+			<SkillModifier skillidentifier="medical" skillvalue="5" />
+			<SkillModifier skillidentifier="weapons" skillvalue="5" />
+			<SkillModifier skillidentifier="electrical" skillvalue="-10" />
+			<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+
+			<StatValue stattype="WalkingSpeed" value="0.05" />
+			<StatValue stattype="SwimmingSpeed" value="0.05" />
+
+		</Wearable>
+
+		<ItemContainer 
+            capacity="4">
+
+			<Containable items="smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+
+		</ItemContainer>
+
+	</Item>
+    
+    <!--###-->
+
+    <Item name="" identifier="scp_renegadeuniform" category="Equipment" subcategory="Renegade" description="" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+
+		<InventoryIcon name="renegadeuniforminv" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" sourcerect="689,130,90,90" origin="0.5,0.5" />
+		<Sprite name="renegadeuniformground" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" sourcerect="690,58,115,58" depth="0.6" origin="0.5,0.5" />
+
+		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+
+			<sprite name="Renegade Uniform Torso" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Right Hand" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Left Hand" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Waist" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Right Leg" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Left Leg" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+			<sprite name="Renegade Uniform Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/renegadeuniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,805,256" origin="0.5,0.5" />
+
+			<damagemodifier afflictionidentifiers="lacerations,gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
+
+			<StatValue stattype="WalkingSpeed" value="0.025" />
+			<StatValue stattype="SwimmingSpeed" value="0.025" />
+
+		</Wearable>
+
+		<ItemContainer 
+            capacity="2">
+
+			<Containable items="smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+
+		</ItemContainer>
+
+	</Item>
+
+    <!--###-->
+
+	<Item name="" identifier="scp_renegadecaptainuniform" description="" category="Equipment" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+
+		<InventoryIcon name="renegadecaptaininv" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" sourcerect="670,0,100,73" origin="0.5,0.5" />
+		<Sprite name="renegadecaptainground" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" sourcerect="654,77,116,55" depth="0.6" origin="0.5,0.5" />
+
+		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+
+			<sprite name="renegadecaptain Torso" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Right Hand" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Left Hand" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Waist" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Right Leg" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Left Leg" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+			<sprite name="renegadecaptain Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/renegadecaptain.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,770,256" origin="0.5,0.5" />
+
+			<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
+
+			<SkillModifier skillidentifier="helm" skillvalue="5" />
+
+		</Wearable>
+
+	</Item>
+
+    <!--###-->
+
+    <Item name="" identifier="scp_specopsuniform" description="" category="Equipment" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+
+		<ItemContainer 
+            capacity="4" 
+            depth="0.5">
+
+			<Containable items="smallitem,ammo" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+
+		</ItemContainer>
+
+		<InventoryIcon name="specopsuniforminv" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" sourcerect="595,2,76,61" origin="0.5,0.5" />
+		<Sprite name="specopsuniformground" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" sourcerect="571,75,132,74" depth="0.6" origin="0.5,0.5" />
+
+		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+
+			<sprite name="Spec Ops Uniform Torso" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Hand" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Hand" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Waist" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Leg" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Leg" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/specopsuniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+
+			<damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.75" />
+			<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.65" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.5" />
+
+			<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+			<SkillModifier skillidentifier="electrical" skillvalue="-10" />
+
+			<StatValue stattype="SwimmingSpeed" value="0.2" />
+
+			<StatusEffect type="OnWearing" target="Character">
+				<ReduceAffliction identifier="bleeding" amount="0.2" />
+				<ReduceAffliction identifier="damage" amount="0.15" />
+			</StatusEffect>
+
+		</Wearable>
+
+	</Item>
+
+    <!--###-->
+    
+	<Item name="" identifier="scp_livuniform" description="" category="Equipment" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+
+		<InventoryIcon name="specopsuniforminv" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" sourcerect="595,2,76,61" origin="0.5,0.5" />
+		<Sprite name="specopsuniformground" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" sourcerect="571,75,132,74" depth="0.6" origin="0.5,0.5" />
+
+		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+
+			<sprite name="Spec Ops Uniform Torso" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Hand" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Hand" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Waist" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Leg" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Leg" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Spec Ops Uniform Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/vanguarduniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+
+			<damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.75" />
+			<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.65" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.4" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds,bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" deflectprojectiles="true" />
+
+			<SkillModifier skillidentifier="mechanical" skillvalue="-20" />
+			<SkillModifier skillidentifier="electrical" skillvalue="-20" />
+
+			<StatValue stattype="SwimmingSpeed" value="-0.05" />
+
+			<StatusEffect type="OnWearing" target="Character">
+				<ReduceAffliction identifier="bleeding" amount="0.3" />
+				<ReduceAffliction identifier="damage" amount="0.25" />
+				<ReduceAffliction identifier="bloodloss" amount="0.15" />
+			</StatusEffect>
+
+		</Wearable>
+
+	</Item>
+
+    <!--###-->
+    
+	<!--++++++++++++++++++++++++++++++++++++-->
+	
+	<!--Misc-->
+
+    <Item name="" identifier="scp_renegadedivingsuit" category="Diving" subcategory="Renegade" tags="diving,deepdiving,provocative,divingsuit" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+
+		<InventoryIcon name="renegadesuitinv" texture="%ModDir%/Items/Apparel/Sprites/renegadesuititems.png" sourcerect="358,0,94,87" origin="0.5,0.5" />
+		<Sprite name="Renegade Diving Suit Item" texture="%ModDir%/Items/Apparel/Sprites/renegadesuititems.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
+
+		<ContainedSprite name="Renegade Diving Suit Vert Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Items/Apparel/Sprites/renegadesuititems.png" sourcerect="181,0,70,192" depth="0.55" origin="0.5,0.5" />
+		<ContainedSprite name="Renegade Diving Suit Beh Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Items/Apparel/Sprites/renegadesuititems.png" sourcerect="469,0,80,207" depth="0.55" origin="-0.12,-0.13" />
+		<ContainedSprite name="Renegade Diving Suit In Horiz Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Items/Apparel/Sprites/renegadesuititems.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
+
+		<Body radius="45" width="34" density="15" />
+        
+		<Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+
+			<sprite name="Renegade Diving Suit Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="true" hideotherwearables="true" sourcerect="-3,204,103,103" origin="0.5,0.5">
+				
+                <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
+					
+                    <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true">
+                        <Conditional IsDead="false" />
+                    </StatusEffect>
+					
+                    <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+                </LightComponent>
+
+			</sprite>
+
+			<sprite name="Renegade Diving Suit Torso" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Right Hand" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Left Hand" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Waist" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Right Leg" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Left Leg" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Renegade Diving Suit Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/renegadesuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			
+            <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+
+			<StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="6000.0" PropulsionSpeedMultiplier="1.45" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+				<Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" />
+				<Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" />
+			</StatusEffect>
+
+			<StatValue stattype="WalkingSpeed" value="-0.1" />
+
+			<StatusEffect type="OnContained" target="Contained" Condition="1.0">
+				<Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+				<RequiredItem items="oxygentank" type="Contained" excludebroken="false" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
+				<Conditional IsDead="false" />
+				<RequiredItem items="oxygentank" type="Contained" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-20.0" Condition="-0.5">
+				<Conditional IsDead="false" />
+				<RequiredItem items="weldingfueltank" type="Contained" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-20.0" Condition="-0.5">
+				<Conditional IsDead="false" />
+				<RequiredItem items="incendiumfueltank" type="Contained" />
+
+				<Affliction identifier="burn" amount="0.1" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.05" comparison="Or">
+				<Conditional IsDead="false" />
+				<RequiredItem items="oxygenitetank" type="Contained" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.3" setvalue="true" comparison="Or">
+				<Conditional IsDead="false" />
+				<RequiredItem items="oxygenitetank" type="Contained" />
+			</StatusEffect>
+
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,bitewounds,lacerations" damagemultiplier="0.75" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.6" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness,burn" damagemultiplier="0.7" damagesound="armourmedimpact" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="armourmedimpact" />
+
+		</Wearable>
+
+		<Holdable 
+            slots="RightHand+LeftHand"
+            controlpose="true" 
+            holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" 
+            msg="ItemMsgPickUpUse" 
+            canbeselected="false" canbepicked="true" pickkey="Use" />
+
+		<ItemContainer 
+            capacity="1" maxstacksize="1" 
+            hideitems="true"
+            containedstateindicatorstyle="tank">
+
+			<Containable items="oxygensource,weldingtoolfuel" />
+
+			<StatusEffect type="OnWearing" target="Contained">
+				<RequiredItem items="oxygensource" type="Contained" />
+				<Conditional condition="lt 5.0" />
+
+				<Sound file="%ModDir%/Sounds/suitalarm.ogg" range="200" volume="0.5" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
+				<RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+				<Conditional condition="lte 0.0" />
+
+				<Sound file="%ModDir%/Sounds/suitalarm.ogg" range="300" volume="0.5" />
+			</StatusEffect>
+
+		</ItemContainer>
+
+		<aitarget maxsightrange="1500" />
+
+	</Item>
+
+    <!--###-->
+
+    <Item name="" identifier="scp_interceptorsuit" category="Diving,Equipment" tags="diving,deepdiving,provocative" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="2">
+
+		<InventoryIcon texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" sourcerect="517,2,74,77" origin="0.5,0.5" />
+		<Sprite name="intercepsuit Suit Ground" texture="%ModDir%/Items/Apparel/Sprites/interceptsuititems.png" sourcerect="0,9,157,121" depth="0.55" origin="0.5,0.5" />
+		<ContainedSprite name="intercepsuit Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Items/Apparel/Sprites/interceptsuititems.png" sourcerect="174,0,70,192" depth="0.55" origin="0.5,0.5" />
+		<ContainedSprite name="intercepsuit Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" sourcerect="432,0,80,207" depth="0.55" origin="-0.12,-0.14" />
+		<ContainedSprite name="intercepsuit Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Items/Apparel/Sprites/interceptsuititems.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
+
+		<Body radius="45" width="34" density="20" />
+
+		<Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+			
+            <sprite name="intercepsuit Suit Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.67" hidelimb="false" alphaclipotherwearables="true" sourcerect="686,356,103,103" origin="0.50110054,0.5257158">
+				
+                <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
+					
+                    <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
+						<Conditional IsDead="false" />
+					</StatusEffect>
+					
+                    <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+				</LightComponent>
+
+			</sprite>
+
+			<sprite name="intercepsuit Suit Torso" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,680,256" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Right Hand" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Left Hand" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Waist" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Right Leg" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Left Leg" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			<sprite name="intercepsuit Suit Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/interceptsuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+			
+            <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+
+			<StatusEffect type="OnWearing" target="Character" ObstructVision="true" PressureProtection="6000.0" SpeedMultiplier="0.95" PropulsionSpeedMultiplier="1.4" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+				<Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
+				<Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
+			</StatusEffect>
+
+			<StatusEffect type="OnContained" target="Contained" Condition="1.0" interval="1" disabledeltatime="true">
+				<Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+				<RequiredItem items="refillableoxygensource" type="Contained" excludebroken="false" excludefullcondition="true" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.3" comparison="Or">
+				<Conditional IsDead="false" />
+				<RequiredItem items="oxygensource" type="Contained" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" interval="0.5" disabledeltatime="true">
+				<Conditional IsDead="false" />
+				<RequiredItem items="weldingfueltank" type="Contained" />
+			</StatusEffect>
+
+			<StatusEffect type="OnWearing" target="Contained,Character" targetlimbs="Torso" Oxygen="-10.0" Condition="-0.5" interval="0.5" disabledeltatime="true">
+				<Conditional IsDead="false" />
+				<RequiredItem items="incendiumfueltank" type="Contained" />
+
+				<Affliction identifier="burn" amount="3.0" />
+			</StatusEffect>
+
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.6" damagesound="LimbArmor" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+
+			<StatValue stattype="SwimmingSpeed" value="0.5" />
+			<StatValue stattype="WalkingSpeed" value="-0.1" />
+		</Wearable>
+
+		<Holdable 
+            slots="RightHand+LeftHand" 
+            controlpose="true"
+            holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" 
+            msg="ItemMsgPickUpUse" 
+            canbeselected="false" canbepicked="true" pickkey="Use" />
+
+		<ItemContainer 
+            capacity="1" maxstacksize="1" 
+            hideitems="true" 
+            containedstateindicatorstyle="tank">
+
+			<SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+
+			<Containable items="weldingtoolfuel" excludeditems="oxygenitetank" />
+
+			<Containable items="oxygensource" excludeditems="oxygenitetank">
+				<StatusEffect type="OnWearing" target="Contained">
+					<RequiredItem items="oxygensource" type="Contained" />
+					<Conditional condition="lt 5.0" />
+
+					<Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true" />
+				</StatusEffect>
+			</Containable>
+
+			<Containable items="oxygenitetank">
+				<StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.3" setvalue="true" targetslot="0">
+					<Conditional IsDead="false" />
+				</StatusEffect>
+			</Containable>
+
+			<StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
+				<RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+				<Conditional condition="lte 0.0" />
+
+				<Sound file="Content/Items/WarningBeep.ogg" range="250" loop="true" />
+			</StatusEffect>
+
+		</ItemContainer>
+
+		<aitarget maxsightrange="1500" />
+
+	</Item>
+
+    
+</Items>
