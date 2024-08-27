@@ -1281,15 +1281,6 @@
 
 		<SkillRequirementHint identifier="weapons" level="100" />
 
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.007" minleveldifficulty="15" />
-
-		<Price baseprice="1200" sold="false" displaynonempty="true" />
-
-		<Deconstruct time="20">
-			<Item identifier="steel" amount="2" />
-			<Item identifier="scp_durasteel" amount="3" />
-		</Deconstruct>
 	</Item>
 
 		<!--Prototype Assault Revolver-->
@@ -1413,19 +1404,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="50" />
 
-		<Fabricate suitablefabricators="advweaponfabricator" requiredtime="35">
-			<RequiredSkill identifier="weapons" level="50" />
-			<requireditem identifier="scp_prototypeusb" mincondition="0.50" />
-			<RequiredItem identifier="scp_riflekit" mincondition="0.50" />
-			<RequiredItem identifier="scp_sg550" />
-			<RequiredItem identifier="scp_durasteel" amount="4" />
-			<RequiredItem identifier="aluminium" amount="2" />
-		</Fabricate>
 
-		<Deconstruct time="12">
-			<Item identifier="scp_durasteel" amount="2" />
-			<Item identifier="aluminium" />
-		</Deconstruct>
 	</Item>
 
 		<!--###-->
@@ -1509,21 +1488,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="60" />
 
-		<Price baseprice="3000" sold="false" />
 
-		<Fabricate suitablefabricators="advweaponfabricator" requiredtime="35">
-			<RequiredSkill identifier="weapons" level="50" />
-			<requireditem identifier="scp_prototypeusb" mincondition="0.50" />
-			<RequiredItem identifier="scp_riflekit" mincondition="1" />
-			<RequiredItem identifier="scp_ash12" />
-			<RequiredItem identifier="scp_durasteel" amount="6" />
-			<RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-		</Fabricate>
-
-		<Deconstruct time="12">
-			<Item identifier="titaniumaluminiumalloy" />
-			<Item identifier="scp_durasteel" amount="2" />
-		</Deconstruct>
 	</Item>
 
 </Items>

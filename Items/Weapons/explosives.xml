@@ -277,10 +277,6 @@
 				<ParticleEmitter particle="scp_grenadespoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.65" scalemax="0.65" anglemin="-35" anglemax="35" colormultiplier="100,100,100,255" />
 			</StatusEffect>
 		</Throwable>
-		<Deconstruct time="10">
-			<Item identifier="depletedfuel" outcondition="0.5" />
-			<Item identifier="uex" outcondition="0.5" />
-		</Deconstruct>
 	</Item>
 
 

@@ -2,16 +2,6 @@
 <Items>
 <!--.38 Levergun-->
 <Item name="" description="" identifier="sgt_levergun" category="Weapon" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.385" impactsoundtag="weaponlightdrop" allowasextracargo="true">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_basicparts" />
-      <RequiredItem identifier="steel" amount="4" />
-      <RequiredItem identifier="plastic" amount="4" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <InventoryIcon name="leverguninv" texture="%ModDir%/Weapons/Renegade.png" sourcerect="282,461,61,72" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Renegade.png" sourcerect="0,461,278,68" depth="0.55" origin="0.5,0.25" />
     <Body width="180" height="30" density="50" />
@@ -43,18 +33,6 @@
   </Item>
   <!--Henry Tactical-->
   <Item name="" description="" identifier="sgt_henrytac" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop" allowasextracargo="true">
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="75" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_pistolkit" />
-      <RequiredItem identifier="sgt_levergun" />
-      <RequiredItem identifier="scp_durasteel" amount="2" />
-      <RequiredItem identifier="dementonite" amount="2" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="dementonite" />
-    </Deconstruct>
     <InventoryIcon name="henrytacinv" texture="%ModDir%/Weapons/Prototype.png" sourcerect="243,3,56,56" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Prototype.png" sourcerect="0,87,284,71" depth="0.55" origin="0.5,0.25" />
     <Body width="180" height="30" density="50" />
@@ -85,11 +63,6 @@
   </Item>
   <!--7.62x51 VHS-->
   <Item name="" description="" identifier="sgt_vhs" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.37" impactsoundtag="weaponheavydrop">
-    <Deconstruct time="35">
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="scp_durasteel" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/Coalition.png" sourcerect="306,233,54,56" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Coalition.png" sourcerect="0,395,275,85" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -142,11 +115,6 @@
   </Item>
   <!--F2000-->
   <Item name="" description="" identifier="sgt_f2k" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.43" impactsoundtag="weaponheavydrop">
-    <Deconstruct time="35">
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="scp_durasteel" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/Coalition.png" sourcerect="314,415,54,56" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Coalition.png" sourcerect="361,234,237,86" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -194,11 +162,6 @@
   </Item>
 <!--XMS-->
 <Item name="" identifier="sgt_xms" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.43" impactsoundtag="weaponheavydrop">
-    <Deconstruct time="35">
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="scp_durasteel" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/coalition.png" sourcerect="316,480,54,56" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/coalition.png" sourcerect="371,335,237,86" depth="0.55" origin="0.5,0.5" />
     <Body width="234" height="59" density="50" />
@@ -232,11 +195,6 @@
   </Item>
   <!--PMR-->
   <Item name="" identifier="sgt_bopmr" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.34" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" impactsoundtag="weaponheavydrop">
-    <Deconstruct time="35">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/Coalition.png" sourcerect="367,120,353,104" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Coalition.png" sourcerect="367,120,353,104" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -278,19 +236,6 @@
   </Item>
   <!--SVCh-->
   <Item name="" identifier="sgt_ppr" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="90" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_sniperkit" />
-      <RequiredItem identifier="scp_t5000" />
-      <RequiredItem identifier="scp_durasteel" amount="4" />
-      <RequiredItem identifier="physicorium" amount="4" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" amount="2" />
-      <Item identifier="physicorium" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/Prototype.png" sourcerect="535,0,55,61" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Prototype.png" sourcerect="0,565,312,83" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -347,20 +292,6 @@
   </Item>
   <!--M1 Garand-->
   <Item name="" description="" identifier="sgt_rifle" category="Weapon" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-      <Item identifier="steel" />
-      <Item identifier="steel" />
-      <Item identifier="steel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="80" requiresrecipe="true">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_basicparts" />
-      <RequiredItem identifier="rifle" />
-      <RequiredItem identifier="steel" amount="4" />
-      <RequiredItem identifier="plastic" amount="2" />
-    </Fabricate>
     <Sprite texture="%ModDir%/Weapons/renegade.png" sourcerect="499,135,386,72" depth="0.55" origin="0.5,0.25" />
     <InventoryIcon name="rifleinv" texture="%ModDir%/Weapons/renegade.png" sourcerect="892,112,66,79" origin="0.5,0.5" />
     <Body width="190" height="50" density="25" />
@@ -390,18 +321,6 @@
   </Item>
   <!--HCAR-->
   <Item name="" description="" identifier="sgt_rifleprototype" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="80" />
-      <requireditem identifier="scp_prototypeusb" mincondition="0.50" />
-      <RequiredItem identifier="scp_riflekit" mincondition="1" />
-      <RequiredItem identifier="sgt_rifle" />
-      <RequiredItem identifier="physicorium" amount="2" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="6" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="physicorium" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Weapons/prototype.png" sourcerect="0,353,331,85" depth="0.55" origin="0.5,0.5" />
     <InventoryIcon name="rifleinv" texture="%ModDir%/Weapons/prototype.png" sourcerect="417,0,56,62" origin="0.5,0.5" />
     <Body width="190" height="50" density="25" />
@@ -433,18 +352,6 @@
   </Item>
   <!--Orsis T-5000-->
   <Item name="" identifier="scp_t5000" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="45">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_sniperkit" mincondition="0.5" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="plastic" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="titaniumaluminiumalloy" amount="2" />
-      <Item identifier="rubber" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir:2764968387%/Weapons/weaponsinv.png" sourcerect="418,250,73,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2764968387%/Weapons/heavyweapons.png" sourcerect="287,65,313,66" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -492,19 +399,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_m24" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="45">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_basicparts" amount="3" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-      <RequiredItem identifier="steel" amount="5" />
-      <RequiredItem identifier="plastic" amount="4" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="rubber" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir:2764968387%/Weapons/weaponsinv.png" sourcerect="491,250,73,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2764968387%/Weapons/heavyweapons.png" sourcerect="11,716,309,66" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -553,16 +447,6 @@
   </Item>
   <!--RSh-12.7-->
   <Item name="" identifier="scp_rsh12" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" scale="0.445" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="scp_pistolkit" />
-      <RequiredItem identifier="scp_anaconda" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
@@ -608,16 +492,6 @@
   </Item>
   <!--SG550-->
   <Item name="" identifier="scp_sg550" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="30" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.25" />
-      <RequiredItem identifier="plastic" amount="3" />
-      <RequiredItem identifier="steel" amount="3" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="484,82,63,76" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="2,484,244,69" depth="0.55" origin="0.5,0.5" />
     <Body width="244" height="69" density="50" />
@@ -670,17 +544,6 @@
   </Item>
   <!--AS Val-->
   <Item name="" identifier="scp_val" description="" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" category="Weapon" subcategory="Renegade" impactsoundtag="weaponlightdrop">
-    <Fabricate suitablefabricators="fabricator,weaponfabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="35" />
-      <RequiredItem identifier="scp_basicparts" amount="2" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="rubber" amount="3" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="scp_basicparts" />
-      <Item identifier="rubber" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="209,167,69,80" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="1,328,234,59" depth="0.55" origin="0.5,0.5" />
     <Body width="234" height="59" density="50" />
@@ -731,18 +594,6 @@
   </Item>
   <!--ASh-12.7-->
   <Item name="" identifier="scp_ash12" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="scp_riflekit" />
-      <RequiredItem identifier="scp_scar17" />
-      <RequiredItem identifier="steel" amount="4" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="0,327,70,81" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="491,320,227,109" depth="0.55" origin="0.5,0.5" />
     <Body width="227" height="75" density="50" />
@@ -814,17 +665,6 @@
   </Item>
   <!--CMMG MXA1-->
   <Item name="" identifier="scp_mxa1" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.5" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-      <RequiredItem identifier="plastic" amount="6" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" amount="3" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="413,85,66,75" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="204,62,258,94" depth="0.55" origin="0.5,0.5" />
     <Body width="250" height="60" density="50" />
@@ -877,18 +717,6 @@
   </Item>
   <!--SCAR-H-->
   <Item name="" description="" identifier="scp_scar17" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.5" />
-      <RequiredItem identifier="scp_mxa1" />
-      <RequiredItem identifier="scp_durasteel" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
-    </Fabricate>
-    <Deconstruct time="35">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="70,169,68,77" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/heavyweapons.png" sourcerect="2,200,247,71" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -943,17 +771,6 @@
   </Item>
   <!--!unidentified-->
   <Item name="" description="" identifier="scp_scar20" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.25" />
-      <RequiredItem identifier="scp_scar17" />
-      <RequiredItem identifier="titanium" amount="2" />
-    </Fabricate>
-    <Deconstruct time="35">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="1,499,68,77" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/heavyweapons.png" sourcerect="252,191,284,83" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -997,17 +814,6 @@
   </Item>
   <!--The first weapon in EHA bruh-->
   <Item name="" identifier="scp_mdr" description="" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.25" />
-      <RequiredItem identifier="scp_sg550" />
-      <RequiredItem identifier="plastic" amount="2" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="scp_sg550" />
-      <Item identifier="plastic" />
-      <Item identifier="steel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="276,84,68,76" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="212,160,232,103" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1041,19 +847,6 @@
   </Item>
   <!--M107-->
   <Item name="" identifier="scp_m107" description="" tags="mediumitem,weapon,gun,gunsmith,specialgun,mountableweapon,bulkyweapon" Scale="0.43" category="Weapon" subcategory="Prototype" impactsoundtag="weaponheavydrop">
-    <Deconstruct time="40">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="dementonite" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="60" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="90" />
-      <RequiredItem identifier="scp_prototypeusb" />
-      <RequiredItem identifier="scp_sniperkit" />
-      <RequiredItem identifier="scp_ar50" />
-      <RequiredItem identifier="scp_durasteel" amount="6" />
-      <RequiredItem identifier="dementonite" amount="8" />
-    </Fabricate>
     <InventoryIcon name="m107inv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="0,7,70,73" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,0,450,94" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1106,19 +899,6 @@
   </Item>
   <!--MA-37-->
   <Item name="" identifier="scp_ma37" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.37" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="60">
-      <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_riflekit" />
-      <RequiredItem identifier="scp_scar17" />
-      <RequiredItem identifier="dementonite" amount="3" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="dementonite" />
-      <Item identifier="steel" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="352,6,68,76" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="1,195,326,101" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1177,18 +957,6 @@
   </Item>
   <!--HK433-->
   <Item name="" identifier="scp_hk433" description="" cargocontaineridentifier="metalcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.365" impactsoundtag="weaponlightdrop">
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="40" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.5" />
-      <RequiredItem identifier="scp_mdr" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-      <RequiredItem identifier="dementonite" amount="1" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="dementonite" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="639,4,71,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="1,890,347,108" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1270,19 +1038,6 @@
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
   <Item name="" identifier="scp_ak15zlobin" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.38" impactsoundtag="weaponheavydrop">
-    <Deconstruct time="12">
-      <Item identifier="dementonite" amount="2" />
-      <Item identifier="steel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_riflekit" />
-      <RequiredItem identifier="scp_ak103" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-      <RequiredItem identifier="dementonite" amount="6" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="432,88,82,82" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="439,659,350,80" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1366,19 +1121,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_mxa3" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="45">
-      <RequiredSkill identifier="weapons" level="70" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.5" />
-      <RequiredItem identifier="scp_mxa1" />
-      <RequiredItem identifier="dementonite" amount="4" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="514,92,87,84" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="434,741,258,94" depth="0.55" origin="0.5,0.5" />
     <Body width="250" height="60" density="50" />
@@ -1465,16 +1207,6 @@
   </Item>
   <!--AK-103-->
   <Item name="" identifier="scp_ak103" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="15">
-      <Item identifier="scp_basicparts" amount="2" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator,weaponfabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="35" />
-      <RequiredItem identifier="scp_ak74m" />
-      <RequiredItem identifier="scp_basicparts" amount="2" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-      <RequiredItem identifier="plastic" amount="2" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="139,85,69,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="464,0,255,68" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1525,15 +1257,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_tabuk" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="12">
-      <Item identifier="scp_basicparts" amount="2" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator,weaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="30" />
-      <RequiredItem identifier="scp_ak103" />
-      <RequiredItem identifier="scp_basicparts" amount="2" />
-      <RequiredItem identifier="steel" amount="2" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="198,501,64,77" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/heavyweapons.png" sourcerect="3,637,308,74" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1577,17 +1300,6 @@
   </Item>
   <!--AKS-74U-->
   <Item name="" identifier="scp_aks74u" description="" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.55" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="12">
-      <Item identifier="scp_basicparts" outcondition="0.75" />
-      <Item identifier="steel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="weaponfabricator,fabricator" requiredtime="15" requiresrecipe="false" amount="1">
-      <RequiredSkill identifier="weapons" level="24" />
-      <RequiredItem identifier="scp_basicparts" mincondition="0.75" />
-      <RequiredItem identifier="steel" />
-      <RequiredItem identifier="plastic" amount="2" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="208,85,68,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="467,69,176,65" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1636,17 +1348,6 @@
   </Item>
   <!--AK-74M-->
   <Item name="" identifier="scp_ak74m" description="" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="12">
-      <Item identifier="scp_basicparts" />
-      <Item identifier="steel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="weaponfabricator,fabricator" requiredtime="25" requiresrecipe="false" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem identifier="scp_basicparts" amount="2" />
-      <RequiredItem identifier="scp_aks74u" />
-      <RequiredItem identifier="plastic" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="70,87,68,81" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="233,375,254,75" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1698,17 +1399,6 @@
   </Item>
   <!--KH2020-->
   <Item name="" identifier="scp_kh2020" description="" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <Fabricate suitablefabricators="weaponfabricator,fabricator" requiredtime="40" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem identifier="scp_basicparts" amount="3" />
-      <RequiredItem identifier="plastic" amount="6" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" />
-      <Item identifier="scp_basicparts" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="0,169,70,74" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="202,0,224,62" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1757,19 +1447,6 @@
   </Item>
   <!--OSV-96-->
   <Item name="" identifier="scp_osv96" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.45" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponheavydrop">
-    <Deconstruct time="30">
-      <Item identifier="steel" />
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator,weaponfabricator" requiredtime="25">
-      <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="scp_basicparts" amount="4" />
-      <RequiredItem identifier="steel" amount="5" />
-      <RequiredItem identifier="plastic" amount="4" />
-      <RequiredItem identifier="carbon" amount="2" />
-    </Fabricate>
     <InventoryIcon name="osvinv" texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="438,413,74,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/heavyweapons.png" sourcerect="356,550,330,80" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1851,18 +1528,6 @@
     <SkillRequirementHint identifier="weapons" level="85" />
   </Item>
   <Item name="" description="" identifier="scp_g3" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.51" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem identifier="scp_ak103" />
-      <RequiredItem identifier="scp_basicparts" amount="4" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-    </Fabricate>
-    <Deconstruct time="35">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="scp_basicparts" amount="2" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="332,500,70,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/heavyweapons.png" sourcerect="315,640,257,71" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1929,18 +1594,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_malyuk12" description="" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.425" impactsoundtag="weaponheavydrop">
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="scp_g3" />
-      <RequiredItem identifier="scp_basicparts" amount="6" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
-      <RequiredItem identifier="steel" amount="4" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="scp_basicparts" amount="4" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="404,498,70,81" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="492,436,227,109" depth="0.55" origin="0.5,0.5" />
     <Body width="227" height="75" density="50" />
@@ -2006,17 +1659,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_g36" description="" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <Fabricate suitablefabricators="fabricator,weaponfabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="scp_ak74m" />
-      <RequiredItem identifier="scp_basicparts" amount="3" />
-      <RequiredItem identifier="plastic" amount="4" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="scp_ak74m" />
-      <Item identifier="scp_basicparts" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="481,497,68,76" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="0,646,294,75" depth="0.55" origin="0.5,0.5" />
     <Body width="294" height="75" density="50" />
@@ -2056,11 +1698,6 @@
   </Item>
   <!--SR-3 Vihkr-->
   <Item name="" identifier="scp_sr3" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" category="Weapon" subcategory="Vintage" impactsoundtag="impact_metal_light">
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="physicorium" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon name="sr3inv" texture="%ModDir%/Weapons/vintageinv.png" sourcerect="65,87,70,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="1,645,267,66" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -2099,11 +1736,6 @@
   </Item>
   <!--ASP-1 Kir-->
   <Item name="" identifier="scp_kir" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="impact_metal_light">
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon name="kirinv" texture="%ModDir%/Weapons/vintageinv.png" sourcerect="583,187,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="596,565,305,74" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -2135,11 +1767,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_dmr540" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,gun,weapon,gunsmith" scale="0.45" impactsoundtag="impact_metal_light">
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="plastic" amount="2" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon name="540inv" texture="%ModDir%/Weapons/vintageinv.png" sourcerect="403,87,69,80" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="269,245,313,81" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -2180,10 +1807,6 @@
   </Item>
   <!--Kel-Tec M35A2-->
   <Item name="" identifier="scp_m35a2" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,gun,weapon,gunsmith" scale="0.48" impactsoundtag="impact_metal_light">
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <InventoryIcon name="m35inv" texture="%ModDir%/Weapons/vintageinv.png" sourcerect="400,0,69,80" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="293,123,218,85" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -2233,11 +1856,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_ash12unique" description="" category="Weapon" subcategory="Vintage" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="impact_metal_light">
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="762,89,71,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="587,173,235,111" depth="0.55" origin="0.5,0.5" />
     <Body width="227" height="90" density="50" />
@@ -2296,10 +1914,6 @@
   </Item>
   <!--G3KA4 (Polarfuchs moment)-->
   <Item name="" description="" identifier="scp_g3ka4" category="Weapon" subcategory="Vintage" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.52" impactsoundtag="impact_metal_light">
-    <Deconstruct time="35">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="835,89,66,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="589,351,218,58" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -2345,9 +1959,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_akms" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="4" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="262,188,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="262,396,252,54" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -2404,10 +2015,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_m16a3" description="" cargocontaineridentifier="metalcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.42" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="325,188,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="257,463,297,74" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -2477,11 +2084,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_sa80a3" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="15">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" amount="3" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="451,189,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="594,498,227,66" depth="0.55" origin="0.5,0.5" />
     <Body width="250" height="60" density="50" />
@@ -2533,10 +2135,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_g36c" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="12">
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="769,187,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="0,268,226,70" depth="0.55" origin="0.5,0.5" />
     <Body width="294" height="75" density="50" />
@@ -2575,11 +2173,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_akliv" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="15">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="titanium" amount="2" />
-      <Item identifier="scp_basicparts" amount="2" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="829,187,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="594,649,253,63" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -2626,11 +2219,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_sg550mli" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="3" />
-      <Item identifier="titaniumaluminiumalloy" amount="1" />
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="1,250,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="258,547,247,67" depth="0.55" origin="0.5,0.5" />
     <Body width="244" height="69" density="50" />

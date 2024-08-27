@@ -2,27 +2,6 @@
 <Override>
   <Items>
     <Item name="" identifier="smg" category="Weapon" subcategory="Surplus" description="" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.55" impactsoundtag="weaponlightdrop">
-      <PreferredContainer secondary="weaponholder" />
-      <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.85" />
-      <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
-      <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.4" />
-      <Price baseprice="125">
-        <Price storeidentifier="merchantoutpost" multiplier="1.25" minavailable="1" maxavailable="2" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" minavailable="1" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="plastic" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="55" />
-        <RequiredItem identifier="plastic" />
-        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-      </Fabricate>
       <InventoryIcon name="smginv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="296,2,60,69" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="8,1,139,56" depth="0.55" origin="0.5,0.5" />
       <Body width="140" height="60" density="50" />
@@ -65,36 +44,6 @@
       <SkillRequirementHint identifier="weapons" level="30" />
     </Item>
     <Item name="" identifier="smgmagazine" description="" scale="0.5" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" linkable="true" maxstacksize="4" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="smg,smgunique" minamount="1" maxamount="1" spawnprobability="1" />
-      <PreferredContainer primary="secarmcab" minamount="0" maxamount="4" spawnprobability="0.5" />
-      <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.2" />
-      <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="2" spawnprobability="0.35" />
-      <Price baseprice="75" displaynonempty="true">
-        <Price storeidentifier="merchantoutpost" multiplier="1.3" minavailable="3" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="15" amount="2">
-        <RequiredSkill identifier="weapons" level="25" />
-        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-        <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-        <RequiredItem identifier="steel" />
-      </Fabricate>
-      <Fabricate suitablefabricators="fabricator" requiredtime="15" requiresrecipe="true" displayname="recycleitem">
-        <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-        <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-        <RequiredItem identifier="smgmagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
-      </Fabricate>
-      <Deconstruct time="10">
-        <Item identifier="lead" copycondition="true" />
-        <Item identifier="steel" copycondition="true" />
-      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="960,960,64,64" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.54" sourcerect="146,157,33,44" origin="0.5,0.5" />
       <Body width="30" height="40" density="50" />
@@ -137,27 +86,6 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <Item name="" description="" identifier="revolver" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.5" impactsoundtag="weaponlightdrop">
-      <PreferredContainer secondary="weaponholder" />
-      <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="1" />
-      <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
-      <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.4" />
-      <Price baseprice="90">
-        <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="35" />
-        <RequiredItem identifier="steel" amount="2" />
-        <RequiredItem identifier="plastic" />
-      </Fabricate>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="plastic" />
-      </Deconstruct>
       <InventoryIcon name="revolverinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="628,12,44,65" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="226,340,88,42" depth="0.55" origin="0.5,0.5" />
       <Body width="72" height="40" density="50" />
@@ -187,24 +115,6 @@
       <SkillRequirementHint identifier="weapons" level="35" />
     </Item>
     <Item name="" identifier="revolverround" description="" category="Weapon" subcategory="Surplus" maxstacksize="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,revolverammo,pistolammoitem" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="revolver" minamount="6" maxamount="6" spawnprobability="1" />
-      <PreferredContainer primary="secarmcab" minamount="6" maxamount="12" spawnprobability="0.6" />
-      <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.2" />
-      <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="7" spawnprobability="0.25" />
-      <Price baseprice="25">
-        <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="6" maxavailable="12" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="12" maxavailable="24" />
-        <Price storeidentifier="merchantresearch" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" maxavailable="48" />
-        <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="6" maxavailable="12" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" maxavailable="32" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="15" amount="6">
-        <RequiredSkill identifier="weapons" level="25" />
-        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-        <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-      </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,384,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="191,290,21,7" depth="0.55" origin="0.5,0.5" />
       <Body width="29" height="10" density="40" />
@@ -230,27 +140,6 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <Item name="" description="" identifier="shotgun" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.53" impactsoundtag="weaponlightdrop">
-      <PreferredContainer primary="secarmcab" minamount="0" maxamount="2" spawnprobability="0.85" />
-      <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.2" />
-      <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.33" />
-      <Price baseprice="150">
-        <Price storeidentifier="merchantoutpost" multiplier="1.35" minavailable="1" maxavailable="2" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="2" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="6" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" maxavailable="6" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem identifier="steel" amount="2" />
-        <RequiredItem identifier="titaniumaluminiumalloy" />
-        <RequiredItem identifier="plastic" amount="2" />
-      </Fabricate>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="titaniumaluminiumalloy" />
-      </Deconstruct>
       <InventoryIcon name="riotshotguninv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="423,0,56,76" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="8,119,180,54" depth="0.55" origin="0.49823564,0.28800485" />
       <Body width="180" height="30" density="50" />
@@ -295,27 +184,6 @@
       <SkillRequirementHint identifier="weapons" level="45" />
     </Item>
     <Item name="" description="" identifier="shotgunshell" category="Weapon" maxstacksize="42" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="shotgun" minamount="6" maxamount="6" spawnprobability="1" />
-      <PreferredContainer primary="scp_rm93" minamount="4" maxamount="6" spawnprobability="0.5" />
-      <PreferredContainer primary="scp_m4s90" minamount="9" maxamount="9" spawnprobability="1" />
-      <PreferredContainer primary="scp_m590" minamount="7" maxamount="7" spawnprobability="1" />
-      <PreferredContainer primary="scp_ksg" minamount="7" maxamount="14" spawnprobability="0.5" />
-      <PreferredContainer primary="autoshotgun" minamount="8" maxamount="24" spawnprobability="0.5" />
-      <PreferredContainer primary="shotgununique" minamount="2" maxamount="2" spawnprobability="0.5" />
-      <PreferredContainer primary="secarmcab" minamount="8" maxamount="16" spawnprobability="1" />
-      <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="6" spawnprobability="0.2" />
-      <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="8" spawnprobability="0.33" />
-      <Price baseprice="60">
-        <Price storeidentifier="merchantoutpost" minavailable="4" maxavailable="12" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="6" maxavailable="12" />
-        <Price storeidentifier="merchantresearch" minavailable="6" maxavailable="9" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="12" maxavailable="24" />
-        <Price storeidentifier="merchantmine" minavailable="3" maxavailable="6" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="1" minavailable="12" maxavailable="24" />
-      </Price>
-      <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="10">
-        <RequiredItem identifier="sgt_ammocoinbasic" amount="1" />
-      </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
       <Body width="23" height="10" density="40" />
@@ -340,26 +208,6 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <Item name="" identifier="harpoongun" description="" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer secondary="weaponholder" />
-      <PreferredContainer primary="armcab" minamount="1" maxamount="2" spawnprobability="1" />
-      <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.2" />
-      <PreferredContainer secondary="abandonedarmcab" minamount="1" maxamount="1" spawnprobability="0.125" />
-      <Price baseprice="100" minavailable="1">
-        <Price storeidentifier="merchantoutpost" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
-        <Price storeidentifier="merchantresearch" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
-        <Price storeidentifier="merchantmine" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="30" />
-        <RequiredItem identifier="steel" amount="2" />
-        <RequiredItem identifier="plastic" />
-      </Fabricate>
       <InventoryIcon name="harpoonguninv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="357,1,63,68" depth="0.55" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="10,175,180,39" depth="0.55" origin="0.5,0.5" />
       <Body width="180" height="30" density="50" />
@@ -389,15 +237,6 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <Item name="" description="" identifier="smgunique" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,mountableweapon" Scale="0.58" impactsoundtag="weaponlightdrop" allowasextracargo="true">
-      <PreferredContainer primary="secarmcab" />
-      <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.01" />
-      <PreferredContainer secondary="wreckarmcab,wrecksecarmcab" spawnprobability="0.03" />
-      <PreferredContainer secondary="abandonedsecarmcab" spawnprobability="0.02" />
-      <Price baseprice="1064" sold="false"></Price>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="plastic" />
-      </Deconstruct>
       <InventoryIcon name="deadeyeinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="551,0,74,76" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="8,217,159,51" depth="0.55" origin="0.5,0.5" />
       <Body width="140" height="60" density="50" />
@@ -434,15 +273,6 @@
       <SkillRequirementHint identifier="weapons" level="65" />
     </Item>
     <Item name="" description="" identifier="shotgununique" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.52" impactsoundtag="weaponlightdrop" allowasextracargo="true">
-      <PreferredContainer primary="secarmcab" />
-      <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.01" />
-      <PreferredContainer secondary="wreckarmcab,wrecksecarmcab" spawnprobability="0.03" />
-      <PreferredContainer secondary="abandonedarmcab" spawnprobability="0.02" />
-      <Price baseprice="931" sold="false"></Price>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="titaniumaluminiumalloy" />
-      </Deconstruct>
       <InventoryIcon name="dbinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="481,1,64,73" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="8,66,184,53" depth="0.55" origin="0.5,0.25" />
       <Body width="180" height="30" density="50" />
@@ -478,21 +308,6 @@
       <SkillRequirementHint identifier="weapons" level="60" />
     </Item>
     <Item name="" description="" identifier="handcannon" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,pistolitem,mountableweapon" Scale="0.5" impactsoundtag="weaponheavydrop">
-      <PreferredContainer primary="weaponholder,secarmcab" />
-      <PreferredContainer primary="wrecksecarmcab" spawnprobability="0.005" minleveldifficulty="35" />
-      <PreferredContainer secondary="locker" />
-      <Price baseprice="600" soldeverywhere="false"></Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="50" />
-        <RequiredSkill identifier="helm" level="100" />
-        <RequiredItem identifier="scp_rsh12" />
-        <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
-        <RequiredItem identifier="dementonite" amount="6" />
-      </Fabricate>
-      <Deconstruct time="30">
-        <Item identifier="titaniumaluminiumalloy" />
-        <Item identifier="dementonite" />
-      </Deconstruct>
       <InventoryIcon name="handcannoninv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="500,84,42,65" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="1,491,130,56" depth="0.55" origin="0.5,0.5" />
       <Body width="106" height="49" density="70" />
@@ -538,18 +353,6 @@
       <SkillRequirementHint identifier="weapons" level="90" />
     </Item>
     <Item name="" description="" identifier="handcannonround" category="Weapon" subcategory="Surplus" maxstacksize="12" maxstacksizecharacterinventory="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,handcannonammo,pistolammoitem" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="secarmcab" />
-      <PreferredContainer secondary="handcannon" minamount="6" spawnprobability="0.15" />
-      <PreferredContainer primary="wrecksecarmcab" spawnprobability="0.008" minamount="0" maxamount="3" minleveldifficulty="25" />
-      <PreferredContainer secondary="locker" />
-      <Price baseprice="115" soldeverywhere="false"></Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="6">
-        <RequiredSkill identifier="weapons" level="50" />
-        <RequiredSkill identifier="helm" level="90" />
-        <RequiredItem identifier="flashpowder" amount="4" />
-        <RequiredItem identifier="physicorium" amount="2" />
-        <RequiredItem identifier="titaniumaluminiumalloy" />
-      </Fabricate>
       <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="166,430,43,43" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Jobgear/TalentGear.png" sourcerect="3,118,24,9" depth="0.55" origin="0.5,0.5" />
       <Body width="34" height="14" density="50" />
@@ -575,28 +378,6 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <Item name="" description="" identifier="assaultrifle" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-      <PreferredContainer primary="secarmcab" />
-      <PreferredContainer primary="armcab" secondary="locker" />
-      <PreferredContainer primary="wrecksecarmcab" spawnprobability="0.005" minamount="0" maxamount="1" minleveldifficulty="30" />
-      <PreferredContainer primary="abandonedsecarmcab" spawnprobability="0.01" minamount="0" maxamount="1" />
-      <Price baseprice="660" soldeverywhere="false">
-        <Price locationtype="outpost" multiplier="1.5" sold="false" />
-        <Price locationtype="city" multiplier="1.25" sold="false" />
-        <Price locationtype="research" multiplier="1.25" sold="false" />
-        <Price locationtype="military" multiplier="0.9" sold="false" />
-        <Price locationtype="mine" multiplier="1.25" sold="false" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="65" />
-        <RequiredItem identifier="steel" amount="3" />
-        <RequiredItem identifier="titanium" amount="2" />
-        <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
-      </Fabricate>
-      <Deconstruct time="35">
-        <Item identifier="titanium" />
-        <Item identifier="steel" />
-        <Item identifier="titaniumaluminiumalloy" />
-      </Deconstruct>
       <InventoryIcon name="assaultrifleinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="353,78,68,77" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="2,335,222,71" depth="0.55" origin="0.5,0.5" />
       <Body width="220" height="50" density="70" />
@@ -627,38 +408,6 @@
       <SkillRequirementHint identifier="weapons" level="70" />
     </Item>
     <Item name="" description="" identifier="assaultriflemagazine" scale="0.5" maxstacksize="8" maxstacksizecharacterinventory="4" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,assaultrifleammo" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="secarmcab" />
-      <PreferredContainer primary="armcab" secondary="locker" />
-      <PreferredContainer primary="wrecksecarmcab" spawnprobability="0.005" minamount="1" maxamount="2" />
-      <PreferredContainer primary="abandonedsecarmcab" spawnprobability="0.025" minamount="0" maxamount="4" />
-      <Price baseprice="350" minleveldifficulty="15" soldeverywhere="false">
-        <Price locationtype="outpost" multiplier="1.4" sold="false" />
-        <Price locationtype="city" multiplier="1.25" sold="false" />
-        <Price locationtype="research" multiplier="1.25" sold="false" />
-        <Price locationtype="military" multiplier="0.9" minavailable="0" maxavailable="4" />
-        <Price locationtype="mine" multiplier="1.25" sold="false" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem identifier="magnesium" amount="2" />
-        <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
-        <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
-        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
-        <RequiredItem identifier="steel" />
-      </Fabricate>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="recycleitem" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem identifier="magnesium" amount="2" />
-        <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
-        <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" />
-        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" />
-        <RequiredItem identifier="assaultriflemagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
-      </Fabricate>
-      <Deconstruct time="15">
-        <Item identifier="steel" />
-      </Deconstruct>
-      <PreferredContainer primary="assaultrifle" minamount="1" maxamount="1" spawnprobability="1" />
-      <PreferredContainer primary="secarmcab" minamount="0" maxamount="0" spawnprobability="0.0" />
       <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" origin="0.5,0.5" />
       <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="476,3,36,48" depth="0.55" origin="0.5,0.5" />
       <Body width="28" height="40" density="50" />
@@ -698,28 +447,6 @@
       </Projectile>
     </Item>
     <Item name="" description="" identifier="autoshotgun" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.62" impactsoundtag="weaponheavydrop">
-      <PreferredContainer primary="secarmcab" />
-      <PreferredContainer primary="armcab" secondary="locker" />
-      <PreferredContainer primary="abandonedsecarmcab" spawnprobability="0.015" minamount="0" maxamount="1" />
-      <Price baseprice="600" soldeverywhere="false">
-        <Price locationtype="outpost" multiplier="1.4" sold="false" />
-        <Price locationtype="city" multiplier="1.25" sold="false" />
-        <Price locationtype="research" multiplier="1.25" sold="false" />
-        <Price locationtype="military" multiplier="0.9" sold="false" />
-        <Price locationtype="mine" multiplier="1.25" sold="false" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="65" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="55" />
-        <RequiredItem identifier="plastic" amount="2" />
-        <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
-        <RequiredItem identifier="steel" amount="4" />
-      </Fabricate>
-      <Deconstruct time="30">
-        <Item identifier="ballisticfiber" />
-        <Item identifier="dementonite" />
-        <Item identifier="titaniumaluminiumalloy" />
-        <Item identifier="steel" />
-      </Deconstruct>
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="9,270,160,62" depth="0.55" origin="0.5,0.5" />
       <InventoryIcon name="autoshotguninv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="285,75,65,71" depth="0.55" origin="0.5,0.5" />
       <Body width="150" height="40" density="100" />
@@ -761,26 +488,6 @@
       <SkillRequirementHint identifier="weapons" level="70" />
     </Item>
     <Item name="" description="" identifier="stungundart" category="Weapon" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,stungunammo" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="armcab" minamount="0" maxamount="10" spawnprobability="0.25" />
-      <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="3" spawnprobability="0.2" />
-      <PreferredContainer secondary="abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.125" />
-      <PreferredContainer primary="stungun" minamount="2" maxamount="2" spawnprobability="1" />
-      <PreferredContainer secondary="locker" />
-      <Price baseprice="70" soldeverywhere="false">
-        <Price locationtype="outpost" multiplier="1.5" sold="false" />
-        <Price locationtype="city" multiplier="1.25" minavailable="3" />
-        <Price locationtype="research" multiplier="1.25" sold="false" />
-        <Price locationtype="military" multiplier="0.9" minavailable="6" />
-        <Price locationtype="mine" multiplier="1.25" sold="false" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="wire" outcondition="0.5" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="2">
-        <RequiredSkill identifier="weapons" level="30" />
-        <Item identifier="steel" />
-        <Item tag="wire" />
-      </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="766,576,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="183,221,72,18" depth="0.55" origin="0.5,0.5" />
       <Body width="70" height="15" density="40" />
@@ -807,26 +514,6 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <Item name="" identifier="spear" description="" category="Weapon" maxstacksize="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="harpoongun" minamount="6" maxamount="6" spawnprobability="1" />
-      <PreferredContainer primary="scp_harpoonlauncher" minamount="6" maxamount="9" spawnprobability="0.5" />
-      <PreferredContainer primary="armcab" minamount="0" maxamount="5" spawnprobability="0.25" />
-      <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="3" spawnprobability="0.25" />
-      <PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="3" spawnprobability="0.1" />
-      <PreferredContainer secondary="locker" />
-      <Price baseprice="30" soldeverywhere="false">
-        <Price locationtype="outpost" multiplier="1.5" sold="false" />
-        <Price locationtype="city" multiplier="1.25" minavailable="12" />
-        <Price locationtype="research" multiplier="1.25" sold="false" />
-        <Price locationtype="military" multiplier="0.9" minavailable="24" />
-        <Price locationtype="mine" multiplier="1.25" sold="false" />
-      </Price>
-      <Deconstruct time="5">
-        <Item identifier="steel" outcondition="0.3" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="15" amount="3">
-        <RequiredSkill identifier="weapons" level="20" />
-        <RequiredItem identifier="steel" />
-      </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,968,55,55" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="85,368,168,11" depth="0.55" origin="0.5,0.5" />
       <Body width="160" height="10" density="20" />
@@ -853,43 +540,12 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <Item name="" identifier="magnesium" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="smallitem,munition_propulsion" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="storagecab" minamount="2" maxamount="6" spawnprobability="0.4" />
-      <PreferredContainer primary="medfabcab" minamount="2" maxamount="6" spawnprobability="0.5" />
-      <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="6" spawnprobability="0.15" />
-      <PreferredContainer secondary="locker" />
-      <Price baseprice="80" soldeverywhere="false">
-        <Price locationtype="outpost" multiplier="1.3" minavailable="1" maxavailable="6" />
-        <Price locationtype="city" multiplier="1.25" minavailable="4" maxavailable="10" />
-        <Price locationtype="research" multiplier="1.1" minavailable="8" maxavailable="16" />
-        <Price locationtype="military" multiplier="1.1" minavailable="7" maxavailable="12" />
-        <Price locationtype="mine" multiplier="0.8" minavailable="4" maxavailable="18" />
-      </Price>
-      <Fabricate suitablefabricators="chemstation" displayname="chemrefined" requiredtime="25" amount="4">
-        <RequiredSkill identifier="medical" level="50" />
-        <RequiredItem identifier="sodium" />
-        <RequiredItem identifier="scp_firelatex" mincondition="0.5" />
-      </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,192,64,64" />
       <Sprite texture="Content/Items/Materials/CraftingElements1.png" sourcerect="102,6,23,44" depth="0.55" origin="0.5,0.5" />
       <Body width="22" height="42" density="15" />
       <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     </Item>
     <Item name="" description="" identifier="grenadelauncher" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponheavydrop">
-      <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.5" />
-      <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
-      <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.125" />
-      <PreferredContainer primary="armcab" secondary="locker" />
-      <Price baseprice="300" soldeverywhere="false">
-        <Price locationtype="outpost" multiplier="1.5" sold="false" />
-        <Price locationtype="city" multiplier="1.25" sold="false" />
-        <Price locationtype="research" multiplier="1.25" sold="false" />
-        <Price locationtype="military" multiplier="0.9" minavailable="2" />
-        <Price locationtype="mine" multiplier="1.25" sold="false" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="titaniumaluminiumalloy" />
-      </Deconstruct>
       <InventoryIcon name="glinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="426,80,62,73" origin="0.5,0.5" />
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="3,426,198,59" depth="0.55" origin="0.5,0.5" />
       <Body width="170" height="40" density="50" />
@@ -926,30 +582,7 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <Item name="" identifier="stungrenade" description="" category="Weapon" maxstacksize="16" maxstacksizecharacterinventory="2" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="secarmcab" minamount="1" maxamount="4" spawnprobability="1" />
-      <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.1" />
-      <PreferredContainer secondary="abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.15" />
-      <PreferredContainer primary="armcab" secondary="locker" />
       <Upgrade gameversion="0.9.2.0" scale="0.5" />
-      <Price baseprice="175">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="3" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="iron" />
-        <Item identifier="phosphorus" mincondition="0.9" />
-        <Item identifier="flashpowder" mincondition="0.9" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="30" />
-        <RequiredItem identifier="steel" mincondition="0.5" />
-        <RequiredItem identifier="phosphorus" amount="2" />
-        <RequiredItem identifier="flashpowder" />
-      </Fabricate>
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="366,254,31,54" depth="0.55" origin="0.5,0.5" />
       <Body width="26" height="50" density="30" />
       <ItemComponent characterusable="false">
@@ -984,25 +617,6 @@
       </Quality>
     </Item>
     <Item name="" description="" identifier="shotgunshellblunt" category="Weapon" maxstacksize="64" maxstacksizecharacterinventory="16" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="shotgun,autoshotgun,shotgununique" />
-      <PreferredContainer primary="armcab" minamount="6" maxamount="16" spawnprobability="1" notcampaign="true" />
-      <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="6" spawnprobability="0.5" />
-      <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,abandonedarmcab,abandonedsecarmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
-      <PreferredContainer secondary="secarmcab" />
-      <Price baseprice="30">
-        <Price storeidentifier="merchantoutpost" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" />
-        <Price storeidentifier="merchantresearch" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" maxavailable="12" />
-        <Price storeidentifier="merchantmine" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" maxavailable="12" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="6">
-        <RequiredSkill identifier="weapons" level="30" />
-        <RequiredItem identifier="magnesium" />
-        <RequiredItem identifier="rubber" />
-        <RequiredItem identifier="plastic" />
-      </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="384,640,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,269,22,10" depth="0.55" origin="0.5,0.5" />
       <Body width="23" height="10" density="40" />
@@ -1023,30 +637,6 @@
       </Projectile>
     </Item>
     <Item name="" description="" identifier="rifle" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.525" impactsoundtag="weaponlightdrop">
-      <PreferredContainer primary="secarmcab" amount="1" spawnprobability="0.5" />
-      <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
-      <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.2" />
-      <PreferredContainer secondary="weaponholder" />
-      <PreferredContainer secondary="armcab" />
-      <Price baseprice="300">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="titaniumaluminiumalloy" />
-        <Item identifier="plastic" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="55" />
-        <RequiredItem identifier="steel" amount="2" />
-        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-        <RequiredItem identifier="plastic" amount="2" />
-      </Fabricate>
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="3,617,214,55" depth="0.55" origin="0.5,0.25" />
       <InventoryIcon name="rifleinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="351,160,64,73" origin="0.5,0.5" />
       <Body width="190" height="50" density="25" />
@@ -1106,26 +696,6 @@
       <SkillRequirementHint identifier="weapons" level="65" />
     </Item>
     <Item name="" identifier="riflebullet" category="Weapon" subcategory="Surplus" maxstacksize="48" maxstacksizecharacterinventory="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo,riflemanbonus" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="rifle" amount="6" spawnprobability="1" />
-      <PreferredContainer primary="armcab" minamount="6" maxamount="12" spawnprobability="0.5" />
-      <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="6" spawnprobability="0.5" />
-      <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,abandonedarmcab,abandonedsecarmcab" minamount="1" maxamount="3" spawnprobability="0.2" />
-      <PreferredContainer secondary="secarmcab" />
-      <Price baseprice="30" minleveldifficulty="15">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="6">
-        <RequiredSkill identifier="weapons" level="30" />
-        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-        <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-        <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-        <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" />
-      </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="128,832,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="233,163,23,9" depth="0.55" origin="0.5,0.5" />
       <Body width="23" height="9" density="40" />
@@ -1151,26 +721,6 @@
       </Projectile>
     </Item>
     <Item name="" identifier="hmg" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.5" impactsoundtag="weaponheavydrop">
-      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-      <Price baseprice="900" sold="true" minleveldifficulty="65">
-        <Price storeidentifier="merchantoutpost" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" />
-        <Price storeidentifier="merchantresearch" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" sold="true" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" sold="true" />
-        <Price storeidentifier="merchantmine" multiplier="1.25" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="75" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="75" />
-        <RequiredItem identifier="scp_mag" />
-        <RequiredItem identifier="physicorium" amount="2" />
-        <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
-      </Fabricate>
-      <Deconstruct time="35">
-        <Item identifier="physicorium" amount="2" />
-        <Item identifier="titaniumaluminiumalloy" amount="2" />
-        <Item identifier="rubber" />
-      </Deconstruct>
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="3,673,273,68" depth="0.55" origin="0.5,0.5" />
       <InventoryIcon texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="415,163,69,77" origin="0.5,0.5" />
       <Body width="220" height="60" density="30" />
@@ -1240,36 +790,6 @@
       <SkillRequirementHint identifier="weapons" level="75" />
     </Item>
     <Item name="" identifier="hmgmagazine" maxstacksize="2" maxstacksizecharacterinventory="1" scale="0.5" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,hmgammo" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="hmg" minamount="1" maxamount="1" spawnprobability="0.5" />
-      <PreferredContainer primary="armcab" secondary="secarmcab" />
-      <Price baseprice="600" sold="true" minleveldifficulty="65" displaynonempty="true">
-        <Price storeidentifier="merchantoutpost" multiplier="1.4" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" />
-        <Price storeidentifier="merchantresearch" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
-        <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
-        <Price storeidentifier="merchantmine" multiplier="1.25" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem identifier="magnesium" />
-        <RequiredItem identifier="titaniumaluminiumalloy" />
-        <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
-        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
-        <RequiredItem identifier="steel" />
-      </Fabricate>
-      <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="recycleitem" requiresrecipe="true">
-        <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem identifier="magnesium" />
-        <RequiredItem identifier="titaniumaluminiumalloy" />
-        <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
-        <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
-        <RequiredItem identifier="hmgmagazine" mincondition="0.0" maxcondition="0.1" usecondition="false" />
-      </Fabricate>
-      <Deconstruct time="15">
-        <Item identifier="lead" mincondition="0.95" />
-        <Item identifier="titaniumaluminiumalloy" />
-      </Deconstruct>
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="285,682,37,46" depth="0.55" origin="0.5,0.5" />
       <Body width="29" height="37" density="40" />
       <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="hmground" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1311,26 +831,6 @@
     </Item>
     <Item name="" identifier="bodyarmor" category="Equipment" subcategory="Coalition" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
       <Upgrade gameversion="0.9.3.0" scale="0.35" />
-      <PreferredContainer primary="secarmcab" spawnprobability="0.8" amount="1" />
-      <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
-      <PreferredContainer secondary="armcab" />
-      <Price baseprice="500">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-        <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
-        <Price storeidentifier="merchantresearch" sold="false" />
-        <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="2" />
-        <Price storeidentifier="merchantmine" sold="false" />
-        <Price storeidentifier="merchantarmory" multiplier="1" minavailable="2" />
-      </Price>
-      <Deconstruct time="40">
-        <Item identifier="ballisticfiber" amount="2" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="30">
-        <RequiredSkill identifier="weapons" level="40" />
-        <RequiredItem identifier="ballisticfiber" amount="3" />
-        <RequiredItem identifier="titaniumaluminiumalloy" />
-        <RequiredItem identifier="steel" amount="2" />
-      </Fabricate>
       <Sprite name="Body Armour" texture="%ModDir%/Jobgear/bodyarmor.png" sourcerect="11,8,97,114" depth="0.6" origin="0.5,0.5" />
       <Body width="85" height="90" density="25" />
       <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
@@ -1344,22 +844,6 @@
       </ItemContainer>
     </Item>
     <Item name="" identifier="machinepistol" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-      <PreferredContainer primary="secarmcab" amount="1" spawnprobability="1" notcampaign="true" />
-      <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
-      <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.2" />
-      <PreferredContainer secondary="armcab,weaponholder" />
-      <Price baseprice="200">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="steel" />
-        <Item identifier="plastic" />
-      </Deconstruct>
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="10,741,116,55" depth="0.55" origin="0.5,0.5" />
       <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="69,499,63,68" origin="0.5,0.5" />
       <Body width="100" height="44" density="20" />
@@ -1406,26 +890,6 @@
     <!--Ballistic Helmet-->
     <Item name="" identifier="ballistichelmet1" aliases="ballistichelmet" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
       <Upgrade gameversion="0.9.6.0" scale="0.325" />
-      <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
-      <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
-      <PreferredContainer secondary="armcab" />
-      <Price baseprice="325" minleveldifficulty="5" maxavailable="3">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-        <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
-        <Price storeidentifier="merchantresearch" sold="false" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
-        <Price storeidentifier="merchantmine" sold="false" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="ballisticfiber" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="25">
-        <RequiredSkill identifier="weapons" level="35" />
-        <RequiredItem identifier="ballisticfiber" amount="2" />
-        <RequiredItem identifier="titaniumaluminiumalloy" />
-        <RequiredItem identifier="plastic" />
-      </Fabricate>
       <Sprite name="Ballistic Helmet 1" texture="%ModDir%/Jobgear/helmets.png" sourcerect="0,324,86,77" depth="0.6" origin="0.5,0.5" />
       <Body radius="30" density="25" />
       <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
@@ -1438,24 +902,6 @@
     </Item>
     <!--Gunners Helmet-->
     <Item name="" identifier="ballistichelmet2" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
-      <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
-      <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
-      <PreferredContainer secondary="armcab" />
-      <Price baseprice="250">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-        <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-        <Price storeidentifier="merchantmine" sold="false" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="ballisticfiber" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="30" />
-        <RequiredItem identifier="ballisticfiber" amount="2" />
-      </Fabricate>
       <Sprite name="Ballistic Helmet 2" texture="%ModDir%/Jobgear/helmets.png" sourcerect="97,321,85,92" depth="0.6" origin="0.5,0.5" />
       <Body radius="30" density="25" />
       <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
@@ -1469,25 +915,6 @@
     </Item>
     <!--Riot Helmet-->
     <Item name="" identifier="ballistichelmet3" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
-      <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
-      <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
-      <PreferredContainer secondary="armcab" />
-      <Price baseprice="250">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.3" />
-        <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-        <Price storeidentifier="merchantmine" sold="false" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="ballisticfiber" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="20" />
-        <RequiredItem identifier="ballisticfiber" />
-        <RequiredItem identifier="rubber" />
-      </Fabricate>
       <Sprite name="Ballistic Helmet 3" texture="%ModDir%/Jobgear/helmets.png" sourcerect="209,320,98,98" depth="0.6" origin="0.5,0.5" />
       <Body radius="30" density="25" />
       <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
@@ -1499,28 +926,6 @@
       </Wearable>
     </Item>
     <Item name="" identifier="flashpowder" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,explosive" impacttolerance="8" useinhealthinterface="true" scale="0.4" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="storagecab" />
-      <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="1" maxamount="5" spawnprobability="0.075" />
-      <Price baseprice="125">
-        <Price storeidentifier="merchantoutpost" multiplier="1.25" minavailable="0" maxavailable="4" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" maxavailable="10" />
-        <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="3" />
-        <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="4" maxavailable="14" />
-        <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="2" maxavailable="16" />
-      </Price>
-      <Fabricate suitablefabricators="fabricator,medicalfabricator" requiredtime="15">
-        <RequiredItem identifier="magnesium" />
-        <RequiredItem identifier="potassium" amount="2" />
-      </Fabricate>
-      <Fabricate suitablefabricators="chemstation" displayname="chemrefined" requiredtime="35" amount="4">
-        <RequiredSkill identifier="medical" level="65" />
-        <RequiredItem identifier="magnesium" />
-        <RequiredItem identifier="scp_firelatex" mincondition="0.5" />
-      </Fabricate>
-      <Deconstruct time="5">
-        <Item identifier="magnesium" copycondition="true" />
-        <Item identifier="potassium" copycondition="true" />
-      </Deconstruct>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,256,64,64" />
       <Sprite texture="Content/Items/Materials/minerals.png" depth="0.55" sourcerect="127,134,23,42" origin="0.5,0.5" />
       <Body width="23" height="43" density="15" />
@@ -1541,23 +946,6 @@
       </Throwable>
     </Item>
     <Item name="" identifier="40mmnuke" category="Weapon" maxstacksize="2" maxstacksizecharacterinventory="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade,separatists" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer secondary="wreckarmcab,abandonedarmcab" />
-      <PreferredContainer primary="secarmcab" secondary="armcab" />
-      <Price baseprice="500" sold="false">
-        <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="1" sold="true">
-          <Reputation faction="separatists" min="70" />
-        </Price>
-        <Price storeidentifier="merchantcity" minavailable="1" maxavailable="2" sold="true">
-          <Reputation faction="separatists" min="70" />
-        </Price>
-        <Price storeidentifier="merchantmilitary" minavailable="2" maxavailable="5" sold="true">
-          <Reputation faction="separatists" min="70" />
-        </Price>
-      </Price>
-      <Deconstruct time="5">
-        <Item identifier="iron" />
-        <Item identifier="uranium" />
-      </Deconstruct>
       <InventoryIcon texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="114,110,51,51" origin="0.5,0.5" />
       <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="2,144,39,17" depth="0.55" origin="0.5,0.5" />
       <Body width="38" height="15" density="30" />
@@ -1600,27 +988,7 @@
       </Projectile>
     </Item>
     <Item name="" identifier="fraggrenade" category="Weapon" maxstacksize="8" maxstacksizecharacterinventory="4" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
-      <PreferredContainer primary="secarmcab" minamount="1" maxamount="3" spawnprobability="0.5" />
-      <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.1" />
-      <PreferredContainer secondary="armcab" />
       <Upgrade gameversion="0.9.3.0" scale="0.5" />
-      <Price baseprice="150">
-        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
-        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
-        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
-      </Price>
-      <Deconstruct time="10">
-        <Item identifier="iron" />
-        <Item identifier="sodium" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="20">
-        <RequiredSkill identifier="weapons" level="60" />
-        <RequiredItem identifier="iron" amount="2" />
-        <RequiredItem identifier="uex" />
-      </Fabricate>
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="327,255,37,52" depth="0.55" origin="0.5,0.5" />
       <Body radius="20" height="10" density="30" />
       <ItemComponent characterusable="false">
@@ -1661,16 +1029,9 @@
       </Quality>
     </Item>
     <Item name="" identifier="backpack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
-      <PreferredContainer primary="armcab" />
       <InventoryIcon name="smolpaccinv" texture="%ModDir%/Jobgear/backpack.png" sourcerect="122,5,61,61" origin="0.5,0.5" />
       <Sprite name="smolpaccground" texture="%ModDir%/Jobgear/backpack.png" depth="0.6" sourcerect="117,68,80,49" origin="0.5,0.5" />
       <Body width="100" height="50" density="15" />
-      <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
-        <Item identifier="organicfiber" amount="4" />
-        <Item identifier="plastic" amount="3" />
-        <Item identifier="steel" amount="2" />
-      </Fabricate>
-      <Price baseprice="400" sold="false" />
       <ItemContainer capacity="12" depth="0.5">
         <Containable items="smallitem,ammo,explosive" excludeditems="toolbelt,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack,bulkyweapon" />
       </ItemContainer>
@@ -1685,27 +1046,6 @@
       </Wearable>
     </Item>
     <Item name="" identifier="40mmgrenade" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
-      <PreferredContainer primary="grenadelauncher" amount="1" spawnprobability="1" />
-      <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.1" />
-      <PreferredContainer primary="secarmcab" secondary="armcab" />
-      <Price baseprice="250" sold="false">
-        <Price storeidentifier="merchantoutpost" multiplier="1.5" />
-        <Price storeidentifier="merchantcity" multiplier="1.25" />
-        <Price storeidentifier="merchantresearch" multiplier="1.25" />
-        <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="4" />
-        <Price storeidentifier="merchantmine" multiplier="1.25" />
-        <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="4" />
-      </Price>
-      <Deconstruct time="5">
-        <Item identifier="iron" />
-        <Item identifier="sodium" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="10">
-        <RequiredSkill identifier="weapons" level="30" />
-        <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
-        <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-        <RequiredItem identifier="uex" />
-      </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="215,286,41,17" depth="0.55" origin="0.5,0.5" />
       <Body width="38" height="15" density="30" />
@@ -1729,22 +1069,6 @@
       <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
     <Item name="" identifier="nucleargun" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
-      <PreferredContainer primary="secarmcab" secondary="weaponholder,armcab" />
-      <Price baseprice="1250" sold="false" />
-      <Deconstruct time="10">
-        <Item identifier="copper" />
-        <Item identifier="plastic" />
-        <Item identifier="lead" />
-        <Item identifier="dementonite" />
-        <Item identifier="fulgurium" />
-      </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="70" requiresrecipe="true">
-        <RequiredSkill identifier="electrical" level="65" />
-        <RequiredItem identifier="fpgacircuit" amount="3" />
-        <RequiredItem identifier="lead" amount="2" />
-        <RequiredItem identifier="dementonite" amount="2" />
-        <RequiredItem identifier="fulgurium" amount="2" />
-      </Fabricate>
       <Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="0,548,293,63" depth="0.55" origin="0.5,0.5" />
       <InventoryIcon texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="282,157,65,74" depth="0.55" origin="0.5,0.5" />
       <Body width="238" height="63" density="25" />
