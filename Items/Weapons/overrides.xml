@@ -10,9 +10,9 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-        <Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/csmg1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
         <StatusEffect type="OnUse" target="This" Condition="-280" />
         <StatusEffect type="Always" target="This" Condition="7">
           <Conditional condition="gt 0" />
@@ -21,7 +21,7 @@
           <Conditional condition="gt 0" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
-          <sound file="%ModDir%/Sounds/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
         <StatusEffect type="OnUse">
@@ -93,10 +93,10 @@
       <RangedWeapon barrelpos="29,11" spread="2.5" reload="0.575" reloadnoskill="1.25" holdtrigger="true" reloadskillrequirement="40" unskilledspread="6" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.05">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-        <Sound file="%ModDir%/Sounds/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="%ModDir%/Sounds/Revolver1.ogg" type="OnUse" range="3000" frequencymultiplier="0.96" />
-        <Sound file="%ModDir%/Sounds/Revolver1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
-        <ChargeSound file="%ModDir%/Sounds/doubleaction.ogg" range="1000" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/Revolver1.ogg" type="OnUse" range="3000" frequencymultiplier="0.96" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/Revolver1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+        <ChargeSound file="%ModDir%/Items/Weapons/Sounds/doubleaction.ogg" range="1000" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
         <StatusEffect type="OnUse">
           <Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0" />
@@ -148,15 +148,15 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="%ModDir%/Sounds/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="%ModDir%/Sounds/Riotshotgun2.ogg" type="OnUse" range="3000" />
-        <Sound file="%ModDir%/Sounds/Riotshotgun3.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/Riotshotgun2.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/Riotshotgun3.ogg" type="OnUse" range="3000" />
         <StatusEffect type="OnUse" target="This" Condition="-900" />
         <StatusEffect type="Always" target="This" Condition="5">
           <Conditional condition="gt 0" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
-          <sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
         <StatusEffect type="OnUse">
@@ -215,7 +215,7 @@
       <RangedWeapon barrelpos="85,14" spread="1" launchimpulse="20.0" reload="0.95" reloadnoskill="2" reloadskillrequirement="50" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-        <Sound file="%ModDir%/Sounds/HarpoonGun1.ogg" type="OnUse" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/HarpoonGun1.ogg" type="OnUse" />
         <StatusEffect type="OnUse">
           <Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
         </StatusEffect>
@@ -245,9 +245,9 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-        <Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/csmg1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
         <StatusEffect type="OnUse" target="This" reload="0.65" setvalue="true" delay="0.15" />
         <StatusEffect type="OnUse" target="This" reload="0.09" setvalue="true" delay="0.5" />
         <StatusEffect type="OnUse">
@@ -281,12 +281,12 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="%ModDir%/Sounds/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="%ModDir%/Sounds/Riotshotgun2.ogg" type="OnUse" range="3000" />
-        <Sound file="%ModDir%/Sounds/Riotshotgun3.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/Riotshotgun2.ogg" type="OnUse" range="3000" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/Riotshotgun3.ogg" type="OnUse" range="3000" />
         <StatusEffect type="OnUse" target="This" Condition="-3500" />
         <StatusEffect type="OnBroken" target="This" delay="0.2">
-          <sound file="%ModDir%/Sounds/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.8" stackable="false" />
         <StatusEffect type="OnUse">
@@ -315,9 +315,9 @@
       <RangedWeapon reload="2" reloadnoskill="5" reloadskillrequirement="95" barrelpos="65,9" spread="2" holdtrigger="true" unskilledspread="10" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.5">
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-        <Sound file="%ModDir%/Sounds/handcannon.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.5" />
-        <Sound file="%ModDir%/Sounds/handcannon.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="0.9" />
-        <ChargeSound file="%ModDir%/Sounds/doubleaction.ogg" range="1000" volume="1.35" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/handcannon.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.5" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/handcannon.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="0.9" />
+        <ChargeSound file="%ModDir%/Items/Weapons/Sounds/doubleaction.ogg" range="1000" volume="1.35" />
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="20.0,8.0" colormultiplier="255,200,200,200" />
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="5.0,16.0" colormultiplier="255,200,200,200" />
         <StatusEffect type="OnUse">
@@ -386,9 +386,9 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-        <Sound file="%ModDir%/Sounds/assaultrifle1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="%ModDir%/Sounds/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-        <Sound file="%ModDir%/Sounds/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/assaultrifle1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
         <StatusEffect type="OnUse">
           <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
         </StatusEffect>
@@ -458,15 +458,15 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="%ModDir%/Sounds/autoshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="%ModDir%/Sounds/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
-        <Sound file="%ModDir%/Sounds/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/autoshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
         <StatusEffect type="OnUse" target="This" Condition="-400" />
         <StatusEffect type="Always" target="This" Condition="5">
           <Conditional condition="gt 0" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
-          <sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.6" stackable="false" />
         <StatusEffect type="OnUse">
@@ -563,7 +563,7 @@
         <Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
         <StatusEffect type="OnUse" target="This" Condition="-10000" />
         <StatusEffect type="OnBroken" target="This" delay="0.5">
-          <Sound file="%ModDir%/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" frequencymultiplier="0.95" />
+          <Sound file="%ModDir%/Items/Weapons/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" frequencymultiplier="0.95" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="1.8" stackable="false" />
         <StatusEffect type="OnUse">
@@ -588,7 +588,7 @@
       <ItemComponent characterusable="false">
         <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
         <StatusEffect type="OnBroken" target="This">
-          <sound file="%ModDir%/Sounds/flashbang.ogg" range="2500" volume="1.5" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/flashbang.ogg" range="2500" volume="1.5" />
           <Explosion range="450" force="0.5" smoke="false" flames="false" flashrange="650" flashduration="0.5" screencolor="255,255,255,255" screencolorrange="1000" screencolorduration="0.75">
             <Affliction identifier="explosiondamage" strength="5" />
             <Affliction identifier="concussion" strength="30" />
@@ -601,7 +601,7 @@
       <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" aimpos="35,-18" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="1.5" disabledeltatime="true" checkconditionalalways="true" />
         <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-          <sound file="%ModDir%/Sounds/flashbangthrow.ogg" range="1000" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/flashbangthrow.ogg" range="1000" />
           <ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="200,200,200,255" />
         </StatusEffect>
         <StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">
@@ -645,7 +645,7 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="%ModDir%/Sounds/rifle.ogg" type="OnUse" range="4000" volume="1.2" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/rifle.ogg" type="OnUse" range="4000" volume="1.2" />
         <StatusEffect type="OnUse">
           <RequiredItem items="grenade" type="Contained" targetslot="1" />
           <Sound file="Content/Items/Weapons/WEAPON_rifleGrenadeShot1.ogg" type="OnUse" range="3000" />
@@ -655,16 +655,16 @@
         </StatusEffect>
         <StatusEffect type="OnUse" delay="0.5" target="Character">
           <Conditional skillrequirement="true" weapons="gte 50" />
-          <Sound file="%ModDir%/Sounds/riflebolt50.ogg" type="OnUse" range="1000" />
+          <Sound file="%ModDir%/Items/Weapons/Sounds/riflebolt50.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" delay="0.5" target="Character" comparison="and">
           <Conditional skillrequirement="true" weapons="lt 50" />
           <Conditional skillrequirement="true" weapons="gte 20" />
-          <Sound file="%ModDir%/Sounds/riflebolt2050.ogg" type="OnUse" range="1000" />
+          <Sound file="%ModDir%/Items/Weapons/Sounds/riflebolt2050.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" delay="1" target="Character">
           <Conditional skillrequirement="true" weapons="lt 20" />
-          <Sound file="%ModDir%/Sounds/riflebolt20.ogg" type="OnUse" range="1000" />
+          <Sound file="%ModDir%/Items/Weapons/Sounds/riflebolt20.ogg" type="OnUse" range="1000" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This,Character" delay="0.6">
           <Conditional skillrequirement="true" weapons="gte 20" />
@@ -736,9 +736,9 @@
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="12.0,6.0" colormultiplier="255,200,200,200" />
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,12.0" colormultiplier="255,200,200,200" />
         <StatusEffect type="OnUse" forceplaysounds="true">
-          <Sound file="%ModDir%/Sounds/hmg1.ogg" type="OnUse" range="3500" selectionmode="Random" volume="1.15" />
-          <Sound file="%ModDir%/Sounds/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="0.9" />
-          <Sound file="%ModDir%/Sounds/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="1.05" />
+          <Sound file="%ModDir%/Items/Weapons/Sounds/hmg1.ogg" type="OnUse" range="3500" selectionmode="Random" volume="1.15" />
+          <Sound file="%ModDir%/Items/Weapons/Sounds/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="0.9" />
+          <Sound file="%ModDir%/Items/Weapons/Sounds/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="1.05" />
         </StatusEffect>
         <StatusEffect type="OnUse" target="This" Condition="-110" />
         <StatusEffect type="Always" target="This" Condition="1.5">
@@ -759,7 +759,7 @@
           <Affliction identifier="blunttrauma" strength="4" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
-          <sound file="%ModDir%/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="4.5" stackable="false" />
         <StatusEffect type="OnUse" target="Contained">
@@ -852,9 +852,9 @@
         <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
         <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
         <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-        <Sound file="%ModDir%/Sounds/machinepistol1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="%ModDir%/Sounds/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-        <Sound file="%ModDir%/Sounds/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/machinepistol1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+        <Sound file="%ModDir%/Items/Weapons/Sounds/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
         <StatusEffect type="OnUse">
           <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
         </StatusEffect>
@@ -866,7 +866,7 @@
           <Conditional condition="gt 0" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
-          <sound file="%ModDir%/Sounds/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
         <StatusEffect type="OnUse">
@@ -976,7 +976,7 @@
           <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="0.5" scalemax="1" />
         </StatusEffect>
         <StatusEffect type="OnImpact" target="This">
-          <sound file="%ModDir%/Sounds/nukesmall.ogg" range="3000" volume="2" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/nukesmall.ogg" range="3000" volume="2" />
           <SpawnItem identifier="scp_nukegrenadefallout" spawnposition="This" />
         </StatusEffect>
         <StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
@@ -994,7 +994,7 @@
       <ItemComponent characterusable="false">
         <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
         <StatusEffect type="OnBroken" target="This">
-          <sound file="%ModDir%/Sounds/bang1.ogg" range="5000" frequencymultiplier="1.03" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/bang1.ogg" range="5000" frequencymultiplier="1.03" />
           <Explosion range="500.0" ballastfloradamage="100" structuredamage="5" levelwalldamage="10" itemdamage="500" force="5" severlimbsprobability="0.5" debris="true" decal="explosion" decalsize="0.5">
             <Affliction identifier="explosiondamage" strength="150" />
             <Affliction identifier="bleeding" strength="100" />
@@ -1016,7 +1016,7 @@
       <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" aimpos="35,-18" throwforce="3.5" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3.0" disabledeltatime="true" checkconditionalalways="true" />
         <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-          <sound file="%ModDir%/Sounds/grenadethrow.ogg" range="1000" />
+          <sound file="%ModDir%/Items/Weapons/Sounds/grenadethrow.ogg" range="1000" />
           <ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="255,255,255,255" />
         </StatusEffect>
         <StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">

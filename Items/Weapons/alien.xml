@@ -6,8 +6,8 @@
 	<!--TAR-4A3-->
 	<Item name="" identifier="scp_tar4a3" description="" tags="mediumitem,weapon,gun,gunsmith,alien,aliengun" Scale="0.4" category="Alien" impactsoundtag="impact_metal_light">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/alieninv.png" sourcerect="287,1,69,76" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/alienweapons.png" sourcerect="3,375,249,85" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/alieninv.png" sourcerect="287,1,69,76" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/alienweapons.png" sourcerect="3,375,249,85" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="249" height="85" density="50" />
 		
@@ -87,8 +87,8 @@
 	<!--TBR-6A4-->
 	<Item name="" identifier="scp_tbr6a4" description="" tags="mediumitem,weapon,gun,gunsmith,alien,aliengun" Scale="0.45" category="Alien" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Weapons/alieninv.png" sourcerect="144,2,69,75" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/alienweapons.png" sourcerect="2,208,274,83" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/alieninv.png" sourcerect="144,2,69,75" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/alienweapons.png" sourcerect="2,208,274,83" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="274" height="83" density="50" />
 
@@ -168,8 +168,8 @@
 	<!--TB-1 pistol-->
 	<Item name="" identifier="scp_tb1" description="" tags="smallitem,weapon,gun,gunsmith,alien,aliengun" Scale="0.25" category="Alien" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Weapons/alieninv.png" sourcerect="1,2,68,76" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/alienweapons.png" sourcerect="0,1,212,119" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/alieninv.png" sourcerect="1,2,68,76" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/alienweapons.png" sourcerect="0,1,212,119" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -248,15 +248,15 @@
 	<Item name="" identifier="scp_tbsr7" description="" tags="mediumitem,weapon,gun,gunsmith,alien,aliengun,bulkyweapon" Scale="0.38" category="Alien" impactsoundtag="impact_metal_light">
 		
 
-		<InventoryIcon texture="%ModDir%/Weapons/alieninv.png" sourcerect="74,81,68,75" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/alienweapons.png" sourcerect="0,604,391,121" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/alieninv.png" sourcerect="74,81,68,75" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/alienweapons.png" sourcerect="0,604,391,121" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="15,-75" aimpos="80,4" handle1="-70,-20" handle2="25,30" holdangle="60" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="TBSR Worn" texture="%ModDir%/Weapons/alienweapons.png" canbehiddenbyotherwearables="false" sourcerect="0,604,391,121" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.42" origin="0.5,0.7" />
+			<sprite name="TBSR Worn" texture="%ModDir%/Items/Weapons/Sprites/alienweapons.png" canbehiddenbyotherwearables="false" sourcerect="0,604,391,121" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.42" origin="0.5,0.7" />
 		</Wearable>
 
 		<RangedWeapon 
@@ -335,15 +335,15 @@
 	<!--TMG12-->
 	<Item name="" description="" identifier="scp_tmg12" category="Alien" tags="mediumitem,weapon,gun,gunsmith,alien,aliengun" Scale="0.35" impactsoundtag="impact_metal_heavy">
 
-		<InventoryIcon texture="%ModDir%/Weapons/alieninv.png" sourcerect="2,82,69,75" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/alienweapons.png" sourcerect="3,482,384,120" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/alieninv.png" sourcerect="2,82,69,75" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/alienweapons.png" sourcerect="3,482,384,120" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="384" height="121" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="15,-60" aimpos="80,4" handle1="-92,-20" handle2="25,30" holdangle="60" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="TMG Worn" texture="%ModDir%/Weapons/alienweapons.png" canbehiddenbyotherwearables="false" sourcerect="3,482,384,120" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.35" origin="0.5,0.8" />
+			<sprite name="TMG Worn" texture="%ModDir%/Items/Weapons/Sprites/alienweapons.png" canbehiddenbyotherwearables="false" sourcerect="3,482,384,120" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.35" origin="0.5,0.8" />
 		</Wearable>
 
 		<RangedWeapon 
@@ -421,8 +421,8 @@
 
 	<Item name="" identifier="scp_fractalbatterycell" description="" tags="smallitem,fractalbattery,alien,alienammo,ehaammo" category="Alien" maxstacksize="2" impactsoundtag="impact_metal_light" scale="0.25">
 
-		<InventoryIcon name="alienbatinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="144,326,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="101,287,36,99" origin="0.5,0.5" />
+		<InventoryIcon name="alienbatinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="144,326,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="101,287,36,99" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -441,8 +441,8 @@
 	
 	<Item name="" identifier="scp_fractalprojectile" tags="smallitem,alien" Scale="0.3" category="Alien" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.4">
 
-		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 
 		<Body width="40" height="15" density="40" />
 
