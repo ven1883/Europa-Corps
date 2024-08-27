@@ -50,24 +50,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="35" />
 
-		<PreferredContainer primary="wrecksecarmcab,storagecab,engcab,reactorcab" minamount="0" maxamount="1" spawnprobability="0.05" />
-		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.35" />
-		<PreferredContainer secondary="weaponholder" />
 
-		<Price baseprice="150" displaynonempty="true">
-			<Price storeidentifier="merchantoutpost" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="4">
-				<Reputation faction="separatists" min="5" />
-			</Price>
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="8">
-				<Reputation faction="separatists" min="5" />
-			</Price>
-			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="6">
-				<Reputation faction="separatists" min="5" />
-			</Price>
-		</Price>
 
 		<Fabricate suitablefabricators="weaponfabricator,fabricator" requiredtime="25">
 			<RequiredSkill identifier="weapons" level="20" />
@@ -127,28 +110,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="30" />
 
-		<PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1" />
-		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.1" />
-		<PreferredContainer secondary="weaponholder" />
 
-		<Price baseprice="300" displaynonempty="true">
-			<Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="2" multiplier="1.5">
-				<Reputation faction="coalition" min="10" />
-			</Price>
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2">
-				<Reputation faction="coalition" min="10" />
-			</Price>
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="2" maxavailable="4">
-				<Reputation faction="coalition" min="10" />
-			</Price>
-			<Price storeidentifier="merchantmine" multiplier="1.25" minavailable="0" maxavailable="2">
-				<Reputation faction="coalition" min="20" />
-			</Price>
-			<Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="2" maxavailable="4">
-				<Reputation faction="coalition" min="10" />
-			</Price>
-		</Price>
 
 		<Fabricate suitablefabricators="weaponfabricator,fabricator" requiredtime="20">
 			<RequiredSkill identifier="weapons" level="25" />
@@ -224,10 +186,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="70" />
 
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
 
-		<Price baseprice="450" sold="false" />
 
 		<Fabricate suitablefabricators="advweaponfabricator" requiredtime="30">
 			<RequiredSkill identifier="weapons" level="55" />
@@ -300,26 +259,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="30" />
 
-		<PreferredContainer primary="storagecab,engcab" minamount="0" maxamount="1" spawnprobability="0.06" minleveldifficulty="15" />
-		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15" minleveldifficulty="15" />
-		<PreferredContainer secondary="weaponholder" minleveldifficulty="15" />
 
-		<Price baseprice="420" displaynonempty="true" minleveldifficulty="5">
-			<Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="1" maxamount="2">
-				<Reputation faction="separatists" min="20" />
-			</Price>
-			<Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="2">
-				<Reputation faction="separatists" min="20" />
-			</Price>
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="4">
-				<Reputation faction="separatists" min="20" />
-			</Price>
-			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-				<Reputation faction="separatists" min="20" />
-			</Price>
-		</Price>
 
 		<Deconstruct time="15">
 			<Item identifier="lead" />
@@ -388,26 +328,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="45" />
 
-		<PreferredContainer primary="storagecab,engcab" minamount="0" maxamount="1" spawnprobability="0.06" minleveldifficulty="15" />
-		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15" minleveldifficulty="15" />
-		<PreferredContainer secondary="weaponholder" />
 
-		<Price baseprice="650" displaynonempty="true" minleveldifficulty="15">
-			<Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="1" maxamount="2">
-				<Reputation faction="coalition" min="20" />
-			</Price>
-			<Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="2">
-				<Reputation faction="coalition" min="20" />
-			</Price>
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="4">
-				<Reputation faction="coalition" min="20" />
-			</Price>
-			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-				<Reputation faction="coalition" min="20" />
-			</Price>
-		</Price>
 
 		<Deconstruct time="15">
 			<Item identifier="lead" />
@@ -490,13 +411,6 @@
 
 		<SkillRequirementHint identifier="weapons" level="65" />
 
-		<Price baseprice="2550" sold="false">
-			<Price storeidentifier="merchantoutpost" multiplier="0.9" />
-			<Price storeidentifier="merchantcity" multiplier="0.8" />
-			<Price storeidentifier="merchantresearch" multiplier="0.9" />
-			<Price storeidentifier="merchantmilitary" multiplier="1.2" />
-			<Price storeidentifier="merchantmine" multiplier="0.8" />
-		</Price>
 
 		<Fabricate suitablefabricators="advweaponfabricator" requiredtime="35">
 			<RequiredSkill identifier="weapons" level="80" />
@@ -574,25 +488,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="35" />
 
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.075" />
-		<PreferredContainer primary="wreckstoragecab,storagecab,reactorcab,engcab" minamount="0" maxamount="1" spawnprobability="0.04" />
-		<PreferredContainer secondary="weaponholder" />
 
-		<Price baseprice="275" displaynonempty="true">
-			<Price storeidentifier="merchantoutpost" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1">
-				<Reputation faction="separatists" min="15" />
-			</Price>
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="4">
-				<Reputation faction="separatists" min="15" />
-			</Price>
-			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-				<Reputation faction="separatists" min="15" />
-			</Price>
-		</Price>
 
 		<Fabricate suitablefabricators="weaponfabricator,fabricator" requiredtime="27">
 			<RequiredSkill identifier="weapons" level="30" />
@@ -652,24 +548,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="45" />
 
-		<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.55" />
-		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.075" />
-		<PreferredContainer secondary="weaponholder" />
 
-		<Price baseprice="475" displaynonempty="true">
-			<Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1">
-				<Reputation faction="coalition" min="20" />
-			</Price>
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="2" maxavailable="2">
-				<Reputation faction="coalition" min="20" />
-			</Price>
-			<Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="2" maxavailable="2">
-				<Reputation faction="coalition" min="20" />
-			</Price>
-		</Price>
 
 		<Fabricate suitablefabricators="weaponfabricator" requiredtime="30">
 			<RequiredSkill identifier="weapons" level="30" />
@@ -728,25 +607,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="45" />
 
-		<PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" minleveldifficulty="45" />
-		<PreferredContainer secondary="weaponholder" />
 
-		<Price baseprice="760" displaynonempty="true" minleveldifficulty="60">
-			<Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="1" maxamount="2">
-				<Reputation faction="coalition" min="85" />
-			</Price>
-			<Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="2">
-				<Reputation faction="coalition" min="85" />
-			</Price>
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="4">
-				<Reputation faction="coalition" min="85" />
-			</Price>
-			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-				<Reputation faction="coalition" min="85" />
-			</Price>
-		</Price>
 
 		<Deconstruct time="10">
 			<Item identifier="scp_durasteel" amount="2" />

@@ -2,16 +2,6 @@
 <Items>
 <!--.38 Levergun-->
 <Item name="" description="" identifier="sgt_levergun" category="Weapon" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.385" impactsoundtag="weaponlightdrop" allowasextracargo="true">
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="420" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="2" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2"></Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="4"></Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" maxavailable="4"></Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="scp_basicparts" />
@@ -53,9 +43,6 @@
   </Item>
   <!--Henry Tactical-->
   <Item name="" description="" identifier="sgt_henrytac" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop" allowasextracargo="true">
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="850" sold="false" />
     <Fabricate suitablefabricators="advweaponfabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="75" />
       <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
@@ -98,23 +85,6 @@
   </Item>
   <!--7.62x51 VHS-->
   <Item name="" description="" identifier="sgt_vhs" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.37" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.04" minleveldifficulty="55" />
-    <Price baseprice="820" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="1" maxamount="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
     <Deconstruct time="35">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="scp_durasteel" amount="2" />
@@ -172,23 +142,6 @@
   </Item>
   <!--F2000-->
   <Item name="" description="" identifier="sgt_f2k" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.43" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.04" minleveldifficulty="45" />
-    <Price baseprice="1120" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="1" maxamount="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
     <Deconstruct time="35">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="scp_durasteel" amount="2" />
@@ -241,23 +194,6 @@
   </Item>
 <!--XMS-->
 <Item name="" identifier="sgt_xms" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.43" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.04" minleveldifficulty="45" />
-    <Price baseprice="1120" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="1" maxamount="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
     <Deconstruct time="35">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="scp_durasteel" amount="2" />
@@ -296,23 +232,6 @@
   </Item>
   <!--PMR-->
   <Item name="" identifier="sgt_bopmr" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.34" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" impactsoundtag="weaponheavydrop">
-    <PreferredContainer secondary="abandonedsecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="55" />
-    <Price baseprice="1350" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="1" maxamount="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
     <Deconstruct time="35">
       <Item identifier="scp_durasteel" />
       <Item identifier="scp_durasteel" />
@@ -359,14 +278,6 @@
   </Item>
   <!--SVCh-->
   <Item name="" identifier="sgt_ppr" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" impactsoundtag="weaponheavydrop">
-    <Price baseprice="2200" displaynonempty="true" minleveldifficulty="10" sold="false">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" />
-    </Price>
     <Fabricate suitablefabricators="advweaponfabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="90" />
       <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
@@ -436,15 +347,6 @@
   </Item>
   <!--M1 Garand-->
   <Item name="" description="" identifier="sgt_rifle" category="Weapon" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="weaponlightdrop">
-    <Price baseprice="860" sold="false">
-      <Price storeidentifier="merchantoutpost" multiplier="0.9" />
-      <Price storeidentifier="merchantcity" multiplier="0.8" />
-      <Price storeidentifier="merchantresearch" multiplier="0.9" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" minavailable="1" maxavailable="2" sold="true">
-        <Reputation faction="separatists" min="50" />
-      </Price>
-      <Price storeidentifier="merchantmine" multiplier="0.8" />
-    </Price>
     <Deconstruct time="10">
       <Item identifier="steel" />
       <Item identifier="steel" />
@@ -488,13 +390,6 @@
   </Item>
   <!--HCAR-->
   <Item name="" description="" identifier="sgt_rifleprototype" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="weaponheavydrop">
-    <Price baseprice="2550" sold="false">
-      <Price storeidentifier="merchantoutpost" multiplier="0.9" />
-      <Price storeidentifier="merchantcity" multiplier="0.8" />
-      <Price storeidentifier="merchantresearch" multiplier="0.9" />
-      <Price storeidentifier="merchantmilitary" multiplier="1.2" />
-      <Price storeidentifier="merchantmine" multiplier="0.8" />
-    </Price>
     <Fabricate suitablefabricators="advweaponfabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="80" />
       <requireditem identifier="scp_prototypeusb" mincondition="0.50" />
@@ -538,21 +433,6 @@
   </Item>
   <!--Orsis T-5000-->
   <Item name="" identifier="scp_t5000" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.03" minleveldifficulty="20" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="700" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="40" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="40" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="45">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="scp_sniperkit" mincondition="0.5" />
@@ -612,22 +492,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_m24" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="15" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.075" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="700" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="40" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="40" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="45">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="scp_basicparts" amount="3" />
@@ -689,20 +553,6 @@
   </Item>
   <!--RSh-12.7-->
   <Item name="" identifier="scp_rsh12" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" scale="0.445" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.025" minleveldifficulty="20" />
-    <Price baseprice="850" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="60" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="60" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="65" />
       <RequiredItem identifier="scp_pistolkit" />
@@ -758,25 +608,6 @@
   </Item>
   <!--SG550-->
   <Item name="" identifier="scp_sg550" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.6" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.08" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="650" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="1" multiplier="1.5">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="2">
-        <Reputation faction="coalition" min="25" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="2">
-        <Reputation faction="coalition" min="25" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredItem identifier="scp_riflekit" mincondition="0.25" />
@@ -839,16 +670,6 @@
   </Item>
   <!--AS Val-->
   <Item name="" identifier="scp_val" description="" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" category="Weapon" subcategory="Renegade" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.03" minleveldifficulty="5" />
-    <Price baseprice="700" displaynonempty="true" minleveldifficulty="8">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1"></Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="0" maxavailable="2"></Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="2"></Price>
-    </Price>
     <Fabricate suitablefabricators="fabricator,weaponfabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="35" />
       <RequiredItem identifier="scp_basicparts" amount="2" />
@@ -910,21 +731,6 @@
   </Item>
   <!--ASh-12.7-->
   <Item name="" identifier="scp_ash12" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="abandonedsecarmcab,wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="2000" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="scp_riflekit" />
@@ -1008,21 +814,6 @@
   </Item>
   <!--CMMG MXA1-->
   <Item name="" identifier="scp_mxa1" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="10" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="750" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="scp_riflekit" mincondition="0.5" />
@@ -1086,21 +877,6 @@
   </Item>
   <!--SCAR-H-->
   <Item name="" description="" identifier="scp_scar17" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.04" minleveldifficulty="15" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1500" displaynonempty="true" minleveldifficulty="25">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="2">
-        <Reputation faction="coalition" min="55" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="55" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="scp_riflekit" mincondition="0.5" />
@@ -1167,21 +943,6 @@
   </Item>
   <!--!unidentified-->
   <Item name="" description="" identifier="scp_scar20" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.03" minleveldifficulty="15" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1200" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="55" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="55" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="55" />
       <RequiredItem identifier="scp_riflekit" mincondition="0.25" />
@@ -1236,21 +997,6 @@
   </Item>
   <!--The first weapon in EHA bruh-->
   <Item name="" identifier="scp_mdr" description="" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.2" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.08" minleveldifficulty="10" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="700" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="3">
-        <Reputation faction="coalition" min="30" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="3">
-        <Reputation faction="coalition" min="30" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="scp_riflekit" mincondition="0.25" />
@@ -1295,9 +1041,6 @@
   </Item>
   <!--M107-->
   <Item name="" identifier="scp_m107" description="" tags="mediumitem,weapon,gun,gunsmith,specialgun,mountableweapon,bulkyweapon" Scale="0.43" category="Weapon" subcategory="Prototype" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="50" />
-    <Price baseprice="2400" sold="false"></Price>
     <Deconstruct time="40">
       <Item identifier="steel" amount="2" />
       <Item identifier="dementonite" />
@@ -1363,14 +1106,6 @@
   </Item>
   <!--MA-37-->
   <Item name="" identifier="scp_ma37" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.37" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="1200" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.5" sold="false" />
-      <Price locationtype="city" multiplier="1.25" sold="false" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="0.9" sold="false" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price>
     <Fabricate suitablefabricators="advweaponfabricator" requiredtime="60">
       <RequiredSkill identifier="weapons" level="80" />
       <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
@@ -1442,9 +1177,6 @@
   </Item>
   <!--HK433-->
   <Item name="" identifier="scp_hk433" description="" cargocontaineridentifier="metalcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.365" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="abandonedsecarmcab,wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="900" sold="false"></Price>
     <Fabricate suitablefabricators="advweaponfabricator" requiredtime="40" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
@@ -1538,9 +1270,6 @@
     <SkillRequirementHint identifier="weapons" level="80" />
   </Item>
   <Item name="" identifier="scp_ak15zlobin" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.38" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="400" sold="false" canbespecial="false"></Price>
     <Deconstruct time="12">
       <Item identifier="dementonite" amount="2" />
       <Item identifier="steel" />
@@ -1637,9 +1366,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_mxa3" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="1200" sold="false"></Price>
     <Fabricate suitablefabricators="advweaponfabricator" requiredtime="45">
       <RequiredSkill identifier="weapons" level="70" />
       <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
@@ -1739,24 +1465,6 @@
   </Item>
   <!--AK-103-->
   <Item name="" identifier="scp_ak103" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="storagecab,engcab" minamount="0" maxamount="1" spawnprobability="0.025" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="10" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="700" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="35" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="35" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="35" />
-      </Price>
-    </Price>
     <Deconstruct time="15">
       <Item identifier="scp_basicparts" amount="2" />
     </Deconstruct>
@@ -1817,24 +1525,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_tabuk" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="storagecab,engcab" minamount="0" maxamount="1" spawnprobability="0.025" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="15" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="750" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1">
-        <Reputation faction="separatists" min="35" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="1">
-        <Reputation faction="separatists" min="35" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="1">
-        <Reputation faction="separatists" min="35" />
-      </Price>
-    </Price>
     <Deconstruct time="12">
       <Item identifier="scp_basicparts" amount="2" />
     </Deconstruct>
@@ -1887,26 +1577,6 @@
   </Item>
   <!--AKS-74U-->
   <Item name="" identifier="scp_aks74u" description="" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.55" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="storagecab,engcab" minamount="0" maxamount="1" spawnprobability="0.05" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="300" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minavailable="1" maxavailable="3">
-        <Reputation faction="separatists" min="10" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="10" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="6">
-        <Reputation faction="separatists" min="10" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="separatists" min="10" />
-      </Price>
-    </Price>
     <Deconstruct time="12">
       <Item identifier="scp_basicparts" outcondition="0.75" />
       <Item identifier="steel" />
@@ -1966,26 +1636,6 @@
   </Item>
   <!--AK-74M-->
   <Item name="" identifier="scp_ak74m" description="" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="storagecab,engcab" minamount="0" maxamount="1" spawnprobability="0.04" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="5" />
-    <PreferredContainer secondary="weaponholder" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.3" />
-    <Price baseprice="250" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" sold="false" minamount="0" maxamount="2">
-        <Reputation faction="separatists" min="20" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="20" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="3">
-        <Reputation faction="separatists" min="20" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="3">
-        <Reputation faction="separatists" min="20" />
-      </Price>
-    </Price>
     <Deconstruct time="12">
       <Item identifier="scp_basicparts" />
       <Item identifier="steel" />
@@ -2048,24 +1698,6 @@
   </Item>
   <!--KH2020-->
   <Item name="" identifier="scp_kh2020" description="" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.03" minleveldifficulty="10" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.125" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="650" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1">
-        <Reputation faction="separatists" min="65" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="65" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="65" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator,fabricator" requiredtime="40" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="scp_basicparts" amount="3" />
@@ -2125,23 +1757,6 @@
   </Item>
   <!--OSV-96-->
   <Item name="" identifier="scp_osv96" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.45" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.035" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1000" displaynonempty="true" minleveldifficulty="25">
-      <Price storeidentifier="merchantoutpost" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1">
-        <Reputation faction="separatists" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="85" />
-      </Price>
-    </Price>
     <Deconstruct time="30">
       <Item identifier="steel" />
       <Item identifier="steel" />
@@ -2236,21 +1851,6 @@
     <SkillRequirementHint identifier="weapons" level="85" />
   </Item>
   <Item name="" description="" identifier="scp_g3" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.51" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.04" minleveldifficulty="15" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="675" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="2">
-        <Reputation faction="separatists" min="60" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="60" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
       <RequiredSkill identifier="weapons" level="45" />
       <RequiredItem identifier="scp_ak103" />
@@ -2329,22 +1929,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_malyuk12" description="" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.425" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.04" minleveldifficulty="20" />
-    <PreferredContainer primary="wrecksecarmcab" maxamount="1" minamount="0" spawnprobability="0.02" minleveldifficulty="20" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="700" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="1">
-        <Reputation faction="separatists" min="65" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="1">
-        <Reputation faction="separatists" min="65" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredItem identifier="scp_g3" />
@@ -2422,21 +2006,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_g36" description="" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="10" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="500" displaynonempty="true" minleveldifficulty="9">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="3">
-        <Reputation faction="separatists" min="35" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="3">
-        <Reputation faction="separatists" min="35" />
-      </Price>
-    </Price>
     <Fabricate suitablefabricators="fabricator,weaponfabricator" requiredtime="30">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="scp_ak74m" />
@@ -2487,9 +2056,6 @@
   </Item>
   <!--SR-3 Vihkr-->
   <Item name="" identifier="scp_sr3" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" category="Weapon" subcategory="Vintage" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="500" sold="false" canbespecial="false"></Price>
     <Deconstruct time="15">
       <Item identifier="steel" amount="2" />
       <Item identifier="physicorium" />
@@ -2533,9 +2099,6 @@
   </Item>
   <!--ASP-1 Kir-->
   <Item name="" identifier="scp_kir" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.005" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="600" sold="false" canbespecial="false"></Price>
     <Deconstruct time="12">
       <Item identifier="steel" />
       <Item identifier="titaniumaluminiumalloy" />
@@ -2572,10 +2135,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_dmr540" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,gun,weapon,gunsmith" scale="0.45" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.009" minleveldifficulty="25" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.009" minleveldifficulty="20" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1200" sold="false" canbespecial="false"></Price>
     <Deconstruct time="12">
       <Item identifier="steel" />
       <Item identifier="plastic" amount="2" />
@@ -2621,9 +2180,6 @@
   </Item>
   <!--Kel-Tec M35A2-->
   <Item name="" identifier="scp_m35a2" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,gun,weapon,gunsmith" scale="0.48" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.009" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="875" sold="false" canbespecial="false"></Price>
     <Deconstruct time="12">
       <Item identifier="steel" />
       <Item identifier="plastic" amount="2" />
@@ -2677,11 +2233,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_ash12unique" description="" category="Weapon" subcategory="Vintage" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.0075" minleveldifficulty="35" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.0085" minleveldifficulty="35" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1050" sold="false" canbespecial="false"></Price>
     <Deconstruct time="12">
       <Item identifier="steel" />
       <Item identifier="titaniumaluminiumalloy" />
@@ -2745,10 +2296,6 @@
   </Item>
   <!--G3KA4 (Polarfuchs moment)-->
   <Item name="" description="" identifier="scp_g3ka4" category="Weapon" subcategory="Vintage" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.52" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.0085" minleveldifficulty="20" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="800" sold="false"></Price>
     <Deconstruct time="35">
       <Item identifier="steel" amount="2" />
       <Item identifier="plastic" />
@@ -2798,10 +2345,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_akms" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.008" minleveldifficulty="10" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="500" sold="false" />
     <Deconstruct time="15">
       <Item identifier="steel" amount="4" />
     </Deconstruct>
@@ -2861,9 +2404,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_m16a3" description="" cargocontaineridentifier="metalcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.42" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="abandonedsecarmcab,wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.007" minleveldifficulty="10" />
-    <Price baseprice="800" sold="false"></Price>
     <Deconstruct time="12">
       <Item identifier="steel" />
       <Item identifier="titaniumaluminiumalloy" />
@@ -2937,10 +2477,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_sa80a3" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.008" minleveldifficulty="15" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="750" displaynonempty="true" />
     <Deconstruct time="15">
       <Item identifier="steel" />
       <Item identifier="titaniumaluminiumalloy" />
@@ -2997,10 +2533,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_g36c" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="750" displaynonempty="true" />
     <Deconstruct time="12">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="plastic" />
@@ -3043,10 +2575,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_akliv" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.006" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1200" sold="false" />
     <Deconstruct time="15">
       <Item identifier="scp_durasteel" />
       <Item identifier="titanium" amount="2" />
@@ -3098,10 +2626,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_sg550mli" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedarmcab" minamount="0" maxamount="1" spawnprobability="0.006" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="975" sold="false" />
     <Deconstruct time="15">
       <Item identifier="steel" amount="3" />
       <Item identifier="titaniumaluminiumalloy" amount="1" />

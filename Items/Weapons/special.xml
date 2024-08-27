@@ -70,16 +70,7 @@
 
 		<Upgrade gameversion="0.10.0.0" scale="0.5" />
 
-		<PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
 
-		<Price baseprice="105" sold="false">
-			<Price storeidentifier="merchantoutpost" />
-			<Price storeidentifier="merchantcity" multiplier="0.9" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" sold="true" multiplier="1.25" minavailable="1" />
-			<Price storeidentifier="merchantmine" />
-			<Price storeidentifier="merchantarmory" multiplier="1.25" minavailable="1" />
-		</Price>
 
 		<Deconstruct time="10">
 			<Item identifier="titaniumaluminiumalloy" />
@@ -121,15 +112,7 @@
 
 		<Upgrade gameversion="0.9.600.0" Tags="mediumitem,fireextinguisher,provocative" />
 
-		<PreferredContainer primary="engcab,reactorcab" spawnprobability="0.5" maxamount="2" />
 
-		<Price baseprice="20" displaynonempty="true">
-			<Price storeidentifier="merchantoutpost" minavailable="3" />
-			<Price storeidentifier="merchantcity" multiplier="0.9" minavailable="4" />
-			<Price storeidentifier="merchantresearch" minavailable="2" />
-			<Price storeidentifier="merchantmilitary" minavailable="2" />
-			<Price storeidentifier="merchantmine" minavailable="2" />
-		</Price>
 
 		<Deconstruct time="2">
 			<Item identifier="aluminium" outcondition="0.5" />
@@ -221,17 +204,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="25" />
 
-		<PreferredContainer primary="secarmcab" secondary="weaponholder,armcab" />
 
-		<Price baseprice="900" sold="false">
-			<Price storeidentifier="merchantoutpost" multiplier="1.5" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="2" sold="true">
-				<Reputation faction="coalition" min="70" />
-			</Price>
-			<Price storeidentifier="merchantmine" multiplier="1.25" />
-		</Price>
 
 		<Deconstruct time="10">
 			<Item identifier="tin" />
@@ -324,17 +297,7 @@
 
 		<SkillRequirementHint identifier="weapons" level="45" />
 
-		<PreferredContainer primary="secarmcab" secondary="weaponholder,armcab" />
 
-		<Price baseprice="2000" sold="false">
-			<Price storeidentifier="merchantoutpost" multiplier="1.5" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="2" sold="true">
-				<Reputation faction="coalition" min="70" />
-			</Price>
-			<Price storeidentifier="merchantmine" multiplier="1.25" />
-		</Price>
 
 		<Deconstruct time="10">
 			<Item identifier="tin" />
@@ -419,9 +382,7 @@
 
 		<SkillRequirementHint identifier="electrical" level="125" />
 
-		<PreferredContainer primary="secarmcab" />
 
-		<Price baseprice="3000" sold="false"></Price>
 
 		<Deconstruct time="10">
 			<Item identifier="fpgacircuit" />
@@ -509,9 +470,7 @@
 		<SkillRequirementHint identifier="weapons" level="100" />
 		<SkillRequirementHint identifier="electrical" level="100" />
 
-		<PreferredContainer primary="secarmcab" />
 
-		<Price baseprice="2500" sold="false" />
 
 		<Fabricate suitablefabricators="advweaponfabricator" requiredtime="70">
 			<RequiredSkill identifier="weapons" level="75" />
@@ -601,9 +560,7 @@
 
 		<SkillRequirementHint identifier="electrical" level="90" />
 
-		<PreferredContainer primary="secarmcab" />
 
-		<Price baseprice="2500" sold="false" />
 
 		<Fabricate suitablefabricators="advweaponfabricator" requiredtime="70">
 			<RequiredSkill identifier="weapons" level="75" />
