@@ -137,7 +137,7 @@
 				<ParticleEmitter particle="impactfirearm" particleamount="1" scalemin="30" scalemax="40" velocitymin="0" velocitymax="0" />
 			</StatusEffect>
 
-			<StatusEffect type="OnBroken">
+			<StatusEffect type="OnBroken" target="This">
 				<Explosion 
 				range="800.0" 
 				ballastfloradamage="80" structuredamage="20" levelwalldamage="25" itemdamage="400" 
@@ -227,7 +227,7 @@
 				<ParticleEmitter particle="impactfirearm" particleamount="1" scalemin="30" scalemax="40" velocitymin="0" velocitymax="0" />
 			</StatusEffect>
 
-			<StatusEffect type="OnBroken">
+			<StatusEffect type="OnBroken" target="This">
 				<Remove />
 			</StatusEffect>
 

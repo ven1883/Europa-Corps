@@ -182,7 +182,7 @@
 
 			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/blaster1.ogg" range="1000" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="true" flames="false" underwaterbubble="true" camerashake="12.0" />
 			</StatusEffect>
 
@@ -284,7 +284,7 @@
 
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shockrifle.ogg" type="OnUse" range="3000" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="true" flames="false" underwaterbubble="true" camerashake="12.0" />
 			</StatusEffect>
 
@@ -292,7 +292,7 @@
 				<Use />
 			</StatusEffect>
 
-			<StatusEffect type="OnUse" delay="0.3">
+			<StatusEffect type="OnUse" delay="0.3" target="This">
 				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shockriflerecharge.ogg" />
 			</StatusEffect>
 
@@ -378,7 +378,7 @@
 
 			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/taucharge.ogg" range="3000" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="250.0" force="5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="75.0" />
 			</StatusEffect>
 
@@ -461,7 +461,7 @@
 			<Sound file="Content/Items/Weapons/Railgun2.ogg" type="OnUse" range="6500" volume="2.5" />
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/prototankcannon.ogg" type="OnUse" range="6500" volume="1.5" frequencymultiplier="1.1" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="8" shockwave="true" smoke="true" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="300.0" />
 			</StatusEffect>
 			
@@ -557,7 +557,7 @@
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m107.ogg" type="OnUse" range="6500" volume="1" frequencymultiplier="1.25" selectionmode="all" />
 			<Sound file="Content/Items/Weapons/Coilgun5.ogg" type="OnUse" range="4000" volume="1.5" frequencymultiplier="1.25" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="5" shockwave="true" smoke="true" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="150.0" />
 			</StatusEffect>
 

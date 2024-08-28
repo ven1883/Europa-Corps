@@ -312,7 +312,7 @@
 			<Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
 			<Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="2.25" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="8.0" />
 			</StatusEffect>
 			
@@ -368,7 +368,7 @@
 
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="1.5" stackable="false" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="50.0" />
 			</StatusEffect>
 
@@ -431,7 +431,7 @@
 
 			<StatusEffect type="OnBroken" target="This" Condition="75" disabledeltatime="true" delay="4.9" stackable="false" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="50.0" />
 			</StatusEffect>
 
@@ -478,7 +478,7 @@
 			<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="260" anglemax="280" copyentityangle="true" />
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="0.3" shockwave="true" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="25.0" />
 			</StatusEffect>
 
@@ -522,7 +522,7 @@
 			<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="260" anglemax="280" copyentityangle="true" />
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="0.3" shockwave="true" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="25.0" />
 			</StatusEffect>
 

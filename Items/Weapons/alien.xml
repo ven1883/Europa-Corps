@@ -31,7 +31,7 @@
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tar41.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tar41.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
 			</StatusEffect>
 			
@@ -112,7 +112,7 @@
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tbr6.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="0.9" />
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tbr6.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="1.05" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
 			</StatusEffect>
 
@@ -193,7 +193,7 @@
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tb11.ogg" type="OnUse" range="3000" selectionmode="Random" />
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tb12.ogg" type="OnUse" range="3000" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="100.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="35.0" />
 			</StatusEffect>
 
@@ -275,7 +275,7 @@
 
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tbsr7.ogg" type="OnUse" range="5000" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="200.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="100.0" />
 			</StatusEffect>
 
@@ -364,7 +364,7 @@
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tmg.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" />
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tmg.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="16" />
 			</StatusEffect>
 

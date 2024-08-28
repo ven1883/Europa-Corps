@@ -45,7 +45,7 @@
 			
 			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="4.5" stackable="false" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.5" />
 			</StatusEffect>
 			
@@ -121,7 +121,7 @@
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="9" stackable="false" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.5" />
 			</StatusEffect>
 			
@@ -204,7 +204,7 @@
 			
 			<StatusEffect type="OnBroken" target="This" Condition="55" disabledeltatime="true" delay="10.2" stackable="false" />
 		
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.9" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25" />
 			</StatusEffect>
 		
@@ -302,7 +302,7 @@
 		
 			<StatusEffect type="OnBroken" target="This" Condition="65" disabledeltatime="true" delay="10.2" stackable="false" />
 		
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.85" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="23" />
 			</StatusEffect>
 		
@@ -378,7 +378,7 @@
 			
 			<StatusEffect type="OnBroken" target="This" Condition="45" disabledeltatime="true" delay="10.3" stackable="false" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.9" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="45" />
 			</StatusEffect>
 			
@@ -473,7 +473,7 @@
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="11" stackable="false" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="100.0" force="1.75" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="24" />
 			</StatusEffect>
 			
@@ -561,7 +561,7 @@
 			
 			<StatusEffect type="OnBroken" target="This" Condition="60" disabledeltatime="true" delay="3.74" stackable="false" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="35.0" />
 			</StatusEffect>
 			
@@ -651,7 +651,7 @@
 			
 			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/ar50.ogg" type="OnUse" range="5500" volume="1.2" />
 			
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="60.0" />
 			</StatusEffect>
 			
