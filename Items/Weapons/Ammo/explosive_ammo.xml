@@ -500,8 +500,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="40mmlatexground" texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="52,-2,42,42" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="1,0,41,17" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="40mmlatexground" texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="52,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="1,0,41,17" depth="0.55" origin="0.5,0.5" />
 		<Body width="38" height="15" density="30" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -556,8 +556,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="40mmdevilground" texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="94,-2,42,42" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="1,18,41,17" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="40mmdevilground" texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="94,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="1,18,41,17" depth="0.55" origin="0.5,0.5" />
 		<Body width="38" height="15" density="30" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -610,8 +610,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="40mmdevilground" texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="142,-2,42,42" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="1,36,41,17" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="40mmdevilground" texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="142,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="1,36,41,17" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="38" height="15" density="30" />
 
@@ -666,8 +666,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="dirty40inv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="185,-2,42,42" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="1,53,41,17" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="dirty40inv" texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="185,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="1,53,41,17" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="38" height="15" density="30" />
 
@@ -734,8 +734,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="40mmduground" texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="227,-2,42,42" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/grenades.png" sourcerect="1,70,41,17" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="40mmduground" texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="227,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="1,70,41,17" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="60" height="15" density="30" />
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />

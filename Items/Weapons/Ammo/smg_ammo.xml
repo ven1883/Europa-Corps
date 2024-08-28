@@ -17,7 +17,7 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="2,142,37,66" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="2,142,37,66" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -60,7 +60,7 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="104,142,37,66" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="104,142,37,66" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -102,7 +102,7 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 		
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="56,142,37,66" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="56,142,37,66" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -142,8 +142,8 @@
 		hideinmenus="true" 
 		scale="0.4">
 
-		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 
 		<Body width="40" height="15" density="40" />
 
@@ -196,8 +196,8 @@
 		hideinmenus="true" 
 		scale="0.4">
 
-		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 
 		<Body width="40" height="15" density="40" />
 
@@ -252,7 +252,7 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="160,142,15,66" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="160,142,15,66" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -293,8 +293,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<InventoryIcon texture="%ModDir%/Ammo/improvedammo.png" sourcerect="196,143,14,66" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="196,143,14,66" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="196,143,14,66" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="196,143,14,66" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 

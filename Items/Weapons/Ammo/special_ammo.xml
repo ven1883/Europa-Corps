@@ -115,8 +115,8 @@
 		scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Ammo/Chemfuel.png" sourcerect="1,1,34,68" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/Chemfuel.png" sourcerect="2,2,33,67" depth="0.55" origin="0.5026745,0.5045908" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/Chemfuel.png" sourcerect="1,1,34,68" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/Chemfuel.png" sourcerect="2,2,33,67" depth="0.55" origin="0.5026745,0.5045908" />
 
 		<Body width="20" height="65" density="9.7" />
 
@@ -170,8 +170,8 @@
 		cargocontaineridentifier="metalcrate" 
 		scale="0.5">
 
-		<InventoryIcon texture="%ModDir%/Ammo/blastercell.png" sourcerect="19,0,21,21" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/blastercell.png" depth="0.55" sourcerect="0,1,18,68" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/blastercell.png" sourcerect="19,0,21,21" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/blastercell.png" depth="0.55" sourcerect="0,1,18,68" origin="0.5,0.5" />
 
 		<Body radius="6" height="55" density="20" />
 		
@@ -216,8 +216,8 @@
 		cargocontaineridentifier="metalcrate" 
 		scale="0.5">
 
-		<InventoryIcon texture="%ModDir%/Ammo/blastercell.png" sourcerect="59,0,21,21" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/blastercell.png" depth="0.55" sourcerect="40,1,18,68" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/blastercell.png" sourcerect="59,0,21,21" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/blastercell.png" depth="0.55" sourcerect="40,1,18,68" origin="0.5,0.5" />
 
 		<Body radius="6" height="55" density="20" />
 
@@ -411,8 +411,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="109,215,18,68" origin="0.5,0.5" />
-		<InventoryIcon name="tauuraninv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="169,218,35,33" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="109,215,18,68" origin="0.5,0.5" />
+		<InventoryIcon name="tauuraninv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="169,218,35,33" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -453,8 +453,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="128,215,18,68" origin="0.5,0.5" />
-		<InventoryIcon name="tauthorinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="208,218,35,34" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="128,215,18,68" origin="0.5,0.5" />
+		<InventoryIcon name="tauthorinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="208,218,35,34" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -494,8 +494,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="147,215,18,68" origin="0.5,0.5" />
-		<InventoryIcon name="taufulginv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="244,218,35,34" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="147,215,18,68" origin="0.5,0.5" />
+		<InventoryIcon name="taufulginv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="244,218,35,34" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
