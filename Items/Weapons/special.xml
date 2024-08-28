@@ -12,13 +12,13 @@
 
 		<Body width="150" height="77" density="25" />
 
-		<InventoryIcon texture="%ModDir%/Weapons/Coalition.png" sourcerect="0,149,274,123" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/Coalition.png" sourcerect="0,149,274,123" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="0,149,274,123" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="0,149,274,123" depth="0.55" origin="0.5,0.5" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="12,-50" holdangle="60" aimpos="50,-40" handle1="-118,4" handle2="-4,-6" msg="ItemMsgPickUpSelect" />
 		
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="wornchemthrower" texture="%ModDir%/Weapons/Coalition.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,149,274,123" limb="Torso" scale="0.5" origin="0.5,0.1" />
+			<sprite name="wornchemthrower" texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,149,274,123" limb="Torso" scale="0.5" origin="0.5,0.1" />
 		</Wearable>
 
 		<RepairTool 
@@ -133,14 +133,14 @@
 		<!--Heavy Blaster-->
 	<Item name="" identifier="sgt_heavyblaster" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
 
-		<Sprite texture="%ModDir%/Weapons/alt.png" sourcerect="0,0,177,65" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/alt.png" sourcerect="0,0,177,65" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="238" height="63" density="25" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="55,2" handle1="-45,-15" handle2="90,-10" holdangle="-25" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="wornheavyblaster" texture="%ModDir%/Weapons/Alt.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,0,177,65" limb="Torso" scale="0.5" origin="0.5,-0.3" />
+			<sprite name="wornheavyblaster" texture="%ModDir%/Items/Weapons/Sprites/Alt.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,0,177,65" limb="Torso" scale="0.5" origin="0.5,-0.3" />
 		</Wearable>
 
 		<RangedWeapon 
@@ -178,9 +178,9 @@
 
 			</LightComponent>
 
-			<Sound file="%ModDir%/Sounds/blastershot.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/blastershot.ogg" type="OnUse" range="3000" />
 
-			<ChargeSound file="%ModDir%/Sounds/blaster1.ogg" range="1000" />
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/blaster1.ogg" range="1000" />
 
 			<StatusEffect type="OnUse">
 				<Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="true" flames="false" underwaterbubble="true" camerashake="12.0" />
@@ -238,14 +238,14 @@
 		<!--ASMD Shock Rifle-->
 	<Item name="" identifier="sgt_asmd" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.7" impactsoundtag="impact_metal_heavy">
 
-		<Sprite texture="%ModDir%/Weapons/alt.png" sourcerect="0,65,183,49" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/alt.png" sourcerect="0,65,183,49" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="238" height="58" density="25" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="70,2" handle1="-54,-8" handle2="90,-10" holdangle="-25" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="wornasmd" texture="%ModDir%/Weapons/Alt.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,65,183,49" limb="Torso" scale="0.7" origin="0.5,-0.3" />
+			<sprite name="wornasmd" texture="%ModDir%/Items/Weapons/Sprites/Alt.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,65,183,49" limb="Torso" scale="0.7" origin="0.5,-0.3" />
 		</Wearable>
 
 		<RangedWeapon 
@@ -282,7 +282,7 @@
 
 			</LightComponent>
 
-			<Sound file="%ModDir%/Sounds/shockrifle.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shockrifle.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse">
 				<Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="true" flames="false" underwaterbubble="true" camerashake="12.0" />
@@ -293,7 +293,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" delay="0.3">
-				<Sound file="%ModDir%/Sounds/shockriflerecharge.ogg" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shockriflerecharge.ogg" />
 			</StatusEffect>
 
 			<RequiredItems items="hbcell" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -346,15 +346,15 @@
 		<!--Tau Cannon-->
 	<Item name="" description="" identifier="scp_taucannon" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,bulkyweapon" Scale="0.3" impactsoundtag="weaponheavydrop">
 
-		<Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,675,360,121" depth="0.55" origin="0.5,0.5" />
-		<InventoryIcon name="taucannoninv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="495,2,70,80" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="0,675,360,121" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="taucannoninv" texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="495,2,70,80" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="238" height="63" density="70" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,4" handle1="-51,-13" handle2="10,-3" holdangle="-25" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="taucannonbag" texture="%ModDir%/Weapons/hightierweapons.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="0,675,360,120" limb="Torso" scale="0.3" origin="0.4992217,0.86976707" />
+			<sprite name="taucannonbag" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="0,675,360,120" limb="Torso" scale="0.3" origin="0.4992217,0.86976707" />
 		</Wearable>
 
 		<RangedWeapon 
@@ -374,9 +374,9 @@
 			<ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,90,0,255" />
 			<ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="1,1" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" colormultiplier="255,90,0,255" />
 
-			<Sound file="%ModDir%/Sounds/taushot.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/taushot.ogg" type="OnUse" range="3000" />
 
-			<ChargeSound file="%ModDir%/Sounds/taucharge.ogg" range="3000" />
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/taucharge.ogg" range="3000" />
 
 			<StatusEffect type="OnUse">
 				<Explosion range="250.0" force="5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="75.0" />
@@ -432,8 +432,8 @@
 		<!--Portable Railgun Cannon-->
 	<Item name="" identifier="scp_railgunlauncher" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.53">
 		
-		<InventoryIcon name="railguninv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="170,82,88,88" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="447,549,280,95" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="railguninv" texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="170,82,88,88" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="447,549,280,95" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="190" height="60" density="50" />
 
@@ -442,7 +442,7 @@
 		</Holdable>
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="railgun Worn" texture="%ModDir%/Weapons/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="447,549,280,95" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
+			<sprite name="railgun Worn" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="447,549,280,95" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
 		</Wearable>
 
 		<RangedWeapon 
@@ -459,7 +459,7 @@
 
 			<ParticleEmitter particle="muzzleflash" particleamount="0" velocitymin="0" velocitymax="0" />
 			<Sound file="Content/Items/Weapons/Railgun2.ogg" type="OnUse" range="6500" volume="2.5" />
-			<Sound file="%ModDir%/Sounds/prototankcannon.ogg" type="OnUse" range="6500" volume="1.5" frequencymultiplier="1.1" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/prototankcannon.ogg" type="OnUse" range="6500" volume="1.5" frequencymultiplier="1.1" />
 			
 			<StatusEffect type="OnUse">
 				<Explosion range="150.0" force="8" shockwave="true" smoke="true" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="300.0" />
@@ -528,8 +528,8 @@
 		<!--Portable Coilgun-->
 	<Item name="" identifier="scp_portablecoilgun" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.38">
 		
-		<InventoryIcon name="coilguninv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="731,110,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="489,380,291,80" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="coilguninv" texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="731,110,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="489,380,291,80" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="190" height="60" density="50" />
 
@@ -538,7 +538,7 @@
 		</Holdable>
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="c worn" texture="%ModDir%/Weapons/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="489,380,291,80" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.38" origin="0.45,0.96" />
+			<sprite name="c worn" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="489,380,291,80" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.38" origin="0.45,0.96" />
 		</Wearable>
 
 		<RangedWeapon 
@@ -554,7 +554,7 @@
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="13.0,5.0" colormultiplier="50,50,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,10.0" colormultiplier="50,50,200,200" />
-			<Sound file="%ModDir%/Sounds/m107.ogg" type="OnUse" range="6500" volume="1" frequencymultiplier="1.25" selectionmode="all" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m107.ogg" type="OnUse" range="6500" volume="1" frequencymultiplier="1.25" selectionmode="all" />
 			<Sound file="Content/Items/Weapons/Coilgun5.ogg" type="OnUse" range="4000" volume="1.5" frequencymultiplier="1.25" />
 
 			<StatusEffect type="OnUse">

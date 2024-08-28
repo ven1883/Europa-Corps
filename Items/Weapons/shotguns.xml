@@ -8,8 +8,8 @@
 		<!--RM93-->
 	<Item name="" identifier="scp_rm93" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.53" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="263,497,69,83" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/shotguns.png" sourcerect="1,185,239,48" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="263,497,69,83" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/shotguns.png" sourcerect="1,185,239,48" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="180" height="45" density="50" />
 
@@ -29,13 +29,13 @@
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 
-			<Sound file="%ModDir%/Sounds/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Sounds/Riotshotgun2.ogg" type="OnUse" range="3000" />
-			<Sound file="%ModDir%/Sounds/Riotshotgun3.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/Riotshotgun2.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/Riotshotgun3.ogg" type="OnUse" range="3000" />
 
 			<StatusEffect type="OnUse" delay="0.4">
-				<Sound file="%ModDir%/Sounds/shotgunload1.ogg" type="OnUse" range="1000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/shotgunload2.ogg" type="OnUse" range="1000" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload2.ogg" type="OnUse" range="1000" />
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="This" Condition="-850" />
@@ -45,7 +45,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.12" stackable="false" />
@@ -96,8 +96,8 @@
 		<!--Mossberg 590-->
 	<Item name="" identifier="scp_m590" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.55" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="412,168,66,81" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/shotguns.png" sourcerect="2,366,211,55" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="412,168,66,81" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/shotguns.png" sourcerect="2,366,211,55" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="180" height="45" density="50" />
 
@@ -115,11 +115,11 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/590.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/590.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" delay="0.35">
-				<Sound file="%ModDir%/Sounds/shotgunload1.ogg" type="OnUse" range="1000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/shotgunload2.ogg" type="OnUse" range="1000" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload2.ogg" type="OnUse" range="1000" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" Condition="-700" />
@@ -129,7 +129,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.12" stackable="false" />
@@ -181,8 +181,8 @@
 		<!--KSG-12-->
 	<Item name="" identifier="scp_ksg" description="" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.4" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="342,169,70,78" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/shotguns.png" sourcerect="0,235,252,84" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="342,169,70,78" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/shotguns.png" sourcerect="0,235,252,84" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="180" height="45" density="50" />
 
@@ -201,11 +201,11 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/590.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/590.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" delay="0.5">
-				<Sound file="%ModDir%/Sounds/shotgunload1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/shotgunload2.ogg" type="OnUse" range="3000" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload2.ogg" type="OnUse" range="3000" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" Condition="-675" />
@@ -215,7 +215,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.12" stackable="false" />
@@ -260,8 +260,8 @@
 		<!--UTS-15-->
 	<Item name="" identifier="scp_uts15" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.39" impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="144,1,70,78" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,476,293,101" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="144,1,70,78" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="0,476,293,101" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="180" height="45" density="50" />
 
@@ -281,11 +281,11 @@
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="7.0,2.0" colormultiplier="255,200,200,220" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,6.0" colormultiplier="255,200,200,220" />
-			<Sound file="%ModDir%/Sounds/uts15.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/uts15.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" delay="0.35">
-				<Sound file="%ModDir%/Sounds/shotgunload1.ogg" type="OnUse" range="1000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/shotgunload2.ogg" type="OnUse" range="1000" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload2.ogg" type="OnUse" range="1000" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" Condition="-700" />
@@ -295,7 +295,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.5" stackable="false" />
@@ -356,8 +356,8 @@
 		<!--Domique-->
 	<Item name="" identifier="scp_domique" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.55" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="707,187,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="0,214,211,55" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/vintageinv.png" sourcerect="707,187,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/vintageweapons.png" sourcerect="0,214,211,55" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="180" height="45" density="50" />
 
@@ -376,11 +376,11 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/domique.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/domique.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" delay="0.35">
-				<Sound file="%ModDir%/Sounds/shotgunload1.ogg" type="OnUse" range="1000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/shotgunload2.ogg" type="OnUse" range="1000" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunload2.ogg" type="OnUse" range="1000" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" Condition="-500" />
@@ -390,7 +390,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.12" stackable="false" />
@@ -440,8 +440,8 @@
 		<!--Saiga 12-->
 	<Item name="" identifier="scp_saiga12" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="69,249,67,74" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/shotguns.png" sourcerect="1,484,251,68" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="69,249,67,74" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/shotguns.png" sourcerect="1,484,251,68" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -459,9 +459,9 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/saiga121.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Sounds/saiga122.ogg" type="OnUse" range="3000" />
-			<Sound file="%ModDir%/Sounds/saiga123.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/saiga121.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/saiga122.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/saiga123.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-600" />
 			
@@ -470,7 +470,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
@@ -522,8 +522,8 @@
 		<!--M4 Super 90-->
 	<Item name="" description="" identifier="scp_m4s90" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.49" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="0,247,68,76" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/shotguns.png" sourcerect="1,422,259,60" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="0,247,68,76" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/shotguns.png" sourcerect="1,422,259,60" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="247" height="68" density="50" />
 
@@ -541,9 +541,9 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/m4s901.ogg" type="OnUse" range="3000" selectionmode="random" />
-			<Sound file="%ModDir%/Sounds/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
-			<Sound file="%ModDir%/Sounds/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m4s901.ogg" type="OnUse" range="3000" selectionmode="random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-575" />
 			
@@ -552,7 +552,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.6" stackable="false" />
@@ -604,8 +604,8 @@
 		<!--Spas-12 (AUTOMATIC)-->
 	<Item name="" description="" identifier="scp_spas12" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.46" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="131,186,63,63" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="262,328,213,59" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/vintageinv.png" sourcerect="131,186,63,63" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/vintageweapons.png" sourcerect="262,328,213,59" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="247" height="68" density="50" />
 
@@ -624,7 +624,7 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/spas12.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/spas12.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-350" />
 			
@@ -633,7 +633,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.6" stackable="false" />
@@ -680,8 +680,8 @@
 		<!--Origin-12-->
 	<Item name="" identifier="sgt_boshotgun" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/Coalition.png" sourcerect="314,354,54,55" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/Coalition.png" sourcerect="375,0,333,112" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="314,354,54,55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="375,0,333,112" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -699,7 +699,7 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/12s1.ogg" type="OnUse" range="3000" volume="1.1" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/12s1.ogg" type="OnUse" range="3000" volume="1.1" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-300" />
 			
@@ -708,7 +708,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir:2764968387%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
@@ -760,8 +760,8 @@
 		<!--AA12-->
 	<Item name="" identifier="scp_aa12" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="605,110,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,577,261,84" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="605,110,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="0,577,261,84" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -781,9 +781,9 @@
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,1" colormultiplier="200,50,50,255" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5" colormultiplier="200,50,50,255" />
-			<Sound file="%ModDir%/Sounds/aa12.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Sounds/aa12.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-			<Sound file="%ModDir%/Sounds/aa12.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/aa12.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/aa12.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/aa12.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-220" />
 			
@@ -792,7 +792,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
@@ -852,8 +852,8 @@
 		<!--Double-Barrel 8-Gauge-->
 	<Item name="" description="" identifier="sgt_dbs" category="Weapon" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.385" impactsoundtag="weaponlightdrop" allowasextracargo="true">
 		
-		<InventoryIcon name="dbinv" texture="%ModDir%/Weapons/Renegade.png" sourcerect="403,299,61,74" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/Renegade.png" sourcerect="0,298,386,72" depth="0.55" origin="0.5,0.25" />
+		<InventoryIcon name="dbinv" texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="403,299,61,74" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="0,298,386,72" depth="0.55" origin="0.5,0.25" />
 		
 		<Body width="180" height="30" density="50" />
 
@@ -871,12 +871,12 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/m90.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m90.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-3500" />
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir:2764968387%/Sounds/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" frequencymultiplier="0.7" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" frequencymultiplier="0.7" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This">
@@ -937,8 +937,8 @@
 		<!--SP-12 8-Gauge (Was M90 Tactical)-->
 	<Item name="" identifier="sgt_m90t" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.385" impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/Coalition.png" sourcerect="306,0,54,58" origin="0.4973561,0.49751914" />
-		<Sprite texture="%ModDir%/Weapons/Coalition.png" sourcerect="0,0,306,71" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="306,0,54,58" origin="0.4973561,0.49751914" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="0,0,306,71" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="180" height="45" density="50" />
 
@@ -957,11 +957,11 @@
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="13.0,5.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,10.0" colormultiplier="255,200,200,200" />
-			<Sound file="%ModDir%/Sounds/m90.ogg" type="OnUse" range="3000" volume="1.5" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m90.ogg" type="OnUse" range="3000" volume="1.5" />
 			
 			<StatusEffect type="OnUse" delay="0.4">
-				<Sound file="%ModDir%/Sounds/shotgunloadh1.ogg" type="OnUse" range="1000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/shotgunloadh2.ogg" type="OnUse" range="1000" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunloadh1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunloadh2.ogg" type="OnUse" range="1000" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" Condition="-700" />
@@ -976,7 +976,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir:2764968387%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.12" stackable="false" />
@@ -1047,8 +1047,8 @@
 		<!--KS-23-->
 	<Item name="" identifier="scp_ks23" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.48" impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="280,0,69,82" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="1,304,261,62" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="280,0,69,82" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="1,304,261,62" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="260" height="50" density="50" />
 
@@ -1068,10 +1068,10 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="14.0,6.0" colormultiplier="255,200,200,220" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,12.0" colormultiplier="255,200,200,225" />
 			<ParticleEmitter particle="weldspark" particleamount="10" velocitymin="1500" velocitymax="2500" anglemin="-15" anglemax="15" scalemin="0.5" scalemax="1.5" copyentityangle="true" colormultiplier="255,200,200,225" />
-			<Sound file="%ModDir%/Sounds/ks23.ogg" type="OnUse" range="4000" volume="1.2" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/ks23.ogg" type="OnUse" range="4000" volume="1.2" />
 			
 			<StatusEffect type="OnUse" delay="0.85">
-				<Sound file="%ModDir%/Sounds/ks23pump.ogg" type="OnUse" range="1750" selectionmode="Random" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/ks23pump.ogg" type="OnUse" range="1750" selectionmode="Random" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse">

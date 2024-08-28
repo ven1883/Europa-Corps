@@ -263,8 +263,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.3">
 
-		<InventoryIcon texture="%ModDir%/Weapons/Renegade.png" sourcerect="422,155,47,70" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/Renegade.png" depth="0.54" sourcerect="422,155,47,70" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="422,155,47,70" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" depth="0.54" sourcerect="422,155,47,70" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -308,8 +308,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.3">
 
-		<InventoryIcon texture="%ModDir%/Weapons/Renegade.png" sourcerect="350,154,46,130" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/Renegade.png" depth="0.54" sourcerect="350,154,46,130" origin="0.45217395,0.295" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="350,154,46,130" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" depth="0.54" sourcerect="350,154,46,130" origin="0.45217395,0.295" />
 
 		<Body width="30" height="65" density="50" />
 
