@@ -206,7 +206,7 @@
 
 				<!--Light stun-->
 			<StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-				<sound file="%ModDir%/Items/Weapons/Sounds/stunbaton.ogg" range="1250" volume="1.25" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/stunbaton.ogg" range="1250" volume="1.25" />
 				<RequiredItem items="batterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
 				<Explosion range="100.0" force="0.5" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="10.0" />
 				<Conditional mass="lt 100" />
@@ -221,7 +221,7 @@
 
 				<!--Heavy stun-->
 			<StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-				<sound file="%ModDir%/Items/Weapons/Sounds/stunbaton.ogg" range="2000" volume="3" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/stunbaton.ogg" range="2000" volume="3" />
 				<sound file="Content/Items/Weapons/StunBaton3.ogg" range="2000" volume="1" />
 				<RequiredItem items="fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
 				<Explosion range="100.0" force="1" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="20.0" />

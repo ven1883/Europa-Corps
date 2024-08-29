@@ -23,7 +23,7 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/p226.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/p226.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
@@ -71,9 +71,9 @@
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/mp4431.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/mp4431.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/mp4431.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/mp4431.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/mp4431.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/mp4431.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-400" />
 
@@ -82,7 +82,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Items/Weapons/Sounds/pistoljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/pistoljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="2.4" stackable="false" />
@@ -137,7 +137,7 @@
 			
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/g17.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/g17.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
@@ -188,8 +188,8 @@
 			
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/ruger91.ogg" type="OnUse" range="3000" selectionmode="random" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/ruger92.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/ruger91.ogg" type="OnUse" range="3000" selectionmode="random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/ruger92.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
@@ -258,7 +258,7 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/101.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/101.ogg" type="OnUse" range="3000" />
 
 			<StatusEffect type="OnUse" target="Contained">
 				<Use />
@@ -331,7 +331,7 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
 
-			<Sound file="%ModDir%/Items/Weapons/Sounds/101.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/101.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-300" />
 			
@@ -404,7 +404,7 @@
 
 			<ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/10s1.ogg" type="OnUse" range="800" volume="1.15" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/10s1.ogg" type="OnUse" range="800" volume="1.15" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-400" />
 			
@@ -480,13 +480,13 @@
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/10u.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/10u.ogg" type="OnUse" range="3000" />
 			<StatusEffect type="OnUse" target="This" Condition="-250" />
 			<StatusEffect type="Always" target="This" Condition="2">
 				<Conditional condition="gt 0" />
 			</StatusEffect>
 			<StatusEffect type="OnBroken" target="This" delay="0.5">
-				<sound file="%ModDir%/Items/Weapons/Sounds/10uj.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/10uj.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="2.4" stackable="false" />
 			<StatusEffect type="OnUse" target="This">
@@ -536,7 +536,7 @@
 			<StatusEffect type="OnUse" target="This" reload="0.4" setvalue="true" delay="0.04" />
 			<StatusEffect type="OnUse" target="This" reload="0.05" setvalue="true" delay="0.4" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/102.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/102.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="Contained">
 				<Use />
@@ -587,9 +587,9 @@
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
-			<Sound file="%ModDir%/Items/Weapons/Sounds/357.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/3572.ogg" type="OnUse" range="3000" />
-			<ChargeSound file="%ModDir%/Items/Weapons/Sounds/doubleaction.ogg" range="1000" volume="1.05" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/357.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/3572.ogg" type="OnUse" range="3000" />
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/doubleaction.ogg" range="1000" volume="1.05" />
 			
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,3.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,6.0" colormultiplier="255,200,200,200" />
@@ -637,9 +637,9 @@
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/357.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/3572.ogg" type="OnUse" range="3000" />
-			<ChargeSound file="%ModDir%/Items/Weapons/Sounds/doubleaction.ogg" range="1000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/357.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/3572.ogg" type="OnUse" range="3000" />
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/doubleaction.ogg" range="1000" />
 			
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,3.0" colormultiplier="255,200,200,200" />
 			
@@ -752,10 +752,10 @@
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
-			<Sound file="%ModDir%/Items/Weapons/Sounds/441.ogg" type="OnUse" range="3500" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/441.ogg" type="OnUse" range="3500" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/441.ogg" type="OnUse" range="3500" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/441.ogg" type="OnUse" range="3500" frequencymultiplier="0.95" />
 			
-			<ChargeSound file="%ModDir%/Items/Weapons/Sounds/doubleaction.ogg" range="1000" volume="1.15" />
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/doubleaction.ogg" range="1000" volume="1.15" />
 			
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8,3.5" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,7.0" colormultiplier="255,200,200,200" />
@@ -820,9 +820,9 @@
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
-			<Sound file="%ModDir%/Items/Weapons/Sounds/441.ogg" type="OnUse" range="3500" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/441.ogg" type="OnUse" range="3500" frequencymultiplier="0.95" />
-			<ChargeSound file="%ModDir%/Items/Weapons/Sounds/doubleaction.ogg" range="1000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/441.ogg" type="OnUse" range="3500" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/441.ogg" type="OnUse" range="3500" frequencymultiplier="0.95" />
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/doubleaction.ogg" range="1000" />
 			
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.5,3.5" colormultiplier="255,200,200,200" />
 			
@@ -865,7 +865,7 @@
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/sr1.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/sr1.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-450" />
 			
@@ -874,7 +874,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Items/Weapons/Sounds/pistoljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/pistoljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="60" disabledeltatime="true" delay="2.4" stackable="false" />
@@ -928,7 +928,7 @@
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/451.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/451.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="7.0" />
@@ -979,7 +979,7 @@
 			
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/45usp.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/45usp.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="7.0" />
@@ -1029,7 +1029,7 @@
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/451.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/451.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="7.0" />
@@ -1097,7 +1097,7 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="10.0,3.5" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,8.0" colormultiplier="255,200,200,200" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/deagle.ogg" type="OnUse" volume="1.1" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/deagle.ogg" type="OnUse" volume="1.1" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
@@ -1166,7 +1166,7 @@
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Sounds/m6.ogg" type="OnUse" volume="1.5" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m6.ogg" type="OnUse" volume="1.5" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
@@ -1243,9 +1243,9 @@
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
-			<Sound file="%ModDir%/Items/Weapons/Sounds/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="all" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/ar50.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="1.1" />
-			<ChargeSound file="%ModDir%/Items/Weapons/Sounds/doubleaction.ogg" range="1000" volume="1.25" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="all" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/ar50.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="1.1" />
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/doubleaction.ogg" range="1000" volume="1.25" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="20.0,7.0" colormultiplier="255,150,150,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,14.0" colormultiplier="255,150,150,200" />
 			<StatusEffect type="OnUse" target="This">
@@ -1296,9 +1296,9 @@
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
-			<Sound file="%ModDir%/Items/Weapons/Sounds/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="all" />
-			<Sound file="%ModDir%/Items/Weapons/Sounds/t5000.ogg" type="OnUse" range="3000" volume="0.75" frequencymultiplier="0.9" />
-			<ChargeSound file="%ModDir%/Items/Weapons/Sounds/doubleaction.ogg" range="1000" volume="1.25" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="all" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/t5000.ogg" type="OnUse" range="3000" volume="0.75" frequencymultiplier="0.9" />
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/doubleaction.ogg" range="1000" volume="1.25" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="15.0,7.0" colormultiplier="255,150,150,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,14.0" colormultiplier="255,150,150,200" />
 			<StatusEffect type="OnUse" target="This">
