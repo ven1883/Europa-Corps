@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--MARKED FOR CHECKING-->
+
+<Items>
+
+			<!--Melee Weapons-->
+
+		<!--Bayonet-->
+	<Item name="" description="" identifier="scp_m9bayonet" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" origin="0.5,0.5"/>
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" depth="0.55" origin="0.5,0.5"/>
+
+		<Body width="125" height="15" density="50" />
+
+		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-18,0" holdangle="30" reload="0.9" reloadnoskill="1.6" reloadskillrequirement="50" range="150" combatPriority="25" msg="ItemMsgPickUpSelect">
+			<Attack 
+				targetimpulse="2" 
+				severlimbsprobability="0.1" 
+				itemdamage="10" 
+				structuredamage="0" 
+				structuresoundtype="StructureSlash" 
+				penetration="0.03">
+
+				<Affliction identifier="lacerations" strength="15" />
+				<Affliction identifier="bleeding" strength="20" />
+				<Affliction identifier="stun" strength="0.1" />
+
+				<!--possible damage-->
+				<Affliction identifier="lacerations" strength="10" probability="0.33" />
+				<Affliction identifier="bleeding" strength="10" probability="0.25" />
+
+				<StatusEffect type="OnUse" target="UseTarget">
+					<Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="700" />
+					<Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="700" />
+					<Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="700" />
+					<Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="700" />
+					<Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="700" />
+					<Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="700" />
+				</StatusEffect>
+			</Attack>
+		</MeleeWeapon>
+
+		<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+
+		<SkillRequirementHint identifier="weapons" level="50" />
+	</Item>
+
+			<!--###-->
+
+ 		<!--Machete-->
+  	<Item name="" description="" identifier="scp_machete" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,41,265,39" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="180" height="15" density="50" />
+
+		<MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,45" handle1="-35,-4" handle2="-37,-2" holdangle="20" reload="0.9" range="650" combatPriority="25" msg="ItemMsgPickUpSelect">
+			<Attack 
+				targetimpulse="5" 
+				severlimbsprobability="0.35" 
+				ballastfloradamage="50" 
+				itemdamage="10" 
+				structuredamage="0.1" 
+				structuresoundtype="StructureSlash" 
+				penetration="0.1">
+
+				<Affliction identifier="lacerations" strength="20" />
+				<Affliction identifier="bleeding" strength="30" />
+				<Affliction identifier="stun" strength="0.1" />
+
+				<StatusEffect type="OnUse" target="UseTarget">
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash1.ogg" selectionmode="random" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash2.ogg" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash3.ogg" range="1000" />
+				</StatusEffect>
+			</Attack>
+		</MeleeWeapon>
+
+    	<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+	</Item>
+
+			<!--###-->
+
+	<!--Dementonite Machete-->
+	<Item name="" description="" identifier="scp_dementonitemachete" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,81,209,39" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="180" height="15" density="50" />
+
+		<MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="55,50" handle1="-30,2" handle2="-25,2" holdangle="20" reload="0.95" reloadnoskill="1.25" reloadskillrequirement="50" range="500" combatPriority="25" msg="ItemMsgPickUpSelect">
+			<Attack 
+				targetimpulse="6" 
+				severlimbsprobability="0.75" 
+				ballastfloradamage="100" 
+				itemdamage="10" 
+				structuredamage="0.1" 
+				structuresoundtype="StructureSlash" 
+				penetration="0.15">
+
+				<Affliction identifier="lacerations" strength="25" />
+				<Affliction identifier="explosiondamage" strength="5" />
+				<Affliction identifier="bleeding" strength="20" />
+				<Affliction identifier="stun" strength="0.1" />
+
+				<!--possible damage-->
+				<Affliction identifier="bleeding" strength="10" probability="0.25" />
+
+				<StatusEffect type="OnUse" target="UseTarget">
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash1.ogg" selectionmode="random" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash2.ogg" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash3.ogg" range="1000" />
+				</StatusEffect>
+			</Attack>
+		</MeleeWeapon>
+
+		<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+	</Item>
+
+			<!--###-->
+		
+		<!--Physicorium Tactical Sword-->
+	<Item name="" description="" identifier="scp_physicoriumsword" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,485,269,50" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="210" height="50" density="50" />
+
+		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="68,30" handle1="-40,1" holdangle="20" reload="0.85" reloadnoskill="3" reloadskillrequirement="85" range="250" combatPriority="25" msg="ItemMsgPickUpSelect">
+			<Attack 
+				targetimpulse="6" 
+				severlimbsprobability="0.75" 
+				ballastfloradamage="100" 
+				itemdamage="3" 
+				structuredamage="0.1" 
+				structuresoundtype="StructureSlash" 
+				penetration="0.3">
+
+				<Affliction identifier="lacerations" strength="30" />
+				<Affliction identifier="bleeding" strength="25" />
+				<Affliction identifier="stun" strength="0.125" />
+
+				<Affliction identifier="bleeding" strength="17.5" probability="0.33" />
+				<Affliction identifier="explosiondamage" strength="15" probability="0.33" />
+
+				<StatusEffect type="OnUse" target="UseTarget">
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash1.ogg" selectionmode="random" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash2.ogg" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash3.ogg" range="1000" />
+				</StatusEffect>
+			</Attack>
+		</MeleeWeapon>
+
+		<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+	</Item>
+
+			<!--###-->
+
+		<!--Batong-->
+	<Item name="" identifier="scp_baton" description="" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,stunner,gunsmith" Scale="0.45" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
+		<InventoryIcon name="batoninv" texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="450,20,75,78" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="3,234,221,16" depth="0.55" origin="0.4954025,0.7936202" />
+		
+		<Body width="170" height="20" density="30" />
+
+		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="45,10" handle1="-40,5" holdangle="55" reload="1.25" reloadnoskill="2" reloadskillrequirement="50" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
+			<Attack targetimpulse="7" itemdamage="1">
+				<Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
+				<Affliction identifier="blunttrauma" strength="2" />
+				<Affliction identifier="stun" strength="0.25" />
+
+				<!--possible damage-->
+				<Affliction identifier="stun" strength="0.75" probability="0.3" />
+				<Affliction identifier="progressivestun" strength="2" probability="0.1" />
+			</Attack>
+			<RequiredSkill identifier="weapons" level="50" />
+		</MeleeWeapon>
+
+		<aitarget sightrange="500" soundrange="500" fadeouttime="1" />
+
+		<Quality>
+			<QualityStat stattype="StrikingSpeedMultiplier" value="0.1" />
+		</Quality>
+	</Item>
+
+			<!--###-->
+
+		<!--Submission Batong-->
+	<Item name="" identifier="scp_submissionbaton" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,stunner,gunsmith,mountableweapon" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
+		<InventoryIcon name="pacifinv" texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="343,115,83,83" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="1,412,210,62" depth="0.55" origin="0.4954025,0.7936202" />
+		
+		<Body width="210" height="62" density="25" />
+
+		<MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="45,10" handle1="-30,15" handle2="-30,15" holdangle="20" reload="1.25" range="135" combatPriority="49" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
+
+			<Attack targetimpulse="5" itemdamage="1">
+				<Sound file="Content/Items/Weapons/Smack1.ogg" range="800" />
+				<Affliction identifier="blunttrauma" strength="2" />
+				<Affliction identifier="stun" strength="0.25" />
+			</Attack>
+
+				<!--Light stun-->
+			<StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/stunbaton.ogg" range="1250" volume="1.25" />
+				<RequiredItem items="batterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
+				<Explosion range="100.0" force="0.5" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="10.0" />
+				<Conditional mass="lt 100" />
+
+				<Affliction identifier="stun" strength="0.5" />
+				<Affliction identifier="burn" strength="0.25" />
+				<Affliction identifier="nausea" strength="5" />
+				<Affliction identifier="incrementalstun" strength="50" />
+
+				<Affliction identifier="incrementalstun" strength="50" probability="0.25" />
+			</StatusEffect>
+
+				<!--Heavy stun-->
+			<StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/stunbaton.ogg" range="2000" volume="3" />
+				<sound file="Content/Items/Weapons/StunBaton3.ogg" range="2000" volume="1" />
+				<RequiredItem items="fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
+				<Explosion range="100.0" force="1" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="20.0" />
+				<Conditional mass="lt 200" />
+
+				<Affliction identifier="stun" strength="1.5" />
+				<Affliction identifier="burn" strength="0.5" />
+				<Affliction identifier="nausea" strength="10" />
+				<Affliction identifier="incrementalstun" strength="75" />
+
+				<Affliction identifier="incrementalstun" strength="75" probability="0.5" />
+			</StatusEffect>
+
+				<!--Battery logic-->
+			<StatusEffect type="OnUse" target="Contained,UseTarget" Condition="-50.0" disabledeltatime="true">
+				<RequiredItem items="batterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
+				<Conditional entitytype="eq Character" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="Contained,UseTarget" Condition="-25.0" disabledeltatime="true">
+				<RequiredItem items="fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
+				<Conditional entitytype="eq Character" />
+			</StatusEffect>
+		</MeleeWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+			<Containable items="mobilebattery" />
+		</ItemContainer>
+
+		<aitarget sightrange="500" soundrange="500" fadeouttime="1" />
+
+		<Quality>
+			<QualityStat stattype="StrikingPowerMultiplier" value="0.25" />
+		</Quality>
+	</Item>
+
+			<!--###-->
+
+		<!--Sledgehammer-->
+	<Item name="" description="" identifier="scp_sledge" category="Weapon" subcategory="Melee" Tags="mediumitem,weapon,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" scale="0.27" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
+		<InventoryIcon name="sledgeinv" texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="347,2,100,98" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="3,261,467,129" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="370" height="60" density="50" />
+
+		<MeleeWeapon slots="Any,RightHand+LeftHand" controlpose="true" holdpos="15,-60" aimpos="45,-10" reload="2" handle1="-30,0" range="300" handle2="15,5" holdangle="45" combatpriority="40">
+			<Attack 
+				targetimpulse="10" 
+				severlimbsprobability="0.35" 
+				ballastfloradamage="50" 
+				itemdamage="20" 
+				structuredamage="7.5" 
+				structuresoundtype="StructureSlash" 
+				penetration="0.05">
+
+				<StatusEffect type="OnUse" target="UseTarget">
+					<Sound file="Content/Items/Weapons/Smack1.ogg" range="1200" volume="2" />
+				</StatusEffect>
+
+					<Affliction identifier="blunttrauma" strength="45" />
+					<Affliction identifier="bleeding" strength="5" />
+					<Affliction identifier="stun" strength="0.75" />
+
+					<!--possible damage-->
+					<Affliction identifier="blunttrauma" strength="25" probability="0.3" />
+
+					<!--Skill logic-->
+				<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+					<Conditional skillrequirement="true" mechanical="lt 75" />
+					<Conditional skillrequirement="true" mechanical="gte 60" />
+					<Affliction identifier="blunttrauma" strength="1.5" probability="0.1" />
+				</StatusEffect>
+
+				<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+					<Conditional skillrequirement="true" mechanical="lt 60" />
+					<Conditional skillrequirement="true" mechanical="gte 45" />
+					<Affliction identifier="stun" strength="0.1" probability="0.3" />
+					<Affliction identifier="blunttrauma" strength="3" probability="0.3" />
+				</StatusEffect>
+
+				<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+					<Conditional skillrequirement="true" mechanical="lt 45" />
+					<Affliction identifier="stun" strength="0.25" />
+					<Affliction identifier="blunttrauma" strength="6" />
+				</StatusEffect>
+			</Attack>
+		</MeleeWeapon>
+
+		<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+	</Item>
+</Items>

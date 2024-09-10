@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--MARKED FOR CHECKING-->
+
+<Items>
+
+		<!--9mm SMGs-->
+
+
+		<!--Compact Submachine gun-->
+		<!--Uzi-->
+	<Item name="" identifier="scp_uzi" description="" category="Weapon" subcategory="Renegade" tags="smallitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.36" impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="370,415,62,77" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/weapons.png" sourcerect="0,166,205,82" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="50,2" handle1="-4,-8" handle2="30,15" holdangle="-35" msg="ItemMsgPickUpSelect" />
+		
+		<RangedWeapon 
+			reload="0.101" 
+			barrelpos="75,12" 
+			spread="8" unskilledspread="28" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/9mmsmg1.ogg" type="OnUse" range="2500" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/9mmsmg2.ogg" type="OnUse" range="2500" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+			
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="9mmammo" />
+			
+			<RequiredSkill identifier="weapons" level="35" />
+
+		</RangedWeapon>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="9mmammo" hide="true" />
+
+			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+				<Containable items="flashlight" hide="false" itempos="26,4" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+			<QualityStat stattype="FiringRateMultiplier" value="0.05" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="35" />
+
+	</Item>
+
+		<!--###-->
+
+		<!--Submachine gun-->
+		<!--SMG-9-->
+	<Item name="" identifier="scp_smg9" description="" category="Weapon" subcategory="Coalition" tags="smallitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="140,327,69,81" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/weapons.png" sourcerect="0,81,177,82" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="48,-2" handle1="-20,-10" handle2="26,9" holdangle="-35" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+			reload="0.095" reloadnoskill="0.125" reloadskillrequirement="30" 
+			barrelpos="64,9" 
+			spread="11" unskilledspread="25" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+			
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/9mmsmg1.ogg" type="OnUse" range="2500" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/9mmsmg2.ogg" type="OnUse" range="2500" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="9mmpistolammo,9mmammo" />
+
+			<RequiredSkill identifier="weapons" level="30" />
+
+		</RangedWeapon>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="9mmpistolammo,9mmammo" hide="false" itempos="12,-5" />
+
+			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+				<Containable items="flashlight" hide="false" itempos="26,4" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+			<QualityStat stattype="FiringRateMultiplier" value="0.05" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="30" />
+	</Item>
+
+		<!--###-->
+
+		<!--Prototype Submachine gun-->
+		<!--Vector 9mm-->
+	<Item name="" identifier="scp_vector" description="" category="Weapon" subcategory="Prototype" tags="smallitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="342,84,87,87" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="167,1092,188,79" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="48,-5" handle1="-23,-7" handle2="26,9" holdangle="-35" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+			reload="0.03" 
+			weapondamagemodifier="1.25" penetrationmultiplier="1.6" 
+			barrelpos="64,9" 
+			spread="6" unskilledspread="35" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/9mmsmg1.ogg" type="OnUse" range="2500" selectionmode="Random" frequencymultiplier="1.1" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/9mmsmg2.ogg" type="OnUse" range="2500" frequencymultiplier="1.1" />
+
+			<StatusEffect type="OnUse" target="This" reload="0.3" setvalue="true" delay="0.08" />
+
+			<StatusEffect type="OnUse" target="This" reload="0.03" setvalue="true" delay="0.1" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="0.7" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="9mmpistolammo,9mmammo" />
+
+			<RequiredSkill identifier="weapons" level="70" />
+
+		</RangedWeapon>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="9mmpistolammo,9mmammo" hide="true" />
+
+			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+				<Containable items="flashlight" hide="false" itempos="26,4" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<LightComponent range="400.0" LightColor="0.5,0.5,0.5,1.0" powerconsumption="4" IsOn="true" Flicker="0.2">
+			<StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
+				<Conditional IsDead="false" />
+			</StatusEffect>
+			<LightTexture texture="Content/Lights/lightcone.png" origin="-0.015, 0.5" size="0.85,1" />
+		</LightComponent>
+
+		<CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+			<GuiFrame relativesize="0.09,0.07" anchor="BottomCenter" pivot="BottomRight" relativeoffset="-0.025,0.093" style="ItemUI" />
+			<TickBox text="Taclight">
+				<StatusEffect type="OnUse" targettype="This" IsOn="true" />
+				<StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
+			</TickBox>
+		</CustomInterface>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="70" />
+
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--10mm Assault SMGs-->
+
+		
+		<!--Semi-Auto Assault SMG-->
+		<!--Hi-Point Carbine-->
+	<Item name="" identifier="sgt_hpc" description="" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.3" impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="409,0,71,81" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="0,0,409,122" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,10" aimpos="40,8" handle1="18,-32" handle2="34,-10" holdangle="-40" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+			reload="0.32" reloadnoskill="0.75" reloadskillrequirement="30" 
+			barrelpos="165,11" 
+			spread="6" unskilledspread="14" 
+			combatPriority="65" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/101.ogg" type="OnUse" range="3000" />
+
+			<StatusEffect type="OnUse" target="This" Condition="-320" />
+
+			<StatusEffect type="Always" target="This" Condition="5">
+				<Conditional condition="gt 0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/pistoljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" delay="0.4" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="2.4" stackable="false" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.5" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="10mmpistolammo,10mmsmgammo" />
+
+			<RequiredSkill identifier="weapons" level="45" />
+
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="10mmpistolammo,10mmsmgammo" hide="false" itempos="-14.5,-10" />
+
+			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+				<Containable items="flashlight" hide="false" itempos="25,1" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
+			<QualityStat stattype="Condition" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="30" />
+
+
+
+
+	</Item>
+
+		<!--###-->
+
+		<!--Rapid Assault SMG-->
+		<!--APC10-->
+	<Item name="" identifier="sgt_apc" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.3" impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="312,168,49,61" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="0,276,289,115" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="20,-25" aimpos="45,6" handle1="-22,-26" handle2="46,-8" holdangle="-25" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+			reload="0.125" reloadnoskill="0.175" reloadskillrequirement="45"  
+			weapondamagemodifier="0.9"
+			barrelpos="130,16" 
+			spread="8" unskilledspread="16" 
+			combatPriority="70" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/102.ogg" type="OnUse" range="3000" />
+
+			<StatusEffect type="OnUse" target="This" Condition="-200" />
+
+			<StatusEffect type="Always" target="This" Condition="4">
+				<Conditional condition="gt 0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/pistoljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="2.4" stackable="false" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.5" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="10mmpistolammo,10mmsmgammo" />
+
+			<RequiredSkill identifier="weapons" level="55" />
+
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="10mmpistolammo,10mmsmgammo" hide="false" itempos="12,-5" />
+
+			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+				<Containable items="flashlight" hide="false" itempos="29,1" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
+			<QualityStat stattype="Condition" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="45" />
+
+
+
+
+	</Item>
+
+		<!--###-->
+
+		<!--Prototype Assault SMG-->
+		<!--M41A Pulse Rifle-->
+	<Item name="" identifier="sgt_pasmg" description="" category="Weapon" subcategory="Prototype" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Prototype.png" sourcerect="476,0,52,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Prototype.png" sourcerect="15,438,289,115" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-15" aimpos="48,2" handle1="-34,-26" handle2="52,-8" holdangle="-25" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+			reload="0.15" reloadnoskill="0.4" reloadskillrequirement="60" 
+			weapondamagemodifier="1.2"
+			barrelpos="130,16" 
+			spread="2" unskilledspread="16" 
+			combatPriority="70" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/102.ogg" type="OnUse" range="3000" frequencymultiplier="0.8" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/102.ogg" type="OnUse" range="3000" frequencymultiplier="0.75" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/102.ogg" type="OnUse" range="3000" frequencymultiplier="0.85" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.5" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems items="10mmpistolammo,10mmsmgammo,heavyshotshell" type="Contained" msg="ItemMsgAmmoRequired" />
+
+			<RequiredSkill identifier="weapons" level="65" />
+
+			<StatusEffect type="Always" target="This" reload="1" reloadnoskill="1.75" weapondamagemodifier="0.8" stackable="false" setvalue="true">
+				<Conditional HasStatusTag="grenadeloaded" />
+			</StatusEffect>
+			<!--GL Firing-->
+
+			<StatusEffect type="OnUse" target="This">
+				<Conditional HasStatusTag="grenadeloaded" />
+
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m90ub.ogg" type="OnUse" range="1500" forceplay="true" frequencymultiplier="1.1" />
+			</StatusEffect>
+			<!--GL Reloading-->
+
+			<StatusEffect type="OnUse" target="This" delay="0.6">
+				<Conditional HasStatusTag="grenadeloaded" />
+
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shotgunloadh1ub.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" frequencymultiplier="1.1" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" reload="0.15" reloadnoskill="0.4" weapondamagemodifier="1.2" stackable="false" setvalue="true">
+				<Conditional HasStatusTag="neq grenadeloaded" />
+			</StatusEffect>
+
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="1" containedspritedepth="0.56">
+			<Containable items="heavyshotshell" hide="true">
+				<StatusEffect type="OnContaining" target="This" tags="grenadeloaded" duration="0.05" stackable="false">
+					<RequiredItem items="heavyshotshell" type="Contained" />
+				</StatusEffect>
+			</Containable>
+
+			<SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="4,216,75,35" origin="0.5,0.5" />
+			<SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="1,62,120,29" origin="0.5,0.5" />
+			<SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="10mmpistolammo,10mmsmgammo" hide="false" itempos="3,-7.5" />
+			</SubContainer>
+
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="flashlight" hide="false" itempos="30,9" containedspritedepth="0.5" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+
+		<SkillRequirementHint identifier="weapons" level="65" />
+
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--.45 Heavy SMGs-->
+
+
+		<!--Compact Heavy Submachine Gun-->
+		<!--SR2-->
+	<Item name="" identifier="scp_sr2" description="" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.51" impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="556,172,69,74" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/weapons.png" sourcerect="238,297,159,65" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="38,-10" aimpos="43,0" handle1="9,-3" handle2="45,12" holdangle="-35" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+			reload="0.099" reloadnoskill="0.135" reloadskillrequirement="55" 
+			barrelpos="79,10" 
+			spread="17" unskilledspread="35" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/45smg1.ogg" type="OnUse" range="2500" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/45smg1.ogg" type="OnUse" range="2500" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/45smg1.ogg" type="OnUse" range="2500" frequencymultiplier="1.02" />
+
+			<StatusEffect type="OnUse" target="This" Condition="-175" />
+
+			<StatusEffect type="Always" target="This" Condition="5">
+				<Conditional condition="gt 0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/akjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" Condition="55" disabledeltatime="true" delay="3.12" stackable="false" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="18.5" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45pistolammo,45ammo,smgammo" />
+
+			<RequiredSkill identifier="weapons" level="35" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Conditional condition="lt 35" />
+
+				<ParticleEmitter particle="weldspark" particleamount="5" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
+			</StatusEffect>
+
+		</RangedWeapon>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="45pistolammo,45ammo,smgammo" hide="false" itempos="11.5,-5" />
+
+			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+				<Containable items="flashlight" hide="false" itempos="34,4" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
+			<QualityStat stattype="Condition" value="0.2" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="35" />
+
+
+
+
+	</Item>
+
+		<!--###-->
+
+		<!--Heavy Submachinegun-->
+		<!--UMP-45-->
+	<Item name="" identifier="scp_ump45" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.46" impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="345,85,65,76" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/weapons.png" sourcerect="250,469,190,91" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="49,-7" handle1="-17,-5" handle2="28,12" holdangle="-35" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+			reload="0.11" reloadnoskill="0.145" reloadskillrequirement="45" 
+			weapondamagemodifier="1.1" 
+			barrelpos="74,12" 
+			spread="15" unskilledspread="30" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/45smg1.ogg" type="OnUse" range="2500" selectionmode="Random" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/45smg1.ogg" type="OnUse" range="2500" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/45smg1.ogg" type="OnUse" range="2500" frequencymultiplier="1.02" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45pistolammo,45ammo" />
+
+			<RequiredSkill identifier="weapons" level="45" />
+
+		</RangedWeapon>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="45ammo,45pistolammo" hide="false" itempos="16,-5" rotation="15" />
+
+			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.4">
+				<Containable items="flashlight" hide="false" itempos="30,6" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="45" />
+
+
+
+
+	</Item>
+
+		<!--###-->
+
+		<!--Coalition Suppressed Heavy SMG-->
+		<!--MP9-->
+	<Item name="" identifier="sgt_bosmg" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="308,289,52,58" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="0,480,271,80" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="49,8" handle1="-10,-26" handle2="28,8" holdangle="-35" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+			reload="0.08" 
+			barrelpos="58,-3" 
+			spread="4" unskilledspread="16" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/45s1.ogg" type="OnUse" range="800" volume="1.1" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="0.6" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45pistolammo,45ammo" />
+
+			<RequiredSkill identifier="weapons" level="45" />
+
+		</RangedWeapon>
+
+		<aitarget sightrange="2000" soundrange="500" fadeouttime="5" />
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="45ammo,45pistolammo" hide="false" itempos="-1.5,-13" rotation="-1" />
+
+			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+				<Containable items="flashlight" hide="false" itempos="27,2" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="45" />
+		
+	</Item>
+
+</Items>

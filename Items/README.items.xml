@@ -1,0 +1,122 @@
+<!--This file does not go in the filelist.-->
+
+<!--
+!All new weapons go here (and old ones, too.
+
+!CATEGORIZATION IS AS FOLLOWS:
+!melee.xml: Melee weapons.
+!pistols.xml: Handguns and pistols.
+!smgs.xml: SMGs of various caliber.
+!shotguns.xml: Shotguns.
+!rifles.xml: Biggest file. Rifles.
+!heavy.xml: Heavy weapons of differing types.
+!alien.xml: Alien weapons. Not important
+!special.xml: Fits none of the above.
+-->
+
+<!--
+
+    ! Formatting for items. Follow this if adding any. 
+	! Names, descriptions and anything similar must be defined in texts.
+	^ Note: This really isn't complete. It's done to the best of my abilities but is still irrationally difficult to work with.
+
+
+	<Item 
+		name="GladOS" 
+		identifier="glados" 
+		category="technicallymedical" 
+		cargocontaineridentifier="metalcrate" 
+		tags="reallybigitem" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<InventoryIcon 
+			texture="%ModDir%/glados_inventory.png" 
+			sourcerect="896,960,64,54" 
+			origin="0.5,0.5" 
+		/>
+		<Sprite 
+			texture="%ModDir%/glados.png" 
+			sourcerect="896,960,64,54" 
+			origin="0.5,0.5" 
+		/>
+		<Body 
+			width="" 
+			height="" 
+			density="" 
+		/>
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<component1 property1="the cake is a lie">
+
+			<StatusEffect type="OnActive" target="Chell">
+				<Conditional IsDead="False">
+				<Affliction identifier="sufforinpoisoning" amount="1">
+			</StatusEffect>
+
+			<StatusEffect type="OnDeath" target="This">
+				<sound file="%ModDir%/glados.ogg" volume="1" property1="wuh?" property2="wah?"/>
+			</StatusEffect>
+
+		</component1>
+
+		<componentwithalotoffuckingproperties
+			property1
+			property2
+			property
+			property4
+			property5
+			propertyimnotevencountinganymore
+		/>
+
+
+
+		<Quality>
+			<Quality 1/>
+			<Quality 2/>
+		</Quality>
+
+		<Fabricate>
+			<Item1 />
+			<Item2 />
+		</Fabricate>
+
+		<Deconstruct>
+			<Item1 />
+			<Item2 />
+		</Deconstruct>
+	</Item>
+-->
+
+<!--!	Put these markers inbetween every item PACKET. They are there to make it easier to tell when packets start and stop.-->
+<!--++++++++++++++++++++++++++++++++++++-->
+
+<!--!   Put these between every GROUPED item. These are here to make it easier to group alike objects without making it difficult to pick apart each item.-->
+<!--###-->
+
+<!--EXAMPLE BELOW-->
+
+<!-- 
+    <Item magazine>
+        ...
+    </Item>
+-->
+
+    <!--###-->
+
+<!--
+   <Item projectile>
+        ...
+   </Item>
+-->
+
+
+<!--++++++++++++++++++++++++++++++++++++-->
+
+
+<!--
+   <Item 3>
+        ...
+   </Item>
+-->

@@ -1,0 +1,1323 @@
+
+	<!--###-->
+
+	<!--Railgun Piercing Shell-->
+	<Item 
+		name="" 
+		identifier="scp_railgunpiercingshell" 
+		description="" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" 
+		sonarsize="5" 
+		scale="0.5" 
+		impactsoundtag="impact_metal_heavy">
+		
+		<InventoryIcon name="piercingshellinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="255,2,38,39" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="3,5,219,31" depth="0.55" origin="0.5,0.5" />
+		<BrokenSprite name="piercingshellproj" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="240,163,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
+
+		<Body width="215" height="30" density="30" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="150.0"
+			maxtargetstohit="2">
+
+			<Attack 
+				structuredamage="150" 
+				itemdamage="55" 
+				severlimbsprobability="5" 
+				penetration="0.6">
+
+				<Affliction identifier="lacerations" strength="200" />
+				<Affliction identifier="bleeding" strength="35" />
+				<Affliction identifier="stun" strength="5" />
+			</Attack>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="0.65" scalemax="1" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+
+				<sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+				<sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+				<sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+				
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-50.0" disabledeltatime="true">
+
+				<Explosion 
+					range="50.0" 
+					structuredamage="100" itemdamage="100" 
+					force="40.0"
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="50" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+
+				<Explosion
+					range="250.0" 
+					structuredamage="50" itemdamage="100" 
+					force="25.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="150" />
+					<Affliction identifier="bleeding" strength="75" />
+					<Affliction identifier="stun" strength="2.5" />
+				</Explosion>
+
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
+
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="1.25" range="10000" />
+
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+		
+	</Item>
+
+	<!--###-->
+
+	<!--railgun depleted uranium shell-->
+	<Item 
+		name="" 
+		identifier="scp_railgundushell"
+		description="" 
+		health="100" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" 
+		sonarsize="5" 
+		scale="0.5" 
+		impactsoundtag="impact_metal_heavy">
+		
+		<InventoryIcon name="dushellinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="331,100,40,40" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="236,268,219,31" depth="0.55" origin="0.5,0.5" />
+		<BrokenSprite name="dushellproj" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="239,209,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
+		
+		<Body width="215" height="30" density="30" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="115.0" 
+			maxtargetstohit="4">
+
+			<Attack 
+				structuredamage="150" 
+				itemdamage="55" 
+				severlimbsprobability="5" 
+				penetration="1">
+
+				<Affliction identifier="lacerations" strength="200" />
+				<Affliction identifier="bleeding" strength="35" />
+				<Affliction identifier="stun" strength="5" />
+			</Attack>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="0.65" scalemax="1" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true" penetration="1">
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This" Condition="-10.0" disabledeltatime="true" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-25.0" disabledeltatime="true"/>
+
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true">
+				<Conditional condition="lte 100" />
+				<Conditional condition="gte 75" />
+
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/breach.ogg" volume="2" range="2500" />
+				
+				<Explosion 
+					range="100.0" 
+					structuredamage="15" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="75" />
+					<Affliction identifier="stun" strength="5" />
+
+					<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="25" velocitymin="500" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+				</Explosion>
+
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true" comparison="or">
+				<Conditional condition="lte 75" />
+				<Conditional condition="gte 50" />
+
+				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="25" velocitymin="500" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+
+				<Explosion 
+					range="120.0" 
+					structuredamage="25" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="lacerations" strength="75" />
+				</Explosion>
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true" comparison="or">
+				<Conditional condition="lte 50" />
+				<Conditional condition="gt 25" />
+
+				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="25" velocitymin="500" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+
+				<Explosion 
+					range="150.0" 
+					structuredamage="25" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="lacerations" strength="75" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true" comparison="or">
+				<Conditional condition="lte 25" />
+				<Conditional condition="gt 0" />
+
+				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="25" velocitymin="500" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+				
+				<Explosion 
+					range="200.0" 
+					structuredamage="25" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="lacerations" strength="75" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
+
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="1" range="5000" />
+
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--railgun DU flechette shell-->
+	<Item 
+		name="" 
+		identifier="scp_railgunduflechetteshell" 
+		description="" 
+		health="100" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" 
+		sonarsize="5" 
+		scale="0.5" 
+		impactsoundtag="impact_metal_heavy">
+
+		<InventoryIcon name="duflechinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="373,100,40,41" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="236,304,219,31" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="215" height="30" density="30" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="115.0"
+			maxtargetstohit="4">
+
+			<Attack structuredamage="150" itemdamage="55" severlimbsprobability="5" penetration="1">
+				<Affliction identifier="lacerations" strength="200" />
+				<Affliction identifier="bleeding" strength="35" />
+				<Affliction identifier="stun" strength="5" />
+			</Attack>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="0.65" scalemax="1" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true" penetration="1">
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This" delay="0.5" Condition="-100.0" disabledeltatime="true" />
+
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true" comparison="or">
+
+				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="500" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+
+				<Explosion 
+					range="200.0" 
+					structuredamage="25" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="lacerations" strength="75" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
+
+				<SpawnItem identifier="scp_duflech" spawnposition="This" count="20" aimspread="15" rotationtype="Collider" rotation="0" />
+
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="1" range="5000" />
+
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--railgun depleted uranium flechette projectile-->
+	<Item 
+		name="" 
+		identifier="scp_duflech" 
+		category="Weapon" 
+		scale="0.85" 
+		sonarsize="1" 
+		hideinmenus="true">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="75" height="10" density="20" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="75.0" 
+			impulsespread="0.25" 
+			damagedoors="false" 
+			maxtargetstohit="2">
+
+			<Attack 
+				structuredamage="15" itemdamage="25" 
+				severlimbsprobability="0.25" 
+				penetration="0.2">
+
+				<Affliction identifier="lacerations" strength="35" />
+				<Affliction identifier="lacerations" strength="35" probability="0.5" />
+				<Affliction identifier="radiationsickness" strength="10" />
+				<Affliction identifier="bleeding" strength="25" />
+				<Affliction identifier="lacerations" strength="35" probability="0.5" />
+			</Attack>
+
+			<StatusEffect type="OnActive" target="This" lifetime="3">
+				<ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="1" velocitymin="-10" velocitymax="-100" scalemin="1.5" scalemax="1.75" />
+			</StatusEffect>
+
+			<StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This">
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/breach.ogg" volume="1" range="1800" />
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="1" velocitymin="100" velocitymax="2000" scalemin="0.5" scalemax="0.75" />
+				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="15" velocitymin="100" velocitymax="2000" scalemin="0.5" scalemax="0.75" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+	
+	<!--###-->
+
+	<!--railgun physicorium piercing shell-->
+	<Item 
+		name="" 
+		identifier="scp_railgunphyspiercingshell" 
+		description="" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" 
+		sonarsize="5" 
+		scale="0.5" 
+		impactsoundtag="impact_metal_heavy">
+
+		<InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="294,54,38,39" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,118,219,31" depth="0.55" origin="0.5,0.5" />
+		<BrokenSprite name="physpiercingshellproj" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="239,184,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
+
+		<Body width="215" height="30" density="30" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" launchimpulse="160.0" maxtargetstohit="2">
+
+			<Attack 
+				structuredamage="350" itemdamage="55" 
+				severlimbsprobability="5" 
+				penetration="1">
+
+				<Affliction identifier="lacerations" strength="300" />
+				<Affliction identifier="bleeding" strength="55" />
+				<Affliction identifier="stun" strength="5" />
+			</Attack>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" />
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+
+				<sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+				<sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+				<sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This" Condition="-50.0" disabledeltatime="true">
+
+				<Explosion 
+					range="20.0" 
+					structuredamage="200" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="75" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+				<Explosion
+					range="500.0" 
+					structuredamage="150" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="250" />
+					<Affliction identifier="bleeding" strength="150" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="2.5" range="10000" />
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--thermonuclear railgun shell-->
+	<Item 
+		name="" 
+		identifier="scp_railgunthermoshell" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" subcategory="Weapons of Mass Destruction" 
+		sonarsize="5" 
+		scale="0.5" 
+		impactsoundtag="impact_metal_heavy">
+
+		<InventoryIcon name="thermoinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="246,47,45,44" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,74,214,43" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="215" height="30" density="35" />
+		
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="0" 
+			maxtargetstohit="1" 
+			damagedoors="true">
+
+			<Attack 
+				structuredamage="100" itemdamage="50" 
+				severlimbsprobability="5" 
+				penetration="0.5" 
+				targetforce="1000">
+
+				<Affliction identifier="explosiondamage" strength="250" />
+				<Affliction identifier="bleeding" strength="50" />
+				<Affliction identifier="stun" strength="15" />
+			</Attack>
+
+			<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nuke.ogg" type="OnBroken" volume="1.8" range="50000" dontmuffle="true" forceplay="true" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
+
+				<Explosion 
+					range="7500.0" 
+					structuredamage="1250" itemdamage="1000" ballastfloradamage="1000" 
+					force="100.0" 
+					severlimbsprobability="2" 
+					decal="explosion" 
+					decalsize="12.0" 
+					camerashake="1000" camerashakerange="50000" 
+					flashrange="20000" flashduration="5" 
+					screencolor="255,200,200,255" screencolorrange="20000" screencolorduration="7" 
+					penetration="1">
+
+					<Affliction identifier="explosiondamage" strength="2500" />
+					<Affliction identifier="burn" strength="2000" />
+					<Affliction identifier="radiationsickness" strength="300" />
+					<Affliction identifier="bleeding" strength="40" probability="0.05" dividebylimbcount="false" />
+					<Affliction identifier="stun" strength="30" />
+				</Explosion>
+
+				<Explosion range="2000" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false" ignorecover="true">
+					<Affliction identifier="emp" strength="50" multiplybymaxvitality="true" />
+				</Explosion>
+
+				<ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="15" velocitymin="0" velocitymax="0" scalemin="25" scalemax="40" colormultiplier="200,50,50,255" />
+
+				<SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This" />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--railgun nuclear MIRV shell-->
+	<Item 
+		name="" 
+		identifier="scp_railgunnukemirvshell" 
+		description=""
+		health="100" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" 
+		subcategory="Weapons of Mass Destruction" 
+		sonarsize="5" 
+		scale="0.5" 
+		impactsoundtag="impact_metal_heavy">
+		
+		<InventoryIcon name="nukemirvinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="289,429,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="237,341,218,44" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="215" height="30" density="30" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="115.0">
+
+			<Attack 
+				structuredamage="150" itemdamage="55" 
+				severlimbsprobability="5" 
+				penetration="1">
+
+				<Affliction identifier="lacerations" strength="200" />
+				<Affliction identifier="bleeding" strength="35" />
+				<Affliction identifier="stun" strength="5" />
+			</Attack>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="0.65" scalemax="1" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true" penetration="1">
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This" delay="0.25" Condition="-100.0" disabledeltatime="true" />
+
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true" comparison="or">
+
+				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="500" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+
+				<Explosion 
+					range="200.0" 
+					structuredamage="25" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="lacerations" strength="75" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
+
+				<SpawnItem identifier="scp_mirvshell" spawnposition="This" count="6" aimspread="30" rotationtype="Collider" rotation="0" />
+
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="1" range="5000" />
+
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--railgun nuclear MIRV cluster bomblet-->
+	<Item 
+		name="" 
+		identifier="scp_mirvshell" 
+		category="Weapon" 
+		scale="2" 
+		sonarsize="2.5" 
+		hideinmenus="true">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
+		<Body width="100" height="10" density="20" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="75.0" impulsespread="0.25" 
+			damagedoors="false">
+
+			<Attack 
+				structuredamage="5" itemdamage="25" 
+				severlimbsprobability="0.25" 
+				penetration="0.2">
+				
+				<Affliction identifier="lacerations" strength="35" />
+				<Affliction identifier="radiationsickness" strength="10" />
+				<Affliction identifier="bleeding" strength="25" />
+			</Attack>
+
+			<StatusEffect type="OnActive" target="This" lifetime="3">
+				<ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="1" velocitymin="-10" velocitymax="-100" scalemin="1.5" scalemax="1.75" />
+			</StatusEffect>
+
+			<StatusEffect type="OnNotContained" target="This" stackable="false" delay="6">
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This" condition="-100">
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nukesmall.ogg" volume="0.8" range="10000" />
+				<Explosion
+					range="1000.0"
+					structuredamage="300" itemdamage="1000" ballastfloradamage="1000" 
+					force="50.0" 
+					severlimbsprobability="2" 
+					debris="true" decal="explosion" decalsize="1.0" 
+					camerashake="1000" camerashakerange="50000" 
+					flashrange="10000" flashduration="2.0" 
+					screencolor="255,255,255,255" screencolorrange="5000" 
+					screencolorduration="2.0" 
+					penetration="0.5">
+					
+					<Affliction identifier="explosiondamage" strength="1000" />
+					<Affliction identifier="burn" strength="1000" />
+					<Affliction identifier="radiationsickness" strength="100" />
+					<Affliction identifier="bleeding" strength="40" probability="0.05" dividebylimbcount="false" />
+					<Affliction identifier="stun" strength="30" />
+				</Explosion>
+
+				<Explosion range="1250" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false" ignorecover="true">
+					<Affliction identifier="emp" strength="50" multiplybymaxvitality="true" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+			<LightComponent LightColor="255,150,0,255" Flicker="0.0" range="250" IsOn="True" />
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--irradiator railgun shell-->
+	<Item 
+		name="" 
+		identifier="scp_railgunerdshell" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" subcategory="Weapons of Mass Destruction" 
+		sonarsize="5" 
+		scale="0.5" 
+		impactsoundtag="impact_metal_heavy">
+
+		<InventoryIcon name="thermoinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="283,99,45,44" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,288,216,42" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="215" height="30" density="35" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="0" 
+			maxtargetstohit="1" 
+			damagedoors="true">
+
+			<Attack 
+				structuredamage="100" itemdamage="50"
+				severlimbsprobability="5" 
+				penetration="0.5" 
+				targetforce="1000">
+
+				<Affliction identifier="explosiondamage" strength="250" />
+				<Affliction identifier="bleeding" strength="50" />
+				<Affliction identifier="stun" strength="15" />
+			</Attack>
+
+			<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/erdbang.ogg" type="OnBroken" volume="2" range="25000" dontmuffle="true" forceplay="true" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
+
+				<Explosion 
+					range="100.0" 
+					structuredamage="10" itemdamage="2" ballastfloradamage="1000" 
+					force="15.0" 
+					severlimbsprobability="2" 
+					decal="explosion" decalsize="1.0" 
+					camerashake="1000" camerashakerange="50000" 
+					flashrange="10000" flashduration="10" 
+					screencolor="200,200,255,255" screencolorrange="5000" screencolorduration="5.0" 
+					penetration="0.5">
+
+					<Affliction identifier="explosiondamage" strength="200" />
+					<Affliction identifier="burn" strength="1500" />
+					<Affliction identifier="radiationsickness" strength="550" />
+					<Affliction identifier="bleeding" strength="40" probability="0.05" dividebylimbcount="false" />
+					<Affliction identifier="stun" strength="30" />
+				</Explosion>
+
+				<Explosion 
+					range="4000" 
+					force="0.0" 
+					smoke="false" 
+					sparks="false" 
+					empstrength="2.5" 
+					applyfireeffects="false" 
+					ignorecover="true">
+
+					<Affliction identifier="emp" strength="50" multiplybymaxvitality="true" />
+					<Affliction identifier="radiationsickness" strength="650" />
+				</Explosion>
+
+				<ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="15" velocitymin="0" velocitymax="0" scalemin="15" scalemax="25" />
+
+				<SpawnItem identifier="scp_erdfallout" spawnposition="This" />
+
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--railgun irradiator fallout-->
+	<Item 
+		name="scp_erdfallout" 
+		identifier="scp_erdfallout" 
+		Scale="0.5" 
+		tags="" 
+		sonarsize="20" 
+		hideinmenus="true"
+		health="60">
+
+		<AiTarget sightrange="3000.0" soundrange="1000" sonardisruption="10" static="True" />
+
+		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+
+		<ItemComponent>
+
+			<StatusEffect type="Always" target="This">
+				<ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particlespersecond="50" velocitymin="0" velocitymax="50" scalemin="6" scalemax="12" distancemin="0" distancemax="500" />
+				<Sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/geigercounter.ogg" type="always" range="3000" volume="1" loop="true" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" condition="-1" />
+
+			<StatusEffect type="Always" target="NearbyCharacters" range="2500" interval="0.5">
+				<Affliction identifier="radiationsickness" strength="300" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</ItemComponent>
+
+	</Item>
+
+	<!--###-->
+
+	<!--40mm mini nuke fallout-->
+	<Item 
+		name="scp_nukegrenadefallout" 
+		identifier="scp_nukegrenadefallout"
+		Scale="0.5" 
+		tags="" 
+		sonarsize="20"
+		hideinmenus="true" 
+		health="20">
+
+		<AiTarget sightrange="1000.0" soundrange="1000" sonardisruption="10" static="True" />
+
+		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+
+		<ItemComponent>
+
+			<StatusEffect type="Always" target="This">
+				<Sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/geigercounter.ogg" type="always" range="700" volume="1" loop="true" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" condition="-1" />
+
+			<StatusEffect type="Always" target="NearbyCharacters" range="700" interval="0.5">
+				<Affliction identifier="radiationsickness" strength="200" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</ItemComponent>
+
+	</Item>
+
+	<!--###-->
+
+	<!--sub buster shell-->
+	<Item 
+		name="" 
+		identifier="scp_railgunbunkerbuster" 
+		description="" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" 
+		hideinmenus="true" 
+		sonarsize="5"
+		scale="0.5" 
+		impactsoundtag="impact_metal_heavy">
+
+		<InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="336,54,43,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,153,219,45" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="215" height="30" density="30" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false"
+			launchimpulse="160.0" 
+			maxtargetstohit="4" 
+			damagedoors="true">
+
+			<Attack 
+				structuredamage="100" 
+				itemdamage="55" 
+				severlimbsprobability="5" 
+				penetration="1">
+
+				<Affliction identifier="blunttrauma" strength="400" />
+				<Affliction identifier="bleeding" strength="75" />
+				<Affliction identifier="stun" strength="10" />
+			</Attack>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+
+				<sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+				<sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+				<sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This" Condition="-25.0" disabledeltatime="true"/>
+
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true">
+				<Conditional condition="lte 100" />
+				<Conditional condition="gte 75" />
+
+				<Explosion 
+					range="20.0" 
+					structuredamage="15" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="75" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true" comparison="or">
+				<Conditional condition="lte 75" />
+				<Conditional condition="gte 50" />
+
+				<Explosion 
+					range="60.0" 
+					structuredamage="25" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="75" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true" comparison="or">
+				<Conditional condition="lte 50" />
+				<Conditional condition="gt 25" />
+
+				<Explosion 
+					range="120.0" 
+					structuredamage="50" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="75" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This" disabledeltatime="true" comparison="or">
+				<Conditional condition="lte 25" />
+				<Conditional condition="gt 0" />
+
+				<Explosion 
+					range="240.0" 
+					structuredamage="100" itemdamage="100" 
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="75" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+
+				<Explosion 
+					range="580.0" 
+					structuredamage="50" itemdamage="100"
+					force="40.0" 
+					severlimbsprobability="2" 
+					decal="explosion">
+
+					<Affliction identifier="explosiondamage" strength="250" />
+					<Affliction identifier="bleeding" strength="150" />
+					<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" allowwhenbroken="true">
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/rocketgrenadebang.ogg" volume="3.5" range="10000" />
+				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--prototype thermonuclear railgun shell-->
+	<Item 
+		name="" 
+		identifier="scp_tsarshell" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" subcategory="Weapons of Mass Destruction" 
+		sonarsize="5" 
+		scale="0.5" 
+		impactsoundtag="impact_metal_heavy" 
+		hideinmenus="true">
+		
+		<InventoryIcon name="tsarinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="227,427,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="4,433,217,43" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="215" height="30" density="35" />
+		
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="15" 
+			maxtargetstohit="1" 
+			damagedoors="true">
+
+			<Attack 
+				structuredamage="100" itemdamage="50" 
+				severlimbsprobability="5" 
+				penetration="0.5" 
+				targetforce="1000">
+
+				<Affliction identifier="explosiondamage" strength="1000" />
+				<Affliction identifier="bleeding" strength="50" />
+				<Affliction identifier="stun" strength="15" />
+			</Attack>
+
+			<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nuke.ogg" type="OnBroken" volume="3" range="50000" dontmuffle="true" forceplay="true" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
+
+				<Explosion 
+					range="12500.0" 
+					structuredamage="2500" itemdamage="2000" ballastfloradamage="2000" 
+					force="1000.0" 
+					severlimbsprobability="2" 
+					decal="explosion" decalsize="24.0" 
+					camerashake="2000" camerashakerange="50000" 
+					flashrange="20000" flashduration="7.5" 
+					screencolor="255,150,150,255" screencolorrange="20000" screencolorduration="10"
+					penetration="1">
+
+					<Affliction identifier="explosiondamage" strength="2500" />
+					<Affliction identifier="burn" strength="2000" />
+					<Affliction identifier="radiationsickness" strength="300" />
+					<Affliction identifier="bleeding" strength="40" probability="0.05" dividebylimbcount="false" />
+					<Affliction identifier="stun" strength="30" />
+				</Explosion>
+
+				<Explosion 
+					range="2000" 
+					force="0.0"
+					smoke="false" 
+					sparks="false" 
+					empstrength="2.5" 
+					applyfireeffects="false" 
+					ignorecover="true">
+
+					<Affliction identifier="emp" strength="50" multiplybymaxvitality="true" />
+				</Explosion>
+
+				<ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="15" velocitymin="0" velocitymax="0" scalemin="40" scalemax="80" colormultiplier="200,50,50,255" />
+
+				<SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This" />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--TODO: ADD TO LOCALIZATION FILES, THIS HAS NO PROPER NAME OR DESCRIPTION ENTRY-->
+	<Item 
+		name="Strange Railgun Shell" 
+		description="A very ominous shell rife with the infamous clicking of Ionizing Radiation apparent. The impact fuse is completely dead and as a result is unusable without replacing it. Heat also appears to be building and is actively making the case hotter and hotter." 
+		identifier="scp_doomsdayshellruined" 
+		tags="railgunequipment,railgunammo" 
+		showcontentsintooltip="true" 
+		category="Weapon" 
+		sonarsize="5" 
+		scale="0.5" 
+		hideinmenus="true" 
+		impactsoundtag="impact_metal_heavy">
+		
+		<InventoryIcon name="ruineddoomsdayinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="379,55,45,44" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="6,201,217,47" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="215" height="30" density="35" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="0" 
+			maxtargetstohit="1" 
+			damagedoors="true">
+			
+			<Attack 
+				structuredamage="100" itemdamage="50" 
+				severlimbsprobability="5" 
+				penetration="0.5" 
+				targetforce="1000">
+
+				<Affliction identifier="explosiondamage" strength="250" />
+				<Affliction identifier="bleeding" strength="50" />
+				<Affliction identifier="stun" strength="15" />
+			</Attack>
+
+			<StatusEffect type="Always" target="This" Condition="-0.125" />
+
+			<StatusEffect type="Always" target="This">
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/geigerloop.ogg" range="600.0" loop="true" volume="1.25" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This">
+				<Conditional condition="lte 10" />
+				<Conditional conditon="gt 0" />
+
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/suitalarm.ogg" range="1000" volume="0.25" loop="true" />
+
+				<ParticleEmitter particle="heavysmoke" particleburstinterval="0.075" particlespersecond="2" scalemin="0.5" scalemax="1.5" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="NearbyCharacters" range="450">
+				<Affliction identifier="radiationsickness" strength="0.25" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="NearbyCharacters" range="250">
+				<Affliction identifier="radiationsickness" strength="0.5" />
+			</StatusEffect>
+
+			<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nuke.ogg" type="OnBroken" volume="1.5" range="50000" dontmuffle="true" />
+
+			<StatusEffect type="OnBroken" target="This" setvalue="true">
+
+				<Explosion 
+					range="6000.0" 
+					structuredamage="2400" itemdamage="1000" ballastfloradamage="1000"
+					force="75.0" 
+					severlimbsprobability="2" 
+					decal="explosion" decalsize="1.0" 
+					camerashake="1000" camerashakerange="50000" 
+					flashrange="10000" flashduration="7.5" 
+					screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="5.0" 
+					penetration="1">
+
+					<Affliction identifier="explosiondamage" strength="3000" />
+					<Affliction identifier="burn" strength="2000" />
+					<Affliction identifier="radiationsickness" strength="1200" />
+					<Affliction identifier="stun" strength="30" />
+				</Explosion>
+
+				<Explosion 
+					range="8000" 
+					force="0.0" 
+					smoke="false" 
+					sparks="false"
+					empstrength="2.5" 
+					applyfireeffects="false" 
+					ignorecover="true">
+
+					<Affliction identifier="emp" strength="50" multiplybymaxvitality="true" />
+				</Explosion>
+
+				<ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="15" velocitymin="0" velocitymax="0" scalemin="15" scalemax="25" />
+
+				<SpawnItem identifier="nuclearaftereffectemitter" spawnposition="This" />
+
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<!--thermonuclear depth charge-->
+	<Item
+		name="" 
+		identifier="scp_thermodepthcharge" 
+		tags="depthchargeammo" 
+		category="Weapon" 
+		sonarsize="5" 
+		scale="0.4" 
+		impactsoundtag="impact_metal_heavy" 
+		damagedbymonsters="true" 
+		damagedbyexplosions="true" 
+		damagedbyrepairtools="true" 
+		damagedbyprojectiles="true" 
+		damagedbymeleeweapons="true" 
+		indestructible="true" 
+		health="10">
+
+		<Upgrade gameversion="0.20.4.0" scale="0.4" />
+		
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="175,365,45,45" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/railgunshells.png" sourcerect="4,341,167,89" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="128" height="85" density="50" />
+
+		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" launchimpulse="5.0">
+
+			<StatusEffect type="OnUse" target="This" Indestructible="false" />
+
+			<StatusEffect type="OnImpact" target="this" setvalue="true" condition="-100" />
+
+			<StatusEffect type="OnDamaged" target="This" disabledeltatime="true" setvalue="true">
+				<particleemitter particle="shrapnel" drawontop="true" particleamount="5" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.1" scalemax="0.35" />
+				<Sound file="Content/Sounds/Damage/HitArmor1.ogg" range="800" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken">
+
+				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/nuke.ogg" range="20000" volume="2.5" forceplay="true" />
+
+				<Explosion 
+					range="8000.0" 
+					structuredamage="1250" itemdamage="1000" ballastfloradamage="1000" 
+					force="90.0" 
+					severlimbsprobability="2" 
+					decal="explosion" decalsize="1.0" 
+					camerashake="1500" camerashakerange="50000" 
+					flashrange="20000" flashduration="5" 
+					screencolor="255,200,200,255" screencolorrange="20000" screencolorduration="7" 
+					penetration="1">
+
+					<Affliction identifier="explosiondamage" strength="3000" />
+					<Affliction identifier="burn" strength="2500" />
+					<Affliction identifier="radiationsickness" strength="500" />
+					<Affliction identifier="stun" strength="30" />
+				</Explosion>
+
+				<Explosion range="6500" force="0.0" smoke="false" sparks="false" empstrength="2.5" applyfireeffects="false" ignorecover="true">
+					<Affliction identifier="emp" strength="125" multiplybymaxvitality="true" />
+				</Explosion>
+
+				<Use />
+
+				<ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="15" velocitymin="0" velocitymax="0" scalemin="15" scalemax="25" colormultiplier="255,200,200,255" />
+
+				<SpawnItem identifier="scp_erdfallout" spawnposition="This" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" delay="0.01">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--MARKED FOR FIXING-->
+
+<Items>
+
+  <Item name="devil Emitter" identifier="scp_devilgas" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="25" depth="0.1" isdangerous="true" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="15" bodytype="kinematic" />
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="0.65">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.7" scalemax="0.8" anglemin="0" anglemax="360" colormultiplier="255,0,0,255" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" duration="15">
+        <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="4" scalemax="6" anglemin="0" anglemax="360" colormultiplier="255,0,0,255" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1">
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0.1" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="300" interval="1" stackable="false" disabledeltatime="true" targetlimbs="Torso,Head">
+        <Affliction identifier="scp_devilsbreathexposure" strength="5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="devil Emitter" identifier="scp_devilgasshotgun" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="15" depth="0.1" isdangerous="true" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="15" bodytype="kinematic" />
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="1">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.75" scalemax="0.85" anglemin="0" anglemax="360" colormultiplier="255,0,0,150" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" duration="4">
+        <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="4" scalemax="6" anglemin="0" anglemax="360" colormultiplier="255,0,0,175" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1">
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="300" volume="0" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="250" interval="0.5" stackable="false" disabledeltatime="true" targetlimbs="Torso">
+        <Affliction identifier="scp_devilsbreathexposure" strength="4" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Preso Emitter" identifier="scp_presoliquid" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="30" depth="0.1" isdangerous="true" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="15" bodytype="kinematic" />
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="1">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.5" scalemax="0.6" anglemin="0" anglemax="360" colormultiplier="0,0,0,255" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" duration="20">
+        <ParticleEmitter particle="fixfoamgoosplash" particleburstamount="12" particleburstinterval="0.25" particlespersecond="6" scalemin="1" scalemax="2" anglemin="0" anglemax="360" colormultiplier="0,0,0,255" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1">
+        <Sound file="%ModDir%/Sounds/presolatexcovering.ogg" range="600" volume="0.1" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="350" interval="1" stackable="false" disabledeltatime="true" targetlimbs="Torso">
+        <Affliction identifier="scp_presolatexexposure" strength="4" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Preso Emitter" identifier="scp_presoliquid40mm" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="20" depth="0.1" isdangerous="true" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="15" bodytype="kinematic" />
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="0.65">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.7" scalemax="0.8" anglemin="0" anglemax="360" colormultiplier="0,0,0,255" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" duration="20">
+        <ParticleEmitter particle="fixfoamgoosplash" particleburstamount="12" particleburstinterval="0.25" particlespersecond="12" scalemin="3" scalemax="5" anglemin="0" anglemax="360" colormultiplier="0,0,0,255" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1">
+        <Sound file="%ModDir%/Sounds/presolatexcovering.ogg" range="800" volume="0.15" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="500" interval="1" stackable="false" disabledeltatime="true" targetlimbs="Torso">
+        <Affliction identifier="scp_presolatexexposure" strength="4" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="devil Emitter" identifier="scp_devilgas40mm" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="15" depth="0.1" isdangerous="true" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="15" bodytype="kinematic" />
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="0.65">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.7" scalemax="0.8" anglemin="0" anglemax="360" colormultiplier="255,0,0,255" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" duration="15">
+        <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.2" particlespersecond="4" scalemin="9" scalemax="12" anglemin="0" anglemax="360" colormultiplier="255,0,0,255" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1">
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="600" volume="0.1" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="600" interval="1" stackable="false" disabledeltatime="true" targetlimbs="Torso,Head">
+        <Affliction identifier="scp_devilsbreathexposure" strength="6" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="devil Emitter" identifier="scp_hexgas40mm" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="20" depth="0.1" isdangerous="true" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="15" bodytype="kinematic" />
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="0.65">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.7" scalemax="0.8" anglemin="0" anglemax="360" colormultiplier="255,175,50,150" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" duration="20">
+        <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.2" particlespersecond="4" scalemin="9" scalemax="12" anglemin="0" anglemax="360" colormultiplier="255,175,50,150" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1">
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="600" volume="0.1" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="500" interval="1" stackable="false" disabledeltatime="true" targetlimbs="Torso,Head">
+        <Affliction identifier="scp_hexgasexposure" strength="2" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+
+  <Item name="Hex Emitter" identifier="scp_hexgas" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="30" depth="0.1" isdangerous="true" noninteractable="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="38" height="15" bodytype="kinematic" />
+    <ItemComponent>
+      <StatusEffect type="OnSpawn" target="This" duration="1">
+        <ParticleEmitter particle="acidmistgrenade" particlespersecond="3" scalemin="0.5" scalemax="0.6" anglemin="0" anglemax="360" colormultiplier="255,175,50,150" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" duration="20">
+        <ParticleEmitter particle="smoke" particleburstamount="3" particleburstinterval="0.5" particlespersecond="2" scalemin="8" scalemax="10" anglemin="0" anglemax="360" colormultiplier="255,175,50,150" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1">
+        <Sound file="Content/Items/Tools/Sprayer.ogg" range="500" volume="1" frequencymultiplier="0.75" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="NearbyCharacters" range="400" interval="1" stackable="false" disabledeltatime="true" targetlimbs="Torso">
+        <Affliction identifier="scp_hexgasexposure" strength="1.5" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+</Items>

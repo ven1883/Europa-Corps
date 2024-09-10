@@ -1,7 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--MARKED FOR CHECKING-->
+
 <Items>
-	<!--Nerve Agent-->
-	<Item name="" identifier="fenitergasgrenade1" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="" health="15">
+
+		<!--Incendiary-->
+
+
+		<!--Chemthrower-->
+	<Item name="" identifier="sgt_chemthrower" category="Weapon" subcategory="Coalition" Tags="mediumitem,weapon,gun,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light">
+
+		<Body width="150" height="77" density="25" />
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="0,149,274,123" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="0,149,274,123" depth="0.55" origin="0.5,0.5" />
+
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="12,-50" holdangle="60" aimpos="50,-40" handle1="-118,4" handle2="-4,-6" msg="ItemMsgPickUpSelect" />
 		
+		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+			<sprite name="wornchemthrower" texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,149,274,123" limb="Torso" scale="0.5" origin="0.5,0.1" />
+		</Wearable>
+
+		<RepairTool 
+			firedamage="50.0" structurefixamount="0.0" 
+			usablein="Air" 
+			range="600" 
+			barrelpos="54,4" 
+			fireprobability="0.1" 
+			repairmultiple="true" RepairMultipleWalls="false" repairthroughwalls="false" repairthroughholes="true" 
+			combatpriority="90" 
+			spread="25" unskilledspread="25">
+
+			<!-- the item must contain a welding fuel tank for it to work -->
+			<RequiredItems items="chemfuel" type="Contained" msg="ItemMsgWeldingFuelRequired" />
+
+			<RequiredSkill identifier="weapons" level="50" />
+
+			<ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="50" velocitymax="500" />
+			<ParticleEmitter particle="flamethrower" particlespersecond="80" anglemin="0" anglemax="0" velocitymin="1000" velocitymax="1500" highqualitycollisiondetection="true" />
+			<ParticleEmitter particle="flamethrowersmoke" particlespersecond="80" anglemin="0" anglemax="0" velocitymin="500" velocitymax="1000" />
+			<sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse" range="750.0" loop="true" />
+
+			<StatusEffect type="OnFailure" target="This">
+				<ParticleEmitter particle="bubbles" particlespersecond="20" anglemin="-10" anglemax="10" scalemin="0.3" scalemax="0.7" velocitymin="5" velocitymax="100" copyentityangle="true" />
+				<ParticleEmitter particle="fleshsmoke" particlespersecond="10" anglemin="-10" anglemax="10" scalemin="1" scalemax="1.5" velocitymin="5" velocitymax="200" copyentityangle="true" />
+			</StatusEffect>
+
+			<StatusEffect type="OnSuccess" targettype="UseTarget" targetidentifiers="item" Condition="-15.0">
+				<Conditional HasTag="neq door" />
+			</StatusEffect>
+
+			<!-- make the item unusable when there's less than 10% oxygen -->
+			<StatusEffect type="OnUse" target="Hull,This" UsableIn="None">
+				<Conditional OxygenPercentage="lt 10" />
+			</StatusEffect>
+
+			<!-- make the item usable again when there's more than 10% oxygen -->
+			<StatusEffect type="OnUse" target="Hull,This" UsableIn="Air">
+				<Conditional OxygenPercentage="gt 10" />
+			</StatusEffect>
+
+			<!-- when using, the contained welding fuel tank will detoriate (= lose fuel) -->
+			<StatusEffect type="OnUse" targettype="Contained" targets="sgt_napalm" Condition="-5.0" />
+			<!-- do burn damage to characters -->
+			<StatusEffect type="OnSuccess" target="UseTarget">
+				<Affliction identifier="burn" amount="8" />
+			</StatusEffect>
+
+			<!-- consume oxygen from the hull -->
+			<StatusEffect type="OnUse" target="Hull" Oxygen="-10000" />
+
+			<StatusEffect type="OnFailure" target="Character">
+				<Conditional InWater="false" />
+				<Affliction identifier="burn" strength="0.5" probability="0.5" />
+			</StatusEffect>
+
+			<LightComponent LightColor="255,174,121,255" Flicker="0.5" Range="500">
+				<sprite texture="Content/Items/Electricity/lightsprite.png" origin="-0.8,0.55" />
+			</LightComponent>
+
+		</RepairTool>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-63,-47" itemrotation="-37.5" containedspritedepth="0.56" containedstateindicatorstyle="tank">
+			<SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+
+			<Containable items="chemfuel" />
+		</ItemContainer>
+
+		<aitarget sightrange="5000" soundrange="500" fadeouttime="5" />
+
+		<SkillRequirementHint identifier="weapons" level="50" />
+
+		<Upgrade gameversion="0.10.0.0" scale="0.5" />
+
+	</Item>
+
+		<!--###-->
+
+
+		<!--TODO: Move this to Misc eventually. It doesn't belong here.-->
+		<!--Pocket Extinguisher-->
+	<Item name="" identifier="sgt_ext" category="Equipment" Tags="mediumitem,fireextinguisher,provocative" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light" donttransferbetweensubs="true">
+
+		<InventoryIcon texture="%ModDir%/Ammo/fireext.png" sourcerect="52,0,56,53" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Ammo/fireext.png" depth="0.55" sourcerect="0,0,45,77" origin="0.5,0.5" />
+
+		<Body width="30" height="40" density="8" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="40,-20" handle1="-6,2" msg="ItemMsgPickUpSelect" />
+
+		<RepairTool extinguishamount="200.0" range="500" barrelpos="21,4" repairthroughholes="true" hititems="false" IgnoreCharacters="true">
+			<ParticleEmitter particle="extinguisher" velocitymin="1000.0" velocitymax="1650.0" particlespersecond="100" />
+			<StatusEffect type="OnUse" targettype="This" Condition="-100.0" />
+			<sound file="Content/Items/Tools/Extinguisher.ogg" type="OnUse" range="500.0" loop="true" />
+		</RepairTool>
+
+		<Propulsion force="-80" usablein="water" particles="bubbles" />
+
+		<aitarget sightrange="1000" soundrange="1000" fadeouttime="1" />
+
+		<Upgrade gameversion="0.10.0.0" scale="0.5" />
+
+		<Upgrade gameversion="0.9.600.0" Tags="mediumitem,fireextinguisher,provocative" />
+
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Laser Weapons-->
+
+
+		<!--Heavy Blaster-->
+	<Item name="" identifier="sgt_heavyblaster" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/alt.png" sourcerect="0,0,177,65" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="238" height="63" density="25" />
+
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="55,2" handle1="-45,-15" handle2="90,-10" holdangle="-25" />
+
+		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+			<sprite name="wornheavyblaster" texture="%ModDir%/Items/Weapons/Sprites/Alt.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,0,177,65" limb="Torso" scale="0.5" origin="0.5,-0.3" />
+		</Wearable>
+
+		<RangedWeapon 
+			reload="1.0" 
+			holdtrigger="true" 
+			barrelpos="55,4"
+			spread="0" unskilledspread="10" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2" 
+			minchargetime="1.5" maxchargetime="1.5">
+			
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<LightComponent LightColor="255,255,255,255" Flicker="0.2" range="0" IsOn="false" drawbehindsubs="false" ignorecontinuoustoggle="true" copyentityangle="true" powerconsumption="1">
+
+				<Sprite texture="%ModDir%/Particles/HeavyBlasterHeat.png" origin="0.48,0.55" alpha="1.0" />
+
+				<!--Turn lights on when shooting-->
+				<StatusEffect type="OnUse" target="This" IsOn="true" setvalue="true" disabledeltatime="true" comparison="And" stackable="false">
+					<Conditional IsOn="false" />
+				</StatusEffect>
+
+				<!--Tag weapon with "shooting" when used and the battery cell has power left in it to prevent the light from turning off-->
+				<StatusEffect type="OnUse" target="This" disabledeltatime="false" comparison="And" tags="shooting" duration="0.1" CheckConditionalAlways="true">
+					<Conditional Voltage="gt 0.01" />
+				</StatusEffect>
+
+				<!--Turn lights off when not shooting-->
+				<StatusEffect type="Always" target="This" IsOn="false" setvalue="true" disabledeltatime="true" comparison="And" interval="1" stackable="false">
+					<Conditional IsOn="true" />
+					<Conditional HasStatusTag="neq shooting" />
+				</StatusEffect>
+
+			</LightComponent>
+
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/blastershot.ogg" type="OnUse" range="3000" />
+
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/blaster1.ogg" range="1000" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="true" flames="false" underwaterbubble="true" camerashake="12.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems items="hbcell" type="Contained" msg="ItemMsgAmmoRequired" />
+
+			<RequiredSkill identifier="weapons" level="25" />
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand+RightHand">
+				<Conditional skillrequirement="true" weapons="lt 25" />
+
+				<Affliction identifier="burn" strength="4" probability="0.35" />
+			</StatusEffect>
+
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="15,-5" containedspritedepths="0.562,0.561" containedstateindicatorstyle="default" containedstateindicatorslot="0">
+			<Containable items="hbcell" rotation="270">
+
+				<!--Provide power to the item when battery cell is contained and has a condition of at least 1-->
+				<StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true">
+					<Conditional condition="gt 0" />
+				</StatusEffect>
+
+			</Containable>
+
+			<SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+			<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="flashlight" hide="false" itempos="25,0" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="25" />
+
+	</Item>
+
+		<!--###-->
+
+
+		<!--Blaster RIfle-->
+		<!--ASMD Shock Rifle-->
+	<Item name="" identifier="sgt_asmd" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.7" impactsoundtag="impact_metal_heavy">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/alt.png" sourcerect="0,65,183,49" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="238" height="58" density="25" />
+
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="70,2" handle1="-54,-8" handle2="90,-10" holdangle="-25" />
+
+		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+			<sprite name="wornasmd" texture="%ModDir%/Items/Weapons/Sprites/Alt.png" canbehiddenbyotherwearables="false" rotation="270" inheritlimbdepth="false" depth="0.6" sourcerect="0,65,183,49" limb="Torso" scale="0.7" origin="0.5,-0.3" />
+		</Wearable>
+
+		<RangedWeapon 
+			reload="2" 
+			holdtrigger="true" 
+			barrelpos="55,4" 
+			spread="0" unskilledspread="10" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+			
+			<LightComponent LightColor="255,255,255,255" Flicker="0.2" range="0" IsOn="false" drawbehindsubs="false" ignorecontinuoustoggle="true" copyentityangle="true" powerconsumption="1" fadeouttime="2">
+
+				<Sprite texture="%ModDir%/Particles/shockrifleheat.png" origin="0.5074421,0.5350049" alpha="1.0" sourcerect="0,0,202,96" />
+
+				<!--Turn lights on when shooting-->
+				<StatusEffect type="OnUse" target="This" IsOn="true" setvalue="true" disabledeltatime="true" comparison="And" stackable="false">
+					<Conditional IsOn="false" />
+				</StatusEffect>
+
+				<!--Tag weapon with "shooting" when used and the battery cell has power left in it to prevent the light from turning off-->
+				<StatusEffect type="OnUse" target="This" disabledeltatime="false" comparison="And" tags="shooting" duration="0.1" CheckConditionalAlways="true">
+					<Conditional Voltage="gt 0.01" />
+				</StatusEffect>
+
+				<!--Turn lights off when not shooting-->
+				<StatusEffect type="Always" target="This" IsOn="false" setvalue="true" disabledeltatime="true" comparison="And" interval="1" stackable="false">
+					<Conditional IsOn="true" />
+					<Conditional HasStatusTag="neq shooting" />
+				</StatusEffect>
+
+			</LightComponent>
+
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shockrifle.ogg" type="OnUse" range="3000" />
+			
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="true" flames="false" underwaterbubble="true" camerashake="12.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" delay="0.3" target="This">
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/shockriflerecharge.ogg" />
+			</StatusEffect>
+
+			<RequiredItems items="hbcell" type="Contained" msg="ItemMsgAmmoRequired" />
+
+			<RequiredSkill identifier="weapons" level="45" />
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand+RightHand">
+				<Conditional skillrequirement="true" weapons="lt 45" />
+
+				<Affliction identifier="burn" strength="20" probability="0.35" />
+			</StatusEffect>
+
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="15,-5" containedspritedepths="0.562,0.561" containedstateindicatorstyle="default" containedstateindicatorslot="0">
+			<Containable items="hbcell" rotation="270">
+
+				<!--Provide power to the item when battery cell is contained and has a condition of at least 1-->
+				<StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true">
+					<Conditional condition="gt 0" />
+				</StatusEffect>
+
+			</Containable>
+
+			<SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+			<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="flashlight" hide="false" itempos="25,0" setactive="true" />
+			</SubContainer>
+
+		</ItemContainer>
+
+		<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="45" />
+
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Various Exotic Shit-->
+
+
+		<!--Particle Accelerator Cannon-->
+		<!--Tau Cannon-->
+	<Item name="" description="" identifier="scp_taucannon" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,bulkyweapon" Scale="0.3" impactsoundtag="weaponheavydrop">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="0,675,360,121" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="taucannoninv" texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="495,2,70,80" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="238" height="63" density="70" />
+
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,4" handle1="-51,-13" handle2="10,-3" holdangle="-25" />
+
+		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+			<sprite name="taucannonbag" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="0,675,360,120" limb="Torso" scale="0.3" origin="0.4992217,0.86976707" />
+		</Wearable>
+
+		<RangedWeapon 
+			reload="1.5" reloadnoskill="2.5" reloadskillrequirement="100" 
+			holdtrigger="true" 
+			barrelpos="120,18" 
+			spread="0" unskilledspread="12" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2" 
+			maxchargetime="1.25">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+			<ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,90,0,255" />
+			<ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="1,1" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" colormultiplier="255,90,0,255" />
+
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/taushot.ogg" type="OnUse" range="3000" />
+
+			<ChargeSound file="%ModDir%/Items/Weapons/Effects/Sounds/taucharge.ogg" range="3000" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="250.0" force="5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="75.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems items="tauammo" type="Contained" msg="ItemMsgAmmoRequired" />
+
+			<RequiredSkill identifier="electrical" level="125" />
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="Torso">
+				<Conditional skillrequirement="true" electrical="lt 125" />
+				<Conditional skillrequirement="true" electrical="gte 100" />
+
+				<Affliction identifier="radiationsickness" strength="6" />
+				<Affliction identifier="radiationsickness" strength="12" probability="0.25" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="Torso">
+				<Conditional skillrequirement="true" electrical="lt 100" />
+				<Conditional skillrequirement="true" electrical="gte 85" />
+
+				<Affliction identifier="stun" strength="0.2" />
+				<Affliction identifier="radiationsickness" strength="15" />
+				<Affliction identifier="radiationsickness" strength="15" probability="0.5" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="Torso">
+				<Conditional skillrequirement="true" electrical="lt 85" />
+				<Affliction identifier="stun" strength="0.25" />
+
+				<Affliction identifier="organdamage" strength="10" />
+				<Affliction identifier="organdamage" strength="15" probability="0.5" />
+				<Affliction identifier="radiationsickness" strength="35" />
+			</StatusEffect>
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-35,9" containedspritedepth="0.56" containedstateindicatorstyle="tank">
+			<Containable items="tauammo" rotation="270" />
+		</ItemContainer>
+
+		<aitarget sightrange="6000" soundrange="20000" fadeouttime="5" />
+
+		<SkillRequirementHint identifier="electrical" level="125" />
+
+	</Item>
+
+		<!--###-->
+
+		<!--Portable Railgun Cannon-->
+	<Item name="" identifier="scp_railgunlauncher" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.53">
+		
+		<InventoryIcon name="railguninv" texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="170,82,88,88" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="447,549,280,95" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="190" height="60" density="50" />
+
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,6" aimpos="30,7.2" handle1="0,-5" handle2="16,-19" holdangle="-35" msg="ItemMsgPickUpSelect" setvalue="true">
+			<StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.65" setvalue="true" />
+		</Holdable>
+
+		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+			<sprite name="railgun Worn" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="447,549,280,95" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
+		</Wearable>
+
+		<RangedWeapon 
+			reload="4" reloadnoskill="7" reloadskillrequirement="100"
+			launchimpulse="50"
+			barrelpos="120,9" 
+			spread="3" unskilledspread="25"
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+			
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="muzzleflash" particleamount="0" velocitymin="0" velocitymax="0" />
+			<Sound file="Content/Items/Weapons/Railgun2.ogg" type="OnUse" range="6500" volume="2.5" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/prototankcannon.ogg" type="OnUse" range="6500" volume="1.5" frequencymultiplier="1.1" />
+			
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="8" shockwave="true" smoke="true" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="300.0" />
+			</StatusEffect>
+			
+			<RequiredItems items="railgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+			<RequiredItems items="mobilebattery" type="Contained" targetslot="1" msg="Battery Required" />
+
+			<RequiredSkill identifier="weapons" level="125" />
+			
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+				<Conditional skillrequirement="true" electrical="lt 125" />
+				<Conditional skillrequirement="true" electrical="gte 90" />
+
+				<Affliction identifier="blunttrauma" strength="15" probability="0.25" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+				<Conditional skillrequirement="true" electrical="lt 90" />
+				<Conditional skillrequirement="true" electrical="gte 75" />
+
+				<Affliction identifier="stun" strength="1" probability="0.75" />
+				<Affliction identifier="blunttrauma" strength="25" probability="0.5" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+				<Conditional skillrequirement="true" electrical="lt 75" />
+
+				<Affliction identifier="stun" strength="3" />
+				<Affliction identifier="blunttrauma" strength="50" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-100" disabledeltatime="true">
+				<RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+			</StatusEffect>
+
+			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.1" setvalue="true" />
+
+		</RangedWeapon>
+
+		<ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+
+			<SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="2,184,120,32" origin="0.5,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="railgunammo" excludeditems="railguncanistershell" />
+			</SubContainer>
+			
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="mobilebattery">
+					<StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+				</Containable>
+			</SubContainer>
+			
+		</ItemContainer>
+
+		<aitarget sightrange="500" soundrange="500" fadeouttime="3" />
+
+		<SkillRequirementHint identifier="weapons" level="100" />
+		<SkillRequirementHint identifier="electrical" level="100" />
+
+	</Item>
+
+		<!--###-->
+
+		<!--Portable Coilgun-->
+	<Item name="" identifier="scp_portablecoilgun" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.38">
+		
+		<InventoryIcon name="coilguninv" texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="731,110,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="489,380,291,80" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="190" height="60" density="50" />
+
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="65,-5" aimpos="65,5" handle1="-60,-15" handle2="11,-23" holdangle="-35" msg="ItemMsgPickUpSelect" setvalue="true">
+			<StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.65" setvalue="true" />
+		</Holdable>
+
+		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+			<sprite name="c worn" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="489,380,291,80" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.38" origin="0.45,0.96" />
+		</Wearable>
+
+		<RangedWeapon 
+			reload="1.75" reloadnoskill="4" reloadskillrequirement="85"
+			barrelpos="120,9" 
+			spread="1" unskilledspread="25" 
+			combatPriority="80" 
+			drawhudwhenequipped="true" 
+			crosshairscale="0.2">
+			
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="13.0,5.0" colormultiplier="50,50,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,10.0" colormultiplier="50,50,200,200" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m107.ogg" type="OnUse" range="6500" volume="1" frequencymultiplier="1.25" selectionmode="all" />
+			<Sound file="Content/Items/Weapons/Coilgun5.ogg" type="OnUse" range="4000" volume="1.5" frequencymultiplier="1.25" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="5" shockwave="true" smoke="true" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="150.0" />
+			</StatusEffect>
+
+			<RequiredItems items="scp_coilgunclip" type="Contained" msg="ItemMsgAmmoRequired" />
+			<RequiredItems items="mobilebattery" type="Contained" targetslot="1" msg="Battery Required" />
+
+			<RequiredSkill identifier="electrical" level="90" />
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+				<Conditional skillrequirement="true" electrical="lt 95" />
+				<Conditional skillrequirement="true" electrical="gte 75" />
+
+				<Affliction identifier="blunttrauma" strength="10" probability="0.25" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+				<Conditional skillrequirement="true" electrical="lt 75" />
+				<Conditional skillrequirement="true" electrical="gte 65" />
+
+				<Affliction identifier="stun" strength="1" probability="0.75" />
+				<Affliction identifier="blunttrauma" strength="15" probability="0.5" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
+				<Conditional skillrequirement="true" electrical="lt 65" />
+
+				<Affliction identifier="stun" strength="2" />
+				<Affliction identifier="blunttrauma" strength="25" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained" targetslot="0">
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-10" disabledeltatime="true">
+				<RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+			</StatusEffect>
+
+			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.25" setvalue="true" />
+
+		</RangedWeapon>
+
+		<ItemContainer capacity="0" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
+			<SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="2,184,120,32" origin="0.5,0.5" />
+
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="scp_coilgunclip" hide="false" itempos="-8,-9" />
+			</SubContainer>
+			
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="mobilebattery" hide="true">
+					<StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+				</Containable>
+			</SubContainer>
+
+		</ItemContainer>
+
+		<aitarget sightrange="2000" soundrange="7000" fadeouttime="3" />
+
+		<SkillRequirementHint identifier="electrical" level="90" />
+
+	</Item>
+
+		<!--Nerve Agent-->
+	<Item name="" identifier="fenitergasgrenade1" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="" health="15">
+	
 		<Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="20,11,27,53" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="26" height="54" density="30" />
@@ -563,6 +1185,5 @@
 		</ConnectionPanel>
 		
 	</Item>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
+	
 </Items>
