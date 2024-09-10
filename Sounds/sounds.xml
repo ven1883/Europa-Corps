@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+  <damagesound file="%ModDir%/Sounds/armourlightimpact1.ogg" damagesoundtype="armourlightimpact" />
+  <damagesound file="%ModDir%/Sounds/armourlightimpact2.ogg" damagesoundtype="armourlightimpact" />
+  <damagesound file="%ModDir%/Sounds/armourlightimpact3.ogg" damagesoundtype="armourlightimpact" />
+  <damagesound file="%ModDir%/Sounds/armourmeddeflect1.ogg" damagesoundtype="armourmedimpact" />
+  <damagesound file="%ModDir%/Sounds/armourmeddeflect2.ogg" damagesoundtype="armourmedimpact" />
+  <damagesound file="%ModDir%/Sounds/armourmeddeflect3.ogg" damagesoundtype="armourmedimpact" />
+  <damagesound file="%ModDir%/Sounds/armourheavydeflect1.ogg" damagesoundtype="armourheavyimpact" />
+  <damagesound file="%ModDir%/Sounds/armourheavydeflect2.ogg" damagesoundtype="armourheavyimpact" />
+  <damagesound file="%ModDir%/Sounds/armourheavydeflect3.ogg" damagesoundtype="armourheavyimpact" />
+  <heavysuitfootstep file="%ModDir%/Sounds/heavyfootstep.ogg" />
+  <weaponlightdrop file="%ModDir%/Sounds/weaponlightdrop1.ogg" />
+  <weaponlightdrop file="%ModDir%/Sounds/weaponlightdrop2.ogg" />
+  <weaponlightdrop file="%ModDir%/Sounds/weaponlightdrop3.ogg" />
+  <weaponheavydrop file="%ModDir%/Sounds/weaponheavydrop1.ogg" />
+  <weaponheavydrop file="%ModDir%/Sounds/weaponheavydrop2.ogg" />
+  <weaponheavydrop file="%ModDir%/Sounds/weaponheavydrop3.ogg" />
+</sounds>
