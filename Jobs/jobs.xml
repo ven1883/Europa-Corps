@@ -1,0 +1,984 @@
+<Jobs>
+
+	<Job identifier="template_job" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+	uicolor="0.4,0.76,0.8">
+		<Jobicon>
+			<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5"/>
+		</Jobicon>
+		<JobiconSmall>
+			<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5"/>
+		</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="95,100" primary="true"/>
+			<Skill identifier="medical" level="45,55"/>
+			<Skill identifier="mechanical" level="25,35"/>
+			<Skill identifier="electrical" level="25,35"/>
+			<Skill identifier="helm" level="25,45"/>
+		</Skills>
+		<ItemSet>
+
+		</ItemSet>
+	</Job>
+
+	<!--! Cultists Start !-->
+
+	<!--cultist leader-->
+	<Job identifier="cultist_leader" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+		uicolor="0.49,0.36,0.67">
+		<Jobicon>
+			<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5"/>
+		</Jobicon>
+		<JobiconSmall>
+			<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5"/>
+		</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="95,100" primary="true"/>
+			<Skill identifier="medical" level="45,55"/>
+			<Skill identifier="mechanical" level="25,35"/>
+			<Skill identifier="electrical" level="25,35"/>
+			<Skill identifier="helm" level="25,45"/>
+		</Skills>
+		<ItemSet>
+			<!--clothes+armor-->
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+
+			<Item identifier="disciplerobes" equip="true"/>
+			<Item identifier="thghelmet13alt" equip="true"/>
+			<Item identifier="scp_heavyrig" equip="true"/>
+
+			<Item identifier="sgt_longrangeradio" equip="true">
+
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+
+				<Item identifier="omnizine"/>
+				<Item identifier="omnizine"/>
+				<Item identifier="omnizine"/>
+				<Item identifier="omnizine"/>
+
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+			</Item>
+			
+			<!--weapons-->
+			<Item identifier="sgt_dbs" equip="false">
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+			</Item>
+			<Item identifier="heavystunshell"/>
+			<Item identifier="heavystunshell"/>
+			<Item identifier="heavystunshell"/>
+			<Item identifier="heavystunshell"/>
+			<Item identifier="heavystunshell"/>
+			<Item identifier="heavystunshell"/>
+
+			<Item identifier="scp_rsh12" equip="false">
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+				<Item identifier="scp_arevolverround"/>
+			</Item>
+			<Item identifier="scp_arevolverround"/>
+			<Item identifier="scp_arevolverround"/>
+			<Item identifier="scp_arevolverround"/>
+			<Item identifier="scp_arevolverround"/>
+			<Item identifier="scp_arevolverround"/>
+			
+			<Item identifier="ritualknife"/>
+		</ItemSet>
+	</Job>
+
+	<!--generic cultist grunt-->
+	<Job identifier="cultist_basic" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+		uicolor="0.49,0.36,0.67">
+		<Jobicon>
+			<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
+		</Jobicon>
+		<JobiconSmall>
+			<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5"/>
+		</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="85,95" primary="true"/>
+			<Skill identifier="medical" level="45,55"/>
+			<Skill identifier="mechanical" level="25,35"/>
+			<Skill identifier="electrical" level="25,35"/>
+			<Skill identifier="helm" level="25,45"/>
+		</Skills>
+		<ItemSet>
+			<!--clothes+armor-->
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+
+			<Item identifier="disciplerobes" equip="true"/>
+			<Item identifier="invishelmet" equip="true"/>
+			<Item identifier="sgt_boarmorhvy" equip="true"/>
+
+			<Item identifier="sgt_bobag" equip="true">
+				<Item identifier="scp_scarmag"/>
+				<Item identifier="scp_scarmag"/>
+
+				<Item identifier="scp_scarmag"/>
+				<Item identifier="scp_scarmag"/>
+
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+			</Item>
+			
+			<!--weapons-->
+			<Item identifier="sgt_vhs" equip="false">
+				<Item identifier="scp_scarmag"/>
+			</Item>
+			<Item identifier="scp_scarmag"/>
+			<Item identifier="scp_scarmag"/>
+
+			<Item identifier="scp_scarmag"/>
+			<Item identifier="scp_scarmag"/>
+		</ItemSet>
+	</Job>
+	
+	<!--generic cultist grunt-->
+	<Job identifier="cultist_viper"  onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+		uicolor="0.49,0.36,0.67">
+		<Jobicon>
+			<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
+		</Jobicon>
+		<JobiconSmall>
+			<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,698,28,28" origin="0.5,0.5"/>
+		</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="85,95" primary="true"/>
+			<Skill identifier="medical" level="45,55"/>
+			<Skill identifier="mechanical" level="25,35"/>
+			<Skill identifier="electrical" level="25,35"/>
+			<Skill identifier="helm" level="25,45"/>
+		</Skills>
+		<ItemSet>
+			<!--clothes+armor-->
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="thermheadset" equip="true"/>
+
+			<Item identifier="zealotrobes" equip="true"/>
+			<Item identifier="piratebandana" equip="true"/>
+			<Item identifier="lynxexoskeletonsuitsuit" equip="true"/>
+
+			<Item identifier="sgt_longrangeradio" equip="true">
+
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				
+				<Item identifier="fulguriumbatterycell"/>
+				<Item identifier="fulguriumbatterycell"/>
+				<Item identifier="fulguriumbatterycell"/>
+				<Item identifier="fulguriumbatterycell"/>
+			</Item>
+			
+			<!--weapons-->
+			<Item identifier="sgt_rifle" equip="true"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			
+			<Item identifier="feniterrifleround2"/>
+			<Item identifier="feniterrifleround2"/>
+			<Item identifier="feniterrifleround2"/>
+
+		</ItemSet>
+
+		<ItemSet>
+			<!--clothes+armor-->
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="thermheadset" equip="true"/>
+
+			<Item identifier="zealotrobes" equip="true"/>
+			<Item identifier="scp_hardeneddivingmask" equip="true"/>
+			<Item identifier="lynxexoskeletonsuitsuit" equip="true"/>
+
+			<Item identifier="sgt_longrangeradio" equip="true">
+
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+
+				<Item identifier="fulguriumbatterycell"/>
+				<Item identifier="fulguriumbatterycell"/>
+				<Item identifier="fulguriumbatterycell"/>
+				<Item identifier="fulguriumbatterycell"/>
+			</Item>
+			
+			<!--weapons-->
+			<Item identifier="sgt_rifle" equip="true"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+			<Item identifier="feniterrifleround1"/>
+
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			<Item identifier="feniterrifleround3"/>
+			
+			<Item identifier="feniterrifleround2"/>
+			<Item identifier="feniterrifleround2"/>
+			<Item identifier="feniterrifleround2"/>
+
+		</ItemSet>
+	</Job>
+
+	<!--!cultists end!-->
+
+	<!--!coalition start!-->
+
+	<Job identifier="coalition_basic" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+	uicolor="0.4,0.76,0.8">
+		<Jobicon>
+			<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="640,256,128,128" origin="0.5,0.5"/>
+		</Jobicon>
+		<JobiconSmall>
+			<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5"/>
+		</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="70,85" primary="true"/>
+			<Skill identifier="medical" level="25,35"/>
+			<Skill identifier="mechanical" level="25,35"/>
+			<Skill identifier="electrical" level="25,35"/>
+			<Skill identifier="helm" level="25,45"/>
+		</Skills>
+		<ItemSet>
+
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+			
+			<Item identifier="sgt_lightuniform" equip="true"/>
+			<Item identifier="ballistichelmet1" equip="true"/>
+			<Item identifier="sgt_longrangeradio" equip="true"/>
+			<Item identifier="scp_softvest" equip="true">
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+
+				<Item identifier="scp_vodka"/>
+			</Item>
+
+			<Item identifier="scp_smg9" equip="true">
+				<Item identifier="scp_9mmsmgmag"/>
+			</Item>
+
+			<Item identifier="scp_9mmsmgmag"/>
+			<Item identifier="scp_9mmsmgmag"/>
+			<Item identifier="scp_9mmsmgmag"/>
+			<Item identifier="scp_9mmsmgmag"/>
+
+		</ItemSet>
+		<ItemSet>
+
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+			
+			<Item identifier="scp_heavyuniform" equip="true">
+				<Item identifier="handcuffs"/>
+				<Item identifier="batterycell"/>
+			</Item>
+
+			<Item identifier="scp_simplehelmet" equip="true"/>
+			<Item identifier="scp_riotvest" equip="true"/>
+
+			<Item identifier="sgt_m90t" equip="true">
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+			</Item>
+
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+				<Item identifier="heavystunshell"/>
+
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+	
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+	
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+
+		</ItemSet>
+		<ItemSet>
+			<!--clothes+armor-->
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+
+			<Item identifier="securityuniform2" equip="true"/>
+			<Item identifier="sgt_fieldcap" equip="true"/>
+			<Item identifier="scp_softvest" equip="true"/>
+
+			<Item identifier="scp_assaultpack" equip="true">
+				<Item identifier="scp_scarmag"/>
+				<Item identifier="scp_scarmag"/>
+
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+
+				<Item identifier="harmonica"/>
+				<Item identifier="rum"/>
+
+			</Item>
+			
+			<!--weapons-->
+			<Item identifier="scp_scar20" equip="true">
+				<Item identifier="scp_scarmag"/>
+			</Item>
+			<Item identifier="scp_scarmag"/>
+			<Item identifier="scp_scarmag"/>
+
+			<Item identifier="scp_scarmag"/>
+			<Item identifier="scp_scarmag"/>
+		</ItemSet>
+	</Job>
+
+	<Job identifier="coalition_heavy" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+	uicolor="0.4,0.76,0.8">
+	<Jobicon>
+		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
+	</Jobicon>
+	<JobiconSmall>
+		<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5"/>
+	</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="90,100" primary="true"/>
+			<Skill identifier="medical" level="80,90"/>
+			<Skill identifier="mechanical" level="40,50"/>
+			<Skill identifier="electrical" level="40,50"/>
+			<Skill identifier="helm" level="30,40"/>
+		</Skills>
+		<ItemSet>
+
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+			
+			<Item identifier="scp_heavyuniform" equip="true"/>
+			<Item identifier="ballistichelmet1" equip="true"/>
+			<Item identifier="sgt_longrangeradio" equip="true">
+
+				<Item identifier="scp_scarmag"/>
+				<Item identifier="scp_scarmag"/>
+
+				<Item identifier="scp_scarmag"/>
+				<Item identifier="scp_scarmag"/>
+
+			</Item>
+
+			<Item identifier="scp_heavyvest" equip="true">
+
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+
+			</Item>
+
+			<Item identifier="scp_scar17">
+				<Item identifier="scp_scarmag"/>
+			</Item>
+
+			<Item identifier="scp_scarmag"/>
+			<Item identifier="scp_scarmag"/>
+
+			<Item identifier="scp_scarmag"/>
+			<Item identifier="scp_scarmag"/>
+			
+			<Item identifier="stungrenade"/>
+			<Item identifier="stungrenade"/>
+
+			<Item identifier="commando_giver"/>
+
+		</ItemSet>
+	</Job>
+
+	<Job identifier="coalition_demoman" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+	uicolor="0.4,0.76,0.8">
+	<Jobicon>
+		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="896,256,128,128" origin="0.5,0.5"/>
+	</Jobicon>
+	<JobiconSmall>
+		<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,640,28,28" origin="0.5,0.5"/>
+	</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="90,100" primary="true"/>
+			<Skill identifier="medical" level="80,90"/>
+			<Skill identifier="mechanical" level="40,50"/>
+			<Skill identifier="electrical" level="40,50"/>
+			<Skill identifier="helm" level="30,40"/>
+		</Skills>
+		<ItemSet>
+
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+			
+			<Item identifier="scp_heavyuniform" equip="true"/>
+			<Item identifier="sgt_blackopshelm4" equip="true"/>
+
+			<Item identifier="sgt_boarmorsap" equip="true">
+
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+
+			</Item>
+
+			<Item identifier="scp_rpg7" equip="true">
+				<Item identifier="scp_rpg7he" equip="true"/>
+			</Item>
+
+			<Item identifier="scp_rpg7he"/>
+			<Item identifier="scp_rpg7he"/>
+
+			<Item identifier="scp_smg9">
+				<Item identifier="scp_9mmsmgmag"/>
+			</Item>
+
+			<Item identifier="scp_9mmsmgmag"/>
+			<Item identifier="scp_9mmsmgmag"/>
+
+			<Item identifier="commando_giver"/>
+
+		</ItemSet>
+	</Job>
+
+	<!--!coalition end!-->
+
+	<!--!survivors start!-->
+	<Job identifier="survivor" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true">
+	<Jobicon>
+		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="640,256,128,128" origin="0.5,0.5"/>
+	</Jobicon>
+	<JobiconSmall>
+		<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="641,669,28,28" origin="0.5,0.5"/>
+	</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="10,40" primary="true"/>
+			<Skill identifier="medical" level="10,40"/>
+			<Skill identifier="mechanical" level="10,40"/>
+			<Skill identifier="electrical" level="10,40"/>
+			<Skill identifier="helm" level="10,40"/>
+		</Skills>
+		<!--& homk-->
+		<ItemSet>
+			<item identifier="idcard" equip="true" />
+			
+			<Item identifier="clowncostume" equip="true"/>
+			<Item identifier="clownmask" equip="true"/>
+			<Item identifier="bikehorn"/>
+			<Item identifier="toyhammer"/>
+			<Item identifier="bananapeel"/>
+			<Item identifier="bananapeel"/>
+			<Item identifier="bananapeel"/>
+		</ItemSet>
+
+		<!--scrap hunter-->
+		<ItemSet>
+			<item identifier="quartermasterclothes" equip="true"/>
+			<item identifier="scp_softvest" equip="true"/>
+			<item identifier="crowbar"/>
+			<item identifier="scrap"/>
+			<item identifier="scrap"/>
+			
+			<item identifier="scp_assaultpack" equip="true">
+				<item identifier="scrap"/>
+				<item identifier="scrap"/>
+				<item identifier="scrap"/>
+				<item identifier="scp_wreckorepile"/>
+				<item identifier="scp_wreckmetalpile"/>
+			</item>
+		</ItemSet>
+		<!--engineer-->
+		<ItemSet>
+			<item identifier="idcard" equip="true" />
+			
+			<item identifier="sgt_heavymechanicsuit" equip="true"/>
+			<item identifier="safetyharness" equip="true"/>
+			<item identifier="thghelmet5" equip="true"/>
+
+			<item identifier="screwdriver"/>
+			<item identifier="wrench"/>
+			<item identifier="redwire"/>
+		</ItemSet>
+		<!--escaped convict-->
+		<ItemSet>
+			<item identifier="prisonerclothes" equip="true"/>
+
+			<item identifier="divingknife"/>
+			<item identifier="handcuffs"/>
+			<item identifier="meth"/>
+		</ItemSet>
+		<!--generic civilians past here-->
+		<ItemSet>
+			<item identifier="idcard" equip="true" />
+
+			<Item identifier="commonerclothes1" equip="true"/>
+			<item identifier="ethanol" />
+			<item identifier="cigar" />
+		</ItemSet>
+
+		<ItemSet>
+			<item identifier="idcard" equip="true" />
+
+			<Item identifier="commonerclothes2" equip="true"/>
+			<item identifier="rum" />
+			<item identifier="harmonica" />
+		</ItemSet>
+
+		<ItemSet>
+			<item identifier="idcard" equip="true" />
+
+			<Item identifier="commonerclothes3" equip="true"/>
+			<item identifier="ethanol" />
+		</ItemSet>
+
+		<ItemSet>
+			<item identifier="idcard" equip="true" />
+
+			<Item identifier="commonerclothes4" equip="true"/>
+			<item identifier="scp_vodka" />
+			<Item identifier="antidama1"/>
+		</ItemSet>
+
+		<ItemSet>
+			<item identifier="idcard" equip="true" />
+
+			<Item identifier="commonerclothes5" equip="true"/>
+			<item identifier="ethanol" />
+		</ItemSet>
+	</Job>
+
+	<Job identifier="survivor_medic" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true">
+	<Jobicon>
+		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>
+	</Jobicon>
+	<JobiconSmall>
+		<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,698,28,28" origin="0.5,0.5"/>
+	</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="10,20"/>
+			<Skill identifier="medical" level="40,60" primary="true"/>
+			<Skill identifier="mechanical" level="10,20"/>
+			<Skill identifier="electrical" level="10,20"/>
+			<Skill identifier="helm" level="10,40"/>
+		</Skills>
+		<ItemSet>
+
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+			
+			<Item identifier="sgt_combatmedicuniform" equip="true"/>
+			<Item identifier="ballistichelmet1" equip="true"/>
+
+			<Item identifier="scp_softvest" equip="true">
+
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+				<Item identifier="antibleeding2"/>
+
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+
+				<Item identifier="antibloodloss2"/>
+				<Item identifier="antibloodloss2"/>
+
+				<Item identifier="autosurgeon">
+					<Item identifier="surgeonprogrambullet"/>
+					<Item identifier="batterycell"/>
+				</Item>
+
+			</Item>
+			<Item identifier="batterycell"/>
+			<Item identifier="batterycell"/>
+			<Item identifier="batterycell"/>
+		</ItemSet>
+
+		<ItemSet>
+
+			<Item identifier="idcard" equip="true"/>
+			
+			<Item identifier="doctorsuniform3" equip="true">
+				<Item identifier="scalpel"/>
+				<Item identifier="tweezers"/>
+				<Item identifier="surgeryscissors"/>
+				<Item identifier="suture"/>
+			</Item>
+			<Item identifier="healthscanner" equip="true"/>
+
+			<Item identifier="toolbelt" equip="true">
+
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+				<Item identifier="stypticpowder"/>
+
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+
+			</Item>
+			<Item identifier="pomegrenadeextract"/>
+			<Item identifier="pomegrenadeextract"/>
+			<Item identifier="pomegrenadeextract"/>
+			<Item identifier="ethanol"/>
+		</ItemSet>
+
+		<ItemSet>
+
+			<Item identifier="idcard" equip="true"/>
+			
+			<Item identifier="medicalofficerclothes" equip="true"/>
+			<Item identifier="scp_hardeneddivingmask" equip="true"/>
+			<Item identifier="oxygentank"/>
+
+			<Item identifier="toolbelt">
+				<Item identifier="feniterdecontaminant"/>
+				<Item identifier="feniterdecontaminant"/>
+				<Item identifier="feniterdecontaminant"/>
+				<Item identifier="feniterdecontaminant"/>
+				<Item identifier="feniterdecontaminant"/>
+				<Item identifier="feniterdecontaminant"/>
+
+				<Item identifier="antipsychosis"/>
+				<Item identifier="antipsychosis"/>
+
+				<Item identifier="scp_psyblock"/>
+				<Item identifier="scp_psyblock"/>
+
+				<Item identifier="stabilozine"/>
+				<Item identifier="stabilozine"/>
+				<Item identifier="stabilozine"/>
+				<Item identifier="stabilozine"/>
+				<Item identifier="stabilozine"/>
+
+				<Item identifier="scp_condensedstabilozine"/>
+			</Item>
+			
+			<Item identifier="antibleeding1"/>
+			<Item identifier="antibleeding1"/>
+			<Item identifier="antibleeding1"/>
+			<Item identifier="antibleeding1"/>
+			<Item identifier="antibleeding1"/>
+			<Item identifier="antibleeding1"/>
+			<Item identifier="antibleeding1"/>
+			<Item identifier="antibleeding1"/>
+
+			<Item identifier="pomegrenadeextract"/>
+			<Item identifier="pomegrenadeextract"/>
+			<Item identifier="pomegrenadeextract"/>
+			<Item identifier="pomegrenadeextract"/>
+		</ItemSet>
+	</Job>
+	<!--!survivors end!-->
+
+	<!--!bandit start!-->
+	<!--bandits are meant to be a mid-low threat. somewhere between cultists and coalition cannon fodder, but not quite a coalie heavy. they're a neutral party with no allegiances, but they have their own goals and the weaponry to (try) get rid of any obstacles.-->
+	<Job identifier="bandit_basic" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+	uicolor="0.87,0.38,0.33">
+	<Jobicon>
+		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5"/>
+	</Jobicon>
+	<JobiconSmall>
+		<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5"/>
+	</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="50,60" primary="true"/>
+			<Skill identifier="medical" level="30,40"/>
+			<Skill identifier="mechanical" level="20,30"/>
+			<Skill identifier="electrical" level="20,30"/>
+			<Skill identifier="helm" level="10,20"/>
+		</Skills>
+		<ItemSet>
+
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+			
+			<Item identifier="pirateclotheshard" equip="true"/>
+			<Item identifier="scp_simplehelmet" equip="true"/>
+
+			<Item identifier="scp_renegadevest" equip="true">
+
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+
+				<Item identifier="pomegrenadeextract"/>
+				<Item identifier="pomegrenadeextract"/>
+				<Item identifier="pomegrenadeextract"/>
+				<Item identifier="pomegrenadeextract"/>
+
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+
+				<Item identifier="sgt_10mmmagext"/>
+				<Item identifier="sgt_10mmmagext"/>
+				<Item identifier="sgt_10mmmagext"/>
+
+			</Item>
+
+			<Item identifier="sgt_hpc">
+				<Item identifier="sgt_10mmmagext"/>
+			</Item>
+
+			<Item identifier="sgt_10mmmagext"/>
+			<Item identifier="sgt_10mmmagext"/>
+			<Item identifier="sgt_10mmmagext"/>
+			
+			<Item identifier="scp_pipebomb"/>
+			<Item identifier="scp_pipebomb"/>
+			
+			<Item identifier="divingknife"/>
+
+		</ItemSet>
+	</Job>
+
+	<Job identifier="bandit_leader" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+	uicolor="0.87,0.38,0.33">
+	<Jobicon>
+		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5"/>
+	</Jobicon>
+	<JobiconSmall>
+		<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,669,28,28" origin="0.5,0.5"/>
+	</JobiconSmall>
+		<Skills>
+			<Skill identifier="weapons" level="90,100" primary="true"/>
+			<Skill identifier="medical" level="80,90"/>
+			<Skill identifier="mechanical" level="40,50"/>
+			<Skill identifier="electrical" level="40,50"/>
+			<Skill identifier="helm" level="30,40"/>
+		</Skills>
+		<ItemSet>
+
+			<Item identifier="idcard" equip="true"/>
+			<Item identifier="headset" equip="true"/>
+			
+			<Item identifier="pirateclotheshard" equip="true"/>
+			<Item identifier="piratecaptainhat" equip="true"/>
+
+			<Item identifier="scp_heavyvest" equip="true">
+
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+				<Item identifier="antibleeding1"/>
+
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+				<Item identifier="antibloodloss1"/>
+
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+				<Item identifier="deusizine"/>
+
+				<Item identifier="heavyshotshell"/>
+				<Item identifier="heavyshotshell"/>
+				<Item identifier="heavyshotshell"/>
+				<Item identifier="heavyshotshell"/>
+				<Item identifier="heavyshotshell"/>
+				<Item identifier="heavyshotshell"/>
+
+			</Item>
+
+			<!--very potent self defense tool. high stun and a lot of knockback makes it a good "watch yo tone mf" weapon.-->
+			<Item identifier="sgt_dbs">
+				<Item identifier="heavyshotshell"/>
+				<Item identifier="heavyshotshell"/>
+			</Item>
+
+			<!--2 stacks shotshell-->
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+			<Item identifier="heavyshotshell"/>
+			
+			<Item identifier="molotovcoctail"/>
+			<Item identifier="molotovcoctail"/>
+			<Item identifier="molotovcoctail"/>
+			
+			<Item identifier="cigar"/>
+
+			<Item identifier="boardingaxe"/>
+
+		</ItemSet>
+	</Job>
+</Jobs>

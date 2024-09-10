@@ -1,0 +1,154 @@
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <!--Fatigue-->
+	<afflictionname.fatigue>Fatigue</afflictionname.fatigue>
+	<afflictiondescription.fatigue.low>You could use a break to regain your energy.</afflictiondescription.fatigue.low>
+	<afflictiondescription.fatigue.high>You can't run like this for much longer, you need to stop and catch your breath.</afflictiondescription.fatigue.high>
+  
+  <!--Preso Latex-->
+  <afflictionname.scp_presolatexinfection>Preso Latex Petrification</afflictionname.scp_presolatexinfection>
+  <afflictiondescription.scp_presolatexinfection>The patient's dermal, subcutaneous and muscle tissues are rapidly being converted into Preso Latex. The affected areas beginning to rapidly shut down, with the patient's skin turning an anoxic black.</afflictiondescription.scp_presolatexinfection>
+  <afflictioncauseofdeath.scp_presolatexinfection>Turned into a lifeless rubber statue.</afflictioncauseofdeath.scp_presolatexinfection>
+  <afflictioncauseofdeathself.scp_presolatexinfection>You have been converted into a lifeless rubber statue of your former self.</afflictioncauseofdeathself.scp_presolatexinfection>
+  <descscppresomin>The patient's upper cutaneous skin layers are beginning to grow an anoxic black, a sense of numbness present in the affected areas.</descscppresomin>
+  <descscppresomod>The patient's body is growing lethargic, the Preso Latex converting the subcutaneous tissue layers and clouding their vision.</descscppresomod>
+  <descscppresosev>The patient's internal organs are being rapidly converted, their consciousness rapidly degrading and are showing signs of respiratory arrest.</descscppresosev>
+  <descscppresomax>The patient has entirely turned into a completely lifeless rubber statue inside and out, the skin cold to the touch.</descscppresomax>
+ 
+  <!--Devil's Blood-->
+  <afflictionname.scp_devilpoisoning>Devil's Blood Toxicosis</afflictionname.scp_devilpoisoning>
+  <afflictiondescription.scp_devilpoisoning>The patient's skin is slowly becoming vividly flushed, the epidermal and dermal tissues showing apparent signs of spontaneous hemorrhaging, along with the patient suffering from severe expistaxis and subconjunctival hemorrhages to the major eye blood vessels.</afflictiondescription.scp_devilpoisoning>
+  <afflictioncauseofdeath.scp_devilpoisoning>Liquefied from the inside.</afflictioncauseofdeath.scp_devilpoisoning>
+  <afflictioncauseofdeathself.scp_devilpoisoning>Your internal organs have been liquefied by Devil's Blood.</afflictioncauseofdeathself.scp_devilpoisoning>
+  <descscpdevilmin>The patient's skin is growing strangely sore looking, with the ears and eyes beginning to spontaneously bleed.</descscpdevilmin>
+  <descscpdevilmod>The patient's mouth is dripping with blood and the skin is developing bleeding lesions that pour out blood at an alarming rate.</descscpdevilmod>
+  <descscpdevilsev>The patient is rapidly falling into hypovolemic shock as blood pours out of every oraphace, the skin all over gushing out blood.</descscpdevilsev>
+  <descscpdevilmax>The patient has been completely exsanguinated, a bloody mess of ruptured veins and arteries is all that's left.</descscpdevilmax>
+  
+  <!--Vomiting-->
+  <afflictionname.scp_vomiting>Profuse Vomiting</afflictionname.scp_vomiting>
+  <afflictiondescription.scp_vomiting>The patient's GI tract is significantly disturbed by something, near constantly having to stop in order to vomit, the signs of hematemesis visible as blood is beginning to appear.</afflictiondescription.scp_vomiting>
+  <afflictioncauseofdeath.scp_vomiting>Choked on vomit.</afflictioncauseofdeath.scp_vomiting>
+  <afflictioncauseofdeathself.scp_vomiting>You have choked on your own vomit.</afflictioncauseofdeathself.scp_vomiting>
+  <!--Vomiting Blood-->
+  <afflictionname.scp_vomitingblood>Hematemesis</afflictionname.scp_vomitingblood>
+  <afflictiondescription.scp_vomitingblood>The patient's GI tract is showing signs of rupturing, occasionally vomiting large volumes of blood.</afflictiondescription.scp_vomitingblood>
+  <afflictioncauseofdeath.scp_vomitingblood>Bled to death internally.</afflictioncauseofdeath.scp_vomitingblood>
+  <afflictioncauseofdeathself.scp_vomitingblood>You have bled to death internally.</afflictioncauseofdeathself.scp_vomitingblood>
+  
+  <!--Hexa Nova-->
+  <afflictionname.scp_hexgasdamage>Hexa-Nova Gas Intoxication</afflictionname.scp_hexgasdamage>
+  <afflictiondescription.scp_hexgasdamage>The patient is experiencing rapid degredation of the CNS, cardiovascular and muscular systems, their skin growing necrotic before your eyes.</afflictiondescription.scp_hexgasdamage>
+  <afflictioncauseofdeath.scp_hexgasdamage>Rapidly burnt away on the inside and out.</afflictioncauseofdeath.scp_hexgasdamage>
+  <afflictioncauseofdeathself.scp_hexgasdamage>You haved died from the effects of Hexa-Nova exposure.</afflictioncauseofdeathself.scp_hexgasdamage>
+  
+  <!--Psi Damage-->
+  <afflictionname.scp_psidamage>Psi-Radiation Exposure</afflictionname.scp_psidamage>
+  <afflictiondescription.scp_psidamage>The patient's CNS is heavily overstimulated from being exposed to anomalous electromagnetic fields, their vision blurry and their body violently twitching.</afflictiondescription.scp_psidamage>
+  <afflictioncauseofdeath.scp_psidamage>Nervous System burnout from Psi-Radiation</afflictioncauseofdeath.scp_psidamage>
+  <afflictioncauseofdeathself.scp_psidamage>Your Nervous System was destroyed via Psi-radiation exposure.</afflictioncauseofdeathself.scp_psidamage>
+  <descscppsimin>The patient's CNS has been exposed to anomalous electromagnetic radiation, their eyes dance around and their body twitches every so often.</descscppsimin>
+  <descscppsimod>The patient's CNS has been heavily overstimulated from being exposed to anomalous electromagnetic radiation, their vision is hampered and their co-ordination significantly degraded.</descscppsimod>
+  <descscppsisev>The patient's CNS has been severely overstimulated from being exposed to anomalous electromagnetic radiation, their brain is rapidly shutting down alongside most of the CNS being heavily damaged.</descscppsisev>
+  
+  <!--Chronic Psi Damage-->
+  <afflictionname.scp_psidamagechronic>Sakharov Syndrome</afflictionname.scp_psidamagechronic>
+  <afflictiondescription.scp_psidamagechronic>The patient's CNS remains permanently damaged after prolonged exposure to Psi-Radiation.</afflictiondescription.scp_psidamagechronic>
+  <descscppsichronmin>The patient is experiencing permanent long term effects of Psi-Radiation exposure and is constantly agitated and paranoid, their body forever slightly trembling.</descscppsichronmin>
+  <descscppsichronmod>The patient is experiencing permanent long term effects of Psi-Radiation exposure, their entire body continues to ache, their consciousness is clouded and appear to be developing Alzheimers related symptoms.</descscppsichronmod>
+  <descscppsichronsev>The patient is experiencing permanent and severe side effects from their previous Psi-Radiation exposure, they have a never-ending migraine and face difficulties in doing even the most basic of coordination.</descscppsichronsev>
+
+  <!--Psi Resistance-->
+  <afflictionname.scp_psiresistance>Psi-Radiation Resistance</afflictionname.scp_psiresistance>
+  <afflictiondescription.scp_psiresistance>The patient's body is inhibiting Serotonin and has become more resistant to Psi-Radiation induced overstimulation.</afflictiondescription.scp_psiresistance>
+
+  <!--Ignis Latex-->
+  <afflictionname.scp_firelatexburn>Ignis Latex Burns</afflictionname.scp_firelatexburn>
+  <afflictiondescription.scp_firelatexburn>The patient is suffering severe burns that encompass the entire body part internally and externally, causing unfathomable pain.</afflictiondescription.scp_firelatexburn>
+  <afflictioncauseofdeath.scp_firelatexburn>Ignis Latex incineration</afflictioncauseofdeath.scp_firelatexburn>
+  <afflictioncauseofdeathself.scp_firelatexburn>Your body was incinerated via Ignis Latex.</afflictioncauseofdeathself.scp_firelatexburn>
+  <scpfirelatexburnmin>The patient has Ignis Latex stuck onto their body, the tissue damage however appears minimal for the time being.</scpfirelatexburnmin>
+  <scpfirelatexburnmod>The patient is experiencing significant burn damage from Ignis Latex, the injury seeping deep into the affected body part.</scpfirelatexburnmod>
+  <scpfirelatexburnsev>The patient is suffering severe Ignis Latex burns that encompass the entire body part internally and externally, leaving a horrific scene.</scpfirelatexburnsev>
+
+  <!--Meth Withdrawal-->
+  <afflictionname.methwithdrawal>Methamphetamine withdrawal</afflictionname.methwithdrawal>
+  <afflictiondescription.methwithdrawal>Agitation and a tremor are obvious, as are the signs of nausea.</afflictiondescription.methwithdrawal>
+  <afflictioncauseofdeath.methwithdrawal>Died of meth withdrawal.</afflictioncauseofdeath.methwithdrawal>
+  <afflictioncauseofdeathself.methwithdrawal>You died of meth withdrawal.</afflictioncauseofdeathself.methwithdrawal>
+  
+  <!--Meth OD-->
+  <afflictionname.methoverdose>Methamphetamine overdose</afflictionname.methoverdose>
+  <afflictiondescription.methoverdose>The patient has pinpoint pupils and icy cold skin. They struggle to breathe and swallow.</afflictiondescription.methoverdose>
+  <afflictioncauseofdeath.methoverdose>Died of meth overdose.</afflictioncauseofdeath.methoverdose>
+  <afflictioncauseofdeathself.methoverdose>You died of meth overdose.</afflictioncauseofdeathself.methoverdose>
+  
+  <!--Meth Addiction-->
+  <afflictionname.methaddiction>Methamphetamine addiction</afflictionname.methaddiction>
+  <afflictiondescription.methaddiction>The patient is happy enough... so long as they get what they need.</afflictiondescription.methaddiction>
+  <afflictioncauseofdeath.methaddiction>Died of meth addiction.</afflictioncauseofdeath.methaddiction>
+  <afflictioncauseofdeathself.methaddiction>You died of meth addiction.</afflictioncauseofdeathself.methaddiction>
+  
+  <!--Steroids Withdrawal-->
+  <afflictionname.steroidwithdrawal>Steroid withdrawal</afflictionname.steroidwithdrawal>
+  <afflictiondescription.steroidwithdrawal>Agitation and a tremor are obvious, as are the signs of nausea.</afflictiondescription.steroidwithdrawal>
+  <afflictioncauseofdeath.steroidwithdrawal>Died of steroid withdrawal.</afflictioncauseofdeath.steroidwithdrawal>
+  <afflictioncauseofdeathself.steroidwithdrawal>You died of steroid withdrawal.</afflictioncauseofdeathself.steroidwithdrawal>
+  
+  <!--Steroids OD-->
+  <afflictionname.steroidoverdose>Steroid overdose</afflictionname.steroidoverdose>
+  <afflictiondescription.steroidoverdose>The patient has pinpoint pupils and icy cold skin. They struggle to breathe and swallow.</afflictiondescription.steroidoverdose>
+  <afflictioncauseofdeath.steroidoverdose>Died of steroid overdose.</afflictioncauseofdeath.steroidoverdose>
+  <afflictioncauseofdeathself.steroidoverdose>You died of steroid overdose.</afflictioncauseofdeathself.steroidoverdose>
+  
+  <!--Steroids Addiction-->
+  <afflictionname.steroidaddiction>Steroid addiction</afflictionname.steroidaddiction>
+  <afflictiondescription.steroidaddiction>The patient is happy enough... so long as they get what they need.</afflictiondescription.steroidaddiction>
+  <afflictioncauseofdeath.steroidaddiction>Died of steroid addiction.</afflictioncauseofdeath.steroidaddiction>
+  <afflictioncauseofdeathself.steroidaddiction>You died of steroid addiction.</afflictioncauseofdeathself.steroidaddiction>
+	
+  <!--Pain-->
+  <afflictiondescription.pain>The patient is in pain.</afflictiondescription.pain>
+	<afflictiondescription.pain.self>You're in pain.</afflictiondescription.pain.self>
+
+  <!--Surgery Affliction-->
+  <afflictionname.incision>Surgical incision</afflictionname.incision>
+  <afflictiondescription.incision>A precise surgical incision is present.</afflictiondescription.incision>
+  <afflictioncauseofdeath.incision>Died in surgery.</afflictioncauseofdeath.incision>
+  <afflictioncauseofdeathself.incision>You have died due to a surgical incision.</afflictioncauseofdeathself.incision>
+  
+  <!--Ether Tank-->
+  <afflictionname.anesthesia>Anesthesia</afflictionname.anesthesia>
+  <afflictiondescription.anesthesia>The patient shows symptoms of exposure to an anesthesia.</afflictiondescription.anesthesia>
+  <afflictioncauseofdeath.anesthesia>Sleeped to death.</afflictioncauseofdeath.anesthesia>
+  <afflictioncauseofdeathself.anesthesia>You sleeped to death.</afflictioncauseofdeathself.anesthesia>
+  
+  <!--Organ Removal-->
+  <afflictionname.missingorgan>Missing organs</afflictionname.missingorgan>
+  <afflictiondescription.missingorgan>The patient seems unstable due to missing specific missing organs.</afflictiondescription.missingorgan>
+  <afflictioncauseofdeath.missingorgan>Died of organ failure.</afflictioncauseofdeath.missingorgan>
+  <afflictioncauseofdeathself.missingorgan>You died of organ failure.</afflictioncauseofdeathself.missingorgan>
+  
+  <!--Painkillers-->
+  <afflictionname.morphineaffliction>Painkillers</afflictionname.morphineaffliction>
+  <afflictiondescription.morphineaffliction>The patient seems calm and painless.</afflictiondescription.morphineaffliction>
+  <afflictioncauseofdeath.morphineaffliction>Died of morphine overdose.</afflictioncauseofdeath.morphineaffliction>
+  <afflictioncauseofdeathself.morphineaffliction>You died of morphine overdose.</afflictioncauseofdeathself.morphineaffliction>
+  
+  <!--Blood Clot-->
+  <afflictionname.bloodclot>Blood clot</afflictionname.bloodclot>
+  <afflictiondescription.bloodclot>Specific areas are turning pale and a visible barrier between pale and non pale skin can be seen.</afflictiondescription.bloodclot>
+  <afflictioncauseofdeath.bloodclot>Died of a blood clot.</afflictioncauseofdeath.bloodclot>
+  <afflictioncauseofdeathself.bloodclot>You died of a blood clot.</afflictioncauseofdeathself.bloodclot>
+  
+  <!--Surgery Implant-->
+  <afflictionname.surgeryreadyimplant>Surgery Implant</afflictionname.surgeryreadyimplant>
+  <afflictiondescription.surgeryreadyimplant>The patient has an unnatural amount of adrenaline.</afflictiondescription.surgeryreadyimplant>
+
+  <!--Infected Wound-->
+  <afflictionname.infection>Infected wound</afflictionname.infection>
+  <afflictiondescription.infection.low>The patient's immune system is handling a wound infection somewhat well - treatments for other infections are likely to be fully effective still.</afflictiondescription.infection.low>
+  <afflictiondescription.infection>The patient's immune system is occupied with a wound infection, rendering treatments for other types of infection less effective.</afflictiondescription.infection>
+  <afflictiondescription.infection.high>The patient's immune system is spread far too thin keeping a wound infection from advancing, rendering treatments against other kinds of infection nigh useless without a very high dosage.</afflictiondescription.infection.high>
+
+
+</infotexts>

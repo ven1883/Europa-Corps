@@ -1,0 +1,401 @@
+<Items>
+    
+    <!--###-->
+    <!--Vests-->
+    
+    
+    <!--Helmets-->
+    
+    <Item name="" identifier="scp_simplehelmet" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
+        
+        <Sprite name="Simple Helmet" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" sourcerect="168,0,72,55" depth="0.6" origin="0.5,0.5" />
+        
+        <Body radius="30" density="50" />
+        
+        <Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
+            
+            <damagemodifier afflictionidentifiers="gunshotwound,bleeding,lacerations" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+            
+            <sprite name="Simple Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.74" hidewearablesoftype="hair" sourcerect="168,0,72,79" origin="0.49987426,0.54756904" />
+            
+        </Wearable>
+        
+    </Item>
+    
+    <!--###-->
+    
+    <!--++++++++++++++++++++++++++++++++++++-->
+    
+    <!--Uniforms-->
+    
+    <Item name="" identifier="scp_heavyhazmatuniform" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+
+        <ItemContainer 
+            capacity="1" maxstacksize="1" 
+            hideitems="true" 
+            containedstateindicatorstyle="tank">
+
+            <Containable items="oxygensource,weldingtoolfuel" />
+
+        </ItemContainer>
+
+        <InventoryIcon name="heavyhazmatinv" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" sourcerect="677,0,78,67" origin="0.5,0.5" />
+        <Sprite name="heavyhazmatground" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" sourcerect="640,69,115,62" depth="0.6" origin="0.5,0.5" />
+
+        <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+        <Wearable slots="Any,InnerClothes+Head" msg="ItemMsgPickUpSelect">
+
+            <sprite name="HAZMAT helm Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.77" hidewearablesoftype="hair,beard" sourcerect="678,13,88,86" origin="0.5065703,0.5108439" />
+            <sprite name="Heavy HAZMAT Torso" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Hand" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Hand" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Waist" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Leg" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Leg" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+            <sprite name="Heavy HAZMAT Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/heavyhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+
+            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection" damagemultiplier="0" probabilitymultiplier="0" />
+            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.15" />
+            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn,burn,scp_psidamage" damagemultiplier="0.5" />
+            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,gunshotwound" damagemultiplier="0.85" />
+
+            <SkillModifier skillidentifier="electrical" skillvalue="5" />
+            <SkillModifier skillidentifier="weapons" skillvalue="-20" />
+            <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+
+            <StatValue stattype="WalkingSpeed" value="-0.15" />
+            <StatValue stattype="SwimmingSpeed" value="-0.1" />
+
+            <StatusEffect tags="cbrnsuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
+            
+            <StatusEffect type="OnWearing" target="Character" HideFace="true" disabledeltatime="true" />
+
+            <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
+                <Conditional IsDead="false" />
+                <RequiredItem items="oxygentank" type="Contained" />
+            </StatusEffect>
+
+            <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+                <Conditional IsDead="false" />
+                <RequiredItem items="weldingfueltank" type="Contained" />
+            </StatusEffect>
+
+            <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+                <RequiredItem items="incendiumfueltank" type="Contained" />
+                <Affliction identifier="burn" amount="0.1" />
+            </StatusEffect>
+
+            <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+                <Conditional IsDead="false" />
+                <RequiredItem items="oxygenitetank" type="Contained" />
+            </StatusEffect>
+
+            <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+                <Conditional IsDead="false" />
+                <RequiredItem items="oxygenitetank" type="Contained" />
+            </StatusEffect>
+
+            <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+
+        </Wearable>
+
+    </Item>
+	
+    <!--###-->
+
+	<!-- Uniform 3 for 3rd medic: fortunately there was already a sprite, nice -->
+	<Item name="" identifier="doctorsuniform3" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+
+		<InventoryIcon name="Medic Uniform 3 Icon" texture="%ModDir%/Items/Apparel/Sprites/outfit_icon.png" sourcerect="0,23,128,105" origin="0.5,0.5" />
+		<Sprite name="Medic Uniform 3" texture="%ModDir%/Items/Apparel/Sprites/outfit_icon.png" sourcerect="153,91,205,75" depth="0.6" origin="0.5,0.5" />
+
+		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+
+		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+			<sprite name="Medic Uniform 2 Torso" texture="%ModDir%/Items/Apparel/Sprites/medic2.png" limb="Torso" hidelimb="false" inherittexturescale="true" origin="0.5,0.5" sourcerect="147,19,110,149" />
+			<sprite name="Medic Uniform 2 Right Hand" texture="%ModDir%/Items/Apparel/Sprites/medic2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Hand" texture="%ModDir%/Items/Apparel/Sprites/medic2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/medic2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/medic2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/medic2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/medic2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Waist" texture="%ModDir%/Items/Apparel/Sprites/medic2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<!--sprite name="Medic Uniform 2 Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" "93,13,53,107" /-->
+			<sprite name="Medic Uniform 2 Right Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"	/>
+			<sprite name="Medic Uniform 2 Left Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Leg" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Leg" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+		</Wearable>
+		
+		<ItemContainer capacity="4">
+			<Containable items="surgerytool" />
+		</ItemContainer>
+
+	</Item>
+    
+    <!--++++++++++++++++++++++++++++++++++++-->
+    
+    <!--Backpacks-->
+    
+    <Item name="" identifier="scp_assaultpack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+
+        <Sprite name="smolpaccground" texture="%ModDir%/Items/Apparel/Sprites/smolpacc.png" depth="0.6" sourcerect="117,68,80,49" origin="0.5,0.5" />
+        <InventoryIcon name="smolpaccinv" texture="%ModDir%/Items/Apparel/Sprites/smolpacc.png" sourcerect="122,5,61,61" origin="0.5,0.5" />
+        
+        <Body width="100" height="50" density="15" />
+
+        <ItemContainer 
+            capacity="8" 
+            depth="0.5">
+
+            <Containable items="smallitem,ammo,explosive" excludeditems="toolbelt,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack,bulkyweapon" />
+        
+        </ItemContainer>
+
+        <Holdable 
+            slots="RightHand+LeftHand" 
+            holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0"
+            msg="ItemMsgPickUpUse" 
+            canbeselected="false" canbepicked="true" pickkey="Select" 
+            allowswappingwhenpicked="false" />
+        
+        <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+
+            <sprite name="Assault Backpack Wearable" texture="%ModDir%/Items/Apparel/Sprites/smolpacc.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="5,7,94,89" origin="0.7110833,0.6007368" scale="0.6" />
+            
+            <StatValue stattype="SwimmingSpeed" value="-0.05" />
+        
+        </Wearable>
+
+    </Item>
+    
+    <!--###-->
+    
+    <Item name="" identifier="scp_heavypack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+
+        <InventoryIcon name="largepackinv" texture="%ModDir%/Items/Apparel/Sprites/largepack.png" sourcerect="193,67,60,68" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Items/Apparel/Sprites/largepack.png" depth="0.6" sourcerect="152,138,145,72" origin="0.5,0.5" />
+
+        <Body width="100" height="70" density="15" />
+
+        <ItemContainer 
+            capacity="24" 
+            depth="0.5">
+
+            <Containable items="smallitem,mediumitem,ammo,explosive" excludeditems="mobilecontainer,rucksack,backpack,weaponcrate,vest,bulkyweapon" />
+
+        </ItemContainer>
+
+        <Holdable 
+            slots="RightHand+LeftHand" 
+            holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" 
+            msg="ItemMsgPickUpUse" 
+            canbeselected="false" canbepicked="true" pickkey="Select" 
+            allowswappingwhenpicked="false" />
+
+        <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+            
+            <sprite name="Heavy Backpack Wearable" texture="%ModDir%/Items/Apparel/Sprites/largepack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="17,8,117,146" origin="0.78,0.57" scale="0.6" />
+            
+            <SkillModifier skillidentifier="weapons" skillvalue="-15" />
+            <SkillModifier skillidentifier="mechanical" skillvalue="-25" />
+            <SkillModifier skillidentifier="electrical" skillvalue="-25" />
+            
+            <StatValue stattype="WalkingSpeed" value="-0.2" />
+            <StatValue stattype="SwimmingSpeed" value="-0.25" />
+
+        </Wearable>
+
+    </Item>
+    
+    <!--###-->
+    
+    <Item name="" identifier="scp_tacpack" scale="0.7" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+
+        <InventoryIcon name="taccpaccground" texture="%ModDir%/Items/Apparel/Sprites/tacpacc.png" sourcerect="113,5,57,58" origin="0.5,0.5" />
+        <Sprite name="taccpaccground" texture="%ModDir%/Items/Apparel/Sprites/tacpacc.png" depth="0.6" sourcerect="104,71,103,59" origin="0.5,0.5" />
+        <Body width="100" height="50" density="15" />
+
+        <ItemContainer 
+            capacity="12" 
+            depth="0.5">
+
+            <Containable items="smallitem,mediumitem,ammo,explosive" excludeditems="toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack,bulkyweapon" />
+        
+        </ItemContainer>
+
+        <Holdable 
+            slots="RightHand+LeftHand" 
+            holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" 
+            msg="ItemMsgPickUpUse" 
+            canbeselected="false" canbepicked="true" pickkey="Select" 
+            allowswappingwhenpicked="false" />
+        
+        <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+            
+            <sprite name="Tactical Backpack Wearable" texture="%ModDir%/Items/Apparel/Sprites/tacpacc.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="0,4,102,104" origin="0.7608965,0.49651888" scale="0.7" />
+            
+            <StatValue stattype="WalkingSpeed" value="-0.05" />
+            <StatValue stattype="SwimmingSpeed" value="-0.1" />
+
+        </Wearable>
+
+    </Item>
+    
+    <!--###-->
+    
+    <Item name="" identifier="scp_fieldpack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+
+        <InventoryIcon name="fieldpackinv" texture="%ModDir%/Items/Apparel/Sprites/fieldpack.png" sourcerect="130,-2,64,64" origin="0.5,0.5" />
+        <Sprite name="fieldpack" texture="%ModDir%/Items/Apparel/Sprites/fieldpack.png" depth="0.6" sourcerect="141,66,115,83" origin="0.5,0.5" />
+        <Body width="115" height="83" density="15" />
+
+        <ItemContainer 
+            capacity="16" 
+            depth="0.5">
+
+            <Containable items="smallitem,mediumitem,ammo,explosive" excludeditems="weaponcrate,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack,bulkyweapon" />
+       
+        </ItemContainer>
+
+        <Holdable 
+            slots="RightHand+LeftHand" 
+            holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" 
+            msg="ItemMsgPickUpUse" 
+            canbeselected="false" canbepicked="true" pickkey="Select" 
+            allowswappingwhenpicked="false" />
+        
+        <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+            <sprite name="Field Pack Wearable" texture="%ModDir%/Items/Apparel/Sprites/fieldpack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="0,0,125,117" origin="0.84,0.51" scale="0.6" />
+            <SkillModifier skillidentifier="weapons" skillvalue="-5" />
+            <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+            <SkillModifier skillidentifier="electrical" skillvalue="-10" />
+            <StatValue stattype="WalkingSpeed" value="-0.1" />
+            <StatValue stattype="SwimmingSpeed" value="-0.15" />
+        </Wearable>
+    </Item>
+    
+    <!--###-->
+    
+    <Item name="" identifier="scp_protopack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+
+        <InventoryIcon name="protopackinv" texture="%ModDir%/Items/Apparel/Sprites/protopack.png" sourcerect="196,69,68,69" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Items/Apparel/Sprites/protopack.png" depth="0.6" sourcerect="149,160,144,52" origin="0.5,0.5" />
+        <Body width="100" height="70" density="15" />
+
+        <ItemContainer 
+            capacity="16" 
+            depth="0.5">
+
+            <Containable items="smallitem,mediumitem,ammo,explosive" excludeditems="mobilecontainer,rucksack,backpack,weaponcrate,vest,bulkyweapon" />
+
+            <SlotIcon slotindex="16" texture="%ModDir%/Items/Weapons/Sprites/pistols.png" sourcerect="448,452,64,60" origin="0.5,0.5" />
+
+            <SubContainer 
+                capacity="1" maxstacksize="1" 
+                containedspritedepth="0.5">
+
+                <Containable items="bulkyweapon,gun" hide="false" itempos="30,-8" />
+
+            </SubContainer>
+
+        </ItemContainer>
+
+        <Holdable 
+            slots="RightHand+LeftHand" 
+            holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" 
+            msg="ItemMsgPickUpUse" 
+            canbeselected="false" canbepicked="true" pickkey="Select" 
+            allowswappingwhenpicked="false">
+            
+            <StatusEffect type="Always" target="Character" interval="0.5">
+                <RequiredItem item="bulkyweapon" type="Contained" targetslot="16" />
+                <Affliction identifier="scp_protobulk" amount="120" />
+            </StatusEffect>
+        </Holdable>
+
+        <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+            
+            <sprite name="Proto Backpack Wearable" texture="%ModDir%/Items/Apparel/Sprites/protopack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="40,13,113,147" origin="0.62,0.54" scale="0.6" />
+           
+            <SkillModifier skillidentifier="mechanical" skillvalue="-5" />
+            <SkillModifier skillidentifier="electrical" skillvalue="-5" />
+        
+        </Wearable>
+
+    </Item>
+    
+    <!--###-->
+    
+    <!--++++++++++++++++++++++++++++++++++++-->
+    
+    <!--Misc-->
+    
+    <Item name="" identifier="scp_hardeneddivingmask" scale="0.4" category="Diving,Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+
+        <Sprite name="hardeneddivmask" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" depth="0.55" sourcerect="685,198,86,72" origin="0.5,0.5" />
+        <Body width="40" height="35" density="15" />
+
+        <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+            
+            <sprite name="hardeneddivmaskwear" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" hideotherwearables="false" sourcerect="685,198,86,72" origin="0.42363268,0.46066296" hidewearablesoftype="moustache,beard" />
+            
+            <StatusEffect type="OnWearing" target="Character" HideFace="true" SpeedMultiplier="0.95" setvalue="true" disabledeltatime="true" />
+            
+            <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
+                <Conditional IsDead="false" />
+                <RequiredItem items="oxygentank" type="Contained" />
+            </StatusEffect>
+            
+            <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+                <Conditional IsDead="false" />
+                <RequiredItem items="weldingfueltank" type="Contained" />
+            </StatusEffect>
+            
+            <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+                <RequiredItem items="incendiumfueltank" type="Contained" />
+                <Affliction identifier="burn" amount="0.1" />
+            </StatusEffect>
+            
+            <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+                <Conditional IsDead="false" />
+                <RequiredItem items="oxygenitetank" type="Contained" />
+            </StatusEffect>
+            
+            <StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+                <Conditional IsDead="false" />
+                <RequiredItem items="oxygenitetank" type="Contained" />
+            </StatusEffect>
+            
+            <damagemodifier afflictionidentifiers="lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+            
+            <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+
+        </Wearable>
+
+        <ItemContainer 
+            capacity="1" maxstacksize="1" 
+            hideitems="true" 
+            containedstateindicatorstyle="tank">
+
+            <Containable items="oxygensource,weldingtoolfuel" />
+
+        </ItemContainer>
+
+    </Item>
+    
+</Items>
