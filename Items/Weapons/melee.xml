@@ -8,9 +8,11 @@
 
 		<!--Bayonet-->
 	<Item name="" description="" identifier="scp_m9bayonet" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-			<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" origin="0.5,0.5"/>
-			<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" depth="0.55" origin="0.5,0.5"/>
-			<Body width="125" height="15" density="50" />
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" origin="0.5,0.5"/>
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,0,164,38" depth="0.55" origin="0.5,0.5"/>
+
+		<Body width="125" height="15" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-18,0" holdangle="30" reload="0.9" reloadnoskill="1.6" reloadskillrequirement="50" range="150" combatPriority="25" msg="ItemMsgPickUpSelect">
 			<Attack 
@@ -43,27 +45,15 @@
 		<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
 
 		<SkillRequirementHint identifier="weapons" level="50" />
-
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer secondary="wreckarmcab,storagecab" minamount="0" maxamount="2" spawnprobability="0.2" />
-		<PreferredContainer secondary="abandonedarmcab,abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.4" />
-
-		<Deconstruct time="10">
-			<Item identifier="titanium" />
-		</Deconstruct>
-		
-		<Fabricate suitablefabricators="fabricator" requiredtime="12">
-			<RequiredSkill identifier="weapons" level="40" />
-			<RequiredItem identifier="titanium" amount="2" />
-			<RequiredItem identifier="plastic" />
-		</Fabricate>
 	</Item>
 
 			<!--###-->
 
  		<!--Machete-->
   	<Item name="" description="" identifier="scp_machete" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,41,265,39" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="180" height="15" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,45" handle1="-35,-4" handle2="-37,-2" holdangle="20" reload="0.9" range="650" combatPriority="25" msg="ItemMsgPickUpSelect">
@@ -81,36 +71,23 @@
 				<Affliction identifier="stun" strength="0.1" />
 
 				<StatusEffect type="OnUse" target="UseTarget">
-					<Sound file="%ModDir%/Items/Weapons/Melee/Sounds/slash1.ogg" selectionmode="random" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Melee/Sounds/slash2.ogg" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Melee/Sounds/slash3.ogg" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash1.ogg" selectionmode="random" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash2.ogg" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash3.ogg" range="1000" />
 				</StatusEffect>
 			</Attack>
 		</MeleeWeapon>
 
     	<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
-	
-		<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.35" />
-		<PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.15" />
-		<PreferredContainer secondary="abandonedarmcab,abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.4" />
-
-		<Deconstruct time="10">
-			<Item identifier="steel" />
-		</Deconstruct>
-
-		<Fabricate suitablefabricators="fabricator" requiredtime="20">
-			<RequiredSkill identifier="weapons" level="40" />
-			<RequiredItem identifier="plastic" amount="2" />
-			<RequiredItem identifier="steel" amount="3" />
-			<RequiredItem identifier="titaniumaluminiumalloy" />
-		</Fabricate>
 	</Item>
 
 			<!--###-->
 
 	<!--Dementonite Machete-->
 	<Item name="" description="" identifier="scp_dementonitemachete" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,81,209,39" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="180" height="15" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="55,50" handle1="-30,2" handle2="-25,2" holdangle="20" reload="0.95" reloadnoskill="1.25" reloadskillrequirement="50" range="500" combatPriority="25" msg="ItemMsgPickUpSelect">
@@ -132,35 +109,23 @@
 				<Affliction identifier="bleeding" strength="10" probability="0.25" />
 
 				<StatusEffect type="OnUse" target="UseTarget">
-					<Sound file="%ModDir%/Items/Weapons/Melee/Sounds/slash1.ogg" selectionmode="random" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Melee/Sounds/slash2.ogg" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Melee/Sounds/slash3.ogg" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash1.ogg" selectionmode="random" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash2.ogg" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash3.ogg" range="1000" />
 				</StatusEffect>
 			</Attack>
 		</MeleeWeapon>
 
 		<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
-
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer secondary="abandonedarmcab,abandonedstoragecab" minamount="1" maxamount="1" spawnprobability="0.05" minleveldifficulty="15" />
-
-		<Deconstruct time="10">
-			<Item identifier="steel" />
-		</Deconstruct>
-
-		<Fabricate suitablefabricators="fabricator" requiredtime="20">
-			<RequiredSkill identifier="weapons" level="60" />
-			<RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-			<RequiredItem identifier="dementonite" amount="2" />
-			<RequiredItem identifier="scp_machete" />
-		</Fabricate>
 	</Item>
 
 			<!--###-->
 		
 		<!--Physicorium Tactical Sword-->
 	<Item name="" description="" identifier="scp_physicoriumsword" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,gunsmith" cargocontaineridentifier="metalcrate" scale="0.37" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="0,485,269,50" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="210" height="50" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="68,30" handle1="-40,1" holdangle="20" reload="0.85" reloadnoskill="3" reloadskillrequirement="85" range="250" combatPriority="25" msg="ItemMsgPickUpSelect">
@@ -181,36 +146,24 @@
 				<Affliction identifier="explosiondamage" strength="15" probability="0.33" />
 
 				<StatusEffect type="OnUse" target="UseTarget">
-					<Sound file="%ModDir%/Items/Weapons/Melee/Sounds/slash1.ogg" selectionmode="random" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Melee/Sounds/slash2.ogg" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Melee/Sounds/slash3.ogg" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash1.ogg" selectionmode="random" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash2.ogg" range="1000" />
+					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash3.ogg" range="1000" />
 				</StatusEffect>
 			</Attack>
 		</MeleeWeapon>
 
 		<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
-
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer secondary="wreckarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="30" />
-
-		<Deconstruct time="10">
-			<Item identifier="physicorium" />
-		</Deconstruct>
-
-		<Fabricate suitablefabricators="fabricator" requiredtime="35">
-			<RequiredSkill identifier="weapons" level="65" />
-			<RequiredItem identifier="physicorium" amount="6" />
-			<RequiredItem identifier="dementonite" amount="4" />
-			<RequiredItem identifier="scp_dementonitemachete" />
-		</Fabricate>
 	</Item>
 
 			<!--###-->
 
 		<!--Batong-->
 	<Item name="" identifier="scp_baton" description="" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,stunner,gunsmith" Scale="0.45" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
 		<InventoryIcon name="batoninv" texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="450,20,75,78" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="3,234,221,16" depth="0.55" origin="0.4954025,0.7936202" />
+		
 		<Body width="170" height="20" density="30" />
 
 		<MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="45,10" handle1="-40,5" holdangle="55" reload="1.25" reloadnoskill="2" reloadskillrequirement="50" range="100" combatPriority="49" msg="ItemMsgPickUpSelect">
@@ -231,27 +184,16 @@
 		<Quality>
 			<QualityStat stattype="StrikingSpeedMultiplier" value="0.1" />
 		</Quality>
-
-		<PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
-		<PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.2" />
-		<PreferredContainer secondary="abandonedarmcab" minamount="1" maxamount="3" spawnprobability="0.33" />
-		<PreferredContainer secondary="locker" />
-
-		<Deconstruct time="5"></Deconstruct>
-
-		<Fabricate suitablefabricators="fabricator" requiredtime="10">
-			<RequiredSkill identifier="weapons" level="30" />
-			<RequiredItem identifier="steel" />
-			<RequiredItem identifier="rubber" />
-		</Fabricate>
 	</Item>
 
 			<!--###-->
 
 		<!--Submission Batong-->
 	<Item name="" identifier="scp_submissionbaton" category="Weapon" subcategory="Melee" Tags="smallitem,weapon,stunner,gunsmith,mountableweapon" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
 		<InventoryIcon name="pacifinv" texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="343,115,83,83" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="1,412,210,62" depth="0.55" origin="0.4954025,0.7936202" />
+		
 		<Body width="210" height="62" density="25" />
 
 		<MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="45,10" handle1="-30,15" handle2="-30,15" holdangle="20" reload="1.25" range="135" combatPriority="49" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
@@ -264,7 +206,7 @@
 
 				<!--Light stun-->
 			<StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-				<sound file="%ModDir%/Items/Weapons/Sounds/stunbaton.ogg" range="1250" volume="1.25" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/stunbaton.ogg" range="1250" volume="1.25" />
 				<RequiredItem items="batterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
 				<Explosion range="100.0" force="0.5" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="10.0" />
 				<Conditional mass="lt 100" />
@@ -279,7 +221,7 @@
 
 				<!--Heavy stun-->
 			<StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-				<sound file="%ModDir%/Items/Weapons/Sounds/stunbaton.ogg" range="2000" volume="3" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/stunbaton.ogg" range="2000" volume="3" />
 				<sound file="Content/Items/Weapons/StunBaton3.ogg" range="2000" volume="1" />
 				<RequiredItem items="fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
 				<Explosion range="100.0" force="1" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="20.0" />
@@ -313,30 +255,16 @@
 		<Quality>
 			<QualityStat stattype="StrikingPowerMultiplier" value="0.25" />
 		</Quality>
-
-		<PreferredContainer secondary="outpostsecarmcab" maxamount="1" spawnprobability="0.25" />
-		<PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.1" />
-		<PreferredContainer primary="secarmcab,armcab" minamount="1" maxamount="2" spawnprobability="0.5" />
-
-		<Deconstruct time="10">
-			<Item identifier="steel" />
-			<Item identifier="plastic" />
-		</Deconstruct>
-
-		<Fabricate suitablefabricators="fabricator" requiredtime="15">
-			<RequiredSkill identifier="weapons" level="35" />
-			<RequiredItem identifier="stunbaton" />
-			<RequiredItem identifier="fpgacircuit" />
-			<RequiredItem identifier="copper" amount="2" />
-		</Fabricate>
 	</Item>
 
 			<!--###-->
 
 		<!--Sledgehammer-->
 	<Item name="" description="" identifier="scp_sledge" category="Weapon" subcategory="Melee" Tags="mediumitem,weapon,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" scale="0.27" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+
 		<InventoryIcon name="sledgeinv" texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="347,2,100,98" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/meleeweapons.png" sourcerect="3,261,467,129" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="370" height="60" density="50" />
 
 		<MeleeWeapon slots="Any,RightHand+LeftHand" controlpose="true" holdpos="15,-60" aimpos="45,-10" reload="2" handle1="-30,0" range="300" handle2="15,5" holdangle="45" combatpriority="40">
@@ -383,18 +311,5 @@
 		</MeleeWeapon>
 
 		<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
-
-		<PreferredContainer secondary="storagecab" minamount="0" maxamount="1" spawnprobability="0.1" />
-		<PreferredContainer secondary="wreckstoragecab,wreckengcab,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.05" />
-
-		<Deconstruct time="10">
-			<Item identifier="steel" />
-		</Deconstruct>
-
-		<Fabricate suitablefabricators="fabricator" requiredtime="25">
-			<RequiredSkill identifier="mechanical" level="45" />
-			<RequiredItem identifier="steel" amount="4" />
-			<RequiredItem identifier="plastic" amount="2" />
-		</Fabricate>
 	</Item>
 </Items>

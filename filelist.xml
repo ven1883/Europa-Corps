@@ -7,6 +7,24 @@
 
 	<!--Weapons-->
 
+	<Item file="%ModDir%/Items/Weapons/alien.xml"/>
+	<Item file="%ModDir%/Items/Weapons/explosives.xml"/>
+	<Item file="%ModDir%/Items/Weapons/heavy.xml"/>
+	<Item file="%ModDir%/Items/Weapons/melee.xml"/>
+	<Item file="%ModDir%/Items/Weapons/overrides.xml"/>
+	<Item file="%ModDir%/Items/Weapons/pistols.xml"/>
+	<Item file="%ModDir%/Items/Weapons/rifles.xml"/>
+	<Item file="%ModDir%/Items/Weapons/shotguns.xml"/>
+	<Item file="%ModDir%/Items/Weapons/smgs.xml"/>
+	<Item file="%ModDir%/Items/Weapons/special.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/explosive_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/heavy_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/pistol_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/rifle_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/shotgun_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/smg_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/special_ammo.xml"/>
+
 	<!--Apparel-->
 
 	<Item file="%ModDir%/Items/Apparel/coalition.xml"/>

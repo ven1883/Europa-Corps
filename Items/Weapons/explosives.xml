@@ -8,8 +8,10 @@
 
 		<!--A fucking pipebomb-->
 	<Item name="" identifier="scp_pipebomb" description="" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="8" maxstacksizecharacterinventory="4" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
+		
 		<InventoryIcon name="pipebombinv" texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="65,263,48,62" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="164,192,22,63" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="30" height="60" density="30" />
 
 		<ItemComponent characterusable="false">
@@ -61,30 +63,15 @@
 			<QualityStat stattype="ExplosionDamage" value="0.1" />
 		</Quality>
 		<!--the only bomb without shrapnel has quality-->
-
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer secondary="wreckarmcab,wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.175" />
-		<PreferredContainer secondary="abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.15" />
-		<PreferredContainer secondary="storagecab,reactorcab" minamount="0" maxamount="2" spawnprobability="0.035" />
-		<PreferredContainer primary="armcab" secondary="locker" />
-
-		<Upgrade gameversion="0.9.3.0" scale="0.5" />
-
-		<Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="1">
-			<RequiredItem identifier="sgt_ammocoinbasic" amount="1" />
-		</Fabricate>
-
-		<Deconstruct time="7">
-			<Item identifier="plastic" outcondition="0.5" />
-			<Item identifier="magnesium" />
-		</Deconstruct>
 	</Item>
 	
 			<!--###-->
 
 		<!--Defensive Grenade-->
 	<Item name="" description="" identifier="scp_f1" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
+		
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="1,113,35,71" depth="0.55" origin="0.5,0.5"/>
+		
 		<Body radius="25" height="22" density="30"/>
 
 		<ItemComponent characterusable="false">
@@ -92,15 +79,10 @@
 
 			<!--explosion-->
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Effects/Sounds/bang1.ogg" type="OnUse" 
-					volume="1.75" 
-					range="8000" 
-					frequencymultiplier="0.95" 
-					selectionmode="All" 
-				/>
-				<sound file="Content/Items/Weapons/ExplosionDebris5.ogg" type="OnUse" 
-					range="8000" 
-				/>
+
+				<sound file="%ModDir%/Effects/Sounds/bang1.ogg" type="OnUse" volume="1.75" range="8000" frequencymultiplier="0.95"  selectionmode="All" />
+				<sound file="Content/Items/Weapons/ExplosionDebris5.ogg" type="OnUse" range="8000" />
+
 				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="90" velocitymin="500" velocitymax="1000" scalemin="1.0" scalemax="1.5" />
 				
 				<Explosion 
@@ -135,17 +117,18 @@
 			</StatusEffect>
 		</ItemComponent>
 
-		<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" aimpos="35,-10" throwforce="3.3" reload="1.25" msg="ItemMsgPickUpSelect">
+		<Throwable 
+			slots="Any,RightHand,LeftHand" 
+			holdpos="0,0" handle1="0,0" aimpos="35,-10" 
+			throwforce="3.3" 
+			reload="1.25" 
+			msg="ItemMsgPickUpSelect">
+
 			<StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3.5" disabledeltatime="true" checkconditionalalways="true" />
 
 			<!--pin & fuze-->
-			<StatusEffect type="OnSecondaryUse" target="This" 
-				disabledeltatime="true" 
-				checkconditionalalways="true">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives//grenadethrow.ogg" 
-					range="1000" 
-					frequencymultiplier="0.9" 
-				/>
+			<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/grenadethrow.ogg" range="1000" frequencymultiplier="0.9" />
 				<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="200,100,100,255" />
 			</StatusEffect>
 
@@ -157,22 +140,15 @@
 				<ParticleEmitter particle="scp_grenadespoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.65" scalemax="0.65" anglemin="-35" anglemax="35" />
 			</StatusEffect>
 		</Throwable>
-
-		<PreferredContainer primary="secarmcab" minamount="0" maxamount="2" spawnprobability="0.35" />
-		<PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.1" minleveldifficulty="10" />
-		<PreferredContainer secondary="abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.1" minleveldifficulty="10" />
-
-		<Deconstruct time="10">
-			<Item identifier="steel" />
-			<Item identifier="uex" copycondition="true" />
-		</Deconstruct>
 	</Item>
 
 			<!--###-->
 
 		<!--Durasteel Grenade(?)-->
 	<Item name="" description="" identifier="scp_dm51" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="6" maxstacksizecharacterinventory="3" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
+		
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="39,123,38,61" depth="0.55" origin="0.5,0.5" />
+		
 		<Body radius="25" height="20" density="30" />
 
 		<ItemComponent characterusable="false">
@@ -182,8 +158,7 @@
 			<StatusEffect type="OnBroken" target="This">
 				<sound file="%ModDir%/Effects/Sounds/bang1.ogg" type="OnUse" volume="1.75" range="8000" selectionmode="All" />
 				<sound file="Content/Items/Weapons/ExplosionDebris3.ogg" type="OnUse" range="8000" />
-				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="90" velocitymin="1000" velocitymax="1500" scalemin="1.0" scalemax="1.65" colormultiplier="100,75,200,255" 
-/>
+				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="90" velocitymin="1000" velocitymax="1500" scalemin="1.0" scalemax="1.65" colormultiplier="100,75,200,255" />
 				
 				<Explosion 
 					range="400.0" 
@@ -223,7 +198,7 @@
 
 			<!--pin & spoon-->
 			<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/grenadethrow.ogg" range="1000" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/grenadethrow.ogg" range="1000" />
 				<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="100,100,255,255" />
 			</StatusEffect>
 
@@ -231,21 +206,15 @@
 				<ParticleEmitter particle="scp_grenadespoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.55" scalemax="0.55" anglemin="-35" anglemax="35" />
 			</StatusEffect>
 		</Throwable>
-
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="3" spawnprobability="0.05" minleveldifficulty="20" />
-		<PreferredContainer secondary="abandonedsecarmcab" minamount="0" maxamount="3" spawnprobability="0.075" minleveldifficulty="20" />
-
-		<Deconstruct time="10">
-			<Item identifier="scp_durasteel" outcondition="0.5" />
-		</Deconstruct>
 	</Item>
 
 		<!--###-->
 
 		<!--Depleted Uranium Grenade-->
 	<Item name="" description="" identifier="scp_m67" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
+		
 		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="78,138,40,47" depth="0.55" origin="0.5,0.5" />
+		
 		<Body radius="25" height="15" density="30" />
 
 		<ItemComponent characterusable="false">
@@ -253,9 +222,12 @@
 
 			<!--explosion-->
 			<StatusEffect type="OnBroken" target="This">
+
 				<sound file="%ModDir%/Effects/Sounds/bang1.ogg" type="OnUse" volume="1.5" frequencymultiplier="0.95" range="8000" selectionmode="All" />
 				<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" type="OnUse" range="8000" />
+
 				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="90" velocitymin="1000" velocitymax="1500" scalemin="0.5" scalemax="1.0" colormultiplier="75,75,255,255" />
+
 				<Explosion 
 					range="450.0" 
 					structuredamage="5" 
@@ -264,8 +236,8 @@
 					force="20" 
 					severlimbsprobability="0.5" 
 					decal="explosion" 
-					decalsize="1"
-				>
+					decalsize="1">
+
 					<Affliction identifier="bleeding" strength="150" />
 					<Affliction identifier="explosiondamage" strength="95" />
 					<Affliction identifier="organdamage" strength="35" />
@@ -280,8 +252,8 @@
 					itemdamage="7" 
 					force="5" 
 					interactthroughwalls="false" 
-					penetration="0.75"
-				>
+					penetration="0.75">
+					
 					<Affliction identifier="bleeding" strength="35" />
 					<Affliction identifier="lacerations" strength="85" />
 					<Affliction identifier="radiationsickness" strength="20" />
@@ -291,24 +263,20 @@
 		</ItemComponent>
 
 		<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" aimpos="35,-10" throwforce="4" reload="1.25" msg="ItemMsgPickUpSelect">
+
 			<StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3.75" disabledeltatime="true" checkconditionalalways="true" />
 
 			<!--pin-->
 			<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/grenadethrow.ogg" range="1000" frequencymultiplier="0.95" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/grenadethrow.ogg" range="1000" frequencymultiplier="0.95" />
+
 				<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="100,100,100,255" />
 			</StatusEffect>
+
 			<StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">
 				<ParticleEmitter particle="scp_grenadespoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.65" scalemax="0.65" anglemin="-35" anglemax="35" colormultiplier="100,100,100,255" />
 			</StatusEffect>
 		</Throwable>
-
-		<PreferredContainer primary="secarmcab" />
-
-		<Deconstruct time="10">
-			<Item identifier="depletedfuel" outcondition="0.5" />
-			<Item identifier="uex" outcondition="0.5" />
-		</Deconstruct>
 	</Item>
 
 
@@ -324,29 +292,38 @@
 		<!--Sawed Off Grenade Launcher-->
 		<!--M79 Sawed-Off-->
 	<Item name="" description="" identifier="sgt_m79" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.26" impactsoundtag="impact_metal_light">
-		<InventoryIcon name="M79inv" texture="%ModDir%/Weapons/Renegade.png" sourcerect="196,210,63,78" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/Renegade.png" sourcerect="0,213,179,65" depth="0.55" origin="0.5,0.5" />
+		
+		<InventoryIcon name="M79inv" texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="196,210,63,78" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="0,213,179,65" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="170" height="40" density="50" />
 
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="74,6" handle1="-62,-14" />
 
 		<RangedWeapon barrelpos="38,6" spread="12" reload="2" unskilledspread="30" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+			
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
 			<ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
+			
 			<Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="Random" />
 			<Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
 			<Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
-			<StatusEffect type="OnUse">
+			
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="2.25" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="8.0" />
 			</StatusEffect>
+			
 			<RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+			
 			<RequiredSkill identifier="weapons" level="65" />
+			
 			<StatusEffect type="OnUse" target="This" delay="0.4">
-				<Sound file="%ModDir:2764968387%/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+				<Sound file="%ModDir:2764968387%/Items/Sounds//Sprites40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
 			</StatusEffect>
+		
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
@@ -358,33 +335,6 @@
 		<Quality>
 			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
 		</Quality>
-
-		<Upgrade gameversion="0.10.0.0" scale="0.5" />
-
-		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.125" minleveldifficulty="20" />
-		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15" minleveldifficulty="20" />
-		<PreferredContainer primary="armcab" secondary="locker" />
-
-		<Price baseprice="420" minleveldifficulty="5">
-			<Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
-			<Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
-			<Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-			<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
-		</Price>
-
-		<Fabricate suitablefabricators="fabricator" requiredtime="20">
-			<RequiredSkill identifier="weapons" level="35" />
-			<RequiredItem identifier="plastic" />
-			<RequiredItem identifier="steel" />
-			<RequiredItem identifier="scp_basicparts" mincondition="0.5" />
-		</Fabricate>
-
-		<Deconstruct time="10">
-			<Item identifier="steel" />
-			<Item identifier="plastic" />
-		</Deconstruct>
 	</Item>
 
 		<!--###-->
@@ -392,18 +342,20 @@
 		<!--Compact Grenade Launcher-->
 		<!--AG36-->
 	<Item name="" description="" identifier="scp_ag36" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-		<InventoryIcon name="ag36inv" texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="549,92,64,67" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/explosives.png" sourcerect="249,3,159,51" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="ag36inv" texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="549,92,64,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="249,3,159,51" depth="0.55" origin="0.5,0.5" />
 		<Body width="170" height="40" density="50" />
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="47,-20" aimpos="47,2" handle1="-8,-12" handle2="26,5" holdangle="-25" />
 
 		<RangedWeapon barrelpos="80,11" spread="12" reload="1.5" reloadnoskill="3" reloadskillrequirement="75" unskilledspread="30" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
 			<ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
+
 			<Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="Random" />
 			<Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
 			<Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
@@ -411,16 +363,19 @@
 			<StatusEffect type="OnUse" target="This" Condition="-10000" />
 
 			<StatusEffect type="OnBroken" target="This" delay="0.5">
-				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" />
+				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="1.5" stackable="false" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="50.0" />
 			</StatusEffect>
+
 			<RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+
 			<RequiredSkill identifier="weapons" level="65" />
+
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
@@ -432,52 +387,38 @@
 		<Quality>
 			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
 		</Quality>
-
-		<Upgrade gameversion="0.10.0.0" scale="0.5" />
-		<!--wtf does this do lol-->
-
-		<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.5" />
-		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.125" />
-		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15" />
-
-		<Fabricate suitablefabricators="weaponfabricator" requiredtime="20">
-			<RequiredSkill identifier="weapons" level="35" />
-			<RequiredItem identifier="plastic" />
-			<RequiredItem identifier="steel" />
-			<RequiredItem identifier="scp_explosiveskit" mincondition="0.25" />
-		</Fabricate>
-
-		<Deconstruct time="10">
-			<Item identifier="steel" />
-			<Item identifier="plastic" />
-		</Deconstruct>
+		
 	</Item>
 
 		<!--###-->
 
 		<!--Rotary Grenade Launcher-->
 	<Item name="" identifier="scp_mgl" description="" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.55" impactsoundtag="impact_metal_light">
-		<InventoryIcon name="m32inv" texture="%ModDir%/Weapons/explosives.png" sourcerect="124,251,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/explosives.png" sourcerect="0,134,182,54" depth="0.55" origin="0.5,0.5" />
+
+		<InventoryIcon name="m32inv" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="124,251,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="0,134,182,54" depth="0.55" origin="0.5,0.5" />
+
 		<Body width="170" height="40" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,-20" aimpos="50,-2" handle1="-36,-14" handle2="26,5" holdangle="-25" />
 		
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="MGL Worn" texture="%ModDir%/Weapons/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,134,182,54" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,1.2" />
+			<sprite name="MGL Worn" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,134,182,54" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,1.2" />
 			<!--WTF WHO WROTE THIS-->
 			<!--"canbehiddenbyotherwearables"-->
 			<!--It's like the barodevs intentionally designed it to be a pain in the ass lol-->
 		</Wearable>
 
 		<RangedWeapon barrelpos="80,10" spread="8" reload="1.1" reloadnoskill="3" reloadskillrequirement="75" unskilledspread="25" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 			<ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" scalemin="0.1" scalemax="0.15" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/40mm.ogg" type="OnUse" selectionmode="Random" />
+
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/40mm.ogg" type="OnUse" selectionmode="Random" />
 			<Sound file="/40mm.ogg" type="OnUse" frequencymultiplier="0.95" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/40mm.ogg" type="OnUse" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/40mm.ogg" type="OnUse" frequencymultiplier="1.05" />
 
 			<StatusEffect type="OnUse" target="This" Condition="-800" />
 			<StatusEffect type="Always" target="This" Condition="1.25">
@@ -485,12 +426,12 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" delay="0.5">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/mgljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.1" />
+				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/mgljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.1" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" Condition="75" disabledeltatime="true" delay="4.9" stackable="false" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="50.0" />
 			</StatusEffect>
 
@@ -503,22 +444,6 @@
 		</ItemContainer>
 
 		<aitarget sightrange="2500" soundrange="3000" fadeouttime="3" />
-
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.02" minleveldifficulty="25" />
-		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.0075" minleveldifficulty="25" />
-		
-		<Fabricate suitablefabricators="weaponfabricator" requiredtime="60">
-			<RequiredSkill identifier="weapons" level="70" />
-			<RequiredItem identifier="scp_ag36" />
-			<RequiredItem identifier="scp_durasteel" amount="2" />
-			<RequiredItem identifier="scp_explosiveskit" />
-		</Fabricate>
-
-		<Deconstruct time="20">
-			<Item identifier="steel" amount="2" />
-			<Item identifier="titaniumaluminiumalloy" />
-		</Deconstruct>
 	</Item>
 
 
@@ -530,17 +455,20 @@
 		<!--RPG-7-->
 	<Item name="" identifier="scp_rpg7" description="" category="Weapon" subcategory="Grenades and Explosives" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert" scale="0.53">
 		<!--scale values are cursed but I get it-->
-		<InventoryIcon name="rpg7inv" texture="%ModDir%/Weapons/explosives.png" sourcerect="0,251,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/explosives.png" sourcerect="0,63,292,71" depth="0.55" origin="0.5,0.5" />
+		
+		<InventoryIcon name="rpg7inv" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="0,251,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="0,63,292,71" depth="0.55" origin="0.5,0.5" />
+
 		<Body width="292" height="71" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,6" aimpos="35,7.2" handle1="12,-22" handle2="-7,-23" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="RPG-7 Worn" texture="%ModDir%/Weapons/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,63,292,71" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
+			<sprite name="RPG-7 Worn" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,63,292,71" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
 		</Wearable>
 
 		<RangedWeapon reload="5" reloadnoskill="7.5" reloadskillrequirement="80" barrelpos="102,9" spread="4" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />\
 
@@ -548,9 +476,9 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="8" velocitymin="300" velocitymax="900" minsize="1" maxsize="2" anglemin="-15" anglemax="15" copyentityangle="true" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="weldspark" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="-25" anglemax="25" copyentityangle="true" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="260" anglemax="280" copyentityangle="true" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="0.3" shockwave="true" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="25.0" />
 			</StatusEffect>
 
@@ -564,23 +492,6 @@
 		</ItemContainer>
 
 		<aitarget sightrange="500" soundrange="500" fadeouttime="3" />
-
-		<PreferredContainer primary="secarmcab" />
-		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
-		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
-
-		<Fabricate suitablefabricators="weaponfabricator" requiredtime="70">
-			<RequiredSkill identifier="weapons" level="75" />
-			<RequiredItem identifier="scp_basicparts" amount="4" />
-			<RequiredItem identifier="steel" amount="4" />
-			<RequiredItem identifier="plastic" amount="2" />
-		</Fabricate>
-		
-		<Deconstruct time="15">
-			<Item identifier="steel" />
-			<Item identifier="rubber" />
-			<Item identifier="plastic" />
-		</Deconstruct>
 	</Item>
 
 		<!--###-->
@@ -588,17 +499,20 @@
 		<!--Disposable Anti-Sub Grenade Launcher-->
 		<!--AT4-->
 	<Item name="" identifier="scp_at4" description="" category="Weapon" health="100" subcategory="Grenades and Explosives" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.57">
-		<InventoryIcon name="at4inv" texture="%ModDir%/Weapons/explosives.png" sourcerect="63,251,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/explosives.png" sourcerect="2,4,203,48" depth="0.55" origin="0.5,0.5" />
+		
+		<InventoryIcon name="at4inv" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="63,251,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="2,4,203,48" depth="0.55" origin="0.5,0.5" />
+		
 		<Body width="292" height="71" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,6" aimpos="30,7" handle1="6,-7" handle2="27,-21" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="AT-4 Worn" texture="%ModDir%/Weapons/explosives.png" canbehiddenbyotherwearables="false" sourcerect="2,4,203,48" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
+			<sprite name="AT-4 Worn" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" canbehiddenbyotherwearables="false" sourcerect="2,4,203,48" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
 		</Wearable>
 
 		<RangedWeapon reload="3" reloadnoskill="6" reloadskillrequirement="80" barrelpos="102,9" spread="4" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+			
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
@@ -606,41 +520,28 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="8" velocitymin="300" velocitymax="900" minsize="1" maxsize="2" anglemin="-15" anglemax="15" copyentityangle="true" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="weldspark" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="-25" anglemax="25" copyentityangle="true" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="260" anglemax="280" copyentityangle="true" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
+			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
 
-			<StatusEffect type="OnUse">
+			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="0.3" shockwave="true" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="25.0" />
 			</StatusEffect>
 
 			<RequiredSkill identifier="weapons" level="90" />
+
 			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.25" setvalue="true" />
-			<StatusEffect type="OnUse" target="This" disabledeltatime="true" condition="-1000"></StatusEffect>
+			<StatusEffect type="OnUse" target="This" disabledeltatime="true" condition="-1000"/>
+
 		</RangedWeapon>
 
 		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_at4proj" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+
 			<Containable items="scp_at4proj" />
+
 			<StatusEffect type="OnUse" target="This" disabledeltatime="true">
 				<SpawnItem identifier="scp_at4proj" spawnposition="This" />
 			</StatusEffect>
 		</ItemContainer>
 
 		<aitarget sightrange="500" soundrange="500" fadeouttime="3" />
-
-		<PreferredContainer primary="secarmcab" spawnprobability="0.05" notcampaign="true" />
-		<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
-		<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
-
-		<Fabricate suitablefabricators="weaponfabricator" requiredtime="70">
-			<RequiredSkill identifier="weapons" level="75" />
-			<RequiredItem identifier="scp_explosiveskit" mincondition="0.25" />
-			<RequiredItem identifier="c4block" amount="2" />
-			<RequiredItem identifier="plastic" amount="4" />
-		</Fabricate>
-		
-		<Deconstruct time="15">
-			<Item identifier="steel" />
-			<Item identifier="rubber" />
-			<Item identifier="plastic" />
-		</Deconstruct>
 	</Item>
 </Items>
