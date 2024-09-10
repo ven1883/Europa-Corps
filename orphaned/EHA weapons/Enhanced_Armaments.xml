@@ -4,30 +4,6 @@
     <!--!unconfirmed-->
   <!--RSh-12.7-->
   <Item name="" identifier="scp_rsh12" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" scale="0.445" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.025" minleveldifficulty="20" />
-    <Price baseprice="850" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="60" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="60" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="scp_pistolkit" />
-      <RequiredItem identifier="scp_anaconda" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
@@ -75,30 +51,6 @@
   <!--!not added-->
   <!--12.7x55mm Round-->
   <Item name="" identifier="scp_arevolverround" interactthroughwalls="true" description="" cargocontaineridentifier="scp_ammocrate" category="Weapon" subcategory="Coalition" tags="smallitem,weapon,ammo,pistolammoitem,gunsmith,ehaammo,arevolverround" scale="0.5" maxstacksize="10" maxstacksizecharacterinventory="5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="scp_rsh12" minamount="5" maxamount="5" spawnprobability="0.85" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="5" spawnprobability="0.03" minleveldifficulty="20" />
-    <Price baseprice="500" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="4" multiplier="1.5">
-        <Reputation faction="coalition" min="75" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" maxavailable="10">
-        <Reputation faction="coalition" min="75" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="5">
-        <Reputation faction="coalition" min="75" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="5">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Deconstruct time="5">
-      <Item identifier="flashpowder" outcondition="0.5" />
-      <Item identifier="titanium" outcondition="0.5" />
-    </Deconstruct>
     <InventoryIcon name="arvolverroundinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="451,2,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="1,215,9,34" depth="0.15" origin="0.5,0.5" />
     <Body width="15" height="35" density="40" />
@@ -124,27 +76,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_arevolverduraround" interactthroughwalls="true" description="" cargocontaineridentifier="scp_ammocrate" category="Weapon" subcategory="Coalition" tags="smallitem,weapon,ammo,pistolammoitem,gunsmith,ehaammo,arevolverround" scale="0.5" maxstacksize="10" maxstacksizecharacterinventory="5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="5" spawnprobability="0.006" minleveldifficulty="35" />
-    <Price baseprice="800" displaynonempty="true" minleveldifficulty="35">
-      <Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" maxavailable="5">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="5">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="5">
-      <RequiredItem identifier="sgt_ammocoinadv" />
-    </Fabricate>
-    <Deconstruct time="5">
-      <Item identifier="scp_durasteel" outcondition="0.2" />
-      <Item identifier="titanium" outcondition="0.2" />
-    </Deconstruct>
     <InventoryIcon name="arvolverduraroundinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="451,66,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="12,215,9,34" depth="0.15" origin="0.5,0.5" />
     <Body width="15" height="34" density="40" />
@@ -173,39 +104,6 @@
   <!--!not added-->
   <!--Deagle magazine-->
   <Item name="" identifier="scp_deaglemag" description="" tags="smallitem,deagleammo,ehaammo" cargocontaineridentifier="scp_ammocrate" category="Weapon" subcategory="Coalition" maxstacksize="4" maxstacksizecharacterinventory="2" impactsoundtag="impact_metal_light" scale="0.3">
-    <PreferredContainer primary="scp_deagle" minamount="0" maxamount="1" spawnprobability="0.5" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="4" spawnprobability="0.03" minleveldifficulty="10" />
-    <Price baseprice="500" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="1" multiplier="1.5">
-        <Reputation faction="coalition" min="50" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="50" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="4">
-        <Reputation faction="coalition" min="50" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" maxavailable="4">
-        <Reputation faction="coalition" min="50" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="2">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="7.5" amount="1">
-      <RequiredSkill identifier="weapons" level="35" />
-      <RequiredItem identifier="scp_deaglemag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="flashpowder" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-      <Item identifier="flashpowder" mincondition="0.95" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/ammo.png" depth="0.54" sourcerect="129,8,29,51" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_deagleprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -246,28 +144,6 @@
   <!--!not added-->
   <!--9x33mmR round-->
   <Item name="" identifier="scp_357round" description="" category="Weapon" subcategory="Coalition" interactthroughwalls="true" maxstacksize="24" maxstacksizecharacterinventory="12" cargocontaineridentifier="scp_ammocrate" tags="smallitem,357ammo,ehaammo,pistolammoitem" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_python" minamount="6" maxamount="6" spawnprobability="0.75" />
-    <PreferredContainer primary="secarmcab" minamount="6" maxamount="12" spawnprobability="0.45" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="12" spawnprobability="0.05" minleveldifficulty="5" />
-    <Price baseprice="175" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="6" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="6" maxavailable="12" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" maxavailable="12">
-        <Reputation faction="coalition" min="10" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" maxavailable="12">
-        <Reputation faction="coalition" min="10" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="12">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Deconstruct time="2">
-      <Item identifier="copper" outcondition="0.1" />
-      <Item identifier="lead" outcondition="0.2" />
-    </Deconstruct>
     <InventoryIcon name="357inv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="351,10,38,38" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="17,254,8,23" origin="0.5,0.5" />
     <Body width="40" height="15" density="40" />
@@ -294,36 +170,6 @@
   <!--!not added-->
   <!--AS Val 20 round mag-->
   <Item name="" identifier="scp_valmag" description="" tags="smallitem,valammo,ehaammo" Scale="0.7" category="Weapon" subcategory="Renegade" maxstacksize="12" maxstacksizecharacterinventory="4" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer spawnprobability="0.1" maxamount="1" minamount="0" primary="scp_val" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer spawnprobability="0.03" maxamount="3" minamount="0" primary="wrecksecarmcab,abandonedsecarmcab" minleveldifficulty="15" />
-    <Price baseprice="450" displaynonempty="true" minleveldifficulty="8">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="55" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="4">
-        <Reputation faction="separatists" min="55" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" maxavailable="4">
-        <Reputation faction="separatists" min="55" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="4">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="8" amount="1">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem identifier="scp_valmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem identifier="titanium" amount="2" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="plastic" outcondition="0.25" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="0,166,25,43" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_valapprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -386,34 +232,6 @@
   <!--!not added-->
   <!--SR-3 30 round mag-->
   <Item name="" identifier="scp_valextmag" description="" tags="smallitem,valammo,ehaammo" cargocontaineridentifier="scp_ammocrate" Scale="0.5" category="Weapon" subcategory="Renegade" maxstacksize="6" maxstacksizecharacterinventory="3" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer spawnprobability="0.5" maxamount="1" minamount="0" primary="scp_val" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer spawnprobability="0.04" maxamount="3" minamount="0" primary="wrecksecarmcab,abandonedsecarmcab" minleveldifficulty="5" />
-    <Price baseprice="600" displaynonempty="true" minleveldifficulty="12">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="50" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="50" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="3">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="12" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem identifier="scp_valextmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="plastic" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="26,165,33,54" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_valprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -428,21 +246,6 @@
   <!--!not added-->
   <!--10 round 12.7x55 magazine-->
   <Item name="" identifier="scp_ash12mag" description="" cargocontaineridentifier="scp_ammocrate" tags="smallitem,ashammo,ehaammo" maxstacksize="4" maxstacksizecharacterinventory="2" category="Weapon" subcategory="Coalition" impactsoundtag="impact_metal_light" scale="0.35">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.006" minleveldifficulty="35" />
-    <Price baseprice="1000" displaynonempty="true" />
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="2">
-      <RequiredItem identifier="sgt_ammocoinadv" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="10" amount="1">
-      <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="scp_ash12mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="scp_durasteelmunitionscase" mincondition="0.25" />
-      <RequiredItem identifier="flashpowder" />
-    </Fabricate>
-    <Deconstruct time="6">
-      <Item identifier="plastic" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="-2,1,41,68" origin="0.5,0.5" />
     <InventoryIcon name="ash12durainv" texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="-2,1,39,44" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -458,34 +261,6 @@
   <!--!not added-->
   <!--20 round 12.7x55 magazine-->
   <Item name="" identifier="scp_ash12extmag" description="" tags="smallitem,ashammo,ehaammo" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_ammocrate" maxstacksize="2" maxstacksizecharacterinventory="1" impactsoundtag="impact_metal_light" scale="0.35">
-    <PreferredContainer primary="scp_ash12" minamount="0" maxamount="1" spawnprobability="0.4" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.01" minleveldifficulty="25" />
-    <Price baseprice="1200" displaynonempty="true" minleveldifficulty="30">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="1">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="18" amount="1">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="scp_ash12extmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="flashpowder" amount="3" />
-      <RequiredItem identifier="titanium" amount="3" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="plastic" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="37,1,41,68" origin="0.5,0.5" />
     <Body width="41" height="68" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_127x55projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -549,32 +324,6 @@
   <!--!not added-->
   <!--9x19 16 round magazine-->
   <Item name="" identifier="scp_9mmmag" description="" tags="smallitem,9mmpistolammo,ehaammo" cargocontaineridentifier="scp_ammocrate" category="Weapon" subcategory="Coalition" maxstacksize="10" maxstacksizecharacterinventory="5" impactsoundtag="impact_metal_light" scale="0.3">
-    <PreferredContainer primary="scp_p226" minamount="0" maxamount="1" spawnprobability="1" />
-    <PreferredContainer primary="scp_mp443" minamount="0" maxamount="1" spawnprobability="0.5" />
-    <PreferredContainer primary="secarmcab" minamount="5" maxamount="10" spawnprobability="1" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="5" spawnprobability="0.125" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="10" spawnprobability="0.25" />
-    <Price baseprice="100" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="3" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" maxavailable="8" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" maxavailable="6" />
-      <Price storeidentifier="merchantmine" minavailable="0" maxavailable="4" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" maxavailable="6" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="5">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="3" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem identifier="scp_9mmmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.2" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" mincondition="0.2" />
-    </Fabricate>
-    <Deconstruct time="5">
-      <Item identifier="steel" outcondition="0.1" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/ammo.png" depth="0.54" sourcerect="10,0,28,56" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_9x19pprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -639,32 +388,6 @@
   <!--!not added-->
   <!--11.43x23 10 round magazine-->
   <Item name="" identifier="scp_45mag" description="" tags="smallitem,45pistolammo,ehaammo,4510mag" cargocontaineridentifier="scp_ammocrate" maxstacksize="6" maxstacksizecharacterinventory="3" category="Weapon" subcategory="Coalition" impactsoundtag="impact_metal_light" scale="0.3">
-    <PreferredContainer primary="scp_meusoc" minamount="0" maxamount="1" spawnprobability="0.65" />
-    <PreferredContainer primary="scp_sr1" minamount="0" maxamount="1" spawnprobability="0.65" />
-    <PreferredContainer primary="secarmcab" minamount="0" maxamount="4" spawnprobability="0.35" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.1" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="4" spawnprobability="0.15" />
-    <Price baseprice="165" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="3" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" maxavailable="4" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="4" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="3">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="5" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem tag="4510mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.8" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.4" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" mincondition="0.4" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="steel" outcondition="0.25" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/ammo.png" depth="0.54" sourcerect="39,0,24,58" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_45pprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -704,32 +427,6 @@
   <!--!unconfirmed-->
   <!--CMMG MXA1-->
   <Item name="" identifier="scp_mxa1" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="10" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="750" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.5" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-      <RequiredItem identifier="plastic" amount="6" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" amount="3" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="413,85,66,75" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="204,62,258,94" depth="0.55" origin="0.5,0.5" />
     <Body width="250" height="60" density="50" />
@@ -783,38 +480,6 @@
   <!--!not added-->
   <!--30 round 6.5mm caseless magazine-->
   <Item name="" identifier="scp_65mag" description="" cargocontaineridentifier="scp_ammocrate" tags="smallitem,65ammo,ehaammo,mx30mag" category="Weapon" subcategory="Coalition" maxstacksize="6" maxstacksizecharacterinventory="3" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_mxa1" minamount="0" maxamount="1" spawnprobability="0.5" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.03" minleveldifficulty="10" />
-    <Price baseprice="450" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="2" multiplier="1.35">
-        <Reputation faction="coalition" min="45" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="3">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" maxavailable="6">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="6">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="3">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="35" />
-      <RequiredItem tag="mx30mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="magnesium" amount="1" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" mincondition="0.5" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="plastic" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="1,76,20,52" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_65projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -851,38 +516,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_65incendmag" description="" cargocontaineridentifier="scp_ammocrate" tags="smallitem,65ammo,ehaammo,mx30mag" category="Weapon" subcategory="Coalition" maxstacksize="6" maxstacksizecharacterinventory="3" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_mxa1" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.01" minleveldifficulty="10" />
-    <Price baseprice="550" displaynonempty="true" minleveldifficulty="30">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="2" multiplier="1.35">
-        <Reputation faction="coalition" min="45" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="45" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="2">
-        <Reputation faction="coalition" min="45" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="2">
-        <Reputation faction="coalition" min="45" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="3">
-      <RequiredItem identifier="sgt_ammocoinadv" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem tag="mx30mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem identifier="scp_firelatex" mincondition="0.25" />
-      <RequiredItem identifier="titanium" mincondition="0.5" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="plastic" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="24,76,20,52" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_65projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -924,30 +557,6 @@
   <!--!not added-->
   <!--100 Round box mag-->
   <Item name="" identifier="scp_pkpboxmag" description="" tags="mediumitem,gpmgammo,ehaammo" maxstacksize="2" maxstacksizecharacterinventory="1" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_pkp,scp_pkm,scp_mag" minamount="0" maxamount="1" spawnprobability="0.25" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.03" minleveldifficulty="15" />
-    <Price baseprice="750" displaynonempty="true" minleveldifficulty="25">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="1">
-      <RequiredItem identifier="sgt_ammocoinbasic" amount="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="25" amount="1">
-      <RequiredSkill identifier="weapons" level="35" />
-      <RequiredItem identifier="scp_pkpboxmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="flashpowder" amount="6" />
-      <RequiredItem identifier="titanium" amount="4" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="4" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="2" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Ammo/renegadeammo.png" sourcerect="155,11,75,48" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="79,219,27,42" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -965,34 +574,6 @@
   <!--!not added-->
   <!--20 Round 7.62x51 box mag-->
   <Item name="" identifier="scp_scarmag" description="" tags="smallitem,762ammo,ehaammo,76251mag" maxstacksize="6" maxstacksizecharacterinventory="2" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_scar17" minamount="0" maxamount="1" spawnprobability="0.5" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="15" />
-    <Price baseprice="500" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="2" maxavailable="6">
-        <Reputation faction="coalition" min="55" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="2" maxavailable="6">
-        <Reputation faction="coalition" min="55" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="2">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem tag="76251mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="titanium" />
-      <RequiredItem identifier="flashpowder" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="47,77,21,39" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_762natoprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1005,34 +586,6 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item name="" identifier="scp_scarextmag" description="" tags="smallitem,762ammo,ehaammo" maxstacksize="2" maxstacksizecharacterinventory="1" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_scar17" minamount="0" maxamount="1" spawnprobability="0.1" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.025" minleveldifficulty="25" />
-    <Price baseprice="800" displaynonempty="true" minleveldifficulty="17">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="75" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="75" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="1">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="25">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem identifier="scp_scarextmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="flashpowder" amount="4" />
-      <RequiredItem identifier="titanium" amount="4" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="4" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="69,77,22,48" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_762natoprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1072,31 +625,6 @@
   <!--!not added-->
   <!--9x19 30 round magazine-->
   <Item name="" identifier="scp_9mmsmgmag" description="" tags="smallitem,9mmammo,ehaammo,9mmsmgmag" category="Weapon" subcategory="Coalition" maxstacksize="12" maxstacksizecharacterinventory="3" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_smg9,scp_uzi,scp_vector" minamount="0" maxamount="2" spawnprobability="1" />
-    <PreferredContainer primary="secarmcab" minamount="2" maxamount="6" spawnprobability="1" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.1" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="6" spawnprobability="0.1" />
-    <Price baseprice="200" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="3" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="2" maxavailable="6" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="0" maxavailable="3" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="2" maxavailable="6" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="3">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="8" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem tag="9mmsmgmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" outcondition="0.25" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="2,142,37,66" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_9x19projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1109,31 +637,6 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item name="" identifier="scp_9mmsmgdrummag" description="" tags="smallitem,9mmammo,ehaammo,9mmsmgmag" category="Weapon" subcategory="Coalition" maxstacksize="2" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_smg9,scp_uzi,scp_vector" minamount="0" maxamount="2" spawnprobability="1" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.05" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="2" spawnprobability="0.05" />
-    <Price baseprice="375" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="1" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="2" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="2" maxavailable="3" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="0" maxavailable="1" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="2" maxavailable="3" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="2">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="8" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem identifier="scp_9mmsmgdrummag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" outcondition="0.25" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="104,142,37,66" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_9x19projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1149,34 +652,6 @@
   <!--!not added-->
   <!--25 round 11.43 box magazine-->
   <Item name="" identifier="scp_umpmag" description="" tags="smallitem,45ammo,ehaammo,ump45mag" category="Weapon" subcategory="Coalition" maxstacksize="6" maxstacksizecharacterinventory="3" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_ump45" minamount="0" maxamount="1" spawnprobability="1" />
-    <PreferredContainer primary="secarmcab" minamount="0" maxamount="6" spawnprobability="0.55" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.06" />
-    <Price baseprice="275" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="2" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="4" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="30" amount="2">
-      <RequiredSkill identifier="weapons" level="35" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="37" />
-      <RequiredItem tag="ump45mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="plastic" outcondition="0.5" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="160,142,15,66" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_45projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1189,32 +664,6 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item name="" identifier="scp_umpincendmag" description="" tags="smallitem,45ammo,ehaammo,ump45mag" category="Weapon" subcategory="Coalition" maxstacksize="6" maxstacksizecharacterinventory="3" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.06" />
-    <Price baseprice="500" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="2" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="4" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="30" amount="2">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem identifier="scp_umpmag" amount="2" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-      <RequiredItem identifier="scp_firelatex" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem tag="ump45mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem identifier="scp_firelatex" mincondition="0.5" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="plastic" outcondition="0.5" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Ammo/improvedammo.png" sourcerect="196,143,14,66" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="196,143,14,66" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -1231,28 +680,6 @@
   <!--!not added-->
   <!--.50 BMG FMJ-->
   <Item name="" identifier="scp_50bmgfmj" interactthroughwalls="true" description="" tags="smallitem,127ammo,ehaammo" maxstacksize="15" maxstacksizecharacterinventory="5" cargocontaineridentifier="scp_ammocrate" Scale="0.3" category="Weapon" subcategory="Coalition" impactsoundtag="impact_metal_light" scale="0.4">
-    <Price baseprice="500" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="3" maxavailable="6">
-        <Reputation faction="coalition" min="65" />
-        <Reputation faction="separatists" min="65" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="3" maxavailable="6">
-        <Reputation faction="coalition" min="65" />
-        <Reputation faction="separatists" min="65" />
-      </Price>
-    </Price>
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="5" spawnprobability="0.01" minleveldifficulty="15" />
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="5">
-      <RequiredItem identifier="sgt_ammocoinspec" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="flashpowder" outcondition="0.5" />
-    </Deconstruct>
     <InventoryIcon name="50bmgfmjinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="324,127,60,63" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="1,282,10,69" origin="0.5,0.5" />
     <Body width="40" height="15" density="40" />
@@ -1278,24 +705,6 @@
   <!--!not added-->
   <!--.50 BMG AP-I-->
   <Item name="" identifier="scp_50bmgapi" interactthroughwalls="true" description="" cargocontaineridentifier="scp_ammocrate" tags="smallitem,127ammo,ehaammo" maxstacksize="10" maxstacksizecharacterinventory="5" Scale="0.3" category="Weapon" subcategory="Coalition" impactsoundtag="impact_metal_light" scale="0.4">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="5" spawnprobability="0.01" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="650" displaynonempty="true" minleveldifficulty="25">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="3" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="3" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="5">
-      <RequiredItem identifier="sgt_ammocoinspec" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="scp_firelatex" outcondition="0.25" />
-    </Deconstruct>
     <InventoryIcon name="50bmgapiinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="450,129,60,63" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="12,282,11,69" origin="0.5,0.5" />
     <Body width="40" height="15" density="40" />
@@ -1322,24 +731,6 @@
   </Item>
   <!--!not added-->
   <Item name="" identifier="scp_50bmgdura" interactthroughwalls="true" description="" cargocontaineridentifier="scp_ammocrate" tags="smallitem,127ammo,ehaammo" maxstacksize="5" Scale="0.3" category="Weapon" subcategory="Coalition" impactsoundtag="impact_metal_light" scale="0.4">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="5" spawnprobability="0.006" minleveldifficulty="35" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="900" displaynonempty="true" minleveldifficulty="75">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="3" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="3" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="5">
-      <RequiredItem identifier="sgt_ammocoinspec" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="scp_durasteel" outcondition="0.1" />
-    </Deconstruct>
     <InventoryIcon name="50bmgdurainv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="387,127,60,63" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="24,282,10,69" origin="0.5,0.5" />
     <Body width="40" height="15" density="40" />
@@ -1364,29 +755,6 @@
   </Item>
   <!--!not added-->
   <Item name="" description="" identifier="scp_12gslug" category="Weapon" maxstacksize="40" maxstacksizecharacterinventory="10" interactthroughwalls="true" cargocontaineridentifier="scp_ammocrate" tags="smallitem,shotgunammo,ehaammo" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="shotgun" minamount="6" maxamount="6" spawnprobability="0.2" />
-    <PreferredContainer primary="scp_m590" minamount="7" maxamount="7" spawnprobability="0.2" />
-    <PreferredContainer primary="scp_m4s90" minamount="9" maxamount="9" spawnprobability="0.2" />
-    <PreferredContainer primary="scp_ksg" minamount="7" maxamount="14" spawnprobability="0.2" />
-    <PreferredContainer primary="autoshotgun" minamount="8" maxamount="8" spawnprobability="1" />
-    <PreferredContainer primary="shotgununique" minamount="2" maxamount="2" spawnprobability="1" />
-    <PreferredContainer primary="secarmcab" minamount="5" maxamount="10" spawnprobability="0.3" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="10" spawnprobability="0.1" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="10" spawnprobability="0.15" />
-    <Price baseprice="75" displaynonempty="true" minleveldifficulty="5">
-      <Price storeidentifier="merchantoutpost" minavailable="2" maxavailable="6" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" maxavailable="4" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="5" maxavailable="10" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="5" maxavailable="10" />
-    </Price>
-    <Deconstruct time="3">
-      <Item identifier="plastic" outcondition="0.2" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="10">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
     <InventoryIcon name="12gsluginv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,0,45,46" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
@@ -1412,21 +780,6 @@
   </Item>
   <!--!not added-->
   <Item name="" description="" identifier="scp_12gbreachslug" category="Weapon" maxstacksize="40" maxstacksizecharacterinventory="10" interactthroughwalls="true" cargocontaineridentifier="scp_ammocrate" tags="smallitem,shotgunammo,ehaammo" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="55" displaynonempty="true" minleveldifficulty="5">
-      <Price storeidentifier="merchantoutpost" minavailable="2" maxavailable="6" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" maxavailable="4" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="5" maxavailable="10" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="5" maxavailable="10" />
-    </Price>
-    <Deconstruct time="3">
-      <Item identifier="plastic" outcondition="0.2" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="10">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
     <InventoryIcon name="12gsluginv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="98,48,45,46" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
@@ -1451,29 +804,6 @@
   </Item>
   <!--!not added-->
   <Item name="" description="" identifier="scp_12gapslug" category="Weapon" maxstacksize="20" maxstacksizecharacterinventory="10" interactthroughwalls="true" cargocontaineridentifier="scp_ammocrate" tags="smallitem,shotgunammo,ehaammo" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="shotgun" minamount="6" maxamount="6" spawnprobability="0.075" />
-    <PreferredContainer primary="scp_m590" minamount="7" maxamount="7" spawnprobability="0.1" />
-    <PreferredContainer primary="scp_m4s90" minamount="9" maxamount="9" spawnprobability="0.1" />
-    <PreferredContainer primary="scp_ksg" minamount="7" maxamount="14" spawnprobability="0.1" />
-    <PreferredContainer primary="autoshotgun" minamount="8" maxamount="8" spawnprobability="0.5" />
-    <PreferredContainer primary="shotgununique" minamount="2" maxamount="2" spawnprobability="0.5" />
-    <PreferredContainer primary="secarmcab" minamount="5" maxamount="10" spawnprobability="0.25" notcampaign="true" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="10" spawnprobability="0.1" minleveldifficulty="15" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="10" spawnprobability="0.1" minleveldifficulty="15" />
-    <Price baseprice="150" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="4" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="5" maxavailable="10" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="5" maxavailable="10" />
-    </Price>
-    <Deconstruct time="3">
-      <Item identifier="plastic" outcondition="0.2" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="10">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
     <InventoryIcon name="12gapsluginv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="187,2,49,50" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="24,145,29,10" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
@@ -1499,27 +829,6 @@
   </Item>
   <!--!not added-->
   <Item name="" description="" identifier="scp_12gmagbuck" category="Weapon" maxstacksize="30" maxstacksizecharacterinventory="10" interactthroughwalls="true" cargocontaineridentifier="scp_ammocrate" tags="smallitem,shotgunammo,ehaammo" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="shotgun" minamount="6" maxamount="6" spawnprobability="0.3" />
-    <PreferredContainer primary="scp_m590" minamount="7" maxamount="7" spawnprobability="0.3" />
-    <PreferredContainer primary="scp_m4s90" minamount="9" maxamount="9" spawnprobability="0.3" />
-    <PreferredContainer primary="scp_ksg" minamount="7" maxamount="14" spawnprobability="0.3" />
-    <PreferredContainer primary="secarmcab" minamount="5" maxamount="10" spawnprobability="0.2" notcampaign="true" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="5" spawnprobability="0.05" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="10" spawnprobability="0.15" />
-    <Price baseprice="85" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="4" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="5" maxavailable="20" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="5" maxavailable="20" />
-    </Price>
-    <Deconstruct time="3">
-      <Item identifier="plastic" outcondition="0.2" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="10">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
     <InventoryIcon name="12gmagbuckinv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="93,0,46,46" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,156,22,10" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
@@ -1545,27 +854,6 @@
   </Item>
   <!--!not added-->
   <Item name="" description="" identifier="scp_12devilslug" category="Weapon" subcategory="Chemical Weapons" maxstacksize="20" maxstacksizecharacterinventory="10" interactthroughwalls="true" cargocontaineridentifier="scp_ammocrate" tags="smallitem,shotgunammo,ehaammo" Scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="toxcab" minamount="0" maxamount="10" spawnprobability="0.06" />
-    <PreferredContainer primary="abandonedsecarmcab,wreckmedcab" minamount="0" maxamount="10" spawnprobability="0.05" minleveldifficulty="20" />
-    <Price baseprice="150" displaynonempty="true" minleveldifficulty="25">
-      <Price storeidentifier="merchantoutpost" minavailable="2" maxavailable="6" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" maxavailable="4" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="6" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="6" />
-    </Price>
-    <Deconstruct time="3">
-      <Item identifier="plastic" outcondition="0.2" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="chemstation" requiredtime="30" amount="10">
-      <RequiredSkill identifier="weapons" level="20" />
-      <RequiredSkill identifier="medical" level="60" />
-      <RequiredItem identifier="shotgunshell" amount="10" />
-      <RequiredItem identifier="scp_devilsblood" mincondition="0.5" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-    </Fabricate>
     <InventoryIcon name="12gdevilinv" texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="46,48,52,49" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
@@ -1594,30 +882,6 @@
   <!--!not added-->
   <!--5.56x45 M995 mag-->
   <Item impactsoundtag="impact_metal_light" scale="0.48" cargocontaineridentifier="scp_ammocrate" description="" category="Weapon" subcategory="Coalition" identifier="scp_556apmag" name="" tags="smallitem,556ammo,ehaammo,55630mag" maxstacksize="12" maxstacksizecharacterinventory="4" linkable="true" interactthroughwall="true">
-    <PreferredContainer spawnprobability="0.2" maxamount="1" minamount="0" primary="scp_sg550" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer spawnprobability="0.08" maxamount="3" minamount="0" primary="wrecksecarmcab" minleveldifficulty="10" />
-    <Price baseprice="300" displaynonempty="true" minleveldifficulty="17">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="3" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" maxavailable="4" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" maxavailable="4" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="4">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="8" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem tag="55630mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem identifier="titanium" mincondition="0.5" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" mincondition="0.5" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="steel" outcondition="0.25" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="111,3,29,56" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_556approjectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1657,31 +921,6 @@
   <!--!not added-->
   <!--9x19 16 round magazine-->
   <Item name="" identifier="scp_9mmapmag" description="" tags="smallitem,9mmpistolammo,ehaammo,9mm16mag" cargocontaineridentifier="scp_ammocrate" category="Weapon" subcategory="Coalition" maxstacksize="10" maxstacksizecharacterinventory="5" impactsoundtag="impact_metal_light" scale="0.3">
-    <PreferredContainer primary="scp_p226" minamount="0" maxamount="1" spawnprobability="0.2" />
-    <PreferredContainer primary="scp_mp443" minamount="0" maxamount="1" spawnprobability="0.2" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.085" />
-    <Price baseprice="200" displaynonempty="true" minleveldifficulty="5">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="4" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" maxavailable="6" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" maxavailable="6" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="5">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="7" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem tag="9mm16mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.25" />
-      <RequiredItem identifier="titanium" mincondition="0.25" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" mincondition="0.25" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="steel" outcondition="0.2" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/ammo.png" depth="0.54" sourcerect="67,3,28,56" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_9x19cappprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1747,30 +986,6 @@
   <!--!not added-->
   <!--9x19 30 round magazine-->
   <Item name="" identifier="scp_9mmsmgapmag" description="" tags="smallitem,9mmammo,ehaammo,9mmsmgmag" category="Weapon" subcategory="Coalition" maxstacksize="12" maxstacksizecharacterinventory="3" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.075" />
-    <PreferredContainer primary="scp_smg9,scp_uzi,scp_vector" minamount="0" maxamount="2" spawnprobability="0.1" />
-    <Price baseprice="400" displaynonempty="true" minleveldifficulty="5">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="3" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="3" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="3">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem tag="9mmsmgmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem identifier="titanium" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="56,142,37,66" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_9x19capprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1785,33 +1000,6 @@
   <!--!not added-->
   <!--11.43x23 10 round magazine-->
   <Item name="" identifier="scp_45incendmag" description="" tags="smallitem,45pistolammo,ehaammo,4510mag" cargocontaineridentifier="scp_ammocrate" maxstacksize="6" maxstacksizecharacterinventory="3" category="Weapon" subcategory="Coalition" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.06" />
-    <Price baseprice="225" displaynonempty="true" minleveldifficulty="5">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="4" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="24" amount="2">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="scp_45mag" amount="2" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-      <RequiredItem identifier="scp_firelatex" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="12" amount="1">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem tag="4510mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" />
-      <RequiredItem identifier="scp_firelatex" mincondition="0.5" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" mincondition="0.5" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="steel" outcondition="0.5" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="214,143,15,66" origin="0.5,0.5" />
     <InventoryIcon texture="%ModDir%/Ammo/improvedammo.png" sourcerect="214,143,14,45" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -1853,33 +1041,6 @@
   <!--!not added-->
   <!--9x33mmR AP round-->
   <Item name="" identifier="scp_357apround" description="" category="Weapon" subcategory="Coalition" interactthroughwalls="true" maxstacksize="24" maxstacksizecharacterinventory="12" cargocontaineridentifier="scp_ammocrate" tags="smallitem,357ammo,ehaammo,pistolammoitem" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_python" minamount="6" maxamount="6" spawnprobability="0.2" />
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="175" displaynonempty="true" minleveldifficulty="5">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" sold="false" maxavailable="6">
-        <Reputation faction="coalition" min="25" />
-        <Reputation faction="separatists" min="35" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" maxavailable="12">
-        <Reputation faction="coalition" min="25" />
-        <Reputation faction="separatists" min="30" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" maxavailable="12">
-        <Reputation faction="coalition" min="25" />
-        <Reputation faction="separatists" min="30" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="12">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Deconstruct time="2">
-      <Item identifier="copper" outcondition="0.1" />
-      <Item identifier="magnesium" outcondition="0.2" />
-      <Item identifier="titanium" outcondition="0.1" />
-    </Deconstruct>
     <InventoryIcon name="357apinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="402,11,38,38" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="26,254,8,23" origin="0.5,0.5" />
     <Body width="40" height="15" density="40" />
@@ -1905,30 +1066,6 @@
   <!--!not added-->
   <!--10.9x33mmR round-->
   <Item name="" identifier="scp_44round" description="" category="Weapon" subcategory="Coalition" interactthroughwalls="true" maxstacksize="12" maxstacksizecharacterinventory="6" cargocontaineridentifier="scp_ammocrate" tags="smallitem,44ammo,ehaammo,pistolammoitem" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_anaconda" minamount="6" maxamount="6" spawnprobability="0.35" />
-    <PreferredContainer primary="secarmcab" minamount="0" maxamount="6" spawnprobability="0.15" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="6" spawnprobability="0.06" minleveldifficulty="5" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="6" spawnprobability="0.1" />
-    <Price baseprice="220" displaynonempty="true" minleveldifficulty="5">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="6">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" maxavailable="12">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" maxavailable="12">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="6">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Deconstruct time="3">
-      <Item identifier="flashpowder" outcondition="0.4" />
-    </Deconstruct>
     <InventoryIcon name="44inv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="397,51,47,47" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="1,251,8,26" origin="0.5,0.5" />
     <Body width="40" height="15" density="40" />
@@ -1954,27 +1091,6 @@
   <!--!not added-->
   <!--10.9x33mmR AP round-->
   <Item name="" identifier="scp_44apround" description="" category="Weapon" subcategory="Coalition" interactthroughwalls="true" maxstacksize="12" maxstacksizecharacterinventory="6" cargocontaineridentifier="scp_ammocrate" tags="smallitem,44ammo,ehaammo,pistolammoitem" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_anaconda" minamount="6" maxamount="6" spawnprobability="0.1" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="6" spawnprobability="0.01" minleveldifficulty="15" />
-    <Price baseprice="350" displaynonempty="true" minleveldifficulty="7">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="0" maxavailable="6">
-        <Reputation faction="coalition" min="45" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="6">
-        <Reputation faction="coalition" min="45" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="6">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Deconstruct time="4">
-      <Item identifier="flashpowder" outcondition="0.6" />
-    </Deconstruct>
     <InventoryIcon name="44apinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="346,51,47,47" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" sourcerect="10,251,6,26" origin="0.5,0.5" />
     <Body width="40" height="15" density="40" />
@@ -2001,34 +1117,6 @@
   <!--!not added-->
   <!--100 round 5.56x45 box mag-->
   <Item name="" identifier="scp_m249mag" description="" tags="mediumitem,m249ammo,ehaammo" maxstacksize="4" maxstacksizecharacterinventory="1" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.3">
-    <PreferredContainer primary="scp_m249" minamount="0" maxamount="1" spawnprobability="0.25" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="15" />
-    <Price baseprice="400" displaynonempty="true" minleveldifficulty="9">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="35" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="1">
-      <RequiredItem identifier="sgt_ammocoinbasic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="30" />
-      <RequiredItem identifier="scp_m249mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/ammo.png" depth="0.54" sourcerect="176,104,29,47" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_556projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -2045,22 +1133,6 @@
 <!--!not added-->
   <!--5.56x45 Ds mag-->
   <Item impactsoundtag="impact_metal_light" scale="0.48" cargocontaineridentifier="scp_ammocrate" description="" category="Weapon" subcategory="Coalition" identifier="scp_556duramag" name="" tags="smallitem,556ammo,ehaammo,55630mag" maxstacksize="6" maxstacksizecharacterinventory="3" linkable="true" interactthroughwall="true">
-    <PreferredContainer spawnprobability="0.05" maxamount="1" minamount="0" primary="scp_sg550" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer spawnprobability="0.01" maxamount="3" minamount="0" primary="wrecksecarmcab" minleveldifficulty="25" />
-    <Price baseprice="450" displaynonempty="true" sold="false" />
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="3">
-      <RequiredItem identifier="sgt_ammocoinadv" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem tag="55630mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="flashpowder" mincondition="0.5" />
-      <RequiredItem identifier="scp_durasteelmunitionscase" mincondition="0.05" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="steel" outcondition="0.25" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="171,3,29,56" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_556duraprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -2101,22 +1173,6 @@
   <!--!not added-->
   <!--7.62x51 Ds mag-->
   <Item name="" identifier="scp_scarduramag" description="" tags="smallitem,762ammo,ehaammo,76251mag" maxstacksize="4" maxstacksizecharacterinventory="2" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_ammocrate" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_scar17" minamount="0" maxamount="1" spawnprobability="0.05" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.01" minleveldifficulty="30" />
-    <Price baseprice="600" displaynonempty="true" />
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="2">
-      <RequiredItem identifier="sgt_ammocoinadv" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="23" amount="1">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem tag="76251mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="flashpowder" />
-      <RequiredItem identifier="scp_durasteelmunitionscase" mincondition="0.15" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="plastic" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="93,78,21,39" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_762natoduraprojectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -2157,26 +1213,6 @@
   <!--!unconfirmed-->
   <!--Railgun Shells-->
   <Item name="" identifier="scp_railgunpiercingshell" description="" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammoloader" amount="2" spawnprobability="0.3" />
-    <PreferredContainer primary="railgunammocontainer" amount="2" spawnprobability="0.3" />
-    <PreferredContainer secondary="wreckrailgunloader" minamount="1" maxamount="2" spawnprobability="0.1" />
-    <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.1" />
-    <Price baseprice="500" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="3" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="3" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="25">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-    </Fabricate>
     <InventoryIcon name="piercingshellinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="255,2,38,39" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="3,5,219,31" depth="0.55" origin="0.5,0.5" />
     <BrokenSprite name="piercingshellproj" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="240,163,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
@@ -2223,25 +1259,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_railgundushell" description="" health="100" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammoloader,railgunammocontainer" amount="1" spawnprobability="0.025" />
-    <PreferredContainer secondary="wreckrailgunloader,wreckrailgunammocontainer" minamount="1" maxamount="2" spawnprobability="0.03" />
-    <Price baseprice="750" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="2" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="2" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="25">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="scp_railgunpiercingshell" />
-      <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem identifier="depletedfuel" />
-    </Fabricate>
     <InventoryIcon name="dushellinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="331,100,40,40" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="236,268,219,31" depth="0.55" origin="0.5,0.5" />
     <BrokenSprite name="dushellproj" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="239,209,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
@@ -2308,25 +1325,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_railgunduflechetteshell" description="" health="100" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammoloader,railgunammocontainer" amount="1" spawnprobability="0.015" />
-    <PreferredContainer secondary="wreckrailgunloader,wreckrailgunammocontainer" minamount="1" maxamount="2" spawnprobability="0.025" />
-    <Price baseprice="750" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="2" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="2" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="25">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="scp_railgundushell" />
-      <RequiredItem identifier="c4block" />
-      <RequiredItem identifier="depletedfuel" />
-    </Fabricate>
     <InventoryIcon name="duflechinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="373,100,40,41" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="236,304,219,31" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
@@ -2392,26 +1390,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_railgunphyspiercingshell" description="" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammoloader" />
-    <PreferredContainer primary="railgunammocontainer" amount="1" maxcondition="1" spawnprobability="0.01" />
-    <PreferredContainer secondary="wreckrailgunloader,wreckrailgunammocontainer" minamount="1" maxamount="2" spawnprobability="0.03" minleveldifficulty="20" />
-    <Price baseprice="500" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="4" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="c4block" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="scp_railgunpiercingshell" />
-      <RequiredItem identifier="physicorium" />
-      <RequiredItem identifier="c4block" />
-    </Fabricate>
     <InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="294,54,38,39" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,118,219,31" depth="0.55" origin="0.5,0.5" />
     <BrokenSprite name="physpiercingshellproj" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="239,184,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
@@ -2458,31 +1436,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_railgunthermoshell" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" subcategory="Weapons of Mass Destruction" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammoloader,railgunammocontainer" amount="1" spawnprobability="0.01" notcampaign="true" />
-    <PreferredContainer secondary="wreckrailgunammocontainer,wreckrailgunammocontainer" amount="1" spawnprobability="0.01" minleveldifficulty="20" />
-    <Price baseprice="1200" sold="false">
-      <Price storeidentifier="merchantoutpost" multiplier="1.35" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="3" minleveldifficulty="30">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="3" minleveldifficulty="30">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-      <Item identifier="thoriumfuelrod" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="50">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredSkill identifier="electrical" level="50" />
-      <RequiredItem identifier="nuclearshell" />
-      <RequiredItem identifier="thoriumfuelrod" amount="2" />
-      <RequiredItem identifier="ic4block" amount="2" />
-    </Fabricate>
     <InventoryIcon name="thermoinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="246,47,45,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,74,214,43" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="35" />
@@ -2520,19 +1473,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_railgunnukemirvshell" description="" health="100" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" subcategory="Weapons of Mass Destruction" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammoloader,railgunammocontainer" />
-    <PreferredContainer secondary="wreckrailgunloader,wreckrailgunammocontainer" amount="1" spawnprobability="0.008" minleveldifficulty="25" />
-    <Price baseprice="1200" displaynonempty="true" sold="false" />
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="25">
-      <RequiredSkill identifier="weapons" level="90" />
-      <RequiredItem identifier="nuclearshell" />
-      <RequiredItem identifier="nuclearshell" />
-      <RequiredItem identifier="ic4block" />
-      <RequiredItem identifier="thorium" amount="2" />
-    </Fabricate>
     <InventoryIcon name="nukemirvinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="289,429,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="237,341,218,44" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
@@ -2605,28 +1545,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_railgunerdshell" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" subcategory="Weapons of Mass Destruction" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammoloader,railgunammocontainer" mincondition="1" spawnprobability="0.01" />
-    <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.01" minleveldifficulty="25" />
-    <Price baseprice="1100">
-      <Price storeidentifier="merchantoutpost" multiplier="1.35" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="1" minleveldifficulty="35" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="1" minleveldifficulty="35" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-      <Item identifier="thoriumfuelrod" />
-      <Item identifier="thoriumfuelrod" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="50">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredSkill identifier="electrical" level="75" />
-      <RequiredItem identifier="nuclearshell" />
-      <RequiredItem identifier="uranium" amount="6" />
-      <RequiredItem identifier="thoriumfuelrod" amount="2" />
-    </Fabricate>
     <InventoryIcon name="thermoinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="283,99,45,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,288,216,42" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="35" />
@@ -2700,20 +1618,6 @@
     </ItemComponent>
   </Item>
   <Item name="" identifier="scp_railgunbunkerbuster" description="" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" hideinmenus="true" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer secondary="wreckrailgunloader" minamount="0" maxamount="3" spawnprobability="0.075" />
-    <PreferredContainer secondary="wreckrailgunammocontainer" minamount="0" maxamount="3" spawnprobability="0.075" />
-    <Price baseprice="800" minleveldifficulty="30" displaynonempty="true" sold="false">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2" />
-    </Price>
-    <Deconstruct time="15">
-      <Item identifier="scp_durasteel" amount="2" />
-      <Item identifier="physicorium" />
-    </Deconstruct>
     <InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="336,54,43,42" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,153,219,45" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="30" />
@@ -2785,13 +1689,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_tsarshell" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" subcategory="Weapons of Mass Destruction" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" hideinmenus="true">
-    <PreferredContainer primary="railgunammoloader,railgunammocontainer" />
-    <PreferredContainer secondary="wreckrailgunammocontainer,wreckrailgunammocontainer" amount="1" spawnprobability="0.0065" minleveldifficulty="10" />
-    <Price baseprice="1200" sold="false" />
-    <Deconstruct time="10">
-      <Item identifier="scp_durasteel" amount="4" />
-      <Item identifier="thoriumfuelrod" amount="6" />
-    </Deconstruct>
     <InventoryIcon name="tsarinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="227,427,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="4,433,217,43" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="35" />
@@ -2829,14 +1726,6 @@
     </Projectile>
   </Item>
   <Item name="Strange Railgun Shell" description="A very ominous shell rife with the infamous clicking of Ionizing Radiation apparent. The impact fuse is completely dead and as a result is unusable without replacing it. Heat also appears to be building and is actively making the case hotter and hotter." identifier="scp_doomsdayshellruined" tags="railgunequipment,railgunammo" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" hideinmenus="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="railgunammoloader,railgunammocontainer" />
-    <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.008" />
-    <Price baseprice="2750" sold="false"></Price>
-    <Deconstruct time="10">
-      <Item identifier="steel" amount="8" />
-      <Item identifier="thoriumfuelrod" amount="4" />
-      <Item identifier="ic4block" amount="2" />
-    </Deconstruct>
     <InventoryIcon name="ruineddoomsdayinv" texture="%ModDir%/Ammo/railgunshells.png" sourcerect="379,55,45,44" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="6,201,217,47" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" density="35" />
@@ -2892,27 +1781,6 @@
   <!--!unconfirmed-->
   <Item name="" identifier="scp_thermodepthcharge" tags="depthchargeammo" category="Weapon" sonarsize="5" scale="0.4" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="10">
     <Upgrade gameversion="0.20.4.0" scale="0.4" />
-    <PreferredContainer primary="depthchargeloader" secondary="ammoboxcontainer" />
-    <Price baseprice="1100" minleveldifficulty="30">
-      <Price storeidentifier="merchantoutpost" multiplier="1.35" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="1" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="1" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="iron" />
-      <Item identifier="thoriumfuelrod" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="50">
-      <RequiredSkill identifier="weapons" level="75" />
-      <RequiredSkill identifier="electrical" level="60" />
-      <RequiredItem identifier="depthchargeshell" />
-      <RequiredItem identifier="incendium" amount="4" />
-      <RequiredItem identifier="thoriumfuelrod" amount="3" />
-      <RequiredItem identifier="ic4block" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/Ammo/railgunshells.png" sourcerect="175,365,45,45" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/railgunshells.png" sourcerect="4,341,167,89" depth="0.55" origin="0.5,0.5" />
     <Body width="128" height="85" density="50" />

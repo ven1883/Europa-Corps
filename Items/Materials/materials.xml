@@ -817,16 +817,6 @@
   <!-- we don't want this, but we might later. let's just leave it here for now.
 
   <Item name="" identifier="scp_ae1025" category="material" health="900" maxstacksize="1" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" hideinmenus="true">
-    <PreferredContainer primary="storagecab" />
-    <PreferredContainer secondary="wreckstoragecab,wrecksecarmcab,wreckmedcab,wrecktoxcab,ruinstoragelarge,ruinstoragesmall" minamount="0" maxamount="1" spawnprobability="0.0065" />
-    <PreferredContainer secondary="locker" />
-    <Price baseprice="3000" sold="false">
-      <Price storeidentifier="merchantoutpost" multiplier="0.1" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="0.1" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.1" sold="false" />
-      <Price storeidentifier="merchantmine" multiplier="0.1" sold="false" />
-    </Price>
     <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="765,301,55,74" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="39" density="25" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,LeftHand,RightHand" aimpos="40,-20" handle1="5,0" aimangle="260" msg="ItemMsgPickUpSelect">

@@ -2,33 +2,6 @@
 <Items>
   <!--Orsis T-5000-->
   <Item name="" identifier="scp_t5000" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.03" minleveldifficulty="20" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="700" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="40" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="40" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="45">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_sniperkit" mincondition="0.5" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="plastic" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="titaniumaluminiumalloy" amount="2" />
-      <Item identifier="rubber" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir:2764968387%/Weapons/weaponsinv.png" sourcerect="418,250,73,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2764968387%/Weapons/heavyweapons.png" sourcerect="287,65,313,66" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -76,35 +49,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_m24" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" minleveldifficulty="15" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.075" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="700" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="40" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="40" />
-      </Price>
-    </Price>
-    <Fabricate suitablefabricators="weaponfabricator" requiredtime="45">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_basicparts" amount="3" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
-      <RequiredItem identifier="steel" amount="5" />
-      <RequiredItem identifier="plastic" amount="4" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="rubber" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir:2764968387%/Weapons/weaponsinv.png" sourcerect="491,250,73,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2764968387%/Weapons/heavyweapons.png" sourcerect="11,716,309,66" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -153,29 +97,6 @@
   </Item>
   <!--10 Round 8.6x70mm box mag-->
   <Item name="" identifier="scp_t5000boxmag" description="" tags="smallitem,t5000ammo,ehaammo" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_ammocrate" maxstacksize="4" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="scp_t5000" minamount="0" maxamount="1" spawnprobability="0.5" />
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="3" spawnprobability="0.06" minleveldifficulty="20" />
-    <Price baseprice="500" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="4" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4" />
-    </Price>
-    <Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="4">
-      <RequiredItem identifier="sgt_ammocoinadv" amount="1" />
-    </Fabricate>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="6" amount="1">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem identifier="scp_t5000boxmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="lead" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" />
-    </Deconstruct>
     <Sprite texture="%ModDir:2764968387%/Ammo/improvedammo.png" depth="0.54" sourcerect="23,222,26,27" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_86projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">

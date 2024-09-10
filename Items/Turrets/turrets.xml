@@ -115,33 +115,6 @@
     </ConnectionPanel>
   </Item>
   <Item name="" description="" identifier="scp_tankgunbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="scp_tankgunloader" amount="1" probability="0.5" />
-    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
-    <Price baseprice="575" displaynonempty="true" minleveldifficulty="10">
-      <Price storeidentifier="merchantoutpost" multiplier="1.3" minavailable="1" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="2" />
-      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
-      <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="lead" mincondition="0.95" />
-      <Item identifier="steel" mincondition="0.95" />
-      <Item identifier="aluminium" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="c4block" amount="2" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="aluminium" amount="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem identifier="c4block" amount="2" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="scp_tankgunbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
-    </Fabricate>
     <Sprite name="tankammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,1,129,176" origin="0.5,0.5" />
     <ContainedSprite name="tankammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="322,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
     <Body width="129" height="176" density="50" />
@@ -190,33 +163,6 @@
     <Upgrade gameversion="0.10.0.0" scale="*0.5" />
   </Item>
   <Item name="" description="" identifier="scp_tankgunapbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="scp_tankgunloader" />
-    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
-    <Price baseprice="750" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" multiplier="1.3" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
-      <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="uex" mincondition="0.95" />
-      <Item identifier="steel" mincondition="0.95" />
-      <Item identifier="aluminium" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="70" />
-      <RequiredItem identifier="c4block" amount="2" />
-      <RequiredItem identifier="titanium" amount="2" />
-      <RequiredItem identifier="aluminium" amount="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem identifier="uex" amount="2" />
-      <RequiredItem identifier="titanium" amount="2" />
-      <RequiredItem identifier="scp_tankgunapbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
-    </Fabricate>
     <Sprite name="tankapammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,181,129,176" origin="0.5,0.5" />
     <ContainedSprite name="tankapammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="322,184,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
     <Body width="129" height="176" density="50" />
@@ -266,33 +212,6 @@
     <Upgrade gameversion="0.10.0.0" scale="*0.5" />
   </Item>
   <Item name="" description="" identifier="scp_tankgundubox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="scp_tankgunloader" />
-    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
-    <Price baseprice="1000" displaynonempty="true" minleveldifficulty="20">
-      <Price storeidentifier="merchantoutpost" multiplier="1.3" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.3" sold="false" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" />
-      <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="uex" mincondition="0.95" />
-      <Item identifier="depletedfuel" mincondition="0.95" />
-      <Item identifier="lead" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="c4block" amount="2" />
-      <RequiredItem identifier="depletedfuel" amount="3" />
-      <RequiredItem identifier="lead" />
-    </Fabricate>
-    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem identifier="c4block" amount="2" />
-      <RequiredItem identifier="depletedfuel" amount="3" />
-      <RequiredItem identifier="scp_tankgundubox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
-    </Fabricate>
     <Sprite name="tankduammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,541,129,176" origin="0.5,0.5" />
     <ContainedSprite name="tankduammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="436,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
     <Body width="129" height="176" density="50" />
@@ -343,33 +262,6 @@
     <Upgrade gameversion="0.10.0.0" scale="*0.5" />
   </Item>
   <Item name="" description="" identifier="scp_tankgunphysbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="scp_tankgunloader" amount="1" probability="0.25" />
-    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
-    <Price baseprice="900" displaynonempty="true" minleveldifficulty="35">
-      <Price storeidentifier="merchantoutpost" multiplier="1.3" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="6" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.3" minavailable="2" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
-      <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="physicorium" mincondition="0.95" />
-      <Item identifier="uex" mincondition="0.95" />
-      <Item identifier="aluminium" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60">
-      <RequiredSkill identifier="weapons" level="85" />
-      <RequiredItem identifier="c4block" amount="3" />
-      <RequiredItem identifier="physicorium" amount="2" />
-      <RequiredItem identifier="aluminium" amount="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="40">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="c4block" amount="3" />
-      <RequiredItem identifier="physicorium" amount="2" />
-      <RequiredItem identifier="scp_tankgunphysbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
-    </Fabricate>
     <Sprite name="tankphysammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,360,129,176" origin="0.5,0.5" />
     <ContainedSprite name="tankphysammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="322,277,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
     <Body width="129" height="176" density="50" />
@@ -534,31 +426,6 @@
     </ConnectionPanel>
   </Item>
   <Item name="" description="" identifier="scp_mgturretfmjbox" scale="0.5" tags="mgturretequipment,mgturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="scp_mgturretloader" amount="1" probability="0.5" />
-    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
-    <Price baseprice="150" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" multiplier="1.3" minavailable="2" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="6" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.3" minavailable="3" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" />
-      <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="3" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="lead" mincondition="0.95" />
-      <Item identifier="steel" mincondition="0.95" />
-      <Item identifier="plastic" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="30" />
-      <RequiredItem identifier="lead" amount="2" />
-      <RequiredItem identifier="plastic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="15" />
-      <RequiredItem identifier="lead" amount="2" />
-      <RequiredItem identifier="scp_mgturretfmjbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
-    </Fabricate>
     <Sprite name="mgturretammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="331,528,97,80" origin="0.5,0.5" />
     <Body width="115" height="88" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
@@ -601,33 +468,6 @@
     <Upgrade gameversion="0.10.0.0" scale="*0.5" />
   </Item>
   <Item name="" description="" identifier="scp_mgturretapbox" scale="0.5" tags="mgturretequipment,mgturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="scp_mgturretloader" amount="1" probability="0.5" />
-    <PreferredContainer primary="ammoboxcontainer" mincondition="1" />
-    <Price baseprice="275" displaynonempty="true" minleveldifficulty="5">
-      <Price storeidentifier="merchantoutpost" multiplier="1.3" minavailable="2" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="6" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1.3" minavailable="3" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" />
-      <Price storeidentifier="merchantmine" multiplier="1.2" minavailable="3" sold="false" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="lead" mincondition="0.95" />
-      <Item identifier="titanium" mincondition="0.95" />
-      <Item identifier="plastic" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="30" />
-      <RequiredItem identifier="lead" />
-      <RequiredItem identifier="titanium" mincondition="0.5" />
-      <RequiredItem identifier="plastic" />
-    </Fabricate>
-    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="15" />
-      <RequiredItem identifier="lead" />
-      <RequiredItem identifier="titanium" mincondition="0.5" />
-      <RequiredItem identifier="scp_mgturretapbox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
-    </Fabricate>
     <Sprite name="mgturretammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="331,609,97,80" origin="0.5,0.5" />
     <Body width="115" height="88" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />

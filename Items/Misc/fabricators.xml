@@ -14,25 +14,6 @@
     <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true" />
   </Item>
   <Item name="" description="" identifier="scp_reloadfabricator" tags="reloadfabricator,donttakeitems" category="Machine" linkable="true" allowedlinks="deconstructor,locker" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
-    <Price baseprice="500" soldeverywhere="false">
-      <Price storeidentifier="outpost" multiplier="1.1" minavailable="1" />
-      <Price storeidentifier="city" multiplier="0.9" minavailable="2" />
-      <Price storeidentifier="research" multiplier="1" minavailable="1" />
-      <Price storeidentifier="military" multiplier="1" minavailable="1" />
-      <Price storeidentifier="mine" multiplier="0.8" minavailable="3" />
-    </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="electrical" level="20" />
-      <RequiredSkill identifier="mechanical" level="30" />
-      <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="plastic" amount="2" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="steel" />
-      <Item identifier="copper" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
     <Sprite name="reloadfabnormal" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="511,6,252,217" depth="0.8" origin="0.5,0.5" />
     <BrokenSprite name="reloadfabdamage1" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="766,6,252,217" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
@@ -138,25 +119,6 @@
     <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true" />
   </Item>
   <Item name="" description="" identifier="scp_portableammofabricator" tags="ammofabricator,donttakeitems" category="Machine" linkable="true" allowedlinks="deconstructor,locker" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
-    <Price baseprice="500" soldeverywhere="false">
-      <Price storeidentifier="outpost" multiplier="1.1" minavailable="1" />
-      <Price storeidentifier="city" multiplier="0.9" minavailable="2" />
-      <Price storeidentifier="research" multiplier="1" minavailable="1" />
-      <Price storeidentifier="military" multiplier="1" minavailable="1" />
-      <Price storeidentifier="mine" multiplier="0.8" minavailable="3" />
-    </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="electrical" level="20" />
-      <RequiredSkill identifier="mechanical" level="30" />
-      <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="plastic" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="steel" />
-      <Item identifier="copper" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
     <Sprite name="portammofabnormal" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="4,6,252,217" depth="0.8" canflipx="false" origin="0.5,0.5" />
     <BrokenSprite name="portammofabdamage1" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="257,6,252,217" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
@@ -213,25 +175,6 @@
     </ItemContainer>
   </Item>
   <Item name="" description="" identifier="scp_portableweaponfabricator" tags="weaponfabricator,donttakeitems" category="Machine" linkable="true" allowedlinks="deconstructor,locker" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
-    <Price baseprice="500" soldeverywhere="false">
-      <Price storeidentifier="outpost" multiplier="1.1" minavailable="1" />
-      <Price storeidentifier="city" multiplier="0.9" minavailable="2" />
-      <Price storeidentifier="research" multiplier="1" minavailable="1" />
-      <Price storeidentifier="military" multiplier="1" minavailable="1" />
-      <Price storeidentifier="mine" multiplier="0.8" minavailable="3" />
-    </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="electrical" level="25" />
-      <RequiredSkill identifier="mechanical" level="40" />
-      <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="plastic" amount="2" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="steel" />
-      <Item identifier="copper" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
     <Sprite name="portwepfabnormal" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="3,231,251,213" depth="0.8" canflipx="false" origin="0.5,0.5" />
     <BrokenSprite name="portwepfabdamage1" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="256,230,251,213" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
@@ -288,26 +231,6 @@
     </ItemContainer>
   </Item>
   <Item name="" description="" identifier="scp_advportableweaponfabricator" tags="advweaponfabricator,donttakeitems" category="Machine" linkable="true" allowedlinks="deconstructor,locker" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
-    <Price baseprice="800" soldeverywhere="false" minleveldifficulty="35">
-      <Price storeidentifier="outpost" multiplier="1.1" sold="false" />
-      <Price storeidentifier="city" multiplier="0.9" minavailable="1" />
-      <Price storeidentifier="research" multiplier="1" minavailable="1" />
-      <Price storeidentifier="military" multiplier="1" minavailable="1" />
-      <Price storeidentifier="mine" multiplier="0.8" minavailable="1" />
-    </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredSkill identifier="mechanical" level="35" />
-      <RequiredItem identifier="scp_portableweaponfabricator" />
-      <RequiredItem identifier="fpgacircuit" amount="2" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="fpgacircuit" />
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
     <Sprite name="advportwepfabnormal" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="4,448,251,195" depth="0.8" canflipx="false" origin="0.5,0.5" />
     <BrokenSprite name="advportwepfabdamage1" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="257,448,251,195" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
@@ -364,25 +287,6 @@
     </ItemContainer>
   </Item>
   <Item name="" identifier="scp_portablejunctionbox" tags="junctionbox" category="Machine" scale="0.5" linkable="false" damagedbyexplosions="true" explosiondamagemultiplier="0.5">
-    <Price baseprice="455" soldeverywhere="false" minleveldifficulty="5">
-      <Price storeidentifier="merchantoutpost" multiplier="1" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1" sold="false" />
-      <Price storeidentifier="merchantresearch" multiplier="1" sold="false" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" />
-      <Price storeidentifier="merchantmine" multiplier="1" sold="false" />
-      <Price storeidentifier="merchantengineering" multiplier="1.15" minavailable="0" maxavailable="2" />
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="aluminium" />
-      <Item identifier="copper" />
-      <Item identifier="fpgacircuit" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="electrical" level="45" />
-      <RequiredItem identifier="aluminium" amount="2" />
-      <RequiredItem identifier="copper" amount="3" />
-      <RequiredItem identifier="fpgacircuit" />
-    </Fabricate>
     <UpgradePreviewSprite texture="%ModDir%/Misc/portablefabricators.png" sourcerect="99,961,28,32" origin="0.5,0.45" />
     <Sprite texture="%ModDir%/Misc/portablefabricators.png" sourcerect="521,239,137,119" depth="0.8" canflipx="false" origin="0.5,0.5" />
     <BrokenSprite texture="%ModDir%/Misc/portablefabricators.png" sourcerect="660,240,138,119" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
@@ -431,26 +335,6 @@
     </Repairable>
   </Item>
   <Item name="" description="" identifier="scp_chemistrystation" tags="chemstation,donttakeitems,radiationshielding" category="Machine" linkable="true" allowedlinks="deconstructor,locker" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
-    <Price baseprice="600" soldeverywhere="false" minleveldifficulty="15">
-      <Price storeidentifier="outpost" multiplier="1.1" sold="false" />
-      <Price storeidentifier="city" multiplier="0.9" sold="false" />
-      <Price storeidentifier="research" multiplier="1" minavailable="1" />
-      <Price storeidentifier="military" multiplier="1" minavailable="1" />
-      <Price storeidentifier="mine" multiplier="0.8" sold="false" />
-    </Price>
-    <Fabricate suitablefabricators="medicalfabricator" requiredtime="20">
-      <RequiredSkill identifier="electrical" level="30" />
-      <RequiredSkill identifier="medical" level="60" />
-      <RequiredItem identifier="plastic" amount="6" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="copper" amount="2" />
-      <RequiredItem identifier="fpgacircuit" amount="2" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="steel" />
-      <Item identifier="fpgacircuit" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
     <Sprite name="portchemfabnormal" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="1,653,293,246" depth="0.8" canflipx="false" origin="0.5,0.5" />
     <BrokenSprite name="portchemfabdamage1" texture="%ModDir%/Misc/portablefabricators.png" sourcerect="297,654,293,245" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />

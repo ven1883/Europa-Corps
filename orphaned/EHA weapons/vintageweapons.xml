@@ -2,14 +2,6 @@
 <Items>
   <!--SR-3 Vihkr-->
   <Item name="" identifier="scp_sr3" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" category="Weapon" subcategory="Vintage" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="500" sold="false" canbespecial="false"></Price>
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="physicorium" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon name="sr3inv" texture="%ModDir%/Weapons/vintageinv.png" sourcerect="65,87,70,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="1,645,267,66" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -48,21 +40,6 @@
   </Item>
   <!--AS Val 40 round mag-->
   <Item name="" identifier="scp_valbigmag" description="" maxstacksize="2" maxstacksizecharacterinventory="1" tags="smallitem,valammo,ehaammo" Scale="0.7" category="Weapon" subcategory="Vintage" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer spawnprobability="0.025" maxamount="1" minamount="0" primary="scp_val" />
-    <PreferredContainer spawnprobability="0.5" maxamount="1" minamount="0" primary="scp_sr3" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.008" minleveldifficulty="20" />
-    <Price baseprice="400" sold="false" canbespecial="false"></Price>
-    <Fabricate suitablefabricators="reloadfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem identifier="scp_valbigmag" mincondition="0" />
-      <RequiredItem identifier="lead" amount="3" />
-      <RequiredItem identifier="magnesium" amount="4" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="plastic" />
-      <Item identifier="lead" copycondition="true" />
-      <Item identifier="lead" copycondition="true" />
-    </Deconstruct>
     <InventoryIcon name="valbigmaginv" texture="%ModDir%/Ammo/renegadeammo.png" sourcerect="68,241,62,74" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/renegadeammo.png" depth="0.54" sourcerect="61,165,36,61" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -98,14 +75,6 @@
   </Item>
   <!--ASP-1 Kir-->
   <Item name="" identifier="scp_kir" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.005" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="600" sold="false" canbespecial="false"></Price>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon name="kirinv" texture="%ModDir%/Weapons/vintageinv.png" sourcerect="583,187,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="596,565,305,74" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -137,15 +106,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_dmr540" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,gun,weapon,gunsmith" scale="0.45" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.009" minleveldifficulty="25" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.009" minleveldifficulty="20" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1200" sold="false" canbespecial="false"></Price>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="plastic" amount="2" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon name="540inv" texture="%ModDir%/Weapons/vintageinv.png" sourcerect="403,87,69,80" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="269,245,313,81" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -186,13 +146,6 @@
   </Item>
   <!--Kel-Tec M35A2-->
   <Item name="" identifier="scp_m35a2" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,gun,weapon,gunsmith" scale="0.48" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.009" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="875" sold="false" canbespecial="false"></Price>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <InventoryIcon name="m35inv" texture="%ModDir%/Weapons/vintageinv.png" sourcerect="400,0,69,80" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="293,123,218,85" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -242,16 +195,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_ash12unique" description="" category="Weapon" subcategory="Vintage" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.0075" minleveldifficulty="35" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.0085" minleveldifficulty="35" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1050" sold="false" canbespecial="false"></Price>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="762,89,71,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="587,173,235,111" depth="0.55" origin="0.5,0.5" />
     <Body width="227" height="90" density="50" />
@@ -310,14 +253,6 @@
   </Item>
   <!--G3KA4 (Polarfuchs moment)-->
   <Item name="" description="" identifier="scp_g3ka4" category="Weapon" subcategory="Vintage" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.52" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.0085" minleveldifficulty="20" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="800" sold="false"></Price>
-    <Deconstruct time="35">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="835,89,66,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="589,351,218,58" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -363,14 +298,6 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_m29" description="" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" category="Weapon" subcategory="Vintage" impactsoundtag="impact_metal_light" scale="0.4">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.04" minleveldifficulty="10" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.04" minleveldifficulty="10" />
-    <Price baseprice="900" displaynonempty="true" sold="false"></Price>
-    <Deconstruct time="20">
-      <Item identifier="plastic" />
-      <Item identifier="steel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="2,172,60,75" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="884,2,121,65" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
@@ -394,15 +321,6 @@
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
   </Item>
   <Item name="" identifier="scp_r8" description="" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" category="Weapon" subcategory="Vintage" impactsoundtag="impact_metal_light" scale="0.34">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.02" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.02" />
-    <Price baseprice="700" displaynonempty="true" sold="false"></Price>
-    <Deconstruct time="20">
-      <Item identifier="plastic" />
-      <Item identifier="steel" />
-      <Item identifier="steel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="68,174,63,77" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="883,68,117,67" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
@@ -426,15 +344,6 @@
     <aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
   </Item>
   <Item name="" description="" identifier="scp_spas12" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.46" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.009" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="600" sold="false" />
-    <Deconstruct time="20">
-      <Item identifier="steel" />
-      <Item identifier="steel" />
-      <Item identifier="titanium" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="131,186,63,63" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="262,328,213,59" depth="0.55" origin="0.5,0.5" />
     <Body width="247" height="68" density="50" />
@@ -478,13 +387,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_akms" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.008" minleveldifficulty="10" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="500" sold="false" />
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="4" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="262,188,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="262,396,252,54" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -541,13 +443,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_m16a3" description="" cargocontaineridentifier="metalcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.42" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="abandonedsecarmcab,wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.007" minleveldifficulty="10" />
-    <Price baseprice="800" sold="false"></Price>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="325,188,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="257,463,297,74" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -617,18 +512,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" description="" identifier="scp_pkm" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.006" minleveldifficulty="20" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.008" minleveldifficulty="10" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="600" sold="false" />
-    <Deconstruct time="35">
-      <Item identifier="scp_basicparts" />
-      <Item identifier="scp_basicparts" />
-      <Item identifier="scp_basicparts" />
-      <Item identifier="steel" />
-      <Item identifier="steel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="389,188,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="585,413,304,70" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -690,15 +573,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_sa80a3" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.008" minleveldifficulty="15" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="750" displaynonempty="true" />
-    <Deconstruct time="15">
-      <Item identifier="steel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" amount="3" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="451,189,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="594,498,227,66" depth="0.55" origin="0.5,0.5" />
     <Body width="250" height="60" density="50" />
@@ -750,15 +624,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_g17" description="" category="Weapon" subcategory="Vintage" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.3" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.008" />
-    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="600" displaynonempty="true" sold="false" />
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="512,189,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="881,140,108,77" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -790,13 +655,6 @@
     <SkillRequirementHint identifier="weapons" level="35" />
   </Item>
   <Item name="" identifier="scp_rsh50" description="" category="Weapon" subcategory="Vintage" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" scale="0.45" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.007" minleveldifficulty="15" />
-    <Price baseprice="1200" sold="false" displaynonempty="true" />
-    <Deconstruct time="20">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="scp_durasteel" amount="3" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="646,187,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="875,225,144,62" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />
@@ -839,14 +697,6 @@
     <SkillRequirementHint identifier="weapons" level="100" />
   </Item>
   <Item name="" identifier="scp_domique" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.55" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.02" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="475" displaynonempty="true" sold="false" />
-    <Deconstruct time="12">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="707,187,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="0,214,211,55" depth="0.55" origin="0.5,0.5" />
     <Body width="180" height="45" density="50" />
@@ -894,14 +744,6 @@
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <Item name="" identifier="scp_g36c" description="" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="10" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="750" displaynonempty="true" />
-    <Deconstruct time="12">
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="769,187,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="0,268,226,70" depth="0.55" origin="0.5,0.5" />
     <Body width="294" height="75" density="50" />
@@ -940,15 +782,6 @@
     <SkillRequirementHint identifier="weapons" level="65" />
   </Item>
   <Item name="" identifier="scp_akliv" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.006" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1200" sold="false" />
-    <Deconstruct time="15">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="titanium" amount="2" />
-      <Item identifier="scp_basicparts" amount="2" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="829,187,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="594,649,253,63" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -995,15 +828,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_sg550mli" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedarmcab" minamount="0" maxamount="1" spawnprobability="0.006" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="975" sold="false" />
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="3" />
-      <Item identifier="titaniumaluminiumalloy" amount="1" />
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="1,250,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="258,547,247,67" depth="0.55" origin="0.5,0.5" />
     <Body width="244" height="69" density="50" />
@@ -1056,14 +880,6 @@
     <SkillRequirementHint identifier="weapons" level="75" />
   </Item>
   <Item name="" identifier="scp_usp45" description="" category="Weapon" subcategory="Vintage" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.34" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedarmcab" minamount="0" maxamount="1" spawnprobability="0.006" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="600" sold="false" />
-    <Deconstruct time="10">
-      <Item identifier="steel" amount="3" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/vintageinv.png" sourcerect="66,252,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/vintageweapons.png" sourcerect="875,292,115,73" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />

@@ -2,31 +2,9 @@
 <Items>
   <!--Long Range Radio Kit-->
   <Item name="" identifier="sgt_longrangeradio" scale="0.5" category="Equipment" tags="smallitem,headset,toolbelt,toolbox,mobilecontainer" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
-    <Price baseprice="650" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="2" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="2"></Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="4"></Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="1" maxavailable="4"></Price>
-    </Price>
     <InventoryIcon name="loudpaccinv" texture="%ModDir%/Jobgear/loudpacc.png" sourcerect="122,5,61,61" origin="0.5,0.5" />
     <Sprite name="loudpaccground" texture="%ModDir%/Jobgear/loudpacc.png" depth="0.6" sourcerect="110,76,89,41" origin="0.5,0.5" />
     <Body width="112" height="100" density="12" />
-    <Deconstruct time="10">
-      <Item identifier="headset" />
-      <Item identifier="aluminium" />
-      <Item identifier="fpgacircuit" />
-      <Item identifier="fpgacircuit" />
-      <Item identifier="batterycell" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10">
-      <RequiredItem identifier="headset" />
-      <RequiredItem identifier="aluminium" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="batterycell" />
-    </Fabricate>
     <WifiComponent range="150000.0" channel="0" LinkToChat="true" MinChatMessageInterval="0.0"></WifiComponent>
     <ItemContainer capacity="6">
       <Containable items="smallitem,explosive,tool,ore" excludeditems="toolbelt,bandolier,toolbox,mobilecontainer,rucksack,backpack,waistbelt" />
@@ -39,30 +17,6 @@
   </Item>
   <!--Black-Ops Hardcase Backpack-->
   <Item name="" identifier="sgt_bobag" scale="0.65" category="Equipment" subcategory="Coalition" tags="smallitem,headset,toolbelt,toolbox,mobilecontainer" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="abandonedarmseccab," amount="1" spawnprobability="0.15" minleveldifficulty="35" />
-    <PreferredContainer primary="crewcab" />
-    <Price baseprice="1200" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="fpgacircuit" />
-      <Item identifier="fpgacircuit" />
-      <Item identifier="fulgurium" />
-    </Deconstruct>
     <InventoryIcon name="hardcase inv" texture="%ModDir%/Jobgear/bohardpack.png" sourcerect="0,0,60,96" origin="0.5,0.5" />
     <Sprite name="hardcase ground" texture="%ModDir%/Jobgear/bohardpack.png" depth="0.6" sourcerect="0,0,60,96" origin="0.5,0.5" />
     <Body width="90" height="100" density="12" />
@@ -83,33 +37,6 @@
   </Item>
   <!--Field Cap-->
   <Item name="" description="" identifier="sgt_fieldcap" subcategory="Coalition" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.4">
-    <PreferredContainer primary="abandonedarmcab,wreckarmcab,armcab" minamount="0" maxamount="2" spawnprobability="0.2" />
-    <PreferredContainer secondary="locker" />
-    <Price baseprice="100" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" maxavailable="2">
-        <Reputation faction="coalition" min="5" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="2">
-        <Reputation faction="coalition" min="5" />
-      </Price>
-      <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="4">
-        <Reputation faction="coalition" min="5" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4">
-        <Reputation faction="coalition" min="5" />
-      </Price>
-    </Price>
-    <Deconstruct time="6">
-      <Item identifier="ballisticfiber" />
-      <Item identifier="organicfiber" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="15">
-      <RequiredSkill identifier="weapons" level="30" />
-      <RequiredItem identifier="ballisticfiber" />
-      <RequiredItem identifier="organicfiber" amount="2" />
-    </Fabricate>
     <Sprite texture="%ModDir%/Jobgear/helmets.png" depth="0.6" sourcerect="24,21,83,48" origin="0.5,0.5" />
     <Body width="75" height="40" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
@@ -120,28 +47,6 @@
   </Item>
   <!--Stetson-->
   <Item name="" description="" identifier="sgt_cowboy" subcategory="Renegade" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.4">
-    <PreferredContainer primary="abandonedarmcab,wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
-    <PreferredContainer secondary="locker" />
-    <Price baseprice="100" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" maxavailable="2" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="2" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="4" />
-    </Price>
-    <Deconstruct time="6">
-      <Item identifier="crawlermask" />
-      <Item identifier="organicfiber" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="15">
-      <RequiredSkill identifier="weapons" level="30" />
-      <RequiredSkill identifier="helm" level="30" />
-      <RequiredItem identifier="crawlermask" amount="2" />
-      <RequiredItem identifier="sodium" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="organicfiber" />
-    </Fabricate>
     <Sprite texture="%ModDir%/Jobgear/helmets.png" depth="0.6" sourcerect="109,2,111,58" origin="0.5,0.5" />
     <Body width="75" height="40" density="30" />
     <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
@@ -153,28 +58,6 @@
   </Item>
   <!--Black-Ops Rig-->
   <Item name="" identifier="sgt_combatrig" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing" scale="0.8" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" amount="1" spawnprobability="0.15" minleveldifficulty="35" />
-    <Price baseprice="1800" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon name="inv" texture="%ModDir%/Jobgear/HeavyGear.png" sourcerect="429,0,83,84" origin="0.5,0.5" />
     <Sprite name="sprite" texture="%ModDir%/Jobgear/HeavyGear.png" sourcerect="407,119,106,53" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
@@ -207,28 +90,6 @@
   </Item>
   <!--Black-Ops Helmet Standard-->
   <Item name="" identifier="sgt_blackopshelm" category="Equipment" subcategory="Coalition" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
-    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" minamount="0" maxamount="1" spawnprobability="0.15" minleveldifficulty="35" />
-    <Price baseprice="1400" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="ballisticfiber" />
-    </Deconstruct>
     <Sprite name="Black-Ops Helm" texture="%ModDir%/Jobgear/helmets.png" sourcerect="0,246,87,75" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
@@ -246,28 +107,6 @@
   </Item>
   <!--Black-Ops Helmet Heavy-->
   <Item name="" identifier="sgt_blackopshelm2" category="Equipment" subcategory="Coalition" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
-    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" minamount="0" maxamount="1" spawnprobability="0.1" minleveldifficulty="55" />
-    <Price baseprice="1650" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="ballisticfiber" />
-    </Deconstruct>
     <Sprite name="Black-Ops Helm Heavy" texture="%ModDir%/Jobgear/helmets.png" sourcerect="0,392,87,75" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
@@ -284,28 +123,6 @@
   </Item>
   <!--Black-Ops Helmet HazOp-->
   <Item name="" identifier="sgt_blackopshelm3" category="Equipment" subcategory="Coalition" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
-    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" minamount="0" maxamount="1" spawnprobability="0.1" minleveldifficulty="45" />
-    <Price baseprice="1380" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="ballisticfiber" />
-    </Deconstruct>
     <Sprite name="Black-Ops Helm HazOp" texture="%ModDir%/Jobgear/helmets.png" sourcerect="0,319,87,75" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
@@ -363,29 +180,6 @@
   </Item>
   <!--Black-Ops Heavy Armor-->
   <Item name="" identifier="sgt_boarmorhvy" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing" scale="0.8" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" amount="1" spawnprobability="0.05" minleveldifficulty="55" />
-    <PreferredContainer primary="crewcab" />
-    <Price baseprice="1920" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon name="inv" texture="%ModDir%/Jobgear/boarmor1.png" sourcerect="447,5,56,63" origin="0.5,0.5" />
     <Sprite name="sprite" texture="%ModDir%/Jobgear/boarmor1.png" sourcerect="447,5,56,63" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
@@ -411,28 +205,6 @@
   </Item>
   <!--Black-Ops Hazard-Ops Panels-->
   <Item name="" identifier="sgt_boarmorhaz" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing" scale="0.8" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" amount="1" spawnprobability="0.05" minleveldifficulty="45" />
-    <Price baseprice="1600" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon name="inv" texture="%ModDir%/Jobgear/boarmor2.png" sourcerect="429,0,83,84" origin="0.5,0.5" />
     <Sprite name="sprite" texture="%ModDir%/Jobgear/boarmor2.png" sourcerect="429,0,83,84" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
@@ -461,28 +233,6 @@
   </Item>
   <!--Black-Ops Scout Exo-->
   <Item name="" identifier="sgt_boarmorleg" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing" scale="0.8" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" amount="1" spawnprobability="0.15" minleveldifficulty="35" />
-    <Price baseprice="1360" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="fulgurium" />
-    </Deconstruct>
     <InventoryIcon name="inv" texture="%ModDir%/Jobgear/boarmor3.png" sourcerect="429,0,83,84" origin="0.5,0.5" />
     <Sprite name="sprite" texture="%ModDir%/Jobgear/boarmor3.png" sourcerect="429,0,83,84" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
@@ -503,28 +253,6 @@
   </Item>
   <!--Black-Ops Helmet Sapper-->
   <Item name="" identifier="sgt_blackopshelm4" category="Equipment" subcategory="Coalition" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
-    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" minamount="0" maxamount="1" spawnprobability="0.15" minleveldifficulty="45" />
-    <Price baseprice="1200" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="ballisticfiber" />
-    </Deconstruct>
     <Sprite name="Black-Ops Helm Sapper" texture="%ModDir%/Jobgear/helmets.png" sourcerect="0,465,87,75" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
@@ -543,28 +271,6 @@
   </Item>
   <!--Black-Ops Sapper Rigging-->
   <Item name="" identifier="sgt_boarmorsap" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing" scale="0.4" impactsoundtag="impact_metal_heavy">
-    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" amount="1" spawnprobability="0.15" minleveldifficulty="45" />
-    <Price baseprice="1100" displaynonempty="true" minleveldifficulty="60">
-      <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="85" />
-      </Price>
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon name="inv" texture="%ModDir%/Jobgear/boarmor4.png" sourcerect="429,0,83,84" origin="0.5,0.5" />
     <Sprite name="sprite" texture="%ModDir%/Jobgear/boarmor4.png" sourcerect="429,0,83,84" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
@@ -617,29 +323,6 @@
   </Item>
   <!--Mechanics Jumpsuit-->
   <Item name="" identifier="scp_heavymechanicsuit1" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
-    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
-    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.125" />
-    <Price baseprice="450" displaynonempty="true" minleveldifficulty="15">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" minavailable="1" maxavailable="4" multiplier="0.95" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2" />
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="ballisticfiber" />
-      <Item identifier="organicfiber" />
-      <Item identifier="organicfiber" />
-      <Item identifier="rubber" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="30">
-      <RequiredSkill identifier="mechanical" level="55" />
-      <Item identifier="ballisticfiber" />
-      <Item identifier="organicfiber" amount="2" />
-      <Item identifier="rubber" amount="3" />
-      <Item identifier="bluejumpsuit1" />
-    </Fabricate>
     <InventoryIcon name="engineeringsuitinv" texture="%ModDir%/Jobgear/engineersuit.png" sourcerect="635,0,90,77" origin="0.5,0.5" />
     <Sprite name="engineeringsuitground" texture="%ModDir%/Jobgear/engineersuit.png" sourcerect="609,91,115,51" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -671,20 +354,6 @@
   </Item>
   <!--Mechanics Jumpsuit (Style 2)-->
   <Item name="" identifier="sgt_heavymechanicsuit" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
-    <Price baseprice="450" displaynonempty="true" minleveldifficulty="15" sold="false">
-      <Price storeidentifier="merchantoutpost" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" />
-      <Price storeidentifier="merchantresearch" multiplier="0.95" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" />
-    </Price>
-    <Deconstruct time="2">
-      <Item identifier="scp_heavymechanicsuit1" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="2">
-      <Item identifier="scp_heavymechanicsuit1" />
-    </Fabricate>
     <InventoryIcon name="engineeringsuitinv" texture="%ModDir%/Jobgear/engineersuit2.png" sourcerect="635,0,90,77" origin="0.5,0.5" />
     <Sprite name="engineeringsuitground" texture="%ModDir%/Jobgear/engineersuit2.png" sourcerect="609,91,115,51" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -716,20 +385,6 @@
   </Item>
   <!--Light Combat Fatigues, Style 2-->
   <Item name="" identifier="sgt_lightuniform" description="" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
-    <Price baseprice="200" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" minavailable="0" maxavailable="2" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" sold="false" multiplier="0.95" minavailable="1" maxavailable="6" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" sold="false" multiplier="0.95" minavailable="1" maxavailable="4" />
-    </Price>
-    <Deconstruct time="2">
-      <Item identifier="scp_lightuniform" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="2">
-      <RequiredItem identifier="scp_lightuniform" />
-    </Fabricate>
     <ItemContainer capacity="3" depth="0.5">
       <Containable items="smallitem,ammo" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
     </ItemContainer>
@@ -758,32 +413,6 @@
   </Item>
   <!--Renegade Uniform, Style 2-->
   <Item name="" identifier="sgt_renegadeuniform" category="Equipment" subcategory="Renegade" description="" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
-    <PreferredContainer primary="engcab,storagecab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.15" />
-    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
-    <PreferredContainer primary="wreckarmcab,wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.1" />
-    <PreferredContainer primary="abandonedarmcab" minamount="0" maxamount="2" spawnprobability="0.1" />
-    <Price baseprice="150" displaynonempty="true" sold="false">
-      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" maxavailable="2">
-        <Reputation faction="separatists" min="5" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="3">
-        <Reputation faction="separatists" min="5" />
-      </Price>
-      <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="6">
-        <Reputation faction="separatists" min="5" />
-      </Price>
-      <Price storeidentifier="merchantmine" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="1" maxavailable="6">
-        <Reputation faction="separatists" min="5" />
-      </Price>
-    </Price>
-    <Deconstruct time="2">
-      <Item identifier="scp_renegadeuniform" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="2">
-      <Item identifier="scp_renegadeuniform" />
-    </Fabricate>
     <InventoryIcon name="renegadeuniforminv" texture="%ModDir%/Jobgear/renegadeuniform.png" sourcerect="689,130,90,90" origin="0.5,0.5" />
     <Sprite name="renegadeuniformground" texture="%ModDir%/Jobgear/renegadeuniform.png" sourcerect="690,58,115,58" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -812,28 +441,6 @@
   </Item>
   <!--Combat Medic Uniform, Style 2-->
   <Item name="" identifier="sgt_combatmedicuniform" category="Equipment" subcategory="Coalition" description="" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
-    <Price baseprice="500" displaynonempty="true" sold="false">
-      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="30" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1">
-        <Reputation faction="coalition" min="30" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="2">
-        <Reputation faction="coalition" min="30" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="coalition" min="30" />
-      </Price>
-    </Price>
-    <Deconstruct time="2">
-      <Item identifier="scp_combatmedicuniform" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="2">
-      <Item identifier="scp_combatmedicuniform" />
-    </Fabricate>
     <InventoryIcon name="combatmedicinv" texture="%ModDir%/Jobgear/combatmedic.png" sourcerect="678,-2,90,90" origin="0.5,0.5" />
     <Sprite name="combatmedicground" texture="%ModDir%/Jobgear/combatmedic.png" sourcerect="668,92,117,73" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -867,28 +474,6 @@
   </Item>
   <!--Renegade Combat Medic Uniform, Style 2-->
   <Item name="" identifier="sgt_renegadecombatmedicuniform" category="Equipment" subcategory="Renegade" description="" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
-    <Price baseprice="500" displaynonempty="true" sold="false">
-      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="0" maxavailable="1">
-        <Reputation faction="separatists" min="30" />
-      </Price>
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1">
-        <Reputation faction="separatists" min="30" />
-      </Price>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="1" maxavailable="2">
-        <Reputation faction="separatists" min="30" />
-      </Price>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
-        <Reputation faction="separatists" min="30" />
-      </Price>
-    </Price>
-    <Deconstruct time="2">
-      <Item identifier="scp_renegadecombatmedicuniform" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="2">
-      <Item identifier="scp_renegadecombatmedicuniform" />
-    </Fabricate>
     <InventoryIcon name="combatmedicinv" texture="%ModDir%/Jobgear/combatmedicrenegade.png" sourcerect="690,2,96,86" origin="0.5,0.5" />
     <Sprite name="combatmedicground" texture="%ModDir%/Jobgear/combatmedicrenegade.png" sourcerect="668,92,117,73" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
@@ -922,21 +507,6 @@
   </Item>
   <!--Exogear-->
   <Item name="" identifier="sgt_exogear" category="Equipment" subcategory="Coalition" tags="mediumitem" scale="0.5" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
-    <Price baseprice="800" canbespecial="false" sold="false" />
-    <Deconstruct time="30">
-      <Item identifier="safetyharness" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="scp_durasteel" />
-      <Item identifier="rubber" />
-      <Item identifier="rubber" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60">
-      <RequiredSkill identifier="mechanical" level="60" />
-      <RequiredItem identifier="safetyharness" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-      <RequiredItem identifier="rubber" amount="2" />
-      <RequiredItem identifier="alienpowercell" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/Jobgear/coalexogear.png" sourcerect="411,0,101,146" origin="0.5,0.5" />
     <Sprite name="Exosuit Item" texture="%ModDir%/Jobgear/coalexogear.png" sourcerect="411,0,101,146" depth="0.55" origin="0.5,0.5" />
     <Body width="80" height="160" density="30" />
@@ -979,26 +549,6 @@
   </Item>
   <!--Tactical Combat Helmet-->
   <Item name="" identifier="sgt_tachelm" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
-    <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="0.1" notcampaign="true" />
-    <PreferredContainer primary="abandonedarmcab,wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
-    <Price baseprice="950" displaynonempty="true" sold="false">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" sold="false" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" sold="false" />
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_combathelmet" />
-      <Item identifier="thermalgoggles" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="90">
-      <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="scp_combathelmet" />
-      <RequiredItem identifier="thermalgoggles" />
-      <RequiredItem identifier="steel" amount="2" />
-    </Fabricate>
     <Sprite name="Tactical Helmet" texture="%ModDir%/Jobgear/helmets.png" sourcerect="0,171,91,75" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
@@ -1037,27 +587,6 @@
   </Item>
   <!--Medic Combat Helmet-->
   <Item name="" identifier="sgt_medhelm" category="Equipment" subcategory="Coalition" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
-    <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="0.1" />
-    <PreferredContainer primary="abandonedarmcab,wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
-    <Price baseprice="825" displaynonempty="true" minleveldifficulty="40">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.4" minavailable="0" maxavailable="1" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.4" minavailable="0" maxavailable="1" />
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="scp_combathelmet" />
-      <Item identifier="healthscanner" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="40">
-      <RequiredSkill identifier="medical" level="60" />
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="scp_combathelmet" />
-      <RequiredItem identifier="healthscanner" />
-      <RequiredItem identifier="aluminium" amount="2" />
-    </Fabricate>
     <Sprite name="Medic Helmet" texture="%ModDir%/Jobgear/helmets.png" sourcerect="0,92,91,75" depth="0.6" origin="0.5,0.5" />
     <Body radius="30" density="50" />
     <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
@@ -1098,18 +627,6 @@
   </Item>
   <!--Trenchcoat-->
   <Item name="" identifier="sgt_trenchcoat" category="Equipment" subcategory="Renegade" description="" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
-    <Price baseprice="500" displaynonempty="true" >
-      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="0" maxavailable="1" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.95" sold="false" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.95" sold="false" />
-    </Price>
-    <Deconstruct time="20">
-      <Item identifier="organicfiber" />
-      <Item identifier="organicfiber" />
-    </Deconstruct>
     <InventoryIcon name="coatinv" texture="%ModDir%/Jobgear/trenchcoat.png" sourcerect="636,0,88,70" origin="0.5,0.5" />
     <Sprite name="coatground" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="642,296,119,57" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />

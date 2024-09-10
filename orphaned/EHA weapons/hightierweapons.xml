@@ -3,22 +3,6 @@
   <!--!not added-->
   <!--M107-->
   <Item name="" identifier="scp_m107" description="" tags="mediumitem,weapon,gun,gunsmith,specialgun,mountableweapon,bulkyweapon" Scale="0.43" category="Weapon" subcategory="Prototype" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="50" />
-    <Price baseprice="2400" sold="false"></Price>
-    <Deconstruct time="40">
-      <Item identifier="steel" amount="2" />
-      <Item identifier="dementonite" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="60" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="90" />
-      <RequiredItem identifier="scp_prototypeusb" />
-      <RequiredItem identifier="scp_sniperkit" />
-      <RequiredItem identifier="scp_ar50" />
-      <RequiredItem identifier="scp_durasteel" amount="6" />
-      <RequiredItem identifier="dementonite" amount="8" />
-    </Fabricate>
     <InventoryIcon name="m107inv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="0,7,70,73" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,0,450,94" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -73,22 +57,6 @@
   <!--!unconfirmed-->
   <!--RPT-93-->
   <Item name="" description="" identifier="scp_rpt93" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.47" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="35" />
-    <Price baseprice="1500" sold="false"></Price>
-    <Deconstruct time="35">
-      <Item identifier="steel" />
-      <Item identifier="scp_durasteel" amount="2" />
-      <Item identifier="dementonite" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="50" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="85" />
-      <RequiredItem identifier="scp_prototypeusb" />
-      <RequiredItem identifier="scp_machinegunkit" />
-      <RequiredItem identifier="hmg" />
-      <RequiredItem identifier="scp_durasteel" amount="4" />
-      <RequiredItem identifier="dementonite" amount="6" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="72,1,70,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,386,308,89" depth="0.55" origin="0.5,0.5" />
     <Body width="287" height="89" density="50" />
@@ -150,22 +118,6 @@
   <!--!unconfirmed-->
   <!--UTS-15-->
   <Item name="" identifier="scp_uts15" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.39" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="1500" sold="false"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="40" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="85" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_shotgunkit" />
-      <RequiredItem identifier="scp_ksg" />
-      <RequiredItem identifier="scp_durasteel" amount="4" />
-      <RequiredItem identifier="dementonite" amount="2" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="titaniumaluminiumalloy" amount="2" />
-      <Item identifier="steel" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="144,1,70,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,476,293,101" depth="0.55" origin="0.5,0.5" />
     <Body width="180" height="45" density="50" />
@@ -228,22 +180,6 @@
   <!--!unconfirmed-->
   <!--KS-23-->
   <Item name="" identifier="scp_ks23" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.48" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="1500" sold="false"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="40" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="85" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_shotgunkit" />
-      <RequiredItem identifier="scp_m590" />
-      <RequiredItem identifier="dementonite" amount="3" />
-      <RequiredItem identifier="scp_durasteel" amount="4" />
-    </Fabricate>
-    <Deconstruct time="25">
-      <Item identifier="plastic" />
-      <Item identifier="dementonite" />
-      <Item identifier="steel" amount="2" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="280,0,69,82" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="1,304,261,62" depth="0.55" origin="0.5,0.5" />
     <Body width="260" height="50" density="50" />
@@ -308,19 +244,6 @@
   <!--!not added-->
   <!--23x75mm Shrapnel-25 Shell-->
   <Item name="" description="" identifier="scp_4gshell" category="Weapon" subcategory="Prototype" maxstacksize="10" maxstacksizecharacterinventory="5" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,ks23ammo,ehaammo" Scale="0.2" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="1500" sold="false"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="15" requiresrecipe="false" amount="5">
-      <RequiredSkill identifier="weapons" level="75" />
-      <RequiredItem identifier="shotgunshell" amount="10" />
-      <RequiredItem identifier="flashpowder" amount="2" />
-      <RequiredItem identifier="physicorium" />
-    </Fabricate>
-    <Deconstruct time="5">
-      <Item identifier="flashpowder" outcondition="0.1" />
-      <Item identifier="physicorium" outcondition="0.1" />
-      <Item identifier="plastic" outcondition="0.2" />
-    </Deconstruct>
     <InventoryIcon name="4gshellinv" texture="%ModDir%/Ammo/ammo.png" sourcerect="3,69,55,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/ammo.png" sourcerect="2,131,25,69" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
@@ -347,19 +270,6 @@
   <!--!not added-->
   <!--23x75mm Slug Shell-->
   <Item name="" description="" identifier="scp_4gslug" category="Weapon" subcategory="Prototype" maxstacksize="10" maxstacksizecharacterinventory="5" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,ks23ammo,ehaammo" Scale="0.2" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="250" sold="false" />
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="15" requiresrecipe="false" amount="5">
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="scp_12gslug" amount="10" />
-      <RequiredItem identifier="flashpowder" amount="2" />
-      <RequiredItem identifier="physicorium" amount="2" />
-    </Fabricate>
-    <Deconstruct time="5">
-      <Item identifier="flashpowder" outcondition="0.2" />
-      <Item identifier="physicorium" outcondition="0.2" />
-      <Item identifier="plastic" outcondition="0.1" />
-    </Deconstruct>
     <InventoryIcon name="4gsluginv" texture="%ModDir%/Ammo/ammo.png" sourcerect="58,70,56,57" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Ammo/ammo.png" sourcerect="29,131,25,69" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="40" />
@@ -386,27 +296,6 @@
   <!--!unconfirmed-->
   <!--MA-37-->
   <Item name="" identifier="scp_ma37" description="" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.37" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="1200" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.5" sold="false" />
-      <Price locationtype="city" multiplier="1.25" sold="false" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="0.9" sold="false" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="60">
-      <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_riflekit" />
-      <RequiredItem identifier="scp_scar17" />
-      <RequiredItem identifier="dementonite" amount="3" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="dementonite" />
-      <Item identifier="steel" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="352,6,68,76" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="1,195,326,101" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -466,22 +355,6 @@
   <!--!unconfirmed-->
   <!--Particle Cannon-->
   <Item name="" description="" identifier="scp_taucannon" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,bulkyweapon" Scale="0.3" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="3000" sold="false"></Price>
-    <Deconstruct time="10">
-      <Item identifier="fpgacircuit" />
-      <Item identifier="lead" />
-      <Item identifier="copper" />
-      <Item identifier="titaniumaluminiumalloy" amount="3" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="60">
-      <RequiredSkill identifier="electrical" level="95" />
-      <RequiredSkill identifier="weapons" level="65" />
-      <RequiredItem identifier="scp_prototypeusb" />
-      <RequiredItem identifier="nucleargun" />
-      <RequiredItem identifier="scp_taucannonparts" />
-      <RequiredItem identifier="fulgurium" amount="8" />
-    </Fabricate>
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,675,360,121" depth="0.55" origin="0.5,0.5" />
     <InventoryIcon name="taucannoninv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="495,2,70,80" depth="0.55" origin="0.5,0.5" />
     <Body width="238" height="63" density="70" />
@@ -533,20 +406,6 @@
     <SkillRequirementHint identifier="electrical" level="125" />
   </Item>
   <Item name="" identifier="scp_taucannonuranium" description="" tags="smallitem,tauammo,ehaammo" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" maxstacksize="2" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="engcab,wreckreactorcab" minamount="0" maxamount="2" spawnprobability="0.005" minleveldifficulty="50" />
-    <Price baseprice="600" sold="false"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="15" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredSkill identifier="electrical" level="75" />
-      <RequiredItem identifier="fuelrod" />
-      <RequiredItem identifier="uranium" amount="4" />
-      <RequiredItem identifier="titaniumaluminiumalloy" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="lead" />
-      <Item identifier="uranium" copycondition="true" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="109,215,18,68" origin="0.5,0.5" />
     <InventoryIcon name="tauuraninv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="169,218,35,33" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -593,26 +452,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_taucannonthorium" description="" tags="smallitem,tauammo,ehaammo" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" maxstacksize="1" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="engcab,wreckreactorcab" minamount="0" maxamount="2" spawnprobability="0.003" minleveldifficulty="50" />
-    <Price baseprice="600" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.5" sold="false" />
-      <Price locationtype="city" multiplier="1.25" sold="false" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="0.9" sold="false" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="25" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="75" />
-      <RequiredSkill identifier="electrical" level="100" />
-      <RequiredItem identifier="scp_taucannonuranium" />
-      <RequiredItem identifier="thorium" amount="4" />
-      <RequiredItem identifier="scp_durasteel" mincondition="0.5" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="lead" />
-      <Item identifier="thorium" copycondition="true" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="128,215,18,68" origin="0.5,0.5" />
     <InventoryIcon name="tauthorinv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="208,218,35,34" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -659,25 +498,6 @@
     </Projectile>
   </Item>
   <Item name="" identifier="scp_taucannonfulgurium" description="" tags="smallitem,tauammo,ehaammo" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" maxstacksize="1" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="600" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.5" sold="false" />
-      <Price locationtype="city" multiplier="1.25" sold="false" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="0.9" sold="false" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="100" />
-      <RequiredSkill identifier="electrical" level="125" />
-      <RequiredItem identifier="scp_taucannonthorium" />
-      <RequiredItem identifier="fulgurium" amount="3" />
-      <RequiredItem identifier="physicorium" mincondition="0.5" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="lead" />
-      <Item identifier="fulgurium" copycondition="true" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="147,215,18,68" origin="0.5,0.5" />
     <InventoryIcon name="taufulginv" texture="%ModDir%/Ammo/improvedammo.png" sourcerect="244,218,35,34" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -733,21 +553,6 @@
   <!--!unconfirmed-->
   <!--HK433-->
   <Item name="" identifier="scp_hk433" description="" cargocontaineridentifier="metalcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.365" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="abandonedsecarmcab,wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="900" sold="false"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="40" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="70" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.5" />
-      <RequiredItem identifier="scp_mdr" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-      <RequiredItem identifier="dementonite" amount="1" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="dementonite" />
-      <Item identifier="titaniumaluminiumalloy" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="639,4,71,79" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="1,890,347,108" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -831,19 +636,6 @@
   <!--!unconfirmed-->
   <!--Ruger-9-->
   <Item name="" identifier="scp_ruger9" description="" category="Weapon" subcategory="Prototype" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.32" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="350" sold="false"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_pistolkit" />
-      <RequiredItem identifier="scp_p226" />
-      <RequiredItem identifier="dementonite" amount="2" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="dementonite" amount="2" />
-      <Item identifier="steel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="711,8,75,74" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="1,1005,115,79" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -888,20 +680,6 @@
   <!--!unconfirmed-->
   <!--Microgun-->
   <Item name="" identifier="scp_microgun" category="Weapon" subcategory="Prototype" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,bulkyweapon" Scale="0.5" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="2000" sold="false"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="50">
-      <RequiredSkill identifier="weapons" level="85" />
-      <RequiredItem identifier="scp_prototypeusb" />
-      <RequiredItem identifier="scp_machinegunkit" />
-      <RequiredItem identifier="fulgurium" amount="4" />
-      <RequiredItem identifier="dementonite" amount="12" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="steel" />
-      <Item identifier="fulgurium" />
-      <Item identifier="scp_durasteel" amount="4" />
-    </Deconstruct>
     <InventoryIcon name="microguninv" texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="401,273,68,68" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="489,268,303,91" depth="0.55" origin="0.5,0.5" />
     <Body width="303" height="91" density="50" />
@@ -965,23 +743,6 @@
     <SkillRequirementHint identifier="weapons" level="100" />
   </Item>
   <Item name="" identifier="scp_microgunmag" description="" tags="mediumitem,microgunammo,ehaammo" maxstacksize="1" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="950" sold="false"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="45" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="90" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="flashpowder" amount="6" />
-      <RequiredItem identifier="lead" amount="6" />
-    </Fabricate>
-    <Fabricate suitablefabricators="advweaponfabricator" displayname="recycleitem" requiredtime="35" amount="1">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem identifier="scp_microgunmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="steel" amount="3" />
-      <RequiredItem identifier="flashpowder" amount="6" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="2" />
-    </Deconstruct>
     <InventoryIcon name="microgunboxinv" texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="391,419,91,91" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" depth="0.54" sourcerect="402,341,67,76" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -1019,20 +780,6 @@
   <!--!unconfirmed-->
   <!--FNX-45-->
   <Item name="" identifier="scp_fnx45" description="" category="Weapon" subcategory="Prototype" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.34" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="20" />
-    <Price baseprice="650"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_pistolkit" mincondition="0.5" />
-      <RequiredItem identifier="scp_meusoc" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="2,89,75,77" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="122,1007,113,77" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1076,28 +823,6 @@
   <!--!unconfirmed-->
   <!--unidentified-->
   <Item name="" identifier="scp_m6" description="" category="Weapon" subcategory="Prototype" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.325" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="800" displaynonempty="true" minleveldifficulty="55">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="2" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="2" />
-    </Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="45">
-      <RequiredSkill identifier="weapons" level="75" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_pistolkit" />
-      <RequiredItem identifier="scp_deagle" />
-      <RequiredItem identifier="scp_durasteel" amount="4" />
-      <RequiredItem identifier="dementonite" amount="4" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="dementonite" amount="2" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="79,82,88,88" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,1091,162,109" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1152,21 +877,6 @@
   <!--!unconfirmed-->
   <!--Shoulder-fired railgun-->
   <Item name="" identifier="scp_railgunlauncher" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.53">
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="2500" sold="false" />
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="70">
-      <RequiredSkill identifier="weapons" level="75" />
-      <RequiredSkill identifier="electrical" level="85" />
-      <RequiredItem identifier="scp_prototypeusb" />
-      <RequiredItem identifier="scp_explosiveskit" />
-      <RequiredItem identifier="scp_durasteel" amount="8" />
-      <RequiredItem identifier="dementonite" amount="8" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="3" />
-      <Item identifier="dementonite" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
     <InventoryIcon name="railguninv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="170,82,88,88" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="447,549,280,95" depth="0.55" origin="0.5,0.5" />
     <Body width="190" height="60" density="50" />
@@ -1227,21 +937,6 @@
   <!--!unconfirmed-->
   <!--Portable Coilgun-->
   <Item name="" identifier="scp_portablecoilgun" description="" category="Weapon" subcategory="Prototype" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.38">
-    <PreferredContainer primary="secarmcab" />
-    <Price baseprice="2500" sold="false" />
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="70">
-      <RequiredSkill identifier="weapons" level="75" />
-      <RequiredSkill identifier="electrical" level="85" />
-      <RequiredItem identifier="scp_prototypeusb" />
-      <RequiredItem identifier="scp_explosiveskit" />
-      <RequiredItem identifier="scp_durasteel" amount="4" />
-      <RequiredItem identifier="dementonite" amount="6" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="steel" amount="3" />
-      <Item identifier="dementonite" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
     <InventoryIcon name="coilguninv" texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="731,110,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="489,380,291,80" depth="0.55" origin="0.5,0.5" />
     <Body width="190" height="60" density="50" />
@@ -1303,24 +998,6 @@
     <SkillRequirementHint identifier="electrical" level="90" />
   </Item>
   <Item name="" identifier="scp_coilgunclip" description="" cargocontaineridentifier="scp_ammocrate" tags="smallitem,handheldcoilgunammo" category="Weapon" subcategory="Coalition" maxstacksize="6" maxstacksizecharacterinventory="2" impactsoundtag="impact_metal_light" scale="0.5">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.005" minleveldifficulty="35" />
-    <Price baseprice="600" displaynonempty="true" sold="false" />
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="75" />
-      <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-      <RequiredItem identifier="physicorium" />
-    </Fabricate>
-    <Fabricate suitablefabricators="advweaponfabricator" displayname="recycleitem" requiredtime="15" amount="1">
-      <RequiredSkill identifier="weapons" level="75" />
-      <RequiredItem tag="handheldcoilgunammo" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-      <RequiredItem identifier="physicorium" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-    </Deconstruct>
     <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="171,255,31,47" origin="0.5,0.5" />
     <InventoryIcon name="cinv" texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="206,255,60,60" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
@@ -1360,21 +1037,6 @@
   <!--!unconfirmed-->
   <!--Vector SMG-->
   <Item name="" identifier="scp_vector" description="" category="Weapon" subcategory="Prototype" tags="smallitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="450" sold="false" />
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="55" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_pistolkit" />
-      <RequiredItem identifier="scp_smg9" />
-      <RequiredItem identifier="dementonite" amount="3" />
-      <RequiredItem identifier="scp_durasteel" amount="2" />
-    </Fabricate>
-    <Deconstruct time="12">
-      <Item identifier="steel" />
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="342,84,87,87" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="167,1092,188,79" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1425,22 +1087,6 @@
   <!--!unconfirmed-->
   <!--AK-15-->
   <Item name="" identifier="scp_ak15zlobin" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.38" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="400" sold="false" canbespecial="false"></Price>
-    <Deconstruct time="12">
-      <Item identifier="dementonite" amount="2" />
-      <Item identifier="steel" />
-      <Item identifier="plastic" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="30">
-      <RequiredSkill identifier="weapons" level="80" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_riflekit" />
-      <RequiredItem identifier="scp_ak103" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-      <RequiredItem identifier="dementonite" amount="6" />
-    </Fabricate>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="432,88,82,82" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="439,659,350,80" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1526,22 +1172,6 @@
   <!--!unconfirmed-->
   <!--Arma 3 MX-->
   <Item name="" identifier="scp_mxa3" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" minleveldifficulty="25" />
-    <Price baseprice="1200" sold="false"></Price>
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="45">
-      <RequiredSkill identifier="weapons" level="70" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_riflekit" mincondition="0.5" />
-      <RequiredItem identifier="scp_mxa1" />
-      <RequiredItem identifier="dementonite" amount="4" />
-      <RequiredItem identifier="scp_durasteel" amount="3" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="titaniumaluminiumalloy" />
-      <Item identifier="plastic" amount="2" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="514,92,87,84" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="434,741,258,94" depth="0.55" origin="0.5,0.5" />
     <Body width="250" height="60" density="50" />
@@ -1629,22 +1259,6 @@
   <!--!unconfirmed-->
   <!--AA12-->
   <Item name="" identifier="scp_aa12" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="abandonedsecarmcab,wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.004" minleveldifficulty="25" />
-    <PreferredContainer secondary="weaponholder" />
-    <Price baseprice="1500" displaynonempty="true" minleveldifficulty="5" />
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="35">
-      <RequiredSkill identifier="weapons" level="85" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_saiga12" />
-      <RequiredItem identifier="scp_m4s90" />
-      <RequiredItem identifier="scp_durasteel" amount="4" />
-      <RequiredItem identifier="dementonite" amount="6" />
-    </Fabricate>
-    <Deconstruct time="15">
-      <Item identifier="scp_durasteel" />
-      <Item identifier="dementonite" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="605,110,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="0,577,261,84" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
@@ -1704,21 +1318,6 @@
   <!--!unconfirmed-->
   <!--unidentified-->
   <Item name="" identifier="scp_magnus" description="" category="Weapon" subcategory="Prototype" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" scale="0.445" impactsoundtag="weaponheavydrop">
-    <PreferredContainer primary="secarmcab" />
-    <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.004" minleveldifficulty="35" />
-    <Price baseprice="1200" displaynonempty="true" sold="false" />
-    <Fabricate suitablefabricators="advweaponfabricator" requiredtime="50">
-      <RequiredSkill identifier="weapons" level="85" />
-      <RequiredItem identifier="scp_prototypeusb" mincondition="0.5" />
-      <RequiredItem identifier="scp_rsh12" />
-      <RequiredItem identifier="scp_pistolkit" />
-      <RequiredItem identifier="scp_durasteel" amount="6" />
-      <RequiredItem identifier="dementonite" amount="4" />
-    </Fabricate>
-    <Deconstruct time="20">
-      <Item identifier="scp_dementonite" amount="2" />
-      <Item identifier="scp_durasteel" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir%/Weapons/hightierweaponsinv.png" sourcerect="669,110,60,60" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/hightierweapons.png" sourcerect="248,1007,149,64" depth="0.55" origin="0.5,0.5" />
     <Body width="72" height="40" density="50" />

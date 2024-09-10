@@ -564,28 +564,6 @@
 	
 	<!--
 	<Item name="" description="" identifier="scp_armykit" category="Medical" Tags="smallitem,medical" maxstacksize="2" maxstacksizecharacterinventory="1" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.4" impactsoundtag="impact_soft" RequireAimToUse="True">
-		<PreferredContainer primary="medcab" minamount="0" maxamount="2" spawnprobability="0.1" />
-		<PreferredContainer primary="wreckmedcab,abandonedmedcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
-		<PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.1" />
-		<Price baseprice="700" minleveldifficulty="10">
-			<Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1" />
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="1" minavailable="0" maxavailable="2" />
-			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantarmory" multiplier="1" minavailable="0" maxavailable="2" />
-		</Price>
-		<Fabricate suitablefabricators="medicalfabricator" requiredtime="25">
-			<RequiredSkill identifier="medical" level="50" />
-			<RequiredItem identifier="scp_smallcivkit" />
-			<RequiredItem identifier="antibleeding2" amount="4" />
-			<RequiredItem identifier="antidama1" amount="2" />
-		</Fabricate>
-		<Deconstruct time="10">
-			<Item identifier="antibleeding1" copycondition="true" />
-			<Item identifier="antidama1" copycondition="true" />
-			<Item identifier="antibleeding1" copycondition="true" />
-		</Deconstruct>
 		<SuitableTreatment type="bleeding" suitability="15" />
 		<SuitableTreatment type="lacerations, gunshotwound, blunttrauma" suitability="7" />
 		<Sprite texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="44,3,52,70" depth="0.6" origin="0.5,0.5" />
@@ -630,27 +608,6 @@
 		
 	<!--
 	<Item name="" description="" identifier="scp_surgicalkit" category="Medical" maxstacksize="2" maxstacksizecharacterinventory="1" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.5" impactsoundtag="impact_soft" RequireAimToUse="True">
-		<PreferredContainer primary="medcab" />
-		<PreferredContainer primary="wreckmedcab,abandonedmedcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.03" minleveldifficulty="15" />
-		<PreferredContainer primary="outpostmedcompartment" minamount="0" maxamount="1" spawnprobability="0.02" />
-		<Price baseprice="1000" minleveldifficulty="35">
-			<Price storeidentifier="merchantoutpost" multiplier="1.5" sold="false" />
-			<Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="1" />
-			<Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="0" maxavailable="2" />
-			<Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-			<Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="0" maxavailable="2" />
-		</Price>
-		<Fabricate suitablefabricators="medicalfabricator" requiredtime="40">
-			<RequiredSkill identifier="medical" level="90" />
-			<RequiredItem identifier="scp_armykit" />
-			<RequiredItem identifier="steel" amount="2" />
-			<RequiredItem identifier="antibleeding2" amount="2" />
-		</Fabricate>
-		<Deconstruct time="10">
-			<Item identifier="antibleeding2" amount="2" />
-			<Item identifier="steel" />
-		</Deconstruct>
 		<SuitableTreatment type="bleeding" suitability="35" />
 		<SuitableTreatment type="lacerations, gunshotwound, blunttrauma" suitability="25" />
 		<Sprite texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="97,17,85,53" depth="0.6" origin="0.5,0.5" />

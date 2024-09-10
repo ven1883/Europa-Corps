@@ -495,9 +495,6 @@
 		Scale="0.025" 
 		impactsoundtag="impact_metal_light">
 
-		<Fabricate suitablefabricators="ammofabricator,fabricator" requiredtime="1" amount="12">
-		<RequiredItem identifier="sgt_ammocoinadv" amount="1" />
-		</Fabricate>
 
 		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,0,580,228" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,0,580,228" depth="0.55" origin="0.5,0.5" />

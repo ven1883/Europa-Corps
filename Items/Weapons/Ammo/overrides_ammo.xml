@@ -420,23 +420,6 @@
 			
 			<!--40mm Mini-nuke-->
 		<Item name="" identifier="40mmnuke" category="Weapon" maxstacksize="2" maxstacksizecharacterinventory="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade,separatists" Scale="0.5" impactsoundtag="impact_metal_light">
-			<PreferredContainer secondary="wreckarmcab,abandonedarmcab" />
-			<PreferredContainer primary="secarmcab" secondary="armcab" />
-			<Price baseprice="500" sold="false">
-				<Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="1" sold="true">
-					<Reputation faction="separatists" min="70" />
-				</Price>
-				<Price storeidentifier="merchantcity" minavailable="1" maxavailable="2" sold="true">
-					<Reputation faction="separatists" min="70" />
-				</Price>
-				<Price storeidentifier="merchantmilitary" minavailable="2" maxavailable="5" sold="true">
-					<Reputation faction="separatists" min="70" />
-				</Price>
-			</Price>
-			<Deconstruct time="5">
-				<Item identifier="iron" />
-				<Item identifier="uranium" />
-			</Deconstruct>
 			<InventoryIcon texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="114,110,51,51" origin="0.5,0.5" />
 			<Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="2,144,39,17" depth="0.55" origin="0.5,0.5" />
 			<Body width="38" height="15" density="30" />
