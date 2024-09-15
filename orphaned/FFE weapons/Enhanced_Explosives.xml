@@ -12,7 +12,7 @@
     <!-- Old Code Back-up
     <LightComponent LightColor="255,0,0,255" range="20" blinkfrequency="1" powerconsumption="0" IsOn="false" canbeselected="false" AllowInGameEditing="false">
       <StatusEffect type="OnActive" targettype="This" Condition="-1.667">
-        <Sound file="%ModDir%/Sounds/satchelbeep.ogg" loop="true" range="1000" />
+        <Sound file="%ModDir%/Sounds/Weapons/Explosives/satchelbeep.ogg" loop="true" range="1000" />
       </StatusEffect>
     </LightComponent>
   -->
@@ -20,12 +20,12 @@
   <!--Normal Speed-->
   <StatusEffect type="OnActive" targettype="This" Condition="-1.667" comparison="And">
     <Conditional condition="gt 8.3333" />
-    <Sound file="%ModDir%/Sounds/satchelbeep.ogg" loop="true" range="1000" />
+    <Sound file="%ModDir%/Sounds/Weapons/Explosives/satchelbeep.ogg" loop="true" range="1000" />
   </StatusEffect>
   <!-- T-5s -->
   <StatusEffect type="OnActive" targettype="This" Condition="-1.667" comparison="And">
     <Conditional condition="lte 8.3333" />
-    <Sound file="%ModDir%/Sounds/satchelbeepfast.ogg" loop="true" range="1000" />
+    <Sound file="%ModDir%/Sounds/Weapons/Explosives/satchelbeepfast.ogg" loop="true" range="1000" />
   </StatusEffect>
   </LightComponent>
     <ItemComponent characterusable="false">

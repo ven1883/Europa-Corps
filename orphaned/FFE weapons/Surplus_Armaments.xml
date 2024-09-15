@@ -2,12 +2,12 @@
 <Items>
   <!--Orsis T-5000-->
   <Item name="" identifier="scp_t5000" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" impactsoundtag="weaponheavydrop">
-    <InventoryIcon texture="%ModDir:2764968387%/Weapons/weaponsinv.png" sourcerect="418,250,73,79" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:2764968387%/Weapons/heavyweapons.png" sourcerect="287,65,313,66" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="418,250,73,79" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/heavyweapons.png" sourcerect="287,65,313,66" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="80,-5" aimpos="80,4" handle1="-65,-20" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="T5000 Worn" texture="%ModDir:2764968387%/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="287,65,313,66" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.45" origin="0.5,0.85" />
+      <sprite name="T5000 Worn" texture="%ModDir%/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="287,65,313,66" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.45" origin="0.5,0.85" />
     </Wearable>
     <RangedWeapon reload="1.75" reloadnoskill="3" reloadskillrequirement="75" barrelpos="70,9" spread="0.1" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -16,7 +16,7 @@
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3,7" colormultiplier="255,200,200,200" />
       <Sound file="%ModDir%/Sounds/t5000.ogg" type="OnUse" range="5500" />
       <StatusEffect type="OnUse" delay="0.5" target="Character">
-        <Sound file="%ModDir:2764968387%/Sounds/riflebolt50.ogg" type="OnUse" range="1000" />
+        <Sound file="%ModDir%/Sounds/riflebolt50.ogg" type="OnUse" range="1000" />
       </StatusEffect>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
@@ -49,12 +49,12 @@
     </Quality>
   </Item>
   <Item name="" identifier="scp_m24" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.49" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Renegade" impactsoundtag="weaponheavydrop">
-    <InventoryIcon texture="%ModDir:2764968387%/Weapons/weaponsinv.png" sourcerect="491,250,73,79" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:2764968387%/Weapons/heavyweapons.png" sourcerect="11,716,309,66" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="491,250,73,79" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/heavyweapons.png" sourcerect="11,716,309,66" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="80,-3" aimpos="80,5" handle1="-70,-15" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="M24 Worn" texture="%ModDir:2764968387%/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="11,716,309,66" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.45" origin="0.5,0.85" />
+      <sprite name="M24 Worn" texture="%ModDir%/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="11,716,309,66" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.45" origin="0.5,0.85" />
     </Wearable>
     <RangedWeapon reload="1.35" reloadnoskill="2.5" weapondamagemodifier="0.9" reloadskillrequirement="75" barrelpos="161,9" spread="1" unskilledspread="18" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -63,7 +63,7 @@
       <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3,7" colormultiplier="255,200,200,200" />
       <Sound file="%ModDir%/Sounds/t5000.ogg" type="OnUse" range="5500" />
       <StatusEffect type="OnUse" delay="0.5" target="Character">
-        <Sound file="%ModDir:2764968387%/Sounds/riflebolt50.ogg" type="OnUse" range="1000" />
+        <Sound file="%ModDir%/Sounds/riflebolt50.ogg" type="OnUse" range="1000" />
       </StatusEffect>
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
@@ -97,7 +97,7 @@
   </Item>
   <!--10 Round 8.6x70mm box mag-->
   <Item name="" identifier="scp_t5000boxmag" description="" tags="smallitem,t5000ammo,ehaammo" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_ammocrate" maxstacksize="4" impactsoundtag="impact_metal_light" scale="0.5">
-    <Sprite texture="%ModDir:2764968387%/Ammo/improvedammo.png" depth="0.54" sourcerect="23,222,26,27" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/improvedammo.png" depth="0.54" sourcerect="23,222,26,27" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="scp_86projectile" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="scp_86projectile" />
@@ -109,8 +109,8 @@
   </Item>
   <!--8.6x70mm T-5000 round-->
   <Item name="" identifier="scp_86projectile" tags="smallitem,t5000ammo" Scale="0.3" category="Weapon" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.4">
-    <InventoryIcon texture="%ModDir:2764968387%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:2764968387%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
     <Body width="40" height="15" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true">

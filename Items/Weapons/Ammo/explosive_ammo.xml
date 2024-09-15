@@ -65,7 +65,7 @@
 
 				<ParticleEmitter particle="weldspark" particleamount="165" scalemin="1.75" scalemax="3" velocitymin="250" velocitymax="500" distancemax="900" anglemin="0" anglemax="360" colormultiplier="255,175,50,150" copyentityangle="false" />
 
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
 
 				<Remove />
 			</StatusEffect>
@@ -151,7 +151,7 @@
 				<Affliction identifier="stun" strength="5" />
 				</Explosion>
 
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="2" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/Explosives/rocketgrenadebang.ogg" range="7500" volume="2" />
 
 				<Remove />
 			</StatusEffect>
@@ -288,7 +288,7 @@
 
 				<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="15" velocitymax="25" scalemin="3" scalemax="4" colormultiplier="25,25,25,255" />
 
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
 
 				<Remove />
 			</StatusEffect>
@@ -348,7 +348,7 @@
 				</Explosion>
 
 				<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="15" velocitymax="25" scalemin="3" scalemax="4" colormultiplier="200,50,50,255" />
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
 				<Remove />
 			</StatusEffect>
 
@@ -405,7 +405,7 @@
 					<Affliction identifier="stun" strength="2.5" />
 				</Explosion>
 
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
 				<Fire size="200.0" />
 
 				<Remove />
@@ -464,7 +464,7 @@
 					<Affliction identifier="stun" strength="1.5" />
 				</Explosion>
 			
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
 			
 				<Remove />
 			</StatusEffect>

@@ -246,7 +246,7 @@
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true" disabledeltatime="true"></StatusEffect>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.2" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.8" />
-      <sound file="%ModDir%/Sounds/exogear.ogg" type="OnWearing" range="250.0" volumeproperty="Speed" volume="0.1" loop="true" frequencymultiplier="3" />
+      <sound file="%ModDir%/Sounds/Apparel/exogear.ogg" type="OnWearing" range="250.0" volumeproperty="Speed" volume="0.1" loop="true" frequencymultiplier="3" />
       <StatValue stattype="FlowResistance" value="0.9" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,0" holdangle="90" handle1="-10,10" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
@@ -532,7 +532,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
-      <sound file="%ModDir%/Sounds/exogear.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.8" />
+      <sound file="%ModDir%/Sounds/Apparel/exogear.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.8" />
       <StatValue stattype="FlowResistance" value="0.9" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="20,-80" handle1="-10,0" handle2="10,0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />

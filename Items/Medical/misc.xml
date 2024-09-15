@@ -26,7 +26,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
 
       <StatusEffect type="OnUse">
-        <Sound file="Effects/Sounds/ethanoldrink.ogg" range="600" />
+        <Sound file="%ModDir%/Sounds/Medical/ethanoldrink.ogg" range="600" />
       </StatusEffect>
 
       <StatusEffect type="OnUse" target="UseTarget" delay="2" duration="20">
@@ -79,7 +79,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
 
       <StatusEffect type="OnUse">
-        <Sound file="Effects/Sounds/ethanoldrink.ogg" range="600" />
+        <Sound file="%ModDir%/Sounds/Medical/ethanoldrink.ogg" range="600" />
       </StatusEffect>
 
       <StatusEffect type="OnUse" target="UseTarget" delay="2" duration="35">

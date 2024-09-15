@@ -80,7 +80,7 @@
 			<!--explosion-->
 			<StatusEffect type="OnBroken" target="This">
 
-				<sound file="%ModDir%/Effects/Sounds/bang1.ogg" type="OnUse" volume="1.75" range="8000" frequencymultiplier="0.95"  selectionmode="All" />
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/bang1.ogg" type="OnUse" volume="1.75" range="8000" frequencymultiplier="0.95"  selectionmode="All" />
 				<sound file="Content/Items/Weapons/ExplosionDebris5.ogg" type="OnUse" range="8000" />
 
 				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="90" velocitymin="500" velocitymax="1000" scalemin="1.0" scalemax="1.5" />
@@ -128,12 +128,12 @@
 
 			<!--pin & fuze-->
 			<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/grenadethrow.ogg" range="1000" frequencymultiplier="0.9" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/grenadethrow.ogg" range="1000" frequencymultiplier="0.9" />
 				<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="200,100,100,255" />
 			</StatusEffect>
 
 			<StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/Generic/sr1.ogg" range="1000" volume="0.6" frequencymultiplier="3" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/Generic/sr1.ogg" range="1000" volume="0.6" frequencymultiplier="3" />
 				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="15" velocitymin="1000" velocitymax="1500" maxdistance="100" scalemin="0.5" scalemax="1" colormultiplier="100,75,200,255"/>
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,3.0" colormultiplier="255,200,200,200" />
 				<ParticleEmitter particle="steamspray" particleamount="1" velocitymin="0" velocitymax="0" scalemin="1.5" scalemax="2.5" anglemin="0" anglemax="360" colormultiplier="15,15,15,255" />
@@ -156,7 +156,7 @@
 
 			<!--explosion-->
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Effects/Sounds/bang1.ogg" type="OnUse" volume="1.75" range="8000" selectionmode="All" />
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/bang1.ogg" type="OnUse" volume="1.75" range="8000" selectionmode="All" />
 				<sound file="Content/Items/Weapons/ExplosionDebris3.ogg" type="OnUse" range="8000" />
 				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="90" velocitymin="1000" velocitymax="1500" scalemin="1.0" scalemax="1.65" colormultiplier="100,75,200,255" />
 				
@@ -198,7 +198,7 @@
 
 			<!--pin & spoon-->
 			<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/grenadethrow.ogg" range="1000" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/grenadethrow.ogg" range="1000" />
 				<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="100,100,255,255" />
 			</StatusEffect>
 
@@ -223,7 +223,7 @@
 			<!--explosion-->
 			<StatusEffect type="OnBroken" target="This">
 
-				<sound file="%ModDir%/Effects/Sounds/bang1.ogg" type="OnUse" volume="1.5" frequencymultiplier="0.95" range="8000" selectionmode="All" />
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/bang1.ogg" type="OnUse" volume="1.5" frequencymultiplier="0.95" range="8000" selectionmode="All" />
 				<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" type="OnUse" range="8000" />
 
 				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="90" velocitymin="1000" velocitymax="1500" scalemin="0.5" scalemax="1.0" colormultiplier="75,75,255,255" />
@@ -268,7 +268,7 @@
 
 			<!--pin-->
 			<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/grenadethrow.ogg" range="1000" frequencymultiplier="0.95" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/grenadethrow.ogg" range="1000" frequencymultiplier="0.95" />
 
 				<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="100,100,100,255" />
 			</StatusEffect>
@@ -321,7 +321,7 @@
 			<RequiredSkill identifier="weapons" level="65" />
 			
 			<StatusEffect type="OnUse" target="This" delay="0.4">
-				<Sound file="%ModDir:2764968387%/Items/Sounds//Sprites40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
 			</StatusEffect>
 		
 		</RangedWeapon>
@@ -363,7 +363,7 @@
 			<StatusEffect type="OnUse" target="This" Condition="-10000" />
 
 			<StatusEffect type="OnBroken" target="This" delay="0.5">
-				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="1.5" stackable="false" />
@@ -416,9 +416,9 @@
 
 			<ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" scalemin="0.1" scalemax="0.15" />
 
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/40mm.ogg" type="OnUse" selectionmode="Random" />
-			<Sound file="/40mm.ogg" type="OnUse" frequencymultiplier="0.95" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/40mm.ogg" type="OnUse" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/40mm.ogg" type="OnUse" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/40mm.ogg" type="OnUse" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/40mm.ogg" type="OnUse" frequencymultiplier="1.05" />
 
 			<StatusEffect type="OnUse" target="This" Condition="-800" />
 			<StatusEffect type="Always" target="This" Condition="1.25">
@@ -426,7 +426,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" delay="0.5">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/mgljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.1" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/mgljam.ogg" type="OnUse" range="900.0" loop="false" volume="1.1" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" Condition="75" disabledeltatime="true" delay="4.9" stackable="false" />
@@ -476,7 +476,7 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="8" velocitymin="300" velocitymax="900" minsize="1" maxsize="2" anglemin="-15" anglemax="15" copyentityangle="true" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="weldspark" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="-25" anglemax="25" copyentityangle="true" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="260" anglemax="280" copyentityangle="true" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="0.3" shockwave="true" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="25.0" />
@@ -520,7 +520,7 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="8" velocitymin="300" velocitymax="900" minsize="1" maxsize="2" anglemin="-15" anglemax="15" copyentityangle="true" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="weldspark" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="-25" anglemax="25" copyentityangle="true" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="900" velocitymax="1500" minsize="2" maxsize="4" anglemin="260" anglemax="280" copyentityangle="true" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/rpg7.ogg" type="OnUse" volume="1.5" range="3000" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="0.3" shockwave="true" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="25.0" />

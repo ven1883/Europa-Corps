@@ -1555,7 +1555,7 @@
         <Affliction identifier="bleeding" strength="50" />
         <Affliction identifier="stun" strength="15" />
       </Attack>
-      <sound file="%ModDir%/Sounds/erdbang.ogg" type="OnBroken" volume="2" range="25000" dontmuffle="true" forceplay="true" />
+      <sound file="%ModDir%/Sounds/Weapons/Explosives/erdbang.ogg" type="OnBroken" volume="2" range="25000" dontmuffle="true" forceplay="true" />
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
         <Explosion range="100.0" structuredamage="10" itemdamage="2" ballastfloradamage="1000" force="15.0" severlimbsprobability="2" decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="10000" flashduration="10" screencolor="200,200,255,255" screencolorrange="5000" screencolorduration="5.0" penetration="0.5">
           <Affliction identifier="explosiondamage" strength="200" />

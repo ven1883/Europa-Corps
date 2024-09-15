@@ -116,7 +116,7 @@
   </Item>
   <Item name="" description="" identifier="scp_tankgunbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
     <Sprite name="tankammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,1,129,176" origin="0.5,0.5" />
-    <ContainedSprite name="tankammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="322,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
+    <ContainedSprite name="tankammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/Turrets/turretitems.png" sourcerect="322,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
     <Body width="129" height="176" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -164,7 +164,7 @@
   </Item>
   <Item name="" description="" identifier="scp_tankgunapbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
     <Sprite name="tankapammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,181,129,176" origin="0.5,0.5" />
-    <ContainedSprite name="tankapammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="322,184,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
+    <ContainedSprite name="tankapammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/Turrets/turretitems.png" sourcerect="322,184,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
     <Body width="129" height="176" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -213,7 +213,7 @@
   </Item>
   <Item name="" description="" identifier="scp_tankgundubox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
     <Sprite name="tankduammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,541,129,176" origin="0.5,0.5" />
-    <ContainedSprite name="tankduammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="436,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
+    <ContainedSprite name="tankduammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/Turrets/turretitems.png" sourcerect="436,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
     <Body width="129" height="176" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -263,7 +263,7 @@
   </Item>
   <Item name="" description="" identifier="scp_tankgunphysbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
     <Sprite name="tankphysammobox" texture="%ModDir%/Turrets/turretitems.png" depth="0.54" sourcerect="188,360,129,176" origin="0.5,0.5" />
-    <ContainedSprite name="tankphysammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%//Turrets/turretitems.png" sourcerect="322,277,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
+    <ContainedSprite name="tankphysammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/Turrets/turretitems.png" sourcerect="322,277,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
     <Body width="129" height="176" density="50" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">

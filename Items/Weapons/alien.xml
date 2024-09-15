@@ -27,9 +27,9 @@
 			
 			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="50,200,100,50" scalemultiplier="1,0.5" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tar41.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tar41.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tar41.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tar41.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tar41.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tar41.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
@@ -108,9 +108,9 @@
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,3.0" colormultiplier="50,255,50,255" />
 
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tbr6.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.15" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tbr6.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="0.9" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tbr6.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tbr6.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.15" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tbr6.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="0.9" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tbr6.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="1.05" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
@@ -190,8 +190,8 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,6.0" colormultiplier="50,255,50,255" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="7.0,3.0" colormultiplier="50,255,50,255" />
 
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tb11.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tb12.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tb11.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tb12.ogg" type="OnUse" range="3000" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="100.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="35.0" />
@@ -273,7 +273,7 @@
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8.0,8.0" colormultiplier="255,25,200,255" />
 
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tbsr7.ogg" type="OnUse" range="5000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tbsr7.ogg" type="OnUse" range="5000" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="200.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="100.0" />
@@ -360,9 +360,9 @@
 			
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,6.0" colormultiplier="25,200,25,255" />
 
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tmg.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tmg.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/tmg.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tmg.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tmg.ogg" type="OnUse" range="3000" frequencymultiplier="0.9" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/tmg.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="16" />

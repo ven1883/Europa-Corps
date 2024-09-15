@@ -30,8 +30,8 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,3.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,6.0" colormultiplier="255,200,200,200" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m2491.ogg" type="OnUse" range="3000" frequencymultiplier="0.8" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m2492.ogg" type="OnUse" range="3000" frequencymultiplier="0.8" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m2491.ogg" type="OnUse" range="3000" frequencymultiplier="0.8" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m2492.ogg" type="OnUse" range="3000" frequencymultiplier="0.8" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-120" />
 			
@@ -40,7 +40,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" frequencymultiplier="0.9" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" frequencymultiplier="0.9" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="4.5" stackable="false" />
@@ -106,8 +106,8 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,3.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,6.0" colormultiplier="255,200,200,200" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m2491.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/m2492.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m2491.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m2492.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-90" />
 			
@@ -116,7 +116,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" frequencymultiplier="1.1" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" frequencymultiplier="1.1" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="9" stackable="false" />
@@ -188,9 +188,9 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8.0,2.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,6.0" colormultiplier="255,200,200,200" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/pkp1.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.1" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/pkp1.ogg" type="OnUse" range="3000" volume="1.1" frequencymultiplier="0.95" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/pkp1.ogg" type="OnUse" range="3000" volume="1.1" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/pkp1.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.1" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/pkp1.ogg" type="OnUse" range="3000" volume="1.1" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/pkp1.ogg" type="OnUse" range="3000" volume="1.1" frequencymultiplier="1.05" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-100" />
 			
@@ -199,7 +199,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="55" disabledeltatime="true" delay="10.2" stackable="false" />
@@ -267,9 +267,9 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8.0,2.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,6.0" colormultiplier="255,200,200,200" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/mag1.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.15" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/mag1.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="0.95" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/mag1.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/mag1.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.15" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/mag1.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/mag1.ogg" type="OnUse" range="3000" volume="1.15" frequencymultiplier="1.05" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-85" />
 			
@@ -297,7 +297,7 @@
 			</StatusEffect>
 		
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
 			</StatusEffect>
 		
 			<StatusEffect type="OnBroken" target="This" Condition="65" disabledeltatime="true" delay="10.2" stackable="false" />
@@ -362,9 +362,9 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8.0,2.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,6.0" colormultiplier="255,200,200,200" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/pkm1.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.1" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/pkm1.ogg" type="OnUse" range="3000" volume="1.1" frequencymultiplier="0.95" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/pkm1.ogg" type="OnUse" range="3000" volume="1.1" frequencymultiplier="1.05" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/pkm1.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.1" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/pkm1.ogg" type="OnUse" range="3000" volume="1.1" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/pkm1.ogg" type="OnUse" range="3000" volume="1.1" frequencymultiplier="1.05" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-110" />
 			
@@ -373,7 +373,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="45" disabledeltatime="true" delay="10.3" stackable="false" />
@@ -458,8 +458,8 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8.0,5.0" colormultiplier="255,200,200,220" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,10.0" colormultiplier="255,200,200,225" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rpt1.ogg" type="OnUse" range="3600" selectionmode="Random" />
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/rpt1.ogg" type="OnUse" range="3600" frequencymultiplier="0.95" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/rpt1.ogg" type="OnUse" range="3600" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/rpt1.ogg" type="OnUse" range="3600" frequencymultiplier="0.95" />
 			
 			<StatusEffect type="OnUse" target="This" Condition="-100" />
 			
@@ -468,7 +468,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" frequencymultiplier="0.95" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" frequencymultiplier="0.95" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="11" stackable="false" />
@@ -556,7 +556,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnBroken" target="This" Condition="60" disabledeltatime="true" delay="3.74" stackable="false" />
@@ -606,7 +606,7 @@
 		</RangedWeapon>
 
 		<RepairTool firedamage="0.0" structurefixamount="0.0" range="0" barrelpos="100,35" combatpriority="10" spread="0" unskilledspread="0">
-			<sound file="%ModDir%/Items/Weapons/Effects/Sounds/microgun.ogg" type="OnUse" range="3500.0" loop="true" volume="1.65" />
+			<sound file="%ModDir%/Sounds/Weapons/Guns/microgun.ogg" type="OnUse" range="3500.0" loop="true" volume="1.65" />
 			<RequiredItems items="scp_microgunmag" type="Contained" msg="ItemMsgAmmoRequired" />
 		</RepairTool>
 
@@ -649,7 +649,7 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="16.0,6.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,20.0" colormultiplier="255,200,200,200" />
 			
-			<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/ar50.ogg" type="OnUse" range="5500" volume="1.2" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/ar50.ogg" type="OnUse" range="5500" volume="1.2" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="60.0" />
@@ -690,20 +690,20 @@
 			<StatusEffect type="OnUse" delay="0.5" target="Character">
 				<Conditional skillrequirement="true" weapons="gte 100" />
 				
-				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/riflebolt50.ogg" type="OnUse" range="1000" frequencymultiplier="0.85" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/riflebolt50.ogg" type="OnUse" range="1000" frequencymultiplier="0.85" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" delay="0.5" target="Character" comparison="and">
 				<Conditional skillrequirement="true" weapons="lt 75" />
 				<Conditional skillrequirement="true" weapons="gte 50" />
 				
-				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/riflebolt2050.ogg" type="OnUse" range="1000" frequencymultiplier="0.85" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/riflebolt2050.ogg" type="OnUse" range="1000" frequencymultiplier="0.85" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" delay="1" target="Character">
 				<Conditional skillrequirement="true" weapons="lt 50" />
 				
-				<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/riflebolt20.ogg" type="OnUse" range="1000" frequencymultiplier="0.85" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/riflebolt20.ogg" type="OnUse" range="1000" frequencymultiplier="0.85" />
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="This,Character" delay="0.6">

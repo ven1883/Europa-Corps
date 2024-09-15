@@ -71,9 +71,9 @@
 				<Affliction identifier="stun" strength="0.1" />
 
 				<StatusEffect type="OnUse" target="UseTarget">
-					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash1.ogg" selectionmode="random" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash2.ogg" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash3.ogg" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/slash1.ogg" selectionmode="random" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/slash2.ogg" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/slash3.ogg" range="1000" />
 				</StatusEffect>
 			</Attack>
 		</MeleeWeapon>
@@ -109,9 +109,9 @@
 				<Affliction identifier="bleeding" strength="10" probability="0.25" />
 
 				<StatusEffect type="OnUse" target="UseTarget">
-					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash1.ogg" selectionmode="random" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash2.ogg" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash3.ogg" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/slash1.ogg" selectionmode="random" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/slash2.ogg" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/slash3.ogg" range="1000" />
 				</StatusEffect>
 			</Attack>
 		</MeleeWeapon>
@@ -146,9 +146,9 @@
 				<Affliction identifier="explosiondamage" strength="15" probability="0.33" />
 
 				<StatusEffect type="OnUse" target="UseTarget">
-					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash1.ogg" selectionmode="random" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash2.ogg" range="1000" />
-					<Sound file="%ModDir%/Items/Weapons/Effects/Sounds/slash3.ogg" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/slash1.ogg" selectionmode="random" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/slash2.ogg" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/slash3.ogg" range="1000" />
 				</StatusEffect>
 			</Attack>
 		</MeleeWeapon>
@@ -206,7 +206,7 @@
 
 				<!--Light stun-->
 			<StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/stunbaton.ogg" range="1250" volume="1.25" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/stunbaton.ogg" range="1250" volume="1.25" />
 				<RequiredItem items="batterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
 				<Explosion range="100.0" force="0.5" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="10.0" />
 				<Conditional mass="lt 100" />
@@ -221,7 +221,7 @@
 
 				<!--Heavy stun-->
 			<StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-				<sound file="%ModDir%/Items/Weapons/Effects/Sounds/stunbaton.ogg" range="2000" volume="3" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/stunbaton.ogg" range="2000" volume="3" />
 				<sound file="Content/Items/Weapons/StunBaton3.ogg" range="2000" volume="1" />
 				<RequiredItem items="fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
 				<Explosion range="100.0" force="1" shockwave="false" flames="false" smoke="true" underwaterbubble="false" camerashake="20.0" />

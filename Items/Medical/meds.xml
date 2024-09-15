@@ -240,60 +240,6 @@
 	</Heparin>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
-
-	<Item name="" description="" identifier="scp_tourniquet" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="1" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.3" impactsoundtag="impact_soft" RequireAimToUse="True">
-
-	<SuitableTreatment type="bleeding" suitability="35" />
-	<SuitableTreatment type="lacerations, gunshotwound, blunttrauma" suitability="25" />
-
-	<Sprite texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="55,98,67,69" depth="0.6" origin="0.5,0.5" />
-	<Body width="52" height="70" density="20" />
-
-	<MeleeWeapon 
-		canBeCombined="true" removeOnCombined="true" 
-		slots="Any,RightHand,LeftHand" 
-		aimpos="40,5" handle1="0,0" handle2="0,0" holdangle="10" 
-		reload="1.0"
-		msg="ItemMsgPickUpSelect">
-
-		<RequiredSkill identifier="medical" level="75" />
-
-		<StatusEffect type="OnUse" target="This" Condition="-100" disabledeltatime="true" />
-		<StatusEffect type="OnFailure" target="This" Condition="-100" disabledeltatime="true" />
-
-		<StatusEffect type="OnUse" target="This">
-			<Sound file="Effects/Sounds/tourniquet.ogg" type="OnUse" range="800" />
-		</StatusEffect>
-
-		<StatusEffect type="OnFailure" target="This">
-			<Sound file="Effects/Sounds/tourniquet.ogg" type="OnUse" range="800" />
-		</StatusEffect>
-
-		<StatusEffect tags="medical" type="OnSuccess" target="This, Limb" delay="3" duration="2.0" interval="0.2">
-			<ReduceAffliction type="bleeding" amount="64" />
-			<ReduceAffliction type="damage" amount="4" />
-			<Affliction identifier="blunttrauma" amount="5" />
-		</StatusEffect>
-
-		<StatusEffect tags="medical" type="OnFailure" target="This, Limb" delay="3">
-			<Sound file="Content/Sounds/Damage/LimbBlunt4.ogg" range="1200" volume="1.25" />
-
-			<Affliction identifier="blunttrauma" amount="2400" />
-			<Affliction identifier="bleeding" amount="1800" probability="0.33" />
-			<Affliction identifier="stun" amount="15" />
-		</StatusEffect>
-
-		<StatusEffect type="OnBroken" target="This">
-			<Remove />
-		</StatusEffect>
-
-	</MeleeWeapon>
-
-	<SkillRequirementHint identifier="medical" level="75" />
-
-	</Item>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
   
 	<Item name="" description="" identifier="scp_propital" category="Medical" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
@@ -316,7 +262,7 @@
 
 
 		<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="360.0">
-			<Sound file="Effects/Sounds/Syringe.ogg" range="500" />
+			<Sound file="%ModDir%/Sounds/Medical/Syringe.ogg" range="500" />
 
 			<ReduceAffliction identifier="oxygenlow" amount="3" />
 			<ReduceAffliction identifier="bleeding" amount="1.5" />
@@ -328,7 +274,7 @@
 		</StatusEffect>
 
 		<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="120.0">
-			<Sound file="Effects/Sounds/Syringe.ogg" range="500" />
+			<Sound file="%ModDir%/Sounds/Medical/Syringe.ogg" range="500" />
 			<ReduceAffliction identifier="oxygenlow" amount="1.5" />
 			<ReduceAffliction identifier="bleeding" amount="0.5" />
 			<ReduceAffliction identifier="damage" amount="0.25" />
@@ -467,7 +413,7 @@
 			<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
 
 			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="35.0">
-			<Sound file="Effects/Sounds/Syringe.ogg" range="500" />
+			<Sound file="%ModDir%/Sounds/Medical/Syringe.ogg" range="500" />
 
 			<ReduceAffliction identifier="poison" amount="8" />
 			<ReduceAffliction identifier="huskinfection" amount="4" />
@@ -476,7 +422,7 @@
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="25.0">
-			<Sound file="Effects/Sounds/Syringe.ogg" range="500" />
+			<Sound file="%ModDir%/Sounds/Medical/Syringe.ogg" range="500" />
 			<ReduceAffliction identifier="poison" amount="4" />
 			<ReduceAffliction identifier="radiationsickness" amount="1" />
 			<Affliction identifier="organdamage" amount="1.5" />
@@ -515,7 +461,7 @@
 			<StatusEffect type="OnFailure" target="This" Condition="-50" disabledeltatime="true" />
 
 			<StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="15.0">
-			<Sound file="Effects/Sounds/pillantipsy.ogg" type="OnUse" volume="1.5" range="900" />
+			<Sound file="Effects/Sounds/Medical/pillantipsy.ogg" type="OnUse" volume="1.5" range="900" />
 
 			<ReduceAffliction identifier="scp_psidamage" amount="0.75" />
 			<ReduceAffliction identifier="psychosis" amount="6" />

@@ -10,18 +10,18 @@
 			<!--Surplus Revoler-->
 			<!--Vanilla Revolver-->
 		<Item name="" description="" identifier="revolver" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,pistolitem,gunsmith" Scale="0.5" impactsoundtag="weaponlightdrop">
-			<InventoryIcon name="revolverinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="628,12,44,65" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="226,340,88,42" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon name="revolverinv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="628,12,44,65" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="226,340,88,42" depth="0.55" origin="0.5,0.5" />
 			<Body width="72" height="40" density="50" />
 
 			<RangedWeapon barrelpos="29,11" spread="2.5" reload="0.575" reloadnoskill="1.25" holdtrigger="true" reloadskillrequirement="40" unskilledspread="6" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.05">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-				<Sound file="%ModDir%/Sounds/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/Revolver1.ogg" type="OnUse" range="3000" frequencymultiplier="0.96" />
-				<Sound file="%ModDir%/Sounds/Revolver1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Revolver1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Revolver1.ogg" type="OnUse" range="3000" frequencymultiplier="0.96" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Revolver1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
-				<ChargeSound file="%ModDir%/Sounds/doubleaction.ogg" range="1000" />
+				<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" />
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 				<StatusEffect type="OnUse">
 					<Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0" />
@@ -54,8 +54,8 @@
 			<!--Surplus Machine Pistol-->
 			<!--Machine Pistol-->
 		<Item name="" identifier="machinepistol" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="smallautoweapon,smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="10,741,116,55" depth="0.55" origin="0.5,0.5" />
-			<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="69,499,63,68" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="10,741,116,55" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="69,499,63,68" origin="0.5,0.5" />
 			<Body width="100" height="44" density="20" />
 
 			<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="80,5" handle1="-36,-8.5" msg="ItemMsgPickUpSelect" />
@@ -65,9 +65,9 @@
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-				<Sound file="%ModDir%/Sounds/machinepistol1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-				<Sound file="%ModDir%/Sounds/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/machinepistol1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
 				<StatusEffect type="OnUse">
 					<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
@@ -112,8 +112,8 @@
 			<!--Veteran's Handcannon-->
 			<!--Vanilla Handcannon-->
 		<Item name="" description="" identifier="handcannon" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,pistolitem,mountableweapon" Scale="0.5" impactsoundtag="weaponheavydrop">
-			<InventoryIcon name="handcannoninv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="500,84,42,65" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="1,491,130,56" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon name="handcannoninv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="500,84,42,65" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="1,491,130,56" depth="0.55" origin="0.5,0.5" />
 			<Body width="106" height="49" density="70" />
 
 			<RangedWeapon reload="2" reloadnoskill="5" reloadskillrequirement="95" barrelpos="65,9" spread="2" holdtrigger="true" unskilledspread="10" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.5">
@@ -121,7 +121,7 @@
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<Sound file="%ModDir%/Sounds/handcannon.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.5" />
 				<Sound file="%ModDir%/Sounds/handcannon.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="0.9" />
-				<ChargeSound file="%ModDir%/Sounds/doubleaction.ogg" range="1000" volume="1.35" />
+				<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.35" />
 
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="20.0,8.0" colormultiplier="255,200,200,200" />
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="5.0,16.0" colormultiplier="255,200,200,200" />
@@ -174,17 +174,17 @@
 			<!--Surplus SMG-->
 			<!--Vanilla SMG-->
 		<Item name="" identifier="smg" category="Weapon" subcategory="Surplus" description="" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.55" impactsoundtag="weaponlightdrop">
-			<InventoryIcon name="smginv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="296,2,60,69" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="8,1,139,56" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon name="smginv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="296,2,60,69" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="8,1,139,56" depth="0.55" origin="0.5,0.5" />
 			<Body width="140" height="60" density="50" />
 
 			<RangedWeapon reload="0.145" reloadnoskill="0.175" reloadskillrequirement="50" holdtrigger="true" barrelpos="64,9" spread="12" unskilledspread="20" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-				<Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-				<Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/csmg1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
 				<StatusEffect type="OnUse" target="This" Condition="-280" />
 				<StatusEffect type="Always" target="This" Condition="7">
@@ -194,7 +194,7 @@
 					<Conditional condition="gt 0" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
 				<StatusEffect type="OnUse">
@@ -231,17 +231,17 @@
 			<!--Aftermarket Surplus SMG-->
 			<!--Deadeye Carbine-->
 		<Item name="" description="" identifier="smgunique" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun,mountableweapon" Scale="0.58" impactsoundtag="weaponlightdrop" allowasextracargo="true">
-			<InventoryIcon name="deadeyeinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="551,0,74,76" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="8,217,159,51" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon name="deadeyeinv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="551,0,74,76" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="8,217,159,51" depth="0.55" origin="0.5,0.5" />
 			<Body width="140" height="60" density="50" />
 
 			<RangedWeapon reload="0.09" reloadnoskill="0.175" holdtrigger="true" weapondamagemodifier="1.5" barrelpos="79,15" spread="5" unskilledspread="8" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-				<Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-				<Sound file="%ModDir%/Sounds/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/csmg1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
 				<StatusEffect type="OnUse" target="This" reload="0.65" setvalue="true" delay="0.15" />
 				<StatusEffect type="OnUse" target="This" reload="0.09" setvalue="true" delay="0.5" />
@@ -281,17 +281,17 @@
 			<!--Surplus Assault Rifle-->
 			<!--Vanilla Assault Revolver-->
 		<Item name="" description="" identifier="assaultrifle" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponlightdrop">
-			<InventoryIcon name="assaultrifleinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="353,78,68,77" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="2,335,222,71" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon name="assaultrifleinv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="353,78,68,77" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="2,335,222,71" depth="0.55" origin="0.5,0.5" />
 			<Body width="220" height="50" density="70" />
 
 			<RangedWeapon reload="0.14" reloadnoskill="0.45" reloadskillrequirement="70" holdtrigger="true" barrelpos="100,20" spread="8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-				<Sound file="%ModDir%/Sounds/assaultrifle1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
-				<Sound file="%ModDir%/Sounds/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/assaultrifle1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
 				<StatusEffect type="OnUse">
 					<Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
@@ -324,15 +324,15 @@
 
 			<!--Vanilla Rifle-->
 		<Item name="" description="" identifier="rifle" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.525" impactsoundtag="weaponlightdrop">
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="3,617,214,55" depth="0.55" origin="0.5,0.25" />
-			<InventoryIcon name="rifleinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="351,160,64,73" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="3,617,214,55" depth="0.55" origin="0.5,0.25" />
+			<InventoryIcon name="rifleinv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="351,160,64,73" origin="0.5,0.5" />
 			<Body width="190" height="50" density="25" />
 
 			<RangedWeapon barrelpos="109,-1" unskilledspread="12" combatPriority="70" reload="1.75" reloadnoskill="4" reloadskillrequirement="40" drawhudwhenequipped="true" crosshairscale="0.15">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-				<Sound file="%ModDir%/Sounds/rifle.ogg" type="OnUse" range="4000" volume="1.2" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/rifle.ogg" type="OnUse" range="4000" volume="1.2" />
 
 				<StatusEffect type="OnUse">
 					<RequiredItem items="grenade" type="Contained" targetslot="1" />
@@ -343,16 +343,16 @@
 				</StatusEffect>
 				<StatusEffect type="OnUse" delay="0.5" target="Character">
 					<Conditional skillrequirement="true" weapons="gte 50" />
-					<Sound file="%ModDir%/Sounds/riflebolt50.ogg" type="OnUse" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/riflebolt50.ogg" type="OnUse" range="1000" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" delay="0.5" target="Character" comparison="and">
 					<Conditional skillrequirement="true" weapons="lt 50" />
 					<Conditional skillrequirement="true" weapons="gte 20" />
-					<Sound file="%ModDir%/Sounds/riflebolt2050.ogg" type="OnUse" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/riflebolt2050.ogg" type="OnUse" range="1000" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" delay="1" target="Character">
 					<Conditional skillrequirement="true" weapons="lt 20" />
-					<Sound file="%ModDir%/Sounds/riflebolt20.ogg" type="OnUse" range="1000" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/riflebolt20.ogg" type="OnUse" range="1000" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="This,Character" delay="0.6">
 					<Conditional skillrequirement="true" weapons="gte 20" />
@@ -400,24 +400,24 @@
 			<!--Surplus Riot Shotgun-->
 			<!--Riot Shotgun-->
 		<Item name="" description="" identifier="shotgun" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.53" impactsoundtag="weaponlightdrop">
-			<InventoryIcon name="riotshotguninv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="423,0,56,76" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="8,119,180,54" depth="0.55" origin="0.49823564,0.28800485" />
+			<InventoryIcon name="riotshotguninv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="423,0,56,76" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="8,119,180,54" depth="0.55" origin="0.49823564,0.28800485" />
 			<Body width="180" height="30" density="50" />
 
 			<RangedWeapon barrelpos="80,5" spread="2" unskilledspread="12" combatPriority="80" reload="1.4" reloadnoskill="2.25" reloadskillrequirement="50" weapondamagemodifier="0.9" drawhudwhenequipped="true" crosshairscale="0.2">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-				<Sound file="%ModDir%/Sounds/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/Riotshotgun2.ogg" type="OnUse" range="3000" />
-				<Sound file="%ModDir%/Sounds/Riotshotgun3.ogg" type="OnUse" range="3000" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun2.ogg" type="OnUse" range="3000" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun3.ogg" type="OnUse" range="3000" />
 
 				<StatusEffect type="OnUse" target="This" Condition="-900" />
 				<StatusEffect type="Always" target="This" Condition="5">
 					<Conditional condition="gt 0" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
 				<StatusEffect type="OnUse">
@@ -460,24 +460,24 @@
 			<!--Surplus Automatic Shotgun-->
 			<!--Vanilla Autoshotgun-->
 		<Item name="" description="" identifier="autoshotgun" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.62" impactsoundtag="weaponheavydrop">
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="9,270,160,62" depth="0.55" origin="0.5,0.5" />
-			<InventoryIcon name="autoshotguninv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="285,75,65,71" depth="0.55" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="9,270,160,62" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon name="autoshotguninv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="285,75,65,71" depth="0.55" origin="0.5,0.5" />
 			<Body width="150" height="40" density="100" />
 
 			<RangedWeapon barrelpos="68,10" spread="3" unskilledspread="12" combatPriority="80" reload="0.5" reloadnoskill="1.65" reloadskillrequirement="75" holdtrigger="true" drawhudwhenequipped="true" crosshairscale="0.2">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-				<Sound file="%ModDir%/Sounds/autoshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
-				<Sound file="%ModDir%/Sounds/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/autoshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
 
 				<StatusEffect type="OnUse" target="This" Condition="-400" />
 				<StatusEffect type="Always" target="This" Condition="5">
 					<Conditional condition="gt 0" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.6" stackable="false" />
 				<StatusEffect type="OnUse">
@@ -495,7 +495,7 @@
 			<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="32,-30" aimpos="58,-5" handle1="-20,-12" handle2="36,-10" holdangle="-10" msg="ItemMsgPickUpSelect" />
 
 			<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-				<sprite name="Autoshotgun Worn" texture="%ModDir%/Weapons/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="9,270,160,62" limb="Torso" ignorelimbscale="true" scale="0.62" origin="0.5,0.9" />
+				<sprite name="Autoshotgun Worn" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="9,270,160,62" limb="Torso" ignorelimbscale="true" scale="0.62" origin="0.5,0.9" />
 			</Wearable>
 
 			<ItemContainer capacity="2" maxstacksize="8" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true">
@@ -516,21 +516,21 @@
 			<!--Veteran's Double Barrel Shotgun-->
 			<!--Boomstick-->
 		<Item name="" description="" identifier="shotgununique" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.52" impactsoundtag="weaponlightdrop" allowasextracargo="true">
-			<InventoryIcon name="dbinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="481,1,64,73" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="8,66,184,53" depth="0.55" origin="0.5,0.25" />
+			<InventoryIcon name="dbinv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="481,1,64,73" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="8,66,184,53" depth="0.55" origin="0.5,0.25" />
 			<Body width="180" height="30" density="50" />
 
 			<RangedWeapon barrelpos="85,10" spread="0.5" unskilledspread="6" weapondamagemodifier="1.15" combatPriority="80" reload="0" drawhudwhenequipped="true" crosshairscale="0.2">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-				<Sound file="%ModDir%/Sounds/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/Riotshotgun2.ogg" type="OnUse" range="3000" />
-				<Sound file="%ModDir%/Sounds/Riotshotgun3.ogg" type="OnUse" range="3000" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun2.ogg" type="OnUse" range="3000" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun3.ogg" type="OnUse" range="3000" />
 
 				<StatusEffect type="OnUse" target="This" Condition="-3500" />
 				<StatusEffect type="OnBroken" target="This" delay="0.2">
-					<sound file="%ModDir%/Sounds/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.8" stackable="false" />
 				<StatusEffect type="OnUse">
@@ -568,8 +568,8 @@
 			<!--Harpoon Launcher-->
 			<!--Vanilla Harpoon Gun-->
 		<Item name="" identifier="harpoongun" description="" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-			<InventoryIcon name="harpoonguninv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="357,1,63,68" depth="0.55" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="10,175,180,39" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon name="harpoonguninv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="357,1,63,68" depth="0.55" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="10,175,180,39" depth="0.55" origin="0.5,0.5" />
 			<Body width="180" height="30" density="50" />
 
 			<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="45,-10" handle1="-20,-6" handle2="30,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
@@ -603,8 +603,8 @@
 			<!--Surplus Heavy Machiengun-->
 			<!-- Vanilla HMG-->
 		<Item name="" identifier="hmg" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.5" impactsoundtag="weaponheavydrop">
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="3,673,273,68" depth="0.55" origin="0.5,0.5" />
-			<InventoryIcon texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="415,163,69,77" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="3,673,273,68" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="415,163,69,77" origin="0.5,0.5" />
 			<Body width="220" height="60" density="30" />
 
 			<RangedWeapon reload="0.12" reloadnoskill="0.2" reloadskillrequirement="80" holdtrigger="true" barrelpos="138,13" spread="12" unskilledspread="50" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
@@ -660,7 +660,7 @@
 			</Holdable>
 
 			<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-				<sprite name="HMG Worn" texture="%ModDir%/Weapons/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" sourcerect="5,673,271,68" depth="0.55" limb="Torso" scale="0.5" origin="0.5,0.8" />
+				<sprite name="HMG Worn" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" sourcerect="5,673,271,68" depth="0.55" limb="Torso" scale="0.5" origin="0.5,0.8" />
 			</Wearable>
 
 			<Propulsion force="-30" usablein="both" ApplyToHands="false">
@@ -689,8 +689,8 @@
 			<!--Surplus Grenade Launcher-->
 			<!--Vanilla Grenade Launcher-->
 		<Item name="" description="" identifier="grenadelauncher" category="Weapon" subcategory="Surplus" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="weaponheavydrop">
-			<InventoryIcon name="glinv" texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="426,80,62,73" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="3,426,198,59" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon name="glinv" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="426,80,62,73" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="3,426,198,59" depth="0.55" origin="0.5,0.5" />
 			<Body width="170" height="40" density="50" />
 
 			<RangedWeapon barrelpos="80,11" spread="1" unskilledspread="10" reload="1.75" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -719,7 +719,7 @@
 			<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,-20" aimpos="45,-10" handle1="-33,-15" handle2="26,5" holdangle="-25" />
 
 			<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-				<sprite name="Grenade Launcher Worn" texture="%ModDir%/Weapons/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" sourcerect="4,426,197,59" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.95" />
+				<sprite name="Grenade Launcher Worn" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" sourcerect="4,426,197,59" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.95" />
 			</Wearable>
 
 			<ItemContainer capacity="1" maxstacksize="1" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
@@ -739,8 +739,8 @@
 
 			<!--Rapid Fissile Accelerator-->
 		<Item name="" identifier="nucleargun" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_heavy">
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="0,548,293,63" depth="0.55" origin="0.5,0.5" />
-			<InventoryIcon texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="282,157,65,74" depth="0.55" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="0,548,293,63" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="282,157,65,74" depth="0.55" origin="0.5,0.5" />
 			<Body width="238" height="63" density="25" />
 
 			<RangedWeapon reload="0.5" reloadnoskill="1.5" holdtrigger="true" barrelpos="125,16" spread="0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.75">
@@ -771,7 +771,7 @@
 			<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="74,4" handle1="-53,-10" handle2="10,-3" holdangle="-25" />
 
 			<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-				<sprite name="Nuclear Gun Worn" texture="%ModDir%/Weapons/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" rotation="90" depth="0.6" sourcerect="0,548,293,63" limb="Torso" depthlimb="LeftArm" scale="0.5" origin="0.5,0.8" />
+				<sprite name="Nuclear Gun Worn" texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" rotation="90" depth="0.6" sourcerect="0,548,293,63" limb="Torso" depthlimb="LeftArm" scale="0.5" origin="0.5,0.8" />
 			</Wearable>
 
 			<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="10,-5" containedspritedepths="0.562,0.561" containedstateindicatorstyle="default" containedstateindicatorslot="0">
@@ -800,13 +800,13 @@
 
 			<!--Stun Grenade-->
 		<Item name="" identifier="stungrenade" description="" category="Weapon" maxstacksize="16" maxstacksizecharacterinventory="2" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" Scale="0.5" impactsoundtag="impact_metal_light">
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="366,254,31,54" depth="0.55" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="366,254,31,54" depth="0.55" origin="0.5,0.5" />
 			<Body width="26" height="50" density="30" />
 
 			<ItemComponent characterusable="false">
 				<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
 				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/flashbang.ogg" range="2500" volume="1.5" />
+					<sound file="%ModDir%/Sounds/Weapons/Explosives/flashbang.ogg" range="2500" volume="1.5" />
 					<Explosion range="450" force="0.5" smoke="false" flames="false" flashrange="650" flashduration="0.5" screencolor="255,255,255,255" screencolorrange="1000" screencolorduration="0.75">
 						<Affliction identifier="explosiondamage" strength="5" />
 						<Affliction identifier="concussion" strength="30" />
@@ -820,7 +820,7 @@
 			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" aimpos="35,-18" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
 				<StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="1.5" disabledeltatime="true" checkconditionalalways="true" />
 				<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-					<sound file="%ModDir%/Sounds/flashbangthrow.ogg" range="1000" />
+					<sound file="%ModDir%/Sounds/Weapons/Explosives/flashbangthrow.ogg" range="1000" />
 					<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="200,200,200,255" />
 				</StatusEffect>
 				<StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">
@@ -842,13 +842,13 @@
 			<!--Fragmentation Grenade-->
 			<!--Vanilla Frag Grenade-->
 		<Item name="" identifier="fraggrenade" category="Weapon" maxstacksize="8" maxstacksizecharacterinventory="4" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
-			<Sprite texture="%ModDir%/Weapons/vanillaweaponchanges.png" sourcerect="327,255,37,52" depth="0.55" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Items/Weapons/Sprites/vanillaweaponchanges.png" sourcerect="327,255,37,52" depth="0.55" origin="0.5,0.5" />
 			<Body radius="20" height="10" density="30" />
 
 			<ItemComponent characterusable="false">
 				<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
 				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/bang1.ogg" range="5000" frequencymultiplier="1.03" />
+					<sound file="%ModDir%/Sounds/Weapons/Explosives/bang1.ogg" range="5000" frequencymultiplier="1.03" />
 					<Explosion range="500.0" ballastfloradamage="100" structuredamage="5" levelwalldamage="10" itemdamage="500" force="5" severlimbsprobability="0.5" debris="true" decal="explosion" decalsize="0.5">
 						<Affliction identifier="explosiondamage" strength="150" />
 						<Affliction identifier="bleeding" strength="100" />

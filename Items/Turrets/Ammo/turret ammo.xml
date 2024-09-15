@@ -1,4 +1,4 @@
-
+<Items>
 	<!--###-->
 
 	<!--Railgun Piercing Shell-->
@@ -754,7 +754,7 @@
 				<Affliction identifier="stun" strength="15" />
 			</Attack>
 
-			<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/erdbang.ogg" type="OnBroken" volume="2" range="25000" dontmuffle="true" forceplay="true" />
+			<sound file="%ModDir%/Sounds/Weapons/Explosives/erdbang.ogg" type="OnBroken" volume="2" range="25000" dontmuffle="true" forceplay="true" />
 
 			<StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
 
@@ -1321,3 +1321,4 @@
 		</Projectile>
 
 	</Item>
+</Items>

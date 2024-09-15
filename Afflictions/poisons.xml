@@ -90,9 +90,9 @@
 				<Conditional scp_presolatexinfection="gte 65" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
-				<sound file="%ModDir%/Medical/Sounds/latexspread1.ogg" volume="0.75" selectionmode="Random" />
-				<sound file="%ModDir%/Medical/Sounds/latexspread2.ogg" volume="0.75" />
-				<sound file="%ModDir%/Medical/Sounds/latexspread3.ogg" volume="0.75" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread1.ogg" volume="0.75" selectionmode="Random" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread2.ogg" volume="0.75" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread3.ogg" volume="0.75" />
 			</StatusEffect>
 		</PeriodicEffect>
 		<icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="2,0,128,128" color="106,106,106,255" origin="-3.6302634E-08,0" />
@@ -236,7 +236,7 @@
 				<Conditional scp_devilpoisoning="gte 35" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
-				<sound file="%ModDir%/Medical/Sounds/heartbeat.ogg" volume="1" dontmuffle="True" loop="true" />
+				<sound file="%ModDir%/Sounds/Medical/heartbeat.ogg" volume="1" dontmuffle="True" loop="true" />
 			</StatusEffect>
 		</Effect>
 
@@ -261,7 +261,7 @@
 				<Conditional scp_devilpoisoning="gte 100" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
-				<sound file="%ModDir%/Medical/Sounds/heartbeat.ogg" volume="1.5" dontmuffle="True" loop="true" frequencymultiplier="1.1" />
+				<sound file="%ModDir%/Sounds/Medical/heartbeat.ogg" volume="1.5" dontmuffle="True" loop="true" frequencymultiplier="1.1" />
 			</StatusEffect>
 		</Effect>
 		
@@ -285,7 +285,7 @@
 				<Conditional scp_devilpoisoning="gte 150" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
-				<sound file="%ModDir%/Medical/Sounds/heartbeat.ogg" volume="2" dontmuffle="True" loop="true" frequencymultiplier="1.2" />
+				<sound file="%ModDir%/Sounds/Medical/heartbeat.ogg" volume="2" dontmuffle="True" loop="true" frequencymultiplier="1.2" />
 			</StatusEffect>
 		</Effect>
 
@@ -296,9 +296,9 @@
 				<Conditional scp_devilpoisoning="gte 50" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
-				<sound file="%ModDir%/Medical/Sounds/latexspread1.ogg" volume="0.65" selectionmode="Random" />
-				<sound file="%ModDir%/Medical/Sounds/latexspread2.ogg" volume="0.65" />
-				<sound file="%ModDir%/Medical/Sounds/latexspread3.ogg" volume="0.65" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread1.ogg" volume="0.65" selectionmode="Random" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread2.ogg" volume="0.65" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread3.ogg" volume="0.65" />
 			</StatusEffect>
 		</PeriodicEffect>
 		<icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="133,1,128,128" color="106,106,106,255" origin="0,1.2100878E-09" />

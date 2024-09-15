@@ -20,14 +20,14 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100" disabledeltatime="true" />
 
       <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="10.0">
-        <Sound file="%ModDir%/Medical/Sounds/latex.ogg" type="OnUse" range="100" />
+        <Sound file="%ModDir%/Sounds/Medical/latex.ogg" type="OnUse" range="100" />
 
         <Affliction identifier="nausea" amount="3" />
         <Affliction identifier="scp_presolatexinfection" amount="2.5" />
       </StatusEffect>
 
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="5.0">
-        <Sound file="%ModDir%/Medical/Sounds/latexfail.ogg" type="OnUse" range="1500" />
+        <Sound file="%ModDir%/Sounds/Medical/latexfail.ogg" type="OnUse" range="1500" />
 
         <Affliction identifier="nausea" amount="3" />
         <Affliction identifier="scp_presolatexinfection" amount="1" />
@@ -69,7 +69,7 @@
       <StatusEffect type="OnFailure" target="This" Condition="-100" disabledeltatime="true" />
 
       <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="10.0">
-        <Sound file="%ModDir%/Medical/Sounds/latex.ogg" type="OnUse" range="300" />
+        <Sound file="%ModDir%/Sounds/Medical/latex.ogg" type="OnUse" range="300" />
 
         <Affliction identifier="scp_firelatexburn" amount="3" />
         <Affliction identifier="organdamage" amount="1.5" />
@@ -80,7 +80,7 @@
       </StatusEffect>
 
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="5.0">
-        <Sound file="%ModDir%/Medical/Sounds/latexfail.ogg" type="OnUse" range="1500" />
+        <Sound file="%ModDir%/Sounds/Medical/latexfail.ogg" type="OnUse" range="1500" />
 
         <Affliction identifier="scp_firelatexburn" amount="1.5" />
       </StatusEffect>
@@ -411,7 +411,7 @@
       </StatusEffect>
 
       <StatusEffect type="OnSecondaryUse" target="This">
-        <Sound file="%ModDir%/Medical/Sounds/psiexposure.ogg" range="800" volume="2" loop="true" />
+        <Sound file="%ModDir%/Sounds/Medical/psiexposure.ogg" range="800" volume="2" loop="true" />
 
         <ParticleEmitter particle="nasonovsparkles" anglemax="360" distancemin="15" distancemax="35" velocitymin="25" velocitymax="75" emitinterval="0.5" particleamount="16" scalemin="0.5" scalemax="1" particlespersecond="16" colormultiplier="200,25,25,255" />
       </StatusEffect>
@@ -720,7 +720,7 @@
         <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
         <Conditional Voltage="0.0" targetcontainer="true" />
 
-        <sound file="%ModDir%/Medical/Sounds/psiexposure2.ogg" range="1000.0" loop="true" />
+        <sound file="%ModDir%/Sounds/Medical/psiexposure2.ogg" range="1000.0" loop="true" />
 
         <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="40" distancemax="60" velocitymin="25" velocitymax="50" particlespersecond="50" scalemin="0.5" scalemax="0.75" colormultiplier="175,50,50,255" />
         <ParticleEmitter particle="nasonovsparkles" anglemax="360" distancemin="15" distancemax="25" velocitymin="2" velocitymax="5" emitinterval="2" particleamount="8" particlespersecond="2" colormultiplier="175,50,50,255" />
