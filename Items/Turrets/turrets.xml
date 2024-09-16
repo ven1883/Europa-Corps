@@ -11,7 +11,7 @@
     <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
     <StaticBody width="80" radius="80" />
     <Turret canbeselected="false" characterusable="false" linkable="true" firingoffset="0,-260" barrelpos="128,150" rotationlimits="180,360" powerconsumption="8000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="2" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="1" rotationspeedhighskill="6">
-      <sound file="%ModDir%/Sounds/tankcannon.ogg" volume="1.35" range="10000" type="OnUse" />
+      <sound file="%ModDir%/Sounds/Weapons/Guns/tankcannon.ogg" volume="1.35" range="10000" type="OnUse" />
       <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
       <RailSprite name="coilgunrail" texture="%ModDir%/Turrets/tankturret.png" depth="0.011" sourcerect="382,185,116,221" origin="0.52377486,0.79979753" />
       <BarrelSprite name="Coilgunbarrel" texture="%ModDir%/Turrets/tankturret.png" depth="0.012" sourcerect="255,17,117,415" origin="0.5013909,0.8638133" />
@@ -51,7 +51,7 @@
     <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
     <StaticBody width="80" radius="80" />
     <Turret canbeselected="false" characterusable="false" launchimpulse="120.0" linkable="true" barrelpos="128,175" firingoffset="0,-360" rotationlimits="180,360" powerconsumption="8000.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="1" springstiffnesslowskill="1" springstiffnesshighskill="50" springdampinglowskill="0.1" springdampinghighskill="10" rotationspeedlowskill="0.2" rotationspeedhighskill="6">
-      <sound file="%ModDir%/Sounds/prototankcannon.ogg" volume="1.35" range="10000" type="OnUse" />
+      <sound file="%ModDir%/Sounds/Weapons/Guns/prototankcannon.ogg" volume="1.35" range="10000" type="OnUse" />
       <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
       <RailSprite name="coilgunrail" texture="%ModDir%/Turrets/advtankturret.png" depth="0.011" sourcerect="378,185,123,220" origin="0.52377486,0.79979753" />
       <BarrelSprite name="Coilgunbarrel" texture="%ModDir%/Turrets/advtankturret.png" depth="0.012" sourcerect="255,17,117,415" origin="0.5013909,0.8638133" />
@@ -362,7 +362,7 @@
     <UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
     <StaticBody width="80" radius="80" />
     <Turret canbeselected="false" characterusable="false" linkable="true" barrelpos="128,165" firingoffset="0,-320" rotationlimits="180,360" powerconsumption="500.0" showchargeindicator="true" showprojectileindicator="true" recoildistance="50" reload="0.1" springstiffnesslowskill="2" springstiffnesshighskill="50" springdampinglowskill="0.5" springdampinghighskill="10" rotationspeedlowskill="3" rotationspeedhighskill="9">
-      <sound file="%ModDir%/Sounds/mgturret.ogg" volume="1.35" range="5000" type="OnUse" />
+      <sound file="%ModDir%/Sounds/Weapons/Guns/mgturret.ogg" volume="1.35" range="5000" type="OnUse" />
       <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
       <RailSprite name="mgturretrail" texture="%ModDir%/Turrets/mgturret.png" depth="0.011" sourcerect="382,218,119,221" origin="0.52377486,0.79979753" />
       <BarrelSprite name="mgturretbarrel" texture="%ModDir%/Turrets/mgturret.png" depth="0.012" sourcerect="261,77,115,373" origin="0.5013909,0.8638133" scale="0.55" />

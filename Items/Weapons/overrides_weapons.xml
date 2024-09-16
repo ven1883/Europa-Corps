@@ -80,7 +80,7 @@
 					<Conditional condition="gt 0" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
 					<StatusEffect type="OnUse">
@@ -119,8 +119,8 @@
 			<RangedWeapon reload="2" reloadnoskill="5" reloadskillrequirement="95" barrelpos="65,9" spread="2" holdtrigger="true" unskilledspread="10" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.5">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-				<Sound file="%ModDir%/Sounds/handcannon.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.5" />
-				<Sound file="%ModDir%/Sounds/handcannon.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="0.9" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/handcannon.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.5" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/handcannon.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="0.9" />
 				<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.35" />
 
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="20.0,8.0" colormultiplier="255,200,200,200" />
@@ -613,9 +613,9 @@
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="12.0,6.0" colormultiplier="255,200,200,200" />
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,12.0" colormultiplier="255,200,200,200" />
 				<StatusEffect type="OnUse" forceplaysounds="true">
-					<Sound file="%ModDir%/Sounds/hmg1.ogg" type="OnUse" range="3500" selectionmode="Random" volume="1.15" />
-					<Sound file="%ModDir%/Sounds/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="0.9" />
-					<Sound file="%ModDir%/Sounds/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="1.05" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/hmg1.ogg" type="OnUse" range="3500" selectionmode="Random" volume="1.15" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="0.9" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="1.05" />
 				</StatusEffect>
 
 				<StatusEffect type="OnUse" target="This" Condition="-110" />
@@ -637,7 +637,7 @@
 					<Affliction identifier="blunttrauma" strength="4" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
+					<sound file="%ModDir%/Sounds/Wepaons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="4.5" stackable="false" />
 				<StatusEffect type="OnUse" target="Contained">
@@ -871,7 +871,7 @@
 			<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" aimpos="35,-18" throwforce="3.5" msg="ItemMsgPickUpSelect">
 				<StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3.0" disabledeltatime="true" checkconditionalalways="true" />
 				<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-					<sound file="%ModDir%/Sounds/grenadethrow.ogg" range="1000" />
+					<sound file="%ModDir%/Sounds/Weapons/Explosives/grenadethrow.ogg" range="1000" />
 					<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="255,255,255,255" />
 				</StatusEffect>
 				<StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">

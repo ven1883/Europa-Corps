@@ -128,12 +128,12 @@
 
 			<!--pin & fuze-->
 			<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/grenadethrow.ogg" range="1000" frequencymultiplier="0.9" />
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/grenadethrow.ogg" range="1000" frequencymultiplier="0.9" />
 				<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="200,100,100,255" />
 			</StatusEffect>
 
 			<StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/Generic/sr1.ogg" range="1000" volume="0.6" frequencymultiplier="3" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/sr1.ogg" range="1000" volume="0.6" frequencymultiplier="3" />
 				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="15" velocitymin="1000" velocitymax="1500" maxdistance="100" scalemin="0.5" scalemax="1" colormultiplier="100,75,200,255"/>
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,3.0" colormultiplier="255,200,200,200" />
 				<ParticleEmitter particle="steamspray" particleamount="1" velocitymin="0" velocitymax="0" scalemin="1.5" scalemax="2.5" anglemin="0" anglemax="360" colormultiplier="15,15,15,255" />
@@ -198,7 +198,7 @@
 
 			<!--pin & spoon-->
 			<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/grenadethrow.ogg" range="1000" />
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/grenadethrow.ogg" range="1000" />
 				<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="100,100,255,255" />
 			</StatusEffect>
 
@@ -268,7 +268,7 @@
 
 			<!--pin-->
 			<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/grenadethrow.ogg" range="1000" frequencymultiplier="0.95" />
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/grenadethrow.ogg" range="1000" frequencymultiplier="0.95" />
 
 				<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="100,100,100,255" />
 			</StatusEffect>

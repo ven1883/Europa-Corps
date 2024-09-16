@@ -450,7 +450,7 @@
 					<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="0.5" scalemax="1" />
 				</StatusEffect>
 				<StatusEffect type="OnImpact" target="This">
-					<sound file="%ModDir%/Sounds/nukesmall.ogg" range="3000" volume="2" />
+					<sound file="%ModDir%/Sounds/Weapons/Explosives/nukesmall.ogg" range="3000" volume="2" />
 					<SpawnItem identifier="scp_nukegrenadefallout" spawnposition="This" />
 				</StatusEffect>
 				<StatusEffect type="OnImpact" target="Contained" allowwhenbroken="true">
