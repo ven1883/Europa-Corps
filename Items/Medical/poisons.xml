@@ -22,14 +22,14 @@
       <RequiredSkill identifier="medical" level="65" />
 
       <StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="15" interval="0.75">
-        <Sound file="Effects/Sounds/Syringelatex.ogg" range="500" />
+        <Sound file="%ModDir%/Sounds/Medical/Syringelatex.ogg" range="500" />
 
         <Affliction identifier="scp_firelatexburn" amount="6" />
         <Affliction identifier="organdamage" amount="2" />
       </StatusEffect>
 
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="7.5">
-        <Sound file="Effects/Sounds/Syringelatexfail.ogg" range="1200" />
+        <Sound file="%ModDir%/Sounds/Medical/Syringelatexfail.ogg" range="1200" />
 
         <Affliction identifier="scp_firelatexburn" amount="4" />
         <Affliction identifier="organdamage" amount="1.5" />
@@ -49,7 +49,7 @@
       maxtargetstohit="1">
 
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Effects/Sounds/latexfail.ogg" range="1000" volume="1.2" />
+        <Sound file="%ModDir%/Sounds/Medical/latexfail.ogg" range="1000" volume="1.2" />
       </StatusEffect>
 
       <StatusEffect type="OnImpact" target="UseTarget" duration="5" interval="0.75">
@@ -86,7 +86,7 @@
       <RequiredSkill identifier="medical" level="70" />
 
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="15">
-        <Sound file="Effects/Sounds/Syringelatex.ogg" range="500" />
+        <Sound file="%ModDir%/Sounds/Medical/Syringelatex.ogg" range="500" />
 
         <ReduceAffliction type="nausea" amount="5" />
         <ReduceAffliction type="burn" amount="8" />
@@ -98,7 +98,7 @@
       </StatusEffect>
 
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="10">
-        <Sound file="Effects/Sounds/Syringelatexfail.ogg" range="1200" />
+        <Sound file="%ModDir%/Sounds/Medical/Syringelatexfail.ogg" range="1200" />
 
         <Affliction identifier="nausea" amount="8" />
         <ReduceAffliction type="burn" amount="8" />
@@ -121,7 +121,7 @@
       launchrotation="-90">
 
       <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-        <Sound file="Effects/Sounds/Syringelatexfail.ogg" range="1000" />
+        <Sound file="%ModDir%/Sounds/Medical/Syringelatexfail.ogg" range="1000" />
       </StatusEffect>
 
       <StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="10">

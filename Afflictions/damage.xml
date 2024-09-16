@@ -164,7 +164,7 @@
         <Conditional scp_psidamage="gte 75" />
         <Conditional IsLocalPlayer="True" />
         <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
+        <sound file="%ModDir%/Sounds/Medical/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
       </StatusEffect>
     </Effect>
 
@@ -194,7 +194,7 @@
         <Conditional scp_psidamage="gte 100" />
         <Conditional IsLocalPlayer="True" />
         <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
+        <sound file="%ModDir%/Sounds/Medical/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
       </StatusEffect>
     </Effect>
 

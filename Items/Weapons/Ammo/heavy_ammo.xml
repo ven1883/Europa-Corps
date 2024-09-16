@@ -1,0 +1,503 @@
+<Items>
+
+		<!--.223 / 5.56mm-->
+		<!--Box Magazines-->
+	
+
+	<!--100 round 5.56x45 box mag-->
+	<Item 
+		name="" 
+		identifier="scp_m249mag" 
+		description="" 
+		tags="mediumitem,m249ammo,ehaammo" 
+		maxstacksize="4" maxstacksizecharacterinventory="1" 
+		category="Weapon" subcategory="Coalition" 
+		cargocontaineridentifier="scp_ammocrate" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.3">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/ammo.png" depth="0.54" sourcerect="176,104,29,47" origin="0.5,0.5" />
+		<Body width="30" height="40" density="50" />
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_556projectile" 
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="scp_556projectile" />
+
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+				
+				<SpawnItem identifier="scp_556projectile" spawnposition="ThisInventory" />
+
+				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+				<ParticleEmitter particle="scp_mglink" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+			</StatusEffect>
+
+		</ItemContainer>
+	</Item>
+
+		<!--!Projectiles inherited from rifles_ammo.xml-->
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--.308 / 7.62x51mm-->
+		<!--Box Magazines-->
+
+
+	<!--50 Round box mag-->
+	<Item 
+		name="" 
+		identifier="scp_pkpsmallboxmag" 
+		description="" 
+		tags="mediumitem,gpmgammo,ehaammo" 
+		category="Weapon"
+		maxstacksize="6" maxstacksizecharacterinventory="1" 
+		subcategory="Renegade" 
+		cargocontaineridentifier="scp_ammocrate" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/renegadeammo.png" sourcerect="243,23,56,36" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="51,219,27,42" origin="0.5,0.5" />
+		<Body width="30" height="40" density="50" />
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_762natoprojectile" 
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="scp_762natoprojectile" />
+
+			<StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true">
+				<SpawnItem identifier="scp_762natoprojectile" spawnposition="ThisInventory" />
+				
+				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="scp_mglink" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+			</StatusEffect>
+
+		</ItemContainer>
+	</Item>
+
+		<!--###-->
+
+	<!--100 Round box mag-->
+	<Item 
+		name="" 
+		identifier="scp_pkpboxmag" 
+		description=""
+		tags="mediumitem,gpmgammo,ehaammo" 
+		maxstacksize="2" maxstacksizecharacterinventory="1" 
+		category="Weapon" subcategory="Coalition" 
+		cargocontaineridentifier="scp_ammocrate" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/renegadeammo.png" sourcerect="155,11,75,48" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="79,219,27,42" origin="0.5,0.5" />
+
+		<Body width="30" height="40" density="50" />
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_762natoprojectile" 
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="scp_762natoprojectile" />
+
+			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+				<SpawnItem identifier="scp_762natoprojectile" spawnposition="ThisInventory" />
+				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="scp_mglink" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+			</StatusEffect>
+
+		</ItemContainer>
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+		
+	</Item>
+	
+		<!--!Projectiles inherited from rifles_ammo.xml-->
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--.338 / 8.6x70mm-->
+
+
+	<!--10 Round 8.6x70mm box mag-->
+	<Item 
+		name="" 
+		identifier="scp_t5000boxmag" 
+		description="" 
+		tags="smallitem,t5000ammo,ehaammo" 
+		category="Weapon" subcategory="Coalition" 
+		cargocontaineridentifier="scp_ammocrate" 
+		maxstacksize="4" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="23,222,26,27" origin="0.5,0.5" />
+		<Body width="30" height="40" density="50" />
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+		<ItemContainer
+			hideitems="true" 
+			capacity="1"
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_86projectile" 
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="scp_86projectile" />
+
+			<StatusEffect type="OnUse" target="This" condition="-20" disabledeltatime="true">
+				<SpawnItem identifier="scp_86projectile" spawnposition="ThisInventory" />
+			</StatusEffect>
+
+		</ItemContainer>
+	</Item>
+	
+		<!--###-->
+
+	<!--8.6x70mm round-->
+	<Item 
+		name="" 
+		identifier="scp_86projectile" 
+		tags="smallitem,t5000ammo" 
+		Scale="0.3"
+		category="Weapon" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true"
+		scale="0.4">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" 
+			removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+
+			<Attack 
+				structuredamage="1.0" itemdamage="5" 
+				targetforce="9" 
+				severlimbsprobability="0.15" 
+				penetration="0.5">
+
+				<Affliction identifier="bleeding" strength="60" />
+				<Affliction identifier="bleeding" strength="25" probability="0.75" />
+				<Affliction identifier="gunshotwound" strength="85" />
+				<Affliction identifier="explosiondamage" strength="25" probability="0.5" />
+				<Affliction identifier="stun" strength="1" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+	
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--.50 BMG / 12.7x99mm-->
+
+	
+	<!--.50 BMG FMJ-->
+	<Item 
+		name="" 
+		identifier="scp_50bmgfmj" 
+		interactthroughwalls="true" 
+		description="" 
+		tags="smallitem,127ammo,ehaammo" 
+		maxstacksize="15" maxstacksizecharacterinventory="5"
+		cargocontaineridentifier="scp_ammocrate" 
+		Scale="0.3" 
+		category="Weapon" subcategory="Coalition" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.4">
+
+		<InventoryIcon name="50bmgfmjinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="324,127,60,63" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="1,282,10,69" origin="0.5,0.5" />
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" 
+			maxtargetstohit="2" 
+			removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="175,150,125,150" scalemultiplier="1,2" />
+
+			<Attack 
+				structuredamage="35.0" itemdamage="20" 
+				targetforce="15" 
+				severlimbsprobability="1"
+				penetration="0.5">
+
+				<Affliction identifier="bleeding" strength="125" />
+				<Affliction identifier="gunshotwound" strength="100" />
+				<Affliction identifier="gunshotwound" strength="50" probability="0.75" />
+				<Affliction identifier="stun" strength="0.25" />
+			</Attack>
+
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3,3" colormultiplier="255,200,225,180" />
+				<ParticleEmitter particle="weldspark" particleamount="12" anglemin="0" anglemax="360" velocitymin="650" velocitymax="1500" scalemin="1.5" scalemax="2.5" drawontop="true" colormultiplier="255,200,225,180" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+		<!--###-->
+
+	<!--.50 BMG Durasteel-->
+	<Item 
+		name="" 
+		identifier="scp_50bmgdura" 
+		interactthroughwalls="true" 
+		description="" 
+		cargocontaineridentifier="scp_ammocrate" 
+		tags="smallitem,127ammo,ehaammo" 
+		maxstacksize="5" 
+		Scale="0.3" 
+		category="Weapon" subcategory="Coalition" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.4">
+
+		<InventoryIcon name="50bmgdurainv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="387,127,60,63" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="24,282,10,69" origin="0.5,0.5" />
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" 
+			maxtargetstohit="3" 
+			removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="50,50,255,200" scalemultiplier="1,2.5" />
+
+			<Attack 
+				structuredamage="65.0" itemdamage="50" 
+				targetforce="15" 
+				severlimbsprobability="0.65" 
+				penetration="0.85">
+
+				<Affliction identifier="bleeding" strength="55" />
+				<Affliction identifier="gunshotwound" strength="70" />
+				<Affliction identifier="explosiondamage" strength="70" probability="0.5" />
+				<Affliction identifier="stun" strength="0.3" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3,3" colormultiplier="255,100,100,225" />
+				<ParticleEmitter particle="weldspark" particleamount="10" anglemin="0" anglemax="360" velocitymin="500" velocitymax="650" scalemin="1.25" scalemax="1.5" drawontop="true" colormultiplier="50,50,255,255" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+		<!--###-->
+
+	<!--.50 BMG AP-I-->
+	<Item 
+		name="" 
+		identifier="scp_50bmgapi" 
+		interactthroughwalls="true" 
+		description="" 
+		cargocontaineridentifier="scp_ammocrate"
+		tags="smallitem,127ammo,ehaammo" 
+		maxstacksize="10" maxstacksizecharacterinventory="5" 
+		Scale="0.3" 
+		category="Weapon" subcategory="Coalition" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.4">
+
+		<InventoryIcon name="50bmgapiinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="450,129,60,63" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="12,282,11,69" origin="0.5,0.5" />
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" 
+			maxtargetstohit="3" 
+			removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,50,50,200" scalemultiplier="1,2.5" />
+
+			<Attack 
+				structuredamage="65.0" 
+				targetforce="15" 
+				itemdamage="35" 
+				severlimbsprobability="1" 
+				penetration="0.65">
+
+				<Affliction identifier="bleeding" strength="85" />
+				<Affliction identifier="gunshotwound" strength="70" />
+				<Affliction identifier="explosiondamage" strength="25" probability="0.4" />
+				<Affliction identifier="scp_firelatexburn" strength="15" />
+				<Affliction identifier="stun" strength="0.3" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3,3" colormultiplier="255,100,100,225" />
+				<ParticleEmitter particle="flame" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.4" scalemax="0.6" />
+				<ParticleEmitter particle="weldspark" particleamount="10" anglemin="0" anglemax="360" velocitymin="500" velocitymax="650" scalemin="1" scalemax="1.25" drawontop="true" colormultiplier="255,200,225,180" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--5mm Microgun-->
+	
+	<!--microgun box-->
+	<Item 
+		name="" 
+		identifier="scp_microgunmag" 
+		description="" 
+		tags="mediumitem,microgunammo,ehaammo" 
+		maxstacksize="1" 
+		category="Weapon" 
+		subcategory="Prototype" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+		
+		<InventoryIcon name="microgunboxinv" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="391,419,91,91" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" depth="0.54" sourcerect="402,341,67,76" origin="0.5,0.5" />
+		<Body width="30" height="40" density="50" />
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_microproj" 
+			removecontaineditemsondeconstruct="true" 
+			containedstateindicatorstyle="bullet">
+
+			<Containable items="scp_microproj" />
+
+			<StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
+
+				<SpawnItem identifier="scp_microproj" spawnposition="ThisInventory" />
+
+				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+			</StatusEffect>
+
+		</ItemContainer>
+	</Item>
+
+	<!--###-->
+
+	<!--Microgun Projectile-->
+	<Item 
+		name="microgun Projectile" 
+		identifier="scp_microproj" 
+		tags="smallitem,microgunammo" 
+		Scale="0.3"
+		category="Weapon" subcategory="Prototype" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true" 
+		scale="0.4">
+
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" 
+			removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,255" scalemultiplier="1,0.5" />
+
+			<Attack 
+				structuredamage="3" itemdamage="0.05" 
+				targetforce="2" 
+				severlimbsprobability="0.15" 
+				penetration="0.15">
+
+				<Affliction identifier="bleeding" strength="10" />
+				<Affliction identifier="gunshotwound" strength="15" />
+				<Affliction identifier="gunshotwound" strength="5" probability="0.05" />
+				<Affliction identifier="stun" strength="0.1" probability="0.15" />
+			</Attack>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+	
+</Items>
