@@ -399,11 +399,11 @@
     </Item>
 	
     <!--###-->
-
+<!--check later since i manually changed the sprite paths -Derek -->
 	<Item name="" identifier="feniterhazmats" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="feniterchemcrate1">
 
 		<InventoryIcon texture="%ModDir%/thecodelol/Items/hazmatextra.png" sourcerect="0,0,150,120" origin="0.5,0.5" />
-		<Sprite name="Diving Suit Item" texture="%ModDir%/thecodelol/Items/chemicalwarfaremisc.png" sourcerect="133,83,94,78" depth="0.55" origin="0.5,0.5" />
+		<Sprite name="Diving Suit Item" texture="%ModDir%/Items/Apparel/Sprites/chemicalwarfaremisc.png" sourcerect="133,83,94,78" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="90" height="70" density="30" />
 
@@ -420,7 +420,7 @@
 
 		<Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
 
-			<sprite name="Hazmat Suit Helmet Wearable" texture="%ModDir%/thecodelol/Items/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.675" hidelimb="false" alphaclipotherwearables="true" sourcerect="0,0,160,160" origin="0.5,0.55">
+			<sprite name="Hazmat Suit Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/Chemhelmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.675" hidelimb="false" alphaclipotherwearables="true" sourcerect="0,0,160,160" origin="0.5,0.55">
 				<LightComponent 
 					range="2400.0" 
 					lightcolor="80,212,164,255" 
@@ -439,20 +439,20 @@
 
 			</sprite>
 
-			<sprite name="Hazmat Suit Torso" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Hand" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Hand" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Lower Arm" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Lower Arm" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Upper Arm" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Upper Arm" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Waist" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Thigh" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Thigh" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Leg" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Leg" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Shoe" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Shoe" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Torso" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Hand" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Hand" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Waist" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Leg" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Leg" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
 			
 			<StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" ObstructVision="true" PressureProtection="6000.0" SpeedMultiplier="1" PropulsionSpeedMultiplier="0.9" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
 				<StatValue stattype="FlowResistance" value="0.9" />
