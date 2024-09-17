@@ -407,22 +407,22 @@
 		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
 
 		<Wearable slots="Any,InnerClothes+Head+OuterClothes" msg="ItemMsgPickUpSelect">
-
+<!--changed sprite filepath, pls test -Derek -->
 			<sprite name="highperfhazmat helm Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.82" hidewearablesoftype="hair,beard" sourcerect="689,271,87,85" origin="0.59,0.51" />
-			<sprite name="highperfhazmat Torso" texture="highperfhazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Right Hand" texture="highperfhazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Left Hand" texture="highperfhazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Right Lower Arm" texture="highperfhazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Left Lower Arm" texture="highperfhazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Right Upper Arm" texture="highperfhazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Left Upper Arm" texture="highperfhazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Waist" texture="highperfhazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Right Thigh" texture="highperfhazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Left Thigh" texture="highperfhazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Right Leg" texture="highperfhazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Left Leg" texture="highperfhazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Left Shoe" texture="highperfhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-			<sprite name="highperfhazmat Right Shoe" texture="highperfhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Torso" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Hand" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Hand" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Waist" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Leg" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Leg" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+			<sprite name="highperfhazmat Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/highperfhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
 
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection,scp_hexgasdamage" damagemultiplier="0" probabilitymultiplier="0" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness,scp_psidamage" damagemultiplier="0.05" />
