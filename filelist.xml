@@ -42,7 +42,6 @@
 	<Item file="%ModDir%/Items/Medical/poisons.xml"/>
 
 	<!--Misc-->
-	<Item file="%ModDir%/Items/Mapping/particleemitters.xml"/>
 
 	<!--+++++++++++-->
 	<!--AFFLICTIONS--> 
@@ -64,6 +63,7 @@
 	<!--++++-->
 	<!--MISC-->
 	<!--++++-->
+	<Style file="%ModDir%/styles.xml"/>
 
 	<!--+++++-->
 	<!--TEXTS-->
