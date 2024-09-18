@@ -399,10 +399,14 @@
     </Item>
 	
     <!--###-->
-
+<!--check later since i manually changed the sprite paths -Derek -->
 	<Item name="" identifier="feniterhazmats" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="feniterchemcrate1">
 
+<<<<<<< HEAD
 		<InventoryIcon texture="%ModDir%/Items/Apparel/Sprites/hazmatextra.png" sourcerect="0,0,150,120" origin="0.5,0.5" />
+=======
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/hazmatextra.png" sourcerect="0,0,150,120" origin="0.5,0.5" />
+>>>>>>> b7dc5f69c27030450dd1491a0ea39fe139c45fb6
 		<Sprite name="Diving Suit Item" texture="%ModDir%/Items/Apparel/Sprites/chemicalwarfaremisc.png" sourcerect="133,83,94,78" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="90" height="70" density="30" />
@@ -420,7 +424,11 @@
 
 		<Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
 
+<<<<<<< HEAD
 			<sprite name="Hazmat Suit Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.675" hidelimb="false" alphaclipotherwearables="true" sourcerect="0,0,160,160" origin="0.5,0.55">
+=======
+			<sprite name="Hazmat Suit Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/Chemhelmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.675" hidelimb="false" alphaclipotherwearables="true" sourcerect="0,0,160,160" origin="0.5,0.55">
+>>>>>>> b7dc5f69c27030450dd1491a0ea39fe139c45fb6
 				<LightComponent 
 					range="2400.0" 
 					lightcolor="80,212,164,255" 
