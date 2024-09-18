@@ -95,36 +95,6 @@
 
 	</Item>
 
-		<!--###-->
-
-
-		<!--TODO: Move this to Misc eventually. It doesn't belong here.-->
-		<!--Pocket Extinguisher-->
-	<Item name="" identifier="sgt_ext" category="Equipment" Tags="mediumitem,fireextinguisher,provocative" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light" donttransferbetweensubs="true">
-
-		<InventoryIcon texture="%ModDir%/Ammo/fireext.png" sourcerect="52,0,56,53" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Ammo/fireext.png" depth="0.55" sourcerect="0,0,45,77" origin="0.5,0.5" />
-
-		<Body width="30" height="40" density="8" />
-
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="40,-20" handle1="-6,2" msg="ItemMsgPickUpSelect" />
-
-		<RepairTool extinguishamount="200.0" range="500" barrelpos="21,4" repairthroughholes="true" hititems="false" IgnoreCharacters="true">
-			<ParticleEmitter particle="extinguisher" velocitymin="1000.0" velocitymax="1650.0" particlespersecond="100" />
-			<StatusEffect type="OnUse" targettype="This" Condition="-100.0" />
-			<sound file="Content/Items/Tools/Extinguisher.ogg" type="OnUse" range="500.0" loop="true" />
-		</RepairTool>
-
-		<Propulsion force="-80" usablein="water" particles="bubbles" />
-
-		<aitarget sightrange="1000" soundrange="1000" fadeouttime="1" />
-
-		<Upgrade gameversion="0.10.0.0" scale="0.5" />
-
-		<Upgrade gameversion="0.9.600.0" Tags="mediumitem,fireextinguisher,provocative" />
-
-	</Item>
-
 
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Laser Weapons-->
@@ -624,7 +594,7 @@
 		<!--Nerve Agent-->
 	<Item name="" identifier="fenitergasgrenade1" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="" health="15">
 	
-		<Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="20,11,27,53" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="20,11,27,53" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="26" height="54" density="30" />
 		
@@ -705,7 +675,7 @@
 	<!--Pulmonary Agent-->
 	<Item name="" identifier="fenitergasgrenade2" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="30">
 
-		<Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="20,81,27,53" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="20,81,27,53" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="26" height="54" density="30" />
 
@@ -786,7 +756,7 @@
 	<!--Blood Agent-->
 	<Item name="" identifier="fenitergasgrenade3" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="10">
 
-		<Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="20,151,27,53" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="20,151,27,53" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="26" height="54" density="30" />
 
@@ -870,7 +840,7 @@
 	<!--Blistering Agent-->
 	<Item name="" identifier="fenitergasgrenade4" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="15">
 
-		<Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="19,222,27,53" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="19,222,27,53" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="26" height="54" density="30" />
 
@@ -950,7 +920,7 @@
 	<!--Tear Gas-->
 	<Item name="" identifier="fenitergasgrenade5" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="30">
 
-		<Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="19,291,27,53" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="19,291,27,53" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="26" height="54" density="30" />
 
@@ -1032,7 +1002,7 @@
 	<!--Psychochemical Agent-->
 	<Item name="" identifier="fenitergasgrenade6" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="20">
 
-		<Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="19,361,27,53" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="19,361,27,53" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="26" height="54" density="30" />
 
@@ -1111,7 +1081,7 @@
 	<!--Incapacitating Agent-->
 	<Item name="" identifier="fenitergasgrenade7" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="15">
 
-		<Sprite texture="sprites/chemicalwarfaremain.png" sourcerect="19,431,27,53" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="19,431,27,53" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="26" height="54" density="30" />
 
