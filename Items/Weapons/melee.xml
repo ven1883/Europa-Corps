@@ -312,4 +312,115 @@
 
 		<aitarget sightrange="500" soundrange="250" fadeouttime="1" />
 	</Item>
+
+	<!--###-->
+
+	<!--Crank that soulja boy-->
+	<Item name="" identifier="sgt_wrench" variantof="wrench" addedrepairspeedmultiplier="0.65">
+
+		<!-- disable base inventory icon -->
+		<InventoryIcon />
+		<Sprite texture="%ModDir%/Weapons/Melee.png" sourcerect="0,81,92,28" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="114" height="20" density="30" />
+
+		<MeleeWeapon slots="RightHand,LeftHand,Any" range="100" reload="0.8" controlpose="true" aimpos="45,10" handle1="-10,0" holdangle="60" combatpriority="20">
+
+			<Attack targetimpulse="15" structuredamage="11" itemdamage="13">
+
+				<Affliction identifier="blunttrauma" strength="30" />
+				<Affliction identifier="stun" strength="1" />
+
+				<StatusEffect type="OnUse" target="UseTarget">
+					<Conditional entitytype="eq Character" />
+					<Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+					<Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+				</StatusEffect>
+
+			</Attack>
+		</MeleeWeapon>
+
+		<Quality>
+			<QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+			<QualityStat stattype="repairspeed" value="0.1" />
+		</Quality>
+
+	</Item>
+
+	<!--###-->
+
+	<!--Greytide Stationwide-->
+	<Item name="" identifier="sgt_toolbox" category="Equipment" tags="mediumitem,mobilecontainer,tool,wrench,screwdriver" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" addedrepairspeedmultiplier="1">
+		
+		<Sprite texture="%ModDir%/Weapons/Melee.png" sourcerect="116,80,124,61" origin="0.5,0.5" depth="0.6" />
+		<!--<Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="1,0,68,39"/>-->
+		<Body width="90" height="60" density="20" />
+
+		<MeleeWeapon slots="RightHand+LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1.8" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">
+			
+			<Attack structuredamage="0" itemdamage="1" targetimpulse="4">
+
+				<Affliction identifier="blunttrauma" strength="40" />
+				<Affliction identifier="stun" strength="1" />
+
+				<StatusEffect type="OnUse" target="UseTarget">
+					<Conditional entitytype="eq Character" />
+
+					<Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+					<Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+				</StatusEffect>
+
+			</Attack>
+		
+		</MeleeWeapon>
+
+		<ItemContainer capacity="3" keepopenwhenequipped="true" movableframe="true">
+			<Containable items="smallitem" />
+		</ItemContainer>
+
+		<aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+	</Item>
+
+	<!--###-->
+
+	<!--(Dura)Steel Crowbar-->
+	<Item name="" identifier="sgt_crowbar" category="Equipment" variantof="crowbar" Tags="mediumitem,tool,simpletool,dooropeningtool,crowbaritem,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.36" impactsoundtag="impact_metal_light" RequireAimToUse="True" addedpickingspeedmultiplier="1.2">
+		
+		<InventoryIcon texture="%ModDir%/Weapons/Melee.png" sourcerect="4,142,232,56" origin="0.5,0.2" />
+		<Sprite texture="%ModDir%/Weapons/Melee.png" sourcerect="4,142,232,56" depth="0.55" origin="0.5,0.16" />
+		
+		<Body width="120" height="20" density="30" />
+		
+		<MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" aimpos="45,10" handle1="-10,0" handle2="0,5" holdangle="60" range="150" combatpriority="20" msg="ItemMsgPickUpSelect">
+			
+			<StatusEffect type="OnFailure" target="This" reload="1.8" setvalue="true" />
+			<StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="1.4" />
+			
+			<RequiredSkill identifier="mechanical" level="50" />
+			
+			<Attack structuredamage="12" itemdamage="24" targetimpulse="15">
+				
+				<Affliction identifier="blunttrauma" strength="16" />
+				<Affliction identifier="stun" strength="0.6" />
+				
+				<StatusEffect type="OnUse" target="UseTarget">
+					<Conditional entitytype="eq Character" />
+					
+					<Sound file="%ModDir%/Sounds/donk1.ogg" selectionmode="random" range="500" />
+					<Sound file="%ModDir%/Sounds/donk2.ogg" range="500" />
+				</StatusEffect>
+			
+			</Attack>
+		</MeleeWeapon>
+
+		<aitarget sightrange="1000" soundrange="500" fadeouttime="1" />
+		
+		<Quality>
+			<QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+		</Quality>
+
+		<SkillRequirementHint identifier="mechanical" level="50" />
+
+	</Item>
+
 </Items>

@@ -629,6 +629,52 @@
 	
 	</Item>
 
+	<!--###-->
+	<!--Syringe Shotgun-->
+
+	<Item name="" identifier="sgt_syringeshotgun" variantof="syringegun" scale="0.32">
+
+		<InventoryIcon texture="%ModDir%/weapons/renegade.png" sourcerect="822,0,72,96" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/weapons/renegade.png" sourcerect="498,0,312,102" depth="0.7" origin="0.5,0.5" />
+
+		<Body width="90" height="74" density="25" />
+
+		<Holdable slots="RightHand+LeftHand,Any" controlpose="true" holdpos="20,-15" holdangle="-15" aimpos="40,-10" handle1="-18,-18" handle2="58,-12" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon reload="0.01" launchimpulse="10.0" barrelpos="71,30" spread="4" drawhudwhenequipped="true" crosshairscale="0.2">
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<Sound file="Content/Items/Weapons/SyringeGun1.ogg" type="OnUse" range="1000" volume="1" frequencymultiplier="0.5" />
+			<Sound file="Content/Items/Weapons/SyringeGun2.ogg" type="OnUse" range="1000" volume="1" frequencymultiplier="0.5" />
+
+			<StatusEffect type="OnUse" target="This" Condition="-1500" />
+
+			<StatusEffect type="OnBroken" target="This" delay="1">
+				<sound file="%ModDir%/Sounds/ssgreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="3" stackable="false" />
+
+			<RequiredItems items="syringe" type="Contained" msg="ItemMsgSyringeRequired" />
+
+			<RequiredSkill identifier="weapons" level="30" />
+			<RequiredSkill identifier="medical" level="50" />
+		</RangedWeapon>
+
+		<ItemContainer capacity="4" maxstacksize="1" itempos="0,25" itemrotation="-90" hideitems="true" containedstateindicatorstyle="syringe" ShowTotalStackCapacityInContainedStateIndicator="true" containedstateindicatorslot="0">
+			<SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+			<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+			<SlotIcon slotindex="2" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+			<SlotIcon slotindex="3" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+			<Containable items="syringe" />
+		</ItemContainer>
+
+		<SkillRequirementHint identifier="weapons" level="30" />
+		<SkillRequirementHint identifier="medical" level="50" />
+
+	</Item>
 
 	<Item identifier="nervegasgrenadeactive" variantof="fenitergasgrenade1" descriptionidentifier="fenitergasgrenade1" tags="smallitem,weapon,explosive,armed"/>
 
