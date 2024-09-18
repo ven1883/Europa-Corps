@@ -3765,4 +3765,136 @@
 		<SkillRequirementHint identifier="weapons" level="75" />
 
 	</Item>
+
+	<!--###-->
+
+	<Item name="" identifier="feniterrifleround1" category="Weapon" maxstacksize="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo,riflemanbonus" Scale="0.5" impactsoundtag="impact_metal_light">
+		
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="112,213,23,9" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="23" height="9" density="30" />
+		
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		
+		<Projectile characterusable="false" hitscan="true" removeonhit="true">
+			
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+			
+			<Attack structuredamage="15" targetforce="1" itemdamage="15" severlimbsprobability="0.5" penetration="0.45">
+				<Affliction identifier="gunshotwound" strength="15" />
+				<Affliction identifier="explosiondamage" strength="10" />
+				<Affliction identifier="bleeding" strength="60" />
+				<Affliction identifier="stun" strength="2" />
+			</Attack>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="This">
+				
+				<ParticleEmitter particle="fensmokevent" anglemin="70" anglemax="100" velocitymax="200" particlespersecond="64" colormultiplier="255,225,255,105" />
+				
+				<Explosion range="250.0" ballastfloradamage="10" structuredamage="4" itemdamage="8" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.5" showeffects="false">
+					<Affliction identifier="feniternonlethalagent" strength="14.25" />
+				</Explosion>
+				
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+				
+				<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+			
+		</Projectile>
+		
+	</Item>
+	
+	<!--###-->
+	
+	<Item name="" identifier="feniterrifleround2" category="Weapon" maxstacksize="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo,riflemanbonus" Scale="0.5" impactsoundtag="impact_metal_light">
+		
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="112,222,23,9" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="23" height="9" density="30" />
+		
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		
+		<Projectile characterusable="false" hitscan="true" removeonhit="true">
+			
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+			
+			<Attack structuredamage="15" targetforce="1" itemdamage="15" severlimbsprobability="0.1" penetration="0.45">
+				<Affliction identifier="gunshotwound" strength="15" />
+				<Affliction identifier="explosiondamage" strength="10" />
+				<Affliction identifier="bleeding" strength="60" />
+				<Affliction identifier="stun" strength="15" />
+			</Attack>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="This">
+				<Explosion range="90.0" ballastfloradamage="950" structuredamage="0" itemdamage="0" severlimbsprobability="0" showeffects="false">
+					<Affliction identifier="feniternerveagent" strength="6.95" />
+				</Explosion>
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+				
+				<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+			
+		</Projectile>
+		
+	</Item>
+	
+	<Item name="" identifier="feniterrifleround3" category="Weapon" maxstacksize="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,rifleammo,riflemanbonus" Scale="0.5" impactsoundtag="impact_metal_light">
+		
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="112,231,23,9" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="23" height="9" density="30" />
+		
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		
+		<Projectile characterusable="false" hitscan="true" removeonhit="true">
+			
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
+			
+			<Attack structuredamage="15" targetforce="1" itemdamage="15" severlimbsprobability="0.5" penetration="0.45">
+				<Affliction identifier="gunshotwound" strength="15" />
+				<Affliction identifier="explosiondamage" strength="10" dividebylimbcount="true" />
+				<Affliction identifier="bleeding" strength="60" />
+				<Affliction identifier="stun" strength="2" />
+			</Attack>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2,2" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="This">
+				<Explosion range="70.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" severlimbsprobability="0" showeffects="false">
+					<Affliction identifier="feniterpsychoagent" strength="24.75" />
+				</Explosion>
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+				
+				<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+			
+		</Projectile>
+		
+	</Item>
+
 </Items>
