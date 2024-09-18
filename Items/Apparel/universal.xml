@@ -402,8 +402,8 @@
 
 	<Item name="" identifier="feniterhazmats" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="feniterchemcrate1">
 
-		<InventoryIcon texture="%ModDir%/thecodelol/Items/hazmatextra.png" sourcerect="0,0,150,120" origin="0.5,0.5" />
-		<Sprite name="Diving Suit Item" texture="%ModDir%/thecodelol/Items/chemicalwarfaremisc.png" sourcerect="133,83,94,78" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Apparel/Sprites/hazmatextra.png" sourcerect="0,0,150,120" origin="0.5,0.5" />
+		<Sprite name="Diving Suit Item" texture="%ModDir%/Items/Apparel/Sprites/chemicalwarfaremisc.png" sourcerect="133,83,94,78" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="90" height="70" density="30" />
 
@@ -420,7 +420,7 @@
 
 		<Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
 
-			<sprite name="Hazmat Suit Helmet Wearable" texture="%ModDir%/thecodelol/Items/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.675" hidelimb="false" alphaclipotherwearables="true" sourcerect="0,0,160,160" origin="0.5,0.55">
+			<sprite name="Hazmat Suit Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.675" hidelimb="false" alphaclipotherwearables="true" sourcerect="0,0,160,160" origin="0.5,0.55">
 				<LightComponent 
 					range="2400.0" 
 					lightcolor="80,212,164,255" 
@@ -439,20 +439,20 @@
 
 			</sprite>
 
-			<sprite name="Hazmat Suit Torso" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Hand" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Hand" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Lower Arm" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Lower Arm" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Upper Arm" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Upper Arm" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Waist" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Thigh" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Thigh" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Leg" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Leg" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Left Shoe" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Hazmat Suit Right Shoe" texture="%ModDir%/thecodelol/Items/Hazmat.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Torso" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Hand" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Hand" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Waist" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Leg" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Leg" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Hazmat Suit Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/Hazmat.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
 			
 			<StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" ObstructVision="true" PressureProtection="6000.0" SpeedMultiplier="1" PropulsionSpeedMultiplier="0.9" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
 				<StatValue stattype="FlowResistance" value="0.9" />
@@ -574,5 +574,117 @@
 	</Item>
 	
     <!--###-->
+
+	<Item name="" identifier="fenitercbrneod" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="feniterchemcrate1">
+
+		<InventoryIcon texture="%ModDir%/Items/Apparel/Sprites/hazmatextra.png" sourcerect="300,0,150,120" origin="0.5,0.5" />
+		<Sprite name="Diving Suit Item" texture="%ModDir%/Items/Apparel/Sprites/bombsuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="160" height="110" density="30" />
+		<Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+			
+			<sprite name="CBRN EOD Suit Torso" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" limbdepth="8" />
+			<sprite name="CBRN EOD Helmet Wearable" texture="%ModDir%/Items/Apparel/Sprites/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.675" hidelimb="false" sourcerect="160,0,160,160" origin="0.5,0.57" alphaclipotherwearables="true" />
+			<sprite name="CBRN EOD Suit Right Hand" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Hand" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Lower Arm" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Upper Arm" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Waist" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Thigh" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Thigh" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Leg" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Leg" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Shoe" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Shoe" texture="%ModDir%/Items/Apparel/Sprites/bombsuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+		
+			<StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
+			
+			<StatusEffect type="OnWearing" target="Character" UseHullOxygen="false" ObstructVision="true" SpeedMultiplier="0.6" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+				<Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
+				<Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
+			</StatusEffect>
+
+			  <StatusEffect type="OnContained" target="Contained" Condition="1.0" interval="1" disabledeltatime="true">
+				<Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+				<RequiredItem items="refillableoxygensource" type="Contained" excludebroken="false" excludefullcondition="true" />
+			</StatusEffect>
+
+			  <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" comparison="Or">
+				<Conditional IsDead="false" />
+				<RequiredItem items="oxygensource" type="Contained" />
+			</StatusEffect>
+
+			  <StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true">
+				<Conditional IsDead="false" />
+				<RequiredItem items="weldingfueltank" type="Contained" />
+			</StatusEffect>
+
+			  <StatusEffect type="OnWearing" target="Contained,Character" targetlimbs="Torso" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true">
+				<Conditional IsDead="false" />
+				<RequiredItem items="incendiumfueltank" type="Contained" />
+
+				<Affliction identifier="burn" amount="3.0" />
+			</StatusEffect>
+
+			  <StatusEffect type="OnContained" target="Contained" Condition="0.15" targetslot="0" interval="1" disabledeltatime="true">
+				<RequiredItem items="mobilebattery" type="Contained" />
+				<RequiredItem items="refillableoxygensource" type="Contained" />\
+			</StatusEffect>
+
+			  <StatusEffect type="OnContained" target="Contained" Condition="-0.3" targetslot="1" interval="1" disabledeltatime="true">
+				<Conditional targetcontainer="true" IsOn="true" />
+				<RequiredItem items="mobilebattery" type="Contained" />
+			</StatusEffect>
+
+			<damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.25" damagesound="" deflectprojectiles="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,explosiondamage,radiationsickness,acidreaction,lacerations" damagemultiplier="0.25" damagesound="" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="impact_metal_heavy" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="feniternerveagent,feniterpulmonaryagent2,feniterbloodagent,feniterblisteragentinternal,feniternonlethalagent,feniterpsychoagent,anesthesia" damagemultiplier="0" probabilitymultiplier="0" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds,bleeding" damagemultiplier="0.5" damagesound="impact_metal_heavy" />
+			<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+			  
+			<ItemComponent IsActiveConditionalComparison="Or">
+				<IsActive InWater="eq true" />
+
+				<StatusEffect type="OnActive" target="Contained,Character" comparison="And" targetslot="0">
+					<RequiredItem items="oxygensource" type="Contained" />
+					<Conditional condition="lt 5.0" />
+
+					<Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true" />
+				</StatusEffect>
+
+				<StatusEffect type="OnActive" target="Contained" playsoundonrequireditemfailure="true" targetslot="0">
+					<RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+					<Conditional condition="lte 0.0" />
+
+					<Sound file="Content/Items/WarningBeep.ogg" range="250" loop="true" />
+				</StatusEffect>
+			</ItemComponent>
+
+		</Wearable>
+
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use"/>
+		<ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
+			<Containable items="none" />
+		  <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+		  <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+		  <SubContainer capacity="1" maxstacksize="1">
+			<Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank" />
+			<Containable items="oxygenitetank">
+				<StatusEffect type="OnContaining" target="Character" SpeedMultiplier="1.3" setvalue="true" comparison="And" targetslot="0">
+				<Conditional IsDead="false" />
+				<Conditional HullOxygenPercentage="lt 50" />
+				<Conditional InWater="false" />
+			</StatusEffect>
+			</Containable>
+		</SubContainer>
+		  <SubContainer capacity="1" maxstacksize="1">
+			<Containable items="mobilebattery" />
+			<StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+		</SubContainer>
+		</ItemContainer>
+	</Item>
     
 </Items>
