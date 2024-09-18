@@ -240,61 +240,6 @@
 	</Heparin>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
-  
-	<Item name="" description="" identifier="scp_propital" category="Medical" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-
-	<InventoryIcon name="propitinv" texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="5,291,56,63" origin="0.5,0.5" />
-	<Sprite texture="%ModDir%/Items/Medical/Sprites/EHA_medical.png" sourcerect="360,84,65,10" depth="0.6" origin="0.5,0.5" />
-
-	<Body width="35" height="10" density="15" />
-
-	<MeleeWeapon 
-		canBeCombined="true" removeOnCombined="true" 
-		slots="Any,RightHand,LeftHand" 
-		aimpos="40,5" handle1="-5,0" holdangle="220" 
-		reload="1.0" 
-		msg="ItemMsgPickUpSelect">
-		
-		<RequiredSkill identifier="medical" level="65" />
-
-		<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
-		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
-
-
-		<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="360.0">
-			<Sound file="%ModDir%/Sounds/Medical/Syringe.ogg" range="500" />
-
-			<ReduceAffliction identifier="oxygenlow" amount="3" />
-			<ReduceAffliction identifier="bleeding" amount="1.5" />
-			<ReduceAffliction identifier="damage" amount="0.75" />
-		</StatusEffect>
-
-		<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" disabledeltatime="true">
-			<Affliction identifier="strengthen" amount="200" />
-		</StatusEffect>
-
-		<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="120.0">
-			<Sound file="%ModDir%/Sounds/Medical/Syringe.ogg" range="500" />
-			<ReduceAffliction identifier="oxygenlow" amount="1.5" />
-			<ReduceAffliction identifier="bleeding" amount="0.5" />
-			<ReduceAffliction identifier="damage" amount="0.25" />
-		</StatusEffect>
-
-		<StatusEffect tags="medical" type="OnFailure" target="UseTarget" disabledeltatime="true">
-			<Affliction identifier="strengthen" amount="100" />
-		</StatusEffect>
-
-		<StatusEffect type="OnBroken" target="This">
-			<Remove />
-		</StatusEffect>
-
-	</MeleeWeapon>
-
-	<SkillRequirementHint identifier="medical" level="65" />
-	
-	</Item>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
 	
 	<!--+++++++++++++++-->
 	<!--CURES/ANTIDOTES-->
