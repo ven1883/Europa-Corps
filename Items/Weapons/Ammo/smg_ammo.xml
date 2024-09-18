@@ -325,8 +325,8 @@
 
 	<Item name="" identifier="fenitersmgmagazine1" maxstacksize="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 		
-		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="0,0,64,64" />
-		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" depth="0.54" sourcerect="49,196,21,44" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/chemicalwarfareammo.png" sourcerect="0,0,64,64" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/chemicalwarfareammo.png" depth="0.54" sourcerect="49,196,21,44" origin="0.5,0.5" />
 		
 		<Body width="14" height="40" density="25" />
 		
@@ -396,8 +396,8 @@
 
 	<Item name="" identifier="fenitersmgmagazine2" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="64,0,64,64" />
-		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" depth="0.54" sourcerect="70,196,21,44" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/chemicalwarfareammo.png" sourcerect="64,0,64,64" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/chemicalwarfareammo.png" depth="0.54" sourcerect="70,196,21,44" origin="0.5,0.5" />
 
 		<Body width="14" height="40" density="25" />
 
@@ -468,8 +468,8 @@
 	
 	<Item name="" identifier="fenitersmgmagazine3" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="128,0,64,64" />
-		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" depth="0.54" sourcerect="91,196,21,44" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/chemicalwarfareammo.png" sourcerect="128,0,64,64" />
+		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/chemicalwarfareammo.png" depth="0.54" sourcerect="91,196,21,44" origin="0.5,0.5" />
 
 		<Body width="14" height="40" density="25" />
 

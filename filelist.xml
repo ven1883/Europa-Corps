@@ -42,6 +42,9 @@
 	<Item file="%ModDir%/Items/Medical/poisons.xml"/>
 
 	<!--Misc-->
+	
+	<Item file="%ModDir%/Items/Utilities/overrides.xml"/>
+	<Item file="%ModDir%/Items/Utilities/books.xml"/>
 
 	<!--+++++++++++-->
 	<!--AFFLICTIONS--> 
@@ -63,7 +66,7 @@
 	<!--++++-->
 	<!--MISC-->
 	<!--++++-->
-	<Styles file="%ModDir%/styles.xml"/>
+	<UIStyle file="%ModDir%/styles.xml"/>
 
 	<!--+++++-->
 	<!--TEXTS-->

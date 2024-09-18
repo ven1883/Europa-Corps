@@ -1,0 +1,78 @@
+<Items>
+
+	<override>
+		
+		<Item name="" identifier="sprayer" category="Equipment" Tags="smallitem,tool,mountableweapon" cargocontaineridentifier="metalcrate" description="" Scale="0.75" impactsoundtag="impact_metal_light">	
+			
+			<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareextraicon.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfaremisc.png" sourcerect="147,0,112,42" depth="0.55" origin="0.5,0.5" />
+			
+			<Body width="150" height="60" density="25" />
+			
+			<Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="50,-10" handle1="-39,-10" handle2="-5,0" msg="ItemMsgPickUpSelect" />
+			
+			<Sprayer barrelpos="34,-4" spread="0" unskilledspread="0" drawhudwhenequipped="true" crosshairscale="0.1" spraystrength="6.0" range="300">
+				
+				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+				
+				<RequiredItems items="ethanol, paint" type="Contained" msg="ItemMsgPaintOrCleaningAgentRequired" />
+				
+				<sound file="Content/Items/Tools/Sprayer.ogg" type="OnUse" range="500.0" loop="true" />
+				
+				<StatusEffect type="OnUse" target="Contained" Condition="-1.5">
+					<RequiredItem items="paint" type="Contained" />
+				</StatusEffect>
+				
+				<StatusEffect type="OnUse" target="Contained" Condition="-0.75">
+					<RequiredItem items="ethanol" type="Contained" />
+				</StatusEffect>
+				
+				<StatusEffect type="OnUse" target="UseTarget">
+					<RequiredItem items="ethanol" type="Contained" />
+					
+					<ReduceAffliction type="chemicalcontamination" amount="1.25" />
+				</StatusEffect>
+				
+				<PaintColors>
+					<PaintColor paintitem="ethanol" color="200,200,200,0" />
+					<PaintColor paintitem="redpaint" color="128,0,0,180" />
+					<PaintColor paintitem="greenpaint" color="0,128,0,180" />
+					<PaintColor paintitem="bluepaint" color="0,0,128,180" />
+					<PaintColor paintitem="blackpaint" color="0,0,0,180" />
+					<PaintColor paintitem="whitepaint" color="128,128,128,180" />
+				</PaintColors>
+				
+			</Sprayer>
+			
+			<RepairTool firedamage="0.0" structurefixamount="0.0" range="600" barrelpos="34,8" fireprobability="0.0" repairmultiple="true" repairthroughwalls="false" repairthroughholes="false" spread="25">
+				
+				<RequiredItems items="ethanol, chemicalpayload" type="Contained" />
+				
+				<StatusEffect type="OnUse" target="Contained" Condition="-8">
+					<RequiredItem items="chemicalpayload" type="Contained" />
+				</StatusEffect>
+				
+				<StatusEffect type="OnUse" target="UseTarget">
+					<RequiredItem items="ethanol" type="Contained" />
+					
+					<ReduceAffliction type="chemicalcontamination" amount="4.25" />
+					
+					<ParticleEmitter particle="spray" velocitymin="750.0" velocitymax="850.0" particlespersecond="100" copyentityangle="true" />
+					
+					<sound file="Content/Items/Tools/Sprayer.ogg" type="OnUse" range="500.0" loop="true" />
+				</StatusEffect>
+				
+			</RepairTool>
+			
+			<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+				<Containable items="ethanol, paint, chemicalpayload" />
+			</ItemContainer>
+			
+			<aitarget sightrange="2000" soundrange="500" fadeouttime="3" />
+			
+		</Item>
+		
+	</override>
+	
+</Items>

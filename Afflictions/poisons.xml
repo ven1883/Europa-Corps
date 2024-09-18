@@ -594,9 +594,9 @@
 				<Conditional feniternerveagent="gte 35" />
 				<Conditional feniternerveagent="lt 60" />
 				<Conditional ishuman="true" />
-				<Sound file="%ModDir%/thecodelol/Others/outofbreath1.ogg" selectionmode="Random" />
-				<Sound file="%ModDir%/thecodelol/Others/outofbreath2.ogg" />
-				<Sound file="%ModDir%/thecodelol/Others/outofbreath3.ogg" />
+				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath1.ogg" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath2.ogg" />
+				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath3.ogg" />
 			</StatusEffect>
 		</PeriodicEffect>
 
@@ -608,14 +608,14 @@
 				<Conditional feniternerveagent="gte 60" />
 				<Conditional feniternerveagent="lt 100" />
 				<Conditional ishuman="true" />
-				<Sound file="%ModDir%/thecodelol/Others/outofbreath1.ogg" selectionmode="Random" />
-				<Sound file="%ModDir%/thecodelol/Others/outofbreath2.ogg" />
-				<Sound file="%ModDir%/thecodelol/Others/outofbreath3.ogg" />
+				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath1.ogg" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath2.ogg" />
+				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath3.ogg" />
 			</StatusEffect>
 		</PeriodicEffect>
 
-		<AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/respiratoryfailure.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
-		<icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="0,0,128,128" color="122,122,23,255" origin="0,0" />
+		<AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/respiratoryfailure.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="0,0,128,128" color="122,122,23,255" origin="0,0" />
 	</Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -758,7 +758,7 @@
 			</StatusEffect>
 		</PeriodicEffect>
 
-		<icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="128,0,128,128" color="122,122,23,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="128,0,128,128" color="122,122,23,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -829,7 +829,7 @@
 		<Description textidentifier="afflictiondescription.feniterpulmonaryagent2.high.self" target="Self" minstrength="100" maxstrength="200" />
 		<Description textidentifier="afflictiondescription.feniterpulmonaryagent2.high" target="OtherCharacter" minstrength="100" maxstrength="200" />
 
-		<icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="128,128,128,128" color="122,122,23,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="128,128,128,128" color="122,122,23,255" origin="0,0" />
 	</Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -930,8 +930,8 @@
 			</StatusEffect>
 		</PeriodicEffect>
 
-		<icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="256,0,128,128" color="122,122,23,255" origin="0,0" />
-		<AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/bloodonscreen.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="256,0,128,128" color="122,122,23,255" origin="0,0" />
+		<AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/bloodonscreen.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -1071,7 +1071,7 @@
 			</StatusEffect>
 		</PeriodicEffect>
 		
-		<icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="128,128,128,128" color="122,122,23,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="128,128,128,128" color="122,122,23,255" origin="0,0" />
 	</Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -1234,7 +1234,7 @@
 			</StatusEffect>
 		</PeriodicEffect>
 
-		<icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="512,128,128,128" color="122,122,23,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="512,128,128,128" color="122,122,23,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -1310,8 +1310,8 @@
 
 			<StatusEffect target="Character">
 				<Conditional IsLocalPlayer="True" />
-				<Sound file="%ModDir%/thecodelol/Others/whisper.ogg" selectionmode="Random" />
-				<Sound file="%ModDir%/thecodelol/Others/insect.ogg" />
+				<Sound file="%ModDir%/Sounds/Afflictions/whisper.ogg" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Afflictions/insect.ogg" />
 			</StatusEffect>
 		</PeriodicEffect>
 
@@ -1320,7 +1320,7 @@
 
 			<StatusEffect target="Character">
 				<Conditional IsLocalPlayer="True" />
-				<Sound file="%ModDir%/thecodelol/Others/knock.ogg" />
+				<Sound file="%ModDir%/Sounds/Afflictions/knock.ogg" />
 			</StatusEffect>
 		</PeriodicEffect>
 
@@ -1336,8 +1336,8 @@
 			</StatusEffect>
 		</PeriodicEffect>
 		
-		<icon texture="%ModDir%/thecodelol/Afflictions/chemicalagentsafflictions.png" sourcerect="512,0,128,128" color="122,122,23,255" origin="0,0" />
-		<AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/psychosismain.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+		<icon texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="512,0,128,128" color="122,122,23,255" origin="0,0" />
+		<AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/psychosismain.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
 
 	</Affliction>
 
@@ -1371,7 +1371,7 @@
 			</StatusEffect>
 		</Effect>
 
-		<AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/psychosishallucination1.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+		<AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/psychosishallucination1.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
 
 	</Affliction>
 
@@ -1405,7 +1405,7 @@
 			</StatusEffect>
 		</Effect>
 
-		<AfflictionOverlay texture="%ModDir%/thecodelol/Afflictions/psychosishallucination2.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+		<AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/psychosishallucination2.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
 
 	</Affliction>
 </Afflictions>
