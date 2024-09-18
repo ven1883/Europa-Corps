@@ -321,4 +321,216 @@
 
 	</Item>
 
+	<!--###-->
+
+	<Item name="" identifier="fenitersmgmagazine1" maxstacksize="2" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+		
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="0,0,64,64" />
+		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" depth="0.54" sourcerect="49,196,21,44" origin="0.5,0.5" />
+		
+		<Body width="14" height="40" density="25" />
+		
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="fenitersmground1" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+			<Containable items="fenitersmground1" />
+			
+			<StatusEffect type="OnUse" target="This" condition="-4.8" disabledeltatime="true">
+				<SpawnItem identifiers="fenitersmground1" spawnposition="ThisInventory" />
+			</StatusEffect>
+			
+		</ItemContainer>
+		
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+		
+	</Item>
+
+		<!--###-->
+
+	<Item name="" identifier="fenitersmground1" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+
+		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="40" height="14" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" hitscan="true" removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+
+			<Attack structuredamage="4" targetforce="1" itemdamage="4" severlimbsprobability="0.1">
+				<Affliction identifier="gunshotwound" strength="1.5" />
+				<Affliction identifier="explosiondamage" strength="2.5" />
+				<Affliction identifier="bleeding" strength="2.5" />
+				<Affliction identifier="stun" strength="0.1" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+
+				<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This">
+				<ParticleEmitter particle="fensmokevent" anglemin="70" anglemax="100" velocitymax="200" particlespersecond="64" colormultiplier="255,225,255,105" />
+
+				<Explosion range="185.0" ballastfloradamage="60" structuredamage="1" itemdamage="1" severlimbsprobability="0.5" penetration="0.1" showeffects="false">
+					<Affliction identifier="feniternonlethalagent" strength="5.25" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+	<!--###-->
+
+	<Item name="" identifier="fenitersmgmagazine2" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="64,0,64,64" />
+		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" depth="0.54" sourcerect="70,196,21,44" origin="0.5,0.5" />
+
+		<Body width="14" height="40" density="25" />
+
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="fenitersmground2" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+			<Containable items="fenitersmground2" />
+
+			<StatusEffect type="OnUse" target="This" condition="-4.8" disabledeltatime="true">
+				<SpawnItem identifiers="fenitersmground2" spawnposition="ThisInventory" />
+
+				<Explosion range="50.0" ballastfloradamage="450" structuredamage="0" itemdamage="0" showeffects="false"> <!--unsafe to use...-->
+					<Affliction identifier="feniternerveagentcon" strength="1.65" />
+					<Affliction identifier="feniternerveagent" strength="1.25" />
+				</Explosion>
+
+			</StatusEffect>
+			`
+		</ItemContainer>
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+	</Item>
+
+	<Item name="" identifier="fenitersmground2" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+
+		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="40" height="14" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" hitscan="true" removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+
+			<Attack structuredamage="4" targetforce="1" itemdamage="4" severlimbsprobability="0.1">
+				<Affliction identifier="gunshotwound" strength="6.5" />
+				<Affliction identifier="bleeding" strength="21.5" />
+				<Affliction identifier="stun" strength="10" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="This">
+				<Explosion range="70.0" ballastfloradamage="12" structuredamage="0" itemdamage="0" severlimbsprobability="0" showeffects="false">
+					<Affliction identifier="feniternerveagent" strength="3.45" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+
+				<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+
+			<StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+		<!--###-->
+	
+	<Item name="" identifier="fenitersmgmagazine3" maxstacksize="12" maxstacksizecharacterinventory="3" scale="0.5" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="128,0,64,64" />
+		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" depth="0.54" sourcerect="91,196,21,44" origin="0.5,0.5" />
+
+		<Body width="14" height="40" density="25" />
+
+		<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="fenitersmground3" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+			<Containable items="fenitersmground3" />
+			
+			<StatusEffect type="OnUse" target="This" condition="-4.8" disabledeltatime="true">
+				<SpawnItem identifiers="fenitersmground3" spawnposition="ThisInventory" />
+			</StatusEffect>
+
+		</ItemContainer>
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+	</Item>
+
+		<!--###-->
+	
+	<Item name="" identifier="fenitersmground3" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+		
+		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="40" height="14" density="30" />
+		
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		
+		<Projectile characterusable="false" hitscan="true" removeonhit="true">
+			
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
+			
+			<Attack structuredamage="4" targetforce="1" itemdamage="4" severlimbsprobability="0.1">
+				<Affliction identifier="gunshotwound" strength="6.5" />
+				<Affliction identifier="bleeding" strength="21.5" />
+			</Attack>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="This">
+				<Explosion range="35.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" severlimbsprobability="0" showeffects="false">
+					<Affliction identifier="feniterpsychoagent" strength="12.95" />
+				</Explosion>
+			</StatusEffect>
+			
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+				
+				<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+				<Remove />
+			</StatusEffect>
+			
+		</Projectile>
+		
+	</Item>
+
+		<!--###-->
+
 </Items>
