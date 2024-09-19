@@ -1292,5 +1292,50 @@
     <entityname.scp_domique>Domique</entityname.scp_domique>
     <entitydescription.scp_domique>A very old 12 gauge shotgun using the first prototype of dual environment bolt systems, it was a standard issue gun for security until more capable firearms were adapted and produced.</entitydescription.scp_domique>
     <entityname.scp_g36c>Karabiner</entityname.scp_g36c>
-    <entitydescription.scp_g36c>A 5.56x45mm Assault Carbine that was once used by the Coalition, however the Separatists used this design for their Precision AR.</entitydescription.scp_g36c>  
+    <entitydescription.scp_g36c>A 5.56x45mm Assault Carbine that was once used by the Coalition, however the Separatists used this design for their Precision AR.</entitydescription.scp_g36c> 
+
+	<!-- chemical grenades -->
+	<entityname.fenitergasgrenade1>Nerve Agent Gas Grenade</entityname.fenitergasgrenade1>
+	<entitydescription.fenitergasgrenade1>Contains a highly lethal gas mixture that can be rapidly absorbed through the skin, making a hazard suit necessary for protection.</entitydescription.fenitergasgrenade1>
+	<entityname.nervegasemitter>Nerve Agent Emitter</entityname.nervegasemitter>
+	<entityname.nervegasgrenadeactive>Leaking Nerve Agent Gas Grenade</entityname.nervegasgrenadeactive>
+	<entityname.fenitergasgrenade2>Pulmonary Agent Gas Grenade</entityname.fenitergasgrenade2>
+	<entitydescription.fenitergasgrenade2>Contains a dilute but invariably lethal gas mixture that can be absorbed through the lungs, making respirators sufficient protection. Slow to kill, but near invisible to the naked eye and difficult to treat.</entitydescription.fenitergasgrenade2>
+	<entityname.pulmgasemitter>Pulmonary Agent Emitter</entityname.pulmgasemitter>
+	<entityname.pulmgasgrenadeactive>Leaking Pulmonary Agent Gas Grenade</entityname.pulmgasgrenadeactive>
+	<entityname.fenitergasgrenade3>Blood Agent Gas Grenade</entityname.fenitergasgrenade3>
+	<entitydescription.fenitergasgrenade3>Contains a concentrated cyanide-based toxin that causes immediate damage on contact with the skin and absorbs into the blood, making a hazard suit necessary for protection. Rapidly lethal and extremely visible, but long term effects are near non-existent should the victim survive.</entitydescription.fenitergasgrenade3>
+	<entityname.bloodgasemitter>Blood Agent Emitter</entityname.bloodgasemitter>
+	<entityname.bloodgasgrenadeactive>Leaking Blood Agent Gas Grenade</entityname.bloodgasgrenadeactive>
+	<entityname.fenitergasgrenade4>Blistering Agent Grenade</entityname.fenitergasgrenade4>
+	<entitydescription.fenitergasgrenade4>Contains a potent acidic gas mixture that causes immediate burns on contact with the skin, and can build up in the lungs if inhaled, causing severe long term effects. Immediately lethal and very visible, but with long term effects mitigated by a respirator.</entitydescription.fenitergasgrenade4>
+	<entityname.blistergasemitter>Blistering Agent Emitter</entityname.blistergasemitter>
+	<entityname.blistergasgrenadeactive>Leaking Blistering Agent Gas Grenade</entityname.blistergasgrenadeactive>
+	<entityname.fenitergasgrenade5>Tear Gas Grenade</entityname.fenitergasgrenade5>
+	<entitydescription.fenitergasgrenade5>Contains a potent irritant capable of causing extreme pain and crippling targets when inhaled. Barely lethal and easy to mitigate with a respirator, but crippling for a moderate period and with instant effect.</entitydescription.fenitergasgrenade5>
+	<entityname.teargasemitter>Tear Gas Emitter</entityname.teargasemitter>
+	<entityname.teargasgrenadeactive>Leaking Tear Gas Grenade</entityname.teargasgrenadeactive>
+	<entityname.fenitergasgrenade6>Psychochemical Agent Gas Grenade</entityname.fenitergasgrenade6>
+	<entitydescription.fenitergasgrenade6>Contains a moderately dangerous neurotoxin that causes severe hallucinations and brain damage when inhaled. Low lethality and easy to mitigate with a respirator, but permanently crippling. Some soldiers intentionally inhale small doses for the chemical's psychedelic effects.</entitydescription.fenitergasgrenade6>
+	<entityname.psychogasemitter>Psychochemical Agent Emitter</entityname.psychogasemitter>
+	<entityname.psychogasgrenadeactive>Leaking Psychochemical Agent Gas Grenade</entityname.psychogasgrenadeactive>
+	<entityname.fenitergasgrenade7>Sedative Agent Gas Grenade</entityname.fenitergasgrenade7>
+	<entitydescription.fenitergasgrenade7>Contains potent and rapid-acting sedatives that can cause loss of consciousness seconds after inhalation, but require a moderate dose to have any effect. Completely non-lethal with no long-term effects aswell as being easy to mitigate with a respirator.</entitydescription.fenitergasgrenade7>
+	<entityname.sleepgasemitter>Sedative Agent Emitter</entityname.sleepgasemitter>
+	<entityname.sleepgasgrenadeactive>Leaking Sedative Agent Gas Grenade</entityname.sleepgasgrenadeactive>
+
+	<!--chemical rounds-->
+	<entityname.feniterrifleround1>Tear Gas Surplus Rifle Round</entityname.feniterrifleround1>
+	<entitydescription.feniterrifleround1>A hollowed out rifle round filled to the brim with a tear gas mixture. Incomparably painful to be hit by, but deals lackluster damage compared to a solid round.</entitydescription.feniterrifleround1>
+	<entityname.fenitersmgmagazine1>Tear Gas Surplus SMG Magazine</entityname.fenitersmgmagazine1>
+	<entitydescription.fenitersmgmagazine1>Hollow small caliber rounds each containing a small amount of tear gas. Extremely painful to be hit by, but they deal lackluster damage compared to solid rounds.</entitydescription.fenitersmgmagazine1>
+	<entityname.feniterrifleround2>Nerve Agent Surplus Rifle Round</entityname.feniterrifleround2>
+	<entitydescription.feniterrifleround2>A hollowed out rifle round filled to the brim with a nerve agent mixture. Less damaging than a solid round, but poisons the target and guarantees death unless treated or blocked by a hazard suit.</entitydescription.feniterrifleround2>
+	<entityname.fenitersmgmagazine2>Nerve Agent Surplus SMG Magazine</entityname.fenitersmgmagazine2>
+	<entitydescription.fenitersmgmagazine2>Hollow small caliber rounds each containing a small amount of a nerve agent mixture. Less damaging than solid rounds, but they poison targets and guarantee death unless treated or blocked by a hazard suit.</entitydescription.fenitersmgmagazine2>
+	<entityname.feniterrifleround3>Psychochemical Agent Surplus Rifle Round</entityname.feniterrifleround3>
+	<entitydescription.feniterrifleround3>A hollowed out rifle round filled to the brim with a psychochemical agent mixture. Less damaging than a solid round, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.feniterrifleround3>
+	<entityname.fenitersmgmagazine3>Psychochemical Agent Surplus SMG Magazine</entityname.fenitersmgmagazine3>
+	<entitydescription.fenitersmgmagazine3>Hollow small caliber rounds each containing a small amount of a psychochemical agent mixture. Less damaging than solid rounds, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.fenitersmgmagazine3>
+
 </infotexts>

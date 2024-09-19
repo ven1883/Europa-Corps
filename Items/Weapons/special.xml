@@ -634,8 +634,8 @@
 
 	<Item name="" identifier="sgt_syringeshotgun" variantof="syringegun" scale="0.32">
 
-		<InventoryIcon texture="%ModDir%/weapons/renegade.png" sourcerect="822,0,72,96" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/weapons/renegade.png" sourcerect="498,0,312,102" depth="0.7" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/renegade.png" sourcerect="822,0,72,96" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Items/Weapons/Sprites/renegade.png" sourcerect="498,0,312,102" depth="0.7" origin="0.5,0.5" />
 
 		<Body width="90" height="74" density="25" />
 
