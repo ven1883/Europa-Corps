@@ -1320,7 +1320,7 @@
       <RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="65" />
       <StatusEffect type="OnUse" target="This" delay="0.4">
-        <Sound file="%ModDir%/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+        <Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
       </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">

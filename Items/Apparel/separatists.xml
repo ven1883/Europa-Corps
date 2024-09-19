@@ -471,7 +471,7 @@
 				<RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
 				<Conditional condition="lte 5.0" />
 
-				<Sound file="%ModDir%/Sounds/suitalarm.ogg" range="300" volume="0.3" />
+				<Sound file="%ModDir%/Sounds/Apparel/suitalarm.ogg" range="300" volume="0.3" />
 			</StatusEffect>
 
 		</Wearable>
@@ -816,14 +816,14 @@
 				<RequiredItem items="oxygensource" type="Contained" />
 				<Conditional condition="lt 5.0" />
 
-				<Sound file="%ModDir%/Sounds/suitalarm.ogg" range="200" volume="0.5" />
+				<Sound file="%ModDir%/Sounds/Apparel/suitalarm.ogg" range="200" volume="0.5" />
 			</StatusEffect>
 
 			<StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
 				<RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
 				<Conditional condition="lte 0.0" />
 
-				<Sound file="%ModDir%/Sounds/suitalarm.ogg" range="300" volume="0.5" />
+				<Sound file="%ModDir%/Sounds/Apparel/suitalarm.ogg" range="300" volume="0.5" />
 			</StatusEffect>
 
 		</ItemContainer>

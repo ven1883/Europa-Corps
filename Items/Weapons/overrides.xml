@@ -637,7 +637,7 @@
 					<Affliction identifier="blunttrauma" strength="4" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/Wepaons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="4.5" stackable="false" />
 				<StatusEffect type="OnUse" target="Contained">
@@ -704,7 +704,7 @@
 
 				<StatusEffect type="OnUse" target="This" Condition="-10000" />
 				<StatusEffect type="OnBroken" target="This" delay="0.5">
-					<Sound file="%ModDir%/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" frequencymultiplier="0.95" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" frequencymultiplier="0.95" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="1.8" stackable="false" />
 				<StatusEffect type="OnUse">

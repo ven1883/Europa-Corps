@@ -979,7 +979,7 @@
 			
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/45usp.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/g17.ogg" type="OnUse" range="3000" />
 			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="7.0" />

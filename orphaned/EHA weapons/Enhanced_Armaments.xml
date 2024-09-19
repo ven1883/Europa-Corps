@@ -1743,7 +1743,7 @@
       <StatusEffect type="Always" target="This">
         <Conditional condition="lte 10" />
         <Conditional conditon="gt 0" />
-        <sound file="%ModDir%/Sounds/suitalarm.ogg" range="1000" volume="0.25" loop="true" />
+        <sound file="%ModDir%/Sounds/Apparel/suitalarm.ogg" range="1000" volume="0.25" loop="true" />
         <ParticleEmitter particle="heavysmoke" particleburstinterval="0.075" particlespersecond="2" scalemin="0.5" scalemax="1.5" />
       </StatusEffect>
       <StatusEffect type="Always" target="NearbyCharacters" range="450">

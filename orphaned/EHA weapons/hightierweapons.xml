@@ -596,7 +596,7 @@
       <!--GL Reloading-->
       <StatusEffect type="OnUse" target="This" delay="0.6">
         <Conditional HasStatusTag="grenadeloaded" />
-        <Sound file="%ModDir%/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+        <Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" reload="0.085" reloadnoskill="0.15" stackable="false" setvalue="true">
         <Conditional HasStatusTag="neq grenadeloaded" />
@@ -1132,7 +1132,7 @@
       <!--GL Reloading-->
       <StatusEffect type="OnUse" target="This" delay="0.6">
         <Conditional HasStatusTag="grenadeloaded" />
-        <Sound file="%ModDir%/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+        <Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" reload="0.098" reloadnoskill="0.25" stackable="false" setvalue="true">
         <Conditional HasStatusTag="neq grenadeloaded" />
@@ -1219,7 +1219,7 @@
       <!--GL Reloading-->
       <StatusEffect type="OnUse" target="This" delay="0.6">
         <Conditional HasStatusTag="grenadeloaded" />
-        <Sound file="%ModDir%/Sounds/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+        <Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" reload="0.09" reloadnoskill="0.25" stackable="false" setvalue="true">
         <Conditional HasStatusTag="neq grenadeloaded" />

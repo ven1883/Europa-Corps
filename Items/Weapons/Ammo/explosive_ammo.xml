@@ -219,7 +219,7 @@
 				<Affliction identifier="radiationsickness" strength="30" />
 				<Affliction identifier="stun" strength="3" />
 				</Explosion>
-				<sound file="%ModDir%/Sounds/Weaponbreach.ogg" volume="1" range="1500" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/breach.ogg" volume="1" range="1500" />
 			</StatusEffect>
 
 			<StatusEffect type="OnImpact" target="UseTarget"> 
