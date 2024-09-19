@@ -406,7 +406,7 @@
 			<StatusEffect type="OnFailure" target="This" Condition="-50" disabledeltatime="true" />
 
 			<StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="15.0">
-			<Sound file="Effects/Sounds/Medical/pillantipsy.ogg" type="OnUse" volume="1.5" range="900" />
+			<Sound file="%ModDir%/Sounds/Medical/pillantipsy.ogg" type="OnUse" volume="1.5" range="900" />
 
 			<ReduceAffliction identifier="scp_psidamage" amount="0.75" />
 			<ReduceAffliction identifier="psychosis" amount="6" />

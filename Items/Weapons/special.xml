@@ -652,7 +652,7 @@
 			<StatusEffect type="OnUse" target="This" Condition="-1500" />
 
 			<StatusEffect type="OnBroken" target="This" delay="1">
-				<sound file="%ModDir%/Sounds/ssgreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/ssgreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="3" stackable="false" />

@@ -576,7 +576,7 @@
 			<RangedWeapon barrelpos="85,14" spread="1" launchimpulse="20.0" reload="0.95" reloadnoskill="2" reloadskillrequirement="50" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-				<Sound file="%ModDir%/Sounds/HarpoonGun1.ogg" type="OnUse" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/HarpoonGun1.ogg" type="OnUse" />
 				<StatusEffect type="OnUse">
 					<Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
 				</StatusEffect>

@@ -157,7 +157,7 @@
 				<Conditional condition="lte 100" />
 				<Conditional condition="gte 75" />
 
-				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/breach.ogg" volume="2" range="2500" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/breach.ogg" volume="2" range="2500" />
 				
 				<Explosion 
 					range="100.0" 
@@ -368,7 +368,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnImpact" target="This">
-				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/breach.ogg" volume="1" range="1800" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/breach.ogg" volume="1" range="1800" />
 				<ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="1" velocitymin="100" velocitymax="2000" scalemin="0.5" scalemax="0.75" />
 				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="15" velocitymin="100" velocitymax="2000" scalemin="0.5" scalemax="0.75" />
 			</StatusEffect>
@@ -831,7 +831,7 @@
 
 			<StatusEffect type="Always" target="This">
 				<ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particlespersecond="50" velocitymin="0" velocitymax="50" scalemin="6" scalemax="12" distancemin="0" distancemax="500" />
-				<Sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/geigercounter.ogg" type="always" range="3000" volume="1" loop="true" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/geigercounter.ogg" type="always" range="3000" volume="1" loop="true" />
 			</StatusEffect>
 
 			<StatusEffect type="Always" target="This" condition="-1" />
@@ -867,7 +867,7 @@
 		<ItemComponent>
 
 			<StatusEffect type="Always" target="This">
-				<Sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/geigercounter.ogg" type="always" range="700" volume="1" loop="true" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/geigercounter.ogg" type="always" range="700" volume="1" loop="true" />
 			</StatusEffect>
 
 			<StatusEffect type="Always" target="This" condition="-1" />
@@ -1168,14 +1168,14 @@
 			<StatusEffect type="Always" target="This" Condition="-0.125" />
 
 			<StatusEffect type="Always" target="This">
-				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/geigerloop.ogg" range="600.0" loop="true" volume="1.25" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/geigerloop.ogg" range="600.0" loop="true" volume="1.25" />
 			</StatusEffect>
 
 			<StatusEffect type="Always" target="This">
 				<Conditional condition="lte 10" />
 				<Conditional conditon="gt 0" />
 
-				<sound file="%ModDir%/Items/Weapons/Ammo/Effects/Sounds/suitalarm.ogg" range="1000" volume="0.25" loop="true" />
+				<sound file="%ModDir%/Sounds/Weapons/Guns/suitalarm.ogg" range="1000" volume="0.25" loop="true" />
 
 				<ParticleEmitter particle="heavysmoke" particleburstinterval="0.075" particlespersecond="2" scalemin="0.5" scalemax="1.5" />
 			</StatusEffect>
