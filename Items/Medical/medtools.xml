@@ -14,8 +14,8 @@
 	<!-- Scalpel: gives incision affliction, begins surgery process; only if surgeryready -->
 	<Item name="" identifier="scalpel" category="Medical" maxstacksize="3" maxstacksizecharacterinventory="1" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgerytool" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="2,308,64,9" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="2,308,64,9" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="45" height="15" density="50" />
 
@@ -60,8 +60,8 @@
 	<!-- Suture Kit: removes incision affliction, ends surgery, stops bleeding from incision; only if surgeryready -->
 	<Item name="" identifier="suture" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgerytool" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="2,250,59,45" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="2,250,59,45" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="65" height="35" density="20" />
 
@@ -106,8 +106,8 @@
 	<!-- Tweezers: removes gunshot wound if surgeryready and incision -->
 	<Item name="" identifier="tweezers" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgerytool" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="2,296,74,10" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="2,296,74,10" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="80" height="15" density="20" />
 
@@ -156,8 +156,8 @@
 	<!-- Surgical Scissors: removes organs, allowing transplants -->
 	<Item name="" identifier="surgeryscissors" category="Medical" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgerytool" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="2,211,73,33" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="2,211,73,33" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="80" height="35" density="20" />
 
@@ -220,8 +220,8 @@
 	<!-- Ether tank: gives anesthized affliction, allows surgery when not on medical bed -->
 	<Item name="" identifier="ethertank" category="Equipment,Medical" maxstacksize="8" maxstacksizecharacterinventory="1" Tags="smallitem,ethertank,oxygensource" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" allowdroppingonswap="true" health="200">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="80,254,24,66" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="80,254,24,66" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="22" height="64" density="9.7" />
 
@@ -260,8 +260,8 @@
 	<!-- DIY version of the hospital bed, craftable, buyable; no healing benefits like stationary one -->
 	<Item name="" identifier="foldingsurgerytable" tags="mediumitem,operatingtable" texturescale="1.0,1.0" scale="0.5" noninteractable="false" category="Misc,Medical" impactsoundtag="impact_metal_heavy"> <!--operatingtable tag for compat reasons-->
 
-		<sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="0,320,416,192" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="256,128,64,64" origin="0.5,0.5" />
+		<sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="0,320,416,192" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="256,128,64,64" origin="0.5,0.5" />
 
 		<Body width="416" height="192" density="60" />
 
@@ -305,8 +305,8 @@
 	<!-- Autosurgeon: auto-matically does stuff, emergency use, uses whole battery per use -->
 	<Item name="" identifier="autosurgeon" category="Medical" cargocontaineridentifier="mediccrate" tags="smallitem,medical,syringe,surgerytool" useinhealthinterface="true" impactsoundtag="impact_metal_light" scale="0.4">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="265,6,45,53" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="265,6,45,53" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="28" height="15" density="400" />
 
@@ -399,8 +399,8 @@
 	<!-- +++++ Autosurgeon program: bullet extraction +++++ -->
 	<Item name="" identifier="surgeonprogrambullet" category="Medical" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,schematic,surgerytool,surgeonprogram" spritecolor="200,255,120,255" InventoryIconColor="200,255,120,200" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="10,74,45,43" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="10,74,45,43" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 
@@ -420,8 +420,8 @@
 	<!-- allow surgery anywhere -->
 	<Item name="" identifier="surgeryimplant" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="128,128,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="10,156,31,31" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="128,128,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="10,156,31,31" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="31" height="31" density="30" />
 
@@ -479,8 +479,8 @@
 	<!-- one-time all addiction gone -->
 	<Item name="" identifier="addictionimplant" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,medical,syringe,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="192,128,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="62,156,31,31" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="192,128,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="62,156,31,31" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="31" height="31" density="30" />
 
@@ -540,8 +540,8 @@
 	<!-- Medical Degree: joke item, medic spawns in with one -->
 	<Item name="" identifier="meddegree" category="Misc" tags="smallitem" cargocontaineridentifier="mediccrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="132,200,111,95" depth="0.8" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="132,200,111,95" depth="0.8" origin="0.5,0.5" />
 
 		<Body width="100" height="60" density="40" />
 

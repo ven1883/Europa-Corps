@@ -18,8 +18,8 @@
 			Scale="0.5" 
 			impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="12gmagbuckinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="93,0,46,46" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="0,156,22,10" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="12gmagbuckinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="93,0,46,46" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="0,156,22,10" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="40" />
 
@@ -75,8 +75,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 		
-		<InventoryIcon name="12gsluginv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="0,0,45,46" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="12gsluginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="0,0,45,46" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="40" />
 
@@ -133,8 +133,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="12gapsluginv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="187,2,49,50" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="24,145,29,10" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="12gapsluginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="187,2,49,50" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="24,145,29,10" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="40" />
 
@@ -190,8 +190,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="12gsluginv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="98,48,45,46" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="12gsluginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="98,48,45,46" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="40" />
 
@@ -246,8 +246,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="12gdevilinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="46,48,52,49" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="12gdevilinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="46,48,52,49" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/shotgunshells.png" sourcerect="0,134,22,10" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="23" height="10" density="40" />
 
@@ -308,7 +308,7 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.45">
 		
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/renegadeammo.png" depth="0.54" sourcerect="279,105,40,61" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" depth="0.54" sourcerect="279,105,40,61" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -351,7 +351,7 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.45">
 		
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/renegadeammo.png" depth="0.54" sourcerect="188,86,49,81" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" depth="0.54" sourcerect="188,86,49,81" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -395,7 +395,7 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.45">
 
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/renegadeammo.png" depth="0.54" sourcerect="239,108,39,59" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" depth="0.54" sourcerect="239,108,39,59" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 		
@@ -437,8 +437,8 @@
 		hideinmenus="true" 
 		scale="0.4">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 
 		<Body width="40" height="15" density="40" />
 		
@@ -496,8 +496,8 @@
 		impactsoundtag="impact_metal_light">
 
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,0,580,228" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,0,580,228" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,0,580,228" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,0,580,228" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="15" />
 
@@ -551,8 +551,8 @@
 		Scale="0.025" 
 		impactsoundtag="impact_metal_light">
 		
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,228,580,228" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,228,580,228" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,228,580,228" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,228,580,228" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="15" />
 
@@ -607,8 +607,8 @@
 		Scale="0.025" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,456,580,228" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,456,580,228" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,456,580,228" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,456,580,228" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="15" />
 
@@ -657,8 +657,8 @@
 		Scale="0.025" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,684,580,228" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/heavyshotshell.png" sourcerect="0,684,580,228" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,684,580,228" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/heavyshotshell.png" sourcerect="0,684,580,228" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="15" />
 
@@ -718,8 +718,8 @@
 		Scale="0.2" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="4gshellinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/ammo.png" sourcerect="3,69,55,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/ammo.png" sourcerect="2,131,25,69" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="4gshellinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" sourcerect="3,69,55,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" sourcerect="2,131,25,69" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="40" />
 
@@ -777,8 +777,8 @@
 		Scale="0.2" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="4gsluginv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/ammo.png" sourcerect="58,70,56,57" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/ammo.png" sourcerect="29,131,25,69" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="4gsluginv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" sourcerect="58,70,56,57" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" sourcerect="29,131,25,69" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="40" />
 

@@ -3,8 +3,8 @@
 
 	<Item name="" identifier="humanorgan" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/medtools.png" sourcerect="198,69,49,55" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/medtools.png" sourcerect="198,69,49,55" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 
@@ -65,9 +65,9 @@
 		<SuitableTreatment identifier="fleshwithdrawal" suitability="30" />
 		<SuitableTreatment identifier="fleshaddiction" suitability="-10" />
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="0,128,64,64" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="0,128,64,64" origin="0.5,0.5" />
 
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="194,78,62,41" depth="0.6" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="194,78,62,41" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="65" height="35" density="20" />
 
@@ -99,8 +99,8 @@
 	
 	<Item name="" identifier="basebionic" category="Material,Medical" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="6,5,49,55" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="6,5,49,55" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 
@@ -160,8 +160,8 @@
 	
 	<Item name="" identifier="adrenalinebionic" category="Material" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="70,69,49,55" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="70,69,49,55" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 
@@ -217,8 +217,8 @@
 	
 	<Item name="" identifier="methbionic" category="Material" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="6,69,49,55" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="6,69,49,55" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 
@@ -274,8 +274,8 @@
 	
 	<Item name="" identifier="gillsbionic" category="Material" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="198,5,49,55" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="192,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="198,5,49,55" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 
@@ -326,8 +326,8 @@
 	
 	<Item name="" identifier="mechanitebionic" category="Material" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="70,5,49,55" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="70,5,49,55" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 
@@ -379,8 +379,8 @@
 	
 	<Item name="" identifier="calyxanidebionic" category="medical" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="134,69,49,55" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="128,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="134,69,49,55" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 		
@@ -434,8 +434,8 @@
 
 	<Item name="" identifier="bloodbionic" category="medical" maxstacksize="4" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,surgeonprogram,surgeonprogramconsumable" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Medical/Sprites/bionics.png" sourcerect="134,5,49,55" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Medical/bionics.png" sourcerect="134,5,49,55" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="55" height="55" density="20" />
 

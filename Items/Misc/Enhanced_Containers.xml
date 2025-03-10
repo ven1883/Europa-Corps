@@ -2,9 +2,9 @@
 <Items>
   <Item name="" identifier="sgt_locker" tags="cabinet,weapons_cabinet" pickdistance="150" scale="0.6">
     <Body width="80" height="240" density="20" />
-    <Sprite texture="containers.png" depth="0.84" sourcerect="0,224,192,304" origin="0.5,0.5" />
-    <BrokenSprite texture="containers.png" depth="0.84" sourcerect="512,0,192,304" origin="0.5,0.5" maxcondition="90" />
-    <DecorativeSprite name="Weapons Cabinet Doors" texture="containers.png" depth="0.82" sourcerect="192,224,192,304" origin="0.5,0.5" offset="0,0" />
+    <Sprite texture="%ModDir%/Sprites/Items/Misc/lockers.png" depth="0.84" sourcerect="0,224,192,304" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Sprites/Items/Misc/lockers.png" depth="0.84" sourcerect="512,0,192,304" origin="0.5,0.5" maxcondition="90" />
+    <DecorativeSprite name="Weapons Cabinet Doors" texture="%ModDir%/Sprites/Items/Misc/lockers.png" depth="0.82" sourcerect="192,224,192,304" origin="0.5,0.5" offset="0,0" />
     <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="false">
       <RequiredItem identifier="wrench" type="Equipped" />
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />

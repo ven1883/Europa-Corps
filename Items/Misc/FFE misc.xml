@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
 	<Item name="" identifier="sgt_ammocoinbasic" description="" tags="smallitem" maxstacksize="32" scale="0.05" spritecolor="255,140,110,255" InventoryIconColor="255,140,110,255" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/coin.png" depth="0.54" sourcerect="0,0,400,404" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/coin.png" depth="0.54" sourcerect="0,0,400,404" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand,LeftHand,Any" holdpos="0,-70" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 	</Item>
 	<Item name="" identifier="sgt_ammocoinadv" description="" tags="smallitem" maxstacksize="32" scale="0.05" spritecolor="255,200,255,255" InventoryIconColor="255,200,255,255" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/coin.png" depth="0.54" sourcerect="0,0,400,404" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/coin.png" depth="0.54" sourcerect="0,0,400,404" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand,LeftHand,Any" holdpos="0,-70" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 	</Item>
 	<Item name="" identifier="sgt_ammocoinspec" description="" tags="smallitem" maxstacksize="32" scale="0.05" spritecolor="125,155,255,255" InventoryIconColor="125,155,255,255" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/coin.png" depth="0.54" sourcerect="0,0,400,404" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/coin.png" depth="0.54" sourcerect="0,0,400,404" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand,LeftHand,Any" holdpos="0,-70" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 	</Item>
 	<Item name="" identifier="scp_revolverammobox" description="" tags="smallitem,smallammocrate" scale="0.1" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/ammocrates.png" depth="0.54" sourcerect="0,0,222,199" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/ammocrates.png" depth="0.54" sourcerect="0,0,222,199" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand,LeftHand" holdpos="0,-70" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="6" maxstacksize="12" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
@@ -24,7 +24,7 @@
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_amrammobox" description="" tags="smallitem" scale="0.2" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/ammocrates.png" depth="0.54" sourcerect="241,5,108,130" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/ammocrates.png" depth="0.54" sourcerect="241,5,108,130" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand,LeftHand" holdpos="0,-70" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="4" maxstacksize="10" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
@@ -32,7 +32,7 @@
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_shotgunammobox" description="" tags="mediumitem,ammocrate" scale="0.25" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/ammocrates.png" depth="0.54" sourcerect="6,201,234,135" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/ammocrates.png" depth="0.54" sourcerect="6,201,234,135" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="12" maxstacksize="20" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
@@ -40,7 +40,7 @@
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_uniammobox" description="" tags="mediumitem,ammocrate" scale="0.25" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/ammocrates.png" depth="0.54" sourcerect="13,766,235,198" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/ammocrates.png" depth="0.54" sourcerect="13,766,235,198" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand,LeftHand" holdpos="0,-120" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="8" maxstacksize="20" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
@@ -48,7 +48,7 @@
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_rifleammobox" description="" tags="mediumitem,ammocrate" scale="0.2" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/ammocrates.png" depth="0.54" sourcerect="11,541,363,218" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/ammocrates.png" depth="0.54" sourcerect="11,541,363,218" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-90" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="16" maxstacksize="12" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
@@ -56,7 +56,7 @@
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_weaponcrate" description="" tags="weaponcrate,crate,allowcleanup" scale="0.5" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/weaponcrates.png" depth="0.54" sourcerect="0,91,152,89" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/weaponcrates.png" depth="0.54" sourcerect="0,91,152,89" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-90" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="12" maxstacksize="8" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
@@ -64,7 +64,7 @@
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_ammocrate" description="" tags="ammocrate,crate,allowcleanup" scale="0.5" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/weaponcrates.png" depth="0.54" sourcerect="0,181,152,89" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/weaponcrates.png" depth="0.54" sourcerect="0,181,152,89" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-90" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="12" maxstacksize="20" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
@@ -72,7 +72,7 @@
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_alienweaponcrate" description="" tags="weaponcrate,crate,allowcleanup" scale="0.5" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
-		<Sprite texture="%ModDir%/Misc/weaponcrates.png" depth="0.54" sourcerect="0,1,152,89" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Misc/weaponcrates.png" depth="0.54" sourcerect="0,1,152,89" origin="0.5,0.5" />
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-90" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="20" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">

@@ -4,7 +4,7 @@
   <Item name="Strange Instrument" description="a blocky looking instrument resembling an electric keyboard." identifier="scp_starboundorgan" category="Misc" Tags="smallitem" scale="0.7" price="300" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" isshootable="true">
     <RangedWeapon reload="1" />
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
-    <Sprite texture="%ModDir%/Weapons/misc.png" sourcerect="56,0,72,56" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Misc/misc.png" sourcerect="56,0,72,56" depth="0.55" origin="0.5,0.5" />
     <Body width="92" height="110" />
     <Holdable slots="RightHand+LeftHand,Any" aimable="false" aimpos="50,-20" handle1="-20,0" handle2="-10,0" swingamount="50,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <sound file="%ModDir%/Sounds/sleeplesseuropan1.ogg" type="OnUse" range="1200" loop="true" selectionmode="random" volume="1.25" />
@@ -13,7 +13,7 @@
     </Holdable>
   </Item>
   <Item name="Strange Guitar" identifier="scp_starboundguitar" category="Misc" Tags="mediumitem" scale="0.7" description="A blocky looking guitar that is awkward to hold in the hands." price="100" isshootable="true">
-    <Sprite texture="%ModDir%/Weapons/misc.png" sourcerect="0,0,50,108" depth="0.5" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Misc/misc.png" sourcerect="0,0,50,108" depth="0.5" origin="0.5,0.5" />
     <Body radius="40" height="80" density="12" />
     <RangedWeapon reload="1" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="30,-20" handle1="-2,-20" handle2="5,40" swingamount="10,20" swingspeed="1" swingwhenusing="true" msg="ItemMsgPickUpSelect">
@@ -26,7 +26,7 @@
     </Holdable>
   </Item>
   <Item name="Strange Harmonica" identifier="scp_starboundharmonica" category="Misc" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" description="A blocky looking harmonica that resembles a brick more than any instrument." price="100" impactsoundtag="impact_metal_light" isshootable="true">
-    <Sprite texture="%ModDir%/Weapons/misc.png" sourcerect="56,84,60,18" depth="0.5" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Misc/misc.png" sourcerect="56,84,60,18" depth="0.5" origin="0.5,0.5" />
     <Body width="58" height="20" />
     <RangedWeapon reload="1" />
     <Holdable slots="RightHand+LeftHand,Any" aimable="false" aimpos="25,15" handle1="-10,0" handle2="0,0" swingamount="20,0" swingspeed="0.5" swingwhenusing="true" msg="ItemMsgPickUpSelect">
@@ -39,7 +39,7 @@
 	<Item name="Bike Horn?" description="An object resembling a bike horn that appears to emit random noises when the ball is compressed." identifier="scp_memehorn" category="Misc" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.7" price="300" impactsoundtag="impact_metal_light" isshootable="true">
     <RangedWeapon reload="1" />
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
-    <Sprite texture="%ModDir%/Weapons/misc.png" sourcerect="56,57,49,20" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Misc/misc.png" sourcerect="56,57,49,20" depth="0.55" origin="0.5,0.5" />
     <Body width="30" height="10" />
     <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="5">

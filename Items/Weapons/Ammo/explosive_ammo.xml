@@ -21,8 +21,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="rpg7heinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,0,66,67" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="rpg7heinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,0,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" />
 		<Body width="200" height="40" density="30" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -99,8 +99,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="rpg7physinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="134,0,66,67" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,131,197,24" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="rpg7physinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="134,0,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,131,197,24" depth="0.55" origin="0.5,0.5" />
 		<Body width="200" height="40" density="30" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -180,9 +180,9 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 		
-		<InventoryIcon name="rpg7duinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="337,1,66,67" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,212,197,24" depth="0.55" origin="0.5,0.5" />
-		<BrokenSprite name="duwarheadbroken" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="215,214,60,17" depth="0.55" origin="0.5,0.5" maxcondition="10" />
+		<InventoryIcon name="rpg7duinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="337,1,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,212,197,24" depth="0.55" origin="0.5,0.5" />
+		<BrokenSprite name="duwarheadbroken" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="215,214,60,17" depth="0.55" origin="0.5,0.5" maxcondition="10" />
 		<Body width="200" height="40" density="30" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -255,8 +255,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="rpg7latexinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="200,0,66,67" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,160,197,24" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="rpg7latexinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="200,0,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,160,197,24" depth="0.55" origin="0.5,0.5" />
 		<Body width="190" height="40" density="30" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -317,8 +317,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 		
-		<InventoryIcon name="rpg7devilinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="267,0,67,70" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,186,197,24" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="rpg7devilinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="267,0,67,70" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,186,197,24" depth="0.55" origin="0.5,0.5" />
 		<Body width="190" height="40" density="30" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -376,8 +376,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 		
-		<InventoryIcon name="rpg7incendinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="67,0,66,67" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,103,197,25" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="rpg7incendinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="67,0,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,103,197,25" depth="0.55" origin="0.5,0.5" />
 		<Body width="190" height="40" density="30" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -438,7 +438,7 @@
 		impactsoundtag="impact_metal_light" 
 		hideinmenus="true">
 
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" spritecolor="75,75,75" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" spritecolor="75,75,75" />
 		<Body width="200" height="40" density="30" />
 
 		<Projectile characterusable="false" launchimpulse="50.0" sticktocharacters="false">
@@ -780,8 +780,8 @@
 		Scale="0.5" 
 		impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/40mmgl.png" sourcerect="2,2,35,35" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/40mmgl.png" sourcerect="0,38,32,16" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/40mmgl.png" sourcerect="2,2,35,35" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/40mmgl.png" sourcerect="0,38,32,16" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="23" height="10" density="15" />
 

@@ -11,15 +11,15 @@
 		<!--Stoner 63 LMG-->
 	<Item name="" description="" cargocontaineridentifier="scp_weaponcrate" identifier="sgt_s63" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.325" impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="889,214,71,79" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="499,219,385,86" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="889,214,71,79" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="499,219,385,86" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="67,2.5" handle1="-68,-18" handle2="35,4" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="Stoner Worn" texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" canbehiddenbyotherwearables="false" sourcerect="499,219,385,86" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.325" origin="0.45,1" />
+			<sprite name="Stoner Worn" texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" canbehiddenbyotherwearables="false" sourcerect="499,219,385,86" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.325" origin="0.45,1" />
 		</Wearable>
 
 		<RangedWeapon reload="0.125" reloadnoskill="0.25" weapondamagemodifier="0.9" reloadskillrequirement="60" barrelpos="164,14" spread="18" unskilledspread="40" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -87,15 +87,15 @@
 		<!--M249-->
 	<Item name="" description="" cargocontaineridentifier="scp_weaponcrate" identifier="scp_m249" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.45" impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="223,415,71,79" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/heavyweapons.png" sourcerect="0,461,260,78" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="223,415,71,79" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/heavyweapons.png" sourcerect="0,461,260,78" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="67,2.5" handle1="-47,-18" handle2="35,4" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="M249 Worn" texture="%ModDir%/Items/Weapons/Sprites/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="0,461,260,78" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.45" origin="0.5,1" />
+			<sprite name="M249 Worn" texture="%ModDir%/Sprites/Items/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="0,461,260,78" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.45" origin="0.5,1" />
 		</Wearable>
 
 		<RangedWeapon reload="0.095" reloadnoskill="0.15" weapondamagemodifier="0.9" reloadskillrequirement="55" barrelpos="110,14" spread="15" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -167,15 +167,15 @@
 		<!--PKP Pecheneg-->
 	<Item name="" description="" identifier="scp_pkp" category="Weapon" subcategory="Renegade" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.5" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="138,249,69,78" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/heavyweapons.png" sourcerect="289,465,301,72" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="138,249,69,78" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/heavyweapons.png" sourcerect="289,465,301,72" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,-60" aimpos="75,-2" handle1="-60,-10" handle2="26,5" holdangle="40" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="PKP Worn" texture="%ModDir%/Items/Weapons/Sprites/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="289,465,301,72" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.95" />
+			<sprite name="PKP Worn" texture="%ModDir%/Sprites/Items/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="289,465,301,72" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.95" />
 			<StatValue stattype="WalkingSpeed" value="-0.1" />
 			<StatValue stattype="SwimmingSpeed" value="-0.15" />
 		</Wearable>
@@ -246,15 +246,15 @@
 		<!--FN MAG-->
 	<Item name="" description="" identifier="scp_mag" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.55" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="297,413,70,77" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/heavyweapons.png" sourcerect="291,385,288,61" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="297,413,70,77" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/heavyweapons.png" sourcerect="291,385,288,61" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,-60" aimpos="80,-3" handle1="-64,-11" handle2="26,5" holdangle="40" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="MAG Worn" texture="%ModDir%/Items/Weapons/Sprites/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="291,385,288,61" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.95" />
+			<sprite name="MAG Worn" texture="%ModDir%/Sprites/Items/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="291,385,288,61" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.95" />
 			<StatValue stattype="WalkingSpeed" value="-0.1" />
 			<StatValue stattype="SwimmingSpeed" value="-0.1" />
 		</Wearable>
@@ -343,15 +343,15 @@
 		<!--PKM-->
 	<Item name="" description="" identifier="scp_pkm" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/vintageinv.png" sourcerect="389,188,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/vintageweapons.png" sourcerect="585,413,304,70" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="389,188,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="585,413,304,70" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,-60" aimpos="80,3" handle1="-65,-15" handle2="26,5" holdangle="40" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="PKP Worn" texture="%ModDir%/Items/Weapons/Sprites/vintageweapons.png" canbehiddenbyotherwearables="false" sourcerect="584,413,305,70" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.95" />
+			<sprite name="PKP Worn" texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" canbehiddenbyotherwearables="false" sourcerect="584,413,305,70" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.95" />
 		</Wearable>
 
 		<RangedWeapon reload="0.095" reloadnoskill="0.135" reloadskillrequirement="85" weapondamagemodifier="0.85" barrelpos="100,13" spread="15" unskilledspread="35" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -439,15 +439,15 @@
 		<!--RPT-93-->
 	<Item name="" description="" identifier="scp_rpt93" category="Weapon" subcategory="Prototype" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.47" impactsoundtag="weaponheavydrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="72,1,70,79" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="0,386,308,89" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="72,1,70,79" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="0,386,308,89" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="287" height="89" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,-60" aimpos="71,-5" handle1="-50,-15" handle2="30,3" holdangle="40" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="RPT-93 Worn" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="0,386,308,89" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.47" origin="0.45,0.8" />
+			<sprite name="RPT-93 Worn" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="0,386,308,89" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.47" origin="0.45,0.8" />
 		</Wearable>
 
 		<RangedWeapon reload="0.11" reloadnoskill="0.25" penetrationmultiplier="1.15" reloadskillrequirement="85" barrelpos="125,15" spread="18" unskilledspread="36" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -530,15 +530,15 @@
 		<!--Microgun-->
 	<Item name="" identifier="scp_microgun" category="Weapon" subcategory="Prototype" description="" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,bulkyweapon" Scale="0.5" impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon name="microguninv" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="401,273,68,68" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="489,268,303,91" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="microguninv" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="401,273,68,68" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="489,268,303,91" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="303" height="91" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="65,-50" aimpos="65,-36" handle1="-145,20" handle2="-15,28" holdangle="-13" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="microgun Worn" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="489,268,303,91" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.9" />
+			<sprite name="microgun Worn" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" canbehiddenbyotherwearables="false" sourcerect="489,268,303,91" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.9" />
 		</Wearable>
 
 		<RangedWeapon reload="0.05" reloadnoskill="0.09" reloadskillrequirement="90" barrelpos="190,15" spread="16" unskilledspread="35" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -628,15 +628,15 @@
 		<!--AR-50-->
 	<Item name="" identifier="scp_ar50" description="" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,bulkyweapon" Scale="0.45" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon name="ar50inv" texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="70,327,69,81" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/heavyweapons.png" sourcerect="4,549,346,80" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="ar50inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="70,327,69,81" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/heavyweapons.png" sourcerect="4,549,346,80" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="346" height="80" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="80,-5" aimpos="85,3" handle1="-90,-18" handle2="35,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
 		
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="AR50 Worn" texture="%ModDir%/Items/Weapons/Sprites/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="4,549,346,80" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.43" origin="0.5,1" />
+			<sprite name="AR50 Worn" texture="%ModDir%/Sprites/Items/Weapons/heavyweapons.png" canbehiddenbyotherwearables="false" sourcerect="4,549,346,80" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.43" origin="0.5,1" />
 			<StatValue stattype="WalkingSpeed" value="-0.15" />
 			<StatValue stattype="SwimmingSpeed" value="-0.15" />
 		</Wearable>

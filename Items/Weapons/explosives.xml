@@ -9,8 +9,8 @@
 		<!--A fucking pipebomb-->
 	<Item name="" identifier="scp_pipebomb" description="" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="8" maxstacksizecharacterinventory="4" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
 		
-		<InventoryIcon name="pipebombinv" texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="65,263,48,62" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="164,192,22,63" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pipebombinv" texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="65,263,48,62" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="164,192,22,63" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="30" height="60" density="30" />
 
@@ -70,7 +70,7 @@
 		<!--Defensive Grenade-->
 	<Item name="" description="" identifier="scp_f1" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
 		
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="1,113,35,71" depth="0.55" origin="0.5,0.5"/>
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="1,113,35,71" depth="0.55" origin="0.5,0.5"/>
 		
 		<Body radius="25" height="22" density="30"/>
 
@@ -147,7 +147,7 @@
 		<!--Durasteel Grenade(?)-->
 	<Item name="" description="" identifier="scp_dm51" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="6" maxstacksizecharacterinventory="3" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
 		
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="39,123,38,61" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="39,123,38,61" depth="0.55" origin="0.5,0.5" />
 		
 		<Body radius="25" height="20" density="30" />
 
@@ -213,7 +213,7 @@
 		<!--Depleted Uranium Grenade-->
 	<Item name="" description="" identifier="scp_m67" category="Weapon" subcategory="Grenades and Explosives" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.5" impactsoundtag="impact_metal_heavy">
 		
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/grenades.png" sourcerect="78,138,40,47" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="78,138,40,47" depth="0.55" origin="0.5,0.5" />
 		
 		<Body radius="25" height="15" density="30" />
 
@@ -293,8 +293,8 @@
 		<!--M79 Sawed-Off-->
 	<Item name="" description="" identifier="sgt_m79" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.26" impactsoundtag="impact_metal_light">
 		
-		<InventoryIcon name="M79inv" texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="196,210,63,78" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="0,213,179,65" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="M79inv" texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="196,210,63,78" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,213,179,65" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="170" height="40" density="50" />
 
@@ -342,8 +342,8 @@
 		<!--Compact Grenade Launcher-->
 		<!--AG36-->
 	<Item name="" description="" identifier="scp_ag36" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-		<InventoryIcon name="ag36inv" texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="549,92,64,67" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="249,3,159,51" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="ag36inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="549,92,64,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/explosives.png" sourcerect="249,3,159,51" depth="0.55" origin="0.5,0.5" />
 		<Body width="170" height="40" density="50" />
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="47,-20" aimpos="47,2" handle1="-8,-12" handle2="26,5" holdangle="-25" />
@@ -395,15 +395,15 @@
 		<!--Rotary Grenade Launcher-->
 	<Item name="" identifier="scp_mgl" description="" category="Weapon" subcategory="Grenades and Explosives" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.55" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon name="m32inv" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="124,251,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="0,134,182,54" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="m32inv" texture="%ModDir%/Sprites/Items/Weapons/explosives.png" sourcerect="124,251,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/explosives.png" sourcerect="0,134,182,54" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="170" height="40" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,-20" aimpos="50,-2" handle1="-36,-14" handle2="26,5" holdangle="-25" />
 		
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="MGL Worn" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,134,182,54" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,1.2" />
+			<sprite name="MGL Worn" texture="%ModDir%/Sprites/Items/Weapons/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,134,182,54" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,1.2" />
 			<!--WTF WHO WROTE THIS-->
 			<!--"canbehiddenbyotherwearables"-->
 			<!--It's like the barodevs intentionally designed it to be a pain in the ass lol-->
@@ -456,15 +456,15 @@
 	<Item name="" identifier="scp_rpg7" description="" category="Weapon" subcategory="Grenades and Explosives" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert" scale="0.53">
 		<!--scale values are cursed but I get it-->
 		
-		<InventoryIcon name="rpg7inv" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="0,251,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="0,63,292,71" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="rpg7inv" texture="%ModDir%/Sprites/Items/Weapons/explosives.png" sourcerect="0,251,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/explosives.png" sourcerect="0,63,292,71" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="292" height="71" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,6" aimpos="35,7.2" handle1="12,-22" handle2="-7,-23" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="RPG-7 Worn" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,63,292,71" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
+			<sprite name="RPG-7 Worn" texture="%ModDir%/Sprites/Items/Weapons/explosives.png" canbehiddenbyotherwearables="false" sourcerect="0,63,292,71" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
 		</Wearable>
 
 		<RangedWeapon reload="5" reloadnoskill="7.5" reloadskillrequirement="80" barrelpos="102,9" spread="4" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -500,15 +500,15 @@
 		<!--AT4-->
 	<Item name="" identifier="scp_at4" description="" category="Weapon" health="100" subcategory="Grenades and Explosives" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="explosivecrate" tags="mediumitem,weapon,explosive,demolitionsexpert,bulkyweapon" scale="0.57">
 		
-		<InventoryIcon name="at4inv" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="63,251,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/explosives.png" sourcerect="2,4,203,48" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="at4inv" texture="%ModDir%/Sprites/Items/Weapons/explosives.png" sourcerect="63,251,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/explosives.png" sourcerect="2,4,203,48" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="292" height="71" density="50" />
 
 		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="30,6" aimpos="30,7" handle1="6,-7" handle2="27,-21" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-			<sprite name="AT-4 Worn" texture="%ModDir%/Items/Weapons/Sprites/explosives.png" canbehiddenbyotherwearables="false" sourcerect="2,4,203,48" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
+			<sprite name="AT-4 Worn" texture="%ModDir%/Sprites/Items/Weapons/explosives.png" canbehiddenbyotherwearables="false" sourcerect="2,4,203,48" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.45,0.96" />
 		</Wearable>
 
 		<RangedWeapon reload="3" reloadnoskill="6" reloadskillrequirement="80" barrelpos="102,9" spread="4" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">

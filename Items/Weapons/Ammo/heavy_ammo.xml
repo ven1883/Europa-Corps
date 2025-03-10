@@ -16,7 +16,7 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.3">
 
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/ammo.png" depth="0.54" sourcerect="176,104,29,47" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" depth="0.54" sourcerect="176,104,29,47" origin="0.5,0.5" />
 		<Body width="30" height="40" density="50" />
 
 		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -65,8 +65,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/renegadeammo.png" sourcerect="243,23,56,36" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="51,219,27,42" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" sourcerect="243,23,56,36" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="51,219,27,42" origin="0.5,0.5" />
 		<Body width="30" height="40" density="50" />
 
 		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -107,8 +107,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/renegadeammo.png" sourcerect="155,11,75,48" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="79,219,27,42" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" sourcerect="155,11,75,48" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="79,219,27,42" origin="0.5,0.5" />
 
 		<Body width="30" height="40" density="50" />
 
@@ -155,7 +155,7 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" depth="0.54" sourcerect="23,222,26,27" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="23,222,26,27" origin="0.5,0.5" />
 		<Body width="30" height="40" density="50" />
 
 		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -192,8 +192,8 @@
 		hideinmenus="true"
 		scale="0.4">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 
 		<Body width="40" height="15" density="40" />
 
@@ -251,8 +251,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.4">
 
-		<InventoryIcon name="50bmgfmjinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="324,127,60,63" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="1,282,10,69" origin="0.5,0.5" />
+		<InventoryIcon name="50bmgfmjinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="324,127,60,63" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="1,282,10,69" origin="0.5,0.5" />
 		<Body width="40" height="15" density="40" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -307,8 +307,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.4">
 
-		<InventoryIcon name="50bmgdurainv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="387,127,60,63" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="24,282,10,69" origin="0.5,0.5" />
+		<InventoryIcon name="50bmgdurainv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="387,127,60,63" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="24,282,10,69" origin="0.5,0.5" />
 		<Body width="40" height="15" density="40" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -362,8 +362,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.4">
 
-		<InventoryIcon name="50bmgapiinv" texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="450,129,60,63" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/improvedammo.png" sourcerect="12,282,11,69" origin="0.5,0.5" />
+		<InventoryIcon name="50bmgapiinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="450,129,60,63" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="12,282,11,69" origin="0.5,0.5" />
 		<Body width="40" height="15" density="40" />
 
 		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -461,8 +461,8 @@
 		hideinmenus="true" 
 		scale="0.4">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Ammo/Sprites/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
 
 		<Body width="40" height="15" density="40" />
 

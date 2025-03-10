@@ -4,8 +4,8 @@
 		
 		<Item name="" identifier="sprayer" category="Equipment" Tags="smallitem,tool,mountableweapon" cargocontaineridentifier="metalcrate" description="" Scale="0.75" impactsoundtag="impact_metal_light">	
 			
-			<InventoryIcon texture="%ModDir%/Items/Utilities/Sprites/chemicalwarfareextraicon.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
-			<Sprite texture="%ModDir%/Items/Utilities/Sprites/chemicalwarfaremisc.png" sourcerect="147,0,112,42" depth="0.55" origin="0.5,0.5" />
+			<InventoryIcon texture="%ModDir%/Sprites/Items/Utilities/chemicalwarfareextraicon.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+			<Sprite texture="%ModDir%/Sprites/Items/Utilities/chemicalwarfaremisc.png" sourcerect="147,0,112,42" depth="0.55" origin="0.5,0.5" />
 			
 			<Body width="150" height="60" density="25" />
 			

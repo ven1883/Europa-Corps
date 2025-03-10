@@ -11,8 +11,8 @@
 		<!--Uzi-->
 	<Item name="" identifier="scp_uzi" description="" category="Weapon" subcategory="Renegade" tags="smallitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.36" impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="370,415,62,77" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/weapons.png" sourcerect="0,166,205,82" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="370,415,62,77" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="0,166,205,82" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -75,8 +75,8 @@
 		<!--SMG-9-->
 	<Item name="" identifier="scp_smg9" description="" category="Weapon" subcategory="Coalition" tags="smallitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="140,327,69,81" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/weapons.png" sourcerect="0,81,177,82" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="140,327,69,81" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="0,81,177,82" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -138,8 +138,8 @@
 		<!--Vector 9mm-->
 	<Item name="" identifier="scp_vector" description="" category="Weapon" subcategory="Prototype" tags="smallitem,weapon,gun,gunsmith,mountableweapon" cargocontaineridentifier="scp_weaponcrate" Scale="0.45" impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/hightierweaponsinv.png" sourcerect="342,84,87,87" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="167,1092,188,79" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="342,84,87,87" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="167,1092,188,79" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -224,8 +224,8 @@
 		<!--Hi-Point Carbine-->
 	<Item name="" identifier="sgt_hpc" description="" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.3" impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="409,0,71,81" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Renegade.png" sourcerect="0,0,409,122" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="409,0,71,81" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,0,409,122" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -303,8 +303,8 @@
 		<!--APC10-->
 	<Item name="" identifier="sgt_apc" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.3" impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="312,168,49,61" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="0,276,289,115" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="312,168,49,61" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,276,289,115" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -383,8 +383,8 @@
 		<!--M41A Pulse Rifle-->
 	<Item name="" identifier="sgt_pasmg" description="" category="Weapon" subcategory="Prototype" cargocontaineridentifier="scp_weaponcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Prototype.png" sourcerect="476,0,52,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Prototype.png" sourcerect="15,438,289,115" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="476,0,52,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="15,438,289,115" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -480,8 +480,8 @@
 		<!--SR2-->
 	<Item name="" identifier="scp_sr2" description="" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.51" impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="556,172,69,74" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/weapons.png" sourcerect="238,297,159,65" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="556,172,69,74" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="238,297,159,65" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -566,8 +566,8 @@
 		<!--UMP-45-->
 	<Item name="" identifier="scp_ump45" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.46" impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/weaponsinv.png" sourcerect="345,85,65,76" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/weapons.png" sourcerect="250,469,190,91" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="345,85,65,76" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="250,469,190,91" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -634,8 +634,8 @@
 		<!--MP9-->
 	<Item name="" identifier="sgt_bosmg" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="308,289,52,58" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/Coalition.png" sourcerect="0,480,271,80" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="308,289,52,58" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,480,271,80" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
