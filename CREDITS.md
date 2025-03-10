@@ -17,3 +17,15 @@ Our poor spriters:
 - Shorty ([SGT Shorty](https://github.com/SGT-Shorty))
 - Dilpho-Mos
 - lobotomite
+
+### Special Thanks
+Some notes for everyone else:
+
+- Miicheny ([Enhanced Armaments](https://steamcommunity.com/sharedfiles/filedetails/?id=2764968387))  
+Responsible for most of our items and plenty of updates for EHA.
+- [Enhanced Husks](https://steamcommunity.com/sharedfiles/filedetails/?id=3101033027)' Developers  
+Thanks for all the husks.
+- [Feniter's Chemical Agents](https://steamcommunity.com/sharedfiles/filedetails/?id=2974772300)  
+Chemical agents and some other fun stuff!
+- [THG Armor Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=2967303974)  
+A very nice vanilla-esque armor pack we used plenty.
