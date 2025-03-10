@@ -8,6 +8,7 @@ Our foolish coders:
 - Wrill
 - Shorty ([SGT Shorty](https://github.com/SGT-Shorty))
 - Derek ([Hanz Moon](https://github.com/Hanz-Moon))
+- Dilpho-Mos ([steam](https://steamcommunity.com/profiles/76561198377491499/), [newgrounds](https://dilopho-mos.newgrounds.com/))
 
 ### Spritework
 All europa corps spritework is licensed under CC-BY-NC 4.0
@@ -15,7 +16,7 @@ All europa corps spritework is licensed under CC-BY-NC 4.0
 Our poor spriters:
 - Wrill
 - Shorty ([SGT Shorty](https://github.com/SGT-Shorty))
-- Dilpho-Mos
+- Dilpho-Mos ([steam](https://steamcommunity.com/profiles/76561198377491499/), [newgrounds](https://dilopho-mos.newgrounds.com/))
 - lobotomite ([steam](https://steamcommunity.com/id/medic_main228/))
 
 ### Special Thanks
