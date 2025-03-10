@@ -28,4 +28,6 @@ Thanks for all the husks.
 - [Feniter's Chemical Agents](https://steamcommunity.com/sharedfiles/filedetails/?id=2974772300)  
 Chemical agents and some other fun stuff!
 - [THG Armor Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=2967303974)  
-A very nice vanilla-esque armor pack we used plenty.
+A very nice vanilla-esque armor pack we used plenty.  
+- [The Barodevs Themselves.](https://github.com/FakeFishGames/Barotrauma)  
+For the game, and far, far too much time spent on it.
