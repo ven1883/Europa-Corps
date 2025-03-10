@@ -16,7 +16,7 @@ Our poor spriters:
 - Wrill
 - Shorty ([SGT Shorty](https://github.com/SGT-Shorty))
 - Dilpho-Mos
-- lobotomite
+- lobotomite ([steam](https://steamcommunity.com/id/medic_main228/))
 
 ### Special Thanks
 Some notes for everyone else:
