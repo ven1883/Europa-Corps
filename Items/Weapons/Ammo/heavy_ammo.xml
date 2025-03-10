@@ -420,8 +420,8 @@
 		impactsoundtag="impact_metal_light" 
 		scale="0.5">
 		
-		<InventoryIcon name="microgunboxinv" texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" sourcerect="391,419,91,91" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/hightierweapons.png" depth="0.54" sourcerect="402,341,67,76" origin="0.5,0.5" />
+		<InventoryIcon name="microgunboxinv" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="391,419,91,91" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" depth="0.54" sourcerect="402,341,67,76" origin="0.5,0.5" />
 		<Body width="30" height="40" density="50" />
 
 		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />

@@ -2,7 +2,7 @@
 <Items>
 	<Item name="" description="" identifier="scp_tankcannon" tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="scp_tankgunequipment">
 		
-		<Sprite name="coligunbase" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/tankturret.png" depth="0.01" sourcerect="0,176,256,256" canflipy="false" origin="0.5,0.5" />
+		<Sprite name="coligunbase" texture="%ModDir%/Sprites/Items/Turrets/tankturret.png" depth="0.01" sourcerect="0,176,256,256" canflipy="false" origin="0.5,0.5" />
 		
 		<MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
 		
@@ -27,8 +27,8 @@
 			
 			<WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
 
-			<RailSprite name="coilgunrail" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/tankturret.png" depth="0.011" sourcerect="382,185,116,221" origin="0.52377486,0.79979753" />
-			<BarrelSprite name="Coilgunbarrel" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/tankturret.png" depth="0.012" sourcerect="255,17,117,415" origin="0.5013909,0.8638133" />
+			<RailSprite name="coilgunrail" texture="%ModDir%/Sprites/Items/Turrets/tankturret.png" depth="0.011" sourcerect="382,185,116,221" origin="0.52377486,0.79979753" />
+			<BarrelSprite name="Coilgunbarrel" texture="%ModDir%/Sprites/Items/Turrets/tankturret.png" depth="0.012" sourcerect="255,17,117,415" origin="0.5013909,0.8638133" />
 			
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
@@ -69,7 +69,7 @@
 	
 	<Item name="" description="" identifier="scp_prototankcannon" tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="scp_tankgunequipment">
 		
-		<Sprite name="coligunbase" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/advtankturret.png" depth="0.01" sourcerect="0,164,256,256" canflipy="false" origin="0.5,0.5" />
+		<Sprite name="coligunbase" texture="%ModDir%/Sprites/Items/Turrets/advtankturret.png" depth="0.01" sourcerect="0,164,256,256" canflipy="false" origin="0.5,0.5" />
 		<MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
 
 		<UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
@@ -94,8 +94,8 @@
 
 			<WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
 
-			<RailSprite name="coilgunrail" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/advtankturret.png" depth="0.011" sourcerect="378,185,123,220" origin="0.52377486,0.79979753" />
-			<BarrelSprite name="Coilgunbarrel" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/advtankturret.png" depth="0.012" sourcerect="255,17,117,415" origin="0.5013909,0.8638133" />
+			<RailSprite name="coilgunrail" texture="%ModDir%/Sprites/Items/Turrets/advtankturret.png" depth="0.011" sourcerect="378,185,123,220" origin="0.52377486,0.79979753" />
+			<BarrelSprite name="Coilgunbarrel" texture="%ModDir%/Sprites/Items/Turrets/advtankturret.png" depth="0.012" sourcerect="255,17,117,415" origin="0.5013909,0.8638133" />
 
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
@@ -141,7 +141,7 @@
 	
 	<Item name="" identifier="scp_tankgunloader" tags="scp_tankgunequipment,scp_tankgunammosource,turretammosource,scp_tankgunammoloader" category="Machine,Weapon" linkable="true" allowedlinks="scp_tankgun" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
 
-		<Sprite name="tankturretloader" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" depth="0.78" sourcerect="1,0,180,354" origin="0.5,0.5" />
+		<Sprite name="tankturretloader" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" depth="0.78" sourcerect="1,0,180,354" origin="0.5,0.5" />
 		
 		<DecorativeSprite name="loaderframe" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
 		
@@ -202,8 +202,8 @@
 
 	<Item name="" description="" identifier="scp_tankgunbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
 		
-		<Sprite name="tankammobox" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" depth="0.54" sourcerect="188,1,129,176" origin="0.5,0.5" />
-		<ContainedSprite name="tankammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="322,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
+		<Sprite name="tankammobox" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" depth="0.54" sourcerect="188,1,129,176" origin="0.5,0.5" />
+		<ContainedSprite name="tankammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="322,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
 		
 		<Body width="129" height="176" density="50" />
 		
@@ -237,7 +237,7 @@
 	
 	<Item name="" identifier="scp_tankheatproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
 		
-		<Sprite texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="320,3,168,17" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="320,3,168,17" depth="0.55" origin="0.5,0.5" />
 		<Body width="170" height="10" density="20" />
 		
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -287,8 +287,8 @@
 	
 	<Item name="" description="" identifier="scp_tankgunapbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
 		
-		<Sprite name="tankapammobox" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" depth="0.54" sourcerect="188,181,129,176" origin="0.5,0.5" />
-		<ContainedSprite name="tankapammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="322,184,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
+		<Sprite name="tankapammobox" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" depth="0.54" sourcerect="188,181,129,176" origin="0.5,0.5" />
+		<ContainedSprite name="tankapammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="322,184,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
 		
 		<Body width="129" height="176" density="50" />
 		
@@ -322,7 +322,7 @@
 	
 	<Item name="" identifier="scp_tankapproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
 		
-		<Sprite texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="320,20,168,17" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="320,20,168,17" depth="0.55" origin="0.5,0.5" />
 		<Body width="170" height="10" density="20" />
 		
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -373,8 +373,8 @@
 	
 	<Item name="" description="" identifier="scp_tankgundubox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
 		
-		<Sprite name="tankduammobox" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" depth="0.54" sourcerect="188,541,129,176" origin="0.5,0.5" />
-		<ContainedSprite name="tankduammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="436,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
+		<Sprite name="tankduammobox" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" depth="0.54" sourcerect="188,541,129,176" origin="0.5,0.5" />
+		<ContainedSprite name="tankduammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="436,89,111,91" depth="0.54" origin="0.5,0.5" scale="0.8" />
 		
 		<Body width="129" height="176" density="50" />
 		
@@ -408,7 +408,7 @@
 	
 	<Item name="" identifier="scp_tankduproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
 
-		<Sprite texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="320,3,168,17" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="320,3,168,17" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="170" height="10" density="20" />
 
@@ -461,8 +461,8 @@
 	
 	<Item name="" description="" identifier="scp_tankgunphysbox" scale="0.4" tags="tankgunequipment,tankturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
 		
-		<Sprite name="tankphysammobox" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" depth="0.54" sourcerect="188,360,129,176" origin="0.5,0.5" />
-		<ContainedSprite name="tankphysammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="322,277,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
+		<Sprite name="tankphysammobox" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" depth="0.54" sourcerect="188,360,129,176" origin="0.5,0.5" />
+		<ContainedSprite name="tankphysammoboxcontain" allowedcontainertags="ammoboxcontainer,wreckammoboxcontainer" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="322,277,111,89" depth="0.54" origin="0.5,0.5" scale="0.8" />
 		
 		<Body width="129" height="176" density="50" />
 		
@@ -495,7 +495,7 @@
 	
 	<Item name="" identifier="scp_tankphysproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
 		
-		<Sprite texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="320,38,168,17" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="320,38,168,17" depth="0.55" origin="0.5,0.5" />
 		<Body width="170" height="10" density="20" />
 		
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -544,7 +544,7 @@
 	
 	<Item name="" description="" identifier="scp_miniguncoilgun" Tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="coilgunequipment">
 		
-		<Sprite name="base" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/minigunturret.png" depth="0.01" sourcerect="8,123,242,247" canflipy="false" origin="0.5,0.5" />
+		<Sprite name="base" texture="%ModDir%/Sprites/Items/Turrets/minigunturret.png" depth="0.01" sourcerect="8,123,242,247" canflipy="false" origin="0.5,0.5" />
 		
 		<MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
 		
@@ -572,8 +572,8 @@
 			
 			<WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
 
-			<RailSprite name="rail" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/minigunturret.png" depth="0.011" sourcerect="365,120,121,240" origin="0.4963203,0.6816194" />
-			<BarrelSprite name="barrel" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/minigunturret.png" depth="0.012" sourcerect="250,35,109,323" origin="0.6,0.8" />
+			<RailSprite name="rail" texture="%ModDir%/Sprites/Items/Turrets/minigunturret.png" depth="0.011" sourcerect="365,120,121,240" origin="0.4963203,0.6816194" />
+			<BarrelSprite name="barrel" texture="%ModDir%/Sprites/Items/Turrets/minigunturret.png" depth="0.012" sourcerect="250,35,109,323" origin="0.6,0.8" />
 
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
@@ -616,7 +616,7 @@
 	
 	<Item name="" description="" identifier="scp_mgturret" tags="turret" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="scp_mgturretequipment">
 		
-		<Sprite name="mgturretbase" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/mgturret.png" depth="0.01" sourcerect="0,190,256,256" canflipy="false" origin="0.5,0.5" />
+		<Sprite name="mgturretbase" texture="%ModDir%/Sprites/Items/Turrets/mgturret.png" depth="0.01" sourcerect="0,190,256,256" canflipy="false" origin="0.5,0.5" />
 		<MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
 
 		<UpgradePreviewSprite scale="3.0" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
@@ -642,8 +642,8 @@
 			
 			<WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
 			
-			<RailSprite name="mgturretrail" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/mgturret.png" depth="0.011" sourcerect="382,218,119,221" origin="0.52377486,0.79979753" />
-			<BarrelSprite name="mgturretbarrel" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/mgturret.png" depth="0.012" sourcerect="261,77,115,373" origin="0.5013909,0.8638133" scale="0.55" />
+			<RailSprite name="mgturretrail" texture="%ModDir%/Sprites/Items/Turrets/mgturret.png" depth="0.011" sourcerect="382,218,119,221" origin="0.52377486,0.79979753" />
+			<BarrelSprite name="mgturretbarrel" texture="%ModDir%/Sprites/Items/Turrets/mgturret.png" depth="0.012" sourcerect="261,77,115,373" origin="0.5013909,0.8638133" scale="0.55" />
 			
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
@@ -687,7 +687,7 @@
 	
 	<Item name="" identifier="scp_machinegunturretloader" tags="scp_mgturretequipment,scp_mgturretammosource,turretammosource,scp_mgturretammoloader" category="Machine,Weapon" linkable="true" allowedlinks="scp_mgturret" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
 
-		<Sprite name="mgturretloader" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" depth="0.78" sourcerect="3,669,180,354" origin="0.5,0.5" />
+		<Sprite name="mgturretloader" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" depth="0.78" sourcerect="3,669,180,354" origin="0.5,0.5" />
 		<DecorativeSprite name="loaderframe" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
 		
 		<Repairable 
@@ -756,7 +756,7 @@
 	
 	<Item name="" description="" identifier="scp_mgturretfmjbox" scale="0.5" tags="mgturretequipment,mgturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
 		
-		<Sprite name="mgturretammobox" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" depth="0.54" sourcerect="331,528,97,80" origin="0.5,0.5" />
+		<Sprite name="mgturretammobox" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" depth="0.54" sourcerect="331,528,97,80" origin="0.5,0.5" />
 		
 		<Body width="115" height="88" density="50" />
 		
@@ -788,7 +788,7 @@
 	
 	<Item name="" identifier="scp_mgturretfmjproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
 		
-		<Sprite texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="430,530,33,8" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="430,530,33,8" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="60" height="10" density="20" />
 		
@@ -830,7 +830,7 @@
 	
 	<Item name="" description="" identifier="scp_mgturretapbox" scale="0.5" tags="mgturretequipment,mgturretammo,ammobox" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
 		
-		<Sprite name="mgturretammobox" texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" depth="0.54" sourcerect="331,609,97,80" origin="0.5,0.5" />
+		<Sprite name="mgturretammobox" texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" depth="0.54" sourcerect="331,609,97,80" origin="0.5,0.5" />
 		
 		<Body width="115" height="88" density="50" />
 		
@@ -864,7 +864,7 @@
 	
 	<Item name="" identifier="scp_mgturretapproj" category="Weapon" scale="0.5" sonarsize="10" hideinmenus="true">
 		
-		<Sprite texture="%ModDir%/%ModDir%/Sprites/Items/Turrets//Items/Weapons/Ammo/turretitems.png" sourcerect="430,538,33,8" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/turretitems.png" sourcerect="430,538,33,8" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="60" height="10" density="20" />
 		

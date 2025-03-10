@@ -115,27 +115,27 @@
 	<!-- Uniform 3 for 3rd medic: fortunately there was already a sprite, nice -->
 	<Item name="" identifier="doctorsuniform3" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
 
-		<InventoryIcon name="Medic Uniform 3 Icon" texture="%ModDir%/Sprites/Items/Apparel/outfit_icon.png" sourcerect="0,23,128,105" origin="0.5,0.5" />
-		<Sprite name="Medic Uniform 3" texture="%ModDir%/Sprites/Items/Apparel/outfit_icon.png" sourcerect="153,91,205,75" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon name="Medic Uniform 3 Icon" texture="%ModDir%/Sprites/Items/Apparel/surgeon_icon.png" sourcerect="0,23,128,105" origin="0.5,0.5" />
+		<Sprite name="Medic Uniform 3" texture="%ModDir%/Sprites/Items/Apparel/surgeon_icon.png" sourcerect="153,91,205,75" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
 
 		<Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-			<sprite name="Medic Uniform 2 Torso" texture="%ModDir%/Sprites/Items/Apparel/medic2.png" limb="Torso" hidelimb="false" inherittexturescale="true" origin="0.5,0.5" sourcerect="147,19,110,149" />
-			<sprite name="Medic Uniform 2 Right Hand" texture="%ModDir%/Sprites/Items/Apparel/medic2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Hand" texture="%ModDir%/Sprites/Items/Apparel/medic2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/medic2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/medic2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Right Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/medic2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/medic2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Waist" texture="%ModDir%/Sprites/Items/Apparel/medic2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<!--sprite name="Medic Uniform 2 Right Thigh" texture="%ModDir%/Sprites/Items/Apparel/medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" "93,13,53,107" /-->
-			<sprite name="Medic Uniform 2 Right Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"	/>
-			<sprite name="Medic Uniform 2 Left Thigh" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Right Leg" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Leg" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="Medic Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Medic/Medic2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Torso" texture="%ModDir%/Sprites/Items/Apparel/surgeon.png" limb="Torso" hidelimb="false" inherittexturescale="true" origin="0.5,0.5" sourcerect="147,19,110,149" />
+			<sprite name="Medic Uniform 2 Right Hand" texture="%ModDir%/Sprites/Items/Apparel/surgeon.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Hand" texture="%ModDir%/Sprites/Items/Apparel/surgeon.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/surgeon.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/surgeon.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/surgeon.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/surgeon.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Waist" texture="%ModDir%/Sprites/Items/Apparel/surgeon.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<!--sprite name="Medic Uniform 2 Right Thigh" texture="%ModDir%/Sprites/Items/Apparel/surgeon.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" "93,13,53,107" /-->
+			<sprite name="Medic Uniform 2 Right Thigh" texture="Content/Items/Jobgear/Medic/surgeon.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"	/>
+			<sprite name="Medic Uniform 2 Left Thigh" texture="Content/Items/Jobgear/Medic/surgeon.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Leg" texture="Content/Items/Jobgear/Medic/surgeon.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Leg" texture="Content/Items/Jobgear/Medic/surgeon.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Right Shoe" texture="Content/Items/Jobgear/Medic/surgeon.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="Medic Uniform 2 Left Shoe" texture="Content/Items/Jobgear/Medic/surgeon.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
 		</Wearable>
 		
@@ -301,7 +301,7 @@
 
             <Containable items="smallitem,mediumitem,ammo,explosive" excludeditems="mobilecontainer,rucksack,backpack,weaponcrate,vest,bulkyweapon" />
 
-            <SlotIcon slotindex="16" texture="%ModDir%/Items/Weapons/Sprites/pistols.png" sourcerect="448,452,64,60" origin="0.5,0.5" />
+            <SlotIcon slotindex="16" texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="448,452,64,60" origin="0.5,0.5" />
 
             <SubContainer 
                 capacity="1" maxstacksize="1" 

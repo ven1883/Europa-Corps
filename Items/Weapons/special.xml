@@ -681,7 +681,7 @@
 
 	<Item identifier="nervegasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
 
-		<Sprite texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="0,0,128,128" depth="0.1" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="0,0,128,128" depth="0.1" origin="0.5,0.5" />
 
 		<LightComponent 
 			range="1" 
@@ -763,7 +763,7 @@
 
 	<Item identifier="pulmgasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
 
-		<Sprite texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="128,0,128,128" depth="0.1" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="128,0,128,128" depth="0.1" origin="0.5,0.5" />
 
 		<LightComponent 
 			range="1" 
@@ -846,7 +846,7 @@
 
 	<Item identifier="bloodgasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
 
-		<Sprite texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="256,0,128,128" depth="0.1" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="256,0,128,128" depth="0.1" origin="0.5,0.5" />
 
 		<LightComponent 
 			range="1" 
@@ -926,7 +926,7 @@
 
 	<Item identifier="blistergasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
 
-		<Sprite texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="384,0,128,128" depth="0.1" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="384,0,128,128" depth="0.1" origin="0.5,0.5" />
 
 		<LightComponent
 			range="1" 
@@ -1009,7 +1009,7 @@
 
 	<Item identifier="teargasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
 
-		<Sprite texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="512,128,128,128" depth="0.1" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="512,128,128,128" depth="0.1" origin="0.5,0.5" />
 
 		<LightComponent 
 			range="1" 
@@ -1088,7 +1088,7 @@
 
 	<Item identifier="psychogasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
 
-		<Sprite texture="%ModDir%/Afflictions/Sprites/chemicalagentsafflictions.png" sourcerect="512,0,128,128" depth="0.1" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="512,0,128,128" depth="0.1" origin="0.5,0.5" />
 
 		<LightComponent 
 			range="1" 

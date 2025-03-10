@@ -14,8 +14,8 @@
 
 	<Item name="" identifier="omnizine" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="115,187,37,69" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="128,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="115,187,37,69" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="35" height="65" density="20" />
 
@@ -85,8 +85,8 @@
 
 	<Item name="" identifier="stypticpowder" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="40,187,37,69" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="40,187,37,69" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="35" height="65" density="20" />
 
@@ -148,8 +148,8 @@
 
 	<Item name="" identifier="proconvertin" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe,sleepypenchem" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="78,187,37,69" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="64,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="78,187,37,69" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="35" height="65" density="20" />
 
@@ -200,8 +200,8 @@
 
 	<Heparin name="" identifier="heparin" category="medical" axstacksize="32" maxstacksizeincharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="190,187,37,69" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="190,187,37,69" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="35" height="65" density="20" />
 
@@ -256,8 +256,8 @@
 		<SuitableTreatment identifier="steroidoverdose" suitability="25" />
 		<SuitableTreatment identifier="drunk" suitability="50" />
 
-		<InventoryIcon texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="0,187,37,69" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="0,187,37,69" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="35" height="65" density="20" />
 
@@ -346,8 +346,8 @@
 
 	<Item name="" description="" identifier="scp_condensedstabilozine" maxstacksize="2" maxstacksizecharacterinventory="1" category="Medical" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-	    <InventoryIcon name="constabinv" texture="%ModDir%/Sprites/Medical/EHA_medical.png" sourcerect="124,292,56,62" origin="0.5,0.5" />
-	    <Sprite texture="%ModDir%/Sprites/Medical/EHA_medical.png" sourcerect="360,106,65,10" depth="0.6" origin="0.5,0.5" />
+	    <InventoryIcon name="constabinv" texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="124,292,56,62" origin="0.5,0.5" />
+	    <Sprite texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="360,106,65,10" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="35" height="10" density="15" />
 
@@ -393,8 +393,8 @@
 
 		<SuitableTreatment type="scp_psidamage" suitability="100" />
 
-	    <Sprite texture="%ModDir%/Sprites/Medical/EHA_medical.png" sourcerect="6,104,30,20" depth="0.6" origin="0.5,0.5" />
-	    <InventoryIcon name="psyblockinv" texture="%ModDir%/Sprites/Medical/EHA_medical.png" sourcerect="1,129,45,45" depth="0.6" origin="0.5,0.5" />
+	    <Sprite texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="6,104,30,20" depth="0.6" origin="0.5,0.5" />
+	    <InventoryIcon name="psyblockinv" texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="1,129,45,45" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="20" density="20" />
 
@@ -443,8 +443,8 @@
 
 		<SuitableTreatment identifier="concentratedants" suitability="100" />
         
-		<InventoryIcon texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="256,64,64,64" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Medical/drugs.png" sourcerect="152,187,37,69" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="256,64,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="152,187,37,69" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="35" height="65" density="20" />
 
@@ -487,8 +487,8 @@
 	
 	<FenAtropine name="" identifier="feniternerveagentcure" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="230,0,70,70" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="160,0,70,70" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="230,0,70,70" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="160,0,70,70" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="40" density="5" />
 
@@ -538,8 +538,8 @@
   
 	<FenPulmonaryflush name="" identifier="feniterpulmonaryagentcure1" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="230,80,80,80" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="160,80,70,80" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="230,80,80,80" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="160,80,70,80" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="40" density="5" />
 
@@ -597,8 +597,8 @@
 	
 	<FenPulmonarybinder name="" identifier="feniterpulmonaryagentcure2" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="230,175,70,80" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="160,175,70,80" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="230,175,70,80" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="160,175,70,80" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="40" density="5" />
 
@@ -647,8 +647,8 @@
 
 	<FenHaloperidolStr name="" identifier="feniterpsychoagentcure" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-		<InventoryIcon texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="240,355,65,70" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Items/Weapons/Sprites/chemicalwarfaremain.png" sourcerect="170,355,50,70" depth="0.6" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="240,355,65,70" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="170,355,50,70" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="40" density="5" />
 
@@ -710,7 +710,7 @@
 
 	<FenGenDecon name="" identifier="feniterdecontaminant" category="Medical" Tags="smallitem,chem" maxstacksize="8" cargocontaineridentifier="mediccrate" useinhealthinterface="true" scale="1.2" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-		<InventoryIcon texture="%ModDir%/Items/Utilities/sprites/chemicalwarfareextraicon.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Utilities/chemicalwarfareextraicon.png" sourcerect="0,64,64,64" origin="0.5,0.5" />
 		<Sprite texture="Items/Utilities/Sprites/chemicalwarfaremisc.png" sourcerect="147,42,12,26" depth="0.6" origin="0.5,0.5" />
 		
 		<Body width="25" height="40" density="5" />
