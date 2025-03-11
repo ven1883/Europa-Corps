@@ -114,6 +114,12 @@
   <entitydescription.scp_45projectile></entitydescription.scp_45projectile>
   <entityname.scp_45pprojectile>11.43mm round</entityname.scp_45pprojectile>
   <entitydescription.scp_45pprojectile></entitydescription.scp_45pprojectile>
+  <entityname.scp_45incendmag>Heavy Pistol Burner Magazine</entityname.scp_45incendmag>
+  <entitydescription.scp_45incendmag>A 10 round 11.4x23mm magazine meant for pistols, containing FMJ-IL cartridges meant to cause severe burns upon impact.</entitydescription.scp_45incendmag>
+  <entityname.scp_umpincendmag>Heavy Submachine Gun Burner Magazine</entityname.scp_umpincendmag>
+  <entitydescription.scp_umpincendmag>A 25 round 11.4x23mm stick magazine containing FMJ-IL cartridges, designed to cause severe burns on contact with skin.</entitydescription.scp_umpincendmag>
+  <entityname.scp_45incendproj>11.4mm round</entityname.scp_45incendproj>
+  <entitydescription.scp_45incendproj></entitydescription.scp_45incendproj>
   <entityname.scp_p226>Coalition Pistol</entityname.scp_p226>
   <entitydescription.scp_p226>A 9x19mm recoil-operated pistol. It is a near fool-proof design found all across Europa, being adopted by the Coalition as its primary sidearm despite the cartridge's inherently lackluster capabilities.</entitydescription.scp_p226>
   <entityname.scp_mxa1>Coalition Caseless Assault Rifle</entityname.scp_mxa1>
@@ -549,6 +555,12 @@
   <entityname.scp_sr2>Renegade Heavy Submachine Gun</entityname.scp_sr2>
   <entitydescription.scp_sr2>An 11.43x23mm SMG that has been derived from an already existing SMG design, it is extremely compact however due to the very short barrel accuracy is atrocious.</entitydescription.scp_sr2>
   <!--weapons_vintageweapons-->
+  <entityname.scp_akliv>Vanguard Oppressor AR</entityname.scp_akliv>
+  <entitydescription.scp_akliv>A heavily modified Renegade Oppressor AR chambered in 7.62x39mm, with a custom gas block and more ergonomic furniture.</entitydescription.scp_akliv>
+  <entityname.scp_sg550mli>Aftermarket Coalition AR</entityname.scp_sg550mli>
+  <entitydescription.scp_sg550mli>A heavily modified Coalition AR with substantially better furniture, being rechambered for 6.5x39mm to further increase it's viability.</entitydescription.scp_sg550mli>
+  <entityname.scp_usp45>Seitenwaffe</entityname.scp_usp45>
+  <entitydescription.scp_usp45>A blocky 11.4x23mm pistol likely of Separatist origin, being heavily modified by the previous owner.</entitydescription.scp_usp45>
   <entityname.scp_nagant>Samorodok</entityname.scp_nagant>
   <entitydescription.scp_nagant>An old 7.62x54mmR bolt action rifle with a just as old optic attached to it.</entitydescription.scp_nagant>
   <entityname.scp_nagantmag>Samorodok Stripper Clip</entityname.scp_nagantmag>
