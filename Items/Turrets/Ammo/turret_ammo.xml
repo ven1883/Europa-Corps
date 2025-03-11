@@ -13,9 +13,9 @@
 		scale="0.5" 
 		impactsoundtag="impact_metal_heavy">
 		
-		<InventoryIcon name="piercingshellinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="255,2,38,39" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="3,5,219,31" depth="0.55" origin="0.5,0.5" />
-		<BrokenSprite name="piercingshellproj" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="240,163,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
+		<InventoryIcon name="piercingshellinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="255,2,38,39" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="3,5,219,31" depth="0.55" origin="0.5,0.5" />
+		<BrokenSprite name="piercingshellproj" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="240,163,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
 
 		<Body width="215" height="30" density="30" />
 
@@ -116,9 +116,9 @@
 		scale="0.5" 
 		impactsoundtag="impact_metal_heavy">
 		
-		<InventoryIcon name="dushellinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="331,100,40,40" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="236,268,219,31" depth="0.55" origin="0.5,0.5" />
-		<BrokenSprite name="dushellproj" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="239,209,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
+		<InventoryIcon name="dushellinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="331,100,40,40" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="236,268,219,31" depth="0.55" origin="0.5,0.5" />
+		<BrokenSprite name="dushellproj" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="239,209,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
 		
 		<Body width="215" height="30" density="30" />
 
@@ -258,8 +258,8 @@
 		scale="0.5" 
 		impactsoundtag="impact_metal_heavy">
 
-		<InventoryIcon name="duflechinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="373,100,40,41" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="236,304,219,31" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="duflechinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="373,100,40,41" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="236,304,219,31" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="215" height="30" density="30" />
 
@@ -334,7 +334,7 @@
 		sonarsize="1" 
 		hideinmenus="true">
 
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="75" height="10" density="20" />
 
@@ -395,9 +395,9 @@
 		scale="0.5" 
 		impactsoundtag="impact_metal_heavy">
 
-		<InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="294,54,38,39" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="6,118,219,31" depth="0.55" origin="0.5,0.5" />
-		<BrokenSprite name="physpiercingshellproj" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="239,184,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
+		<InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="294,54,38,39" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="6,118,219,31" depth="0.55" origin="0.5,0.5" />
+		<BrokenSprite name="physpiercingshellproj" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="239,184,171,18" depth="0.55" origin="0.5,0.5" maxcondition="99" />
 
 		<Body width="215" height="30" density="30" />
 
@@ -487,8 +487,8 @@
 		scale="0.5" 
 		impactsoundtag="impact_metal_heavy">
 
-		<InventoryIcon name="thermoinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="246,47,45,44" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="6,74,214,43" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="thermoinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="246,47,45,44" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="6,74,214,43" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="215" height="30" density="35" />
 		
@@ -575,8 +575,8 @@
 		scale="0.5" 
 		impactsoundtag="impact_metal_heavy">
 		
-		<InventoryIcon name="nukemirvinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="289,429,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="237,341,218,44" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="nukemirvinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="289,429,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="237,341,218,44" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="215" height="30" density="30" />
 
@@ -653,7 +653,7 @@
 		sonarsize="2.5" 
 		hideinmenus="true">
 
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="395,276,55,17" depth="0.55" origin="0.5,0.5" />
 		<Body width="100" height="10" density="20" />
 
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -730,8 +730,8 @@
 		scale="0.5" 
 		impactsoundtag="impact_metal_heavy">
 
-		<InventoryIcon name="thermoinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="283,99,45,44" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="6,288,216,42" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="thermoinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="283,99,45,44" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="6,288,216,42" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="215" height="30" density="35" />
 
@@ -899,8 +899,8 @@
 		scale="0.5" 
 		impactsoundtag="impact_metal_heavy">
 
-		<InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="336,54,43,42" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="6,153,219,45" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="physpiercingshellinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="336,54,43,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="6,153,219,45" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="215" height="30" density="30" />
 
@@ -1047,8 +1047,8 @@
 		impactsoundtag="impact_metal_heavy" 
 		hideinmenus="true">
 		
-		<InventoryIcon name="tsarinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="227,427,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="4,433,217,43" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="tsarinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="227,427,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="4,433,217,43" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="215" height="30" density="35" />
 		
@@ -1141,8 +1141,8 @@
 		hideinmenus="true" 
 		impactsoundtag="impact_metal_heavy">
 		
-		<InventoryIcon name="ruineddoomsdayinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="379,55,45,44" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="6,201,217,47" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="ruineddoomsdayinv" texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="379,55,45,44" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="6,201,217,47" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="215" height="30" density="35" />
 
@@ -1264,8 +1264,8 @@
 
 		<Upgrade gameversion="0.20.4.0" scale="0.4" />
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="175,365,45,45" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/railgunshells.png" sourcerect="4,341,167,89" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="175,365,45,45" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Turrets/Ammo/railgunshells.png" sourcerect="4,341,167,89" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="128" height="85" density="50" />
 

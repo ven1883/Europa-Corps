@@ -4,8 +4,8 @@
 	<Item name="" identifier="sgt_timedet" aliases="Timed Detonator" category="Equipment,Weapon" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="smallitem,weapon" scale="0.22" impactsoundtag="impact_metal_heavy" isshootable="true" hideinmenus="false" maxstacksize="1"
 		health="60"> <!--1 health = 1 second max duration-->
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Weapons/Explosives.png" sourcerect="0,0,100,100" />
-		<Sprite texture="%ModDir%/Sprites/Weapons/Explosives.png" sourcerect="0,0,100,100" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/explosives.png" sourcerect="0,0,100,100" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/explosives.png" sourcerect="0,0,100,100" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="104" height="86" density="18" />
 		

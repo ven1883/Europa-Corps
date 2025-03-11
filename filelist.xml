@@ -31,6 +31,7 @@
 	<Item file="%ModDir%/Items/Apparel/separatists.xml"/>
 	<Item file="%ModDir%/Items/Apparel/universal.xml"/>
 	<Item file="%ModDir%/Items/Apparel/other.xml"/>
+	<Item file="%ModDir%/Items/Apparel/overrides_armor.xml"/>
 
 	<!--Medical-->
 	<Item file="%ModDir%/Items/Medical/bionics.xml"/>
@@ -43,9 +44,17 @@
 
 	<!--Misc-->
 	
+	<Item file="%ModDir%/Items/Misc/misc.xml"/>
+	<Item file="%ModDir%/Items/Misc/containers.xml"/>
+	<Item file="%ModDir%/Items/Misc/fabricators.xml"/>
 	<Item file="%ModDir%/Items/Utilities/overrides.xml"/>
+	<Item file="%ModDir%/Items/Utilities/tools.xml"/>
 	<Item file="%ModDir%/Items/Utilities/books.xml"/>
 	<Item file="%ModDir%/Items/Turrets/turrets.xml"/>
+	<Item file="%ModDir%/Items/Turrets/Ammo/turret_ammo.xml"/>
+	<Item file="%ModDir%/Items/Emitters/emitters.xml"/>
+	<Item file="%ModDir%/Items/Materials/materials.xml"/>
+	<Item file="%ModDir%/Items/Materials/overrides_materials.xml"/>
 
 	<!--+++++++++++-->
 	<!--AFFLICTIONS--> 
@@ -68,6 +77,8 @@
 	<!--MISC-->
 	<!--++++-->
 	<UIStyle file="%ModDir%/styles.xml"/>
+	<Jobs file="%ModDir%/Jobs/jobs.xml"/>
+	<Jobs file="%ModDir%/Jobs/job_overrides.xml"/>
 
 	<!--+++++-->
 	<!--TEXTS-->

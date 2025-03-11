@@ -102,8 +102,8 @@
 
   <Item name="" identifier="scp_pistolkit" description="" category="material" tags="mediumitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.25">
 
-    <InventoryIcon texture="%ModDir%/Materials/materials.png" sourcerect="0,0,148,71" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Materials/materials.png" sourcerect="0,0,148,71" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,0,148,71" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,0,148,71" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 
@@ -125,8 +125,8 @@
 
   <Item name="" identifier="scp_shotgunkit" description="" category="material" tags="mediumitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.25">
 
-    <InventoryIcon texture="%ModDir%/Materials/materials.png" sourcerect="0,71,148,70" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Materials/materials.png" sourcerect="0,71,148,70" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,71,148,70" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,71,148,70" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 
@@ -150,8 +150,8 @@
 
   <Item name="" identifier="scp_riflekit" description="" category="material" tags="mediumitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.25">
 
-    <InventoryIcon texture="%ModDir%/Materials/materials.png" sourcerect="0,141,159,70" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Materials/materials.png" sourcerect="0,141,159,70" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,141,159,70" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,141,159,70" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 
@@ -175,8 +175,8 @@
 
   <Item name="" identifier="scp_sniperkit" description="" category="material" tags="mediumitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.25">
 
-    <InventoryIcon texture="%ModDir%/Materials/materials.png" sourcerect="0,212,158,71" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Materials/materials.png" sourcerect="0,212,158,71" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,212,158,71" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,212,158,71" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 
@@ -200,7 +200,7 @@
 
   <Item name="" identifier="scp_machinegunkit" description="" category="material" tags="mediumitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.25">
 
-    <Sprite texture="%ModDir%/Materials/materials.png" sourcerect="0,284,169,81" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,284,169,81" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 
@@ -225,7 +225,7 @@
 
   <Item name="" identifier="scp_explosiveskit" description="" category="material" tags="mediumitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.25">
 
-    <Sprite texture="%ModDir%/Materials/materials.png" sourcerect="0,365,170,82" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="0,365,170,82" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 
@@ -249,8 +249,8 @@
 
   <Item name="" identifier="scp_basicparts" description="" maxstacksize="12" maxstacksizecharacterinventory="2" category="material" tags="mediumitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.27">
 
-    <InventoryIcon texture="%ModDir%/Materials/materials.png" sourcerect="155,-4,84,84" origin="0.5,0.5" />
-    <Sprite name="basicweaponsbox" texture="%ModDir%/Materials/materials.png" sourcerect="159,95,94,55" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="155,-4,84,84" origin="0.5,0.5" />
+    <Sprite name="basicweaponsbox" texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="159,95,94,55" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 
@@ -270,8 +270,8 @@
 
   <Item name="" identifier="scp_taucannonparts" description="" category="material" tags="mediumitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.25">
 
-    <InventoryIcon name="taupartsinv" texture="%ModDir%/Materials/materials.png" sourcerect="1,451,169,70" depth="0.55" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Materials/materials.png" sourcerect="1,451,169,70" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="taupartsinv" texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="1,451,169,70" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="1,451,169,70" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 
@@ -296,7 +296,7 @@
   <!--Wreck Items-->
   <Item name="" identifier="scp_wrecktools" category="material" subcategory="Salvagable" maxstacksize="4" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="60,133,150,41" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="60,133,150,41" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="25" density="25" />
 
     <Holdable 
@@ -317,7 +317,7 @@
 
   <Item name="" identifier="scp_wreckarmor" category="material" subcategory="Salvagable" maxstacksize="4" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="202,39,185,88" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="202,39,185,88" depth="0.55" origin="0.5,0.5" />
 
     <Body width="45" height="42" density="25" />
 
@@ -337,7 +337,7 @@
 
   <Item name="" identifier="scp_wreckweapons" category="material" subcategory="Salvagable" maxstacksize="4" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="71,76,129,48" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="71,76,129,48" depth="0.55" origin="0.5,0.5" />
 
     <Body width="45" height="35" density="25" />
 
@@ -359,7 +359,7 @@
 
   <Item name="" identifier="scp_wreckammo" category="material" subcategory="Salvagable" maxstacksize="4" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="73,178,128,51" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="73,178,128,51" depth="0.55" origin="0.5,0.5" />
 
     <Body width="45" height="39" density="25" />
 
@@ -381,7 +381,7 @@
 
   <Item name="" identifier="scp_picture" category="material" maxstacksize="1" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" hideinmenus="true">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="660,523,110,110" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="660,523,110,110" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="39" density="25" />
 
     <Holdable 
@@ -424,7 +424,7 @@
 
   <Item name="" identifier="scp_wreckfractal" category="material" subcategory="Salvagable" maxstacksize="4" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="358,131,124,78" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="358,131,124,78" depth="0.55" origin="0.5,0.5" />
 
     <Body width="45" height="40" density="25" />
 
@@ -446,7 +446,7 @@
 
   <Item name="" identifier="scp_wreckfractalactive" category="material" maxstacksize="2" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="361,225,124,78" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="361,225,124,78" depth="0.55" origin="0.5,0.5" />
 
     <Body width="45" height="40" density="25" />
 
@@ -487,7 +487,7 @@
 
   <Item name="" identifier="scp_wreckmetalpile" category="material" subcategory="Salvagable" maxstacksize="2" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="79,344,122,48" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="79,344,122,48" depth="0.55" origin="0.5,0.5" />
 
     <Body width="45" height="35" density="25" />
 
@@ -509,7 +509,7 @@
 
   <Item name="" identifier="scp_wreckorepile" category="material" subcategory="Salvagable" maxstacksize="4" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="86,405,114,50" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="86,405,114,50" depth="0.55" origin="0.5,0.5" />
 
     <Body width="45" height="35" density="25" />
 
@@ -531,7 +531,7 @@
 
   <Item name="" identifier="scp_largeweaponcase" category="material" subcategory="Salvagable" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="302,332,216,94" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="302,332,216,94" depth="0.55" origin="0.5,0.5" />
 
     <Body width="45" height="35" density="25" />
 
@@ -553,7 +553,7 @@
 
   <Item name="" identifier="scp_smallweaponcase" category="material" subcategory="Salvagable" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="305,429,89,75" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="305,429,89,75" depth="0.55" origin="0.5,0.5" />
 
     <Body width="45" height="35" density="25" />
 
@@ -571,7 +571,7 @@
 
   <Item name="" identifier="scp_wreckexplosivescase" category="material" subcategory="Salvagable" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="304,508,185,95" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="304,508,185,95" depth="0.55" origin="0.5,0.5" />
     
     <Body width="45" height="35" density="25" />
 
@@ -589,7 +589,7 @@
 
   <Item name="" identifier="scp_wreckammocrate" category="material" subcategory="Salvagable" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="330,611,137,77" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="330,611,137,77" depth="0.55" origin="0.5,0.5" />
 
     <Body width="137" height="77" density="25" />
 
@@ -607,7 +607,7 @@
 
   <Item name="" identifier="scp_durasteel" description="" category="material" maxstacksize="12" maxstacksizecharacterinventory="4" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/materials.png" sourcerect="2,527,53,26" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="2,527,53,26" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="30" />
 
@@ -631,7 +631,7 @@
 
   <Item name="" identifier="scp_prototypeusb" maxstacksize="4" maxstacksizecharacterinventory="1" description="" category="material" tags="smallitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.2">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="861,42,89,89" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="861,42,89,89" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 
@@ -645,7 +645,7 @@
 
   <Item name="" identifier="scp_durasteelmunitionscase" description="" category="material" maxstacksize="2" Tags="smallitem" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light">
 
-    <Sprite texture="%ModDir%/Materials/materials.png" sourcerect="256,95,124,77" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/materials.png" sourcerect="256,95,124,77" depth="0.55" origin="0.5,0.5" />
     <Body width="50" height="25" density="30" />
 
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -688,7 +688,7 @@
 
   <Item name="" identifier="scp_psiartifact" category="Alien" Tags="alien,alienartifact,psiartifact" sonarsize="120" spritecolor="200,200,200,255" scale="0.5" impactsoundtag="impact_metal_heavy">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" depth="0.6" sourcerect="769,383,88,108" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" depth="0.6" sourcerect="769,383,88,108" origin="0.5,0.5" />
     <Body radius="45" density="40" friction="0.95" />
 
     <Holdable 
@@ -750,7 +750,7 @@
   
   <Item name="" identifier="scp_psiartifactslugcat" Tags="alien,alienartifact,psiartifactslugcat" spritecolor="200,200,200,255" variantof="scp_psiartifact">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" depth="0.6" sourcerect="862,497,88,108" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" depth="0.6" sourcerect="862,497,88,108" origin="0.5,0.5" />
 
     <Body radius="45" density="40" friction="0.95" />
 
@@ -760,7 +760,7 @@
 
   <Item name="" identifier="scp_radartifact" category="Alien" Tags="alien,alienartifact,radartifact" sonarsize="120" spritecolor="200,200,200,255" scale="0.5" impactsoundtag="impact_metal_heavy">
 
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" depth="0.6" sourcerect="860,385,88,108" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" depth="0.6" sourcerect="860,385,88,108" origin="0.5,0.5" />
 
     <Body radius="45" density="40" friction="0.95" />
     
@@ -817,7 +817,7 @@
   <!-- we don't want this, but we might later. let's just leave it here for now.
 
   <Item name="" identifier="scp_ae1025" category="material" health="900" maxstacksize="1" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" hideinmenus="true">
-    <Sprite texture="%ModDir%/Materials/wreckitems.png" sourcerect="765,301,55,74" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Materials/wreckitems.png" sourcerect="765,301,55,74" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="39" density="25" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,LeftHand,RightHand" aimpos="40,-20" handle1="5,0" aimangle="260" msg="ItemMsgPickUpSelect">
       <StatusEffect type="Always" target="NearbyCharacters" range="600" interval="1">
