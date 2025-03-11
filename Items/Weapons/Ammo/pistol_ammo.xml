@@ -397,6 +397,49 @@
 		<!--.45 ACP / 11.43x23mm-->
 		<!--Heavy Pistol Ammo-->
 
+		<!--11.43x23 10 round magazine-->
+		<!--Heavy Pistol Magazine-->
+	<Item 
+		name="" 
+		identifier="scp_45mag" 
+		description="" 
+		tags="smallitem,45pistolammo,ehaammo,handheldammo,4510mag" 
+		cargocontaineridentifier="scp_ammocrate" 
+		maxstacksize="12" 
+		maxstacksizecharacterinventory="4" 
+		category="Weapon" 
+		subcategory="Coalition" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="178,142,14,66" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="178,142,14,45" origin="0.5,0.5" />
+
+		<Body width="30" height="40" density="50" />
+
+		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+
+		<ItemContainer 
+			hideitems="true" 
+			capacity="1" 
+			drawinventory="false" 
+			canbeselected="false" 
+			ShowConditionInContainedStateIndicator="true" 
+			SpawnWithId="scp_45projectile" 
+			removecontaineditemsondeconstruct="true"
+			 containedstateindicatorstyle="bullet">
+		
+		<Containable items="scp_45projectile" />
+
+		<StatusEffect type="OnUse" target="This" condition="-11.1" disabledeltatime="true">
+			<SpawnItem identifier="scp_45projectile" spawnposition="ThisInventory" />
+			<ParticleEmitter particle="scp_spentcasingpistol" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
+		</StatusEffect>
+
+		</ItemContainer>
+	</Item>
+
+		<!--###-->
 
 		<!--11.43x23 10 round Incendiary magazine-->
 		<!--Heavy Pistol Burner Magazine-->
@@ -438,6 +481,58 @@
 		</ItemContainer>
 
 
+	</Item>
+
+		<!--###-->
+
+		<!--11.43x23 round-->
+		<!--Heavy Pistol Projectile-->
+	<Item 
+		name="" 
+		identifier="scp_45projectile" 
+		tags="smallitem,45pistolammo,pistolammoitem" 
+		category="Weapon" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true" 
+		scale="0.4">
+
+		<InventoryIcon texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Ammo/scp_556round.png" sourcerect="896,960,64,54" origin="0.5,0.5" />
+
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true"
+			 removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.75" />
+
+			<Attack 
+				structuredamage="1.0" 
+				targetforce="1.5" 
+				itemdamage="0.4" 
+				severlimbsprobability="0.125">
+
+				<Affliction identifier="bleeding" strength="12.5" />
+				<Affliction identifier="bleeding" strength="12.5" probability="0.5" />
+				<Affliction identifier="gunshotwound" strength="12" />
+				<Affliction identifier="gunshotwound" strength="12" probability="0.4" />
+				<Affliction identifier="stun" strength="0.15" probability="0.4" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget" comparison="or">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+				<Remove />
+			</StatusEffect>
+		</Projectile>
 	</Item>
 
 		<!--###-->
@@ -491,8 +586,6 @@
 			</StatusEffect>
 
 		</Projectile>
-
-
 	</Item>
 
 
@@ -500,6 +593,62 @@
 		<!--.357 / 9x33mmR-->
 		<!--Service Revolver Ammo-->
 
+
+		<!--9x33mmR AP round-->
+		<!--Service Revolver AP Round-->
+	<Item 
+		name="" 
+		identifier="scp_357round" 
+		description="" 
+		category="Weapon" subcategory="Coalition" 
+		interactthroughwalls="true" 
+		maxstacksize="24" maxstacksizecharacterinventory="12"
+		cargocontaineridentifier="scp_ammocrate" 
+		tags="smallitem,357ammo,ehaammo,pistolammoitem" 
+		impactsoundtag="impact_metal_light" 
+		scale="0.5">
+		
+		<InventoryIcon name="357apinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="402,11,38,38" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="26,254,8,23" origin="0.5,0.5" />
+
+		<Body width="40" height="15" density="40" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" 
+			removeonhit="true">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,100,240" scalemultiplier="0.5,0.5" />
+
+			<Attack 
+				structuredamage="1.0" itemdamage="6"
+				targetforce="10" 
+				severlimbsprobability="0.05" 
+				penetration="0.05">
+
+				<Affliction identifier="bleeding" strength="30" />
+				<Affliction identifier="bleeding" strength="15" probability="0.5" />
+				<Affliction identifier="gunshotwound" strength="32.5" />
+				<Affliction identifier="gunshotwound" strength="12.5" probability="0.3" />
+				<Affliction identifier="stun" strength="0.25" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+		<!--###-->
 
 		<!--9x33mmR AP round-->
 		<!--Service Revolver AP Round-->

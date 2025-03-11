@@ -346,8 +346,8 @@
 
 	<Item name="" description="" identifier="scp_condensedstabilozine" maxstacksize="2" maxstacksizecharacterinventory="1" category="Medical" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-	    <InventoryIcon name="constabinv" texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="124,292,56,62" origin="0.5,0.5" />
-	    <Sprite texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="360,106,65,10" depth="0.6" origin="0.5,0.5" />
+	    <InventoryIcon name="constabinv" texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="124,292,56,62" origin="0.5,0.5" />
+	    <Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="360,106,65,10" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="35" height="10" density="15" />
 
@@ -393,8 +393,8 @@
 
 		<SuitableTreatment type="scp_psidamage" suitability="100" />
 
-	    <Sprite texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="6,104,30,20" depth="0.6" origin="0.5,0.5" />
-	    <InventoryIcon name="psyblockinv" texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="1,129,45,45" depth="0.6" origin="0.5,0.5" />
+	    <Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="6,104,30,20" depth="0.6" origin="0.5,0.5" />
+	    <InventoryIcon name="psyblockinv" texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="1,129,45,45" depth="0.6" origin="0.5,0.5" />
 
 		<Body width="25" height="20" density="20" />
 

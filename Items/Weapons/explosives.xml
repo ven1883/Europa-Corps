@@ -321,7 +321,7 @@
 			<RequiredSkill identifier="weapons" level="65" />
 			
 			<StatusEffect type="OnUse" target="This" delay="0.4">
-				<Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/40mmreload.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
 			</StatusEffect>
 		
 		</RangedWeapon>
@@ -363,7 +363,7 @@
 			<StatusEffect type="OnUse" target="This" Condition="-10000" />
 
 			<StatusEffect type="OnBroken" target="This" delay="0.5">
-				<Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="1.5" stackable="false" />

@@ -594,9 +594,9 @@
 				<Conditional feniternerveagent="gte 35" />
 				<Conditional feniternerveagent="lt 60" />
 				<Conditional ishuman="true" />
-				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath1.ogg" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath2.ogg" />
-				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath3.ogg" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath1.ogg" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath2.ogg" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath3.ogg" />
 			</StatusEffect>
 		</PeriodicEffect>
 
@@ -608,9 +608,9 @@
 				<Conditional feniternerveagent="gte 60" />
 				<Conditional feniternerveagent="lt 100" />
 				<Conditional ishuman="true" />
-				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath1.ogg" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath2.ogg" />
-				<Sound file="%ModDir%/Sounds/Afflictions/outofbreath3.ogg" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath1.ogg" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath2.ogg" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath3.ogg" />
 			</StatusEffect>
 		</PeriodicEffect>
 
@@ -1310,8 +1310,8 @@
 
 			<StatusEffect target="Character">
 				<Conditional IsLocalPlayer="True" />
-				<Sound file="%ModDir%/Sounds/Afflictions/whisper.ogg" selectionmode="Random" />
-				<Sound file="%ModDir%/Sounds/Afflictions/insect.ogg" />
+				<Sound file="%ModDir%/Sounds/Medical/whisper.ogg" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Medical/insect.ogg" />
 			</StatusEffect>
 		</PeriodicEffect>
 
@@ -1320,7 +1320,7 @@
 
 			<StatusEffect target="Character">
 				<Conditional IsLocalPlayer="True" />
-				<Sound file="%ModDir%/Sounds/Afflictions/knock.ogg" />
+				<Sound file="%ModDir%/Sounds/Medical/knock.ogg" />
 			</StatusEffect>
 		</PeriodicEffect>
 

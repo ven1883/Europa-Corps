@@ -23,7 +23,7 @@
 
 				<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" />
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0" />
 				</StatusEffect>
 
@@ -69,7 +69,7 @@
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/machinepistol1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="Contained">
@@ -83,7 +83,7 @@
 					<sound file="%ModDir%/Sounds/Weapons/Guns/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
-					<StatusEffect type="OnUse">
+					<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="Contained">
@@ -125,7 +125,7 @@
 
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="20.0,8.0" colormultiplier="255,200,200,200" />
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="5.0,16.0" colormultiplier="255,200,200,200" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="300.0" force="40" shockwave="true" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="150.0" />
 				</StatusEffect>
 
@@ -197,7 +197,7 @@
 					<sound file="%ModDir%/Sounds/Weapons/Guns/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="Contained">
@@ -245,7 +245,7 @@
 
 				<StatusEffect type="OnUse" target="This" reload="0.65" setvalue="true" delay="0.15" />
 				<StatusEffect type="OnUse" target="This" reload="0.09" setvalue="true" delay="0.5" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="1.75" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="Contained">
@@ -293,7 +293,7 @@
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/assaultrifle1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="Contained">
@@ -334,11 +334,11 @@
 				<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/rifle.ogg" type="OnUse" range="4000" volume="1.2" />
 
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<RequiredItem items="grenade" type="Contained" targetslot="1" />
 					<Sound file="Content/Items/Weapons/WEAPON_rifleGrenadeShot1.ogg" type="OnUse" range="3000" />
 				</StatusEffect>
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="2.0" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="10.0" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" delay="0.5" target="Character">
@@ -420,10 +420,10 @@
 					<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="3.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="12.0" />
 				</StatusEffect>
-				<StatusEffect type="OnUse" delay="0.6">
+				<StatusEffect type="OnUse" delay="0.6" target="This">
 					<Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
 					<Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
 					<Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
@@ -480,7 +480,7 @@
 					<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.6" stackable="false" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
 				</StatusEffect>
 				<RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -530,10 +530,10 @@
 
 				<StatusEffect type="OnUse" target="This" Condition="-3500" />
 				<StatusEffect type="OnBroken" target="This" delay="0.2">
-					<sound file="%ModDir%/Sounds/Weapons/Guns/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.8" stackable="false" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
 				</StatusEffect>
 
@@ -577,7 +577,7 @@
 				<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/HarpoonGun1.ogg" type="OnUse" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
 				</StatusEffect>
 				<RequiredItems items="harpoonammo" type="Contained" msg="ItemMsgSpearRequired" />
@@ -612,7 +612,7 @@
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="12.0,6.0" colormultiplier="255,200,200,200" />
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,12.0" colormultiplier="255,200,200,200" />
-				<StatusEffect type="OnUse" forceplaysounds="true">
+				<StatusEffect type="OnUse" forceplaysounds="true" target="This">
 					<Sound file="%ModDir%/Sounds/Weapons/Guns/hmg1.ogg" type="OnUse" range="3500" selectionmode="Random" volume="1.15" />
 					<Sound file="%ModDir%/Sounds/Weapons/Guns/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="0.9" />
 					<Sound file="%ModDir%/Sounds/Weapons/Guns/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="1.05" />
@@ -622,7 +622,7 @@
 				<StatusEffect type="Always" target="This" Condition="1.5">
 					<Conditional condition="gt 0" />
 				</StatusEffect>
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="180.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
@@ -704,10 +704,10 @@
 
 				<StatusEffect type="OnUse" target="This" Condition="-10000" />
 				<StatusEffect type="OnBroken" target="This" delay="0.5">
-					<Sound file="%ModDir%/Sounds/Weapons/Guns/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" frequencymultiplier="0.95" />
+					<Sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" frequencymultiplier="0.95" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="1.8" stackable="false" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0" />
 				</StatusEffect>
 
@@ -755,7 +755,7 @@
 				<Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator4.ogg" type="OnUse" range="3000" />
 
 				<ChargeSound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAcceleratorStartLoop.ogg" range="1000" />
-				<StatusEffect type="OnUse">
+				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="25.0" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="Contained">

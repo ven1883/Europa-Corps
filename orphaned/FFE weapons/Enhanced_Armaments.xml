@@ -236,7 +236,7 @@
       <Sound file="%ModDir%/Sounds/m90.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse" target="This" Condition="-3500" />
       <StatusEffect type="OnBroken" target="This">
-        <sound file="%ModDir%/Sounds/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" frequencymultiplier="0.7" />
+        <sound file="%ModDir%/Sounds/Guns/Relaods/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" frequencymultiplier="0.7" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This">
         <RequiredItem items="heavyhotshell" type="contained" />

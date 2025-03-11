@@ -4,8 +4,8 @@
 
   <Item name="" identifier="scp_firelatexhot" category="Weapon" subcategory="Chemical Weapons" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="287,9,33,69" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="287,9,33,69" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="287,9,33,69" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="287,9,33,69" depth="0.6" origin="0.5,0.5" />
     
     <Body width="35" height="65" density="20" />
 
@@ -67,8 +67,8 @@
 	
   <Item name="" identifier="scp_replicatinglatexrefined" category="Weapon" subcategory="Chemical Weapons" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="322,9,32,69" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="322,9,32,69" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="322,9,32,69" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="322,9,32,69" depth="0.6" origin="0.5,0.5" />
 
     <Body width="35" height="65" density="20" />
 
@@ -142,8 +142,8 @@
 
   <Item name="" identifier="scp_devilsblood" maxstacksize="2" description="" category="Weapon" subcategory="Chemical Weapons" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-    <InventoryIcon name="devilsinv" texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="177,371,56,62" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Sprites/Items/Medical/EHA_medical.png" sourcerect="439,121,35,66" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="devilsinv" texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="177,371,56,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="439,121,35,66" depth="0.6" origin="0.5,0.5" />
 
     <Body width="35" height="65" density="20" />
 

@@ -2,8 +2,8 @@
 <Items>
   <Item name="" description="" maxstacksize="4" maxstacksizecharacterinventory="2" identifier="scp_replicatinglatex" category="Weapon" subcategory="Chemical Weapons" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.55" impactsoundtag="impact_soft" RequireAimToUse="True">
 
-    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/medical.png" sourcerect="342,259,31,61" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Sprites/Items/Medical/medical.png" sourcerect="342,259,31,61" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="342,259,31,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="342,259,31,61" depth="0.6" origin="0.5,0.5" />
 
     <Body width="25" height="40" density="20" />
 
@@ -51,8 +51,8 @@
 
   <Item name="" description="" maxstacksize="4" maxstacksizecharacterinventory="2" identifier="scp_firelatex" category="Weapon" subcategory="Chemical Weapons" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.55" impactsoundtag="impact_soft" RequireAimToUse="True">
 
-    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/medical.png" sourcerect="374,259,31,61" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Sprites/Items/Medical/medical.png" sourcerect="374,259,31,61" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="374,259,31,61" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="374,259,31,61" depth="0.6" origin="0.5,0.5" />
 
     <Body width="25" height="40" density="20" />
 
@@ -664,8 +664,8 @@
 
   <Item name="" identifier="scp_hexanovagent" description="" maxstacksize="2" maxstacksizecharacterinventory="1" category="Weapon" subcategory="Chemical Weapons" tags="mediumitem" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" scale="0.5">
 
-    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/medical.png" sourcerect="370,205,46,46" origin="0.5,0.5" />
-    <Sprite name="novacompoundground" texture="%ModDir%/Sprites/Items/Medical/medical.png" sourcerect="350,205,20,41" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="370,205,46,46" origin="0.5,0.5" />
+    <Sprite name="novacompoundground" texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="350,205,20,41" depth="0.55" origin="0.5,0.5" />
 
     <Body width="50" height="25" density="50" />
 

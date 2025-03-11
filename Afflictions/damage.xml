@@ -105,6 +105,7 @@
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
 
+<!-- fucking psi bullshit
 	<Affliction 
 		identifier="scp_psidamage" 
 		description="" 
@@ -250,9 +251,11 @@
     <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1040,0,128,128" color="0,200,0,255" origin="0,0" />
     <AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psiblindness.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
+-->
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
+<!--
   <Affliction 
 		identifier="scp_psidamagechronic" 
 		description="" 
@@ -375,7 +378,7 @@
     <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1299,0,128,128" color="0,200,0,255" origin="0,0" />
     <AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psiblindness2.png" sourcerect="0,0,1024,680" colormultiplier="0,0,0,255" origin="0,0" />
   </Affliction>
-
+-->
 	<!--++++++++++++++++++++++++++++++++++++-->
 
   <Affliction 
@@ -403,5 +406,6 @@
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
+
 
 </Afflictions>
