@@ -114,6 +114,12 @@
   <entitydescription.scp_45projectile></entitydescription.scp_45projectile>
   <entityname.scp_45pprojectile>11.43mm round</entityname.scp_45pprojectile>
   <entitydescription.scp_45pprojectile></entitydescription.scp_45pprojectile>
+  <entityname.scp_45incendmag>Heavy Pistol Burner Magazine</entityname.scp_45incendmag>
+  <entitydescription.scp_45incendmag>A 10 round 11.4x23mm magazine meant for pistols, containing FMJ-IL cartridges meant to cause severe burns upon impact.</entitydescription.scp_45incendmag>
+  <entityname.scp_umpincendmag>Heavy Submachine Gun Burner Magazine</entityname.scp_umpincendmag>
+  <entitydescription.scp_umpincendmag>A 25 round 11.4x23mm stick magazine containing FMJ-IL cartridges, designed to cause severe burns on contact with skin.</entitydescription.scp_umpincendmag>
+  <entityname.scp_45incendproj>11.4mm round</entityname.scp_45incendproj>
+  <entitydescription.scp_45incendproj></entitydescription.scp_45incendproj>
   <entityname.scp_p226>Coalition Pistol</entityname.scp_p226>
   <entitydescription.scp_p226>A 9x19mm recoil-operated pistol. It is a near fool-proof design found all across Europa, being adopted by the Coalition as its primary sidearm despite the cartridge's inherently lackluster capabilities.</entitydescription.scp_p226>
   <entityname.scp_mxa1>Coalition Caseless Assault Rifle</entityname.scp_mxa1>
@@ -549,6 +555,12 @@
   <entityname.scp_sr2>Renegade Heavy Submachine Gun</entityname.scp_sr2>
   <entitydescription.scp_sr2>An 11.43x23mm SMG that has been derived from an already existing SMG design, it is extremely compact however due to the very short barrel accuracy is atrocious.</entitydescription.scp_sr2>
   <!--weapons_vintageweapons-->
+  <entityname.scp_akliv>Vanguard Oppressor AR</entityname.scp_akliv>
+  <entitydescription.scp_akliv>A heavily modified Renegade Oppressor AR chambered in 7.62x39mm, with a custom gas block and more ergonomic furniture.</entitydescription.scp_akliv>
+  <entityname.scp_sg550mli>Aftermarket Coalition AR</entityname.scp_sg550mli>
+  <entitydescription.scp_sg550mli>A heavily modified Coalition AR with substantially better furniture, being rechambered for 6.5x39mm to further increase it's viability.</entitydescription.scp_sg550mli>
+  <entityname.scp_usp45>Seitenwaffe</entityname.scp_usp45>
+  <entitydescription.scp_usp45>A blocky 11.4x23mm pistol likely of Separatist origin, being heavily modified by the previous owner.</entitydescription.scp_usp45>
   <entityname.scp_nagant>Samorodok</entityname.scp_nagant>
   <entitydescription.scp_nagant>An old 7.62x54mmR bolt action rifle with a just as old optic attached to it.</entitydescription.scp_nagant>
   <entityname.scp_nagantmag>Samorodok Stripper Clip</entityname.scp_nagantmag>
@@ -1292,5 +1304,50 @@
     <entityname.scp_domique>Domique</entityname.scp_domique>
     <entitydescription.scp_domique>A very old 12 gauge shotgun using the first prototype of dual environment bolt systems, it was a standard issue gun for security until more capable firearms were adapted and produced.</entitydescription.scp_domique>
     <entityname.scp_g36c>Karabiner</entityname.scp_g36c>
-    <entitydescription.scp_g36c>A 5.56x45mm Assault Carbine that was once used by the Coalition, however the Separatists used this design for their Precision AR.</entitydescription.scp_g36c>  
+    <entitydescription.scp_g36c>A 5.56x45mm Assault Carbine that was once used by the Coalition, however the Separatists used this design for their Precision AR.</entitydescription.scp_g36c> 
+
+	<!-- chemical grenades -->
+	<entityname.fenitergasgrenade1>Nerve Agent Gas Grenade</entityname.fenitergasgrenade1>
+	<entitydescription.fenitergasgrenade1>Contains a highly lethal gas mixture that can be rapidly absorbed through the skin, making a hazard suit necessary for protection.</entitydescription.fenitergasgrenade1>
+	<entityname.nervegasemitter>Nerve Agent Emitter</entityname.nervegasemitter>
+	<entityname.nervegasgrenadeactive>Leaking Nerve Agent Gas Grenade</entityname.nervegasgrenadeactive>
+	<entityname.fenitergasgrenade2>Pulmonary Agent Gas Grenade</entityname.fenitergasgrenade2>
+	<entitydescription.fenitergasgrenade2>Contains a dilute but invariably lethal gas mixture that can be absorbed through the lungs, making respirators sufficient protection. Slow to kill, but near invisible to the naked eye and difficult to treat.</entitydescription.fenitergasgrenade2>
+	<entityname.pulmgasemitter>Pulmonary Agent Emitter</entityname.pulmgasemitter>
+	<entityname.pulmgasgrenadeactive>Leaking Pulmonary Agent Gas Grenade</entityname.pulmgasgrenadeactive>
+	<entityname.fenitergasgrenade3>Blood Agent Gas Grenade</entityname.fenitergasgrenade3>
+	<entitydescription.fenitergasgrenade3>Contains a concentrated cyanide-based toxin that causes immediate damage on contact with the skin and absorbs into the blood, making a hazard suit necessary for protection. Rapidly lethal and extremely visible, but long term effects are near non-existent should the victim survive.</entitydescription.fenitergasgrenade3>
+	<entityname.bloodgasemitter>Blood Agent Emitter</entityname.bloodgasemitter>
+	<entityname.bloodgasgrenadeactive>Leaking Blood Agent Gas Grenade</entityname.bloodgasgrenadeactive>
+	<entityname.fenitergasgrenade4>Blistering Agent Grenade</entityname.fenitergasgrenade4>
+	<entitydescription.fenitergasgrenade4>Contains a potent acidic gas mixture that causes immediate burns on contact with the skin, and can build up in the lungs if inhaled, causing severe long term effects. Immediately lethal and very visible, but with long term effects mitigated by a respirator.</entitydescription.fenitergasgrenade4>
+	<entityname.blistergasemitter>Blistering Agent Emitter</entityname.blistergasemitter>
+	<entityname.blistergasgrenadeactive>Leaking Blistering Agent Gas Grenade</entityname.blistergasgrenadeactive>
+	<entityname.fenitergasgrenade5>Tear Gas Grenade</entityname.fenitergasgrenade5>
+	<entitydescription.fenitergasgrenade5>Contains a potent irritant capable of causing extreme pain and crippling targets when inhaled. Barely lethal and easy to mitigate with a respirator, but crippling for a moderate period and with instant effect.</entitydescription.fenitergasgrenade5>
+	<entityname.teargasemitter>Tear Gas Emitter</entityname.teargasemitter>
+	<entityname.teargasgrenadeactive>Leaking Tear Gas Grenade</entityname.teargasgrenadeactive>
+	<entityname.fenitergasgrenade6>Psychochemical Agent Gas Grenade</entityname.fenitergasgrenade6>
+	<entitydescription.fenitergasgrenade6>Contains a moderately dangerous neurotoxin that causes severe hallucinations and brain damage when inhaled. Low lethality and easy to mitigate with a respirator, but permanently crippling. Some soldiers intentionally inhale small doses for the chemical's psychedelic effects.</entitydescription.fenitergasgrenade6>
+	<entityname.psychogasemitter>Psychochemical Agent Emitter</entityname.psychogasemitter>
+	<entityname.psychogasgrenadeactive>Leaking Psychochemical Agent Gas Grenade</entityname.psychogasgrenadeactive>
+	<entityname.fenitergasgrenade7>Sedative Agent Gas Grenade</entityname.fenitergasgrenade7>
+	<entitydescription.fenitergasgrenade7>Contains potent and rapid-acting sedatives that can cause loss of consciousness seconds after inhalation, but require a moderate dose to have any effect. Completely non-lethal with no long-term effects aswell as being easy to mitigate with a respirator.</entitydescription.fenitergasgrenade7>
+	<entityname.sleepgasemitter>Sedative Agent Emitter</entityname.sleepgasemitter>
+	<entityname.sleepgasgrenadeactive>Leaking Sedative Agent Gas Grenade</entityname.sleepgasgrenadeactive>
+
+	<!--chemical rounds-->
+	<entityname.feniterrifleround1>Tear Gas Surplus Rifle Round</entityname.feniterrifleround1>
+	<entitydescription.feniterrifleround1>A hollowed out rifle round filled to the brim with a tear gas mixture. Incomparably painful to be hit by, but deals lackluster damage compared to a solid round.</entitydescription.feniterrifleround1>
+	<entityname.fenitersmgmagazine1>Tear Gas Surplus SMG Magazine</entityname.fenitersmgmagazine1>
+	<entitydescription.fenitersmgmagazine1>Hollow small caliber rounds each containing a small amount of tear gas. Extremely painful to be hit by, but they deal lackluster damage compared to solid rounds.</entitydescription.fenitersmgmagazine1>
+	<entityname.feniterrifleround2>Nerve Agent Surplus Rifle Round</entityname.feniterrifleround2>
+	<entitydescription.feniterrifleround2>A hollowed out rifle round filled to the brim with a nerve agent mixture. Less damaging than a solid round, but poisons the target and guarantees death unless treated or blocked by a hazard suit.</entitydescription.feniterrifleround2>
+	<entityname.fenitersmgmagazine2>Nerve Agent Surplus SMG Magazine</entityname.fenitersmgmagazine2>
+	<entitydescription.fenitersmgmagazine2>Hollow small caliber rounds each containing a small amount of a nerve agent mixture. Less damaging than solid rounds, but they poison targets and guarantee death unless treated or blocked by a hazard suit.</entitydescription.fenitersmgmagazine2>
+	<entityname.feniterrifleround3>Psychochemical Agent Surplus Rifle Round</entityname.feniterrifleround3>
+	<entitydescription.feniterrifleround3>A hollowed out rifle round filled to the brim with a psychochemical agent mixture. Less damaging than a solid round, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.feniterrifleround3>
+	<entityname.fenitersmgmagazine3>Psychochemical Agent Surplus SMG Magazine</entityname.fenitersmgmagazine3>
+	<entitydescription.fenitersmgmagazine3>Hollow small caliber rounds each containing a small amount of a psychochemical agent mixture. Less damaging than solid rounds, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.fenitersmgmagazine3>
+
 </infotexts>

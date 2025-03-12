@@ -55,187 +55,6 @@
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-	<!--~BOOK AFFLICTIONS START~-->
-
-	<Affliction 
-		name="" 
-		identifier="scp_ae1025disease1" 
-		description="" 
-		type="bookinfection" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="20" showiconthreshold="75" 
-		karmachangeonapplied="-100" 
-		maxstrength="300">
-
-    <Effect 
-			minstrength="0" maxstrength="25" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="-1" 
-			minscreendistort="0.0" 
-			minscreenblur="0.0" maxscreenblur="0.0" 
-			minchromaticaberration="0.0" maxchromaticaberration="0" 
-			minfacetint="0,0,0,0" 
-			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
-
-      <StatusEffect target="Character" delay="10">
-        <Affliction identifier="organdamage" amount="2" />
-        <Affliction identifier="scp_vomiting" amount="4" probability="0.5" />
-        <Affliction identifier="organdamage" amount="3" probability="0.25" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-  <Affliction 
-		name="" 
-		identifier="scp_ae1025disease2" 
-		description="" 
-		type="bookinfection" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="20" showiconthreshold="75" 
-		karmachangeonapplied="-100" 
-		maxstrength="300">
-
-    <Effect 
-			minstrength="0" maxstrength="25" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="-1" 
-			minscreendistort="0.0" 
-			minscreenblur="0.0" maxscreenblur="0.0" 
-			minchromaticaberration="0.0" maxchromaticaberration="0" 
-			minfacetint="0,0,0,0" 
-			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
-
-      <StatusEffect target="Character" delay="10">
-        <Affliction identifier="organdamage" amount="2" />
-        <Affliction identifier="oxygenlow" amount="12" />
-        <Affliction identifier="organdamage" amount="4" probability="0.5" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-  <Affliction 
-		name="" 
-		identifier="scp_ae1025disease3" 
-		description="" 
-		type="bookinfection" 
-		causeofdeathdescription="" selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="20" showiconthreshold="75" 
-		karmachangeonapplied="-100"
-		maxstrength="300">
-
-    <Effect minstrength="0" maxstrength="25" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1" minscreendistort="0.0" minscreenblur="0.0" maxscreenblur="0.0" minchromaticaberration="0.0" maxchromaticaberration="0" minfacetint="0,0,0,0" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
-      <StatusEffect target="Character" delay="10">
-        <Affliction identifier="organdamage" amount="1" />
-        <Affliction identifier="bleeding" amount="1" />
-        <Affliction identifier="scp_vomitingblood" amount="2" />
-        <Affliction identifier="organdamage" amount="3" probability="0.25" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
-
-	<!--~BOOK AFFLICTIONS END~-->
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-	<!--~MASK AFFLICTIONS START~-->
-	
-  <Affliction 
-		identifier="scp_ae035damage" 
-		description="" 
-		type="poison" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" 
-		karmachangeonapplied="-100" 
-		maxstrength="200">
-
-    <Effect 
-			minstrength="0" maxstrength="200" 
-			multiplybymaxvitality="true" 
-			minvitalitydecrease="0" maxvitalitydecrease="2">
-		</Effect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="780,0,128,128" color="195,60,60,255" origin="0,0" />
-  </Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-	<Affliction 
-		name="" 
-		identifier="scp_ae035scare" 
-		description="" 
-		type="psiscare" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="11" showiconthreshold="11" 
-		maxstrength="10">
-
-    <Effect 
-			minstrength="0" maxstrength="10" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="-17.5" 
-			minscreendistort="0.0" 
-			minscreenblur="0.0" 
-			maxscreenblur="1" 
-			minchromaticaberration="0.0" maxchromaticaberration="0" 
-			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1">
-
-      <StatusEffect target="Character">
-        <Conditional IsLocalPlayer="True" />
-        <Affliction identifier="psychosis" amount="25" />
-        <Affliction identifier="scp_psidamage" amount="10" />
-        <Affliction identifier="scp_psidamage" amount="10" probability="0.25" />
-        <sound file="%ModDir%/Sounds/ae035scare.ogg" volume="1.75" dontmuffle="True" />
-      </StatusEffect>
-    </Effect>
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/curseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
-  </Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-	<Affliction 
-		name="" 
-		identifier="scp_ae035tragscare" 
-		description="" 
-		type="psiscare" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="11" showiconthreshold="11" 
-		maxstrength="10">
-
-    <Effect 
-			minstrength="0" maxstrength="10" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="-15" 
-			minscreendistort="0.0" 
-			minscreenblur="0.0" maxscreenblur="1" 
-			minchromaticaberration="0.0" maxchromaticaberration="0" 
-			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1">
-
-      <StatusEffect target="Character">
-        <Conditional IsLocalPlayer="True" />
-        <Affliction identifier="stun" amount="1" />
-        <Affliction identifier="scp_psidamage" amount="25" />
-        <sound file="%ModDir%/Sounds/horrortrag.ogg" volume="3" dontmuffle="True" />
-      </StatusEffect>
-    </Effect>
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/tragiccurseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
-  </Affliction>
-
-	<!--~MASK AFFLICTIONS END~-->
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
   <Affliction 
 		name="" 
 		identifier="scp_vomitingblood" 
@@ -466,7 +285,7 @@
 			strengthchange="-0.6">
 		</Effect>
 
-	   <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
+	   <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
 	 </Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -512,7 +331,7 @@
 			minspeedmultiplier="0.7" maxspeedmultiplier="0.7">
 		</Effect>
 
-		<icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1428,0,128,128" color="103,103,103,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1428,0,128,128" color="103,103,103,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->

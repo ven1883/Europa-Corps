@@ -18,7 +18,7 @@
 				<Affliction identifier="bleeding" amount="0.2" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="0,128,128,128" color="139,60,42,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="0,128,128,128" color="139,60,42,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -77,7 +77,7 @@
 			multiplybymaxvitality="true" 
 			minvitalitydecrease="100" maxvitalitydecrease="100">
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="128,128,128,128" color="194,169,157,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="128,128,128,128" color="194,169,157,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -126,7 +126,7 @@
 			multiplybymaxvitality="true" 
 			minvitalitydecrease="100" maxvitalitydecrease="100">
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="256,128,128,128" color="194,169,157,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="256,128,128,128" color="194,169,157,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -152,7 +152,7 @@
 			</StatusEffect>
 
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="0,0,128,128" color="68,157,198,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="0,0,128,128" color="68,157,198,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->

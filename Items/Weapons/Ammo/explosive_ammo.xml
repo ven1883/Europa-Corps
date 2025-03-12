@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--MARKED FOR FIXING-->
+
+<Items>
+
+		<!--Anti-Sub Rockets-->
+
+	<!--anti-sub fragmentation grenade-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7he" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="4" 
+		maxstacksizecharacterinventory="2" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon name="rpg7heinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,0,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" />
+		<Body width="200" height="40" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" launchimpulse="50.0" sticktocharacters="false">
+			<Attack structuredamage="15" penetration="0.25">
+				<Affliction identifier="explosiondamage" strength="50" />
+			</Attack>
+
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+
+				<Explosion 
+				range="300.0"
+				ballastfloradamage="80" structuredamage="5" levelwalldamage="15" itemdamage="15"
+				flames="false" 
+				force="10.0" 
+				severlimbsprobability="0.65" 
+				decal="explosion" decalsize="1">
+
+					<Affliction identifier="bleeding" strength="50" />
+					<Affliction identifier="explosiondamage" strength="75" />
+					<Affliction identifier="stun" strength="2" />
+				</Explosion>
+
+				<Explosion 
+				range="950.0" 
+				ballastfloradamage="80" structuredamage="5" levelwalldamage="15" itemdamage="400"
+				flames="false" smoke="false" 
+				force="3.0" 
+				severlimbsprobability="0.65" 
+				decal="explosion" decalsize="1">
+
+					<Affliction identifier="bleeding" strength="200" />
+					<Affliction identifier="lacerations" strength="150" />
+					<Affliction identifier="stun" strength="2" />
+				</Explosion>
+
+				<ParticleEmitter particle="weldspark" particleamount="165" scalemin="1.75" scalemax="3" velocitymin="250" velocitymax="500" distancemax="900" anglemin="0" anglemax="360" colormultiplier="255,175,50,150" copyentityangle="false" />
+
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="weldspark" particleamount="30" scalemin="1" scalemax="2.5" velocitymin="6000" velocitymax="8000" anglemin="-360" anglemax="360" highqualitycollisiondetection="true" />
+				<ParticleEmitter particle="impactfirearm" particleamount="1" scalemin="10" scalemax="15" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+ 		<!--###-->
+
+	<!--anti-sub physicorium grenade-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7phys" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon name="rpg7physinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="134,0,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,131,197,24" depth="0.55" origin="0.5,0.5" />
+		<Body width="200" height="40" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" launchimpulse="90.0" maxtargetstohit="5" sticktocharacters="false">
+
+			<Attack structuredamage="150" penetration="1">
+				<Affliction identifier="explosiondamage" strength="100" />
+			</Attack>
+			
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-20.0" disabledeltatime="true">
+
+				<Explosion 
+				range="500.0" 
+				ballastfloradamage="80" structuredamage="20" levelwalldamage="120" itemdamage="400" 
+				force="10.0" 
+				severlimbsprobability="0.65" 
+				decal="explosion" 
+				decalsize="0.3" 
+				penetration="0.5">
+
+				<Affliction identifier="burn" strength="50" />
+				<Affliction identifier="lacerations" strength="50" />
+				<Affliction identifier="bleeding" strength="250" probability="0.5" />
+				<Affliction identifier="stun" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="weldspark" particleamount="65" scalemin="1" scalemax="2.5" velocitymin="6000" velocitymax="8000" highqualitycollisiondetection="true" />
+				<ParticleEmitter particle="impactfirearm" particleamount="1" scalemin="30" scalemax="40" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Explosion 
+				range="800.0" 
+				ballastfloradamage="80" structuredamage="20" levelwalldamage="25" itemdamage="400" 
+				force="10.0" 
+				severlimbsprobability="0.65"
+				decal="explosion" decalsize="1">
+
+				<Affliction identifier="burn" strength="50" />
+				<Affliction identifier="explosiondamage" strength="300" />
+				<Affliction identifier="bleeding" strength="250" probability="0.5" />
+				<Affliction identifier="stun" strength="5" />
+				</Explosion>
+
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/rocketgrenadebang.ogg" range="7500" volume="2" />
+
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+		<!--###-->
+
+	<!--anti-sub DU grenade-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7du" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+		
+		<InventoryIcon name="rpg7duinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="337,1,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,212,197,24" depth="0.55" origin="0.5,0.5" />
+		<BrokenSprite name="duwarheadbroken" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="215,214,60,17" depth="0.55" origin="0.5,0.5" maxcondition="10" />
+		<Body width="200" height="40" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="90.0" 
+			sticktocharacters="false" 
+			maxtargetstohit="3" 
+			penetration="0.5">
+
+			<Attack 
+			structuredamage="15" 
+			penetration="1">
+
+				<Affliction identifier="explosiondamage" strength="85" />
+			</Attack>
+
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+
+			<StatusEffect type="OnImpact" target="This" condition="-37" disabledeltatime="true">
+
+				<Explosion 
+				range="365.0" 
+				ballastfloradamage="80" structuredamage="20" levelwalldamage="35" itemdamage="400" 
+				force="10.0" 
+				severlimbsprobability="0.65" 
+				decal="explosion" decalsize="0.3" 
+				penetration="0.5">
+
+				<Affliction identifier="bleeding" strength="100" />
+				<Affliction identifier="lacerations" strength="100" />
+				<Affliction identifier="radiationsickness" strength="30" />
+				<Affliction identifier="stun" strength="3" />
+				</Explosion>
+				<sound file="%ModDir%/Sounds/Weapons/Guns/breach.ogg" volume="1" range="1500" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget"> 
+				<ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="25" velocitymin="500" velocitymax="2000" scalemin="1.0" scalemax="2.5" />
+				<ParticleEmitter particle="impactfirearm" particleamount="1" scalemin="30" scalemax="40" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+	<!--###-->
+
+	<!--anti-sub preso-latex grenade-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7latex" 
+		category="Weapon" 
+		subcategory="Chemical Weapons" 
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon name="rpg7latexinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="200,0,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,160,197,24" depth="0.55" origin="0.5,0.5" />
+		<Body width="190" height="40" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" launchimpulse="40.0" sticktocharacters="false">
+
+			<Attack structuredamage="5" penetration="0.5">
+
+				<Affliction identifier="explosiondamage" strength="50" />
+			</Attack>
+
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+
+				<Explosion 
+				range="500.0" 
+				ballastfloradamage="80" structuredamage="10" levelwalldamage="120" itemdamage="400" 
+				force="10.0" 
+				severlimbsprobability="0.65" 
+				decal="explosion" decalsize="1.25">
+
+				<Affliction identifier="burn" strength="50" />
+				<Affliction identifier="bleeding" strength="100" probability="0.25" />
+				<Affliction identifier="scp_presolatexinfection" strength="5" />
+
+				</Explosion>
+
+				<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="15" velocitymax="25" scalemin="3" scalemax="4" colormultiplier="25,25,25,255" />
+
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+	<!--###-->
+
+	<!--anti-sub devils blood grenade-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7devilblood" 
+		category="Weapon" 
+		subcategory="Chemical Weapons"
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+		
+		<InventoryIcon name="rpg7devilinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="267,0,67,70" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,186,197,24" depth="0.55" origin="0.5,0.5" />
+		<Body width="190" height="40" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" launchimpulse="40.0" sticktocharacters="false">
+
+			<Attack structuredamage="5" penetration="0.5">
+
+				<Affliction identifier="explosiondamage" strength="50" />
+			</Attack>
+
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+
+				<Explosion 
+				range="500.0" 
+				ballastfloradamage="80" structuredamage="10" levelwalldamage="120" itemdamage="400" 
+				force="10.0" 
+				severlimbsprobability="0.65"
+				decal="explosion" decalsize="1.25">
+
+				<Affliction identifier="burn" strength="50" />
+				<Affliction identifier="bleeding" strength="100" probability="0.25" />
+				<Affliction identifier="scp_devilpoisoning" strength="5" probability="0.55" />
+				</Explosion>
+
+				<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="15" velocitymax="25" scalemin="3" scalemax="4" colormultiplier="200,50,50,255" />
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+	<!--###-->
+
+	<!--anti-sub incendiary grenade-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_rpg7incend" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="2" 
+		maxstacksizecharacterinventory="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+		
+		<InventoryIcon name="rpg7incendinv" texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="67,0,66,67" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,103,197,25" depth="0.55" origin="0.5,0.5" />
+		<Body width="190" height="40" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		
+		<Projectile characterusable="false" launchimpulse="35.0" sticktocharacters="false">
+
+			<Attack structuredamage="40" penetration="0.5">
+				<Affliction identifier="explosiondamage" strength="50" />
+			</Attack>
+
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+
+				<Explosion 
+					range="650.0" 
+					ballastfloradamage="80" structuredamage="20" levelwalldamage="120" itemdamage="400" 
+					force="10.0" 
+					severlimbsprobability="0.65" 
+					decal="explosion" decalsize="1">
+
+					<Affliction identifier="bleeding" strength="400" probability="0.05" />
+					<Affliction identifier="burn" strength="200" />
+					<Affliction identifier="stun" strength="2.5" />
+				</Explosion>
+
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+				<Fire size="200.0" />
+
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+			<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Disposable Rockets-->
+
+
+	<!--disposable anti-sub grenade launcher-->
+	<Item 
+		name="" 
+		description="" 
+		identifier="scp_at4proj" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="1" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,rpgammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light" 
+		hideinmenus="true">
+
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/rpgrockets.png" sourcerect="0,77,197,25" depth="0.55" origin="0.5,0.5" spritecolor="75,75,75" />
+		<Body width="200" height="40" density="30" />
+
+		<Projectile characterusable="false" launchimpulse="50.0" sticktocharacters="false">
+
+			<Attack structuredamage="75" penetration="0.5">
+
+				<Affliction identifier="explosiondamage" strength="100" />
+			</Attack>
+			
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="500" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="500" />
+			
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+				
+				<Explosion 
+					range="600.0" 
+					ballastfloradamage="80" structuredamage="5" levelwalldamage="15" itemdamage="15" 
+					force="10.0" 
+					severlimbsprobability="1">
+				
+					<Affliction identifier="bleeding" strength="50" />
+					<Affliction identifier="explosiondamage" strength="75" />
+					<Affliction identifier="stun" strength="1.5" />
+				</Explosion>
+			
+				<sound file="%ModDir%/Sounds/Weapons/Explosives/rocketgrenadebang.ogg" range="7500" volume="1.5" />
+			
+				<Remove />
+			</StatusEffect>
+
+			<StatusEffect type="OnActive" target="This">
+				<ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="50" scalemin="1" scalemax="2" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="weldspark" particleamount="30" scalemin="1" scalemax="2.5" velocitymin="6000" velocitymax="8000" anglemin="-360" anglemax="360" highqualitycollisiondetection="true" />
+				<ParticleEmitter particle="impactfirearm" particleamount="1" scalemin="10" scalemax="15" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--40mm Grenades-->
+
+
+		<!--40mm preso latex grenade-->
+	<Item 
+		name="" 
+		identifier="scp_40mmgrenadelatex" 
+		category="Weapon" 
+		subcategory="Chemical Weapons" 
+		maxstacksize="4" 
+		maxstacksizecharacterinventory="2" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon name="40mmlatexground" texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="52,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="1,0,41,17" depth="0.55" origin="0.5,0.5" />
+		<Body width="38" height="15" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
+
+			<Attack structuredamage="40" severlimbsprobability="5">
+
+				<Affliction identifier="explosiondamage" strength="45" />
+				<Affliction identifier="scp_presolatexinfection" strength="5" />
+			</Attack>
+
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="3000" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+
+				<SpawnItem identifiers="scp_presoliquid40mm" spawnposition="This" />
+
+				<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
+
+				<Explosion 
+					range="300.0" 
+					ballastfloradamage="80" structuredamage="15" levelwalldamage="50" itemdamage="30" 
+					force="5.0" 
+					severlimbsprobability="0.4" 
+					decal="explosion" decalsize="0.3">
+
+					<Affliction identifier="scp_presolatexinfection" strength="8" probability="0.33" />
+					<Affliction identifier="stun" strength="2" />
+				</Explosion>
+
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+	<!--###-->
+
+	<!--40mm devils blood grenade-->
+	<Item 
+		name="" 
+		identifier="scp_40mmgrenadedevil" 
+		category="Weapon" 
+		subcategory="Chemical Weapons" 
+		maxstacksize="4" 
+		maxstacksizecharacterinventory="2" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon name="40mmdevilground" texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="94,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="1,18,41,17" depth="0.55" origin="0.5,0.5" />
+		<Body width="38" height="15" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
+
+			<Attack structuredamage="40" severlimbsprobability="5">
+
+				<Affliction identifier="explosiondamage" strength="30" />
+				<Affliction identifier="scp_devilpoisoning" strength="5" probability="0.33" />
+			</Attack>
+
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="3000" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+
+				<SpawnItem identifiers="scp_devilgas40mm" spawnposition="This" />
+
+				<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
+
+				<Explosion 
+					range="300.0" 
+					ballastfloradamage="80" structuredamage="15" levelwalldamage="50" itemdamage="30" 
+					force="5.0" 
+					severlimbsprobability="0.4" 
+					decal="explosion" decalsize="0.3">
+
+					<Affliction identifier="scp_devilpoisoning" strength="5" />
+					<Affliction identifier="stun" strength="2" />
+				</Explosion>
+
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+	<!--###-->
+
+	<!--40mm hexa-nova grenade-->
+	<Item 
+		name="" 
+		identifier="scp_40mmgrenadehex" 
+		category="Weapon" subcategory="Chemical Weapons" 
+		maxstacksize="4" maxstacksizecharacterinventory="2" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon name="40mmdevilground" texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="142,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="1,36,41,17" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="38" height="15" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		
+		<Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
+
+			<Attack structuredamage="40" severlimbsprobability="5">
+
+				<Affliction identifier="explosiondamage" strength="20" />
+				<Affliction identifier="scp_hexgasdamage" strength="3" probability="0.33" />
+			</Attack>
+
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="3000" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+
+				<SpawnItem identifiers="scp_hexgas40mm" spawnposition="This" />
+
+				<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
+
+				<Explosion 
+					range="600.0" 
+					ballastfloradamage="80" structuredamage="15" levelwalldamage="50" itemdamage="30" 
+					force="5.0" 
+					severlimbsprobability="0.4" 
+					decal="explosion" 
+					decalsize="0.3">
+
+					<Affliction identifier="scp_hexgasdamage" strength="4" />
+					<Affliction identifier="stun" strength="2" />
+				</Explosion>
+
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+		<!--###-->
+
+	<!--40mm dirty grenade-->
+	<Item 
+		name="" 
+		identifier="scp_40mmdirtygrenade" 
+		category="Weapon" subcategory="Weapons of Mass Destruction" 
+		maxstacksize="8" maxstacksizecharacterinventory="4" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon name="dirty40inv" texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="185,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="1,53,41,17" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="38" height="15" density="30" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="20.0" 
+			sticktocharacters="false">
+
+			<Attack 
+				structuredamage="40" 
+				penetration="1" 
+				severlimbsprobability="5">
+
+				<Affliction identifier="explosiondamage" strength="50" />
+			</Attack>
+
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random" />
+			<sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="3000" />
+
+			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+
+			<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
+
+			<SpawnItem identifier="scp_nukegrenadefallout" spawnposition="This" />
+
+			<Explosion 
+				range="300.0"
+				ballastfloradamage="80" 
+				structuredamage="20" levelwalldamage="120" itemdamage="400" 
+				force="5.0" 
+				severlimbsprobability="0.4" 
+				decal="explosion" decalsize="0.3">
+
+				<Affliction identifier="burn" strength="60" />
+				<Affliction identifier="bleeding" strength="65" />
+				<Affliction identifier="radiationsickness" strength="25" />
+				<Affliction identifier="stun" strength="1" />
+			</Explosion>
+
+			<Remove />
+
+			</StatusEffect>
+
+		</Projectile>
+	</Item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Kinetics-->
+
+
+	<!--40mm du slug-->
+	<Item 
+		name="" 
+		identifier="scp_40mmdugrenade" 
+		category="Weapon" 
+		subcategory="Grenades and Explosives" 
+		maxstacksize="16" 
+		maxstacksizecharacterinventory="4" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon name="40mmduground" texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="227,-2,42,42" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="1,70,41,17" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="60" height="15" density="30" />
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			launchimpulse="25.0" 
+			sticktocharacters="true"
+			penetration="0.3">
+
+			<Attack 
+				structuredamage="20" 
+				severlimbsprobability="0.5" 
+				targetforce="-20">
+
+				<Affliction identifier="gunshotwound" strength="45" />
+				<Affliction identifier="explosiondamage" strength="25" probability="0.25" />
+				<Affliction identifier="radiationsickness" strength="20" probability="0.33" />
+				<Affliction identifier="bleeding" strength="35" />
+				<Affliction identifier="stun" strength="0.5" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="This">
+				<Remove />
+			</StatusEffect>
+
+		</Projectile>
+
+	</Item>
+
+		<!--###-->
+
+	<!--40mm Shotshell-->
+	<Item 
+		name="" 
+		identifier="glshotshell" 
+		category="Weapon" subcategory="Coalition" 
+		maxstacksize="8" 
+		interactthroughwalls="true" 
+		cargocontaineridentifier="metalcrate" 
+		tags="smallitem,grenade,ehaammo" 
+		Scale="0.5" 
+		impactsoundtag="impact_metal_light">
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/40mmgl.png" sourcerect="2,2,35,35" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/40mmgl.png" sourcerect="0,38,32,16" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="23" height="10" density="15" />
+
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+		<Projectile 
+			characterusable="false" 
+			hitscan="true" hitscancount="24" 
+			removeonhit="true" 
+			spread="18">
+
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5" />
+
+			<Attack 
+				structuredamage="1" itemdamage="2"
+				targetforce="4" 
+				severlimbsprobability="0.75">
+
+				<Affliction identifier="gunshotwound" strength="3" />
+				<Affliction identifier="bleeding" strength="4" />
+				<Affliction identifier="stun" strength="0.02" />
+			</Attack>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure" />
+				<Conditional hastag="eq door" />
+				<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+			
+		</Projectile>
+	</Item>
+
+</Items>

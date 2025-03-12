@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--nobody gives a shit about this file!!!!-->
+
+<Override>
+	<Items>
+        <Item name="" identifier="magnesium" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="smallitem,munition_propulsion" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+            <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,192,64,64" />
+            <Sprite texture="Content/Items/Materials/CraftingElements1.png" sourcerect="102,6,23,44" depth="0.55" origin="0.5,0.5" />
+            <Body width="22" height="42" density="15" />
+            <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+        </Item>
+
+        <Item name="" identifier="flashpowder" category="Material" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,explosive" impacttolerance="8" useinhealthinterface="true" scale="0.4" impactsoundtag="impact_metal_light">
+            <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,256,64,64" />
+            <Sprite texture="Content/Items/Materials/minerals.png" depth="0.55" sourcerect="127,134,23,42" origin="0.5,0.5" />
+            <Body width="23" height="43" density="15" />
+            <Throwable characterusable="false" canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+                <StatusEffect type="OnImpact" target="This" Condition="0.0" setvalue="true" />
+                <StatusEffect type="OnFire" target="this" Condition="-50" />
+                <StatusEffect type="OnUse" target="This" Condition="0.0" setvalue="true" />
+                <StatusEffect type="OnBroken" target="This">
+                    <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="3000" />
+                    <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" range="3000" />
+                    <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="3000" />
+                    <Explosion range="250.0" ballastfloradamage="20" force="3">
+                        <Affliction identifier="burn" strength="50" />
+                        <Affliction identifier="stun" strength="5" />
+                    </Explosion>
+                    <Remove />
+                </StatusEffect>
+            </Throwable>
+        </Item>
+    </Items>
+</Override>

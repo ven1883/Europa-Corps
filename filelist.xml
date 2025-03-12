@@ -7,12 +7,31 @@
 
 	<!--Weapons-->
 
+	<Item file="%ModDir%/Items/Weapons/alien.xml"/>
+	<Item file="%ModDir%/Items/Weapons/explosives.xml"/>
+	<Item file="%ModDir%/Items/Weapons/heavy.xml"/>
+	<Item file="%ModDir%/Items/Weapons/melee.xml"/>
+	<Item file="%ModDir%/Items/Weapons/overrides.xml"/>
+	<Item file="%ModDir%/Items/Weapons/pistols.xml"/>
+	<Item file="%ModDir%/Items/Weapons/rifles.xml"/>
+	<Item file="%ModDir%/Items/Weapons/shotguns.xml"/>
+	<Item file="%ModDir%/Items/Weapons/smgs.xml"/>
+	<Item file="%ModDir%/Items/Weapons/special.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/explosive_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/heavy_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/pistol_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/rifle_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/shotgun_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/smg_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Ammo/special_ammo.xml"/>
+
 	<!--Apparel-->
 
 	<Item file="%ModDir%/Items/Apparel/coalition.xml"/>
 	<Item file="%ModDir%/Items/Apparel/separatists.xml"/>
 	<Item file="%ModDir%/Items/Apparel/universal.xml"/>
 	<Item file="%ModDir%/Items/Apparel/other.xml"/>
+	<Item file="%ModDir%/Items/Apparel/overrides_armor.xml"/>
 
 	<!--Medical-->
 	<Item file="%ModDir%/Items/Medical/bionics.xml"/>
@@ -24,7 +43,18 @@
 	<Item file="%ModDir%/Items/Medical/poisons.xml"/>
 
 	<!--Misc-->
-	<Item file="%ModDir%/Items/Mapping/particleemitters.xml"/>
+	
+	<Item file="%ModDir%/Items/Misc/misc.xml"/>
+	<Item file="%ModDir%/Items/Misc/containers.xml"/>
+	<Item file="%ModDir%/Items/Misc/fabricators.xml"/>
+	<Item file="%ModDir%/Items/Utilities/overrides.xml"/>
+	<Item file="%ModDir%/Items/Utilities/tools.xml"/>
+	<Item file="%ModDir%/Items/Utilities/books.xml"/>
+	<Item file="%ModDir%/Items/Turrets/turrets.xml"/>
+	<Item file="%ModDir%/Items/Turrets/Ammo/turret_ammo.xml"/>
+	<Item file="%ModDir%/Items/Emitters/emitters.xml"/>
+	<Item file="%ModDir%/Items/Materials/materials.xml"/>
+	<Item file="%ModDir%/Items/Materials/overrides_materials.xml"/>
 
 	<!--+++++++++++-->
 	<!--AFFLICTIONS--> 
@@ -46,6 +76,9 @@
 	<!--++++-->
 	<!--MISC-->
 	<!--++++-->
+	<UIStyle file="%ModDir%/styles.xml"/>
+	<Jobs file="%ModDir%/Jobs/jobs.xml"/>
+	<Jobs file="%ModDir%/Jobs/job_overrides.xml"/>
 
 	<!--+++++-->
 	<!--TEXTS-->

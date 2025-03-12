@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<huskappendage>
+  <limb id="15" name="Trenchcoat Base" type="None" inheritlimbdepth="Head" width="0" height="0" notes="" flip="True" healthindex="0" attackpriority="0" steerforce="0" stepoffset="0,0" radius="20" mass="2" density="5" pullpos="0,0" refjoint="-1" ignorecollisions="False" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="5" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1.1" attackforcemultiplier="1" minseverancedamage="0.8" severedfadeouttime="0" applytailangle="False" applysinemovement="True">
+    <sprite sourcerect="474,19,59,66" origin="0.5,0.2" depth="0.049" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" texture="%ModDir%/Sprites/Items/Apparel/trenchcoat.png" ignoretint="true" />
+  </limb>
+  <limb id="16" name="Trenchcoat Tip" type="None" inheritlimbdepth="Head" width="0" height="0" notes="" flip="True" healthindex="0" attackpriority="0" steerforce="0" stepoffset="0,0" radius="20" mass="2" density="5" pullpos="0,0" refjoint="-1" ignorecollisions="False" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="5" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1.1" attackforcemultiplier="1" minseverancedamage="0.8" severedfadeouttime="0" applytailangle="False" applysinemovement="True">
+    <sprite sourcerect="474,118,59,64" origin="0.5,0.2" depth="0.049" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" texture="%ModDir%/Sprites/Items/Apparel/trenchcoat.png" ignoretint="true" />
+  </limb>
+  <!-- Head to husk appendage -->
+  <joint name="Head to Base" limb1="0" limb2="15" limb1anchor="-8.1,-55.8" limb2anchor="-0.6,0" upperlimit="10" weldjoint="false" lowerlimit="-15" canbesevered="False" limitenabled="True" stiffness="0.25" />
+  <joint name="Base to Tip" limb1="15" limb2="16" limb1anchor="-1.3,-49.3" limb2anchor="-0.6,0" upperlimit="5" weldjoint="false" lowerlimit="-15" canbesevered="False" limitenabled="True" stiffness="0.25" />
+</huskappendage>

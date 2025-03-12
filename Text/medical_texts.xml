@@ -423,6 +423,8 @@
   ‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
   </entitydescription.feniterdecontaminant>
 
+    <!-- Medical items -->
+
   <entityname.foldingsurgerytable>Folding Surgical Table</entityname.foldingsurgerytable>
   <entitydescription.foldingsurgerytable>A folding surgical table used in the event of missing a hospital bed.</entitydescription.foldingsurgerytable>
   <itemmsglaydownselect>[[select]] Lay down</itemmsglaydownselect>
@@ -451,5 +453,7 @@
 
   <entityname.doctorsuniform3>Surgeon's Uniform</entityname.doctorsuniform3>
   <entitydescription.doctorsuniform3>Makes you look like you might be useful if your forged medical degree didn't already show that.</entitydescription.doctorsuniform3>
+
+  
 </Override>
 </infotexts>

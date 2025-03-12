@@ -100,11 +100,12 @@
         <Affliction identifier="paralysis" amount="125" />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
+    <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
   </Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
 
+<!-- fucking psi bullshit
 	<Affliction 
 		identifier="scp_psidamage" 
 		description="" 
@@ -164,7 +165,7 @@
         <Conditional scp_psidamage="gte 75" />
         <Conditional IsLocalPlayer="True" />
         <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
+        <sound file="%ModDir%/Sounds/Medical/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
       </StatusEffect>
     </Effect>
 
@@ -194,7 +195,7 @@
         <Conditional scp_psidamage="gte 100" />
         <Conditional IsLocalPlayer="True" />
         <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
+        <sound file="%ModDir%/Sounds/Medical/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
       </StatusEffect>
     </Effect>
 
@@ -247,12 +248,14 @@
         <sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
       </StatusEffect>
     </PeriodicEffect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1040,0,128,128" color="0,200,0,255" origin="0,0" />
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/psiblindness.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+    <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1040,0,128,128" color="0,200,0,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psiblindness.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
   </Affliction>
+-->
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
+<!--
   <Affliction 
 		identifier="scp_psidamagechronic" 
 		description="" 
@@ -372,10 +375,10 @@
         <sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
       </StatusEffect>
     </PeriodicEffect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1299,0,128,128" color="0,200,0,255" origin="0,0" />
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/psiblindness2.png" sourcerect="0,0,1024,680" colormultiplier="0,0,0,255" origin="0,0" />
+    <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1299,0,128,128" color="0,200,0,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psiblindness2.png" sourcerect="0,0,1024,680" colormultiplier="0,0,0,255" origin="0,0" />
   </Affliction>
-
+-->
 	<!--++++++++++++++++++++++++++++++++++++-->
 
   <Affliction 
@@ -399,9 +402,10 @@
 			multiplybymaxvitality="true" 
 			invitalitydecrease="0" maxvitalitydecrease="3">
 		</Effect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1170,0,128,128" color="195,104,60,255" origin="0,0" />
+    <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1170,0,128,128" color="195,104,60,255" origin="0,0" />
   </Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
+
 
 </Afflictions>
