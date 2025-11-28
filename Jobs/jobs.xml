@@ -313,6 +313,55 @@
 		</ItemSet>
 	</Job>
 
+<Job identifier="cultist_Initiate" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.49,0.36,0.67">
+	<Jobicon>
+		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
+	</Jobicon>
+	<JobiconSmall>
+		<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5" />
+	</JobiconSmall>
+	<Skills>
+		<Skill identifier="weapons" level="85,95" primary="true" />
+		<Skill identifier="medical" level="45,55" />
+		<Skill identifier="mechanical" level="25,35" />
+		<Skill identifier="electrical" level="25,35" />
+		<Skill identifier="helm" level="25,45" />
+	</Skills>
+	<itemset>
+		<Item identifier="idcard" equip="true" />
+		<Item identifier="headset" equip="true" />
+		<Item identifier="disciplerobes" equip="true" />
+		<Item identifier="invishelmet" equip="true" />
+		<Item identifier="scp_softvest" equip="true" />
+		<Item identifier="sgt_bobag" equip="true">
+			<Item identifier="scp_valextmag" />]
+			<Item identifier="scp_valextmag" />
+			<Item identifier="scp_valextmag" />
+			<Item identifier="scp_valextmag" />
+			<Item identifier="antibleeding1" />
+			<Item identifier="antibleeding1" />
+			<Item identifier="antibleeding1" />
+			<Item identifier="antibleeding1" />
+			<Item identifier="antibleeding1" />
+			<Item identifier="antibleeding1" />
+			<Item identifier="antibleeding1" />
+			<Item identifier="antibleeding1" />
+			<Item identifier="deusizine" />
+			<Item identifier="deusizine" />
+			<Item identifier="deusizine" />
+			<Item identifier="deusizine" />
+		</Item>
+		<item identifier="scp_val" equip="true">
+			<item identifier="scp_valmag" />
+		</item>
+		<item identifier="scp_valmag" />
+		<item identifier="scp_valmag" />
+		<item identifier="scp_valmag" />
+		<item identifier="scp_valmag" />
+		<item identifier="husk_giver" />
+	</itemset>
+</Job>
+
 	<!--!cultists end!-->
 
 	<!--!coalition start!-->
@@ -1151,7 +1200,6 @@
 		</ItemSet>
 </Job>
 
-<<<<<<< HEAD
 <Job identifier="coalition_shotgunner" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.4,0.76,0.8">
 	<Jobicon>
 		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
@@ -1282,8 +1330,6 @@
 
 
 
-=======
->>>>>>> d99cb80d086bbd8e0996f135f9895b2c2fb02f5b
 <Job identifier="coalition_captain" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.4,0.76,0.8">
 	<Jobicon>
 		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5" />
@@ -1351,11 +1397,7 @@
 			<Item identifier="pager" />
 			<Item identifier="coalitionbeltlight" />
 	</ItemSet>
-<<<<<<< HEAD
 </Job>
-=======
-	</Job>
->>>>>>> d99cb80d086bbd8e0996f135f9895b2c2fb02f5b
 	<!--!coalition end!-->
 
 	<!--!survivors start!-->
@@ -1606,7 +1648,7 @@
 	<JobiconSmall>
 		<sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5"/>
 	</JobiconSmall>
-		<Skills>
+	<Skills>
 			<Skill identifier="weapons" level="50,60" primary="true"/>
 			<Skill identifier="medical" level="30,40"/>
 			<Skill identifier="mechanical" level="20,30"/>
@@ -1868,7 +1910,6 @@
 	</ItemSet>
 </Job>
 
-<<<<<<< HEAD
 <Job identifier="bandit_heavy" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.87,0.38,0.33">
 	<Jobicon>
 		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
@@ -2172,22 +2213,6 @@
 		<Skill identifier="electrical" level="25,35" />
 		<Skill identifier="helm" level="25,45" />
 	</Skills>
-=======
-   <Job identifier="seppie_gunner" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.72,0.45,0.0">
-    <Jobicon>
-      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
-    </Jobicon>
-    <JobiconSmall>
-      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5" />
-    </JobiconSmall>
-    <Skills>
-      <Skill identifier="weapons" level="95,100" primary="true" />
-      <Skill identifier="medical" level="40,45" />
-      <Skill identifier="mechanical" level="25,35" />
-      <Skill identifier="electrical" level="25,35" />
-      <Skill identifier="helm" level="25,45" />
-    </Skills>
->>>>>>> d99cb80d086bbd8e0996f135f9895b2c2fb02f5b
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
@@ -2213,7 +2238,6 @@
     </ItemSet>
   </Job>
 
-<<<<<<< HEAD
 <Job identifier="seppie_shotgunner" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.72,0.45,0.0">
 	<Jobicon>
 		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
@@ -2930,6 +2954,4 @@
 </Job>
 
 
-=======
->>>>>>> d99cb80d086bbd8e0996f135f9895b2c2fb02f5b
 </Jobs>
