@@ -1151,6 +1151,7 @@
 		</ItemSet>
 </Job>
 
+<<<<<<< HEAD
 <Job identifier="coalition_shotgunner" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.4,0.76,0.8">
 	<Jobicon>
 		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
@@ -1281,6 +1282,8 @@
 
 
 
+=======
+>>>>>>> d99cb80d086bbd8e0996f135f9895b2c2fb02f5b
 <Job identifier="coalition_captain" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.4,0.76,0.8">
 	<Jobicon>
 		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,256,128,128" origin="0.5,0.5" />
@@ -1348,7 +1351,11 @@
 			<Item identifier="pager" />
 			<Item identifier="coalitionbeltlight" />
 	</ItemSet>
+<<<<<<< HEAD
 </Job>
+=======
+	</Job>
+>>>>>>> d99cb80d086bbd8e0996f135f9895b2c2fb02f5b
 	<!--!coalition end!-->
 
 	<!--!survivors start!-->
@@ -1861,6 +1868,7 @@
 	</ItemSet>
 </Job>
 
+<<<<<<< HEAD
 <Job identifier="bandit_heavy" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.87,0.38,0.33">
 	<Jobicon>
 		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
@@ -2164,6 +2172,22 @@
 		<Skill identifier="electrical" level="25,35" />
 		<Skill identifier="helm" level="25,45" />
 	</Skills>
+=======
+   <Job identifier="seppie_gunner" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.72,0.45,0.0">
+    <Jobicon>
+      <sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
+    </Jobicon>
+    <JobiconSmall>
+      <sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="612,640,28,28" origin="0.5,0.5" />
+    </JobiconSmall>
+    <Skills>
+      <Skill identifier="weapons" level="95,100" primary="true" />
+      <Skill identifier="medical" level="40,45" />
+      <Skill identifier="mechanical" level="25,35" />
+      <Skill identifier="electrical" level="25,35" />
+      <Skill identifier="helm" level="25,45" />
+    </Skills>
+>>>>>>> d99cb80d086bbd8e0996f135f9895b2c2fb02f5b
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
@@ -2189,6 +2213,7 @@
     </ItemSet>
   </Job>
 
+<<<<<<< HEAD
 <Job identifier="seppie_shotgunner" onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="0.72,0.45,0.0">
 	<Jobicon>
 		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,256,128,128" origin="0.5,0.5" />
@@ -2905,4 +2930,6 @@
 </Job>
 
 
+=======
+>>>>>>> d99cb80d086bbd8e0996f135f9895b2c2fb02f5b
 </Jobs>
