@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+	<Item name="" 
+	identifier="object/weapon/generic" 
+	description="" 
+	category="Weapon" 
+	hideinmenus="true"
+	tags="weapon,gun,gunsmith" >
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="224,1,52,80" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,72,99,71" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="140" height="60" density="50" />
+	</Item>
+</Items>

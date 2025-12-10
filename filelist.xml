@@ -7,7 +7,7 @@
 
 	<!--Weapons-->
 
-	<Item file="%ModDir%/Items/Weapons/alien.xml"/>
+	<!--Item file="%ModDir%/Items/Weapons/alien.xml"/-->
 	<Item file="%ModDir%/Items/Weapons/explosives.xml"/>
 	<Item file="%ModDir%/Items/Weapons/heavy.xml"/>
 	<Item file="%ModDir%/Items/Weapons/melee.xml"/>
@@ -24,6 +24,10 @@
 	<Item file="%ModDir%/Items/Weapons/Ammo/shotgun_ammo.xml"/>
 	<Item file="%ModDir%/Items/Weapons/Ammo/smg_ammo.xml"/>
 	<Item file="%ModDir%/Items/Weapons/Ammo/special_ammo.xml"/>
+
+	<!--Weapon Objects-->
+	<Item file="%ModDir%/Items/Weapons/Objects/_generic.xml"/>
+	<Item file="%ModDir%/Items/Weapons/Objects/pistol_objects.xml"/>
 
 	<!--Apparel-->
 
