@@ -19,7 +19,7 @@
         <!--anti-sub incendiary grenade-->
             <entityname.scp_rpg7incend>Anti-Sub Incendiary Grenade</entityname.scp_rpg7incend>
             <entitydescription.scp_rpg7incend>A 40mm HE warhead with an Incendium charge, capable of causing large fires.</entitydescription.scp_rpg7incend>
-        <!--disposable anti-sub grenade launcher-->
+        <!--disposable anti-sub grenade launcher--> <!--TODO TAG-->
         <!--40mm preso latex grenade-->
             <entityname.scp_40mmgrenadelatex>40mm Preso Latex Chemical Grenade</entityname.scp_40mmgrenadelatex>
             <entitydescription.scp_40mmgrenadelatex>A 40mm grenade containing a Preso Latex payload, contaminating the impact area upon exploding.</entitydescription.scp_40mmgrenadelatex>
@@ -88,7 +88,7 @@
         <!--Assault RIfle projectile-->
             <entityname.assaultrifleround>assaultrifleround</entityname.assaultrifleround>
             <entitydescription.assaultrifleround>None</entitydescription.assaultrifleround>
-        <!--Rifle Round-->
+        <!--Rifle Round--> <!--TODO TAG-->
         <!--12g Shotgun Shell-->
             <entityname.shotgunshell>12 Gauge Shotgun Buckshot Shell</entityname.shotgunshell>
             <entitydescription.shotgunshell>An extremely common and popular 12 gauge shotgun shell containing buckshot that's found practically all across Europa, renowned for it's close quarters lethality despite it's non-existent armour penetration.</entitydescription.shotgunshell>
@@ -101,10 +101,10 @@
         <!--Harpoon-->
             <entityname.spear>Harpoon</entityname.spear>
             <entitydescription.spear>A simple rod of steel with a sharp, barbed point on the end for use against fish and your own crew.</entitydescription.spear>
-        <!--Surplus HMG Magazine-->
-        <!--HMG Projectile-->
-        <!--40mm Grenade-->
-        <!--40mm Mini-nuke-->
+        <!--Surplus HMG Magazine--> <!--TODO TAG-->
+        <!--HMG Projectile--> <!--TODO TAG-->
+        <!--40mm Grenade--> <!--TODO TAG-->
+        <!--40mm Mini-nuke--> <!--TODO TAG-->
     <!--Ammo_pistol_ammo-->
         <!--9x19 16 round magazine-->
             <entityname.scp_9mmmag>Pistol Magazine</entityname.scp_9mmmag>
@@ -124,7 +124,7 @@
         <!--Assault Pistol Extended Magazine-->
             <entityname.sgt_10mmmagext>Assault Pistol Extended Magazine</entityname.sgt_10mmmagext>
             <entitydescription.sgt_10mmmagext>Holding 20 rounds of 10x25mm, some weapons cannot use this magazine due to it's bulky nature, though the separatists accounted for this in their designs.</entitydescription.sgt_10mmmagext>
-        <!--Assault Pistol Projectile-->
+        <!--Assault Pistol Projectile--> <!--TODO TAG-->
         <!--Heavy Pistol Magazine-->
             <entityname.scp_45mag>Heavy Pistol Magazine</entityname.scp_45mag>
             <entitydescription.scp_45mag>A 10 round 11.43x23mm pistol magazine containing JHP ammunition, the large projectiles providing semi-decent stopping power, though is completely useless against armour.</entitydescription.scp_45mag>
@@ -134,7 +134,7 @@
         <!--Heavy Pistol Projectile-->
             <entityname.scp_45projectile>11.4mm round</entityname.scp_45projectile>
             <entitydescription.scp_45projectile>None</entitydescription.scp_45projectile>
-        <!--Heavy Pistol Incendiary Projectile-->
+        <!--Heavy Pistol Incendiary Projectile--> <!--TODO TAG-->
         <!--Service Revolver Round-->
             <entityname.scp_357round>Service Revolver Round</entityname.scp_357round>
             <entitydescription.scp_357round>A 9x33mm cartridge with a longer casing and larger projectile than 9x29mm for greater performance.</entitydescription.scp_357round>
@@ -150,7 +150,7 @@
         <!--Oppressor Heavy Pistol Magazine-->
             <entityname.scp_deaglemag>Oppressor Heavy Pistol Magazine</entityname.scp_deaglemag>
             <entitydescription.scp_deaglemag>A 7 round 12.7x33mm pistol magazine containing large cartridges originally designed for hunting big game animals, thus making it a devastating choice against unarmoured targets.</entitydescription.scp_deaglemag>
-        <!--12.7x33 round-->
+        <!--12.7x33 round--> <!--TODO TAG-->
         <!--Assault Revolver Round-->
             <entityname.scp_arevolverround>Assault Revolver Cartridge</entityname.scp_arevolverround>
             <entitydescription.scp_arevolverround>A large 12.7x55mm cartridge with a supersonic load, significantly increasing recoil whilst making it able to stop almost anything.</entitydescription.scp_arevolverround>
@@ -191,11 +191,11 @@
         <!--5.56x45 30rnd durasteel magazine-->
             <entityname.scp_556duramag>Assault Rifle Durasteel Magazine</entityname.scp_556duramag>
             <entitydescription.scp_556duramag>A common ploymer 30 round 5.56x45mm magazine containing AP ammunition to enhance its abilities against armoured belligerents, though given it's small size it's inherently limited on it's impact.</entitydescription.scp_556duramag>
-        <!--5.56x45 round-->
+        <!--5.56x45 round--> <!--TODO TAG-->
         <!--5.56x45 AP round-->
             <entityname.scp_556approjectile>5.56 Round</entityname.scp_556approjectile>
             <entitydescription.scp_556approjectile>None</entitydescription.scp_556approjectile>
-        <!--5.56x45 Ds round-->
+        <!--5.56x45 Ds round--> <!--TODO TAG-->
         <!--30 round 6.5mm caseless magazine-->
             <entityname.scp_65mag>Caseless Assault Rifle Magazine</entityname.scp_65mag>
             <entitydescription.scp_65mag>A polymer 30 round 6.5x39mm magazine containing unconventional C-FMJ cartridges.</entitydescription.scp_65mag>
@@ -205,7 +205,7 @@
         <!--6.5x39 Caseless round-->
             <entityname.scp_65projectile>6.5x39mm round</entityname.scp_65projectile>
             <entitydescription.scp_65projectile>None</entitydescription.scp_65projectile>
-        <!--6.5x39 Caseless Incendiary round-->
+        <!--6.5x39 Caseless Incendiary round--> <!--TODO TAG-->
         <!--AK-103 30 round mag-->
             <entityname.scp_akmag>Aggressor Assault Rifle Magazine</entityname.scp_akmag>
             <entitydescription.scp_akmag>A polymer 30 round 7.62x39mm magazine containing FMJ cartridges, which are powerful at close range though tend to fair horrendously at longer distances.</entitydescription.scp_akmag>
@@ -239,7 +239,7 @@
         <!--7.62x51mm round-->
             <entityname.scp_762natoprojectile>7.62x51mm round</entityname.scp_762natoprojectile>
             <entitydescription.scp_762natoprojectile>None</entitydescription.scp_762natoprojectile>
-        <!--7.62x51mm durasteel round-->
+        <!--7.62x51mm durasteel round--> <!--TODO TAG-->
         <!--Surplus Tear Gas Rifle Round-->
             <entityname.feniterrifleround1>Tear Gas Surplus Rifle Round</entityname.feniterrifleround1>
             <entitydescription.feniterrifleround1>A hollowed out rifle round filled to the brim with a tear gas mixture. Incomparably painful to be hit by, but deals lackluster damage compared to a solid round.</entitydescription.feniterrifleround1>
@@ -255,8 +255,8 @@
         <!--20 round 12.7x55 magazine-->
             <entityname.scp_ash12extmag>Oppressor Battle Rifle Magazine</entityname.scp_ash12extmag>
             <entitydescription.scp_ash12extmag>A long and bulky 20 round 12.7x55mm magazine with its bullet's capabilities of devastating most targets via it's sheer mass and hardened core.</entitydescription.scp_ash12extmag>
-        <!--12.7x55mm round-->
-        <!--12.7x55mm durasteel round-->
+        <!--12.7x55mm round--> <!--TODO TAG-->
+        <!--12.7x55mm durasteel round--> <!--TODO TAG-->
         <!--AS Val 20 round mag-->
             <entityname.scp_valmag>Covert Assault Rifle AP Magazine</entityname.scp_valmag>
             <entitydescription.scp_valmag>A polymer 20 round 9x39mm magazine, containing Titanium AP ammunition, significantly increasing capabilities against armour, which standard cartridges struggle against.</entitydescription.scp_valmag>
@@ -266,8 +266,8 @@
         <!--AS Val 40 round mag-->
             <entityname.scp_valbigmag>Infiltrator Covert AR Magazine</entityname.scp_valbigmag>
             <entitydescription.scp_valbigmag>A very large custom built 9x39mm magazine holding 40 rounds.</entitydescription.scp_valbigmag>
-        <!--9x39mm round-->
-        <!--9x39mm AP round-->
+        <!--9x39mm round--> <!--TODO TAG-->
+        <!--9x39mm AP round--> <!--TODO TAG-->
     <!--Ammo_shotgun_ammo-->
         <!--12g magnum buckshot-->
             <entityname.scp_12gmagbuck>12 Gauge Shotgun Magnum Buckshot</entityname.scp_12gmagbuck>
@@ -293,7 +293,7 @@
         <!--20 round 12 gauge saiga drum-->
             <entityname.scp_saigadrummag>Combat Shotgun Drum</entityname.scp_saigadrummag>
             <entitydescription.scp_saigadrummag>A bulky 20 round 12 gauge drum magazine containing buckshot shells that rattle a lot.</entitydescription.scp_saigadrummag>
-        <!--12g saiga buckshot projectile-->
+        <!--12g saiga buckshot projectile--> <!--TODO TAG-->
         <!--8-gauge shell-->
             <entityname.heavyshotshell>8-Gauge Shotgun Shell</entityname.heavyshotshell>
             <entitydescription.heavyshotshell>Packed with 12 Steel pellets, the shell has a tendancy to take off doors and limbs alike. It does a better job punching through lighter armor than it's lesser counterpart, though can still make a mess of heavier plate.</entitydescription.heavyshotshell>
@@ -337,20 +337,20 @@
         <!--Tear gas Surplus SMG Magazine-->
             <entityname.fenitersmgmagazine1>Tear Gas Surplus SMG Magazine</entityname.fenitersmgmagazine1>
             <entitydescription.fenitersmgmagazine1>Hollow small caliber rounds each containing a small amount of tear gas. Extremely painful to be hit by, but they deal lackluster damage compared to solid rounds.</entitydescription.fenitersmgmagazine1>
-        <!--Tear Gas Surplus SMG Round-->
+        <!--Tear Gas Surplus SMG Round--> <!--TODO TAG-->
         <!--Surplus Nerve Agent SMG Magazine-->
             <entityname.fenitersmgmagazine2>Nerve Agent Surplus SMG Magazine</entityname.fenitersmgmagazine2>
             <entitydescription.fenitersmgmagazine2>Hollow small caliber rounds each containing a small amount of a nerve agent mixture. Less damaging than solid rounds, but they poison targets and guarantee death unless treated or blocked by a hazard suit.</entitydescription.fenitersmgmagazine2>
-        <!--Surplus Nerve Agent SMG Round-->
+        <!--Surplus Nerve Agent SMG Round--> <!--TODO TAG-->
         <!--Surplus Psychochem SMG Magazine-->
             <entityname.fenitersmgmagazine3>Psychochemical Agent Surplus SMG Magazine</entityname.fenitersmgmagazine3>
             <entitydescription.fenitersmgmagazine3>Hollow small caliber rounds each containing a small amount of a psychochemical agent mixture. Less damaging than solid rounds, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.fenitersmgmagazine3>
-        <!--Surplus Psychochem SMG Round-->
+        <!--Surplus Psychochem SMG Round--> <!--TODO TAG-->
     <!--Ammo_special_ammo-->
         <!--portable coilgun clip-->
             <entityname.scp_coilgunclip>Portable Coilgun Clip</entityname.scp_coilgunclip>
             <entitydescription.scp_coilgunclip>A 20 round clip containing 11mm Durasteel slugs meant to be projected at hypersonic speeds.</entitydescription.scp_coilgunclip>
-        <!--Coilgun Bolt-->
+        <!--Coilgun Bolt--> <!--TODO TAG-->
         <!--Chemthrower Napalm Fuel-->
             <entityname.sgt_napalm>Chemfuel Canister</entityname.sgt_napalm>
             <entitydescription.sgt_napalm>A high density flammable fuel mixture, designed specifically for the Chemthrower to start an inferno.</entitydescription.sgt_napalm>
@@ -360,8 +360,8 @@
         <!--Multi Blaster Cell-->
             <entityname.sgt_hbcell2>Heavy Blaster Multi-Pulse Cell</entityname.sgt_hbcell2>
             <entitydescription.sgt_hbcell2>Disposable High-Amp Supercapacitor designed for the Heavy Blaster. Having the diodes aligned in series instead of parallel lets the pulse divide, while also increasing the max overall damage due to less strain on the lenses.</entitydescription.sgt_hbcell2>
-        <!--Blaster Round-->
-        <!--Multi Blaster Round-->
+        <!--Blaster Round--> <!--TODO TAG-->
+        <!--Multi Blaster Round--> <!--TODO TAG-->
         <!--particle accelerator uranium ammo-->
             <entityname.scp_taucannonuranium>Particle Cannon Uranium Cell</entityname.scp_taucannonuranium>
             <entitydescription.scp_taucannonuranium>A cell of Uranium-235 pellets for use within the Particle Accelerator Cannon. These pellets provide a small amount of power to the weapon thus making the accelerator eject the high mass particles out at a slower velocity.</entitydescription.scp_taucannonuranium>
