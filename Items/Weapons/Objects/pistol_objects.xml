@@ -2,12 +2,12 @@
 
 <Items>
 	<Item name="" 
-	identifier="object/weapon/generic/pistol" 
-	variantof="object/weapon/generic"
+	identifier="_object_weapon_pistol" 
+	variantof="_object_weapon"
 	description="" 
 	category="Weapon" 
 	hideinmenus="true"
-	tags="weapon,gun,gunsmith" >
+	tags="weapon,gun,gunsmith,pistolitem,smallitem" >
 
 
 
@@ -19,13 +19,15 @@
 
 	<!--Codename from regular 9mm pistols should do fine.-->
 	<!--TODO: Find better tag for this.-->
+
+	<!--9mm pistols-->
 	<Item name="" 
-	identifier="object/weapon/generic/pistol/base"
-	variantof="object/weapon/generic/pistol"
+	identifier="_object_weapon_pistol_base"
+	variantof="_object_weapon_pistol"
 	description="" 
 	category="Weapon" 
 	hideinmenus="true"
-	tags="weapon,gun,gunsmith" >
+	tags="weapon,gun,gunsmith,pistolitem,smallitem" >
 
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-40,-7" msg="ItemMsgPickUpSelect"/>
 
@@ -62,6 +64,55 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
-
 	</Item>
+
+			<!--###-->
+
+	<!--10mm pistols-->
+	<Item name="" 
+	identifier="_object_weapon_pistol_assault"
+	variantof="_object_weapon_pistol"
+	description="" 
+	category="Weapon" 
+	hideinmenus="true"
+	tags="weapon,gun,gunsmith,pistolitem,smallitem" >
+
+		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-33,-7" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.25" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="10mmpistolammo" />
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="10mmpistolammo" hide="true" itempos="-12.5,-6.25">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir:2764968387%/Sounds/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir:2764968387%/Sounds/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+
 </Items>
