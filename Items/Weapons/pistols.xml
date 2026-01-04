@@ -824,6 +824,14 @@
 		<RangedWeapon reload="0.8" reloadnoskill="3.5" reloadskillrequirement="75" barrelpos="30,11" spread="6" unskilledspread="16" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/deagle.ogg" type="OnUse" volume="1.1" range="3000" />
 
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="Head">
 				<Conditional skillrequirement="true" weapons="lt 85" />
 				<Conditional skillrequirement="true" weapons="gte 65" />
@@ -886,6 +894,14 @@
 		<RangedWeapon reload="0.65" reloadnoskill="2.5" reloadskillrequirement="85" barrelpos="30,11" weapondamagemodifier="1.2" spread="2" unskilledspread="24" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/m6.ogg" type="OnUse" volume="1.5" range="3000" />
 
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="Head">
 				<Conditional skillrequirement="true" weapons="lt 90" />
 				<Conditional skillrequirement="true" weapons="gte 55" />
@@ -900,7 +916,6 @@
 				<Affliction identifier="stun" strength="0.2" probability="0.4" />
 				<Affliction identifier="blunttrauma" strength="8" probability="0.5" />
 			</StatusEffect>
-
 
 			<RequiredSkill identifier="weapons" level="90" />
 		</RangedWeapon>
@@ -923,55 +938,77 @@
 
 
 		<!--Assault Revolver-->
-		<!--Rsh-12-->
+		<!--RSh-12.7-->
 	<Item name="" 
-	identifier="pistol_revolver_assault" 
+	identifier="scp_rsh12" 
 	variantof="_pistol_revolver_assault"
 	description="" 
 	category="Weapon" 
-	subcategory="Vintage" 
+	subcategory="Coalition" 
 	cargocontaineridentifier="scp_weaponcrate" 
-	tags="smallitem,weapon,gun,pistolitem,gunsmith" 
-	scale="0.45" 
+	tags="smallitem,weapon,gun,pistolitem,gunsmith,provocativetohumanai" 
+	scale="0.445" 
 	impactsoundtag="weaponheavydrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="646,187,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="875,225,144,62" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="72" height="40" density="50" />
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="150,0" aimpos="90,10" handle1="-55,-4" handle2="-55,-15" holdangle="-45" msg="ItemMsgPickUpSelect" />
 
-		<RangedWeapon reload="2" reloadnoskill="3.5" reloadskillrequirement="85" barrelpos="45,11" spread="2" unskilledspread="15" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.3" holdtrigger="true">
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="all" />
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/ar50.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="1.1" />
-			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.25" />
+		<RangedWeapon reload="1.25" reloadnoskill="3.5" reloadskillrequirement="70" barrelpos="72,10" spread="5" unskilledspread="25" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.3" holdtrigger="true">
+			<Sound file="%ModDir%/Sounds/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/rsh12.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="0.9" />
+			<ChargeSound file="%ModDir%/Sounds/doubleaction.ogg" range="1000" volume="1.25" />
 
-			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="head,LeftHand,RightHand">
-				<Conditional skillrequirement="true" weapons="lt 100" />
-				<Conditional skillrequirement="true" weapons="gte 75" />
-				<Affliction identifier="stun" strength="0.25" />
-				<Affliction identifier="blunttrauma" strength="10" probability="0.25" />
-			</StatusEffect>
-			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="head,LeftHand,RightHand">
-				<Conditional skillrequirement="true" weapons="lt 75" />
-				<Conditional skillrequirement="true" weapons="gte 50" />
-				<Affliction identifier="stun" strength="0.25" />
-				<Affliction identifier="blunttrauma" strength="15" probability="0.75" />
-			</StatusEffect>
-			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="head,LeftHand,RightHand">
-				<Conditional skillrequirement="true" weapons="lt 50" />
-				<Affliction identifier="stun" strength="0.5" />
-				<Affliction identifier="blunttrauma" strength="25" />
-			</StatusEffect>
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="15.0,7.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,14.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" scalemultiplier="0.3,0.5" lifetimemultiplier="0.5" colormultiplier="255,175,175,255" />
+			<ParticleEmitter particle="spark" particleamount="7" copyentityangle="true" anglemin="-50" anglemax="50" velocitymin="1500" velocitymax="1800" lifetimemultiplier="0.4" colormultiplier="255,200,200,200" />
 
-			<RequiredSkill identifier="weapons" level="100" />
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="100.0" />
+			</StatusEffect>
+			<RequiredItems excludeditems="sgt_gaugeset" items="arevolverround" type="Contained" msg="ItemMsgAmmoRequired">
+				<Upgrade modversion="1.1.0" excludeditems="sgt_gaugeset" />
+			</RequiredItems>
+			<RequiredSkill identifier="weapons" level="70" />
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="head">
+				<Conditional skillrequirement="true" weapons="lt 55" />
+				<Conditional skillrequirement="true" weapons="gte 30" />
+				<Conditional recoilstabilized="lte 0" />
+				<Affliction identifier="stun" strength="0.2" probability="0.5" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="head">
+				<Conditional skillrequirement="true" weapons="lt 30" />
+				<Conditional recoilstabilized="lte 0" />
+				<Affliction identifier="stun" strength="0.3" probability="0.3" />
+				<Affliction identifier="blunttrauma" strength="12" probability="0.5" />
+			</StatusEffect>
 		</RangedWeapon>
 
-		<aitarget sightrange="4000" soundrange="7000" fadeouttime="5" />
+		<ItemContainer capacity="1" maxstacksize="5" hideitems="true" containedstateindicatorstyle="bullet">
+			<Containable items="arevolverround">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
 
-		<SkillRequirementHint identifier="weapons" level="100" />
+		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+		<SkillRequirementHint identifier="weapons" level="70" />
 	</Item>
+
 
 		<!--###-->
 
@@ -1000,6 +1037,14 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/t5000.ogg" type="OnUse" range="3000" volume="0.75" frequencymultiplier="0.9" />
 			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.25" />
 
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="12" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="300.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="head">
 				<Conditional skillrequirement="true" weapons="lt 85" />
 				<Conditional skillrequirement="true" weapons="gte 75" />
@@ -1023,6 +1068,81 @@
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="85" />
+	</Item>
+
+		<!--###-->
+
+		<!--Hand Breaker-->
+		<!--Rsh-50-->
+	<Item name="" 
+	identifier="pistol_revolver_assault_handbreaker" 
+	variantof="_pistol_revolver_assault"
+	description="" 
+	category="Weapon" 
+	subcategory="Vintage" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	tags="smallitem,weapon,gun,pistolitem,gunsmith" 
+	scale="0.45" 
+	impactsoundtag="weaponheavydrop">
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="646,187,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="875,225,144,62" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="72" height="40" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="150,0" aimpos="90,10" handle1="-55,-4" handle2="-55,-15" holdangle="-45" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon reload="2" reloadnoskill="3.5" reloadskillrequirement="85" barrelpos="45,11" spread="2" unskilledspread="15" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.3" holdtrigger="true">
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="all" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/ar50.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="1.1" />
+			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.25" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="12" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="300.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="head,LeftHand,RightHand">
+				<Conditional skillrequirement="true" weapons="lt 100" />
+				<Conditional skillrequirement="true" weapons="gte 75" />
+				<Affliction identifier="stun" strength="0.25" />
+				<Affliction identifier="blunttrauma" strength="10" probability="0.25" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="head,LeftHand,RightHand">
+				<Conditional skillrequirement="true" weapons="lt 75" />
+				<Conditional skillrequirement="true" weapons="gte 50" />
+				<Affliction identifier="stun" strength="0.25" />
+				<Affliction identifier="blunttrauma" strength="15" probability="0.75" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="head,LeftHand,RightHand">
+				<Conditional skillrequirement="true" weapons="lt 50" />
+				<Affliction identifier="stun" strength="0.5" />
+				<Affliction identifier="blunttrauma" strength="25" />
+			</StatusEffect>
+
+			<RequiredSkill identifier="weapons" level="100" />
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet">
+			<Clear/>
+			<Containable items="127ammo">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="3.6" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.5" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="3.6" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.5" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+
+		<aitarget sightrange="4000" soundrange="7000" fadeouttime="5" />
+
+		<SkillRequirementHint identifier="weapons" level="100" />
 	</Item>
 
 
