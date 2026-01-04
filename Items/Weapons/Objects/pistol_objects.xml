@@ -1,35 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Items>
-	<Item name="" 
-	identifier="_object_weapon_pistol" 
-	variantof="_object_weapon"
-	description="" 
-	category="Weapon" 
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--9mm pistols-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_basic"
 	hideinmenus="true"
 	tags="weapon,gun,gunsmith,pistolitem,smallitem" >
 
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="116,0,54,80" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,145,98,75" depth="0.55" origin="0.5,0.5" />
 
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
-		</Quality>
-	</Item>
-
-
-	<!--Codename from regular 9mm pistols should do fine.-->
-	<!--TODO: Find better tag for this.-->
-
-	<!--9mm pistols-->
-	<Item name="" 
-	identifier="_object_weapon_pistol_base"
-	variantof="_object_weapon_pistol"
-	description="" 
-	category="Weapon" 
-	hideinmenus="true"
-	tags="weapon,gun,gunsmith,pistolitem,smallitem" >
-
-		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-40,-7" msg="ItemMsgPickUpSelect"/>
+		<Body width="140" height="60" density="50" />
 
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -64,20 +50,26 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
 	</Item>
 
-			<!--###-->
 
-	<!--10mm pistols-->
-	<Item name="" 
-	identifier="_object_weapon_pistol_assault"
-	variantof="_object_weapon_pistol"
-	description="" 
-	category="Weapon" 
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Assault Pistols (10mm)-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_assault"
 	hideinmenus="true"
 	tags="weapon,gun,gunsmith,pistolitem,smallitem" >
 
-		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-33,-7" msg="ItemMsgPickUpSelect" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="420,81,51,73" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,130,112,77" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
 
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -113,6 +105,302 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
 	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--.357 Magnum Revolvers-->
+		<!--Service Revolvers-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_revolver_service" 
+	hideinmenus="true"
+	tags="smallitem,weapon,gun,pistolitem,gunsmith" >
+		
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="383,0,45,72" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="220,0,135,67" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="72" height="40" density="50" />
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,3.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,6.0" colormultiplier="255,200,200,200" />
+			
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/357.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/3572.ogg" type="OnUse" range="3000" />
+			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.05" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
+			</StatusEffect>
+
+			<RequiredItems items="357ammo,revolverround" type="Contained" msg="ItemMsgAmmoRequired" />
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="6" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="357ammo,revolverround" hide="true">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+
+		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="60" />
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--.44 Magnum Revolvers-->
+		<!--Light Handcannons-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_revolver_lighthandcannon" 
+	hideinmenus='true'
+	tags="smallitem,weapon,gun,pistolitem,gunsmith" >
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="430,0,47,69" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,222,136,62" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="72" height="40" density="50" />
+
+		<RangedWeapon reload="1.1" reloadnoskill="2" reloadskillrequirement="60" barrelpos="30,11" spread="2.5" unskilledspread="7" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.2" holdtrigger="true">
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/441.ogg" type="OnUse" range="3500" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/441.ogg" type="OnUse" range="3500" frequencymultiplier="0.95" />
+			
+			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.15" />
+			
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8,3.5" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,7.0" colormultiplier="255,200,200,200" />
+			
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="5.4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
+			</StatusEffect>
+
+			<RequiredItems items="44ammo,44_round" type="Contained" msg="ItemMsgAmmoRequired" />
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet">
+			<Containable items="44ammo,44_round">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.35" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.35" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+
+		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="65" />
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Heavy Pistols (.45)-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_heavy" 
+	hideinmenus="true"
+	tags="smallitem,weapon,gun,pistolitem,gunsmith,mountableweapon" >
+		
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="647,1,54,83" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="111,0,105,75" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="140" height="60" density="50" />
+
+		<RangedWeapon reload="0.385" reloadnoskill="0.55" reloadskillrequirement="40" barrelpos="30,11" spread="13" unskilledspread="24" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.25" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="26" />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45ammo,45pistolammo,pistol45_magazine,pistol45_magazine_ap" />	
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<Containable items="45pistolammo" hide="true">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.2" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.75" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+			</Containable>
+			
+		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+
+		<SkillRequirementHint identifier="weapons" level="40" />
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Oppressor Heavy Pistols (.50)-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_oppressor_heavy" 
+	hideinmenus="true"
+	tags="smallitem,weapon,gun,pistolitem,gunsmith">
+		
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="332,0,49,71" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="221,70,130,75" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="140" height="60" density="50" />
+
+		<RangedWeapon reload="0.8" reloadnoskill="3.5" reloadskillrequirement="75" barrelpos="30,11" spread="6" unskilledspread="16" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+			
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="10.0,3.5" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,8.0" colormultiplier="255,200,200,200" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="deagleammo" />
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet">
+			<Containable items="deagleammo" hide="true">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.2" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.75" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+
+		<Quality>
+			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
+		</Quality>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Assault Revolvers (.500 / 12.7x55mm)-->
+
+
+	<Item name="" 
+	identifier="_pistol_revolver_assault" 
+	hideinmenus="true"
+	tags="smallitem,weapon,gun,pistolitem,gunsmith" 
+	scale="0.45">
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="646,187,60,60" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="875,225,144,62" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="72" height="40" density="50" />
+
+		<RangedWeapon reload="2" reloadnoskill="3.5" reloadskillrequirement="85" barrelpos="45,11" spread="2" unskilledspread="15" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.3" holdtrigger="true">
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="20.0,7.0" colormultiplier="255,150,150,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,14.0" colormultiplier="255,150,150,200" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="12" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="300.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems items="127ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="5" hideitems="true" containedstateindicatorstyle="bullet">
+			<Containable items="arevolverround">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+
+		<aitarget sightrange="4000" soundrange="7000" fadeouttime="5" />
+
+		<SkillRequirementHint identifier="weapons" level="100" />
+
+	</Item>
+
 
 </Items>
