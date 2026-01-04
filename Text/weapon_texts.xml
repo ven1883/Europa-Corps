@@ -170,9 +170,12 @@
 		<!--M6 Halo Magnum-->
 			<entityname.pistol_oppressor_heavy_magnum>Prototype Oppressor Heavy Pistol</entityname.pistol_oppressor_heavy_magnum>
 			<entitydescription.pistol_oppressor_heavy_magnum>A strange but elegant 12.7x33mm design for a powerhouse of a handgun, with state-of-the-art closed bolt mechanism and Durasteel recoil spring able to significantly dampen the recoil impulses.</entitydescription.pistol_oppressor_heavy_magnum>
-		<!--Rsh-12-->
-			<entityname.pistol_revolver_assault>Hand Breaker</entityname.pistol_revolver_assault>
-			<entitydescription.pistol_revolver_assault>A 12.7x99mm Assault Revolver that has been modified to take Anti-Materiel Cartridges, who did this and why is unknown given the ridiculous recoil.</entitydescription.pistol_revolver_assault>
+		<!--Rsh-12.7-->
+			<entityname.scp_rsh12>Assault Revolver</entityname.scp_rsh12>
+			<entitydescription.scp_rsh12>A large 12.7x55mm revolver with questionably high recoil, but regardless provides immense power in a handgun package. It has a heavy double action trigger mechanism.</entitydescription.scp_rsh12>
+		<!--Rsh-50-->
+			<entityname.pistol_revolver_assault_handbreaker>Hand Breaker</entityname.pistol_revolver_assault_handbreaker>
+			<entitydescription.pistol_revolver_assault_handbreaker>A 12.7x99mm Assault Revolver that has been modified to take Anti-Materiel Cartridges, who did this and why is unknown given the ridiculous recoil.</entitydescription.pistol_revolver_assault_handbreaker>
 		<!--Magnus-->
 			<entityname.pistol_revolver_assault_prototype>Prototype Assault Revolver</entityname.pistol_revolver_assault_prototype>
 			<entitydescription.pistol_revolver_assault_prototype>An Assault Revolver utilizing an unorthodox and unconventional cylinder and barrel to allow for firing 9x33, 10.9x33 and 12.7x55mm cartridges. As a result of the strange trigger linkage to the cylinder it takes a lot of skill to fire quickly.</entitydescription.pistol_revolver_assault_prototype>
