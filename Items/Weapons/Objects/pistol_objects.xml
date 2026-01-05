@@ -42,12 +42,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
@@ -93,12 +93,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir:2764968387%/Sounds/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir:2764968387%/Sounds/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
@@ -138,19 +138,19 @@
 			<RequiredItems items="357ammo,revolverround" type="Contained" msg="ItemMsgAmmoRequired" />
 		</RangedWeapon>
 
-		<ItemContainer >
+		<ItemContainer>	
 			<Containable items="357ammo,revolverround" hide="true">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
@@ -198,12 +198,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.35" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
@@ -249,12 +249,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.75" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
@@ -300,12 +300,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.75" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
@@ -322,8 +322,8 @@
 	tags="smallitem,weapon,gun,pistolitem,gunsmith" 
 	scale="0.45">
 
-		<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="72" height="40" density="50" />
 
@@ -352,12 +352,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>

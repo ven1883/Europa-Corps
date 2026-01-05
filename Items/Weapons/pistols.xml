@@ -813,7 +813,7 @@
 
 		<RangedWeapon reload="0.385" reloadnoskill="0.55" reloadskillrequirement="40" barrelpos="30,11" spread="13" unskilledspread="24" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/sr1.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/sr1.ogg" type="OnUse" range="3000" />
 
 			<RequiredSkill identifier="weapons" level="40" />
 		</RangedWeapon>
@@ -857,7 +857,7 @@
 
 		<RangedWeapon reload="0.42" reloadnoskill="0.6" reloadskillrequirement="45" barrelpos="30,11" spread="9" unskilledspread="18" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/451.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/451.ogg" type="OnUse" range="3000" />
 
 			<RequiredSkill identifier="weapons" level="40" />
 		</RangedWeapon>
@@ -898,7 +898,7 @@
 		
 		<RangedWeapon reload="0.475" reloadnoskill="0.8" weapondamagemodifier="1.3" reloadskillrequirement="55" barrelpos="61,13" spread="9" unskilledspread="18" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/451.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/451.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
 
 			<RequiredSkill identifier="weapons" level="55" />
 		</RangedWeapon>
@@ -937,7 +937,7 @@
 
 		<RangedWeapon reload="0.275" reloadnoskill="1" reloadskillrequirement="65" weapondamagemodifier="1.25" barrelpos="30,11" spread="9" unskilledspread="18" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/452.ogg" type="OnUse" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/451.ogg" type="OnUse" range="3000" />
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45ammo,45pistolammo,pistol45_magazine,pistol45_magazine_ap" />
 
@@ -986,10 +986,10 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,8.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" scalemultiplier="0.2,0.4" lifetimemultiplier="0.5" colormultiplier="255,200,200,255" />
 			<ParticleEmitter particle="spark" particleamount="4" copyentityangle="true" anglemin="-45" anglemax="45" velocitymin="1500" velocitymax="1800" lifetimemultiplier="0.4" colormultiplier="255,200,200,200" />
-			<Sound file="%ModDir%/Sounds/deagle.ogg" type="OnUse" volume="1.1" range="3000" selectionmode="random" />
-			<Sound file="%ModDir%/Sounds/deagle.ogg" type="OnUse" volume="1.1" frequencymultiplier="0.9" range="3000" />
-			<Sound file="%ModDir%/Sounds/deagle.ogg" type="OnUse" volume="1.1" frequencymultiplier="0.95" range="3000" />
-			<Sound file="%ModDir%/Sounds/deagle.ogg" type="OnUse" volume="1.1" frequencymultiplier="1.05" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/deagle.ogg" type="OnUse" volume="1.1" range="3000" selectionmode="random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/deagle.ogg" type="OnUse" volume="1.1" frequencymultiplier="0.9" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/deagle.ogg" type="OnUse" volume="1.1" frequencymultiplier="0.95" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/deagle.ogg" type="OnUse" volume="1.1" frequencymultiplier="1.05" range="3000" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
@@ -1061,7 +1061,7 @@
 
 		<RangedWeapon reload="0.65" reloadnoskill="2.5" reloadskillrequirement="85" barrelpos="30,11" weapondamagemodifier="1.2" spread="2" unskilledspread="24" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
-			<Sound file="%ModDir%/Sounds/m6.ogg" type="OnUse" volume="1.5" range="3000" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m6.ogg" type="OnUse" volume="1.5" range="3000" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
@@ -1119,17 +1119,17 @@
 	scale="0.445" 
 	impactsoundtag="weaponheavydrop">
 
-		<InventoryIcon texture="%ModDir%/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="72" height="40" density="50" />
 
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="150,0" aimpos="90,10" handle1="-55,-4" handle2="-55,-15" holdangle="-45" msg="ItemMsgPickUpSelect" />
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="150,0" aimpos="90,10" handle1="-55,-4" handle2="-55,-15" holdangle="-45" msg="ItemMsgPickUpSelect"/>
 
 		<RangedWeapon reload="1.25" reloadnoskill="3.5" reloadskillrequirement="70" barrelpos="72,10" spread="5" unskilledspread="25" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.3" holdtrigger="true">
-			<Sound file="%ModDir%/Sounds/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random" />
-			<Sound file="%ModDir%/Sounds/rsh12.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="0.9" />
-			<ChargeSound file="%ModDir%/Sounds/doubleaction.ogg" range="1000" volume="1.25" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/rsh12.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="0.9" />
+			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.25" />
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="15.0,7.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,14.0" colormultiplier="255,200,200,200" />
@@ -1164,12 +1164,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
@@ -1250,13 +1250,13 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.6" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
-				</StatusEffect>
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+				</StatusEffect>	
 			</Containable>
 		</ItemContainer>
 
@@ -1328,12 +1328,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.5" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.5" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="3.6" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.5" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.5" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
@@ -1396,12 +1396,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/arreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/arreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.15" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/arreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/arreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
@@ -1484,12 +1484,12 @@
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/akreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.65" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/akreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
