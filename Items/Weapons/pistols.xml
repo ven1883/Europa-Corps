@@ -6,7 +6,7 @@
 
 			<!--9mm Pistols-->
 
-		<!--Civilian Pistol-->
+		<!--Civilian Service Pistol-->
 		<!--MP443-->
 	<Item name="" 
 	identifier="pistol_service_civilian" 
@@ -57,7 +57,7 @@
 
 		<!--###-->
 
-		<!--Military Pistol-->
+		<!--Military Service Pistol-->
 		<!--SIG P226-->
 	<Item name="" 
 	identifier="pistol_service_military" 
@@ -74,6 +74,8 @@
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,72,99,71" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
+
+		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-33,-7" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon
 		reload="0.35" reloadnoskill="0.4" reloadskillrequirement="40" 
@@ -224,6 +226,8 @@
 
 		<Body width="140" height="60" density="50" />
 
+		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-33,-7" msg="ItemMsgPickUpSelect" />
+
 		<RangedWeapon 
 		reload="0.42" reloadnoskill="1.5" reloadskillrequirement="55" 
 		barrelpos="30,10" 
@@ -287,6 +291,8 @@
 
 		<Body width="140" height="60" density="50" />
 
+		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-33,-7" msg="ItemMsgPickUpSelect" />
+
 		<RangedWeapon 
 		reload="0.35" reloadnoskill="1.5" reloadskillrequirement="60" 
 		barrelpos="30,10" 
@@ -347,6 +353,8 @@
 		
 		<Body width="140" height="60" density="50" />
 
+		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-33,-7" msg="ItemMsgPickUpSelect" />
+
 		<RangedWeapon 
 		reload="0.35" barrelpos="68,18" 
 		spread="4" unskilledspread="12" 
@@ -393,7 +401,9 @@
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Alt.png" sourcerect="0,124,114,70" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
-		
+
+		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-33,-7" msg="ItemMsgPickUpSelect" />
+
 		<RangedWeapon 
 		reload="0.26" reloadnoskill="0.7" reloadskillrequirement="50" 
 		barrelpos="30,10" 
@@ -441,6 +451,8 @@
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="0,175,174,83" depth="0.55" origin="0.49695417,0.49841225" />
 
 		<Body width="244" height="69" density="50" />
+
+		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-33,-7" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon 
 		reload="0.05" 
@@ -648,6 +660,8 @@
 			<RequiredSkill identifier="weapons" level="65" />
 		</RangedWeapon>
 
+		<ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet" />
+
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="65" />
@@ -716,6 +730,8 @@
 			<RequiredSkill identifier="weapons" level="65" />
 		</RangedWeapon>
 
+		<ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet" />
+
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="75" />
@@ -762,6 +778,8 @@
 
 			<RequiredSkill identifier="weapons" level="70" />
 		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet" />
 
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
 
@@ -926,7 +944,7 @@
 			<RequiredSkill identifier="weapons" level="75" />
 		</RangedWeapon>
 		
-		<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet">
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
 			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
 				<Containable items="flashlight" hide="false" itempos="16,3" setactive="true" />
@@ -1071,7 +1089,7 @@
 			<RequiredSkill identifier="weapons" level="90" />
 		</RangedWeapon>
 
-		<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+		<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet">
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
 			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
 				<Containable items="flashlight" hide="false" itempos="16,3" setactive="true" />
@@ -1156,6 +1174,8 @@
 			</Containable>
 		</ItemContainer>
 
+		<ItemContainer capacity="1" maxstacksize="5" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet"> </ItemContainer>
+
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="70" />
@@ -1163,6 +1183,9 @@
 
 
 		<!--###-->
+
+		<!--!these do not work at all and they can eat eachother. idk-->
+		<!--TODO: fix. what-->
 
 		<!--Prototype Assault Revolver-->
 		<!--Magnus-->
@@ -1218,6 +1241,24 @@
 
 			<RequiredSkill identifier="weapons" level="85" />
 		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="5" hideitems="true" containedstateindicatorstyle="bullet">
+			<Clear />
+			<Containable items="revolverammo,arevolverround,357ammo,44ammo">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.6" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.6" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
 
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
 
@@ -1296,6 +1337,8 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
+
+		<ItemContainer capacity="1" maxstacksize="3" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" />
 
 		<aitarget sightrange="4000" soundrange="7000" fadeouttime="5" />
 
