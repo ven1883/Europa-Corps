@@ -111,20 +111,20 @@
 			<entitydescription.sgt_crowbar>A weighty and durable wrecking bar made from durasteel. Sometimes it has to be a crowbar coming at them down a steel corridor.</entitydescription.sgt_crowbar>
 	<!--Weapons_pistols-->
 		<!--MP443-->
-			<entityname.pistol_basic_military>Civilian Pistol</entityname.pistol_basic_military>
-			<entitydescription.pistol_basic_military>A boxy 9x19mm pistol seen in the hands of separatists given it's less complex nature and ease of disassembly, though such rudimentary parts are prone to heat retention.</entitydescription.pistol_basic_military>
+			<entityname.pistol_service_civilian>Civilian Service Pistol</entityname.pistol_service_civilian>
+			<entitydescription.pistol_service_civilian>A boxy 9x19mm pistol seen in the hands of separatists given it's less complex nature and ease of disassembly, though such rudimentary parts are prone to heat retention.</entitydescription.pistol_service_civilian>
 		<!--SIG P226-->
-			<entityname.pistol_basic>Service Pistol</entityname.pistol_basic>
-			<entitydescription.pistol_basic>A 9x19mm recoil-operated pistol. It is a near fool-proof design found all across Europa, being adopted by the Coalition as its primary sidearm despite the cartridge's inherently lackluster capabilities.</entitydescription.pistol_basic>
+			<entityname.pistol_service_military>Military Service Pistol</entityname.pistol_service_military>
+			<entitydescription.pistol_service_military>A 9x19mm recoil-operated pistol. It is a near fool-proof design found all across Europa, being adopted by the Coalition as its primary sidearm despite the cartridge's inherently lackluster capabilities.</entitydescription.pistol_service_military>
 		<!--Glock 17-->
-			<entityname.pistol_basic_glock>Gaston</entityname.pistol_basic_glock>
-			<entitydescription.pistol_basic_glock>A rather blocky but reliable 9x19mm pistol, evidently being an older design of self-loading pistol. It has kept surprisingly intact despite it's apparent age.</entitydescription.pistol_basic_glock>
+			<entityname.pistol_service_glock>Gaston</entityname.pistol_service_glock>
+			<entitydescription.pistol_service_glock>A rather blocky but reliable 9x19mm pistol, evidently being an older design of self-loading pistol. It has kept surprisingly intact despite it's apparent age.</entitydescription.pistol_service_glock>
 		<!--Ruger-9-->
-			<entityname.pistol_basic_prototype>Prototype Pistol</entityname.pistol_basic_prototype>
-			<entitydescription.pistol_basic_prototype>A sleek and compact 9x19mm pistol that is essentially a glorified machine pistol, providing excellent firepower and superior accuracy compared to other autoloading handguns. However it's calibre is it's primary downside, having poor effect against armour.</entitydescription.pistol_basic_prototype>
+			<entityname.pistol_service_prototype>Prototype Pistol</entityname.pistol_service_prototype>
+			<entitydescription.pistol_service_prototype>A sleek and compact 9x19mm pistol that is essentially a glorified machine pistol, providing excellent firepower and superior accuracy compared to other autoloading handguns. However it's calibre is it's primary downside, having poor effect against armour.</entitydescription.pistol_service_prototype>
 		<!--Hi-Point Pistol-->
-			<entityname.pistol_assault>Civilian Assault Pistol</entityname.pistol_assault>
-			<entitydescription.pistol_assault>Designed to fire 10x25mm, the "Plastic Pistol" has lead weights in its' slide to cycle properly, giving it a weighty feel, though doing nothing for the recoil.</entitydescription.pistol_assault>
+			<entityname.pistol_assault_civilian>Civilian Assault Pistol</entityname.pistol_assault_civilian>
+			<entitydescription.pistol_assault_civilian>Designed to fire 10x25mm, the "Plastic Pistol" has lead weights in its' slide to cycle properly, giving it a weighty feel, though doing nothing for the recoil.</entitydescription.pistol_assault_civilian>
 		<!--USP 10mm-->
 			<entityname.pistol_assault_combat>Combat Assault Pistol</entityname.pistol_assault_combat>
 			<entitydescription.pistol_assault_combat>A boxy looking 10x25mm handgun, being favoured by most Coalition operators for it's substantially better power and penetration than both 9x19 and 11.43x23 pistols. Such power however comes at the cost of a heavy pistol and significant recoil impulses that most shooters can't handle.</entitydescription.pistol_assault_combat>
@@ -138,14 +138,14 @@
 			<entityname.pistol_assault_prototype>Prototype Assault Pistol</entityname.pistol_assault_prototype>
 			<entitydescription.pistol_assault_prototype>An unorthodox 10x25mm design, with ported barrel and weight distribution for ease of handling during firing. It fires in 2-round bursts to maximize rounds on target, with it doing nothing more but a gentle bounce during its' function.</entitydescription.pistol_assault_prototype>
 		<!--Colt Python-->
-			<entityname.pistol_revolver_service>Service Revolver</entityname.pistol_revolver_service>
-			<entitydescription.pistol_revolver_service>A 9x33mm revolver utilising a larger, higher pressure cartridge than the Coalition's older defensive revolver, but can also use its predecessor's cartridges. It has a light double action trigger mechanism.</entitydescription.pistol_revolver_service>
+			<entityname.pistol_revolver_service_basic>Service Revolver</entityname.pistol_revolver_service_basic>
+			<entitydescription.pistol_revolver_service_basic>A 9x33mm revolver utilising a larger, higher pressure cartridge than the Coalition's older defensive revolver, but can also use its predecessor's cartridges. It has a light double action trigger mechanism.</entitydescription.pistol_revolver_service_basic>
 		<!--R8-->
 			<entityname.pistol_revolver_service_aftermarket>Aftermarket Service Revolver</entityname.pistol_revolver_service_aftermarket>
 			<entitydescription.pistol_revolver_service_aftermarket>A modified 9x33mm Service Revolver that has been almost entirely overhauled, featuring a light trigger and an 8 round cylinder.</entitydescription.pistol_revolver_service_aftermarket>
 		<!--Colt Anaconda-->
-			<entityname.pistol_revolver_lighthandcannon>Light Hand Cannon</entityname.pistol_revolver_lighthandcannon>
-			<entitydescription.pistol_revolver_lighthandcannon>A 10.9x33mm revolver featuring a long barrel and larger cartridge than the Service Revolver. It has a moderately heavy double action trigger mechanism.</entitydescription.pistol_revolver_lighthandcannon>
+			<entityname.pistol_revolver_lighthandcannon_basic>Light Hand Cannon</entityname.pistol_revolver_lighthandcannon_basic>
+			<entitydescription.pistol_revolver_lighthandcannon_basic>A 10.9x33mm revolver featuring a long barrel and larger cartridge than the Service Revolver. It has a moderately heavy double action trigger mechanism.</entitydescription.pistol_revolver_lighthandcannon_basic>
 		<!--Ruger Super Blackhawk-->
 			<entityname.pistol_revolver_lighthandcannon_gunslinger>Single-Action Light Hand Cannon</entityname.pistol_revolver_lighthandcannon_gunslinger>
 			<entitydescription.pistol_revolver_lighthandcannon_gunslinger>A 10.9x33mmR Single-Action revolver, great choice for self-defense, due to it's light trigger pull, but requires the hammer to be drawn back for every subsequent shot. However, the simplicity allows for single-handed use, and more skilled individuals can re-balance it in their hands faster, allowing for quicker shots.</entitydescription.pistol_revolver_lighthandcannon_gunslinger>
@@ -153,8 +153,8 @@
 			<entityname.pistol_revolver_lighthandcannon_dirtyharry>Lucky Punk</entityname.pistol_revolver_lighthandcannon_dirtyharry>
 			<entitydescription.pistol_revolver_lighthandcannon_dirtyharry>An old 10.9x33mm revolver that looks relatively well kept.</entitydescription.pistol_revolver_lighthandcannon_dirtyharry>
 		<!--SR1-->
-			<entityname.pistol_heavy>Civilian Heavy Pistol</entityname.pistol_heavy>
-			<entitydescription.pistol_heavy>An 11.43x23mm pistol used as an easily producable version of the Coalition's Heavy Pistol, with evidence to it originally not being produced in this cartridge. Due to less precision machining it is less accurate alongside having a weaker recoil spring, however this has the side effect of allowing the slide to cycle faster.</entitydescription.pistol_heavy>
+			<entityname.pistol_heavy_civilian>Civilian Heavy Pistol</entityname.pistol_heavy_civilian>
+			<entitydescription.pistol_heavy_civilian>An 11.43x23mm pistol used as an easily producable version of the Coalition's Heavy Pistol, with evidence to it originally not being produced in this cartridge. Due to less precision machining it is less accurate alongside having a weaker recoil spring, however this has the side effect of allowing the slide to cycle faster.</entitydescription.pistol_heavy_civilian>
 		<!--MEU(SOC)-->
 			<entityname.pistol_heavy_military>Military Heavy Pistol</entityname.pistol_heavy_military>
 			<entitydescription.pistol_heavy_military>An 11.43x23mm recoil operated pistol derived from an old American design, using a cartridge which provides more energy on target than 9mm pistol cartridges.</entitydescription.pistol_heavy_military>
@@ -165,14 +165,14 @@
 			<entityname.pistol_heavy_prototype>Prototype Heavy Pistol</entityname.pistol_heavy_prototype>
 			<entitydescription.pistol_heavy_prototype>A finely tuned 11.43x23mm pistol with a light slide, reinforced Durasteel recoil spring and crisp competition grade trigger, allowing for fast and accurate shots. Despite these inherent advantages over it's predecessor, it's round still performs horrendously against any sort of armour.</entitydescription.pistol_heavy_prototype>
 		<!--Desert Eagle-->
-			<entityname.pistol_oppressor_heavy>Oppressor Heavy Pistol</entityname.pistol_oppressor_heavy>
-			<entitydescription.pistol_oppressor_heavy>A large and unweidly 12.7x33mm pistol. It is carried around by individuals to show superiority as a result of its intimidating profile and price tag.</entitydescription.pistol_oppressor_heavy>
+			<entityname.pistol_oppressor_heavy_basic>Oppressor Heavy Pistol</entityname.pistol_oppressor_heavy_basic>
+			<entitydescription.pistol_oppressor_heavy_basic>A large and unweidly 12.7x33mm pistol. It is carried around by individuals to show superiority as a result of its intimidating profile and price tag.</entitydescription.pistol_oppressor_heavy_basic>
 		<!--M6 Halo Magnum-->
 			<entityname.pistol_oppressor_heavy_magnum>Prototype Oppressor Heavy Pistol</entityname.pistol_oppressor_heavy_magnum>
 			<entitydescription.pistol_oppressor_heavy_magnum>A strange but elegant 12.7x33mm design for a powerhouse of a handgun, with state-of-the-art closed bolt mechanism and Durasteel recoil spring able to significantly dampen the recoil impulses.</entitydescription.pistol_oppressor_heavy_magnum>
 		<!--Rsh-12.7-->
-			<entityname.scp_rsh12>Assault Revolver</entityname.scp_rsh12>
-			<entitydescription.scp_rsh12>A large 12.7x55mm revolver with questionably high recoil, but regardless provides immense power in a handgun package. It has a heavy double action trigger mechanism.</entitydescription.scp_rsh12>
+			<entityname.pistol_revolver_assault_basic>Assault Revolver</entityname.pistol_revolver_assault_basic>
+			<entitydescription.pistol_revolver_assault_basic>A large 12.7x55mm revolver with questionably high recoil, but regardless provides immense power in a handgun package. It has a heavy double action trigger mechanism.</entitydescription.pistol_revolver_assault_basic>
 		<!--Rsh-50-->
 			<entityname.pistol_revolver_assault_handbreaker>Hand Breaker</entityname.pistol_revolver_assault_handbreaker>
 			<entitydescription.pistol_revolver_assault_handbreaker>A 12.7x99mm Assault Revolver that has been modified to take Anti-Materiel Cartridges, who did this and why is unknown given the ridiculous recoil.</entitydescription.pistol_revolver_assault_handbreaker>
@@ -351,23 +351,23 @@
 			<entitydescription.scp_ks23>A 6 Gauge powerhouse of a Shotgun that uses the largest shotgun shell considered practical. It has a small capacity however fires shells that hit like an entire submarine.</entitydescription.scp_ks23>
 	<!--Weapons_smgs-->
 		<!--Uzi-->
-			<entityname.scp_uzi>Compact Submachine Gun</entityname.scp_uzi>
-			<entitydescription.scp_uzi>A 9x19mm open bolt Submachine Gun hailing from a simple stamped steel design, making it significantly easier to produce, however sacrifices ergonomics and accuracy as a result.</entitydescription.scp_uzi>
+			<entityname.smg_service_civilian>Civilian Service Submachine Gun</entityname.smg_service_civilian>
+			<entitydescription.smg_service_civilian>A 9x19mm open bolt Submachine Gun hailing from a simple stamped steel design, making it significantly easier to produce, however sacrifices ergonomics and accuracy as a result.</entitydescription.smg_service_civilian>
 		<!--SMG-9-->
-			<entityname.scp_smg9>Submachine Gun</entityname.scp_smg9>
-			<entitydescription.scp_smg9>A compact and easy to operate 9x19mm Submachine Gun designed to provide better accuracy and controllability than a pistol offers. It is a very common weapon in use by civilians and security officers alike.</entitydescription.scp_smg9>
+			<entityname.smg_service_military>Military Service Submachine Gun</entityname.smg_service_military>
+			<entitydescription.smg_service_military>A compact and easy to operate 9x19mm Submachine Gun designed to provide better accuracy and controllability than a pistol offers. It is a very common weapon in use by civilians and security officers alike.</entitydescription.smg_service_military>
 		<!--Vector 9mm-->
-			<entityname.scp_vector>Prototype Submachine Gun</entityname.scp_vector>
-			<entitydescription.scp_vector>A boxy 9x19mm SMG using a unique delayed blowback operation for recoil mitigation purposes, this allows for an immensely fast hyperburst without the overwhelming recoil.</entitydescription.scp_vector>
+			<entityname.smg_service_prototype>Prototype Service Submachine Gun</entityname.smg_service_prototype>
+			<entitydescription.smg_service_prototype>A boxy 9x19mm SMG using a unique delayed blowback operation for recoil mitigation purposes, this allows for an immensely fast hyperburst without the overwhelming recoil.</entitydescription.smg_service_prototype>
 		<!--Hi-Point Carbine-->
-			<entityname.sgt_hpc>Semi-Auto Assault SMG</entityname.sgt_hpc>
-			<entitydescription.sgt_hpc>Firing 10x25mm, it took the design for the Assault Pistol, added a stock, and extended the barrel, allowing for more accurate fire from less skilled individuals.</entitydescription.sgt_hpc>
+			<entityname.smg_assault_semi>Semi-Auto Assault SMG</entityname.smg_assault_semi>
+			<entitydescription.smg_assault_semi>Firing 10x25mm, it took the design for the Assault Pistol, added a stock, and extended the barrel, allowing for more accurate fire from less skilled individuals.</entitydescription.smg_assault_semi>
 		<!--APC10-->
-			<entityname.sgt_apc>Rapid Assault SMG</entityname.sgt_apc>
-			<entitydescription.sgt_apc>Loaded in 10x25mm, the weapon is often favored by boarding parties and ship defense crews for the quick output of damage, while the chunky design and stock mitigate the recoil considerably. The magwell accepts both extended and standard magazine types.</entitydescription.sgt_apc>
+			<entityname.smg_assault_rapid>Rapid Assault SMG</entityname.smg_assault_rapid>
+			<entitydescription.smg_assault_rapid>Loaded in 10x25mm, the weapon is often favored by boarding parties and ship defense crews for the quick output of damage, while the chunky design and stock mitigate the recoil considerably. The magwell accepts both extended and standard magazine types.</entitydescription.smg_assault_rapid>
 		<!--M41A Pulse Rifle-->
-			<entityname.sgt_pasmg>Prototype Assault SMG</entityname.sgt_pasmg>
-			<entitydescription.sgt_pasmg>A brisk-paced 10x25mm submachine gun with a specialty design, it sacrifices speed for accuracy, leaving the user open to close combat during operations. Though, it seems the 8-Gauge underbarrel was the solution to save this Alien of a weapon.</entitydescription.sgt_pasmg>
+			<entityname.smg_assault_prototype>Prototype Assault SMG</entityname.smg_assault_prototype>
+			<entitydescription.smg_assault_prototype>A brisk-paced 10x25mm submachine gun with a specialty design, it sacrifices speed for accuracy, leaving the user open to close combat during operations. Though, it seems the 8-Gauge underbarrel was the solution to save this Alien of a weapon.</entitydescription.smg_assault_prototype>
 		<!--SR2-->
 			<entityname.scp_sr2>Compact Heavy Submachine Gun</entityname.scp_sr2>
 			<entitydescription.scp_sr2>An 11.43x23mm SMG that has been derived from an already existing SMG design, it is extremely compact however due to the very short barrel accuracy is atrocious.</entitydescription.scp_sr2>

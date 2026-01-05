@@ -8,7 +8,7 @@
 
 
 	<Item name="_nospawn" 
-	identifier="_pistol_basic"
+	identifier="_pistol_service"
 	hideinmenus="true"
 	tags="weapon,gun,gunsmith,pistolitem,smallitem" >
 
@@ -20,8 +20,6 @@
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-
-			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
@@ -74,9 +72,6 @@
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.25" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15" />
@@ -131,9 +126,6 @@
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,3.0" colormultiplier="255,200,200,200" />
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,6.0" colormultiplier="255,200,200,200" />
-			
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/357.ogg" type="OnUse" range="3000" selectionmode="Random" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/3572.ogg" type="OnUse" range="3000" />
 			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.05" />
@@ -145,7 +137,7 @@
 			<RequiredItems items="357ammo,revolverround" type="Contained" msg="ItemMsgAmmoRequired" />
 		</RangedWeapon>
 
-		<ItemContainer capacity="1" maxstacksize="6" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+		<ItemContainer>
 			<Containable items="357ammo,revolverround" hide="true">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
@@ -161,8 +153,6 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
-
-		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
 
 		<Quality>
 			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
@@ -187,7 +177,7 @@
 
 		<Body width="72" height="40" density="50" />
 
-		<RangedWeapon reload="1.1" reloadnoskill="2" reloadskillrequirement="60" barrelpos="30,11" spread="2.5" unskilledspread="7" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.2" holdtrigger="true">
+		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 
@@ -196,9 +186,6 @@
 			
 			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.15" />
 			
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8,3.5" colormultiplier="255,200,200,200" />
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,7.0" colormultiplier="255,200,200,200" />
-			
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="5.4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
 			</StatusEffect>
@@ -206,7 +193,7 @@
 			<RequiredItems items="44ammo,44_round" type="Contained" msg="ItemMsgAmmoRequired" />
 		</RangedWeapon>
 
-		<ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet">
+		<ItemContainer>
 			<Containable items="44ammo,44_round">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.35" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
@@ -223,13 +210,9 @@
 			</Containable>
 		</ItemContainer>
 
-		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
-
 		<Quality>
 			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
 		</Quality>
-
-		<SkillRequirementHint identifier="weapons" level="65" />
 	</Item>
 
 
@@ -247,11 +230,9 @@
 		
 		<Body width="140" height="60" density="50" />
 
-		<RangedWeapon reload="0.385" reloadnoskill="0.55" reloadskillrequirement="40" barrelpos="30,11" spread="13" unskilledspread="24" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-
-			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 
 			<StatusEffect type="OnUse" target="Contained">
 				<Use />
@@ -264,7 +245,7 @@
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45ammo,45pistolammo,pistol45_magazine,pistol45_magazine_ap" />	
 		</RangedWeapon>
 
-		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+		<ItemContainer>
 			<Containable items="45pistolammo" hide="true">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.2" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
@@ -285,8 +266,6 @@
 		<Quality>
 			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
 		</Quality>
-
-		<SkillRequirementHint identifier="weapons" level="40" />
 	</Item>
 
 
@@ -304,13 +283,9 @@
 		
 		<Body width="140" height="60" density="50" />
 
-		<RangedWeapon reload="0.8" reloadnoskill="3.5" reloadskillrequirement="75" barrelpos="30,11" spread="6" unskilledspread="16" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
-			
+		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="10.0,3.5" colormultiplier="255,200,200,200" />
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,8.0" colormultiplier="255,200,200,200" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
@@ -323,7 +298,7 @@
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="deagleammo" />
 		</RangedWeapon>
 
-		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet">
+		<ItemContainer>
 			<Containable items="deagleammo" hide="true">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.2" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
@@ -361,12 +336,9 @@
 
 		<Body width="72" height="40" density="50" />
 
-		<RangedWeapon reload="2" reloadnoskill="3.5" reloadskillrequirement="85" barrelpos="45,11" spread="2" unskilledspread="15" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.3" holdtrigger="true">
+		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="20.0,7.0" colormultiplier="255,150,150,200" />
-			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,14.0" colormultiplier="255,150,150,200" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="12" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="300.0" />
@@ -379,8 +351,8 @@
 			<RequiredItems items="arevolverround" type="Contained" msg="ItemMsgAmmoRequired" />
 		</RangedWeapon>
 
-		<ItemContainer capacity="1" maxstacksize="5" hideitems="true" containedstateindicatorstyle="bullet">
-			<Containable items="arevolverround">
+		<ItemContainer>
+			<Containable>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
@@ -395,11 +367,6 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
-
-		<aitarget sightrange="4000" soundrange="7000" fadeouttime="5" />
-
-		<SkillRequirementHint identifier="weapons" level="100" />
-
 	</Item>
 
 

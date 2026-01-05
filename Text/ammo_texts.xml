@@ -107,56 +107,56 @@
         <!--40mm Mini-nuke--> <!--TODO TAG-->
     <!--Ammo_pistol_ammo-->
         <!--9x19 16 round magazine-->
-            <entityname.scp_9mmmag>Pistol Magazine</entityname.scp_9mmmag>
-            <entitydescription.scp_9mmmag>A 16 round 9x19mm pistol magazine containing JHP ammunition, providing a compact means of having decent firepower against unarmoured targets though laughably poor penetration.</entitydescription.scp_9mmmag>
+            <entityname.ammo_9mm_pistol>Pistol Magazine</entityname.ammo_9mm_pistol>
+            <entitydescription.ammo_9mm_pistol>A 16 round 9x19mm pistol magazine containing JHP ammunition, providing a compact means of having decent firepower against unarmoured targets though laughably poor penetration.</entitydescription.ammo_9mm_pistol>
         <!--9x19 16 round AP magazine-->
-            <entityname.scp_9mmapmag>Pistol AP Magazine</entityname.scp_9mmapmag>
-            <entitydescription.scp_9mmapmag>A 16 round 9x19mm pistol magazine containing AP ammunition for a compact means of defending against tougher individuals, is generally considered a superior ammunition choice over JHP as a result of the widespread nature of body armour on Europa.</entitydescription.scp_9mmapmag>
+            <entityname.ammo_9mm_pistol_ap>Pistol AP Magazine</entityname.ammo_9mm_pistol_ap>
+            <entitydescription.ammo_9mm_pistol_ap>A 16 round 9x19mm pistol magazine containing AP ammunition for a compact means of defending against tougher individuals, is generally considered a superior ammunition choice over JHP as a result of the widespread nature of body armour on Europa.</entitydescription.ammo_9mm_pistol_ap>
         <!--9x19mm Pistol AP round-->
-            <entityname.scp_9x19cappprojectile>9mm AP round</entityname.scp_9x19cappprojectile>
-            <entitydescription.scp_9x19cappprojectile>None</entitydescription.scp_9x19cappprojectile>
+            <entityname.projectile_9mm_ap>9mm AP round</entityname.projectile_9mm_ap>
+            <entitydescription.projectile_9mm_ap>None</entitydescription.projectile_9mm_ap>
         <!--9x19mm Pistol round-->
-            <entityname.scp_9x19pprojectile>9mm round</entityname.scp_9x19pprojectile>
-            <entitydescription.scp_9x19pprojectile>None</entitydescription.scp_9x19pprojectile>
+            <entityname.projectile_9mm>9mm round</entityname.projectile_9mm>
+            <entitydescription.projectile_9mm>None</entitydescription.projectile_9mm>
         <!--Assault Pistol Magazine-->
-            <entityname.sgt_10mmmag>Assault Pistol Magazine</entityname.sgt_10mmmag>
-            <entitydescription.sgt_10mmmag>Holding 10 rounds of 10x25mm, the cartidge has a few fans due to native AP abilities, but the wrist-wrecking recoil will deter some users.</entitydescription.sgt_10mmmag>
+            <entityname.ammo_10mm_pistol>Assault Pistol Magazine</entityname.ammo_10mm_pistol>
+            <entitydescription.ammo_10mm_pistol>Holding 10 rounds of 10x25mm, the cartidge has a few fans due to native AP abilities, but the wrist-wrecking recoil will deter some users.</entitydescription.ammo_10mm_pistol>
         <!--Assault Pistol Extended Magazine-->
-            <entityname.sgt_10mmmagext>Assault Pistol Extended Magazine</entityname.sgt_10mmmagext>
-            <entitydescription.sgt_10mmmagext>Holding 20 rounds of 10x25mm, some weapons cannot use this magazine due to it's bulky nature, though the separatists accounted for this in their designs.</entitydescription.sgt_10mmmagext>
+            <entityname.ammo_10mm_pistol_extended>Assault Pistol Extended Magazine</entityname.ammo_10mm_pistol_extended>
+            <entitydescription.ammo_10mm_pistol_extended>Holding 20 rounds of 10x25mm, some weapons cannot use this magazine due to it's bulky nature, though the separatists accounted for this in their designs.</entitydescription.ammo_10mm_pistol_extended>
         <!--Assault Pistol Projectile--> <!--TODO TAG-->
         <!--Heavy Pistol Magazine-->
-            <entityname.scp_45mag>Heavy Pistol Magazine</entityname.scp_45mag>
-            <entitydescription.scp_45mag>A 10 round 11.43x23mm pistol magazine containing JHP ammunition, the large projectiles providing semi-decent stopping power, though is completely useless against armour.</entitydescription.scp_45mag>
+            <entityname.ammo_45acp_pistol>Heavy Pistol Magazine</entityname.ammo_45acp_pistol>
+            <entitydescription.ammo_45acp_pistol>A 10 round 11.43x23mm pistol magazine containing JHP ammunition, the large projectiles providing semi-decent stopping power, though is completely useless against armour.</entitydescription.ammo_45acp_pistol>
         <!--Heavy Pistol Burner Magazine-->
-            <entityname.scp_45incendmag>Heavy Pistol Burner Magazine</entityname.scp_45incendmag>
-            <entitydescription.scp_45incendmag>A 10 round 11.4x23mm magazine meant for pistols, containing FMJ-IL cartridges meant to cause severe burns upon impact.</entitydescription.scp_45incendmag>
+            <entityname.ammo_45acp_pistol_incendiary>Heavy Pistol Burner Magazine</entityname.ammo_45acp_pistol_incendiary>
+            <entitydescription.ammo_45acp_pistol_incendiary>A 10 round 11.4x23mm magazine meant for pistols, containing FMJ-IL cartridges meant to cause severe burns upon impact.</entitydescription.ammo_45acp_pistol_incendiary>
         <!--Heavy Pistol Projectile-->
-            <entityname.scp_45projectile>11.4mm round</entityname.scp_45projectile>
-            <entitydescription.scp_45projectile>None</entitydescription.scp_45projectile>
+            <entityname.projectile_45acp>11.4mm round</entityname.projectile_45acp>
+            <entitydescription.projectile_45acp>None</entitydescription.projectile_45acp>
         <!--Heavy Pistol Incendiary Projectile--> <!--TODO TAG-->
         <!--Service Revolver Round-->
-            <entityname.scp_357round>Service Revolver Round</entityname.scp_357round>
-            <entitydescription.scp_357round>A 9x33mm cartridge with a longer casing and larger projectile than 9x29mm for greater performance.</entitydescription.scp_357round>
+            <entityname.projectile_357mag>Service Revolver Round</entityname.projectile_357mag>
+            <entitydescription.projectile_357mag>A 9x33mm cartridge with a longer casing and larger projectile than 9x29mm for greater performance.</entitydescription.projectile_357mag>
         <!--Service Revolver AP Round-->
-            <entityname.scp_357apround>Service Revolver AP Round</entityname.scp_357apround>
-            <entitydescription.scp_357apround>A 9x33mm cartridge with a longer casing for an increased powder load. It features a titanium penetrator for increased effectiveness against armour.</entitydescription.scp_357apround>
+            <entityname.projectile_357mag_ap>Service Revolver AP Round</entityname.projectile_357mag_ap>
+            <entitydescription.projectile_357mag_ap>A 9x33mm cartridge with a longer casing for an increased powder load. It features a titanium penetrator for increased effectiveness against armour.</entitydescription.projectile_357mag_ap>
         <!--Light Handcannon Round-->
-            <entityname.scp_44round>Light Hand Cannon Round</entityname.scp_44round>
-            <entitydescription.scp_44round>A 10.9x33mm Full Metal Jacket Cartridge, it was for a long time in the mid 20th century considered the most powerful handgun cartridge on Earth, a title which was revoked by cartridges such as 12.7x33mm and 12.7x55mm, which are currently the largest (and least practical) handgun cartridges on Europa.</entitydescription.scp_44round>
+            <entityname.projectile_44mag>Light Hand Cannon Round</entityname.projectile_44mag>
+            <entitydescription.projectile_44mag>A 10.9x33mm Full Metal Jacket Cartridge, it was for a long time in the mid 20th century considered the most powerful handgun cartridge on Earth, a title which was revoked by cartridges such as 12.7x33mm and 12.7x55mm, which are currently the largest (and least practical) handgun cartridges on Europa.</entitydescription.projectile_44mag>
         <!--Light Handcannon AP Round-->
-            <entityname.scp_44apround>Light Hand Cannon AP Round</entityname.scp_44apround>
-            <entitydescription.scp_44apround>A 10.9x33mm Cartridge using a titanium penetrator used to impart more kinetic energy into a smaller surface area, however this design significantly reduces the amount of local tissue damage due to a lack of expansion.</entitydescription.scp_44apround>
+            <entityname.projectile_44mag_ap>Light Hand Cannon AP Round</entityname.projectile_44mag_ap>
+            <entitydescription.projectile_44mag_ap>A 10.9x33mm Cartridge using a titanium penetrator used to impart more kinetic energy into a smaller surface area, however this design significantly reduces the amount of local tissue damage due to a lack of expansion.</entitydescription.projectile_44mag_ap>
         <!--Oppressor Heavy Pistol Magazine-->
-            <entityname.scp_deaglemag>Oppressor Heavy Pistol Magazine</entityname.scp_deaglemag>
-            <entitydescription.scp_deaglemag>A 7 round 12.7x33mm pistol magazine containing large cartridges originally designed for hunting big game animals, thus making it a devastating choice against unarmoured targets.</entitydescription.scp_deaglemag>
+            <entityname.ammo_50ae_pistol>Oppressor Heavy Pistol Magazine</entityname.ammo_50ae_pistol>
+            <entitydescription.ammo_50ae_pistol>A 7 round 12.7x33mm pistol magazine containing large cartridges originally designed for hunting big game animals, thus making it a devastating choice against unarmoured targets.</entitydescription.ammo_50ae_pistol>
         <!--12.7x33 round--> <!--TODO TAG-->
         <!--Assault Revolver Round-->
-            <entityname.scp_arevolverround>Assault Revolver Cartridge</entityname.scp_arevolverround>
-            <entitydescription.scp_arevolverround>A large 12.7x55mm cartridge with a supersonic load, significantly increasing recoil whilst making it able to stop almost anything.</entitydescription.scp_arevolverround>
+            <entityname.projectile_50rs>Assault Revolver Cartridge</entityname.projectile_50rs>
+            <entitydescription.projectile_50rs>A large 12.7x55mm cartridge with a supersonic load, significantly increasing recoil whilst making it able to stop almost anything.</entitydescription.projectile_50rs>
         <!--Assault Revolver Durasteel Round-->
-            <entityname.scp_arevolverduraround>Assault Revolver Durasteel Cartridge</entityname.scp_arevolverduraround>
-            <entitydescription.scp_arevolverduraround>A large 12.7x55mm cartridge using immense amounts of powder and a substantially tough projectile, capable of penetrating through multiple objects.</entitydescription.scp_arevolverduraround>
+            <entityname.projectile_50rs_durasteel>Assault Revolver Durasteel Cartridge</entityname.projectile_50rs_durasteel>
+            <entitydescription.projectile_50rs_durasteel>A large 12.7x55mm cartridge using immense amounts of powder and a substantially tough projectile, capable of penetrating through multiple objects.</entitydescription.projectile_50rs_durasteel>
     <!--Ammo_rifle_ammo-->
         <!--AK-74 30 round mag-->
             <entityname.scp_ak74mag>Crude Assault Rifle Magazine</entityname.scp_ak74mag>
@@ -314,26 +314,26 @@
             <entitydescription.scp_4gslug>A 6 Gauge shotgun shell with a very large armour-penetrating slug, its sheer mass capable of blasting apart soft tissue and armour alike.</entitydescription.scp_4gslug>
     <!--Ammo_smg_ammo-->
         <!--Submachinegun Magazine-->
-            <entityname.scp_9mmsmgmag>Submachine Gun Magazine</entityname.scp_9mmsmgmag>
-            <entitydescription.scp_9mmsmgmag>A 30 round 9x19mm SMG magazine, providing a decent capacity despite the inherent terrible armour defeating capabilities.</entitydescription.scp_9mmsmgmag>
+            <entityname.ammo_9mm_smg>Submachine Gun Magazine</entityname.ammo_9mm_smg>
+            <entitydescription.ammo_9mm_smg>A 30 round 9x19mm SMG magazine, providing a decent capacity despite the inherent terrible armour defeating capabilities.</entitydescription.ammo_9mm_smg>
         <!--Submachinegun Drum Magazine-->
-            <entityname.scp_9mmsmgdrummag>Submachine Gun Drum Magazine</entityname.scp_9mmsmgdrummag>
-            <entitydescription.scp_9mmsmgdrummag>A 50 round 9x19mm SMG Drum magazine providing the ability to put more rounds down range, though still performs pathetically against any armoured targets.</entitydescription.scp_9mmsmgdrummag>
+            <entityname.ammo_9mm_smg_drum>Submachine Gun Drum Magazine</entityname.ammo_9mm_smg_drum>
+            <entitydescription.ammo_9mm_smg_drum>A 50 round 9x19mm SMG Drum magazine providing the ability to put more rounds down range, though still performs pathetically against any armoured targets.</entitydescription.ammo_9mm_smg_drum>
         <!--Submachinegun AP Magazine-->
-            <entityname.scp_9mmsmgapmag>Submachine Gun AP Magazine</entityname.scp_9mmsmgapmag>
-            <entitydescription.scp_9mmsmgapmag>A 30 round 9x19mm SMG magazine containing AP ammunition, providing better effectiveness against armoured targets.</entitydescription.scp_9mmsmgapmag>
+            <entityname.ammo_9mm_smg_ap>Submachine Gun AP Magazine</entityname.ammo_9mm_smg_ap>
+            <entitydescription.ammo_9mm_smg_ap>A 30 round 9x19mm SMG magazine containing AP ammunition, providing better effectiveness against armoured targets.</entitydescription.ammo_9mm_smg_ap>
         <!--9x19mm SMG round-->
-            <entityname.scp_9x19projectile>9mm round</entityname.scp_9x19projectile>
-            <entitydescription.scp_9x19projectile>None</entitydescription.scp_9x19projectile>
+            <entityname.projectile_9mm>9mm round</entityname.projectile_9mm>
+            <entitydescription.projectile_9mm>None</entitydescription.projectile_9mm>
         <!--9x19 AP round-->
             <entityname.scp_9x19approjectile>9x19 AP round</entityname.scp_9x19approjectile>
             <entitydescription.scp_9x19approjectile>None</entitydescription.scp_9x19approjectile>
         <!--25 round 11.43 box magazine-->
-            <entityname.scp_umpmag>Heavy Submachine Gun Magazine</entityname.scp_umpmag>
-            <entitydescription.scp_umpmag>A 25 round 11.43x23mm stick magazine containing JHP cartridges. It provides bit more punch than 9x19mm though still performs terribly against armour.</entitydescription.scp_umpmag>
+            <entityname.ammo_45acp_smg>Heavy Submachine Gun Magazine</entityname.ammo_45acp_smg>
+            <entitydescription.ammo_45acp_smg>A 25 round 11.43x23mm stick magazine containing JHP cartridges. It provides bit more punch than 9x19mm though still performs terribly against armour.</entitydescription.ammo_45acp_smg>
         <!--25 round 11.43 incendiary box magazine-->
-            <entityname.scp_umpincendmag>Heavy Submachine Gun Burner Magazine</entityname.scp_umpincendmag>
-            <entitydescription.scp_umpincendmag>A 25 round 11.4x23mm stick magazine containing FMJ-IL cartridges, designed to cause severe burns on contact with skin.</entitydescription.scp_umpincendmag>
+            <entityname.ammo_45acp_smg_incendiary>Heavy Submachine Gun Burner Magazine</entityname.ammo_45acp_smg_incendiary>
+            <entitydescription.ammo_45acp_smg_incendiary>A 25 round 11.4x23mm stick magazine containing FMJ-IL cartridges, designed to cause severe burns on contact with skin.</entitydescription.ammo_45acp_smg_incendiary>
         <!--Tear gas Surplus SMG Magazine-->
             <entityname.fenitersmgmagazine1>Tear Gas Surplus SMG Magazine</entityname.fenitersmgmagazine1>
             <entitydescription.fenitersmgmagazine1>Hollow small caliber rounds each containing a small amount of tear gas. Extremely painful to be hit by, but they deal lackluster damage compared to solid rounds.</entitydescription.fenitersmgmagazine1>

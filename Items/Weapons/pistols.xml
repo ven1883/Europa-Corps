@@ -9,8 +9,8 @@
 		<!--Civilian Pistol-->
 		<!--MP443-->
 	<Item name="" 
-	identifier="pistol_basic" 
-	variantof="_pistol_basic"
+	identifier="pistol_service_civilian" 
+	variantof="_pistol_service"
 	description="" 
 	category="Weapon" 
 	subcategory="Renegade" 
@@ -26,7 +26,16 @@
 
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-33,-7" msg="ItemMsgPickUpSelect" />
 
-		<RangedWeapon reload="0.28" barrelpos="30,11" spread="10" penetrationmultiplier="0.8" unskilledspread="20" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon 
+		reload="0.28" 
+		barrelpos="30,11"
+		spread="10" unskilledspread="20"
+		penetrationmultiplier="0.8" 
+		combatPriority="60" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/mp4431.ogg" type="OnUse" range="3000" selectionmode="Random" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/mp4431.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/mp4431.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
@@ -51,8 +60,8 @@
 		<!--Military Pistol-->
 		<!--SIG P226-->
 	<Item name="" 
-	identifier="pistol_basic_military" 
-	variantof="_pistol_basic"
+	identifier="pistol_service_military" 
+	variantof="_pistol_service"
 	description="" 
 	category="Weapon" 
 	ubcategory="Coalition" 
@@ -66,8 +75,16 @@
 		
 		<Body width="140" height="60" density="50" />
 
-		<RangedWeapon reload="0.35" reloadnoskill="0.4" reloadskillrequirement="40" barrelpos="30,11" spread="3" unskilledspread="16" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon
+		reload="0.35" reloadnoskill="0.4" reloadskillrequirement="40" 
+		barrelpos="30,11" 
+		spread="3" unskilledspread="16" 
+		combatPriority="60" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/p226.ogg" type="OnUse" range="3000" />
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 
 			<RequiredSkill identifier="weapons" level="35" />
 		</RangedWeapon>
@@ -89,8 +106,8 @@
 		<!--Gaston-->
 		<!--Glock 17-->
 	<Item name="" 
-	identifier="pistol_basic_glock" 
-	variantof="_pistol_basic"
+	identifier="pistol_service_glock" 
+	variantof="_pistol_service"
 	description="" 
 	category="Weapon" 
 	subcategory="Vintage" 
@@ -106,8 +123,17 @@
 
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-40,-7" msg="ItemMsgPickUpSelect" />
 
-		<RangedWeapon reload="0.275" reloadnoskill="0.5" weapondamagemodifier="1.2" reloadskillrequirement="45" barrelpos="30,11" spread="5" unskilledspread="22" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon 
+		reload="0.275" reloadnoskill="0.5" reloadskillrequirement="45"
+		weapondamagemodifier="1.2" 
+		barrelpos="30,11" 
+		spread="5" unskilledspread="22" 
+		combatPriority="60" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/g17.ogg" type="OnUse" range="3000" />
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			
 			<RequiredSkill identifier="weapons" level="35" />
 
@@ -130,8 +156,8 @@
 		<!--Prototype Pistol-->
 		<!--Ruger-9-->
 	<Item name="" 
-	identifier="pistol_basic_prototype" 
-	variantof="_pistol_basic"
+	identifier="pistol_service_prototype" 
+	variantof="_pistol_service"
 	description="" 
 	category="Weapon" 
 	subcategory="Prototype" 
@@ -147,10 +173,19 @@
 
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-40,-7" msg="ItemMsgPickUpSelect" />
 		
-		<RangedWeapon reload="0.14" reloadnoskill="0.5" reloadskillrequirement="65" weapondamagemodifier="1.3" barrelpos="30,11" spread="3" unskilledspread="12" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon 
+		reload="0.14" reloadnoskill="0.5" reloadskillrequirement="65" 
+		weapondamagemodifier="1.3" 
+		barrelpos="30,11" 
+		spread="3" unskilledspread="12" 
+		combatPriority="60" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/ruger91.ogg" type="OnUse" range="3000" selectionmode="random" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/ruger92.ogg" type="OnUse" range="3000" />
-			
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+
 			<RequiredSkill identifier="weapons" level="65" />
 		</RangedWeapon>
 
@@ -171,10 +206,10 @@
 		<!--Assault Pistols (10mm)-->
 
 
-		<!--Renegade Assault Pistol-->
+		<!--Civilian Assault Pistol-->
 		<!--Hi-Point Pistol-->
 	<Item name="" 
-	identifier="pistol_assault" 
+	identifier="pistol_assault_civilian" 
 	variantof="_pistol_assault"
 	description="" 
 	category="Weapon" 
@@ -186,10 +221,21 @@
 		
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="420,81,51,73" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,130,112,77" depth="0.55" origin="0.5,0.5" />
+
 		<Body width="140" height="60" density="50" />
 
-		<RangedWeapon reload="0.42" reloadnoskill="1.5" reloadskillrequirement="55" barrelpos="30,10" spread="10" unskilledspread="20" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+		<RangedWeapon 
+		reload="0.42" reloadnoskill="1.5" reloadskillrequirement="55" 
+		barrelpos="30,10" 
+		spread="10" unskilledspread="20" 
+		combatPriority="60" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/101.ogg" type="OnUse" range="3000" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
+
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.25" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15" />
@@ -238,11 +284,20 @@
 		
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="311,59,38,54" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,71,108,73" depth="0.55" origin="0.5,0.5" />
-		
+
 		<Body width="140" height="60" density="50" />
-		
-		<RangedWeapon reload="0.35" reloadnoskill="1.5" reloadskillrequirement="60" barrelpos="30,10" spread="6" unskilledspread="15" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+
+		<RangedWeapon 
+		reload="0.35" reloadnoskill="1.5" reloadskillrequirement="60" 
+		barrelpos="30,10" 
+		spread="6" unskilledspread="15" 
+		combatPriority="60" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/101.ogg" type="OnUse" range="3000" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1.25" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15" />
@@ -269,11 +324,6 @@
 
 		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
-			<QualityStat stattype="Condition" value="0.1" />
-		</Quality>
-
 		<SkillRequirementHint identifier="weapons" level="30" />
 	</Item>
 
@@ -297,9 +347,16 @@
 		
 		<Body width="140" height="60" density="50" />
 
-		<RangedWeapon reload="0.35" barrelpos="68,18" spread="4" unskilledspread="12" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">>
+		<RangedWeapon 
+		reload="0.35" barrelpos="68,18" 
+		spread="4" unskilledspread="12" 
+		combatPriority="60" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
 			<ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
-			
+			<ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
+
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/10s1.ogg" type="OnUse" range="800" volume="1.15" />
 			
 			<RequiredSkill identifier="weapons" level="30" />
@@ -337,8 +394,15 @@
 		
 		<Body width="140" height="60" density="50" />
 		
-		<RangedWeapon reload="0.26" reloadnoskill="0.7" reloadskillrequirement="50" barrelpos="30,10" spread="4" unskilledspread="12" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
-	`		<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
+		<RangedWeapon 
+		reload="0.26" reloadnoskill="0.7" reloadskillrequirement="50" 
+		barrelpos="30,10" 
+		spread="4" unskilledspread="12" 
+		combatPriority="60" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6.0,2.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5.0" colormultiplier="255,200,200,200" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/10u.ogg" type="OnUse" range="3000" />
 
@@ -372,13 +436,21 @@
 	tags="smallitem,weapon,gun,gunsmith,mountableweapon" 
 	Scale="0.32" 
 	impactsoundtag="weaponlightdrop">
-		
+
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="301,0,54,60" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="0,175,174,83" depth="0.55" origin="0.49695417,0.49841225" />
-		
+
 		<Body width="244" height="69" density="50" />
-		
-		<RangedWeapon reload="0.05" barrelpos="85,24" spread="3" unskilledspread="18" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" damagemultiplier="1.15">
+
+		<RangedWeapon 
+		reload="0.05" 
+		barrelpos="85,24" 
+		spread="3" unskilledspread="18" 
+		combatPriority="80" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2" 
+		damagemultiplier="1.15">
+
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			
 			<StatusEffect type="OnUse" target="Contained">
@@ -413,7 +485,7 @@
 		<!--Service Revolver-->
 		<!--Colt Python-->
 	<Item name="" 
-	identifier="pistol_revolver_service" 
+	identifier="pistol_revolver_service_basic" 
 	variantof="_pistol_revolver_service"
 	description="" 
 	cargocontaineridentifier="scp_weaponcrate" 
@@ -430,8 +502,18 @@
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="110,0" aimpos="90,10" handle1="-42,-6" handle2="-60,-15" holdangle="-45" msg="ItemMsgPickUpSelect" />
 		
-		<RangedWeapon reload="0.75" reloadnoskill="1.5" reloadskillrequirement="55" barrelpos="30,11" spread="2" unskilledspread="12" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.15" holdtrigger="true">
-			
+		<RangedWeapon 
+		reload="0.75" reloadnoskill="1.5" reloadskillrequirement="55" 
+		barrelpos="30,11" 
+		spread="2" unskilledspread="12" 
+		combatPriority="70" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2" 
+		maxchargetime="0.15" holdtrigger="true">
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,3.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,6.0" colormultiplier="255,200,200,200" />
+
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
 			</StatusEffect>
@@ -474,8 +556,18 @@
 		
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="90,10" handle1="-42,-6" handle2="-60,-15" msg="ItemMsgPickUpSelect" />
 		
-		<RangedWeapon reload="0.65" reloadnoskill="3" reloadskillrequirement="65" barrelpos="30,11" spread="2" unskilledspread="12" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.15">
-			
+		<RangedWeapon 
+		reload="0.65" reloadnoskill="3" reloadskillrequirement="65" 
+		barrelpos="30,11" 
+		spread="2" unskilledspread="12" 
+		combatPriority="70" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2" 
+		maxchargetime="0.15" holdtrigger="true">
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,3" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,6.0" colormultiplier="255,200,200,200" />
+
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="7.0" />
 			</StatusEffect>
@@ -488,6 +580,8 @@
 		</ItemContainer>
 		
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+
+		<SkillRequirementHint identifier="weapons" level="60" />
 	</Item>
 
 
@@ -499,7 +593,7 @@
 		<!--Light Handcannon-->
 		<!--Colt Anaconda-->
 	<Item name="" 
-	identifier="pistol_revolver_lighthandcannon" 
+	identifier="pistol_revolver_lighthandcannon_basic" 
 	variantof="_pistol_revolver_lighthandcannon"
 	description="" 
 	cargocontaineridentifier="scp_weaponcrate" 
@@ -515,7 +609,19 @@
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="115,5" aimpos="90,10" handle1="-44,-6" handle2="-60,-15" holdangle="-45" msg="ItemMsgPickUpSelect" />
 
-		<RangedWeapon reload="1.1" reloadnoskill="2" reloadskillrequirement="60" barrelpos="30,11" spread="2.5" unskilledspread="7" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.2" holdtrigger="true">
+		<RangedWeapon 
+		reload="1.1" reloadnoskill="2" reloadskillrequirement="60" 
+		barrelpos="30,11" 
+		spread="2.5" unskilledspread="7" 
+		combatPriority="70" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2" 
+		maxchargetime="0.2" holdtrigger="true">
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8,3.5" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,7.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="spark" particleamount="4" copyentityangle="true" anglemin="-35" anglemax="35" velocitymin="1500" velocitymax="1800" lifetimemultiplier="0.4" colormultiplier="255,200,200,200" />
+
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="5.4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
 			</StatusEffect>
@@ -543,6 +649,7 @@
 		</RangedWeapon>
 
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+
 		<SkillRequirementHint identifier="weapons" level="65" />
 	</Item>
 
@@ -568,7 +675,19 @@
 
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="106,14" handle1="-62,-16" msg="ItemMsgPickUpSelect" />
 		
-		<RangedWeapon reload="1.3" reloadnoskill="2" reloadskillrequirement="60" barrelpos="30,11" spread="4" unskilledspread="10" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.2" holdtrigger="true">
+		<RangedWeapon 
+		reload="1.3" reloadnoskill="2" reloadskillrequirement="60"
+		barrelpos="30,11" 
+		spread="4" unskilledspread="10" 
+		combatPriority="70" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2" 
+		maxchargetime="0.2" holdtrigger="true">
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8,3.5" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,7.0" colormultiplier="255,200,200,200" />
+
+
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="5.4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
 			</StatusEffect>
@@ -598,6 +717,7 @@
 		</RangedWeapon>
 
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+
 		<SkillRequirementHint identifier="weapons" level="75" />
 	</Item>
 
@@ -623,7 +743,19 @@
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="90,10" handle1="-44,-6" handle2="-60,-15" msg="ItemMsgPickUpSelect" />
 
-		<RangedWeapon weapondamagemodifier="1.25" reload="0.925" reloadnoskill="2" reloadskillrequirement="70" barrelpos="30,11" spread="2" unskilledspread="12" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.175">
+		<RangedWeapon 
+		weapondamagemodifier="1.25" 
+		reload="0.925" reloadnoskill="2" reloadskillrequirement="70" 
+		barrelpos="30,11" 
+		spread="2" unskilledspread="12" 
+		combatPriority="70" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2" 
+		maxchargetime="0.175">
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="8,3.5" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,7.0" colormultiplier="255,200,200,200" />
+
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="5.4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
 			</StatusEffect>
@@ -632,6 +764,7 @@
 		</RangedWeapon>
 
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+
 		<SkillRequirementHint identifier="weapons" level="70" />
 	</Item>
 
@@ -643,7 +776,7 @@
 		<!--Civilian Heavy Pistol-->
 		<!--SR1-->
 	<Item name="" 
-	identifier="pistol_heavy" 
+	identifier="pistol_heavy_civilian" 
 	variantof="_pistol_heavy"
 	description="" 
 	category="Weapon" 
@@ -661,7 +794,8 @@
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-35,-7" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon reload="0.385" reloadnoskill="0.55" reloadskillrequirement="40" barrelpos="30,11" spread="13" unskilledspread="24" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/sr1.ogg" type="OnUse" range="3000" />
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Sounds/sr1.ogg" type="OnUse" range="3000" />
 
 			<RequiredSkill identifier="weapons" level="40" />
 		</RangedWeapon>
@@ -675,6 +809,8 @@
 				<Containable items="flashlight" hide="false" itempos="20,2" setactive="true" />
 			</SubContainer>
 		</ItemContainer>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="40" />
 	</Item>
@@ -702,7 +838,8 @@
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-37,-7" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon reload="0.42" reloadnoskill="0.6" reloadskillrequirement="45" barrelpos="30,11" spread="9" unskilledspread="18" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/451.ogg" type="OnUse" range="3000" />
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Sounds/451.ogg" type="OnUse" range="3000" />
 
 			<RequiredSkill identifier="weapons" level="40" />
 		</RangedWeapon>
@@ -713,6 +850,8 @@
 				<Containable items="flashlight" hide="false" itempos="16,3" setactive="true" />
 			</SubContainer>
 		</ItemContainer>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="40" />
 	</Item>
@@ -740,8 +879,8 @@
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-37,-7" msg="ItemMsgPickUpSelect" />
 		
 		<RangedWeapon reload="0.475" reloadnoskill="0.8" weapondamagemodifier="1.3" reloadskillrequirement="55" barrelpos="61,13" spread="9" unskilledspread="18" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/g17.ogg" type="OnUse" range="3000" />
-
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Sounds/451.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
 
 			<RequiredSkill identifier="weapons" level="55" />
 		</RangedWeapon>
@@ -755,6 +894,8 @@
 
 		<SkillRequirementHint identifier="weapons" level="55" />
 	</Item>
+
+		<!--###-->
 
 		<!--Prototype Heavy Pistol-->
 		<!--FNX-45-->
@@ -777,7 +918,8 @@
 		<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-37,-7" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon reload="0.275" reloadnoskill="1" reloadskillrequirement="65" weapondamagemodifier="1.25" barrelpos="30,11" spread="9" unskilledspread="18" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/451.ogg" type="OnUse" range="3000" />
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Sounds/452.ogg" type="OnUse" range="3000" />
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45ammo,45pistolammo,pistol45_magazine,pistol45_magazine_ap" />
 
@@ -804,7 +946,7 @@
 		<!--Oppressor Heavy Pistol-->
 		<!--Desert Eagle-->
 	<Item name="" 
-	identifier="pistol_oppressor_heavy" 
+	identifier="pistol_oppressor_heavy_basic" 
 	variantof="_pistol_oppressor_heavy"
 	description="" 
 	category="Weapon" 
@@ -822,7 +964,14 @@
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="73,5" handle1="-40,-8" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon reload="0.8" reloadnoskill="3.5" reloadskillrequirement="75" barrelpos="30,11" spread="6" unskilledspread="16" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/deagle.ogg" type="OnUse" volume="1.1" range="3000" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="10.0,3.5" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,8.0" colormultiplier="255,200,200,200" />
+			<ParticleEmitter particle="muzzleflashcoilgun" particleamount="1" scalemultiplier="0.2,0.4" lifetimemultiplier="0.5" colormultiplier="255,200,200,255" />
+			<ParticleEmitter particle="spark" particleamount="4" copyentityangle="true" anglemin="-45" anglemax="45" velocitymin="1500" velocitymax="1800" lifetimemultiplier="0.4" colormultiplier="255,200,200,200" />
+			<Sound file="%ModDir%/Sounds/deagle.ogg" type="OnUse" volume="1.1" range="3000" selectionmode="random" />
+			<Sound file="%ModDir%/Sounds/deagle.ogg" type="OnUse" volume="1.1" frequencymultiplier="0.9" range="3000" />
+			<Sound file="%ModDir%/Sounds/deagle.ogg" type="OnUse" volume="1.1" frequencymultiplier="0.95" range="3000" />
+			<Sound file="%ModDir%/Sounds/deagle.ogg" type="OnUse" volume="1.1" frequencymultiplier="1.05" range="3000" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
@@ -876,6 +1025,7 @@
 		<!--M6 Halo Magnum-->
 	<Item name="" 
 	identifier="pistol_oppressor_heavy_magnum" 
+	variantof="_pistol_oppressor_heavy"
 	description="" 
 	category="Weapon" 
 	subcategory="Prototype" 
@@ -892,7 +1042,8 @@
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="150,0" holdangle="-45" aimpos="76,5" handle1="-47,-4" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon reload="0.65" reloadnoskill="2.5" reloadskillrequirement="85" barrelpos="30,11" weapondamagemodifier="1.2" spread="2" unskilledspread="24" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/m6.ogg" type="OnUse" volume="1.5" range="3000" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
+			<Sound file="%ModDir%/Sounds/m6.ogg" type="OnUse" volume="1.5" range="3000" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
@@ -940,7 +1091,7 @@
 		<!--Assault Revolver-->
 		<!--RSh-12.7-->
 	<Item name="" 
-	identifier="scp_rsh12" 
+	identifier="pistol_revolver_assault_basic" 
 	variantof="_pistol_revolver_assault"
 	description="" 
 	category="Weapon" 
@@ -1006,6 +1157,7 @@
 		</ItemContainer>
 
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+
 		<SkillRequirementHint identifier="weapons" level="70" />
 	</Item>
 
@@ -1036,6 +1188,8 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="all" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/t5000.ogg" type="OnUse" range="3000" volume="0.75" frequencymultiplier="0.9" />
 			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.25" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="15.0,7.0" colormultiplier="255,150,150,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,14.0" colormultiplier="255,150,150,200" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="12" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="300.0" />
@@ -1096,6 +1250,9 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/rsh12.ogg" type="OnUse" range="3000" volume="1.5" selectionmode="all" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/ar50.ogg" type="OnUse" range="3000" volume="1.5" frequencymultiplier="1.1" />
 			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.25" />
+
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="20.0,7.0" colormultiplier="255,150,150,200" />
+			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,14.0" colormultiplier="255,150,150,200" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="12" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="300.0" />
@@ -1212,14 +1369,7 @@
 
 		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
-			<QualityStat stattype="Condition" value="0.1" />
-		</Quality>
-
 		<SkillRequirementHint identifier="weapons" level="50" />
-
-
 	</Item>
 
 		<!--###-->
@@ -1306,11 +1456,6 @@
 		</ItemContainer>
 
 		<aitarget sightrange="3000" soundrange="8000" fadeouttime="5" />
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
-			<QualityStat stattype="Condition" value="0.2" />
-		</Quality>
 
 		<SkillRequirementHint identifier="weapons" level="60" />
 	</Item>

@@ -105,7 +105,7 @@
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand,LeftHand" holdpos="0,-70" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="6" maxstacksize="12" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
-			<Containable items="scp_arevolverround,revolverammo,357ammo,handcannonround,44ammo" />
+			<Containable items="projectile_50rs,revolverammo,357ammo,handcannonround,44ammo" />
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_amrammobox" description="" tags="smallitem" scale="0.2" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
