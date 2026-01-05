@@ -7,7 +7,7 @@
 		<!--9mm SMGs-->
 
 
-		<!--Compact Submachine gun-->
+		<!--Compact Service Submachine gun-->
 		<!--Uzi-->
 	<Item name="" 
 	identifier="smg_service_civilian" 
@@ -57,7 +57,7 @@
 
 		<!--###-->
 
-		<!--Submachine gun-->
+		<!--Military Service Submachine gun-->
 		<!--SMG-9-->
 	<Item name="" 
 	identifier="smg_service_military" 
@@ -386,7 +386,16 @@
 
 		<!--Compact Heavy Submachine Gun-->
 		<!--SR2-->
-	<Item name="" identifier="scp_sr2" description="" category="Weapon" subcategory="Renegade" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.51" impactsoundtag="weaponlightdrop">
+	<Item name="" 
+	identifier="smg_heavy_compact" 
+	variantof="_smg_heavy" 
+	description="" 
+	category="Weapon" 
+	subcategory="Renegade" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	tags="smallitem,weapon,gun,gunsmith,mountableweapon" 
+	Scale="0.51" 
+	impactsoundtag="weaponlightdrop">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="556,172,69,74" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="238,297,159,65" depth="0.55" origin="0.5,0.5" />
@@ -396,32 +405,17 @@
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="38,-10" aimpos="43,0" handle1="9,-3" handle2="45,12" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon 
-			reload="0.099" reloadnoskill="0.135" reloadskillrequirement="55" 
-			barrelpos="79,10" 
-			spread="17" unskilledspread="35" 
-			combatPriority="80" 
-			drawhudwhenequipped="true" 
-			crosshairscale="0.2">
-
-			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		reload="0.099" reloadnoskill="0.135" reloadskillrequirement="55" 
+		barrelpos="79,10" 
+		spread="17" unskilledspread="35" 
+		combatPriority="80" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/45smg1.ogg" type="OnUse" range="2500" selectionmode="Random" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/45smg1.ogg" type="OnUse" range="2500" frequencymultiplier="0.95" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/45smg1.ogg" type="OnUse" range="2500" frequencymultiplier="1.02" />
-
-			<StatusEffect type="OnUse" target="This" Condition="-175" />
-
-			<StatusEffect type="Always" target="This" Condition="5">
-				<Conditional condition="gt 0" />
-			</StatusEffect>
-
-			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/akjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-			</StatusEffect>
-
-			<StatusEffect type="OnBroken" target="This" Condition="55" disabledeltatime="true" delay="3.12" stackable="false" />
 
 			<StatusEffect type="OnUse" target="This">
 				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="18.5" />
@@ -434,36 +428,34 @@
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45pistolammo,45ammo,smgammo" />
 
 			<RequiredSkill identifier="weapons" level="35" />
-
-			<StatusEffect type="OnUse" target="This">
-				<Conditional condition="lt 35" />
-
-				<ParticleEmitter particle="weldspark" particleamount="5" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
-			</StatusEffect>
-
 		</RangedWeapon>
 
-		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
-
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-			<Containable items="45pistolammo,45ammo,smgammo" hide="false" itempos="11.5,-5" />
-
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
-
 			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
 				<Containable items="flashlight" hide="false" itempos="34,4" setactive="true" />
 			</SubContainer>
-
 		</ItemContainer>
+
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="35" />
 	</Item>
 
 		<!--###-->
 
-		<!--Heavy Submachinegun-->
+		<!--Military Heavy Submachinegun-->
 		<!--UMP-45-->
-	<Item name="" identifier="scp_ump45" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.46" impactsoundtag="weaponlightdrop">
+	<Item name="" 
+	identifier="smg_heavy_military" 
+	variantof="_smg_heavy" 
+	description="" 
+	category="Weapon" 
+	subcategory="Coalition" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	tags="smallitem,weapon,gun,gunsmith,mountableweapon" 
+	Scale="0.46" 
+	impactsoundtag="weaponlightdrop">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="345,85,65,76" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="250,469,190,91" depth="0.55" origin="0.5,0.5" />
@@ -473,16 +465,13 @@
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="49,-7" handle1="-17,-5" handle2="28,12" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon 
-			reload="0.11" reloadnoskill="0.145" reloadskillrequirement="45" 
-			weapondamagemodifier="1.1" 
-			barrelpos="74,12" 
-			spread="15" unskilledspread="30" 
-			combatPriority="80" 
-			drawhudwhenequipped="true" 
-			crosshairscale="0.2">
-
-			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		reload="0.11" reloadnoskill="0.145" reloadskillrequirement="45" 
+		weapondamagemodifier="1.1" 
+		barrelpos="74,12" 
+		spread="15" unskilledspread="30" 
+		combatPriority="80" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
 
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/45smg1.ogg" type="OnUse" range="2500" selectionmode="Random" />
@@ -500,35 +489,34 @@
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45pistolammo,45ammo" />
 
 			<RequiredSkill identifier="weapons" level="45" />
-
 		</RangedWeapon>
 
-		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
-
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-			<Containable items="45ammo,45pistolammo" hide="false" itempos="16,-5" rotation="15" />
-
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
-
 			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.4">
 				<Containable items="flashlight" hide="false" itempos="30,6" setactive="true" />
 			</SubContainer>
-
 		</ItemContainer>
 
+		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="45" />
-
-
-
-
 	</Item>
 
 		<!--###-->
 
 		<!--Coalition Suppressed Heavy SMG-->
 		<!--MP9-->
-	<Item name="" identifier="sgt_bosmg" description="" category="Weapon" subcategory="Coalition" cargocontaineridentifier="scp_weaponcrate" tags="smallitem,weapon,gun,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="weaponlightdrop">
+	<Item name="" 
+	identifier="smg_heavy_blackops" 
+	variantof="_smg_heavy" 
+	description="" 
+	category="Weapon" 
+	subcategory="Coalition" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	tags="smallitem,weapon,gun,gunsmith,mountableweapon" 
+	Scale="0.4" 
+	impactsoundtag="weaponlightdrop">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="308,289,52,58" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,480,271,80" depth="0.55" origin="0.5,0.5" />
@@ -538,15 +526,12 @@
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="49,8" handle1="-10,-26" handle2="28,8" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon 
-			reload="0.08" 
-			barrelpos="58,-3" 
-			spread="4" unskilledspread="16" 
-			combatPriority="80" 
-			drawhudwhenequipped="true" 
-			crosshairscale="0.2">
-
-			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		reload="0.08" 
+		barrelpos="58,-3" 
+		spread="4" unskilledspread="16" 
+		combatPriority="80" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
 
 			<ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/45s1.ogg" type="OnUse" range="800" volume="1.1" />
@@ -562,25 +547,18 @@
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45pistolammo,45ammo" />
 
 			<RequiredSkill identifier="weapons" level="45" />
-
 		</RangedWeapon>
 
-		<aitarget sightrange="2000" soundrange="500" fadeouttime="5" />
-
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-			<Containable items="45ammo,45pistolammo" hide="false" itempos="-1.5,-13" rotation="-1" />
-
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
-
 			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
 				<Containable items="flashlight" hide="false" itempos="27,2" setactive="true" />
 			</SubContainer>
-
 		</ItemContainer>
 
+		<aitarget sightrange="2000" soundrange="500" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="45" />
-		
 	</Item>
 
 </Items>

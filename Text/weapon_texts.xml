@@ -120,7 +120,7 @@
 			<entityname.pistol_service_glock>Gaston</entityname.pistol_service_glock>
 			<entitydescription.pistol_service_glock>A rather blocky but reliable 9x19mm pistol, evidently being an older design of self-loading pistol. It has kept surprisingly intact despite it's apparent age.</entitydescription.pistol_service_glock>
 		<!--Ruger-9-->
-			<entityname.pistol_service_prototype>Prototype Pistol</entityname.pistol_service_prototype>
+			<entityname.pistol_service_prototype>Prototype Service Pistol</entityname.pistol_service_prototype>
 			<entitydescription.pistol_service_prototype>A sleek and compact 9x19mm pistol that is essentially a glorified machine pistol, providing excellent firepower and superior accuracy compared to other autoloading handguns. However it's calibre is it's primary downside, having poor effect against armour.</entitydescription.pistol_service_prototype>
 		<!--Hi-Point Pistol-->
 			<entityname.pistol_assault_civilian>Civilian Assault Pistol</entityname.pistol_assault_civilian>
@@ -369,14 +369,14 @@
 			<entityname.smg_assault_prototype>Prototype Assault SMG</entityname.smg_assault_prototype>
 			<entitydescription.smg_assault_prototype>A brisk-paced 10x25mm submachine gun with a specialty design, it sacrifices speed for accuracy, leaving the user open to close combat during operations. Though, it seems the 8-Gauge underbarrel was the solution to save this Alien of a weapon.</entitydescription.smg_assault_prototype>
 		<!--SR2-->
-			<entityname.scp_sr2>Compact Heavy Submachine Gun</entityname.scp_sr2>
-			<entitydescription.scp_sr2>An 11.43x23mm SMG that has been derived from an already existing SMG design, it is extremely compact however due to the very short barrel accuracy is atrocious.</entitydescription.scp_sr2>
+			<entityname.smg_heavy_compact>Compact Heavy Submachine Gun</entityname.smg_heavy_compact>
+			<entitydescription.smg_heavy_compact>An 11.43x23mm SMG that has been derived from an already existing SMG design, it is extremely compact however due to the very short barrel accuracy is atrocious.</entitydescription.smg_heavy_compact>
 		<!--UMP-45-->
-			<entityname.scp_ump45>Heavy Submachine Gun</entityname.scp_ump45>
-			<entitydescription.scp_ump45>A boxy 11.43x23mm Submachine Gun suited for close quarters. It uses a larger cartridge and bigger projectile than it's lighter counterpart, but the heavier bolt carrier used reduces firerate in order to accomodate for the higher recoil impulses.</entitydescription.scp_ump45>
+			<entityname.smg_heavy_military>Military Heavy Submachine Gun</entityname.smg_heavy_military>
+			<entitydescription.smg_heavy_military>A boxy 11.43x23mm Submachine Gun suited for close quarters. It uses a larger cartridge and bigger projectile than it's lighter counterpart, but the heavier bolt carrier used reduces firerate in order to accomodate for the higher recoil impulses.</entitydescription.smg_heavy_military>
 		<!--MP9-->
-			<entityname.sgt_bosmg>Coalition Suppressed Heavy SMG</entityname.sgt_bosmg>
-			<entitydescription.sgt_bosmg>A 11.43x23 SMG with an extreme firerate and integral suppressor, it's favored by Black-Ops Scouts for its quick knock-down and ammo availablity, though it has a nasty habit of running through ammo very quickly, leading to users firing in short, controlled bursts</entitydescription.sgt_bosmg>
+			<entityname.smg_heavy_blackops>Coalition Suppressed Heavy SMG</entityname.smg_heavy_blackops>
+			<entitydescription.smg_heavy_blackops>A 11.43x23 SMG with an extreme firerate and integral suppressor, it's favored by Black-Ops Scouts for its quick knock-down and ammo availablity, though it has a nasty habit of running through ammo very quickly, leading to users firing in short, controlled bursts</entitydescription.smg_heavy_blackops>
 	<!--Weapons_special-->
 		<!--Chemthrower-->
 			<entityname.sgt_chemthrower>Heavy Chemthrower</entityname.sgt_chemthrower>

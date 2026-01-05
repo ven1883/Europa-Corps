@@ -17,6 +17,9 @@
 
 		<Body width="140" height="60" density="50" />
 
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -48,10 +51,6 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
-		</Quality>
 	</Item>
 
 
@@ -68,6 +67,9 @@
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,130,112,77" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
 
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -100,10 +102,6 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
-		</Quality>
 	</Item>
 
 
@@ -122,6 +120,9 @@
 		
 		<Body width="72" height="40" density="50" />
 
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -137,7 +138,7 @@
 			<RequiredItems items="357ammo,revolverround" type="Contained" msg="ItemMsgAmmoRequired" />
 		</RangedWeapon>
 
-		<ItemContainer>
+		<ItemContainer >
 			<Containable items="357ammo,revolverround" hide="true">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
@@ -153,12 +154,6 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
-		</Quality>
-
-		<SkillRequirementHint identifier="weapons" level="60" />
 	</Item>
 
 
@@ -176,6 +171,9 @@
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,222,136,62" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="72" height="40" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
 
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -209,10 +207,6 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
-		</Quality>
 	</Item>
 
 
@@ -229,6 +223,9 @@
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="111,0,105,75" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
 
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -260,12 +257,7 @@
 					<sound file="%ModDir%/Sounds/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
 				</StatusEffect>
 			</Containable>
-			
 		</ItemContainer>
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
-		</Quality>
 	</Item>
 
 
@@ -282,6 +274,9 @@
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="221,70,130,75" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
 
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -314,10 +309,6 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.1" />
-		</Quality>
 	</Item>
 
 
@@ -336,6 +327,9 @@
 
 		<Body width="72" height="40" density="50" />
 
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -352,7 +346,7 @@
 		</RangedWeapon>
 
 		<ItemContainer>
-			<Containable>
+			<Containable items="arevolverround" hide="true">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
