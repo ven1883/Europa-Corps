@@ -82,6 +82,8 @@
 						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
 								<Conditional IsDead="false" />
 								<RequiredItem items="oxygentank" type="Contained" />
+
+								<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 						</StatusEffect>
 
 						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
@@ -97,6 +99,8 @@
 						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
 								<Conditional IsDead="false" />
 								<RequiredItem items="oxygenitetank" type="Contained" />
+
+								<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 						</StatusEffect>
 
 						<StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
@@ -357,6 +361,8 @@
 						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
 								<Conditional IsDead="false" />
 								<RequiredItem items="oxygentank" type="Contained" />
+
+								<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 						</StatusEffect>
 						
 						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
@@ -372,6 +378,8 @@
 						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
 								<Conditional IsDead="false" />
 								<RequiredItem items="oxygenitetank" type="Contained" />
+
+								<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 						</StatusEffect>
 						
 						<StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
@@ -467,11 +475,13 @@
 				<Conditional HullOxygenPercentage="lt 50" />
 				<Conditional InWater="false" />
 				<RequiredItem items="oxygensource" type="Contained" />
+				<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 			</StatusEffect>
 			
 			<StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" Condition="-0.2" comparison="And" targetslot="0">
 				<Conditional InWater="true" />
 				<RequiredItem items="oxygensource" type="Contained" />
+				<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 			</StatusEffect>
 			
 			<StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true" targetslot="0">
@@ -501,7 +511,7 @@
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness,acidburn" damagemultiplier="0" damagesound="impact_metal_heavy" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.05" damagesound="impact_metal_heavy" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidreaction" damagemultiplier="0.01" probabilitymultiplier="0" damagesound="impact_metal_heavy" />
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="feniternerveagent,feniterpulmonaryagent2,feniterbloodagent,feniterblisteragentinternal,feniternonlethalagent,feniterpsychoagent,anesthesia" damagemultiplier="0" probabilitymultiplier="0" damagesound="impact_metal_heavy" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="poison_airborne" damagemultiplier="0" probabilitymultiplier="0" damagesound="impact_metal_heavy" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.7" damagesound="" deflectprojectiles="true" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.8" damagesound="" deflectprojectiles="true" />
@@ -614,6 +624,7 @@
 				<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" comparison="Or">
 				<Conditional IsDead="false" />
 				<RequiredItem items="oxygensource" type="Contained" />
+				<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 			</StatusEffect>
 
 				<StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true">
@@ -641,7 +652,7 @@
 			<damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.25" damagesound="" deflectprojectiles="true" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,explosiondamage,radiationsickness,acidreaction,lacerations" damagemultiplier="0.25" damagesound="" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="impact_metal_heavy" />
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="feniternerveagent,feniterpulmonaryagent2,feniterbloodagent,feniterblisteragentinternal,feniternonlethalagent,feniterpsychoagent,anesthesia" damagemultiplier="0" probabilitymultiplier="0" />
+			<damagemodifier armorsector="0.0,360.0" afflictiontypes="poison_airborne" damagemultiplier="0" probabilitymultiplier="0" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds,bleeding" damagemultiplier="0.5" damagesound="impact_metal_heavy" />
 			<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
 				
