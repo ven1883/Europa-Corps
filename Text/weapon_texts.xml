@@ -168,8 +168,8 @@
 			<entityname.pistol_oppressor_heavy_basic>Oppressor Heavy Pistol</entityname.pistol_oppressor_heavy_basic>
 			<entitydescription.pistol_oppressor_heavy_basic>A large and unweidly 12.7x33mm pistol. It is carried around by individuals to show superiority as a result of its intimidating profile and price tag.</entitydescription.pistol_oppressor_heavy_basic>
 		<!--M6 Halo Magnum-->
-			<entityname.pistol_oppressor_heavy_magnum>Prototype Oppressor Heavy Pistol</entityname.pistol_oppressor_heavy_magnum>
-			<entitydescription.pistol_oppressor_heavy_magnum>A strange but elegant 12.7x33mm design for a powerhouse of a handgun, with state-of-the-art closed bolt mechanism and Durasteel recoil spring able to significantly dampen the recoil impulses.</entitydescription.pistol_oppressor_heavy_magnum>
+			<entityname.pistol_oppressor_heavy_prototype>Prototype Oppressor Heavy Pistol</entityname.pistol_oppressor_heavy_prototype>
+			<entitydescription.pistol_oppressor_heavy_prototype>A strange but elegant 12.7x33mm design for a powerhouse of a handgun, with state-of-the-art closed bolt mechanism and Durasteel recoil spring able to significantly dampen the recoil impulses.</entitydescription.pistol_oppressor_heavy_prototype>
 		<!--Rsh-12.7-->
 			<entityname.pistol_revolver_assault_basic>Assault Revolver</entityname.pistol_revolver_assault_basic>
 			<entitydescription.pistol_revolver_assault_basic>A large 12.7x55mm revolver with questionably high recoil, but regardless provides immense power in a handgun package. It has a heavy double action trigger mechanism.</entitydescription.pistol_revolver_assault_basic>
@@ -311,20 +311,20 @@
 			<entitydescription.scp_kir>An Oppressor Battle Rifle heavily modified for assassinations, featuring a semi-auto control group and an experimental Physicorium baffle suppressor, which almost entirely neutralizes heat retention.</entitydescription.scp_kir>
 	<!--Weapons_shotguns-->
 		<!--RM93-->
-			<entityname.scp_rm93>Civilian Pump Action Shotgun</entityname.scp_rm93>
-			<entitydescription.scp_rm93>A 12 gauge shotgun used by the Separatists when Coalition shotguns aren't an option, featuring a meagre 6 round tube and a semi-stiff pump action. Regardless it gets the job done in a similar fashion.</entitydescription.scp_rm93>
+			<entityname.shotgun_manual_civilian>Civilian Pump Action Shotgun</entityname.shotgun_manual_civilian>
+			<entitydescription.shotgun_manual_civilian>A 12 gauge shotgun used by the Separatists when Coalition shotguns aren't an option, featuring a meagre 6 round tube and a semi-stiff pump action. Regardless it gets the job done in a similar fashion.</entitydescription.shotgun_manual_civilian>
 		<!--Mossberg 590-->
-			<entityname.scp_m590>Tactical Pump Action Shotgun</entityname.scp_m590>
-			<entitydescription.scp_m590>A common 12 gauge shotgun mainly used as a more robust and combat effective alternative to the clunky and dated Riot Shotgun that preceded it.</entitydescription.scp_m590>
+			<entityname.shotgun_manual_tactical>Tactical Pump Action Shotgun</entityname.shotgun_manual_tactical>
+			<entitydescription.shotgun_manual_tactical>A common 12 gauge shotgun mainly used as a more robust and combat effective alternative to the clunky and dated Riot Shotgun that preceded it.</entitydescription.shotgun_manual_tactical>
 		<!--KSG-12-->
-			<entityname.scp_ksg>Oppressor Shotgun</entityname.scp_ksg>
-			<entitydescription.scp_ksg>A modern 12 gauge pump action shotgun derived from an unconventional American design, utilising 2 switchable tubes allowing for significantly greater capacity over most shotguns.</entitydescription.scp_ksg>
+			<entityname.shotgun_manual_oppressor>Oppressor Shotgun</entityname.shotgun_manual_oppressor>
+			<entitydescription.shotgun_manual_oppressor>A modern 12 gauge pump action shotgun derived from an unconventional American design, utilising 2 switchable tubes allowing for significantly greater capacity over most shotguns.</entitydescription.shotgun_manual_oppressor>
 		<!--UTS-15-->
-			<entityname.scp_uts15>Prototype Oppressor Shotgun</entityname.scp_uts15>
-			<entitydescription.scp_uts15>A heavy and boxy 12 Gauge shotgun with unprecidented capacity and close range firepower compared to other shotguns, making it perfect for dealing with a particularly hardy enemy or a large group of targets.</entitydescription.scp_uts15>
+			<entityname.shotgun_manual_oppressor_prototype>Prototype Oppressor Shotgun</entityname.shotgun_manual_oppressor_prototype>
+			<entitydescription.shotgun_manual_oppressor_prototype>A heavy and boxy 12 Gauge shotgun with unprecidented capacity and close range firepower compared to other shotguns, making it perfect for dealing with a particularly hardy enemy or a large group of targets.</entitydescription.shotgun_manual_oppressor_prototype>
 		<!--Domique-->
-			<entityname.scp_domique>Domique</entityname.scp_domique>
-			<entitydescription.scp_domique>A very old 12 gauge shotgun being one the first examples of dual environment bolt systems, it was a standard issue gun for security until more capable firearms were adapted and produced.</entitydescription.scp_domique>
+			<entityname.shotgun_manual_domique>Domique</entityname.shotgun_manual_domique>
+			<entitydescription.shotgun_manual_domique>A very old 12 gauge shotgun being one the first examples of dual environment bolt systems, it was a standard issue gun for security until more capable firearms were adapted and produced.</entitydescription.shotgun_manual_domique>
 		<!--Saiga 12-->
 			<entityname.scp_saiga12>Mag-Fed Combat Shotgun</entityname.scp_saiga12>
 			<entitydescription.scp_saiga12>A 12 Gauge magazine fed combat shotgun, is much easier to load to full with it's dedicated magazines, but has significant recoil due to the basic AK style recoil system.</entitydescription.scp_saiga12>

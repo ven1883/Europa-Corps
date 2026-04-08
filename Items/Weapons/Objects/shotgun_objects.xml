@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Items>
+
+
+			<!--Manual Shotguns (12 gauge)-->
+
+
+	<Item name="_nospawn"
+	identifier="_shotgun_manual" 
+	tags="mediumitem,weapon,gun,gunsmith,mountableweapon" >
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="263,497,69,83" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="1,185,239,48" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="180" height="45" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<StatusEffect type="OnUse" delay="0.4" target="This">
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/shotgunload1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Weapons/Guns/shotgunload2.ogg" type="OnUse" range="1000" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="2.8" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="25.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This" delay="0.42">
+				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="0" velocitymax="0" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+			</StatusEffect>
+
+			<RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="shotgunammo" hide="true">
+			<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.4" condition="100" stackable="false" />
+			<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+			<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+				<Conditional EntityType="eq character" TargetContainer="True" />
+				<Conditional EntityType="eq null" TargetContainer="True" />
+				<sound file="%ModDir%/Sounds/shotguntubereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+			</StatusEffect>
+			<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.4" stackable="false" comparison="or">
+				<Conditional EntityType="eq character" TargetContainer="True" />
+				<Conditional EntityType="eq null" TargetContainer="True" />
+				<Sound file="%ModDir%/Sounds/shotgunload1.ogg" type="OnUse" forceplay="true" range="1000.0" loop="false" volume="1" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/shotgunload2.ogg" type="OnUse" forceplay="true" range="1000.0" loop="false" volume="1" />
+			</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+
+</Items>

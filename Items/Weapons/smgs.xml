@@ -20,8 +20,8 @@
 	Scale="0.36" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="370,415,62,77" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="0,166,205,82" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="smg_service_civilian_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="370,415,62,77" origin="0.5,0.5" />
+		<Sprite name="smg_service_civilian" texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="0,166,205,82" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -70,8 +70,8 @@
 	Scale="0.45" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="140,327,69,81" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="0,81,177,82" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="smg_service_military_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="140,327,69,81" origin="0.5,0.5" />
+		<Sprite name="smg_service_military" texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="0,81,177,82" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -118,8 +118,8 @@
 	Scale="0.45" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="342,84,87,87" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="167,1092,188,79" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="smg_service_prototype_inv" texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="342,84,87,87" origin="0.5,0.5" />
+		<Sprite name="smg_service_prototype" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="167,1092,188,79" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -170,7 +170,7 @@
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--10mm Assault SMGs-->
 
-		
+
 		<!--Semi-Auto Assault SMG-->
 		<!--Hi-Point Carbine-->
 	<Item name="" 
@@ -184,8 +184,8 @@
 	Scale="0.3" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="409,0,71,81" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,0,409,122" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="smg_assault_semi_inv" texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="409,0,71,81" origin="0.5,0.5" />
+		<Sprite name="smg_assault_semi" texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,0,409,122" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -233,8 +233,8 @@
 	Scale="0.3" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="312,168,49,61" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,276,289,115" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="smg_assault_rapid_inv" texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="312,168,49,61" origin="0.5,0.5" />
+		<Sprite name="smg_assault_rapid" texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,276,289,115" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -281,8 +281,8 @@
 	Scale="0.35" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="476,0,52,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="15,438,289,115" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="smg_assault_prototype_inv" texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="476,0,52,60" origin="0.5,0.5" />
+		<Sprite name="smg_assault_prototype" texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="15,438,289,115" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -397,8 +397,8 @@
 	Scale="0.51" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="556,172,69,74" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="238,297,159,65" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="smg_heavy_compact_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="556,172,69,74" origin="0.5,0.5" />
+		<Sprite name="smg_heavy_compact" texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="238,297,159,65" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -457,8 +457,8 @@
 	Scale="0.46" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="345,85,65,76" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="250,469,190,91" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="smg_heavy_military_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="345,85,65,76" origin="0.5,0.5" />
+		<Sprite name="smg_heavy_military" texture="%ModDir%/Sprites/Items/Weapons/weapons.png" sourcerect="250,469,190,91" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -518,8 +518,8 @@
 	Scale="0.4" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="308,289,52,58" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,480,271,80" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="smg_heavy_blackops_inv" texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="308,289,52,58" origin="0.5,0.5" />
+		<Sprite name="smg_heavy_blackops" texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,480,271,80" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 

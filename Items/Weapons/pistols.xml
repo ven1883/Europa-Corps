@@ -19,8 +19,8 @@
 	Scale="0.3" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="116,0,54,80" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,145,98,75" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_service_civilian_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="116,0,54,80" origin="0.5,0.5" />
+		<Sprite name="pistol_service_civilian" texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,145,98,75" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -70,8 +70,8 @@
 	Scale="0.3" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="224,1,52,80" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,72,99,71" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_service_military_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="224,1,52,80" origin="0.5,0.5" />
+		<Sprite name="pistol_service_military" texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,72,99,71" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -118,8 +118,8 @@
 	Scale="0.3" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="512,189,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="881,140,108,77" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_service_glock_inv" texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="512,189,60,60" origin="0.5,0.5" />
+		<Sprite name="pistol_service_glock" texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="881,140,108,77" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -168,8 +168,8 @@
 	Scale="0.32" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="711,8,75,74" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="1,1005,115,79" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_service_prototype_inv" texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="711,8,75,74" origin="0.5,0.5" />
+		<Sprite name="pistol_service_prototype" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="1,1005,115,79" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -221,8 +221,8 @@
 	Scale="0.34" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="420,81,51,73" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,130,112,77" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_assault_civilian_inv" texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="420,81,51,73" origin="0.5,0.5" />
+		<Sprite name="pistol_assault_civilian" texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,130,112,77" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -286,8 +286,8 @@
 	Scale="0.34" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="311,59,38,54" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,71,108,73" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_assault_combat_inv" texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="311,59,38,54" origin="0.5,0.5" />
+		<Sprite name="pistol_assault_combat" texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,71,108,73" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -348,8 +348,8 @@
 	Scale="0.34" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="307,113,53,55" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="108,71,203,75" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_assault_covert_inv" texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="307,113,53,55" origin="0.5,0.5" />
+		<Sprite name="pistol_assault_covert" texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="108,71,203,75" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -397,8 +397,8 @@
 	Scale="0.34" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Alt.png" sourcerect="120,126,32,44" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Alt.png" sourcerect="0,124,114,70" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_assault_wanderer_inv" texture="%ModDir%/Sprites/Items/Weapons/Alt.png" sourcerect="120,126,32,44" origin="0.5,0.5" />
+		<Sprite name="pistol_assault_wanderer" texture="%ModDir%/Sprites/Items/Weapons/Alt.png" sourcerect="0,124,114,70" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -447,8 +447,8 @@
 	Scale="0.32" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="301,0,54,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="0,175,174,83" depth="0.55" origin="0.49695417,0.49841225" />
+		<InventoryIcon name="pistol_assault_prototype_inv" texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="301,0,54,60" origin="0.5,0.5" />
+		<Sprite name="pistol_assault_prototype" texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="0,175,174,83" depth="0.55" origin="0.49695417,0.49841225" />
 
 		<Body width="244" height="69" density="50" />
 
@@ -507,8 +507,8 @@
 	impactsoundtag="weaponlightdrop" 
 	scale="0.34">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="383,0,45,72" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="220,0,135,67" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_revolver_service_basic_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="383,0,45,72" origin="0.5,0.5" />
+		<Sprite name="pistol_revolver_service_basic" texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="220,0,135,67" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="72" height="40" density="50" />
 
@@ -561,8 +561,8 @@
 	impactsoundtag="impact_metal_light"
 	scale="0.34">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="68,174,63,77" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="883,68,117,67" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_revolver_service_aftermarket_inv" texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="68,174,63,77" origin="0.5,0.5" />
+		<Sprite name="pistol_revolver_service_aftermarket" texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="883,68,117,67" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="72" height="40" density="50" />
 		
@@ -615,8 +615,9 @@
 	impactsoundtag="weaponlightdrop" 
 	scale="0.4">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="430,0,47,69" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,222,136,62" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_revolver_lighthandcannon_basic_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="430,0,47,69" origin="0.5,0.5" />
+		<Sprite name="pistol_revolver_lighthandcannon_basic" texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,222,136,62" depth="0.55" origin="0.5,0.5" />
+
 		<Body width="72" height="40" density="50" />
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="115,5" aimpos="90,10" handle1="-44,-6" handle2="-60,-15" holdangle="-45" msg="ItemMsgPickUpSelect" />
@@ -682,8 +683,8 @@
 	impactsoundtag="weaponlightdrop" 
 	scale="0.32">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="191,378,45,72" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,374,179,79" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_revolver_lighthandcannon_gunslinger_inv" texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="191,378,45,72" origin="0.5,0.5" />
+		<Sprite name="pistol_revolver_lighthandcannon_gunslinger" texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,374,179,79" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="72" height="40" density="50" />
 
@@ -752,8 +753,8 @@
 	impactsoundtag="impact_metal_light" 
 	scale="0.4">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="2,172,60,75" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="884,2,121,65" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_revolver_lighthandcannon_dirtyharry_inv" texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="2,172,60,75" origin="0.5,0.5" />
+		<Sprite name="pistol_revolver_lighthandcannon_dirtyharry" texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="884,2,121,65" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="72" height="40" density="50" />
 
@@ -804,8 +805,8 @@
 	Scale="0.32" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="647,1,54,83" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="111,0,105,75" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_heavy_civilian_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="647,1,54,83" origin="0.5,0.5" />
+		<Sprite name="pistol_heavy_civilian" texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="111,0,105,75" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -848,8 +849,8 @@
 	Scale="0.34" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="171,0,52,80" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="104,76,113,75" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_heavy_military_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="171,0,52,80" origin="0.5,0.5" />
+		<Sprite name="pistol_heavy_military" texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="104,76,113,75" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="140" height="60" density="50" />
 
@@ -889,8 +890,8 @@
 	Scale="0.34" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="66,252,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="875,292,115,73" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_heavy_usp_inv" texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="66,252,60,60" origin="0.5,0.5" />
+		<Sprite name="pistol_heavy_usp" texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="875,292,115,73" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 		
@@ -928,8 +929,8 @@
 	Scale="0.34" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="2,89,75,77" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="122,1007,113,77" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_heavy_prototype_inv" texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="2,89,75,77" origin="0.5,0.5" />
+		<Sprite name="pistol_heavy_prototype" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="122,1007,113,77" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -974,8 +975,8 @@
 	cargocontaineridentifier="scp_weaponcrate" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="332,0,49,71" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="221,70,130,75" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_oppressor_heavy_basic_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="332,0,49,71" origin="0.5,0.5" />
+		<Sprite name="pistol_oppressor_heavy_basic" texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="221,70,130,75" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -1042,7 +1043,7 @@
 		<!--Prototype Oppressor Heavy Pistol-->
 		<!--M6 Halo Magnum-->
 	<Item name="" 
-	identifier="pistol_oppressor_heavy_magnum" 
+	identifier="pistol_oppressor_heavy_prototype" 
 	variantof="_pistol_oppressor_heavy"
 	description="" 
 	category="Weapon" 
@@ -1052,8 +1053,8 @@
 	cargocontaineridentifier="scp_weaponcrate" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="79,82,88,88" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="0,1091,162,109" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_oppressor_heavy_prototype_inv" texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="79,82,88,88" origin="0.5,0.5" />
+		<Sprite name="pistol_oppressor_heavy_prototype" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="0,1091,162,109" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -1119,8 +1120,8 @@
 	scale="0.445" 
 	impactsoundtag="weaponheavydrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_revolver_assault_basic_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
+		<Sprite name="pistol_revolver_assault_basic" texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="72" height="40" density="50" />
 
@@ -1174,18 +1175,12 @@
 			</Containable>
 		</ItemContainer>
 
-		<ItemContainer capacity="1" maxstacksize="5" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet"> </ItemContainer>
-
 		<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
 
 		<SkillRequirementHint identifier="weapons" level="70" />
 	</Item>
 
-
 		<!--###-->
-
-		<!--!these do not work at all and they can eat eachother. idk-->
-		<!--TODO: fix. what-->
 
 		<!--Prototype Assault Revolver-->
 		<!--Magnus-->
@@ -1200,8 +1195,8 @@
 	scale="0.445" 
 	impactsoundtag="weaponheavydrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="669,110,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="248,1007,149,64" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_revolver_assault_prototype_inv" texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="669,110,60,60" origin="0.5,0.5" />
+		<Sprite name="pistol_revolver_assault_prototype" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="248,1007,149,64" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="72" height="40" density="50" />
 
@@ -1280,8 +1275,8 @@
 	scale="0.45" 
 	impactsoundtag="weaponheavydrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="646,187,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="875,225,144,62" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="pistol_revolver_assault_handbreaker_inv" texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="646,187,60,60" origin="0.5,0.5" />
+		<Sprite name="pistol_revolver_assault_handbreaker" texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="875,225,144,62" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="72" height="40" density="50" />
 
@@ -1320,7 +1315,7 @@
 			<RequiredSkill identifier="weapons" level="100" />
 		</RangedWeapon>
 
-		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet">
+		<ItemContainer capacity="1" maxstacksize="3" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet">
 			<Clear/>
 			<Containable items="127ammo">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="3.6" condition="100" stackable="false" />
@@ -1337,8 +1332,6 @@
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
-
-		<ItemContainer capacity="1" maxstacksize="3" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" />
 
 		<aitarget sightrange="4000" soundrange="7000" fadeouttime="5" />
 
@@ -1364,8 +1357,8 @@
 	Scale="0.35" 
 	impactsoundtag="weaponlightdrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="175,0,65,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="0,0,174,83" depth="0.55" origin="0.49695417,0.49841225" />
+		<InventoryIcon name="special_short_barrel_rifle_inv" texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="175,0,65,60" origin="0.5,0.5" />
+		<Sprite name="special_short_barrel_rifle" texture="%ModDir%/Sprites/Items/Weapons/Prototype.png" sourcerect="0,0,174,83" depth="0.55" origin="0.49695417,0.49841225" />
 
 		<Body width="244" height="69" density="50" />
 
@@ -1429,8 +1422,8 @@
 	Scale="0.4" 
 	impactsoundtag="weaponheavydrop">
 
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/prototype.png" sourcerect="359,0,56,62" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/prototype.png" sourcerect="14,282,142,71" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="special_bolter_inv" texture="%ModDir%/Sprites/Items/Weapons/prototype.png" sourcerect="359,0,56,62" origin="0.5,0.5" />
+		<Sprite name="special_bolter" texture="%ModDir%/Sprites/Items/Weapons/prototype.png" sourcerect="14,282,142,71" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="227" height="75" density="50" />
 
