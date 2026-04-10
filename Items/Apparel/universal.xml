@@ -408,7 +408,7 @@
 	
 		<!--###-->
 <!--check later since i manually changed the sprite paths -Derek -->
-	<Item name="" identifier="feniterhazmats" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="feniterchemcrate1">
+	<Item name="" identifier="hazmatsuit" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Apparel/hazmatextra.png" sourcerect="0,0,150,120" origin="0.5,0.5" />
 		<Sprite name="Diving Suit Item" texture="%ModDir%/Sprites/Items/Apparel/chemicalwarfaremisc.png" sourcerect="133,83,94,78" depth="0.55" origin="0.5,0.5" />
@@ -585,7 +585,7 @@
 	
 		<!--###-->
 
-	<Item name="" identifier="fenitercbrneod" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="feniterchemcrate1">
+	<Item name="" identifier="eodsuit" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Apparel/hazmatextra.png" sourcerect="300,0,150,120" origin="0.5,0.5" />
 		<Sprite name="Diving Suit Item" texture="%ModDir%/Sprites/Items/Apparel/bombsuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />

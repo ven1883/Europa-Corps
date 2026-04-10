@@ -561,33 +561,32 @@
     			<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
     		</StatusEffect>
 
-			<!--success effects-->
-    		<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" comparison="and" duration="10">
-    			<Conditional feniterpulmonaryagent1="lt 50" />
-    			<ReduceAffliction identifier="feniterpulmonaryagent1" amount="5" />
-    		</StatusEffect>
+			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" comparison="and" duration="30">
+				<Conditional pulmonaryagentbuildup="gte 40" />
+				<Conditional pulmonaryagentbuildup="lt 60" />
 
-    		<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="10">
-    		  	<Conditional feniterblisteragentinternal="gte 1" />
-    		  	<ReduceAffliction identifier="feniterblisteragentinternal" amount="4" />
-    		</StatusEffect>
+				<ReduceAffliction identifier="pulmonaryagentbuildup" amount="0.135" />
+			</StatusEffect>
 
-			<!--failure effects-->
-    		<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="10">
-    		  	<Conditional feniterblisteragentinternal="gte 1" />
-    		  	<ReduceAffliction identifier="feniterblisteragentinternal" amount="3" />
-    		</StatusEffect>
+			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="100">
+				<Conditional blisteragentinternal="gte 1" />
 
-    		<StatusEffect tags="medical" type="OnFailure" target="UseTarget" comparison="and" duration="20">
-    		  	<Conditional feniterpulmonaryagent1="lt 50" />
-    		  	<ReduceAffliction identifier="feniterpulmonaryagent1" amount="2" />
-    		  	<Affliction identifier="oxygenlow" amount="4" />
-    		</StatusEffect>
+				<ReduceAffliction identifier="blisteragentinternal" amount="0.435" />
+			</StatusEffect>
 
-			<!--annihilation-->
-    		<StatusEffect type="OnBroken" target="This">
-    		  <Remove />
-    		</StatusEffect>
+			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" comparison="and" duration="30">
+				<Conditional pulmonaryagentbuildup="gte 40" />
+				<Conditional pulmonaryagentbuildup="lt 60" />
+
+				<ReduceAffliction identifier="pulmonaryagentbuildup" amount="0.085" />
+				<ReduceAffliction identifier="blisteragentinternal" amount="0.435" />
+				<Affliction identifier="internaldamage" amount="0.85" />
+				<Affliction identifier="nausea" amount="1" />
+			</StatusEffect>
+
+			<StatusEffect type="OnBroken" target="This">
+				<Remove />
+			</StatusEffect>
 
 		</MeleeWeapon>
 
