@@ -314,8 +314,8 @@
 			<entityname.shotgun_manual_civilian>Civilian Pump Action Shotgun</entityname.shotgun_manual_civilian>
 			<entitydescription.shotgun_manual_civilian>A 12 gauge shotgun used by the Separatists when Coalition shotguns aren't an option, featuring a meagre 6 round tube and a semi-stiff pump action. Regardless it gets the job done in a similar fashion.</entitydescription.shotgun_manual_civilian>
 		<!--Mossberg 590-->
-			<entityname.shotgun_manual_tactical>Tactical Pump Action Shotgun</entityname.shotgun_manual_tactical>
-			<entitydescription.shotgun_manual_tactical>A common 12 gauge shotgun mainly used as a more robust and combat effective alternative to the clunky and dated Riot Shotgun that preceded it.</entitydescription.shotgun_manual_tactical>
+			<entityname.shotgun_manual_service>Service Pump Action Shotgun</entityname.shotgun_manual_service>
+			<entitydescription.shotgun_manual_service>A common 12 gauge shotgun mainly used as a more robust and combat effective alternative to the clunky and dated Riot Shotgun that preceded it.</entitydescription.shotgun_manual_service>
 		<!--KSG-12-->
 			<entityname.shotgun_manual_oppressor>Oppressor Shotgun</entityname.shotgun_manual_oppressor>
 			<entitydescription.shotgun_manual_oppressor>A modern 12 gauge pump action shotgun derived from an unconventional American design, utilising 2 switchable tubes allowing for significantly greater capacity over most shotguns.</entitydescription.shotgun_manual_oppressor>
@@ -326,20 +326,20 @@
 			<entityname.shotgun_manual_domique>Domique</entityname.shotgun_manual_domique>
 			<entitydescription.shotgun_manual_domique>A very old 12 gauge shotgun being one the first examples of dual environment bolt systems, it was a standard issue gun for security until more capable firearms were adapted and produced.</entitydescription.shotgun_manual_domique>
 		<!--Saiga 12-->
-			<entityname.scp_saiga12>Mag-Fed Combat Shotgun</entityname.scp_saiga12>
-			<entitydescription.scp_saiga12>A 12 Gauge magazine fed combat shotgun, is much easier to load to full with it's dedicated magazines, but has significant recoil due to the basic AK style recoil system.</entitydescription.scp_saiga12>
+			<entityname.shotgun_combat_basic>Combat Shotgun</entityname.shotgun_combat_basic>
+			<entitydescription.shotgun_combat_basic>A 12 Gauge magazine fed combat shotgun, is much easier to load to full with it's dedicated magazines, but has significant recoil due to the basic AK style recoil system.</entitydescription.shotgun_combat_basic>
 		<!--M4 Super 90-->
-			<entityname.scp_m4s90>Semi-Auto Combat Shotgun</entityname.scp_m4s90>
-			<entitydescription.scp_m4s90>A high quality 12 Gauge Semi Automatic Shotgun which has a large magazine tube and can fire relatively quickly.</entitydescription.scp_m4s90>
+			<entityname.shotgun_tactical_basic>Tactical Shotgun</entityname.shotgun_tactical_basic>
+			<entitydescription.shotgun_tactical_basic>A high quality 12 Gauge Semi Automatic Shotgun which has a large magazine tube and can fire relatively quickly.</entitydescription.shotgun_tactical_basic>
 		<!--Spas-12 (AUTOMATIC)-->
-			<entityname.scp_spas12>Franchi</entityname.scp_spas12>
-			<entitydescription.scp_spas12>A blocky 12 gauge shotgun with no stock, though is able to quickly empty its tube at anything unfortunate enough to be close.</entitydescription.scp_spas12>
+			<entityname.shotgun_tactical_franchi>Franchi</entityname.shotgun_tactical_franchi>
+			<entitydescription.shotgun_tactical_franchi>A blocky 12 gauge shotgun with no stock, though is able to quickly empty its tube at anything unfortunate enough to be close.</entitydescription.shotgun_tactical_franchi>
 		<!--Origin-12-->
-			<entityname.sgt_boshotgun>Coalition Suppressed Combat Shotgun</entityname.sgt_boshotgun>
-			<entitydescription.sgt_boshotgun>A tactical mag-fed design, suppressed for use by Black-Ops. Using Renegade-style 12 gauge magazines, it substantially increases overall menueverability of the weapon, as well as reduce the required user-effort to cycle, though this method has a chance to jam if the mechanism gets too hot.</entitydescription.sgt_boshotgun>
+			<entityname.shotgun_combat_suppressed>Coalition Suppressed Combat Shotgun</entityname.shotgun_combat_suppressed>
+			<entitydescription.shotgun_combat_suppressed>A tactical mag-fed design, suppressed for use by Black-Ops. Using Renegade-style 12 gauge magazines, it substantially increases overall menueverability of the weapon, as well as reduce the required user-effort to cycle, though this method has a chance to jam if the mechanism gets too hot.</entitydescription.shotgun_combat_suppressed>
 		<!--AA12-->
-			<entityname.scp_aa12>Prototype Combat Shotgun</entityname.scp_aa12>
-			<entitydescription.scp_aa12>An advanced 12 Gauge Semi-Automatic shotgun feeding from Combat Shotgun magazines, capable of quickly decimating anything inside a corridor or nest. The trigger however is extremely clunky for an individual not used to it.</entitydescription.scp_aa12>
+			<entityname.shotgun_combat_prototype>Prototype Combat Shotgun</entityname.shotgun_combat_prototype>
+			<entitydescription.shotgun_combat_prototype>An advanced 12 Gauge Semi-Automatic shotgun feeding from Combat Shotgun magazines, capable of quickly decimating anything inside a corridor or nest. The trigger however is extremely clunky for an individual not used to it.</entitydescription.shotgun_combat_prototype>
 		<!--Double-Barrel 8-Gauge-->
 			<entityname.sgt_dbs>Double-Barrel Assault Shotgun</entityname.sgt_dbs>
 			<entitydescription.sgt_dbs>A retooled Double-Barrel shotgun, favored by Veterans of any side for it's reliability and commanding feel. With the ability to quickly drop both 8-Gauge shells in a moments notice, it often gets used in a defensive manner, as exchanging shells takes a while-too-long for gunfights.</entitydescription.sgt_dbs>

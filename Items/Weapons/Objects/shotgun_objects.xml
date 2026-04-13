@@ -59,4 +59,123 @@
 		</ItemContainer>
 	</Item>
 
+
+		<!--Tactical Shotguns-->
+
+
+	<Item name="" 
+	description="" 
+	identifier="shotgun_tactical_basic" 
+	variantof="_shotgun_tactical" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	category="Weapon" 
+	subcategory="Coalition" 
+	tags="mediumitem,weapon,gun,gunsmith,mountableweapon" 
+	scale="0.49" 
+	impactsoundtag="weaponlightdrop">
+		
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="0,247,68,76" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="1,422,259,60" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="247" height="68" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m4s901.ogg" type="OnUse" range="3000" selectionmode="random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="30" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This" delay="0.05">
+				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+			</StatusEffect>
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="shotgunammo" hide="true">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.4" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/shotguntubereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.4" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/shotgunm4reload.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+
+		<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+
+		<SkillRequirementHint identifier="weapons" level="65" />
+	</Item>
+
+
+			<!--Combat Shotguns-->
+
+
+	<Item name="_nospawn" 
+	identifier="_shotgun_combat" 
+	tags="mediumitem,weapon,gun,gunsmith,mountableweapon" >
+		
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="69,249,67,74" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="1,484,251,68" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="140" height="60" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="26.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This" delay="0.05">
+				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="saigaammo" />
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="saigaammo" hide="false" itempos="7,-6" rotation="8">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/shotgunmagreload.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.85" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.9" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/shotgunm4reload.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.85" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+
+	</Item>
+
 </Items>

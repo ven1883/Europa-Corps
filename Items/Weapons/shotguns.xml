@@ -19,8 +19,8 @@
 	scale="0.53" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="263,497,69,83" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="1,185,239,48" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="shotgun_manual_civilian_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="263,497,69,83" origin="0.5,0.5" />
+		<Sprite name="shotgun_manual_civilian" texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="1,185,239,48" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="180" height="45" density="50" />
 
@@ -63,10 +63,10 @@
 
 		<!--###-->
 
-		<!--Tactical Pump Action Shotgun-->
+		<!--Service Pump Action Shotgun-->
 		<!--Mossberg 590-->
 	<Item name="" 
-	identifier="shotgun_manual_tactical" 
+	identifier="shotgun_manual_service" 
 	variantof="_shotgun_manual" 
 	description="" 
 	cargocontaineridentifier="scp_weaponcrate" 
@@ -75,8 +75,8 @@
 	scale="0.55" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="412,168,66,81" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="2,366,211,55" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="shotgun_manual_service_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="412,168,66,81" origin="0.5,0.5" />
+		<Sprite name="shotgun_manual_service" texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="2,366,211,55" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="180" height="45" density="50" />
 
@@ -123,8 +123,8 @@
 	scale="0.55" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="707,187,60,60" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="0,214,211,55" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="shotgun_manual_domique_inv" texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="707,187,60,60" origin="0.5,0.5" />
+		<Sprite name="shotgun_manual_domique" texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="0,214,211,55" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="180" height="45" density="50" />
 
@@ -174,8 +174,8 @@
 	Scale="0.4" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="342,169,70,78" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="0,235,252,84" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="shotgun_manual_oppressor_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="342,169,70,78" origin="0.5,0.5" />
+		<Sprite name="shotgun_manual_oppressor" texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="0,235,252,84" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="180" height="45" density="50" />
 
@@ -224,8 +224,8 @@
 	Scale="0.39" 
 	impactsoundtag="weaponheavydrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="144,1,70,78" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="0,476,293,101" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="shotgun_manual_oppressor_prototype_inv" texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="144,1,70,78" origin="0.5,0.5" />
+		<Sprite name="shotgun_manual_oppressor_prototype" texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="0,476,293,101" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="180" height="45" density="50" />
 
@@ -249,7 +249,6 @@
 			<RequiredSkill identifier="weapons" level="80" />
 		</RangedWeapon>
 
-		<!--TODO: bugged flashlight flipping-->
 		<ItemContainer capacity="2" maxstacksize="9" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet">
 			<SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
 			<SubContainer capacity="1" maxstacksize="1">
@@ -264,13 +263,120 @@
 
 
 		<!--++++++++++++++++++++++++++++++++++++-->
-		<!--Automatic Shotguns (12 gauge)-->
+		<!--Tactical Shotguns (12 gauge)-->
 
 
-		<!--Mag-Fed Combat Shotgun-->
+		<!--Tactical Shotgun-->
+		<!--M4 Super 90-->
+	<Item name="" 
+	description="" 
+	identifier="shotgun_tactical_basic" 
+	variantof="_shotgun_tactical" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	category="Weapon" 
+	subcategory="Coalition" 
+	tags="mediumitem,weapon,gun,gunsmith,mountableweapon" 
+	scale="0.49" 
+	impactsoundtag="weaponlightdrop">
+		
+		<InventoryIcon name="shotgun_tactical_basic_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="0,247,68,76" origin="0.5,0.5" />
+		<Sprite name="shotgun_tactical_basic" texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="1,422,259,60" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="247" height="68" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,-7" aimpos="66,-1" handle1="-44,-8" handle2="38,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+		barrelpos="100,13"
+		spread="7.5" unskilledspread="30"
+		combatPriority="80" 
+		reload="0.4" reloadnoskill="1.25" reloadskillrequirement="60" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m4s901.ogg" type="OnUse" range="3000" selectionmode="random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
+
+			<RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+
+			<RequiredSkill identifier="weapons" level="65" />
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="9" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+			<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="flashlight" hide="false" itempos="36,0" setactive="true" />
+			</SubContainer>
+		</ItemContainer>
+
+		<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+
+		<SkillRequirementHint identifier="weapons" level="65" />
+	</Item>
+
+		<!--###-->
+
+		<!--Franchi-->
+		<!--Spas-12 (AUTOMATIC)-->
+	<Item name="" 
+	description="" 
+	identifier="shotgun_tactical_franchi" 
+	variantof="_shotgun_tactical" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	category="Weapon" 
+	subcategory="Vintage" 
+	tags="mediumitem,weapon,gun,gunsmith,mountableweapon" 
+	scale="0.46" 
+	impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon name="shotgun_tactical_franchi_inv" texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="131,186,63,63" origin="0.5,0.5" />
+		<Sprite name="shotgun_tactical_franchi" texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="262,328,213,59" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="247" height="68" density="50" />
+
+		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-30" aimpos="60,-30" handle1="-105,-8" handle2="40,-8" holdangle="-30" msg="ItemMsgPickUpSelect" />
+
+		<RangedWeapon 
+		barrelpos="100,13"
+		spread="12" 
+		weapondamagemodifier="0.9" unskilledspread="45"
+		combatPriority="80" 
+		reload="0.35" reloadnoskill="1.5" reloadskillrequirement="75" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
+
+			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/spas12.ogg" type="OnUse" range="3000" />
+
+			<RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+
+			<RequiredSkill identifier="weapons" level="65" />
+		</RangedWeapon>
+
+		<ItemContainer capacity="1" maxstacksize="8" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.44">
+			<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="flashlight" hide="false" itempos="36,0" setactive="true" />
+			</SubContainer>
+		</ItemContainer>
+
+		<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+
+		<SkillRequirementHint identifier="weapons" level="65" />
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Combat Shotguns (12 gauge)-->
+
+
+		<!--Combat Shotgun-->
 		<!--Saiga 12-->
 	<Item name="" 
-	identifier="shotgun_auto_mag" 
+	identifier="shotgun_combat_basic" 
+	variantof="_shotgun_combat" 
 	description="" 
 	cargocontaineridentifier="scp_weaponcrate" 
 	category="Weapon" 
@@ -279,8 +385,8 @@
 	Scale="0.45" 
 	impactsoundtag="weaponlightdrop">
 		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="69,249,67,74" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="1,484,251,68" depth="0.55" origin="0.5,0.5" />
+		<InventoryIcon name="shotgun_combat_basic_inv" texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="69,249,67,74" origin="0.5,0.5" />
+		<Sprite name="shotgun_combat_basic" texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="1,484,251,68" depth="0.55" origin="0.5,0.5" />
 		
 		<Body width="140" height="60" density="50" />
 
@@ -294,42 +400,19 @@
 		drawhudwhenequipped="true" 
 		crosshairscale="0.2">
 
-			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-
 			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/saiga121.ogg" type="OnUse" range="3000" selectionmode="Random" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/saiga122.ogg" type="OnUse" range="3000" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/saiga123.ogg" type="OnUse" range="3000" />
 
-			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
-			
-			<StatusEffect type="OnUse" target="This">
-				<Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="26.0" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnUse" target="Contained">
-				<Use />
-			</StatusEffect>
-
-			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
-
-			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="saigaammo" />
-
 			<RequiredSkill identifier="weapons" level="65" />
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-			<Containable items="saigaammo" hide="false" itempos="6,-6" />
-
+			<SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
 			<SubContainer capacity="1" maxstacksize="1">
-				<Containable items="flashlight" hide="false" itempos="32,4" setactive="true" />
+				<Containable items="flashlight" hide="false" itempos="38,-3" setactive="true" />
 			</SubContainer>
-
 		</ItemContainer>
 
 		<aitarget sightrange="2000" soundrange="5500" fadeouttime="5" />
@@ -339,238 +422,47 @@
 
 		<!--###-->
 
-		<!--Semi-Auto Combat Shotgun-->
-		<!--M4 Super 90-->
-	<Item name="" description="" identifier="scp_m4s90" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.49" impactsoundtag="weaponlightdrop">
-		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="0,247,68,76" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/shotguns.png" sourcerect="1,422,259,60" depth="0.55" origin="0.5,0.5" />
-		
-		<Body width="247" height="68" density="50" />
-
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="63,-7" aimpos="66,-1" handle1="-44,-8" handle2="38,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
-
-		<RangedWeapon 
-			barrelpos="100,13"
-			spread="7.5" unskilledspread="30"
-			combatPriority="80" 
-			reload="0.4" reloadnoskill="1.25" reloadskillrequirement="60" 
-			drawhudwhenequipped="true" 
-			crosshairscale="0.2">
-
-			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-
-			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/m4s901.ogg" type="OnUse" range="3000" selectionmode="random" />
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/m4s901.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
-			
-			<StatusEffect type="OnUse" target="This" Condition="-575" />
-			
-			<StatusEffect type="Always" target="This" Condition="3">
-				<Conditional condition="gt 0" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.6" stackable="false" />
-			
-			<StatusEffect type="OnUse" target="This">
-				<Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="30" />
-			</StatusEffect>
-
-			<RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
-
-			<RequiredSkill identifier="weapons" level="65" />
-			
-			<StatusEffect type="OnUse" target="This" comparison="and">
-				<Conditional condition="lt 35" />
-
-				<ParticleEmitter particle="steamspray" particleamount="1" velocitymin="5" velocitymax="10" scalemin="1.5" scalemax="2.5" anglemin="0" anglemax="360" colormultiplier="15,15,15,255" />
-				<ParticleEmitter particle="weldspark" particleamount="10" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnUse" target="This" delay="0.05">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
-			</StatusEffect>
-			
-		</RangedWeapon>
-
-		<ItemContainer capacity="1" maxstacksize="9" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-			<Containable items="shotgunammo" hide="true" />
-
-			<SubContainer capacity="1" maxstacksize="1">
-				<Containable items="flashlight" hide="false" itempos="36,0" setactive="true" />
-			</SubContainer>
-
-		</ItemContainer>
-
-		<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
-			<QualityStat stattype="Condition" value="0.2" />
-		</Quality>
-
-		<SkillRequirementHint identifier="weapons" level="65" />
-
-	</Item>
-
-		<!--###-->
-
-		<!--Franchi-->
-		<!--Spas-12 (AUTOMATIC)-->
-	<Item name="" description="" identifier="scp_spas12" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Vintage" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.46" impactsoundtag="weaponlightdrop">
-		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/vintageinv.png" sourcerect="131,186,63,63" origin="0.5,0.5" />
-		<Sprite texture="%ModDir%/Sprites/Items/Weapons/vintageweapons.png" sourcerect="262,328,213,59" depth="0.55" origin="0.5,0.5" />
-		
-		<Body width="247" height="68" density="50" />
-
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-30" aimpos="60,-30" handle1="-105,-8" handle2="40,-8" holdangle="-30" msg="ItemMsgPickUpSelect" />
-
-		<RangedWeapon 
-			barrelpos="100,13"
-			spread="12" 
-			weapondamagemodifier="0.9" unskilledspread="45"
-			combatPriority="80" 
-			reload="0.35" reloadnoskill="1.5" reloadskillrequirement="75" 
-			drawhudwhenequipped="true" 
-			crosshairscale="0.2">
-
-			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-
-			<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-			<Sound file="%ModDir%/Sounds/Weapons/Guns/spas12.ogg" type="OnUse" range="3000" />
-			
-			<StatusEffect type="OnUse" target="This" Condition="-350" />
-			
-			<StatusEffect type="Always" target="This" Condition="1">
-				<Conditional condition="gt 0" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.6" stackable="false" />
-			
-			<StatusEffect type="OnUse" target="This">
-				<Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="28" />
-			</StatusEffect>
-
-			<RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
-
-			<RequiredSkill identifier="weapons" level="65" />
-			
-			<StatusEffect type="OnUse" target="This" comparison="and">
-				<Conditional condition="lt 35" />
-				
-				<ParticleEmitter particle="steamspray" particleamount="1" velocitymin="5" velocitymax="10" scalemin="1.5" scalemax="2.5" anglemin="0" anglemax="360" colormultiplier="15,15,15,255" />
-				<ParticleEmitter particle="weldspark" particleamount="10" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnUse" target="This">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" origin="1,1" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
-			</StatusEffect>
-			
-		</RangedWeapon>
-
-		<ItemContainer capacity="1" maxstacksize="8" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.44">
-			<Containable items="shotgunammo" hide="true" />
-			<Containable items="flashlight" hide="false" itempos="18,4" setactive="true" />
-		</ItemContainer>
-
-		<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
-			<QualityStat stattype="Condition" value="0.1" />
-		</Quality>
-
-		<SkillRequirementHint identifier="weapons" level="65" />
-	</Item>
-
-		<!--##-->
-
-		<!--Coalition Supressed Combat Shotgun-->
+		<!--Coalition Suppressed Combat Shotgun-->
 		<!--Origin-12-->
-	<Item name="" identifier="sgt_boshotgun" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="weaponlightdrop">
-		
-		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="314,354,54,55" origin="0.5,0.5" />
+	<Item name="" 
+	identifier="shotgun_combat_suppressed"
+	variantof="_shotgun_combat" 
+	description="" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	category="Weapon" 
+	subcategory="Coalition" 
+	tags="mediumitem,weapon,gun,gunsmith,mountableweapon" 
+	Scale="0.35"
+	impactsoundtag="weaponlightdrop">
+
+		<InventoryIcon name="shotgun_combat_basic_inv" texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="314,354,54,55" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="375,0,333,112" depth="0.55" origin="0.5,0.5" />
-		
+
 		<Body width="140" height="60" density="50" />
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-14" aimpos="58,2" handle1="-58,-24" handle2="41,4" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon 
-			reload="0.2" reloadnoskill="0.8" reloadskillrequirement="65" 
-			barrelpos="92,9"
-			spread="3" unskilledspread="14"
-			combatPriority="80" 
-			drawhudwhenequipped="true" 
-			crosshairscale="0.2">
-
-			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-
+		reload="0.2" reloadnoskill="0.8" reloadskillrequirement="65" 
+		barrelpos="92,9"
+		spread="3" unskilledspread="14"
+		combatPriority="80" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
 			<ParticleEmitter particle="smoke" particleamount="1" velocitymin="0" velocitymax="0" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/12s1.ogg" type="OnUse" range="3000" volume="1.1" />
-			
-			<StatusEffect type="OnUse" target="This" Condition="-300" />
-			
-			<StatusEffect type="Always" target="This" Condition="8">
-				<Conditional condition="gt 0" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
-			
-			<StatusEffect type="OnUse" target="This">
-				<Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="26.0" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnUse" target="Contained">
-				<Use />
-			</StatusEffect>
-
-			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="saigaammo" />
 
 			<RequiredSkill identifier="weapons" level="65" />
-			
-			<StatusEffect type="OnUse" target="This">
-				<Conditional condition="lt 35" />
-				
-				<ParticleEmitter particle="weldspark" particleamount="5" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
-			</StatusEffect>
-			
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-			<Containable items="saigaammo" hide="false" itempos="6,-10" />
-
-			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
-
-			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
-				<Containable items="flashlight" hide="false" itempos="27,2" setactive="true" />
+			<SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="flashlight" hide="false" itempos="38,-3" setactive="true" />
 			</SubContainer>
-
 		</ItemContainer>
 
 		<aitarget sightrange="2000" soundrange="500" fadeouttime="5" />
-
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
-			<QualityStat stattype="Condition" value="0.1" />
-		</Quality>
 
 		<SkillRequirementHint identifier="weapons" level="65" />
 	</Item>
@@ -579,7 +471,16 @@
 
 		<!--Prototype Combat Shotgun-->
 		<!--AA12-->
-	<Item name="" identifier="scp_aa12" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Prototype" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="weaponlightdrop">
+	<Item name="" 
+	identifier="shotgun_combat_prototype" 
+	variantof="_shotgun_combat" 
+	description="" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	category="Weapon" 
+	subcategory="Prototype" 
+	tags="mediumitem,weapon,gun,gunsmith,mountableweapon" 
+	Scale="0.45" 
+	impactsoundtag="weaponlightdrop">
 		
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="605,110,60,60" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="0,577,261,84" depth="0.55" origin="0.5,0.5" />
@@ -589,85 +490,35 @@
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="60,-3" handle1="-45,-14" handle2="41,12" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon 
-			reload="0.325" reloadnoskill="2.5" reloadskillrequirement="85" 
-			weapondamagemodifier="1.15" 
-			barrelpos="64,9"
-			spread="6" unskilledspread="36"
-			combatPriority="80" 
-			drawhudwhenequipped="true" 
-			crosshairscale="0.2">
-
-			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		reload="0.325" reloadnoskill="2.5" reloadskillrequirement="85" 
+		weapondamagemodifier="1.15" 
+		barrelpos="64,9"
+		spread="6" unskilledspread="36"
+		combatPriority="80" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="6,1" colormultiplier="200,50,50,255" />
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1.5,5" colormultiplier="200,50,50,255" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/aa12.ogg" type="OnUse" range="3000" selectionmode="Random" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/aa12.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/aa12.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
-			
-			<StatusEffect type="OnUse" target="This" Condition="-220" />
-			
-			<StatusEffect type="Always" target="This" Condition="3">
-				<Conditional condition="gt 0" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
-			
-			<StatusEffect type="OnUse" target="This">
-				<Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="26.0" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnUse" target="Contained">
-				<Use />
-			</StatusEffect>
-
-			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="saigaammo" />
 
 			<RequiredSkill identifier="weapons" level="85" />
-			
-			<StatusEffect type="OnUse" target="This">
-				<Conditional condition="lt 35" />
-				
-				<ParticleEmitter particle="weldspark" particleamount="5" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
-			</StatusEffect>
-			
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-			<Containable items="saigaammo" hide="false" itempos="7,-10" />
+			<SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="flashlight" hide="false" itempos="38,-3" setactive="true" />
+			</SubContainer>
 		</ItemContainer>
 
 		<aitarget sightrange="2000" soundrange="5500" fadeouttime="5" />
 
-		<Quality>
-			<QualityStat stattype="FirepowerMultiplier" value="0.05" />
-			<QualityStat stattype="Condition" value="0.1" />
-		</Quality>
-
 		<SkillRequirementHint identifier="weapons" level="85" />
-
-		<LightComponent range="400.0" LightColor="0.5,0.5,0.5,1.0" powerconsumption="4" IsOn="true" Flicker="0.2">
-			<StatusEffect type="Always" target="This,Character" Voltage="1.0" setvalue="true">
-				<Conditional IsDead="false" />
-			</StatusEffect>
-			<LightTexture texture="Content/Lights/lightcone.png" origin="-0.015, 0.5" size="0.85,1" />
-		</LightComponent>
-
-		<CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
-			<GuiFrame relativesize="0.09,0.07" anchor="BottomCenter" pivot="BottomRight" relativeoffset="-0.025,0.093" style="ItemUI" />
-			<TickBox text="Taclight">
-				<StatusEffect type="OnUse" targettype="This" IsOn="true" />
-				<StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
-			</TickBox>
-		</CustomInterface>
-
 	</Item>
-	
+
 
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Big Bore Shotguns-->
@@ -675,7 +526,16 @@
 
 		<!--Double_Barrel Assault Shotgun-->
 		<!--Double-Barrel 8-Gauge-->
-	<Item name="" description="" identifier="sgt_dbs" category="Weapon" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,mountableweapon" Scale="0.385" impactsoundtag="weaponlightdrop" allowasextracargo="true">
+	<Item name="" 
+	description="" 
+	identifier="sgt_dbs" 
+	category="Weapon" 
+	subcategory="Renegade" 
+	cargocontaineridentifier="metalcrate" 
+	tags="mediumitem,weapon,gun,mountableweapon" 
+	Scale="0.385" 
+	impactsoundtag="weaponlightdrop" 
+	allowasextracargo="true">
 		
 		<InventoryIcon name="dbinv" texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="403,299,61,74" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,298,386,72" depth="0.55" origin="0.5,0.25" />
@@ -685,12 +545,12 @@
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="15,-40" aimpos="75,8" handle1="-74,-13" handle2="-14,2" holdangle="40" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon 
-			barrelpos="85,10"
-			spread="0.5" unskilledspread="6"
-			combatPriority="80" 
-			reload="0.03" 
-			drawhudwhenequipped="true" 
-			crosshairscale="0.2">
+		barrelpos="85,10"
+		spread="0.5" unskilledspread="6"
+		combatPriority="80" 
+		reload="0.03" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
 
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
