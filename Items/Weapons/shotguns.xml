@@ -481,10 +481,10 @@
 	tags="mediumitem,weapon,gun,gunsmith,mountableweapon" 
 	Scale="0.45" 
 	impactsoundtag="weaponlightdrop">
-		
+
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/hightierweaponsinv.png" sourcerect="605,110,60,60" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/hightierweapons.png" sourcerect="0,577,261,84" depth="0.55" origin="0.5,0.5" />
-		
+
 		<Body width="140" height="60" density="50" />
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="60,-3" handle1="-45,-14" handle2="41,12" holdangle="-35" msg="ItemMsgPickUpSelect" />
@@ -520,6 +520,8 @@
 	</Item>
 
 
+		<!--TODO: all of these suck are are unique. fix their IDs and give them some sort of system-->
+		<!--TODO: also give them sprite names-->
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Big Bore Shotguns-->
 
@@ -620,22 +622,30 @@
 
 		<!--Pump-Action Assault Shotgun-->
 		<!--SP-12 8-Gauge (Was M90 Tactical)-->
-	<Item name="" identifier="sgt_m90t" description="" cargocontaineridentifier="scp_weaponcrate" category="Weapon" subcategory="Coalition" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.385" impactsoundtag="weaponlightdrop">
-		
+	<Item name="" 
+	identifier="sgt_m90t" 
+	description="" 
+	cargocontaineridentifier="scp_weaponcrate" 
+	category="Weapon" 
+	subcategory="Coalition" 
+	tags="mediumitem,weapon,gun,gunsmith,mountableweapon" 
+	scale="0.385" 
+	impactsoundtag="weaponlightdrop">
+
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="306,0,54,58" origin="0.4973561,0.49751914" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Coalition.png" sourcerect="0,0,306,71" depth="0.55" origin="0.5,0.5" />
-		
+
 		<Body width="180" height="45" density="50" />
 
 		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-8" aimpos="60,5" handle1="-60,-15" handle2="35,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
 
 		<RangedWeapon 
-			barrelpos="85,13"
-			spread="3" unskilledspread="12"
-			combatPriority="80" 
-			reload="1.2" reloadnoskill="1.8" reloadskillrequirement="65" 
-			drawhudwhenequipped="true" 
-			crosshairscale="0.2">
+		barrelpos="85,13"
+		spread="3" unskilledspread="12"
+		combatPriority="80" 
+		reload="1.2" reloadnoskill="1.8" reloadskillrequirement="65" 
+		drawhudwhenequipped="true" 
+		crosshairscale="0.2">
 
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
