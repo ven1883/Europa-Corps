@@ -79,4 +79,35 @@
 		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
 	</Affliction>
 
+	<Affliction 
+		name="bandaged" 
+		identifier="bandaged" 
+		description="bandagé." 
+		type="resistance" 
+		isbuff="true" 
+		causeofdeathdescription="" selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		maxstrength="300">
+
+		<Effect 
+			minstrength="0" maxstrength="10" strengthchange="-1" 
+			resistancefor="bloodloss" 
+			minresistance="0" maxresistance="1.0">
+  			<StatusEffect target="Character">
+				<ReduceAffliction identifier="bleeding" amount="0.5"/>
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="10" maxstrength="300" strengthchange="-1" 
+			resistancefor="bloodloss" 
+			minresistance="1.0" maxresistance="1.0">
+  			<StatusEffect target="Character">
+				<ReduceAffliction identifier="bleeding" amount="0.5"/>
+			</StatusEffect>
+		</Effect>
+
+    	<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="128,384,128,128" color="215,252,104,255" origin="0,0" />
+  	</Affliction>
+	
 </Afflictions>
