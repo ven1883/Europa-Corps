@@ -274,7 +274,7 @@
 			<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
     		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-40,-16" containedspritedepth="0.551" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
-				
+
     			<Containable items="smgammo">
 
     				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.9" condition="100" stackable="false" />
@@ -285,14 +285,14 @@
     					<Conditional EntityType="eq character" TargetContainer="True" />
     					<Conditional EntityType="eq null" TargetContainer="True" />
 
-    					<sound file="%ModDir%/Sounds/smgreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.7" volume="1" />
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/smgreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.7" volume="1" />
     				</StatusEffect>
 
     				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.25" stackable="false" comparison="or">
     					<Conditional EntityType="eq character" TargetContainer="True" />
     					<Conditional EntityType="eq null" TargetContainer="True" />
 
-    					<sound file="%ModDir%/Sounds/smgreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.7" volume="1" />
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/smgreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.7" volume="1" />
     				</StatusEffect>
 
     			</Containable>
