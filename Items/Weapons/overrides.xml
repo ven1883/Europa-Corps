@@ -209,14 +209,14 @@
     					<Conditional EntityType="eq character" TargetContainer="True" />
     					<Conditional EntityType="eq null" TargetContainer="True" />
 
-    					<sound file="%ModDir%/Sounds/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1" volume="1" />
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1" volume="1" />
     				</StatusEffect>
 
     				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.6" stackable="false" comparison="or">
     					<Conditional EntityType="eq character" TargetContainer="True" />
     					<Conditional EntityType="eq null" TargetContainer="True" />
 
-    					<sound file="%ModDir%/Sounds/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1" volume="1" />
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1" volume="1" />
     				</StatusEffect>
 
     			</Containable>
@@ -226,7 +226,7 @@
     			<SubContainer capacity="1" maxstacksize="1">
     				<Containable items="flashlight" hide="false" itempos="21,2" setactive="true" />
     			</SubContainer>
-				
+
     		</ItemContainer>
 
 			<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
