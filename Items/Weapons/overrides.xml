@@ -887,34 +887,32 @@
 				<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="12.0,6.0" colormultiplier="255,200,200,200" />
 				<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,12.0" colormultiplier="255,200,200,200" />
+
 				<StatusEffect type="OnUse" forceplaysounds="true" target="This">
 					<Sound file="%ModDir%/Sounds/Weapons/Guns/hmg1.ogg" type="OnUse" range="3500" selectionmode="Random" volume="1.15" />
 					<Sound file="%ModDir%/Sounds/Weapons/Guns/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="0.9" />
 					<Sound file="%ModDir%/Sounds/Weapons/Guns/hmg1.ogg" type="OnUse" range="3500" volume="1.15" frequencymultiplier="1.05" />
 				</StatusEffect>
 
-				<StatusEffect type="OnUse" target="This" Condition="-110" />
-				<StatusEffect type="Always" target="This" Condition="1.5">
-					<Conditional condition="gt 0" />
-				</StatusEffect>
 				<StatusEffect type="OnUse" target="This">
 					<Explosion range="180.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
 				</StatusEffect>
+
 				<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
 					<Conditional skillrequirement="true" weapons="lt 75" />
 					<Conditional skillrequirement="true" weapons="gte 50" />
+
 					<Affliction identifier="stun" strength="0.25" />
 					<Affliction identifier="blunttrauma" strength="2" />
 				</StatusEffect>
+
 				<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
 					<Conditional skillrequirement="true" weapons="lt 50" />
+
 					<Affliction identifier="stun" strength="0.5" />
 					<Affliction identifier="blunttrauma" strength="4" />
 				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/Weapons/Guns/machinegunjam.ogg" type="OnUse" range="900.0" loop="false" />
-				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="4.5" stackable="false" />
+
 				<StatusEffect type="OnUse" target="Contained">
 					<Use />
 				</StatusEffect>
@@ -925,6 +923,7 @@
 
 				<StatusEffect type="OnUse" target="This" comparison="and">
 					<Conditional condition="lt 35" />
+
 					<ParticleEmitter particle="steamspray" particleamount="1" velocitymin="5" velocitymax="10" scalemin="1.5" scalemax="2.5" anglemin="0" anglemax="360" colormultiplier="15,15,15,255" />
 					<ParticleEmitter particle="weldspark" particleamount="8" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
 				</StatusEffect>
@@ -942,14 +941,37 @@
 				<RequiredItems items="hmgammo" type="Contained" />
 			</Propulsion>
 
-			<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-				<Containable items="hmgammo" hide="false" itempos="-4,-10" />
-				<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
-				<SubContainer capacity="1" maxstacksize="1">
-					<Containable items="flashlight" hide="false" itempos="30,1" setactive="true" />
-				</SubContainer>
-			</ItemContainer>
+    		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
 
+    			<Containable items="hmgammo" hide="false" itempos="-4,-10">
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="6.1" condition="100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads//mgreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1" volume="1" />
+    				</StatusEffect>
+					
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads//mgreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1" volume="1" />
+    				</StatusEffect>
+
+    			</Containable>
+
+    			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+    			<SubContainer capacity="1" maxstacksize="1">
+    			  <Containable items="flashlight" hide="false" itempos="30,1" setactive="true" />
+    			</SubContainer>
+
+    		</ItemContainer>
 			<aitarget sightrange="3000" soundrange="7000" fadeouttime="5" />
 
 			<Quality>
