@@ -1,5 +1,9 @@
 <Items>
-
+<!--TODO:
+    change sprites for the items
+    change reload sounds for the items
+    change reload speeds to match intended values
+    add items for the missing rifle categories-->
 
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--5.56 rifles-->
@@ -16,7 +20,7 @@
 		<Body width="140" height="60" density="50" />
 
 		<Holdable controlpose="true" /> <!--!do not remove!-->
-		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+		<!--due to bugtrauma, parents need a holdable or flashlights on guns break-->
 
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -67,7 +71,7 @@
 		<Body width="140" height="60" density="50" />
 
 		<Holdable controlpose="true" /> <!--!do not remove!-->
-		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+		<!--due to bugtrauma, parents need a holdable or flashlights on guns break-->
 
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
