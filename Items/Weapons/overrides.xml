@@ -643,6 +643,36 @@
 
     			<Containable items="shotgunammo" hide="true">
 
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.8" condition="100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/shotguntubereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+    				</StatusEffect>
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.8" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" forceplay="true" range="1000.0" loop="false" volume="1" selectionmode="Random" />
+    					<Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" forceplay="true" range="1000.0" loop="false" volume="1" />
+    					<Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" forceplay="true" range="1000.0" loop="false" volume="1" />
+    				</StatusEffect>
+
+    			</Containable>
+
+    			<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+
+    			<SubContainer capacity="1" maxstacksize="1">
+    				<Containable items="flashlight" hide="false" itempos="32,-3" setactive="true" />
+    			</SubContainer>
+
+    		</ItemContainer>
+
 			<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
 
 			<Quality>
