@@ -464,7 +464,7 @@
 
     					<StatusEffect type="OnContaining" target="This" cameraaimoffset="500" setvalue="true" interval="1" spread="4" unskilledspread="12" />
     					<StatusEffect type="OnRemoved" target="This" cameraaimoffset="0" setvalue="true" spread="8" unskilledspread="16" />
-						
+
     				</Containable>
 
     			</SubContainer>
@@ -530,18 +530,73 @@
 
 			<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-10" aimpos="65,10" handle1="-37,-24" handle2="26,0" holdangle="-40" msg="ItemMsgPickUpSelect" />
 
-			<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="1" containedspritedepth="0.56">
-				<Containable items="grenade" hide="true" itempos="50,0" />
-				<SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="4,216,75,35" origin="0.5,0.5" />
-				<SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="1,62,120,29" origin="0.5,0.5" />
-				<SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
-				<SubContainer capacity="1" maxstacksize="5">
-					<Containable items="rifleammo" hide="true" />
-				</SubContainer>
-				<SubContainer capacity="1" maxstacksize="1">
-					<Containable items="flashlight" hide="false" itempos="30,-3" containedspritedepth="0.5" setactive="true" />
-				</SubContainer>
-			</ItemContainer>
+    		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="1" containedspritedepth="0.56">
+
+    			<Containable items="grenade" hide="true" itempos="50,0">
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<Sound file="%ModDir%/Sounds/40mmreload1.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+    				</StatusEffect>
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.35" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+						
+    					<Sound file="%ModDir%/Sounds/40mmreload2.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+    				</StatusEffect>
+
+    			</Containable>
+
+    			<SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="4,216,75,35" origin="0.5,0.5" />
+    			<SlotIcon slotindex="1" texture="Content/UI/ContainerIndicators.png" sourcerect="1,62,120,29" origin="0.5,0.5" />
+    			<SlotIcon slotindex="2" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+				
+    			<SubContainer capacity="1" maxstacksize="5">
+
+    				<Containable items="rifleammo" hide="true">
+
+    					<StatusEffect type="OnInserted" target="This" targetslot="1" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
+
+    					<StatusEffect type="OnInserted" target="This" targetslot="1" disabledeltatime="true" condition="-100" stackable="false" />
+
+    					<StatusEffect type="OnInserted" target="This" targetslot="1" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    						<Conditional EntityType="eq character" TargetContainer="True" />
+    						<Conditional EntityType="eq null" TargetContainer="True" />
+
+    						<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/boltactionclipreload.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1" volume="1" />
+    					</StatusEffect>
+
+    					<StatusEffect type="OnInserted" target="This" targetslot="1" disabledeltatime="true" delay="1.45" stackable="false" comparison="or">
+    						<Conditional EntityType="eq character" TargetContainer="True" />
+    						<Conditional EntityType="eq null" TargetContainer="True" />
+
+    						<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/boltactionreloadend.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1" volume="1" />
+    					</StatusEffect>
+    				</Containable>
+
+    			</SubContainer>
+
+    			<SubContainer capacity="1" maxstacksize="1">
+
+    				<Containable items="flashlight" hide="false" itempos="30,-3" containedspritedepth="0.5" setactive="true" />
+
+    				<Containable items="scope" hide="false" itempos="18,7">
+						
+    					<StatusEffect type="OnContaining" target="This" cameraaimoffset="500" setvalue="true" interval="1" />
+    					<StatusEffect type="OnRemoved" target="This" cameraaimoffset="0" setvalue="true" />
+						
+    				</Containable>
+
+    			</SubContainer>
+
+    		</ItemContainer>
 
 			<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
 
