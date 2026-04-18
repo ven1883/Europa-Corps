@@ -999,11 +999,6 @@
 				<Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
 				<Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
 
-				<StatusEffect type="OnUse" target="This" Condition="-10000" />
-				<StatusEffect type="OnBroken" target="This" delay="0.5">
-					<Sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/40mmreload.ogg" type="OnUse" range="1000" volume="1" forceplay="true" frequencymultiplier="0.95" />
-				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="1.8" stackable="false" />
 				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0" />
 				</StatusEffect>
@@ -1019,9 +1014,30 @@
 				<sprite name="Grenade Launcher Worn" texture="%ModDir%/Sprites/Items/Weapons/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" sourcerect="4,426,197,59" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.5" origin="0.5,0.95" />
 			</Wearable>
 
-			<ItemContainer capacity="1" maxstacksize="1" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
-				<Containable items="grenade" />
-			</ItemContainer>
+    		<ItemContainer capacity="1" maxstacksize="1" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+
+    			<Containable items="grenade">
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+					
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<Sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/40mmreload1.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+    				</StatusEffect>
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.35" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+						
+    					<Sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/40mmreload2.ogg" type="OnUse" range="1000" volume="0.8" forceplay="true" />
+    				</StatusEffect>
+    			</Containable>
+
+    		</ItemContainer>
 
 			<aitarget sightrange="500" soundrange="500" fadeouttime="3" />
 
