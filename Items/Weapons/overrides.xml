@@ -785,12 +785,7 @@
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun2.ogg" type="OnUse" range="3000" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun3.ogg" type="OnUse" range="3000" />
-
-				<StatusEffect type="OnUse" target="This" Condition="-3500" />
-				<StatusEffect type="OnBroken" target="This" delay="0.2">
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/dbreload.ogg" type="OnUse" range="500.0" loop="false" volume="1.25" />
-				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2.8" stackable="false" />
+				
 				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
 				</StatusEffect>
@@ -805,9 +800,31 @@
 
 			<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="55,5" handle1="-20,-13" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
 
-			<ItemContainer capacity="1" maxstacksize="2" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
-				<Containable items="shotgunammo" />
-			</ItemContainer>
+    		<ItemContainer capacity="1" maxstacksize="2" itempos="27,10" iteminterval="0,-4" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+
+    		 	<Containable items="shotgunammo" hide="true">
+
+    		 		<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="3.1" condition="100" stackable="false" />
+
+    		 		<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+
+    		 		<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    		 			<Conditional EntityType="eq character" TargetContainer="True" />
+    		 			<Conditional EntityType="eq null" TargetContainer="True" />
+
+    		 			<sound file="%ModDir%/Sounds/dbreload.ogg" type="OnUse" range="700.0" loop="false" volume="1.35" frequencymultiplier="0.65" />
+    		 			<ParticleEmitter particle="scp_spentcasingshotgun" particleamount="2" anglemin="180" anglemax="190" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+    		 		</StatusEffect>
+
+    		 	</Containable>
+
+    		 	<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+
+    		 	<SubContainer capacity="1" maxstacksize="1">
+    		 		<Containable items="flashlight" hide="false" itempos="30,-2" setactive="true" />
+    		 	</SubContainer>
+
+    		</ItemContainer>
 
 			<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
 
