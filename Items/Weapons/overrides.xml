@@ -701,17 +701,10 @@
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="0.97" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/autoshotgun1.ogg" type="OnUse" range="3000" frequencymultiplier="1.03" />
 
-				<StatusEffect type="OnUse" target="This" Condition="-400" />
-				<StatusEffect type="Always" target="This" Condition="5">
-					<Conditional condition="gt 0" />
-				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/Weapons/Guns/shotgunjam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="3.6" stackable="false" />
 				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
 				</StatusEffect>
+
 				<RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
 
 				<RequiredSkill identifier="weapons" level="70" />
@@ -719,6 +712,7 @@
 				<StatusEffect type="OnUse" target="This">
 					<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 				</StatusEffect>
+				
 			</RangedWeapon>
 
 			<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="32,-30" aimpos="58,-5" handle1="-20,-12" handle2="36,-10" holdangle="-10" msg="ItemMsgPickUpSelect" />
@@ -727,9 +721,44 @@
 				<sprite name="Autoshotgun Worn" texture="%ModDir%/Sprites/Items/Weapons/vanillaweaponchanges.png" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" depth="0.6" sourcerect="9,270,160,62" limb="Torso" ignorelimbscale="true" scale="0.62" origin="0.5,0.9" />
 			</Wearable>
 
-			<ItemContainer capacity="2" maxstacksize="8" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true">
-				<Containable items="shotgunammo" />
-			</ItemContainer>
+    		<ItemContainer capacity="2" maxstacksize="12" itempos="27,10" iteminterval="0,-4" hideitems="false" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true">
+
+    			<Containable items="shotgunammo" hide="true">
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="5.5" condition="100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/shotguntubereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+    				</StatusEffect>
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.6" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/shotguntubereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+    				</StatusEffect>
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="5.5" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/shotgunm4reload.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+    				</StatusEffect>
+
+    			</Containable>
+
+    			<SlotIcon slotindex="2" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+
+    			<SubContainer capacity="1" maxstacksize="1">
+    				<Containable items="flashlight" hide="false" itempos="32,-3" setactive="true" />
+    			</SubContainer>
+
+    		</ItemContainer>
 
 			<aitarget sightrange="3000" soundrange="6000" fadeouttime="5" />
 
