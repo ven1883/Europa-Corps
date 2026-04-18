@@ -349,13 +349,44 @@
 
 			<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-15" aimpos="45,-10" handle1="-31,-10" handle2="18,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
-			<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-				<Containable items="smgammo" hide="false" itempos="-30,-13" />
-				<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
-				<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
-					<Containable items="flashlight" hide="false" itempos="25,1" setactive="true" />
-				</SubContainer>
-			</ItemContainer>
+    		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+
+    			<Containable items="smgammo" hide="false" itempos="-30,-10">
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.6" condition="100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/smgreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+    				</StatusEffect>
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/smgreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+    				</StatusEffect>
+
+    			</Containable>
+
+    			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+
+    			<SubContainer capacity="1" maxstacksize="1">
+
+    				<Containable items="flashlight" hide="false" itempos="25,1" containedspritedepth="0.5" setactive="true" />
+
+    				<Containable items="scope" hide="false" itempos="-3,13.5">
+    					<StatusEffect type="OnContaining" target="This" cameraaimoffset="500" setvalue="true" interval="1" />
+    					<StatusEffect type="OnRemoved" target="This" cameraaimoffset="0" setvalue="true" />
+    				</Containable>
+
+    			</SubContainer>
+
+    		</ItemContainer>
 
 			<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 
