@@ -258,20 +258,10 @@
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/csmg1.ogg" type="OnUse" range="3000" frequencymultiplier="1.05" />
 
-				<StatusEffect type="OnUse" target="This" Condition="-280" />
-				<StatusEffect type="Always" target="This" Condition="7">
-					<Conditional condition="gt 0" />
-				</StatusEffect>
-				<StatusEffect type="InWater" target="This" Condition="14">
-					<Conditional condition="gt 0" />
-				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This">
-					<sound file="%ModDir%/Sounds/Weapons/Guns/x95jam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-				</StatusEffect>
-				<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.6" stackable="false" />
 				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
 				</StatusEffect>
+
 				<StatusEffect type="OnUse" target="Contained">
 					<Use />
 				</StatusEffect>
@@ -283,9 +273,37 @@
 
 			<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
 
-			<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-39,-23" containedspritedepth="0.551" containedstateindicatorstyle="bullet">
-				<Containable items="smgammo" />
-			</ItemContainer>
+    		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-40,-16" containedspritedepth="0.551" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+				
+    			<Containable items="smgammo">
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.9" condition="100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/smgreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.7" volume="1" />
+    				</StatusEffect>
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.25" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/smgreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.7" volume="1" />
+    				</StatusEffect>
+
+    			</Containable>
+
+    			<SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+
+    			<SubContainer capacity="1" maxstacksize="1">
+    				<Containable items="flashlight" hide="false" itempos="36,0" setactive="true" />
+    			</SubContainer>
+
+    		</ItemContainer>
 
 			<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 
