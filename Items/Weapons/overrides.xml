@@ -34,9 +34,31 @@
 
 			<Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="77,10" handle1="-34,-8" msg="ItemMsgPickUpSelect" />
 
-			<ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet">
-				<Containable items="revolverammo" />
-			</ItemContainer>
+    		<ItemContainer capacity="1" maxstacksize="6" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+
+    			<Containable items="revolverammo" hide="true">
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.85" condition="100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+    				</StatusEffect>
+
+    				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.85" stackable="false" comparison="or">
+    					<Conditional EntityType="eq character" TargetContainer="True" />
+    					<Conditional EntityType="eq null" TargetContainer="True" />
+
+    					<sound file="%ModDir%/Sounds/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+    				</StatusEffect>
+					
+    			</Containable>
+
+    		</ItemContainer>
 
 			<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
 
