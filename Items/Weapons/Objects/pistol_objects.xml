@@ -18,7 +18,7 @@
 		<Body width="140" height="60" density="50" />
 
 		<Holdable controlpose="true" /> <!--!do not remove!-->
-		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+		<!--due to bugtrauma, parents need a holdable or flashlights on guns break-->
 
 		<RangedWeapon>
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
