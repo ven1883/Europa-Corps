@@ -179,7 +179,7 @@
 	</Job>
 	
 	<!--generic cultist grunt-->
-	<Job identifier="cultist_viper"  onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
+	<Job identifier="cultist_viper"	onlyjobspecificdialog="false" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true"
 		uicolor="0.49,0.36,0.67">
 		<Jobicon>
 			<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,256,128,128" origin="0.5,0.5"/>

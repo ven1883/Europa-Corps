@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--9mm pistols-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_service"
+	hideinmenus="true"
+	tags="weapon,gun,gunsmith,pistolitem,smallitem" >
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="116,0,54,80" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,145,98,75" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="9mmpistolammo" />
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="9mmpistolammo" hide="true">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Assault Pistols (10mm)-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_assault"
+	hideinmenus="true"
+	tags="weapon,gun,gunsmith,pistolitem,smallitem" >
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="420,81,51,73" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Renegade.png" sourcerect="0,130,112,77" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="140" height="60" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.25" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="10mmpistolammo" />
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="10mmpistolammo" hide="true" itempos="-12.5,-6.25">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--.357 Magnum Revolvers-->
+		<!--Service Revolvers-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_revolver_service" 
+	hideinmenus="true"
+	tags="smallitem,weapon,gun,pistolitem,gunsmith" >
+		
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="383,0,45,72" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="220,0,135,67" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="72" height="40" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/357.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/3572.ogg" type="OnUse" range="3000" />
+			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.05" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
+			</StatusEffect>
+
+			<RequiredItems items="357ammo,revolverround" type="Contained" msg="ItemMsgAmmoRequired" />
+		</RangedWeapon>
+
+		<ItemContainer>	
+			<Containable items="357ammo,revolverround" hide="true">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--.44 Magnum Revolvers-->
+		<!--Light Handcannons-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_revolver_lighthandcannon" 
+	hideinmenus='true'
+	tags="smallitem,weapon,gun,pistolitem,gunsmith" >
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="430,0,47,69" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="0,222,136,62" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="72" height="40" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/441.ogg" type="OnUse" range="3500" selectionmode="Random" />
+			<Sound file="%ModDir%/Sounds/Weapons/Guns/441.ogg" type="OnUse" range="3500" frequencymultiplier="0.95" />
+			
+			<ChargeSound file="%ModDir%/Sounds/Weapons/Guns/doubleaction.ogg" range="1000" volume="1.15" />
+			
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="5.4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="25.0" />
+			</StatusEffect>
+
+			<RequiredItems items="44ammo,44_round" type="Contained" msg="ItemMsgAmmoRequired" />
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="44ammo,44_round">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.35" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.35" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Heavy Pistols (.45)-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_heavy" 
+	hideinmenus="true"
+	tags="smallitem,weapon,gun,pistolitem,gunsmith,mountableweapon" >
+		
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="647,1,54,83" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="111,0,105,75" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="140" height="60" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1.25" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="26" />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="45ammo,45pistolammo,pistol45_magazine,pistol45_magazine_ap" />	
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="45pistolammo" hide="true">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.2" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.75" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Oppressor Heavy Pistols (.50)-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_oppressor_heavy" 
+	hideinmenus="true"
+	tags="smallitem,weapon,gun,pistolitem,gunsmith">
+		
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="332,0,49,71" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="221,70,130,75" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="140" height="60" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="4.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="55.0" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="deagleammo" />
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="deagleammo" hide="true">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.2" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.75" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/pistolreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.8" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Assault Revolvers (.500 / 12.7x55mm)-->
+
+
+	<Item name="_nospawn" 
+	identifier="_pistol_revolver_assault" 
+	hideinmenus="true"
+	tags="smallitem,weapon,gun,pistolitem,gunsmith" 
+	scale="0.45">
+
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/weaponsinv.png" sourcerect="277,0,54,80" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/pistols.png" sourcerect="101,153,144,62" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="72" height="40" density="50" />
+
+		<Holdable controlpose="true" /> <!--!do not remove!-->
+		<!--!due to bugtrauma, parents need a holdable or flashlights on guns break-->
+
+		<RangedWeapon>
+			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="12" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="300.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use />
+			</StatusEffect>
+
+			<RequiredItems items="arevolverround" type="Contained" msg="ItemMsgAmmoRequired" />
+		</RangedWeapon>
+
+		<ItemContainer>
+			<Containable items="arevolverround" hide="true">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="4.0" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/handcannonreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="1.1" volume="1" />
+				</StatusEffect>
+			</Containable>
+		</ItemContainer>
+	</Item>
+
+
+</Items>

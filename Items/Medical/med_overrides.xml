@@ -1187,73 +1187,73 @@
 
 		</Item>
 
-    <!--++++++++++++++++++++++++++++++++++++-->
+		<!--++++++++++++++++++++++++++++++++++++-->
 
-    	<pomegrenadeextract name="" identifier="pomegrenadeextract" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+			<pomegrenadeextract name="" identifier="pomegrenadeextract" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-    		<InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,384,64,64" origin="0.5,0.5" />
-    		<Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="228,379,37,69" depth="0.6" origin="0.5,0.5" />
+				<InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,384,64,64" origin="0.5,0.5" />
+				<Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="228,379,37,69" depth="0.6" origin="0.5,0.5" />
 
-    		<Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
-    		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+				<Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+				<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
 
-    			<RequiredSkill identifier="medical" level="25" />
+					<RequiredSkill identifier="medical" level="25" />
 
-    			<StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
-    			<StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
+					<StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
+					<StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
 
-    			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="60">
-    				<ReduceAffliction type="damage" amount="0.25" />
-    				<ReduceAffliction type="burn" amount="0.25" />
-    				<Affliction identifier="OxygenLow" strength="3.25"/>
-    			</StatusEffect>
+					<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="60">
+						<ReduceAffliction type="damage" amount="0.25" />
+						<ReduceAffliction type="burn" amount="0.25" />
+						<Affliction identifier="OxygenLow" strength="3.25"/>
+					</StatusEffect>
 				
-    			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="60">
-    				<ReduceAffliction type="damage" amount="0.2" />
-    				<ReduceAffliction type="burn" amount="0.2" />
-    				<Affliction identifier="OxygenLow" strength="3.25"/>
-    			</StatusEffect>
+					<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="60">
+						<ReduceAffliction type="damage" amount="0.2" />
+						<ReduceAffliction type="burn" amount="0.2" />
+						<Affliction identifier="OxygenLow" strength="3.25"/>
+					</StatusEffect>
 
-    			<StatusEffect type="OnSuccess" target="UseTarget" duration="60" CheckConditionalAlways="True">
-    				<Conditional oxygenlow="lte 75"/>
+					<StatusEffect type="OnSuccess" target="UseTarget" duration="60" CheckConditionalAlways="True">
+						<Conditional oxygenlow="lte 75"/>
 
-    				<Affliction identifier="oxygenlow" strength="2.75"/>
-    			</StatusEffect>
+						<Affliction identifier="oxygenlow" strength="2.75"/>
+					</StatusEffect>
 
-    			<StatusEffect type="OnFailure" target="UseTarget" duration="60" CheckConditionalAlways="True">
-    				<Conditional oxygenlow="lt 75"/>
+					<StatusEffect type="OnFailure" target="UseTarget" duration="60" CheckConditionalAlways="True">
+						<Conditional oxygenlow="lt 75"/>
 
-    				<Affliction identifier="oxygenlow" strength="2.75"/>
-    			</StatusEffect>
+						<Affliction identifier="oxygenlow" strength="2.75"/>
+					</StatusEffect>
 
-    			<StatusEffect type="OnSuccess" target="UseTarget">
-    				<Conditional entitytype="eq Character"/>
+					<StatusEffect type="OnSuccess" target="UseTarget">
+						<Conditional entitytype="eq Character"/>
 
-    				<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-    			</StatusEffect>
+						<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+					</StatusEffect>
 
-    			<StatusEffect type="OnFailure" target="UseTarget">
-    				<Conditional entitytype="eq Character"/>
+					<StatusEffect type="OnFailure" target="UseTarget">
+						<Conditional entitytype="eq Character"/>
 
-    				<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-    			</StatusEffect>
+						<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+					</StatusEffect>
 
-    			<StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
-    				<Affliction identifier="stun" amount="0.1" />
-    			</StatusEffect>
+					<StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
+						<Affliction identifier="stun" amount="0.1" />
+					</StatusEffect>
 
-    			<!-- Remove the item when fully used -->
-    			<StatusEffect type="OnBroken" target="This">
-    				<Remove />
-    			</StatusEffect>
+					<!-- Remove the item when fully used -->
+					<StatusEffect type="OnBroken" target="This">
+						<Remove />
+					</StatusEffect>
 
-    		</MeleeWeapon>
+				</MeleeWeapon>
 
-    		<Projectile characterusable="false" launchimpulse="18.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
+				<Projectile characterusable="false" launchimpulse="18.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
 
-    		<SkillRequirementHint identifier="medical" level="25" />
+				<SkillRequirementHint identifier="medical" level="25" />
 
-    	</pomegrenadeextract>
+			</pomegrenadeextract>
 		
 	</Items>
 	

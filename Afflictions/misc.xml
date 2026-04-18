@@ -13,7 +13,7 @@
 	showiconthreshold="5"
 	maxstrength="100"
 	limbspecific="false"
-  indicatorlimb="Head">
+	indicatorlimb="Head">
 	 <Description
 		textidentifier="afflictiondescription.pain"
 		target="OtherCharacter" />
@@ -55,188 +55,7 @@
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-	<!--~BOOK AFFLICTIONS START~-->
-
 	<Affliction 
-		name="" 
-		identifier="scp_ae1025disease1" 
-		description="" 
-		type="bookinfection" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="20" showiconthreshold="75" 
-		karmachangeonapplied="-100" 
-		maxstrength="300">
-
-    <Effect 
-			minstrength="0" maxstrength="25" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="-1" 
-			minscreendistort="0.0" 
-			minscreenblur="0.0" maxscreenblur="0.0" 
-			minchromaticaberration="0.0" maxchromaticaberration="0" 
-			minfacetint="0,0,0,0" 
-			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
-
-      <StatusEffect target="Character" delay="10">
-        <Affliction identifier="organdamage" amount="2" />
-        <Affliction identifier="scp_vomiting" amount="4" probability="0.5" />
-        <Affliction identifier="organdamage" amount="3" probability="0.25" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-  <Affliction 
-		name="" 
-		identifier="scp_ae1025disease2" 
-		description="" 
-		type="bookinfection" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="20" showiconthreshold="75" 
-		karmachangeonapplied="-100" 
-		maxstrength="300">
-
-    <Effect 
-			minstrength="0" maxstrength="25" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="-1" 
-			minscreendistort="0.0" 
-			minscreenblur="0.0" maxscreenblur="0.0" 
-			minchromaticaberration="0.0" maxchromaticaberration="0" 
-			minfacetint="0,0,0,0" 
-			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
-
-      <StatusEffect target="Character" delay="10">
-        <Affliction identifier="organdamage" amount="2" />
-        <Affliction identifier="oxygenlow" amount="12" />
-        <Affliction identifier="organdamage" amount="4" probability="0.5" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-  <Affliction 
-		name="" 
-		identifier="scp_ae1025disease3" 
-		description="" 
-		type="bookinfection" 
-		causeofdeathdescription="" selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="20" showiconthreshold="75" 
-		karmachangeonapplied="-100"
-		maxstrength="300">
-
-    <Effect minstrength="0" maxstrength="25" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1" minscreendistort="0.0" minscreenblur="0.0" maxscreenblur="0.0" minchromaticaberration="0.0" maxchromaticaberration="0" minfacetint="0,0,0,0" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
-      <StatusEffect target="Character" delay="10">
-        <Affliction identifier="organdamage" amount="1" />
-        <Affliction identifier="bleeding" amount="1" />
-        <Affliction identifier="scp_vomitingblood" amount="2" />
-        <Affliction identifier="organdamage" amount="3" probability="0.25" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
-
-	<!--~BOOK AFFLICTIONS END~-->
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-	<!--~MASK AFFLICTIONS START~-->
-	
-  <Affliction 
-		identifier="scp_ae035damage" 
-		description="" 
-		type="poison" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" 
-		karmachangeonapplied="-100" 
-		maxstrength="200">
-
-    <Effect 
-			minstrength="0" maxstrength="200" 
-			multiplybymaxvitality="true" 
-			minvitalitydecrease="0" maxvitalitydecrease="2">
-		</Effect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="780,0,128,128" color="195,60,60,255" origin="0,0" />
-  </Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-	<Affliction 
-		name="" 
-		identifier="scp_ae035scare" 
-		description="" 
-		type="psiscare" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="11" showiconthreshold="11" 
-		maxstrength="10">
-
-    <Effect 
-			minstrength="0" maxstrength="10" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="-17.5" 
-			minscreendistort="0.0" 
-			minscreenblur="0.0" 
-			maxscreenblur="1" 
-			minchromaticaberration="0.0" maxchromaticaberration="0" 
-			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1">
-
-      <StatusEffect target="Character">
-        <Conditional IsLocalPlayer="True" />
-        <Affliction identifier="psychosis" amount="25" />
-        <Affliction identifier="scp_psidamage" amount="10" />
-        <Affliction identifier="scp_psidamage" amount="10" probability="0.25" />
-        <sound file="%ModDir%/Sounds/ae035scare.ogg" volume="1.75" dontmuffle="True" />
-      </StatusEffect>
-    </Effect>
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/curseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
-  </Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-	<Affliction 
-		name="" 
-		identifier="scp_ae035tragscare" 
-		description="" 
-		type="psiscare" 
-		causeofdeathdescription="" 
-		selfcauseofdeathdescription="" 
-		limbspecific="false" indicatorlimb="Head" 
-		showinhealthscannerthreshold="11" showiconthreshold="11" 
-		maxstrength="10">
-
-    <Effect 
-			minstrength="0" maxstrength="10" 
-			minvitalitydecrease="0" maxvitalitydecrease="0" 
-			strengthchange="-15" 
-			minscreendistort="0.0" 
-			minscreenblur="0.0" maxscreenblur="1" 
-			minchromaticaberration="0.0" maxchromaticaberration="0" 
-			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1">
-
-      <StatusEffect target="Character">
-        <Conditional IsLocalPlayer="True" />
-        <Affliction identifier="stun" amount="1" />
-        <Affliction identifier="scp_psidamage" amount="25" />
-        <sound file="%ModDir%/Sounds/horrortrag.ogg" volume="3" dontmuffle="True" />
-      </StatusEffect>
-    </Effect>
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/tragiccurseoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
-  </Affliction>
-
-	<!--~MASK AFFLICTIONS END~-->
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-  <Affliction 
 		name="" 
 		identifier="scp_vomitingblood" 
 		description="" 
@@ -250,45 +69,45 @@
 		damageoverlayalpha="0" 
 		healcostmultiplier="2.25">
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="100" 
 			strengthchange="-2" 
 			minfacetint="255,255,255,0" maxfacetint="255,255,255,100">
 		</Effect>
 
-    <PeriodicEffect
+		<PeriodicEffect
 			mininterval="4" maxinterval="8">
 
-      <StatusEffect target="Character" SpeedMultiplier="0.0" setvalue="true" duration="2" />
-      <StatusEffect target="Character" comparison="and">
-        <Conditional ishuman="true" />
-        <Conditional hasspecifiertag="male" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
-      </StatusEffect>
-      <StatusEffect target="Character" comparison="and">
-        <Conditional ishuman="true" />
-        <Conditional hasspecifiertag="female" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
-      </StatusEffect>
-      <StatusEffect target="Character" targetlimb="torso">
-        <Affliction identifier="stun" strength="0.25" />
-        <Affliction identifier="stun" strength="0.5" probability="0.25" />
-        <Affliction identifier="organdamage" strength="2" />
-        <Affliction identifier="bloodloss" strength="3" />
-        <Affliction identifier="organdamage" strength="2" probability="0.15" />
-      </StatusEffect>
-      <StatusEffect target="Character" targetlimbs="Head" duration="1">
-        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="50" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" colormultiplier="165,0,0,255" />
-        <Explosion range="0.0" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="0.0" decal="blood" decalsize="1" shockwave="false" underwaterbubble="false" colormultiplier="165,0,0,255" />
-        <Conditional HideFace="eq False" />
-      </StatusEffect>
-    </PeriodicEffect>
-    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="896,896,128,128" origin="0,0" />
-  </Affliction>
+			<StatusEffect target="Character" SpeedMultiplier="0.0" setvalue="true" duration="2" />
+			<StatusEffect target="Character" comparison="and">
+				<Conditional ishuman="true" />
+				<Conditional hasspecifiertag="male" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
+			</StatusEffect>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional ishuman="true" />
+				<Conditional hasspecifiertag="female" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
+			</StatusEffect>
+			<StatusEffect target="Character" targetlimb="torso">
+				<Affliction identifier="stun" strength="0.25" />
+				<Affliction identifier="stun" strength="0.5" probability="0.25" />
+				<Affliction identifier="organdamage" strength="2" />
+				<Affliction identifier="bloodloss" strength="3" />
+				<Affliction identifier="organdamage" strength="2" probability="0.15" />
+			</StatusEffect>
+			<StatusEffect target="Character" targetlimbs="Head" duration="1">
+				<ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="50" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" colormultiplier="165,0,0,255" />
+				<Explosion range="0.0" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="0.0" decal="blood" decalsize="1" shockwave="false" underwaterbubble="false" colormultiplier="165,0,0,255" />
+				<Conditional HideFace="eq False" />
+			</StatusEffect>
+		</PeriodicEffect>
+		<icon texture="Content/UI/CommandUIAtlas.png" sourcerect="896,896,128,128" origin="0,0" />
+	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
@@ -306,46 +125,46 @@
 		damageoverlayalpha="0" 
 		healcostmultiplier="2.25">
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="100" 
 			strengthchange="-1" 
 			minfacetint="255,255,255,0" maxfacetint="255,255,255,100">
 
-      <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
-    </Effect>
+			<StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
+		</Effect>
 
-    <PeriodicEffect 
+		<PeriodicEffect 
 			mininterval="2" maxinterval="6">
 
-      <StatusEffect target="Character" SpeedMultiplier="0.0" setvalue="true" duration="1.25" />
-      <StatusEffect target="Character" comparison="and">
-        <Conditional ishuman="true" />
-        <Conditional hasspecifiertag="male" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
-        <Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
-      </StatusEffect>
-      <StatusEffect target="Character" comparison="and">
-        <Conditional ishuman="true" />
-        <Conditional hasspecifiertag="female" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
-        <Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
-      </StatusEffect>
-      <StatusEffect target="Character" targetlimb="torso">
-        <Affliction identifier="stun" strength="0.25" />
-        <Affliction identifier="stun" strength="0.25" probability="0.2" />
-        <Affliction identifier="organdamage" strength="2" />
-        <Affliction identifier="organdamage" strength="4" probability="0.15" />
-      </StatusEffect>
-      <StatusEffect target="Character" targetlimbs="Head" duration="1">
-        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="50" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
-        <Explosion range="0.0" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="0.0" decal="vomitsplatter" decalsize="1.25" shockwave="false" underwaterbubble="false" />
-        <Conditional HideFace="eq False" />
-      </StatusEffect>
-    </PeriodicEffect>
-    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="896,896,128,128" origin="0,0" />
-  </Affliction>
+			<StatusEffect target="Character" SpeedMultiplier="0.0" setvalue="true" duration="1.25" />
+			<StatusEffect target="Character" comparison="and">
+				<Conditional ishuman="true" />
+				<Conditional hasspecifiertag="male" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
+			</StatusEffect>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional ishuman="true" />
+				<Conditional hasspecifiertag="female" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
+			</StatusEffect>
+			<StatusEffect target="Character" targetlimb="torso">
+				<Affliction identifier="stun" strength="0.25" />
+				<Affliction identifier="stun" strength="0.25" probability="0.2" />
+				<Affliction identifier="organdamage" strength="2" />
+				<Affliction identifier="organdamage" strength="4" probability="0.15" />
+			</StatusEffect>
+			<StatusEffect target="Character" targetlimbs="Head" duration="1">
+				<ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="50" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
+				<Explosion range="0.0" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="0.0" decal="vomitsplatter" decalsize="1.25" shockwave="false" underwaterbubble="false" />
+				<Conditional HideFace="eq False" />
+			</StatusEffect>
+		</PeriodicEffect>
+		<icon texture="Content/UI/CommandUIAtlas.png" sourcerect="896,896,128,128" origin="0,0" />
+	</Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
 
@@ -404,21 +223,21 @@
 		showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000"
 		treatmentthreshold="1000">
 
-    	<Effect 
+			<Effect 
 			minstrength="0" maxstrength="1" 
 			strengthchange="0" 
 			resistancefor="oxygenlow" 
 			minresistance="1" maxresistance="1">
 
-    		<AbilityFlag flagtype="ImmuneToPressure" />
+				<AbilityFlag flagtype="ImmuneToPressure" />
 
-    		<StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
-    			<ReduceAffliction identifier="oxygenlow" strength="100" />
-    		</StatusEffect>
+				<StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
+					<ReduceAffliction identifier="oxygenlow" strength="100" />
+				</StatusEffect>
 
-    	</Effect>
+			</Effect>
 
-  </Affliction>
+	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
@@ -438,11 +257,11 @@
 			resistancefor="oxygenlow" 
 			minresistance="1" maxresistance="1">
 
-	    	<AbilityFlag flagtype="ImmuneToPressure" />
+				<AbilityFlag flagtype="ImmuneToPressure" />
 
-	    	<StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
-	      		<ReduceAffliction identifier="oxygenlow" strength="100" />
-	    	</StatusEffect>
+				<StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
+						<ReduceAffliction identifier="oxygenlow" strength="100" />
+				</StatusEffect>
 
 		</Effect>
 
@@ -459,14 +278,14 @@
 		maxstrength="5" 
 		affectmachines="true" 
 		showiconthreshold="6" showinhealthscannerthreshold="6">
-  
-	   <Effect 
+	
+		 <Effect 
 			minstrength="0" maxstrength="5" 
 			minspeedmultiplier="1" maxspeedmultiplier="0.7" 
 			strengthchange="-0.6">
 		</Effect>
 
-	   <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
+		 <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
 	 </Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -481,38 +300,38 @@
 		limbspecific="false"
 		showicontoothersthreshold="1000"
 		showinhealthscannerthreshold="3"
-		showiconthreshold="3" 
+		showiconthreshold="3"
 		maxstrength="30">
 
 		<Description
-    		textidentifier="afflictiondescription.fatigue.low"
-    		target="Self"
-    		minstrength="0"
-    		maxstrength="10"/>
-    	<Description
-    		textidentifier="afflictiondescription.fatigue.high"
-    		target="Self"
-    		minstrength="10"
-    		maxstrength="30"/>
+				textidentifier="afflictiondescription.fatigue.low"
+				target="Self"
+				minstrength="0"
+				maxstrength="10"/>
+			<Description
+				textidentifier="afflictiondescription.fatigue.high"
+				target="Self"
+				minstrength="10"
+				maxstrength="30"/>
 
 		<Effect 
 			minstrength="0" maxstrength="3" 
-			strengthchange="-0.5">
+			strengthchange="-0.4">
 		</Effect>
 
 		<Effect 
 			minstrength="3" maxstrength="6" 
-			strengthchange="-0.5"
+			strengthchange="-0.3"
 			minspeedmultiplier="1" maxspeedmultiplier="0.7">
 		</Effect>
 		
 		<Effect 
 			minstrength="6" maxstrength="30" 
-			strengthchange="-0.5"
-			minspeedmultiplier="0.7" maxspeedmultiplier="0.7">
+			strengthchange="-0.2"
+			minspeedmultiplier="0.7" maxspeedmultiplier="0.5">
 		</Effect>
 
-		<icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1428,0,128,128" color="103,103,103,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1428,0,128,128" color="103,103,103,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -526,29 +345,27 @@
 		maxstrength="2">
 
 		<PeriodicEffect 
-			mininterval="1" maxinterval="5">
+			mininterval="1" maxinterval="4">
 
-			<StatusEffect target="Character" disabledeltatime="true">
-				<Conditional CurrentSpeed="gte 2.7"/>
-				<Conditional gunshotwound="gte 10"/>
-				<Conditional gunshotwound="lt 20"/>
-
-				<Affliction identifier="explosiondamage" amount="10"/>
-			</StatusEffect>
-
-			<StatusEffect target="Character" disabledeltatime="true">
-				<Conditional CurrentSpeed="gte 2.6"/>
-				<Conditional gunshotwound="gte 20"/>
-				<Conditional gunshotwound="lt 30"/>
-
-				<Affliction identifier="explosiondamage" amount="15"/>
-			</StatusEffect>
-
-			<StatusEffect target="Character" disabledeltatime="true">
+			<StatusEffect target="Limb" disabledeltatime="true" ConditionalComparison="And">
 				<Conditional CurrentSpeed="gte 2.5"/>
+				<Conditional gunshotwound="gte 10"/>
+
+				<Affliction identifier="explosiondamage" amount="3"/>
+			</StatusEffect>
+
+			<StatusEffect target="Limb" disabledeltatime="true" ConditionalComparison="And">
+				<Conditional CurrentSpeed="gte 2.4"/>
+				<Conditional gunshotwound="gte 20"/>
+
+				<Affliction identifier="explosiondamage" amount="5"/>
+			</StatusEffect>
+
+			<StatusEffect target="Limb" disabledeltatime="true" ConditionalComparison="And">
+				<Conditional CurrentSpeed="gte 2.3"/>
 				<Conditional gunshotwound="gte 30"/>
 
-				<Affliction identifier="explosiondamage" amount="20"/>
+				<Affliction identifier="explosiondamage" amount="8"/>
 			</StatusEffect>
 			
 		</PeriodicEffect>
@@ -595,4 +412,38 @@
 		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0" />
 	</Affliction>
 
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="Sprint" 
+		identifier="sprint"
+		type="stamina" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="1000" 
+		showinhealthscannerthreshold="1000"
+		maxstrength="1">
+		<!--HumanDefaultRagdoll.xml applies sprint, sprint controlls fatigue-->
+		<Effect 
+			minstrength="0" maxstrength="1"> <!--walk speed is 1.7, run speed is 3, exhausted speed is 2.1-->
+
+			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Applies fatigue when running-->
+				<Conditional CurrentSpeed="gt 1.7" targettype="Character"/>
+				<Affliction identifier="fatigue" amount="0.02"/>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Makes fatigue deplete faster when still-->
+				<Conditional CurrentSpeed="lt 0.1" targettype="Character"/>
+				<ReduceAffliction identifier="fatigue" amount="0.01"/>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="Character" disableDeltaTime="True"> <!--Makes sure you don't get fatigue when not running eg. getting flung by explosions-->
+				<Conditional CurrentSpeed="gt 4.2" targettype="Character"/>
+				<ReduceAffliction identifier="fatigue" amount="10"/>
+			</StatusEffect>
+
+		</Effect>
+
+		<!-- no need for sprite, not ever seen -->
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0" />
+	</Affliction>
 </Afflictions>

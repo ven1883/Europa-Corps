@@ -18,7 +18,7 @@
 				<Affliction identifier="bleeding" amount="0.2" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="0,128,128,128" color="139,60,42,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="0,128,128,128" color="139,60,42,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -77,7 +77,7 @@
 			multiplybymaxvitality="true" 
 			minvitalitydecrease="100" maxvitalitydecrease="100">
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="128,128,128,128" color="194,169,157,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="128,128,128,128" color="194,169,157,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -126,7 +126,7 @@
 			multiplybymaxvitality="true" 
 			minvitalitydecrease="100" maxvitalitydecrease="100">
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="256,128,128,128" color="194,169,157,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="256,128,128,128" color="194,169,157,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -142,7 +142,7 @@
 		maxstrength="20">
 
 		<Effect minstrength="0" maxstrength="10" strengthchange="-0.5" minspeedmultiplier="1" maxspeedmultiplier="0.5" graincolor="5,5,5,255" mingrainstrength="0" maxgrainstrength="20" minscreenblur="0" maxscreenblur="0.75"/>
-		<Effect minstrength="10" maxstrength="20" strengthchange="-1" minspeedmultiplier="0.5" maxspeedmultiplier="0.5" graincolor="5,5,5,255" mingrainstrength="20" maxgrainstrength="40"  minscreenblur="0.75" maxscreenblur="1.5">
+		<Effect minstrength="10" maxstrength="20" strengthchange="-1" minspeedmultiplier="0.5" maxspeedmultiplier="0.5" graincolor="5,5,5,255" mingrainstrength="20" maxgrainstrength="40"	minscreenblur="0.75" maxscreenblur="1.5">
 
 			<StatusEffect target="Character" ObstructVision="true" SpeedMultiplier="0.4" setvalue="true" disabledeltatime="true" />
 			
@@ -152,7 +152,7 @@
 			</StatusEffect>
 
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="0,0,128,128" color="68,157,198,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="0,0,128,128" color="68,157,198,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
