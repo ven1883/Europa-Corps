@@ -785,7 +785,7 @@
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun1.ogg" type="OnUse" range="3000" selectionmode="Random" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun2.ogg" type="OnUse" range="3000" />
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/Riotshotgun3.ogg" type="OnUse" range="3000" />
-				
+
 				<StatusEffect type="OnUse" target="This">
 					<Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
 				</StatusEffect>
@@ -812,7 +812,7 @@
     		 			<Conditional EntityType="eq character" TargetContainer="True" />
     		 			<Conditional EntityType="eq null" TargetContainer="True" />
 
-    		 			<sound file="%ModDir%/Sounds/dbreload.ogg" type="OnUse" range="700.0" loop="false" volume="1.35" frequencymultiplier="0.65" />
+    		 			<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/dbreload.ogg" type="OnUse" range="700.0" loop="false" volume="1.35" frequencymultiplier="0.65" />
     		 			<ParticleEmitter particle="scp_spentcasingshotgun" particleamount="2" anglemin="180" anglemax="190" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
     		 		</StatusEffect>
 
