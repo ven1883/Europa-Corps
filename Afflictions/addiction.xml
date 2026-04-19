@@ -603,4 +603,55 @@
 		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="512,128,128,128" color="195,180,60,255" origin="0,0" />
 	</Affliction>
 
+	<Affliction 
+		name="pomegrenade overdose" 
+		identifier="pomegrenadeoverdose" 
+		description="froot jooce." 
+		type="poison"
+		causeofdeathdescription="" selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		maxstrength="180">
+
+		<Description textidentifier="afflictiondescription.pomegrenadeoverdose.low.self" target="Self" minstrength="0" maxstrength="45" />
+    	<Description textidentifier="afflictiondescription.pomegrenadeoverdose.self" target="Self" minstrength="45" maxstrength="70" />
+    	<Description textidentifier="afflictiondescription.pomegrenadeoverdose.high.self" target="Self" minstrength="70" maxstrength="100" />
+    	<Description textidentifier="afflictiondescription.pomegrenadeoverdose.low" target="OtherCharacter" minstrength="0" maxstrength="45" />
+    	<Description textidentifier="afflictiondescription.pomegrenadeoverdose" target="OtherCharacter" minstrength="45" maxstrength="70" />
+    	<Description textidentifier="afflictiondescription.pomegrenadeoverdose.high" target="OtherCharacter" minstrength="70" maxstrength="100" />
+
+		<Effect minstrength="0" maxstrength="60" strengthchange="-1"/>
+
+		<Effect 
+			minstrength="60" maxstrength="120" strengthchange="-0.5">
+    	  	<StatusEffect target="Character" comparison="or">
+				<Conditional hallucinating="lte 49"/>
+    	    	<Affliction identifier="hallucinating" amount="2" />
+    	  	</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="120" maxstrength="180" strengthchange="-0.25">
+    	  	<StatusEffect target="Character" comparison="or">
+				<Conditional hallucinating="lt 75"/>
+    	    	<Affliction identifier="hallucinating" amount="3"/>
+    	  	</StatusEffect>
+		</Effect>
+
+    	<PeriodicEffect mininterval="5" maxinterval="30" minstrength="120" maxstrength="180">
+    	  <StatusEffect target="Character" duration="2">
+    	    <Affliction identifier="organdamage" amount="7.5" />
+    	    <ReduceAffliction identifier="hallucinating" amount="15" />
+    	  </StatusEffect>
+    	  <StatusEffect target="Character">
+    	    <Affliction identifier="instavomit" amount="1000" />
+    	  </StatusEffect>
+    	  <StatusEffect target="Character" duration="2" checkconditionalalways="true">
+			<Conditional pomegrenadeoverdose="gte 120"/>
+    	    <ReduceAffliction identifier="pomegrenadeoverdose" amount="15" />
+    	  </StatusEffect>
+    	</PeriodicEffect>
+
+    	<icon texture="%ModDir%/Afflictions/new_afflictions2.png" sourcerect="256,384,128,128" color="195,136,60,255" origin="0,0" />
+  	</Affliction>
+
 </Afflictions>
