@@ -423,4 +423,22 @@
 
 	</Item>
 
+  <Item name="" identifier="punch" category="Weapon" Tags="" Scale="0.5" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True" noninteractable="True">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="770,0,58,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" origin="0.4954025,0.7936202" />
+    <Body radius="5" density="20" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="40,0" handle1="-30,15" holdangle="20" aimangle="30" reload="1.5" range="100" combatPriority="350" msg="ItemMsgPickUpSelect" SwingForce="10,2">
+      <Attack targetimpulse="5" itemdamage="1" hitonlycharacters="True">
+        <Affliction identifier="blunttrauma" strength="1000" />
+        <Affliction identifier="explosiondamage" strength="1000" />
+        <StatusEffect type="OnUse" target="UseTarget,This" comparison="and" delay="0.1">
+          <Conditional entitytype="eq Character" />
+          <Explosion range="100" force="30" showeffects="false" severlimbsprobability="100">
+            <Affliction identifier="slow" strength="10000" />
+          </Explosion>
+        </StatusEffect>
+      </Attack>
+    </MeleeWeapon>
+  </Item>
+
 </Items>

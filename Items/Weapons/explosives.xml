@@ -279,6 +279,73 @@
 		</Throwable>
 	</Item>
 
+		<!--###-->
+
+		<!--Smoke Grenade-->
+
+  <Item name="Smoke Grenade" identifier="smokegrenade" category="Weapon" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert,handgrenade" Scale="0.5" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon name="smokegrenadeinv" texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite name="smokegrenade" texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="3,64,23,43" depth="0.55" origin="0.5,0.5" />
+    <BrokenSprite name="smokegrenadebroken" texture="%ModDir%/Sprites/Items/Weapons/grenades.png" sourcerect="29,64,23,43" depth="0.55" origin="0.5,0.5" maxcondition="99.9" />
+    <Body width="36" height="56" density="30" friction="1.0" angulardamping="20.0" />
+    <Price baseprice="150">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator,fabricator" requiredtime="10">
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem identifier="zinc" amount="2" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="zinc" />
+    </Deconstruct>
+    <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="chemmist" particlespersecond="25" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="255,255,255,155" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="5">
+        <Remove />
+      </StatusEffect>
+      <!-- Skip the removal of safeties and explode immediatly if inside of a detonator, railgun shell or a depth charge-->
+      <StatusEffect type="OnUse" targettype="This" Condition="0" setvalue="true" comparison="OR">
+        <Conditional HasTag="detonator" targetcontainer="true" />
+        <Conditional HasTag="railgunammo" targetcontainer="true" />
+        <Conditional HasTag="depthchargeammo" targetcontainer="true" />
+      </StatusEffect>
+      <!-- forcefully pull the pin if player hasnt done so -->
+      <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <Use />
+      </StatusEffect>
+    </Throwable>
+    <!-- Activating the ItemComponent starts the timer -->
+    <ItemComponent IsActive="false" CharacterUsable="true">
+      <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
+      <StatusEffect type="OnUse" targettype="This" IsActive="true" DontCleanUp="true" comparison="AND" condition="-1">
+        <Conditional HasTag="neq detonator" targetcontainer="true" />
+        <Conditional HasTag="neq railgunammo" targetcontainer="true" />
+        <Conditional HasTag="neq depthchargeammo" targetcontainer="true" />
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+        <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+        <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" Condition="-15" />
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional Condition="lte 95" />
+        <ParticleEmitter particle="chemmist" particlespersecond="10" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="255,255,255,255" />
+        <Explosion showeffects="false" range="250">
+          <Affliction Identifier="smoked" Amount="25" />
+        </Explosion>
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
 
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Chemical Weapons-->
@@ -470,7 +537,7 @@
 		<RangedWeapon reload="5" reloadnoskill="7.5" reloadskillrequirement="80" barrelpos="102,9" spread="4" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />\
+			<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />/
 
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="13.0,5.0" colormultiplier="255,200,200,200" />
 			<ParticleEmitter particle="impactfirearm" particleamount="8" velocitymin="300" velocitymax="900" minsize="1" maxsize="2" anglemin="-15" anglemax="15" copyentityangle="true" colormultiplier="255,200,200,200" />

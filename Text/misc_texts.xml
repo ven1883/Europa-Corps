@@ -19,6 +19,8 @@
 
 	This is an Admin item.</entitydescription.adminxpbook>
 
+	<entitydescription.heal_gas_grenade>A modified europabrew grenade filled with Omnorizone, a potent stimulant and healing drug.</entitydescription.heal_gas_grenade>
+
 	<!--Container-->
 	<entityname.sgt_locker>Weapons Locker</entityname.sgt_locker>
 	<entitydescription.sgt_locker>A Card-Protected Lockaway that only your crew can access. Useful for open-access weapons, as unrecognised personel cannot use its contents.</entitydescription.sgt_locker>
@@ -205,4 +207,27 @@
 
 	<!--Custom Display Names-->
 	<displayname.chemrefined>[itemname] (Processed)</displayname.chemrefined>
+
+	<!--Ghhhhh-->
+	<entityname.remotetrigger>Field Programmable Explosive Trigger</entityname.remotetrigger>
+	<entitydescription.remotetrigger>A detonator trigger of questionable quality and seemingly made of a repurposed RC car controller. It sends detonation codes up to 4 digits to activate field programmable detonators.</entitydescription.remotetrigger>
+	<entityname.remotedetonator>Field Programmable Detonator</entityname.remotedetonator>
+	<entitydescription.remotedetonator>A supposedly "high quality", "military grade" multi-purpose detonator with some components taped to it and hastily soldered in. It can detonate via either ‖color:245,105,105,255‖proximity‖color:end‖ or ‖color:245,105,105,255‖a matching detonation code, instantly and without warning.‖color:end‖</entitydescription.remotedetonator>
+	<entityname.pager>One-Way Pager</entityname.pager>
+	<entitydescription.pager>Broadcasts anything you say to anyone with a pager coded to the same faction. Virtually everyone on europa carries a recieving pager.</entitydescription.pager>
+
+	<entityname.riotshield>Ballistic Shield</entityname.riotshield>
+	<entitydescription.riotshield>A heavy, armored, transparent shield. Stops projectiles and people.</entitydescription.riotshield>
+	<entityname.enforcer_suit_installer>Enforcer Exoskeleton Installation Kit</entityname.enforcer_suit_installer>
+	<!--yes it looks like this for a reason.-->
+	<!--!please do not edit this whitespace, it is used intetnionally for formatting.-->
+	<entitydescription.enforcer_suit_installer>An autosurgeon alongside a selection of tools and parts. Automatically installs an Enforcer Exoskeleton into the user. 
+	  ‖color:154,213,163,255‖Permits the use of Enforcer Exoskeletons.‖color:end‖
+	  ‖color:243,162,50,255‖This device is a one-time use. While the exoskeleton can be removed, the implant cannot.‖color:end‖
+	    ‖color:255,0,0,255‖WARNING: Attempting to use this device while wearing backpacks, light tactical vests, toolbelts, or heavy weapons will cause the device to fail.‖color:end‖
+	    ‖color:255,0,0,255‖If this occurs, please report to your commanding officer to have the device repacked.‖color:end‖</entitydescription.enforcer_suit_installer>
+	<entityname.enforcer_exoskeleton>Enforcer Exoskeleton</entityname.enforcer_exoskeleton>
+	<entitydescription.enforcer_exoskeleton>A modified service exoskeleton, conected to the user's musculoskeletal system with aid from implants. It has been augmented with a variety of new parts to allow it
+	‖color:154,213,163,255‖Permits the use of Enforcer Armor.‖color:end‖
+	‖color:154,213,163,255‖Capable of mounting a riot shield alongside a weapon of choice. Incapable of mounting heavy weapons or explosive launchers.‖color:end‖</entitydescription.enforcer_exoskeleton>
 </infotexts>

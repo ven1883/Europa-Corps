@@ -154,60 +154,74 @@
 	<afflictiondescription.infection.high>The patient's immune system is spread far too thin keeping a wound infection from advancing, rendering treatments against other kinds of infection nigh useless without a very high dosage.</afflictiondescription.infection.high>
 
 	<!-- Nerve agents -->
-	<afflictionname.nerveagent>Nerve Agent Exposure</afflictionname.nerveagent>
-	<afflictioncauseofdeath.nerveagent>Total nervous system failure.</afflictioncauseofdeath.nerveagent>
-	<afflictioncauseofdeathself.nerveagent>Your body shut down after your nerves were destroyed by nerve agent.</afflictioncauseofdeathself.nerveagent>
-	<afflictionname.nerveagentcontamination>Nerve Agent Contamination</afflictionname.nerveagentcontamination>
-	<afflictiondescription.nerveagent.self>You feel weak and you've got a nasty headache. Your body feels harder and harder to control.</afflictiondescription.nerveagent.self>
-	<afflictiondescription.nerveagent>The subject is lethargic and experiencing loss of motor control. Immediate treatment required.</afflictiondescription.nerveagent>
-	<afflictiondescription.nerveagent.high.self>Your head throbs and your body won't move, no matter how hard you try.</afflictiondescription.nerveagent.high.self>
-	<afflictiondescription.nerveagent.high>The subject is experiencing rapid paralysis. Death is imminent.</afflictiondescription.nerveagent.high>
+	<afflictionname.feniternerveagent>Nerve Agent Exposure</afflictionname.feniternerveagent>
+	<afflictioncauseofdeath.feniternerveagent>Total nervous system failure.</afflictioncauseofdeath.feniternerveagent>
+	<afflictioncauseofdeathself.feniternerveagent>Your body shut down after your nerves were destroyed by nerve agent.</afflictioncauseofdeathself.feniternerveagent>
+	<afflictionname.feniternerveagentcon>Nerve Agent Contamination</afflictionname.feniternerveagentcon>
+	<afflictiondescription.feniternerveagent.self>You feel weak and you've got a nasty headache. Your body feels harder and harder to control.</afflictiondescription.feniternerveagent.self>
+	<afflictiondescription.feniternerveagent>The subject is lethargic and experiencing loss of motor control. Immediate treatment required.</afflictiondescription.feniternerveagent>
+	<afflictiondescription.feniternerveagent.high.self>Your head throbs and your body won't move, no matter how hard you try.</afflictiondescription.feniternerveagent.high.self>
+	<afflictiondescription.feniternerveagent.high>The subject is experiencing rapid paralysis. Death is imminent.</afflictiondescription.feniternerveagent.high>
 	<afflictionname.fenitervx>Unknown Nerve Agents</afflictionname.fenitervx>
 
 	<!-- Pulmonary agents -->
-	<afflictionname.pulmonaryagentbuildup>Pulmonary Agent Buildup</afflictionname.pulmonaryagentbuildup>
-	<afflictioncauseofdeath.pulmonaryagentbuildup>Suffocation due to Buildup of fluid in the lungs.</afflictioncauseofdeath.pulmonaryagentbuildup>
-	<afflictioncauseofdeathself.pulmonaryagentbuildup>You suffocated after fluids built up in your lungs due to pulmonary agent buildup.</afflictioncauseofdeathself.pulmonaryagentbuildup>
-	<afflictiondescription.pulmonaryagentbuildup.self>Your breaths don't feel large enough. You need more air, no matter how much you breathe.</afflictiondescription.pulmonaryagentbuildup.self>
-	<afflictiondescription.pulmonaryagentbuildup>Subject is suffering from fluid buildup in the lungs due to pulmonary agent exposure. Immediate treatment is necessary.</afflictiondescription.pulmonaryagentbuildup>
-	<afflictiondescription.pulmonaryagentbuildup.high.self>You can't breathe... Something is in your throat, your lungs... .</afflictiondescription.pulmonaryagentbuildup.high.self>
-	<afflictiondescription.pulmonaryagentbuildup.high>Subject is suffering from critical fluid buildup in the lungs, preventing breathing. Death is imminent without treatment.</afflictiondescription.pulmonaryagentbuildup.high>
-	<afflictionname.pulmonaryagentexposure>Pulmonary Agent Exposure</afflictionname.pulmonaryagentexposure>
-	<afflictioncauseofdeath.pulmonaryagentexposure>Suffocation due to Buildup of fluid in the lungs.</afflictioncauseofdeath.pulmonaryagentexposure>
-	<afflictioncauseofdeathself.pulmonaryagentexposure>You suffocated after fluids built up in your lungs due to pulmonary agent exposure.</afflictioncauseofdeathself.pulmonaryagentexposure>
-	<afflictiondescription.pulmonaryagentexposure.self>You feel like air isn't reaching your lungs, and they feel irritated, and your face hurts a bit.</afflictiondescription.pulmonaryagentexposure.self>
-	<afflictiondescription.pulmonaryagentexposure>The lining in the subject's lungs is being actively destroyed due to exposure to pulmonary agents.</afflictiondescription.pulmonaryagentexposure>
-	<afflictiondescription.pulmonaryagentexposure.high.self>The air here hurts to breathe, you need to go somewhere else, fast.
-	</afflictiondescription.pulmonaryagentexposure.high.self>
-	<afflictiondescription.pulmonaryagentexposure.high>Prolonged exposure to pulmonary agents is causing complete destruction of the lining in the subject's lungs.</afflictiondescription.pulmonaryagentexposure.high>
+	<afflictionname.feniterpulmonaryagent1>Pulmonary Agent Buildup</afflictionname.feniterpulmonaryagent1>
+	<afflictioncauseofdeath.feniterpulmonaryagent1>Suffocation due to Buildup of fluid in the lungs.</afflictioncauseofdeath.feniterpulmonaryagent1>
+	<afflictioncauseofdeathself.feniterpulmonaryagent1>You suffocated after fluids built up in your lungs due to pulmonary agent buildup.</afflictioncauseofdeathself.feniterpulmonaryagent1>
+	<afflictiondescription.feniterpulmonaryagent1.self>Your breaths don't feel large enough. You need more air, no matter how much you breathe.</afflictiondescription.feniterpulmonaryagent1.self>
+	<afflictiondescription.feniterpulmonaryagent1>Subject is suffering from fluid buildup in the lungs due to pulmonary agent exposure. Immediate treatment is necessary.</afflictiondescription.feniterpulmonaryagent1>
+	<afflictiondescription.feniterpulmonaryagent1.high.self>You can't breathe... Something is in your throat, your lungs... .</afflictiondescription.feniterpulmonaryagent1.high.self>
+	<afflictiondescription.feniterpulmonaryagent1.high>Subject is suffering from critical fluid buildup in the lungs, preventing breathing. Death is imminent without treatment.</afflictiondescription.feniterpulmonaryagent1.high>
+	<afflictionname.feniterpulmonaryagent2>Pulmonary Agent Exposure</afflictionname.feniterpulmonaryagent2>
+	<afflictioncauseofdeath.feniterpulmonaryagent2>Suffocation due to Buildup of fluid in the lungs.</afflictioncauseofdeath.feniterpulmonaryagent2>
+	<afflictioncauseofdeathself.feniterpulmonaryagent2>You suffocated after fluids built up in your lungs due to pulmonary agent exposure.</afflictioncauseofdeathself.feniterpulmonaryagent2>
+	<afflictiondescription.feniterpulmonaryagent2.self>You feel like air isn't reaching your lungs, and they feel irritated, and your face hurts a bit.</afflictiondescription.feniterpulmonaryagent2.self>
+	<afflictiondescription.feniterpulmonaryagent2>The lining in the subject's lungs is being actively destroyed due to exposure to pulmonary agents.</afflictiondescription.feniterpulmonaryagent2>
+	<afflictiondescription.feniterpulmonaryagent2.high.self>The air here hurts to breathe, you need to go somewhere else, fast.
+	</afflictiondescription.feniterpulmonaryagent2.high.self>
+	<afflictiondescription.feniterpulmonaryagent2.high>Prolonged exposure to pulmonary agents is causing complete destruction of the lining in the subject's lungs.</afflictiondescription.feniterpulmonaryagent2.high>
 	
 	<!-- Blood Agents -->
-	<afflictionname.bloodagent>Blood Agent Exposure</afflictionname.bloodagent>
-	<afflictioncauseofdeath.bloodagent>Catastrophic Hemolytic Anemia.</afflictioncauseofdeath.bloodagent>
-	<afflictioncauseofdeathself.bloodagent>Your red blood cells were destroyed by blood agent.</afflictioncauseofdeathself.bloodagent>
-	<afflictiondescription.bloodagent.self>You feel faint, lethargic and you feel like you're not getting enough oxygen.</afflictiondescription.bloodagent.self>
-	<afflictiondescription.bloodagent>Subject's veins and arteries are an abnormally bright red color. Subject is experiencing catastrophic hemolytic anemia.</afflictiondescription.bloodagent>
+	<afflictionname.feniterbloodagent>Blood Agent Exposure</afflictionname.feniterbloodagent>
+	<afflictioncauseofdeath.feniterbloodagent>Catastrophic Hemolytic Anemia.</afflictioncauseofdeath.feniterbloodagent>
+	<afflictioncauseofdeathself.feniterbloodagent>Your red blood cells were destroyed by blood agent.</afflictioncauseofdeathself.feniterbloodagent>
+	<afflictiondescription.feniterbloodagent.self>You feel faint, lethargic and you feel like you're not getting enough oxygen.</afflictiondescription.feniterbloodagent.self>
+	<afflictiondescription.feniterbloodagent>Subject's veins and arteries are an abnormally bright red color. Subject is experiencing catastrophic hemolytic anemia.</afflictiondescription.feniterbloodagent>
 	
 	<!-- Blistering agents -->
-	<afflictionname.blisteragentinternal>Internal Blistering Agent Buildup</afflictionname.blisteragentinternal>
-	<afflictioncauseofdeath.blisteragentinternal>Suffocation due to destruction of the lungs.</afflictioncauseofdeath.blisteragentinternal>
-	<afflictioncauseofdeathself.blisteragentinternal>Your lungs were destroyed after prolonged exposure to blistering agent.</afflictioncauseofdeathself.blisteragentinternal>
-	<afflictiondescription.blisteragentinternal.self>Your lungs burn and itch, like they're being melted from the inside.</afflictiondescription.blisteragentinternal.self>
-	<afflictiondescription.blisteragentinternal>Dangerous amounts of blistering agents have built up in the subject's lungs.</afflictiondescription.blisteragentinternal>
-	<afflictionname.blisteragentcontamination>Blistering Agent Contamination</afflictionname.blisteragentcontamination>
+	<afflictionname.feniterblisteragentinternal>Internal Blistering Agent Buildup</afflictionname.feniterblisteragentinternal>
+	<afflictioncauseofdeath.feniterblisteragentinternal>Suffocation due to destruction of the lungs.</afflictioncauseofdeath.feniterblisteragentinternal>
+	<afflictioncauseofdeathself.feniterblisteragentinternal>Your lungs were destroyed after prolonged exposure to blistering agent.</afflictioncauseofdeathself.feniterblisteragentinternal>
+	<afflictiondescription.feniterblisteragentinternal.self>Your lungs burn and itch, like they're being melted from the inside.</afflictiondescription.feniterblisteragentinternal.self>
+	<afflictiondescription.feniterblisteragentinternal>Dangerous amounts of blistering agents have built up in the subject's lungs.</afflictiondescription.feniterblisteragentinternal>
+	<afflictionname.feniterblisteragentcon>Blistering Agent Contamination</afflictionname.feniterblisteragentcon>
 	
 	<!-- Lachrymator Agents(tear gas) -->
-	<afflictionname.teargas>Tear Gas Exposure</afflictionname.teargas>
-	<afflictioncauseofdeath.teargas>Suffocation due to extended tear gas exposure.</afflictioncauseofdeath.teargas>
-	<afflictioncauseofdeathself.teargas>You suffocated after being exposed to tear gas for dangerous amounts of time.</afflictioncauseofdeathself.teargas>
-	<afflictiondescription.teargas.self>Your eyes hurt a lot. Your face feels like it's burning. Your throat is calling you to puke.</afflictiondescription.teargas.self>
-	<afflictiondescription.teargas>Exposure to tear gas.</afflictiondescription.teargas>
+	<afflictionname.feniternonlethalagent>Tear Gas Exposure</afflictionname.feniternonlethalagent>
+	<afflictioncauseofdeath.feniternonlethalagent>Suffocation due to extended tear gas exposure.</afflictioncauseofdeath.feniternonlethalagent>
+	<afflictioncauseofdeathself.feniternonlethalagent>You suffocated after being exposed to tear gas for dangerous amounts of time.</afflictioncauseofdeathself.feniternonlethalagent>
+	<afflictiondescription.feniternonlethalagent.self>Your eyes hurt a lot. Your face feels like it's burning. Your throat is calling you to puke.</afflictiondescription.feniternonlethalagent.self>
+	<afflictiondescription.feniternonlethalagent>Exposure to tear gas.</afflictiondescription.feniternonlethalagent>
 	
 	<!-- Psychochemical agents -->
-	<afflictionname.psychochemicalagent>Psychochemical Agent Exposure</afflictionname.psychochemicalagent>
-	<afflictioncauseofdeath.psychochemicalagent>Brain Death</afflictioncauseofdeath.psychochemicalagent>
-	<afflictioncauseofdeathself.psychochemicalagent>Your brain shut down after high exposure to psychochemical agents.</afflictioncauseofdeathself.psychochemicalagent>
-	<afflictiondescription.psychochemicalagent.self>Your perception of reality is failing.</afflictiondescription.psychochemicalagent.self>
-	<afflictiondescription.psychochemicalagent>Subject is experiencing hallucinations and memory loss.</afflictiondescription.psychochemicalagent>
+	<afflictionname.feniterpsychoagent>Psychochemical Agent Exposure</afflictionname.feniterpsychoagent>
+	<afflictioncauseofdeath.feniterpsychoagent>Brain Death</afflictioncauseofdeath.feniterpsychoagent>
+	<afflictioncauseofdeathself.feniterpsychoagent>Your brain shut down after high exposure to psychochemical agents.</afflictioncauseofdeathself.feniterpsychoagent>
+	<afflictiondescription.feniterpsychoagent.self>Your perception of reality is failing.</afflictiondescription.feniterpsychoagent.self>
+	<afflictiondescription.feniterpsychoagent>Subject is experiencing hallucinations and memory loss.</afflictiondescription.feniterpsychoagent>
 	
+	<!--Misc-->
+	<afflictionname._enforcer_emp_handler>EMP Handler</afflictionname._enforcer_emp_handler>
+
+	<afflictionname.enforcer_emp>Exoskeleton Shock</afflictionname.enforcer_emp>
+	<afflictiondescription.enforcer_emp>The patient has had their exoskeleton EMPed, causing total loss of control over motor functions.</afflictiondescription.enforcer_emp>
+	<afflictionname.enforcer_rigging>Enforcer Exoskeleton</afflictionname.enforcer_rigging>
+	<afflictiondescription.enforcer_rigging>The patient has been augmented with a modified heavy exoskeleton, allowing them to use Enforcer armor.</afflictiondescription.enforcer_rigging>
+	<afflictionname.enforcer_implant>Enforcer Implants</afflictionname.enforcer_implant>
+	<afflictiondescription.enforcer_implant>The patient has been augmented with a suite of implants allowing them to interface with an Enforcer Exoskeleton.</afflictiondescription.enforcer_implant>
+	<afflictionname._weaponsway_permanent>Reduced Motor Function, Indeterminate</afflictionname._weaponsway_permanent>
+	<afflictiondescription._weaponsway_permanent>The patient has reduced control of their limb. It is unknown if, or when, this will end.</afflictiondescription._weaponsway_permanent>
+	<afflictionname._weaponsway>Reduced Motor Function</afflictionname._weaponsway>
+	<afflictiondescription._weaponsway>The patient has reduced control of their limb. Full control should be regained in time.</afflictiondescription._weaponsway>
+
 </infotexts>
