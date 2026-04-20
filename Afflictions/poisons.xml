@@ -1289,8 +1289,8 @@
 
    			<StatusEffect target="Character">
    				<Conditional IsLocalPlayer="True" />
-   				<Sound file="%ModDir%/thecodelol/Others/whisper.ogg" selectionmode="Random" />
-   				<Sound file="%ModDir%/thecodelol/Others/insect.ogg" />
+   				<Sound file="%ModDir%/Sounds/Medical/whisper.ogg" selectionmode="Random" />
+   				<Sound file="%ModDir%/Sounds/Medical/insect.ogg" />
    			</StatusEffect>
    		</PeriodicEffect>
 
@@ -1299,7 +1299,7 @@
 
    			<StatusEffect target="Character">
    				<Conditional IsLocalPlayer="True" />
-   				<Sound file="%ModDir%/thecodelol/Others/knock.ogg" />
+   				<Sound file="%ModDir%/Sounds/Medical/knock.ogg" />
    			</StatusEffect>
    		</PeriodicEffect>
 
