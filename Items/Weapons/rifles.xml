@@ -267,7 +267,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-30">
-				<RequiredItem items="mag_rar_extended" type="Contained" />
+				<RequiredItem items="ammo_545_rifle_extended" type="Contained" />
 			</StatusEffect>
 
 		</RangedWeapon>
@@ -357,7 +357,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-80">
-				<RequiredItem items="mag_ar_standard_extended" type="Contained" />
+				<RequiredItem items="ammo_556_rifle_extended" type="Contained" />
 			</StatusEffect>
 		</RangedWeapon>
 
@@ -600,7 +600,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-60">
-				<RequiredItem items="mag_ar_standard_extended" type="Contained" />
+				<RequiredItem items="ammo_556_rifle_extended" type="Contained" />
 			</StatusEffect>
 			
 		</RangedWeapon>
@@ -682,7 +682,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-80">
-				<RequiredItem items="mag_ar_standard_extended" type="Contained" />
+				<RequiredItem items="ammo_556_rifle_extended" type="Contained" />
 			</StatusEffect>
 			
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" items="556ammo,grenade" />
@@ -795,7 +795,7 @@
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-13,-19" containedspritedepth="0.56" containedstateindicatorstyle="bullet">
-			<Containable items="556ammo" excludeditems="mag_ar_standard_extended" />
+			<Containable items="556ammo" excludeditems="ammo_556_rifle_extended" />
 		</ItemContainer>
 
 		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />

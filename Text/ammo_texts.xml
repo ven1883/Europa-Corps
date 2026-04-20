@@ -159,17 +159,17 @@
             <entitydescription.projectile_50rs_durasteel>A large 12.7x55mm cartridge using immense amounts of powder and a substantially tough projectile, capable of penetrating through multiple objects.</entitydescription.projectile_50rs_durasteel>
     <!--Ammo_rifle_ammo-->
         <!--AK-74 30 round mag-->
-            <entityname.mag_rar_standard>Crude Assault Rifle Magazine</entityname.mag_rar_standard>
-            <entitydescription.mag_rar_standard>A polymer 30 round 5.45x39mm magazine, the cartridge is easier to fabricate than 5.56x45, though comes at the cost of accuracy and less direct wounding.</entitydescription.mag_rar_standard>
+            <entityname.ammo_545_rifle>Crude Assault Rifle Magazine</entityname.ammo_545_rifle>
+            <entitydescription.ammo_545_rifle>A polymer 30 round 5.45x39mm magazine, the cartridge is easier to fabricate than 5.56x45, though comes at the cost of accuracy and less direct wounding.</entitydescription.ammo_545_rifle>
         <!--AK-74 AP 30 round mag-->
-            <entityname.mag_rar_standard_piercing>Crude Assault Rifle AP Magazine</entityname.mag_rar_standard_piercing>
-            <entitydescription.mag_rar_standard_piercing>A polymer 30 round 5.45x39mm magazine containing AP ammunition for use against armour, though sacrifices a degree of yawing and frag.</entitydescription.mag_rar_standard_piercing>
+            <entityname.ammo_545_rifle_piercing>Crude Assault Rifle AP Magazine</entityname.ammo_545_rifle_piercing>
+            <entitydescription.ammo_545_rifle_piercing>A polymer 30 round 5.45x39mm magazine containing AP ammunition for use against armour, though sacrifices a degree of yawing and frag.</entitydescription.ammo_545_rifle_piercing>
         <!--AK-74 DU 30 round mag-->
-            <entityname.mag_rar_standard_uranium>Crude Assault Rifle DU Magazine</entityname.mag_rar_standard_uranium>
-            <entitydescription.mag_rar_standard_uranium>A polymer 30 round 5.45x39mm magazine containing Depleted Uranium ammunition, capable of taking on significantly more sophisticated armour and poisoning the target, though this results in near non-existent yawing and frag.</entitydescription.mag_rar_standard_uranium>
+            <entityname.ammo_545_rifle_uranium>Crude Assault Rifle DU Magazine</entityname.ammo_545_rifle_uranium>
+            <entitydescription.ammo_545_rifle_uranium>A polymer 30 round 5.45x39mm magazine containing Depleted Uranium ammunition, capable of taking on significantly more sophisticated armour and poisoning the target, though this results in near non-existent yawing and frag.</entitydescription.ammo_545_rifle_uranium>
         <!--AK-74 60 round mag-->
-            <entityname.mag_rar_extended>Crude Assault Rifle Extended Magazine</entityname.mag_rar_extended>
-            <entitydescription.mag_rar_extended>A bulky polymer 60 round 5.45x39mm casket magazine.</entitydescription.mag_rar_extended>
+            <entityname.ammo_545_rifle_extended>Crude Assault Rifle Extended Magazine</entityname.ammo_545_rifle_extended>
+            <entitydescription.ammo_545_rifle_extended>A bulky polymer 60 round 5.45x39mm casket magazine.</entitydescription.ammo_545_rifle_extended>
         <!--5.45x39mm round-->
             <entityname.proj_545x39_standard>5.45x39 round</entityname.proj_545x39_standard>
             <entitydescription.proj_545x39_standard>None</entitydescription.proj_545x39_standard>
@@ -180,17 +180,17 @@
             <entityname.proj_545x39_uranium>5.45x39 DU round</entityname.proj_545x39_uranium>
             <entitydescription.proj_545x39_uranium>None</entitydescription.proj_545x39_uranium>
         <!--5.56x45 mag-->
-            <entityname.mag_ar_standard>Assault Rifle Magazine</entityname.mag_ar_standard>
-            <entitydescription.mag_ar_standard>A common polymer 30 round 5.56x45mm magazine found all across Europa, the cartridge being easy to mass produce and works well against common threats. They however aren't known for their stellar performance against armour.</entitydescription.mag_ar_standard>
+            <entityname.ammo_556_rifle>Assault Rifle Magazine</entityname.ammo_556_rifle>
+            <entitydescription.ammo_556_rifle>A common polymer 30 round 5.56x45mm magazine found all across Europa, the cartridge being easy to mass produce and works well against common threats. They however aren't known for their stellar performance against armour.</entitydescription.ammo_556_rifle>
         <!--5.56x45 extended mag-->
-            <entityname.mag_ar_standard_extended>Assault Rifle Drum Magazine</entityname.mag_ar_standard_extended>
-            <entitydescription.mag_ar_standard_extended>A Polymer 60 round high capacity 5.56x45mm magazine that takes advantage of the cartridge's light weight and small dimensions, however is liable to make reliability worse.</entitydescription.mag_ar_standard_extended>
+            <entityname.ammo_556_rifle_extended>Assault Rifle Drum Magazine</entityname.ammo_556_rifle_extended>
+            <entitydescription.ammo_556_rifle_extended>A Polymer 60 round high capacity 5.56x45mm magazine that takes advantage of the cartridge's light weight and small dimensions, however is liable to make reliability worse.</entitydescription.ammo_556_rifle_extended>
         <!--5.56x45	AP mag-->
             <entityname.mag_ar_standard_piercing>Assault Rifle AP Magazine</entityname.mag_ar_standard_piercing>
             <entitydescription.mag_ar_standard_piercing>A common ploymer 30 round 5.56x45mm magazine containing AP ammunition to enhance its abilities against armoured belligerents, though given it's small size it's inherently limited on it's impact.</entitydescription.mag_ar_standard_piercing>
         <!--5.56x45 30rnd durasteel magazine-->
-            <entityname.mag_ar_standard_durasteel>Assault Rifle Durasteel Magazine</entityname.mag_ar_standard_durasteel>
-            <entitydescription.mag_ar_standard_durasteel>A common ploymer 30 round 5.56x45mm magazine containing AP ammunition to enhance its abilities against armoured belligerents, though given it's small size it's inherently limited on it's impact.</entitydescription.mag_ar_standard_durasteel>
+            <entityname.ammo_556_rifle_durasteel>Assault Rifle Durasteel Magazine</entityname.ammo_556_rifle_durasteel>
+            <entitydescription.ammo_556_rifle_durasteel>A common ploymer 30 round 5.56x45mm magazine containing AP ammunition to enhance its abilities against armoured belligerents, though given it's small size it's inherently limited on it's impact.</entitydescription.ammo_556_rifle_durasteel>
         <!--5.56x45 round--> <!--TODO TAG-->
         <!--5.56x45 AP round-->
             <entityname.proj_556x45_piercing>5.56 Round</entityname.proj_556x45_piercing>
