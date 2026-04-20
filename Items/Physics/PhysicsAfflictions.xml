@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+
+  <AfflictionHusk name="" identifier="beltlightaffliction" type="alieninfection" healableinmedicalclinic="false" limbspecific="false" targets="human" huskedspeciesname="[speciesname]beltlight" indicatorlimb="Waist" showiconthreshold="5" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="2" iconcolors="94,54,95;163,73,164;200,191,231">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-10" />
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </AfflictionHusk>
+
+  <AfflictionHusk name="" identifier="coaliebeltlightaffliction" type="alieninfection" healableinmedicalclinic="false" limbspecific="false" targets="human" huskedspeciesname="[speciesname]coaliebeltlight" indicatorlimb="Waist" showiconthreshold="5" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="2" iconcolors="94,54,95;163,73,164;200,191,231">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-10" />
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </AfflictionHusk>
+
+  <AfflictionHusk name="VenmusPhysics" identifier="VenmusPhysics" type="alieninfection" healableinmedicalclinic="false" limbspecific="false" targets="human" huskedspeciesname="[speciesname]venmusphysics" indicatorlimb="Head" showiconthreshold="100" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="10" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" resistancefor="oxygenlow" minresistance="0.4" maxresistance="1.5" strengthchange="-20">
+      <StatusEffect target="Character" usehulloxygen="false" setvalue="true" />
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+  </AfflictionHusk>
+
+</Afflictions>

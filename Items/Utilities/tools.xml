@@ -110,4 +110,170 @@
 
 	</Item>
 
+  <Item name="remote trigger" identifier="remotetrigger" category="Electrical" tags="smallitem,button" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true" maxstacksize="3" maxstacksizecharacterinventory="1">
+    <Body width="36" height="40" density="20" />
+    <Holdable slots="Any,RightHand+LeftHand" msg="ItemMsgPickUpSelect" handle1="0,-10" aimpos="45,-10" />
+    <RangedWeapon>
+      <StatusEffect type="OnUse" target="This">
+        <LuaHook name="remotetrigger.onUse" />
+        <sound file="Content/Items/Button/Button.ogg" type="OnUse" range="500.0" />
+      </StatusEffect>
+    </RangedWeapon>
+    <WifiComponent canbeselected="true" MinChatMessageInterval="1.0" DiscardDuplicateChatMessages="true" />
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="false">
+      <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
+      <TextBox text="Detonation Code" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <Sprite texture="%ModDir%/remotetrigger.png" sourcerect="0,0,128,128" depth="0.8" origin="0.45,0.65" />
+    <InventoryIcon texture="%ModDir%/remotetrigger_inv.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+  </Item>
+
+  <Item name="" identifier="remotedetonator" description="" category="Equipment,Weapon" Tags="smallitem,detonator" Scale="0.5" health="2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_light" isshootable="true">
+    <Body width="36" height="40" density="20" />
+    <Holdable selectkey="Action" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" aimpos="70,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <ItemContainer canbeselected="true" capacity="1" maxstacksize="1" itempos="20,-11" hideitems="false" containedstateindicatorstyle="explosive" containedspritedepth="0.81">
+      <GuiFrame relativesize="0.11,0.17" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="explosive" />
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+    </ItemContainer>
+    <LightComponent range="100" isOn="false" AllowIngameEditing="false">
+      <StatusEffect target="This" type="Always" isOn="True" LightColor="255,0,0,255" setvalue="true" BlinkFrequency="0.0" range="100">
+        <Conditional condition="eq 1" />
+      </StatusEffect>
+    </LightComponent>
+    <WifiComponent AllowIngameEditing="false" channel="10000" />
+    <!--not possible to detonate without setting the channel manually first-->
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true">
+      <TickBox text="Proximity Mode">
+        <StatusEffect type="OnUse" targettype="This" condition="1" setvalue="true" delay="5" checkconditionalalways="true">
+          <Conditional isOn="true" />
+        </StatusEffect>
+        <StatusEffect type="onUse" targettype="This" TargetItemComponent="LightComponent" isOn="true" setvalue="true" />
+        <StatusEffect type="OnSecondaryUse" targettype="This" condition="2" setvalue="true" duration="5" LightColor="255,255,0,255" BlinkFrequency="0.4" range="50" />
+        <StatusEffect type="OnSecondaryUse" targettype="This" TargetItemComponent="LightComponent" isOn="false" setvalue="true" duration="5" />
+      </TickBox>
+      <GuiFrame relativesize="0.15,0.1" anchor="BottomCenter" pivot="BottomCenter" relativeoffset="0.00,0.1" style="ItemUI" />
+      <TextBox text="Detonation Code" propertyname="channel" maxtextlength="4" />
+    </CustomInterface>
+    <MotionSensor range="100" canbeselected="false" IgnoreDead="True" minimumvelocity="0" updateinterval="0.1" target="Monster,Human" DetectOwnMotion="false" AllowIngameEditing="false">
+      <!--update interval doesn't need to be very high for a landmine (it's stationary and characters are slow)-->
+      <StatusEffect type="Always" target="This" Comparison="And">
+        <!--trigger if condition is 0 (proxy-mode enabled) and motion is detected.-->
+        <Conditional MotionDetected="True" />
+        <Conditional Condition="eq 1" />
+        <Use />
+      </StatusEffect>
+    </MotionSensor>
+    <InventoryIcon texture="%ModDir%/remoteexplosives.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/remoteexplosives.png" depth="0.55" sourcerect="64,0,64,64" origin="0.5,0.5" />
+  </Item>
+
+  <Item name="" identifier="pager" Tags="smallitem" Scale="0.3" impactsoundtag="impact_metal_light">
+    <Body width="36" height="40" density="20" />
+    <Sprite texture="%ModDir%/pager.png" depth="0.55" sourcerect="0,0,87,80" origin="0.7,0.2" />
+    <InventoryIcon texture="%ModDir%/pager.png" depth="0.55" sourcerect="0,0,87,80" origin="0.5,0.5" />
+    <lightcomponent Range="10" CastShadows="false" LightColor="0,155,0" IsOn="True" BlinkFrequency="0.5" />
+    <Holdable slots="Any,RightHand+LeftHand" msg="ItemMsgFoldTableSelect" holdpos="45,5" handle1="-40,-40" holdangle="-10" aimable="false"></Holdable>
+  </Item>
+
+  <!--Europabrew Gas Grenade-->
+  <Item name="Omnorizone Gas Grenade" identifier="heal_gas_grenade" category="Equipment" maxstacksize="1" maxstacksizecharacterinventory="1" tags="smallitem,weapon,explosive,demolitionsexpert" Scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon name="Inv" texture="%ModDir:2976013863%/Ammo/medgas.png" sourcerect="2,0,62,62" origin="0.5,0.5" />
+    <Sprite name="Main" texture="%ModDir:2976013863%/Ammo/medgas.png" sourcerect="66,0,29,62" depth="0.55" origin="0.5,0.5" />
+    <Body width="30" height="62" density="30" />
+    <ItemComponent characterusable="false">
+      <!-- statuseffect that explodes the grenade when used by something else than a character (e.g. a detonator) -->
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/StunGrenade.ogg" range="2000" />
+        <Explosion range="200" force="0.5" smoke="false" flames="false" underwaterbubble="false" sparks="false" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.2">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.4">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.6">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.8">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="1">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="1.2">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="1.4">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="1.6">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="1.8">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="2">
+        <Explosion range="500" force="0.0" camerashake="0" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false">
+          <Affliction identifier="debughealing" amount="20.0" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" duration="1.0" soundselectionmode="All">
+        <sound file="Content/Items/Tools/Sprayer.ogg" range="1000" volume="0.5" />
+        <sound file="Content/Items/Tools/FlareLoop.ogg" range="1000" />
+        <ParticleEmitter particle="extinguisher" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" />
+        <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" particlespersecond="60" />
+        <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" scalemultiplier="2.0,2.0" particlespersecond="20" />
+      </StatusEffect>
+    </ItemComponent>
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
+      <!-- Skip the removal of safeties and explode immediatly if inside of a detonator, railgun shell or a depth charge-->
+      <StatusEffect type="OnUse" targettype="This" Condition="0" setvalue="true" comparison="OR">
+        <Conditional HasTag="detonator" targetcontainer="true" />
+        <Conditional HasTag="railgunammo" targetcontainer="true" />
+        <Conditional HasTag="depthchargeammo" targetcontainer="true" />
+      </StatusEffect>
+      <!-- forcefully pull the pin if player hasnt done so -->
+      <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <Use />
+      </StatusEffect>
+    </Throwable>
+    <!-- Activating the ItemComponent starts the timer -->
+    <ItemComponent IsActive="false" CharacterUsable="true">
+      <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
+      <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-1">
+        <Conditional HasTag="neq detonator" targetcontainer="true" />
+        <Conditional HasTag="neq railgunammo" targetcontainer="true" />
+        <Conditional HasTag="neq depthchargeammo" targetcontainer="true" />
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+        <Sound file="%ModDir:2976013863%/Sounds/grenadeprime.ogg" type="OnUse" range="720" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" Condition="-35" />
+    </ItemComponent>
+  </Item>
+
 </Items>

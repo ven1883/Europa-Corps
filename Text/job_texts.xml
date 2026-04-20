@@ -1,15 +1,60 @@
 <infotexts language="English" nowhitespace="false" translatedname="English">
-	<jobname.cultist_leader>Cultist Priest</jobname.cultist_leader>
-	<jobname.cultist_basic>Cultist Zealot</jobname.cultist_basic>
-	<jobname.cultist_viper>Cultist Viper</jobname.cultist_viper>
 
-	<jobname.coalition_basic>Coalition Infantry</jobname.coalition_basic>
-	<jobname.coalition_heavy>Coalition Heavy Infantry</jobname.coalition_heavy>
-	<jobname.coalition_DEMOMAN>Coalition Demolitionist</jobname.coalition_DEMOMAN>
+	<Override>
+		<jobname.assistant>Specialist</jobname.assistant>
+	</Override>
 
-	<jobname.survivor>Survivor</jobname.survivor>
-	<jobname.survivor_medic>Survivor</jobname.survivor_medic>
+  <jobname.cultist_leader>Cultist Priest</jobname.cultist_leader>
+  <jobname.cultist_basic>Cultist Zealot</jobname.cultist_basic>
+  <jobname.cultist_viper>Cultist Viper</jobname.cultist_viper>
+  <jobname.coalition_basic>Coalition Infantry</jobname.coalition_basic>
+  <jobname.coalition_heavy>Coalition Heavy Infantry</jobname.coalition_heavy>
+  <jobname.coalition_DEMOMAN>Coalition Demolitionist</jobname.coalition_DEMOMAN>
+  <jobname.coalition_marksman>Coalition Marksman</jobname.coalition_marksman>
+  <jobname.survivor>Survivor</jobname.survivor>
+  <jobname.survivor_medic>Survivor</jobname.survivor_medic>
+  <jobname.bandit_basic>Indie Raider</jobname.bandit_basic>
+  <jobname.bandit_scout>Indie Scout</jobname.bandit_scout>
+  <jobname.bandit_marksman>Indie Marksman</jobname.bandit_marksman>
+  <jobname.bandit_gunner>Indie Gunner</jobname.bandit_gunner>
+  <jobname.bandit_leader>Indie Ringleader</jobname.bandit_leader>
+  <entityname.remotetrigger>Field Programmable Explosive Trigger</entityname.remotetrigger>
+  <entitydescription.remotetrigger>A detonator trigger of questionable quality and seemingly made of a repurposed RC car controller. It sends detonation codes up to 4 digits to activate field programmable detonators.</entitydescription.remotetrigger>
+  <entityname.remotedetonator>Field Programmable Detonator</entityname.remotedetonator>
+  <entitydescription.remotedetonator>A supposedly "high quality", "military grade" multi-purpose detonator with some components taped to it and hastily soldered in. It can detonate via either ‖color:245,105,105,255‖proximity‖color:end‖ or ‖color:245,105,105,255‖a matching detonation code, instantly and without warning.‖color:end‖</entitydescription.remotedetonator>
+  <entityname.pager>One-Way Pager</entityname.pager>
+  <entitydescription.pager>Broadcasts anything you say to anyone with a pager coded to the same faction. Virtually everyone on europa carries a recieving pager.</entitydescription.pager>
+  <entityname.inquisitorrobes>Inquisitor Robes</entityname.inquisitorrobes>
+  <entitydescription.inquisitorrobes>A highly advanced combat uniform invented by the church of the husk. These robes ‖color:245,105,105,255‖actively camoflauge‖color:end‖ their wearer, ‖color:245,105,105,255‖aslong as they have a symbiotic husk infection‖color:end‖</entitydescription.inquisitorrobes>
+  <entityname.beltlight>Belt Light</entityname.beltlight>
+  <entitydescription.beltlight>Based on standard europan glowsticks, this light uses a dimmer filling to massively extend its lifetime, and there's some rigging to hook it onto a belt, though the rigging does make it too bulky to carry in large quantities.</entitydescription.beltlight>
+  <entitydescription.heal_gas_grenade>A modified europabrew grenade filled with Omnorizone, a potent stimulant and healing drug.</entitydescription.heal_gas_grenade>
+  <afflictionname._enforcer_emp_handler>EMP Handler</afflictionname._enforcer_emp_handler>
+  <entityname.riotshield>Ballistic Shield</entityname.riotshield>
+  <entitydescription.riotshield>A heavy, armored, transparent shield. Stops projectiles and people.</entitydescription.riotshield>
+  <entityname.enforcer_suit_installer>Enforcer Exoskeleton Installation Kit</entityname.enforcer_suit_installer>
+  <!--yes it looks like this for a reason.-->
+  <!--!please do not edit this whitespace, it is used intetnionally for formatting.-->
+  <entitydescription.enforcer_suit_installer>An autosurgeon alongside a selection of tools and parts. Automatically installs an Enforcer Exoskeleton into the user. 
+    ‖color:154,213,163,255‖Permits the use of Enforcer Exoskeletons.‖color:end‖
+    ‖color:243,162,50,255‖This device is a one-time use. While the exoskeleton can be removed, the implant cannot.‖color:end‖
 
-	<jobname.bandit_basic>Bandit Raider</jobname.bandit_basic>
-	<jobname.bandit_leader>Bandit Ringleader</jobname.bandit_leader>
+      ‖color:255,0,0,255‖WARNING: Attempting to use this device while wearing backpacks, light tactical vests, toolbelts, or heavy weapons will cause the device to fail.‖color:end‖
+‖color:255,0,0,255‖If this occurs, please report to your commanding officer to have the device repacked.‖color:end‖</entitydescription.enforcer_suit_installer>
+  <entityname.enforcer_exoskeleton>Enforcer Exoskeleton</entityname.enforcer_exoskeleton>
+  <entitydescription.enforcer_exoskeleton>A modified service exoskeleton, conected to the user's musculoskeletal system with aid from implants. It has been augmented with a variety of new parts to allow it to carry heavy armor.
+  ‖color:154,213,163,255‖Permits the use of Enforcer Armor.‖color:end‖
+
+  ‖color:154,213,163,255‖Capable of mounting a riot shield alongside a weapon of choice. Incapable of mounting heavy weapons or explosive launchers.‖color:end‖</entitydescription.enforcer_exoskeleton>
+  <!--TODO: what are we actually thinking of using?-->
+  <afflictionname.enforcer_emp>Exoskeleton Shock</afflictionname.enforcer_emp>
+  <afflictiondescription.enforcer_emp>The patient has had their exoskeleton EMPed, causing total loss of control over motor functions.</afflictiondescription.enforcer_emp>
+  <afflictionname.enforcer_rigging>Enforcer Exoskeleton</afflictionname.enforcer_rigging>
+  <afflictiondescription.enforcer_rigging>The patient has been augmented with a modified heavy exoskeleton, allowing them to use Enforcer armor.</afflictiondescription.enforcer_rigging>
+  <afflictionname.enforcer_implant>Enforcer Implants</afflictionname.enforcer_implant>
+  <afflictiondescription.enforcer_implant>The patient has been augmented with a suite of implants allowing them to interface with an Enforcer Exoskeleton.</afflictiondescription.enforcer_implant>
+  <afflictionname._weaponsway_permanent>Reduced Motor Function, Indeterminate</afflictionname._weaponsway_permanent>
+  <afflictiondescription._weaponsway_permanent>The patient has reduced control of their limb. It is unknown if, or when, this will end.</afflictiondescription._weaponsway_permanent>
+  <afflictionname._weaponsway>Reduced Motor Function</afflictionname._weaponsway>
+  <afflictiondescription._weaponsway>The patient has reduced control of their limb. Full control should be regained in time.</afflictiondescription._weaponsway>
 </infotexts>
