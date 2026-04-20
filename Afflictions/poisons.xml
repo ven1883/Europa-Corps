@@ -1246,7 +1246,7 @@
 			minspeedmultiplier="1" maxspeedmultiplier="0.8" 
 			mingrainstrength="0" maxgrainstrength="1" 
 			MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.6" 
-			dialogflag="feniterpsychoagent">
+			dialogflag="psychochemicalagent">
 
     		<StatusEffect target="Character">
     			<Affliction identifier="psychosis" amount="1" />
@@ -1274,13 +1274,13 @@
 			mininterval="5" maxinterval="10">
 
    			<StatusEffect target="Character">
-   				<Conditional feniterhallucination1="lt 1" />
-   				<Affliction identifier="feniterhallucination1" amount="0.1" />
+   				<Conditional psychochemicalhallucination1="lt 1" />
+   				<Affliction identifier="psychochemicalhallucination1" amount="0.1" />
    			</StatusEffect>
 
    			<StatusEffect target="Character">
-   				<Conditional feniterhallucination2="lt 1" />
-   				<Affliction identifier="feniterhallucination2" amount="0.1" />
+   				<Conditional psychochemicalhallucination2="lt 1" />
+   				<Affliction identifier="psychochemicalhallucination2" amount="0.1" />
    			</StatusEffect>
    		</PeriodicEffect>
 
@@ -1289,8 +1289,8 @@
 
    			<StatusEffect target="Character">
    				<Conditional IsLocalPlayer="True" />
-   				<Sound file="%ModDir%/thecodelol/Others/whisper.ogg" selectionmode="Random" />
-   				<Sound file="%ModDir%/thecodelol/Others/insect.ogg" />
+   				<Sound file="%ModDir%/Sounds/Medical/whisper.ogg" selectionmode="Random" />
+   				<Sound file="%ModDir%/Sounds/Medical/insect.ogg" />
    			</StatusEffect>
    		</PeriodicEffect>
 
@@ -1299,7 +1299,7 @@
 
    			<StatusEffect target="Character">
    				<Conditional IsLocalPlayer="True" />
-   				<Sound file="%ModDir%/thecodelol/Others/knock.ogg" />
+   				<Sound file="%ModDir%/Sounds/Medical/knock.ogg" />
    			</StatusEffect>
    		</PeriodicEffect>
 
@@ -1321,7 +1321,7 @@
 			mininterval="15" maxinterval="30">
 
    			<StatusEffect target="Character" duration="5">
-   				<Conditional feniterpsychoagent="gt 90" />
+   				<Conditional psychochemicalagent="gt 90" />
    				<Affliction identifier="watchersgaze" amount="40" />
    				<Affliction identifier="organdamage" amount="3" />
    				<Affliction identifier="nausea" amount="2" />
