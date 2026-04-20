@@ -11,6 +11,7 @@ local serverFiles = {
 	'EuropaCorpsModpack.Server.packageblacklist',
 	'EuropaCorpsModpack.Server.pager',
 	'EuropaCorpsModpack.Server.stamina',
+	'EuropaCorpsModpack.Server.pain',
 	'EuropaCorpsModpack.Server.stoptalkingwithoutvocalcords'
 }
 
