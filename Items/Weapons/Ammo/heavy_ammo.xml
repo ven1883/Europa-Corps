@@ -28,15 +28,15 @@
 			drawinventory="false" 
 			canbeselected="false" 
 			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_556projectile" 
+			SpawnWithId="proj_556x45_standard" 
 			removecontaineditemsondeconstruct="true" 
 			containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_556projectile" />
+			<Containable items="proj_556x45_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				
-				<SpawnItem identifier="scp_556projectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_556x45_standard" spawnposition="ThisInventory" />
 
 				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 				<ParticleEmitter particle="scp_mglink" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
@@ -79,14 +79,14 @@
 			drawinventory="false" 
 			canbeselected="false" 
 			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_762natoprojectile" 
+			SpawnWithId="proj_762x51_standard" 
 			removecontaineditemsondeconstruct="true" 
 			containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_762natoprojectile" />
+			<Containable items="proj_762x51_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_762natoprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_762x51_standard" spawnposition="ThisInventory" />
 				
 				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 				<ParticleEmitter particle="scp_mglink" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
@@ -115,14 +115,14 @@
 			drawinventory="false" 
 			canbeselected="false" 
 			ShowConditionInContainedStateIndicator="true" 
-			SpawnWithId="scp_762natoprojectile" 
+			SpawnWithId="proj_762x51_standard" 
 			removecontaineditemsondeconstruct="true" 
 			containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_762natoprojectile" />
+			<Containable items="proj_762x51_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_762natoprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_762x51_standard" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 				<ParticleEmitter particle="scp_mglink" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 			</StatusEffect>

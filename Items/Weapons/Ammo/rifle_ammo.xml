@@ -12,7 +12,7 @@
 
 		<!--AK-74 30 round mag-->
 	<Item name="" 
-	identifier="scp_ak74mag"
+	identifier="mag_rar_standard"
 	description="" 
 	cargocontaineridentifier="scp_ammocrate" 
 	tags="smallitem,ak74ammo,ehaammo,ak7430mag" 
@@ -31,15 +31,15 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_545x39projectile" 
+		SpawnWithId="proj_545x39_standard" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_545x39projectile" />
+			<Containable items="proj_545x39_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 
-				<SpawnItem identifier="scp_545x39projectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_545x39_standard" spawnposition="ThisInventory" />
 
 				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 			</StatusEffect>
@@ -54,8 +54,8 @@
 
 		<!--AK-74 AP 30 round mag-->
 	<Item name="" 
-	identifier="scp_ak74apmag" 
-	variantof="scp_ak74mag"
+	identifier="mag_rar_standard_piercing" 
+	variantof="mag_rar_standard"
 	description="" 
 	maxstacksize="12" maxstacksizecharacterinventory="8">
 
@@ -67,15 +67,15 @@
 		drawinventory="false" 
 		canbeselected="false"
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_545x39approjectile" 
+		SpawnWithId="proj_545x39_piercing" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_545x39approjectile" />
+			<Containable items="proj_545x39_piercing" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				
-				<SpawnItem identifier="scp_545x39approjectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_545x39_piercing" spawnposition="ThisInventory" />
 
 				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 			</StatusEffect>
@@ -88,8 +88,8 @@
 
 		<!--AK-74 DU 30 round mag-->
 	<Item name="" 
-	identifier="scp_ak74dumag" 
-	variantof="scp_ak74mag"
+	identifier="mag_rar_standard_uranium" 
+	variantof="mag_rar_standard"
 	description="" 
 	maxstacksize="4">
 
@@ -101,15 +101,15 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_545x39duprojectile" 
+		SpawnWithId="proj_545x39_uranium" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_545x39duprojectile" />
+			<Containable items="proj_545x39_uranium" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 
-				<SpawnItem identifier="scp_545x39duprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_545x39_uranium" spawnposition="ThisInventory" />
 
 				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 			</StatusEffect>
@@ -122,8 +122,8 @@
 
 		<!--AK-74 60 round mag-->
 	<Item name="" 
-	identifier="scp_ak74extmag" 
-	variantof="scp_ak74mag"
+	identifier="mag_rar_extended" 
+	variantof="mag_rar_standard"
 	description="" 
 	maxstacksize="4" maxstacksizecharacterinventory="2" 
 	health="60">
@@ -136,7 +136,7 @@
 
 		<!--5.45x39mm round-->
 	<Item name="" 
-	identifier="scp_545x39projectile" 
+	identifier="proj_545x39_standard" 
 	tags="smallitem,ak74ammo" 
 	Scale="0.3" 
 	category="Weapon" 
@@ -188,7 +188,7 @@
 
 		<!--5.45x39mm AP round-->
 	<Item name="" 
-	identifier="scp_545x39approjectile" 
+	identifier="proj_545x39_piercing" 
 	tags="smallitem,ak74ammo" 
 	Scale="0.3" 
 	category="Weapon" 
@@ -241,7 +241,7 @@
 
 		<!--5.45x39mm DU round-->
 	<Item name="" 
-	identifier="scp_545x39duprojectile" 
+	identifier="proj_545x39_uranium" 
 	tags="smallitem,ak74ammo" 
 	Scale="0.3" 
 	interactthroughwalls="true" 
@@ -300,7 +300,7 @@
 
 		<!--5.56x45 mag-->
 	<Item name=""
-	identifier="scp_556mag" 
+	identifier="mag_ar_standard" 
 	description="" 
 	category="Weapon" subcategory="Coalition" 
 	cargocontaineridentifier="scp_ammocrate" 
@@ -323,14 +323,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_556projectile" 
+		SpawnWithId="proj_556x45_standard" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_556projectile" />
+			<Containable items="proj_556x45_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
-				<SpawnItem identifier="scp_556projectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_556x45_standard" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflesmall"	emitinterval="1.5"	particleamount="1"	particlespersecond="50"	anglemin="70"	anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5"/>
 			</StatusEffect>
 		</ItemContainer>
@@ -341,8 +341,8 @@
 
 		<!--5.56x45 extended mag-->
 	<Item name=""
-	identifier="scp_556extmag" 
-	variantof="scp_556mag"
+	identifier="mag_ar_standard_extended" 
+	variantof="mag_ar_standard"
 	description="" 
 	scale="0.5" 
 	maxstacksize="4" maxstacksizecharacterinventory="1" 
@@ -356,8 +356,8 @@
 
 		<!--5.56x45	AP mag-->
 	<Item name=""
-	identifier="scp_556apmag" 
-	variantof="scp_556mag"
+	identifier="mag_ar_standard_piercing" 
+	variantof="mag_ar_standard"
 	description=""
 	scale="0.48" 
 	maxstacksize="12" maxstacksizecharacterinventory="4" 
@@ -371,14 +371,14 @@
 		drawinventory="false"
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_556approjectile" 
+		SpawnWithId="proj_556x45_piercing" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_556approjectile" />
+			<Containable items="proj_556x45_piercing" />
 
 			<StatusEffect type="OnUse" target="This" condition="1" disabledeltatime="true">
-				<SpawnItem identifier="scp_556approjectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_556x45_piercing" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 			</StatusEffect>
 
@@ -390,8 +390,8 @@
 
 		<!--5.56x45 30rnd durasteel magazine-->
 	<Item name=""
-	identifier="scp_556duramag"
-	variantof="scp_556mag"
+	identifier="mag_ar_standard_durasteel"
+	variantof="mag_ar_standard"
 	description="" 
 	scale="0.48" 
 	maxstacksize="6" maxstacksizecharacterinventory="3" 
@@ -405,14 +405,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_556duraprojectile" 
+		SpawnWithId="proj_556x45_durasteel" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_556duraprojectile" />
+			<Containable items="proj_556x45_durasteel" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_556duraprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_556x45_durasteel" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" colormultiplier="75,75,200,255" />
 			</StatusEffect>
 
@@ -424,7 +424,7 @@
 
 		<!--5.56x45 round-->
 	<Item name="5.56 Round" 
-	identifier="scp_556projectile" 
+	identifier="proj_556x45_standard" 
 	category="Weapon" 
 	interactthroughwalls="true" 
 	cargocontaineridentifier="metalcrate" 
@@ -480,8 +480,8 @@
 
 		<!--5.56x45 AP round-->
 	<Item name="" 
-	identifier="scp_556approjectile"
-	variantof="scp_556projectile"
+	identifier="proj_556x45_piercing"
+	variantof="proj_556x45_standard"
 	interactthroughwalls="true" 
 	scale="0.5">
 
@@ -525,8 +525,8 @@
 
 		<!--5.56x45 Ds round-->
 	<Item name="" 
-	identifier="scp_556duraprojectile" 
-	variantof="scp_556projectile"
+	identifier="proj_556x45_durasteel" 
+	variantof="proj_556x45_standard"
 	category="Weapon" 
 	interactthroughwalls="true" 
 	cargocontaineridentifier="scp_weaponcrate" 
@@ -585,7 +585,7 @@
 
 		<!--30 round 6.5mm caseless magazine-->
 	<Item name="" 
-	identifier="scp_65mag" 
+	identifier="mag_caseless_standard" 
 	description="" 
 	cargocontaineridentifier="scp_ammocrate" 
 	tags="smallitem,65ammo,ehaammo,mx30mag" 
@@ -606,14 +606,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_65projectile" 
+		SpawnWithId="proj_65x39_standard" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_65projectile" />
+			<Containable items="proj_65x39_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_65projectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_65x39_standard" spawnposition="ThisInventory" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -623,8 +623,8 @@
 
 		<!--30 Round 6.5mm Caseless Incendiary Magazine-->
 	<Item name="" 
-	identifier="scp_65incendmag" 
-	variantof="scp_65mag"
+	identifier="mag_caseless_standard_incendiary" 
+	variantof="mag_caseless_standard"
 	description="" 
 	maxstacksize="6" maxstacksizecharacterinventory="3">
 
@@ -636,14 +636,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_65projectile" 
+		SpawnWithId="proj_65x39_standard" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_65incendprojectile" />
+			<Containable items="proj_65x39_incendiary" />
 			
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_65incendprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_65x39_incendiary" spawnposition="ThisInventory" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -653,7 +653,7 @@
 
 		<!--6.5x39 Caseless round-->
 	<Item name="" 
-	identifier="scp_65projectile" 
+	identifier="proj_65x39_standard" 
 	tags="smallitem,65ammo" 
 	Scale="0.3" 
 	category="Weapon"
@@ -708,7 +708,7 @@
 
 		<!--6.5x39 Caseless Incendiary round-->
 	<Item name="" 
-	identifier="scp_65incendprojectile" 
+	identifier="proj_65x39_incendiary" 
 	tags="smallitem,65ammo" 
 	Scale="0.3" 
 	category="Weapon" 
@@ -770,7 +770,7 @@
 
 		<!--AK-103 30 round mag-->
 	<Item name="" 
-	identifier="scp_akmag" 
+	identifier="mag_oar_standard" 
 	description="" 
 	tags="smallitem,akammo,ehaammo,ak30mag" 
 	category="Weapon" subcategory="Renegade" 
@@ -790,15 +790,15 @@
 		drawinventory="false"
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_762x39projectile"
+		SpawnWithId="proj_762x39_standard"
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_762x39projectile" />
+			<Containable items="proj_762x39_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 
-				<SpawnItem identifier="scp_762x39projectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_762x39_standard" spawnposition="ThisInventory" />
 
 				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
@@ -813,8 +813,8 @@
 
 		<!--AK-103 75 round mag-->
 	<Item name="" 
-	identifier="scp_akdrummag" 
-	variantof="scp_akmag" 
+	identifier="mag_oar_extended" 
+	variantof="mag_oar_standard" 
 	description="" 
 	maxstacksize="3" maxstacksizecharacterinventory="1" 
 	health="75">
@@ -827,15 +827,15 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_762x39projectile" 
+		SpawnWithId="proj_762x39_standard" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_762x39projectile" />
+			<Containable items="proj_762x39_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 
-				<SpawnItem identifier="scp_762x39projectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_762x39_standard" spawnposition="ThisInventory" />
 
 				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
 			</StatusEffect>
@@ -850,8 +850,8 @@
 
 		<!--AK-103 AP 30 round mag-->
 	<Item name="" 
-	identifier="scp_akapmag" 
-	variantof="scp_akmag"
+	identifier="mag_oar_standard_piercing" 
+	variantof="mag_oar_standard"
 	description="" 
 	maxstacksize="6" maxstacksizecharacterinventory="4">
 		
@@ -863,15 +863,15 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_762x39renapprojectile" 
+		SpawnWithId="proj_762x39_piercing" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_762x39renapprojectile" />
+			<Containable items="proj_762x39_piercing" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 
-				<SpawnItem identifier="scp_762x39renapprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_762x39_piercing" spawnposition="ThisInventory" />
 
 				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
 			</StatusEffect>
@@ -886,8 +886,8 @@
 
 		<!--AK-103 DU 30 round mag-->
 	<Item name="" 
-	identifier="scp_akdumag" 
-	variantof="scp_akmag"
+	identifier="mag_oar_standard_uranium" 
+	variantof="mag_oar_standard"
 	description="" >
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" depth="0.54" sourcerect="88,1,42,51" origin="0.5,0.5" />
@@ -898,14 +898,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_762x39duprojectile" 
+		SpawnWithId="proj_762x39_uranium" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_762x39duprojectile" />
+			<Containable items="proj_762x39_uranium" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_762x39duprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_762x39_uranium" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
 			</StatusEffect>
 
@@ -919,7 +919,7 @@
 
 		<!--7.62x39mm round-->
 	<Item name="" 
-	identifier="scp_762x39projectile" 
+	identifier="proj_762x39_standard" 
 	tags="smallitem,akammo" 
 	Scale="0.3" 
 	category="Weapon" 
@@ -972,7 +972,7 @@
 
 		<!--7.62x39mm AP round-->
 	<Item name="" 
-	identifier="scp_762x39renapprojectile" 
+	identifier="proj_762x39_piercing" 
 	tags="smallitem,akammo" 
 	Scale="0.3" 
 	category="Weapon" 
@@ -1025,7 +1025,7 @@
 
 		<!--7.62x39mm durasteel round-->
 	<Item name="" 
-	identifier="scp_762x39duprojectile" 
+	identifier="proj_762x39_uranium" 
 	tags="smallitem,akammo" 
 	Scale="0.3" 
 	interactthroughwalls="true"
@@ -1084,7 +1084,7 @@
 
 		<!--20 Round 7.62x51 box mag-->
 	<Item name="" 
-	identifier="scp_scarmag" 
+	identifier="mag_br_standard" 
 	description="" 
 	tags="smallitem,762ammo,ehaammo,76251mag" 
 	maxstacksize="6" maxstacksizecharacterinventory="2" 
@@ -1104,14 +1104,14 @@
 		drawinventory="false" 
 		canbeselected="false"
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_762natoprojectile" 
+		SpawnWithId="proj_762x51_standard" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_762natoprojectile" />
+			<Containable items="proj_762x51_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_762natoprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_762x51_standard" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 
@@ -1125,8 +1125,8 @@
 
 		<!--40rnd 7.62x51 drum magazine-->
 	<Item name="" 
-	identifier="scp_scarextmag" 
-	variantof="scp_scarmag"
+	identifier="mag_br_extended" 
+	variantof="mag_br_standard"
 	description="" 
 	health="40">
 
@@ -1138,14 +1138,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_762natoprojectile" 
+		SpawnWithId="proj_762x51_standard" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_762natoprojectile" />
+			<Containable items="proj_762x51_standard" />
 			
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_762natoprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_762x51_standard" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 
@@ -1157,8 +1157,8 @@
 
 		<!--7.62x51 Durasteel mag-->
 	<Item name="" 
-	identifier="scp_scarduramag" 
-	variantof="scp_scarmag" 
+	identifier="mag_br_standard_durasteel" 
+	variantof="mag_br_standard" 
 	description="" 
 	maxstacksize="4" maxstacksizecharacterinventory="2">
 
@@ -1170,14 +1170,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_762natoduraprojectile"
+		SpawnWithId="proj_762x51_durasteel"
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_762natoduraprojectile" />
+			<Containable items="proj_762x51_durasteel" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_762natoduraprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_762x51_durasteel" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" colormultiplier="75,75,200,255" />
 			</StatusEffect>
 
@@ -1189,7 +1189,7 @@
 
 		<!--7.62x51mm round-->
 	<Item name="" 
-	identifier="scp_762natoprojectile" 
+	identifier="proj_762x51_standard" 
 	tags="smallitem,762ammo" 
 	Scale="0.3" 
 	category="Weapon" 
@@ -1241,7 +1241,7 @@
 
 		<!--7.62x51mm durasteel round-->
 	<Item name="" 
-	identifier="scp_762natoduraprojectile" 
+	identifier="proj_762x51_durasteel" 
 	tags="smallitem,762ammo" 
 	Scale="0.3" 
 	category="Weapon" 
@@ -1437,7 +1437,7 @@
 
 		<!--AS Val 20 round mag-->
 	<Item name="" 
-	identifier="scp_valmag" 
+	identifier="mag_covert_standard" 
 	description="" 
 	tags="smallitem,valammo,ehaammo" 
 	Scale="0.7" 
@@ -1458,14 +1458,14 @@
 		drawinventory="false"
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_valapprojectile" 
+		SpawnWithId="proj_9x39_piercing" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-		<Containable items="scp_valapprojectile" />
+		<Containable items="proj_9x39_piercing" />
 
 		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-			<SpawnItem identifier="scp_valapprojectile" spawnposition="ThisInventory" />
+			<SpawnItem identifier="proj_9x39_piercing" spawnposition="ThisInventory" />
 			<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="300" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 		</StatusEffect>
 
@@ -1479,8 +1479,8 @@
 
 		<!--SR-3 30 round mag-->
 	<Item name="" 
-	identifier="scp_valextmag" 
-	variantof="scp_valmag"
+	identifier="mag_covert_extended" 
+	variantof="mag_covert_standard"
 	description="" 
 	maxstacksize="6" maxstacksizecharacterinventory="3"
 	health="30">
@@ -1493,14 +1493,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_valprojectile" 
+		SpawnWithId="proj_9x39_standard" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-		<Containable items="scp_valprojectile" />
+		<Containable items="proj_9x39_standard" />
 
 		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-			<SpawnItem identifier="scp_valprojectile" spawnposition="ThisInventory" />
+			<SpawnItem identifier="proj_9x39_standard" spawnposition="ThisInventory" />
 			<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="300" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 		</StatusEffect>
 
@@ -1512,8 +1512,8 @@
 
 		<!--AS Val 40 round mag-->
 	<Item name="" 
-	identifier="scp_valbigmag" 
-	variantof="scp_valmag"
+	identifier="mag_covert_large" 
+	variantof="mag_covert_standard"
 	description="" 
 	maxstacksize="2" maxstacksizecharacterinventory="1" 
 	health="40">
@@ -1531,10 +1531,10 @@
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-		<Containable items="scp_valprojectile" />
+		<Containable items="proj_9x39_standard" />
 
 		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-			<SpawnItem identifier="scp_valprojectile" spawnposition="ThisInventory" />
+			<SpawnItem identifier="proj_9x39_standard" spawnposition="ThisInventory" />
 		</StatusEffect>
 
 		</ItemContainer>
@@ -1547,7 +1547,7 @@
 
 		<!--9x39mm round-->
 	<Item name="" 
-	identifier="scp_valprojectile" 
+	identifier="proj_9x39_standard" 
 	category="Weapon" 
 	interactthroughwalls="true" 
 	cargocontaineridentifier="metalcrate" 
@@ -1568,7 +1568,7 @@
 		hitscan="true" 
 		removeonhit="true">
 
-		<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,255,75" scalemultiplier="1,0.6" />
+			<ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,255,75" scalemultiplier="1,0.6" />
 
 			<Attack 
 			structuredamage="1.0" itemdamage="1"
@@ -1599,7 +1599,7 @@
 
 		<!--9x39mm AP round-->
 	<Item name="" 
-	identifier="scp_valapprojectile" 
+	identifier="proj_9x39_piercing" 
 	category="Weapon" 
 	interactthroughwalls="true"
 	cargocontaineridentifier="metalcrate" 
@@ -1654,10 +1654,10 @@
 		<!--12.7x55mm-->
 		<!--Oppressor Battle RIfle Ammo-->
 
-
+		<!--TODO: fuck some of these definately used special ammo as their root items. not fixing it rn-->
 		<!--10 round 12.7x55 magazine-->
 	<Item name="" 
-	identifier="scp_ash12mag" 
+	identifier="mag_obr_short_durasteel" 
 	description="" 
 	cargocontaineridentifier="scp_ammocrate" 
 	tags="smallitem,ashammo,ehaammo" 
@@ -1678,14 +1678,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true"
-		SpawnWithId="scp_127x55duraprojectile" 
+		SpawnWithId="proj_127x55_durasteel" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_127x55duraprojectile" />
+			<Containable items="proj_127x55_durasteel" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_127x55duraprojectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_127x55_durasteel" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.28" scalemax="0.28" />
 			</StatusEffect>
 
@@ -1699,8 +1699,8 @@
 
 		<!--20 round 12.7x55 magazine-->
 	<Item name="" 
-	identifier="scp_ash12extmag" 
-	variantof="scp_ash12mag" 
+	identifier="mag_obr_standard" 
+	variantof="mag_obr_short_durasteel" 
 	description="" 
 	maxstacksize="2" maxstacksizecharacterinventory="1" 
 	health="20">
@@ -1713,14 +1713,14 @@
 		drawinventory="false" 
 		canbeselected="false" 
 		ShowConditionInContainedStateIndicator="true" 
-		SpawnWithId="scp_127x55projectile" 
+		SpawnWithId="proj_127x55_standard" 
 		removecontaineditemsondeconstruct="true" 
 		containedstateindicatorstyle="bullet">
 
-			<Containable items="scp_127x55projectile" />
+			<Containable items="proj_127x55_standard" />
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-				<SpawnItem identifier="scp_127x55projectile" spawnposition="ThisInventory" />
+				<SpawnItem identifier="proj_127x55_standard" spawnposition="ThisInventory" />
 				<ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.28" scalemax="0.28" />
 			</StatusEffect>
 
@@ -1732,7 +1732,7 @@
 
 		<!--12.7x55mm round-->
 	<Item name="" 
-	identifier="scp_127x55projectile" 
+	identifier="proj_127x55_standard" 
 	tags="smallitem,ashammo" 
 	Scale="0.3" 
 	category="Weapon" 
@@ -1784,7 +1784,7 @@
 
 		<!--12.7x55mm durasteel round-->
 	<Item name="" 
-	identifier="scp_127x55duraprojectile" 
+	identifier="proj_127x55_durasteel" 
 	tags="smallitem,ashammo" 
 	Scale="0.3"
 	category="Weapon" 

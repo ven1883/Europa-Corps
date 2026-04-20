@@ -159,86 +159,86 @@
             <entitydescription.projectile_50rs_durasteel>A large 12.7x55mm cartridge using immense amounts of powder and a substantially tough projectile, capable of penetrating through multiple objects.</entitydescription.projectile_50rs_durasteel>
     <!--Ammo_rifle_ammo-->
         <!--AK-74 30 round mag-->
-            <entityname.scp_ak74mag>Crude Assault Rifle Magazine</entityname.scp_ak74mag>
-            <entitydescription.scp_ak74mag>A polymer 30 round 5.45x39mm magazine, the cartridge is easier to fabricate than 5.56x45, though comes at the cost of accuracy and less direct wounding.</entitydescription.scp_ak74mag>
+            <entityname.mag_rar_standard>Crude Assault Rifle Magazine</entityname.mag_rar_standard>
+            <entitydescription.mag_rar_standard>A polymer 30 round 5.45x39mm magazine, the cartridge is easier to fabricate than 5.56x45, though comes at the cost of accuracy and less direct wounding.</entitydescription.mag_rar_standard>
         <!--AK-74 AP 30 round mag-->
-            <entityname.scp_ak74apmag>Crude Assault Rifle AP Magazine</entityname.scp_ak74apmag>
-            <entitydescription.scp_ak74apmag>A polymer 30 round 5.45x39mm magazine containing AP ammunition for use against armour, though sacrifices a degree of yawing and frag.</entitydescription.scp_ak74apmag>
+            <entityname.mag_rar_standard_piercing>Crude Assault Rifle AP Magazine</entityname.mag_rar_standard_piercing>
+            <entitydescription.mag_rar_standard_piercing>A polymer 30 round 5.45x39mm magazine containing AP ammunition for use against armour, though sacrifices a degree of yawing and frag.</entitydescription.mag_rar_standard_piercing>
         <!--AK-74 DU 30 round mag-->
-            <entityname.scp_ak74dumag>Crude Assault Rifle DU Magazine</entityname.scp_ak74dumag>
-            <entitydescription.scp_ak74dumag>A polymer 30 round 5.45x39mm magazine containing Depleted Uranium ammunition, capable of taking on significantly more sophisticated armour and poisoning the target, though this results in near non-existent yawing and frag.</entitydescription.scp_ak74dumag>
+            <entityname.mag_rar_standard_uranium>Crude Assault Rifle DU Magazine</entityname.mag_rar_standard_uranium>
+            <entitydescription.mag_rar_standard_uranium>A polymer 30 round 5.45x39mm magazine containing Depleted Uranium ammunition, capable of taking on significantly more sophisticated armour and poisoning the target, though this results in near non-existent yawing and frag.</entitydescription.mag_rar_standard_uranium>
         <!--AK-74 60 round mag-->
-            <entityname.scp_ak74extmag>Crude Assault Rifle Extended Magazine</entityname.scp_ak74extmag>
-            <entitydescription.scp_ak74extmag>A bulky polymer 60 round 5.45x39mm casket magazine.</entitydescription.scp_ak74extmag>
+            <entityname.mag_rar_extended>Crude Assault Rifle Extended Magazine</entityname.mag_rar_extended>
+            <entitydescription.mag_rar_extended>A bulky polymer 60 round 5.45x39mm casket magazine.</entitydescription.mag_rar_extended>
         <!--5.45x39mm round-->
-            <entityname.scp_545x39projectile>5.45x39 round</entityname.scp_545x39projectile>
-            <entitydescription.scp_545x39projectile>None</entitydescription.scp_545x39projectile>
+            <entityname.proj_545x39_standard>5.45x39 round</entityname.proj_545x39_standard>
+            <entitydescription.proj_545x39_standard>None</entitydescription.proj_545x39_standard>
         <!--5.45x39mm AP round-->
-            <entityname.scp_545x39approjectile>5.45x39 round</entityname.scp_545x39approjectile>
-            <entitydescription.scp_545x39approjectile>None</entitydescription.scp_545x39approjectile>
+            <entityname.proj_545x39_piercing>5.45x39 round</entityname.proj_545x39_piercing>
+            <entitydescription.proj_545x39_piercing>None</entitydescription.proj_545x39_piercing>
         <!--5.45x39mm DU round-->
-            <entityname.scp_545x39duprojectile>5.45x39 DU round</entityname.scp_545x39duprojectile>
-            <entitydescription.scp_545x39duprojectile>None</entitydescription.scp_545x39duprojectile>
+            <entityname.proj_545x39_uranium>5.45x39 DU round</entityname.proj_545x39_uranium>
+            <entitydescription.proj_545x39_uranium>None</entitydescription.proj_545x39_uranium>
         <!--5.56x45 mag-->
-            <entityname.scp_556mag>Assault Rifle Magazine</entityname.scp_556mag>
-            <entitydescription.scp_556mag>A common polymer 30 round 5.56x45mm magazine found all across Europa, the cartridge being easy to mass produce and works well against common threats. They however aren't known for their stellar performance against armour.</entitydescription.scp_556mag>
+            <entityname.mag_ar_standard>Assault Rifle Magazine</entityname.mag_ar_standard>
+            <entitydescription.mag_ar_standard>A common polymer 30 round 5.56x45mm magazine found all across Europa, the cartridge being easy to mass produce and works well against common threats. They however aren't known for their stellar performance against armour.</entitydescription.mag_ar_standard>
         <!--5.56x45 extended mag-->
-            <entityname.scp_556extmag>Assault Rifle Drum Magazine</entityname.scp_556extmag>
-            <entitydescription.scp_556extmag>A Polymer 60 round high capacity 5.56x45mm magazine that takes advantage of the cartridge's light weight and small dimensions, however is liable to make reliability worse.</entitydescription.scp_556extmag>
+            <entityname.mag_ar_standard_extended>Assault Rifle Drum Magazine</entityname.mag_ar_standard_extended>
+            <entitydescription.mag_ar_standard_extended>A Polymer 60 round high capacity 5.56x45mm magazine that takes advantage of the cartridge's light weight and small dimensions, however is liable to make reliability worse.</entitydescription.mag_ar_standard_extended>
         <!--5.56x45	AP mag-->
-            <entityname.scp_556apmag>Assault Rifle AP Magazine</entityname.scp_556apmag>
-            <entitydescription.scp_556apmag>A common ploymer 30 round 5.56x45mm magazine containing AP ammunition to enhance its abilities against armoured belligerents, though given it's small size it's inherently limited on it's impact.</entitydescription.scp_556apmag>
+            <entityname.mag_ar_standard_piercing>Assault Rifle AP Magazine</entityname.mag_ar_standard_piercing>
+            <entitydescription.mag_ar_standard_piercing>A common ploymer 30 round 5.56x45mm magazine containing AP ammunition to enhance its abilities against armoured belligerents, though given it's small size it's inherently limited on it's impact.</entitydescription.mag_ar_standard_piercing>
         <!--5.56x45 30rnd durasteel magazine-->
-            <entityname.scp_556duramag>Assault Rifle Durasteel Magazine</entityname.scp_556duramag>
-            <entitydescription.scp_556duramag>A common ploymer 30 round 5.56x45mm magazine containing AP ammunition to enhance its abilities against armoured belligerents, though given it's small size it's inherently limited on it's impact.</entitydescription.scp_556duramag>
+            <entityname.mag_ar_standard_durasteel>Assault Rifle Durasteel Magazine</entityname.mag_ar_standard_durasteel>
+            <entitydescription.mag_ar_standard_durasteel>A common ploymer 30 round 5.56x45mm magazine containing AP ammunition to enhance its abilities against armoured belligerents, though given it's small size it's inherently limited on it's impact.</entitydescription.mag_ar_standard_durasteel>
         <!--5.56x45 round--> <!--TODO TAG-->
         <!--5.56x45 AP round-->
-            <entityname.scp_556approjectile>5.56 Round</entityname.scp_556approjectile>
-            <entitydescription.scp_556approjectile>None</entitydescription.scp_556approjectile>
+            <entityname.proj_556x45_piercing>5.56 Round</entityname.proj_556x45_piercing>
+            <entitydescription.proj_556x45_piercing>None</entitydescription.proj_556x45_piercing>
         <!--5.56x45 Ds round--> <!--TODO TAG-->
         <!--30 round 6.5mm caseless magazine-->
-            <entityname.scp_65mag>Caseless Assault Rifle Magazine</entityname.scp_65mag>
-            <entitydescription.scp_65mag>A polymer 30 round 6.5x39mm magazine containing unconventional C-FMJ cartridges.</entitydescription.scp_65mag>
+            <entityname.mag_caseless_standard>Caseless Assault Rifle Magazine</entityname.mag_caseless_standard>
+            <entitydescription.mag_caseless_standard>A polymer 30 round 6.5x39mm magazine containing unconventional C-FMJ cartridges.</entitydescription.mag_caseless_standard>
         <!--30 Round 6.5mm Caseless Incendiary Magazine-->
-            <entityname.scp_65incendmag>Caseless Assault Rifle Incendiary Magazine</entityname.scp_65incendmag>
-            <entitydescription.scp_65incendmag>A polymer 30 round 6.5x39mm magazine containing highly unusual C-AP-I cartridges, having a better effect against body armour though increases heat stress on the gun and has a tendency to cauterize wounds.</entitydescription.scp_65incendmag>
+            <entityname.mag_caseless_standard_incendiary>Caseless Assault Rifle Incendiary Magazine</entityname.mag_caseless_standard_incendiary>
+            <entitydescription.mag_caseless_standard_incendiary>A polymer 30 round 6.5x39mm magazine containing highly unusual C-AP-I cartridges, having a better effect against body armour though increases heat stress on the gun and has a tendency to cauterize wounds.</entitydescription.mag_caseless_standard_incendiary>
         <!--6.5x39 Caseless round-->
-            <entityname.scp_65projectile>6.5x39mm round</entityname.scp_65projectile>
-            <entitydescription.scp_65projectile>None</entitydescription.scp_65projectile>
+            <entityname.proj_65x39_standard>6.5x39mm round</entityname.proj_65x39_standard>
+            <entitydescription.proj_65x39_standard>None</entitydescription.proj_65x39_standard>
         <!--6.5x39 Caseless Incendiary round--> <!--TODO TAG-->
         <!--AK-103 30 round mag-->
-            <entityname.scp_akmag>Aggressor Assault Rifle Magazine</entityname.scp_akmag>
-            <entitydescription.scp_akmag>A polymer 30 round 7.62x39mm magazine containing FMJ cartridges, which are powerful at close range though tend to fair horrendously at longer distances.</entitydescription.scp_akmag>
+            <entityname.mag_oar_standard>Aggressor Assault Rifle Magazine</entityname.mag_oar_standard>
+            <entitydescription.mag_oar_standard>A polymer 30 round 7.62x39mm magazine containing FMJ cartridges, which are powerful at close range though tend to fair horrendously at longer distances.</entitydescription.mag_oar_standard>
         <!--AK-103 75 round mag-->
-            <entityname.scp_akdrummag>Aggressor Assault Rifle Drum Magazine</entityname.scp_akdrummag>
-            <entitydescription.scp_akdrummag>A 50 round 7.62x39mm Drum Magazine predominantly containing FMJ cartridges used within RPK style rifles, however can fit in any magwell designed for 7.62x39 magazines.</entitydescription.scp_akdrummag>
+            <entityname.mag_oar_extended>Aggressor Assault Rifle Drum Magazine</entityname.mag_oar_extended>
+            <entitydescription.mag_oar_extended>A 50 round 7.62x39mm Drum Magazine predominantly containing FMJ cartridges used within RPK style rifles, however can fit in any magwell designed for 7.62x39 magazines.</entitydescription.mag_oar_extended>
         <!--AK-103 AP 30 round mag-->
-            <entityname.scp_akapmag>Aggressor Assault Rifle AP Magazine</entityname.scp_akapmag>
-            <entitydescription.scp_akapmag>A polymer 30 round 7.62x39mm magazine containing Titanium AP cartridges, providing greater penetration at the cost of very poor yawing and fragmentation.</entitydescription.scp_akapmag>
+            <entityname.mag_oar_standard_piercing>Aggressor Assault Rifle AP Magazine</entityname.mag_oar_standard_piercing>
+            <entitydescription.mag_oar_standard_piercing>A polymer 30 round 7.62x39mm magazine containing Titanium AP cartridges, providing greater penetration at the cost of very poor yawing and fragmentation.</entitydescription.mag_oar_standard_piercing>
         <!--AK-103 DU 30 round mag-->
-            <entityname.scp_akdumag>Aggressor Assault Rifle DU Magazine</entityname.scp_akdumag>
-            <entitydescription.scp_akdumag>A polymer 30 round 7.62x39mm magazine containing Depleted Uranium ammunition, capable of penetrating through thick body armour and poisoning the target, though this results in near non-existent yawing and frag.</entitydescription.scp_akdumag>
+            <entityname.mag_oar_standard_uranium>Aggressor Assault Rifle DU Magazine</entityname.mag_oar_standard_uranium>
+            <entitydescription.mag_oar_standard_uranium>A polymer 30 round 7.62x39mm magazine containing Depleted Uranium ammunition, capable of penetrating through thick body armour and poisoning the target, though this results in near non-existent yawing and frag.</entitydescription.mag_oar_standard_uranium>
         <!--7.62x39mm round-->
-            <entityname.scp_762x39projectile>7.62x39 round</entityname.scp_762x39projectile>
-            <entitydescription.scp_762x39projectile>None</entitydescription.scp_762x39projectile>
+            <entityname.proj_762x39_standard>7.62x39 round</entityname.proj_762x39_standard>
+            <entitydescription.proj_762x39_standard>None</entitydescription.proj_762x39_standard>
         <!--7.62x39mm AP round-->
-            <entityname.scp_762x39renapprojectile>7.62x39 AP round</entityname.scp_762x39renapprojectile>
-            <entitydescription.scp_762x39renapprojectile>None</entitydescription.scp_762x39renapprojectile>
+            <entityname.proj_762x39_piercing>7.62x39 AP round</entityname.proj_762x39_piercing>
+            <entitydescription.proj_762x39_piercing>None</entitydescription.proj_762x39_piercing>
         <!--7.62x39mm durasteel round-->
-            <entityname.scp_762x39duprojectile>7.62x39 DU round</entityname.scp_762x39duprojectile>
-            <entitydescription.scp_762x39duprojectile>None</entitydescription.scp_762x39duprojectile>
+            <entityname.proj_762x39_uranium>7.62x39 DU round</entityname.proj_762x39_uranium>
+            <entitydescription.proj_762x39_uranium>None</entitydescription.proj_762x39_uranium>
         <!--20 Round 7.62x51 box mag-->
-            <entityname.scp_scarmag>Battle Rifle Magazine</entityname.scp_scarmag>
-            <entitydescription.scp_scarmag>A steel 20 round 7.62x51mm box magazine containing FMJ cartridges, being naturally more bulky than magazines meant for intermediate cartridges.</entitydescription.scp_scarmag>
+            <entityname.mag_br_standard>Battle Rifle Magazine</entityname.mag_br_standard>
+            <entitydescription.mag_br_standard>A steel 20 round 7.62x51mm box magazine containing FMJ cartridges, being naturally more bulky than magazines meant for intermediate cartridges.</entitydescription.mag_br_standard>
         <!--40rnd 7.62x51 drum magazine-->
-            <entityname.scp_scarextmag>Battle Rifle Drum Magazine</entityname.scp_scarextmag>
-            <entitydescription.scp_scarextmag>A large steel 40 round 7.62x51mm box magazine containing FMJ cartridges, remediating the main downside of most 7.62 rifles however is liable to malfunction.</entitydescription.scp_scarextmag>
+            <entityname.mag_br_extended>Battle Rifle Drum Magazine</entityname.mag_br_extended>
+            <entitydescription.mag_br_extended>A large steel 40 round 7.62x51mm box magazine containing FMJ cartridges, remediating the main downside of most 7.62 rifles however is liable to malfunction.</entitydescription.mag_br_extended>
         <!--7.62x51 Durasteel mag-->
-            <entityname.scp_scarduramag>Battle Rifle Durasteel Magazine</entityname.scp_scarduramag>
-            <entitydescription.scp_scarduramag>A steel 20 round 7.62x51mm box magazine containing rare Durasteel AP cartridges, being significantly more armour effective than FMJ. However these rounds output significantly more heat into the barrel and chamber.</entitydescription.scp_scarduramag>
+            <entityname.mag_br_standard_durasteel>Battle Rifle Durasteel Magazine</entityname.mag_br_standard_durasteel>
+            <entitydescription.mag_br_standard_durasteel>A steel 20 round 7.62x51mm box magazine containing rare Durasteel AP cartridges, being significantly more armour effective than FMJ. However these rounds output significantly more heat into the barrel and chamber.</entitydescription.mag_br_standard_durasteel>
         <!--7.62x51mm round-->
-            <entityname.scp_762natoprojectile>7.62x51mm round</entityname.scp_762natoprojectile>
-            <entitydescription.scp_762natoprojectile>None</entitydescription.scp_762natoprojectile>
+            <entityname.proj_762x51_standard>7.62x51mm round</entityname.proj_762x51_standard>
+            <entitydescription.proj_762x51_standard>None</entitydescription.proj_762x51_standard>
         <!--7.62x51mm durasteel round--> <!--TODO TAG-->
         <!--Surplus Tear Gas Rifle Round-->
             <entityname.feniterrifleround1>Tear Gas Surplus Rifle Round</entityname.feniterrifleround1>
@@ -250,22 +250,22 @@
             <entityname.feniterrifleround3>Psychochemical Agent Surplus Rifle Round</entityname.feniterrifleround3>
             <entitydescription.feniterrifleround3>A hollowed out rifle round filled to the brim with a psychochemical agent mixture. Less damaging than a solid round, but the crippling effects of psychochemical agents cause severe long term effects.</entitydescription.feniterrifleround3>
         <!--10 round 12.7x55 magazine-->
-            <entityname.scp_ash12mag>Oppressor Battle Rifle Durasteel Magazine</entityname.scp_ash12mag>
-            <entitydescription.scp_ash12mag>A 10 round 12.7x55mm magazine loaded with incredibly hot Durasteel cartridges, significantly increasing it's already devastating effect against body armour though puts immense wear on the gun.</entitydescription.scp_ash12mag>
+            <entityname.mag_obr_short_durasteel>Oppressor Battle Rifle Durasteel Magazine</entityname.mag_obr_short_durasteel>
+            <entitydescription.mag_obr_short_durasteel>A 10 round 12.7x55mm magazine loaded with incredibly hot Durasteel cartridges, significantly increasing it's already devastating effect against body armour though puts immense wear on the gun.</entitydescription.mag_obr_short_durasteel>
         <!--20 round 12.7x55 magazine-->
-            <entityname.scp_ash12extmag>Oppressor Battle Rifle Magazine</entityname.scp_ash12extmag>
-            <entitydescription.scp_ash12extmag>A long and bulky 20 round 12.7x55mm magazine with its bullet's capabilities of devastating most targets via it's sheer mass and hardened core.</entitydescription.scp_ash12extmag>
+            <entityname.mag_obr_standard>Oppressor Battle Rifle Magazine</entityname.mag_obr_standard>
+            <entitydescription.mag_obr_standard>A long and bulky 20 round 12.7x55mm magazine with its bullet's capabilities of devastating most targets via it's sheer mass and hardened core.</entitydescription.mag_obr_standard>
         <!--12.7x55mm round--> <!--TODO TAG-->
         <!--12.7x55mm durasteel round--> <!--TODO TAG-->
         <!--AS Val 20 round mag-->
-            <entityname.scp_valmag>Covert Assault Rifle AP Magazine</entityname.scp_valmag>
-            <entitydescription.scp_valmag>A polymer 20 round 9x39mm magazine, containing Titanium AP ammunition, significantly increasing capabilities against armour, which standard cartridges struggle against.</entitydescription.scp_valmag>
+            <entityname.mag_covert_standard>Covert Assault Rifle AP Magazine</entityname.mag_covert_standard>
+            <entitydescription.mag_covert_standard>A polymer 20 round 9x39mm magazine, containing Titanium AP ammunition, significantly increasing capabilities against armour, which standard cartridges struggle against.</entitydescription.mag_covert_standard>
         <!--SR-3 30 round mag-->
-            <entityname.scp_valextmag>Covert Assault Rifle Magazine</entityname.scp_valextmag>
-            <entitydescription.scp_valextmag>A quite long polymer 30 round 9x39mm magazine housing subsonic projectiles that can shred through unarmoured targets.</entitydescription.scp_valextmag>
+            <entityname.mag_covert_extended>Covert Assault Rifle Magazine</entityname.mag_covert_extended>
+            <entitydescription.mag_covert_extended>A quite long polymer 30 round 9x39mm magazine housing subsonic projectiles that can shred through unarmoured targets.</entitydescription.mag_covert_extended>
         <!--AS Val 40 round mag-->
-            <entityname.scp_valbigmag>Infiltrator Covert AR Magazine</entityname.scp_valbigmag>
-            <entitydescription.scp_valbigmag>A very large custom built 9x39mm magazine holding 40 rounds.</entitydescription.scp_valbigmag>
+            <entityname.mag_covert_large>Infiltrator Covert AR Magazine</entityname.mag_covert_large>
+            <entitydescription.mag_covert_large>A very large custom built 9x39mm magazine holding 40 rounds.</entitydescription.mag_covert_large>
         <!--9x39mm round--> <!--TODO TAG-->
         <!--9x39mm AP round--> <!--TODO TAG-->
     <!--Ammo_shotgun_ammo-->
