@@ -28,8 +28,10 @@ local function LoseStamina(character)
     if stamina.Strength > 20 then
         stamina.Strength = stamina.Strength - 20
     end
-
-    Networking.CreateEntityEvent(character, Character.CharacterStatusEventData.__new(true))
+    
+    if not Game.IsMultiplayer then
+        Networking.CreateEntityEvent(character, Character.CharacterStatusEventData.__new(true))
+    end
 end
 
 local countdown = 60
