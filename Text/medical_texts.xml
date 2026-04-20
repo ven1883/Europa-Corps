@@ -247,38 +247,48 @@
 	</entitydescription.deusizine>
 
 
-	<entityname.pomegrenadeextract>Pomegrenade Extract</entityname.pomegrenadeextract>
-	<entitydescription.pomegrenadeextract>Concentrated pomegrenade juice mixed with a very small amount of more expensive medicinal compounds. ‖color:245,105,105,255‖A label on the side warns not to take more than 2.‖color:end‖
+    <entityname.pomegrenadeextract>Pomegrenade Extract</entityname.pomegrenadeextract>
+    <entitydescription.pomegrenadeextract>A cheap and ineffective pomegrenade-derived mixture that boosts the body's repair processes. ‖color:245,105,105,255‖A label on the side warns not to take more than 2.‖color:end‖
 
 	On Use:
-	‖color:154,213,163,255‖-15% Damage‖color:end‖
-	‖color:245,105,105,255‖+3% Oxygen Low/s ~ 60s‖color:end‖
+	‖color:154,213,163,255‖-20% Damage‖color:end‖
+	‖color:245,105,105,255‖+2% Oxygen Low/s ~ 20s‖color:end‖
 	‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
 	</entitydescription.pomegrenadeextract>
-
-
-	<entityname.antibleeding1>Bandage</entityname.antibleeding1>
-	<entitydescription.antibleeding1>Basic bandages, useful in the treatment of bleeding wounds, burns and certain surface injuries.
+    <entityname.antibleeding1>Bandage</entityname.antibleeding1>
+    <entitydescription.antibleeding1>Basic bandages, designed to stop bleeding immediately, allowing patients to recover over time so long as they don't take any additional damage.
 
 	On Use:
-	‖color:154,213,163,255‖-40% Bleeding‖color:end‖
+	‖color:154,213,163,255‖-30% Bleeding‖color:end‖
 	‖color:154,213,163,255‖-30% Bite Wounds‖color:end‖
 	‖color:154,213,163,255‖-30% Lacerations‖color:end‖
-	‖color:154,213,163,255‖-20% Burns‖color:end‖
+	‖color:154,213,163,255‖-40% Burns‖color:end‖
+	‖color:243,162,50,255‖(50% Of immediate healing is limb specific.)‖color:end‖
+	‖color:154,213,163,255‖+60% Bandaged‖color:end‖
 	‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
 	</entitydescription.antibleeding1>
-
-
-	<entityname.antibleeding2>Plastiseal</entityname.antibleeding2>
-	<entitydescription.antibleeding2>A synthetic skin with hemostatic properties, able to quickly seal most wounds.
+    <entityname.antibleeding2>Plastiseal</entityname.antibleeding2>
+    <entitydescription.antibleeding2>A synthetic skin with regenerative properties, able to quickly repair most wounds, but struggling to seal bleeding.
 
 	On Use:
-	‖color:154,213,163,255‖-50% Bleeding‖color:end‖
-	‖color:154,213,163,255‖-40% Bite Wounds‖color:end‖
-	‖color:154,213,163,255‖-40% Lacerations‖color:end‖
-	‖color:154,213,163,255‖-40% Burns‖color:end‖
+	‖color:154,213,163,255‖-15% Bleeding‖color:end‖
+	‖color:154,213,163,255‖-60% Bite Wounds‖color:end‖
+	‖color:154,213,163,255‖-60% Lacerations‖color:end‖
+	‖color:154,213,163,255‖-60% Burns‖color:end‖
+	‖color:243,162,50,255‖(50% Of immediate healing is limb specific.)‖color:end‖
+	‖color:154,213,163,255‖+60% Bandaged‖color:end‖
 	‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
 	</entitydescription.antibleeding2>
+    <entityname.antibleeding3>Antibiotic Glue</entityname.antibleeding3>
+    <entitydescription.antibleeding3>A tube of compressed medical glue with hemostatic and antibiotic properties. Second to none at sealing bleeding near instantly, but prone to re-opening if further damage is sustained.
+
+	On Use:
+	‖color:154,213,163,255‖-200% Bleeding‖color:end‖
+	‖color:154,213,163,255‖-10% Bite Wounds‖color:end‖
+	‖color:154,213,163,255‖-10% Lacerations‖color:end‖
+	‖color:245,105,105,255‖+50% Bleeding Vulnerability ~ 60s ‖color:end‖
+	‖color:243,162,50,255‖(Healing reduced and harmful effects increased if skill requirement not met.)‖color:end‖
+	</entitydescription.antibleeding3>
 
 	
 	<entityname.calyxanide>Calyxanide</entityname.calyxanide>
