@@ -31,8 +31,7 @@
 	<Item file="%ModDir%/Items/Apparel/separatists.xml"/>
 	<Item file="%ModDir%/Items/Apparel/universal.xml"/>
 	<Item file="%ModDir%/Items/Apparel/other.xml"/>
-	<Item file="%ModDir%/Items/Apparel/cult.xml"/>
-	<Item file="%ModDir%/Items/Apparel/overrides.xml"/>
+	<Item file="%ModDir%/Items/Apparel/overrides_armor.xml"/>
 
 	<!--Medical-->
 	<Item file="%ModDir%/Items/Medical/bionics.xml"/>
@@ -56,7 +55,6 @@
 	<Item file="%ModDir%/Items/Emitters/emitters.xml"/>
 	<Item file="%ModDir%/Items/Materials/materials.xml"/>
 	<Item file="%ModDir%/Items/Materials/overrides_materials.xml"/>
-	<Item file="%ModDir%/Items/Misc/overrides.xml"/>
 
 	<!--+++++++++++-->
 	<!--AFFLICTIONS--> 
@@ -73,11 +71,7 @@
 	<!--++++++++++-->
 	<!--CHARACTERS-->
 	<!--++++++++++-->
-	<Character file="%ModDir%/Characters/Human/human.xml"/>
-
-	<!--Variants-->
-	<Character file="%ModDir%/Characters/Variants/Huskmutant_melter_boss.xml" />
-	<Character file="%ModDir%/Characters/Variants/Huskmutantarmoredexosuit_titan_boss.xml" />
+	<Character file="%ModDir%/Human/human.xml"/>
 
 	<!--++++-->
 	<!--MISC-->
@@ -85,27 +79,18 @@
 	<UIStyle file="%ModDir%/styles.xml"/>
 	<Jobs file="%ModDir%/Jobs/jobs.xml"/>
 	<Jobs file="%ModDir%/Jobs/job_overrides.xml"/>
-	<NPCSets file="%ModDir%/Jobs/NPCs.xml" />
 	<Particles file="%ModDir%/Effects/Particles/particles.xml" />
-	<TalentTrees file="%ModDir%/Jobs/talenttrees.xml" />
-	<Talents file="%ModDir%/Jobs/talents.xml" />
-
-	<!--Physics-->
-	<Character file="%ModDir%/Items/Physics/VenmusPhysics/HumanVenmusPhysics.xml" />
-	<Character file="%ModDir%/Items/Physics/Beltlight/Humanbeltlights.xml" />
-	<Afflictions file="%ModDir%/Items/Physics/PhysicsAfflictions.xml" />
 
 	<!--+++++-->
 	<!--TEXTS-->
 	<!--+++++-->
 	<Text file="%ModDir%/Text/affliction_texts.xml"/>
-	<Text file="%ModDir%/Text/apparel_texts.xml"/>
+	<Text file="%ModDir%/Text/armor_texts.xml"/>
 	<Text file="%ModDir%/Text/job_texts.xml"/>
 	<Text file="%ModDir%/Text/medical_texts.xml"/>
 	<Text file="%ModDir%/Text/misc_texts.xml"/>
 	<Text file="%ModDir%/Text/weapon_texts.xml"/>
 	<Text file="%ModDir%/Text/text_overrides.xml"/>
 	<Text file="%ModDir%/Text/ammo_texts.xml"/>
-	<Text file="%ModDir%/Text/NPCNames.xml" />
 
 </contentpackage>
