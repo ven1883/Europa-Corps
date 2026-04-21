@@ -274,7 +274,7 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/g36.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/g36.ogg" type="OnUse" range="3000" frequencymultiplier="1.02" />
 		</RangedWeapon>
-		
+
 		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 		
 		<Quality>
@@ -459,6 +459,7 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/556s1.ogg" type="OnUse" range="1000" volume="1.1" />
 
 			<RequiredSkill identifier="weapons" level="75" />
+		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
@@ -566,6 +567,7 @@
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="65ammo" />
 			
 			<RequiredSkill identifier="weapons" level="70" />
+		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
@@ -619,6 +621,7 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/65mx1.ogg" type="OnUse" range="3000" frequencymultiplier="1.02" />
 
 			<RequiredSkill identifier="weapons" level="65" />
+		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
@@ -860,8 +863,6 @@
 			<SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
 				<Containable items="flashlight" hide="false" itempos="24,3" setactive="true" />
 			</SubContainer>
-		</ItemContainer>
-
 		</ItemContainer>
 
 		<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
