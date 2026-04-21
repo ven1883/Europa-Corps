@@ -37,18 +37,18 @@
 		</RangedWeapon>
 
 		<ItemContainer>
-			<Containable items="556ammo" hide="true">
+			<Containable items="556ammo" hide="false">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.8" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/arreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.15" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/arreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
@@ -88,22 +88,25 @@
 		</RangedWeapon>
 
 		<ItemContainer>
-			<Containable items="65ammo" hide="true">
+			<Containable items="65ammo" hide="false">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.8" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/arreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.15" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/arreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
 	</Item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--AK rifles (7.62)-->
 
 	<Item name="_nospawn" 
 	identifier="_rifle_avtomat"
@@ -134,22 +137,25 @@
 		</RangedWeapon>
 
 		<ItemContainer>
-			<Containable items="akammo" hide="true">
+			<Containable items="akammo" hide="false">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.45" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.75" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
 	</Item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--battle rifles (7.62 nato)-->
 
 	<Item name="_nospawn" 
 	identifier="_rifle_battle"
@@ -180,22 +186,25 @@
 		</RangedWeapon>
 
 		<ItemContainer>
-			<Containable items="762ammo" hide="true">
+			<Containable items="762ammo" hide="false">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.35" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.75" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
 	</Item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--sniper rifles (8.6)-->
 
 	<Item name="_nospawn" 
 	identifier="_rifle_precision"
@@ -226,22 +235,25 @@
 		</RangedWeapon>
 
 		<ItemContainer>
-			<Containable items="t5000ammo" hide="true">
+			<Containable items="t5000ammo" hide="false">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.45" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.75" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
 	</Item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--covert rifles (9x39)-->
 
 	<Item name="_nospawn" 
 	identifier="_rifle_covert"
@@ -272,22 +284,25 @@
 		</RangedWeapon>
 
 		<ItemContainer>
-			<Containable items="valammo" hide="true">
+			<Containable items="valammo" hide="false">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.95" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.35" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
 	</Item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Oppressor Battle rifles (12.7)-->
 
 	<Item name="_nospawn" 
 	identifier="_rifle_battle_subsonic"
@@ -318,22 +333,25 @@
 		</RangedWeapon>
 
 		<ItemContainer>
-			<Containable items="ashammo" hide="true">
+			<Containable items="ashammo" hide="false">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.6" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.85" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
 	</Item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Crude Assault rifles (5.45)-->
 
 	<Item name="_nospawn" 
 	identifier="_rifle_crude"
@@ -364,23 +382,26 @@
 		</RangedWeapon>
 
 		<ItemContainer>
-			<Containable items="ak74ammo" hide="true">
+			<Containable items="ak74ammo" hide="false">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.5" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/akreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
 	</Item>
 	
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--repeating rifles (9x29)-->
+
 	<Item name="_nospawn" 
 	identifier="_rifle_repeater"
 	hideinmenus="true"
@@ -411,21 +432,35 @@
 
 		<ItemContainer>
 			<Containable items="revolverammo" hide="true">
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false"/>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.5" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.5" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2" stackable="false" comparison="or">
+					<Conditional EntityType="eq character" TargetContainer="True" />
+					<Conditional EntityType="eq null" TargetContainer="True" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/revolverreload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+				</StatusEffect>
+				
 			</Containable>
 		</ItemContainer>
 	</Item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Surplus rifles (7.63x67)-->
 
 	<Item name="_nospawn" 
 	identifier="_rifle_rifle"
@@ -458,16 +493,16 @@
 		<ItemContainer>
 			<Containable items="rifleammo" hide="true">
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.05" condition="100" stackable="false" />
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="2.1" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.1" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload1.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/boltactionclipreload.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
-				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="0.65" stackable="false" comparison="or">
+				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.45" stackable="false" comparison="or">
 					<Conditional EntityType="eq character" TargetContainer="True" />
 					<Conditional EntityType="eq null" TargetContainer="True" />
-					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/riflereload2.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
+					<sound file="%ModDir%/Sounds/Weapons/Guns/Reloads/boltactionreloadend.ogg" type="OnUse" forceplay="true" range="900.0" loop="false" frequencymultiplier="0.9" volume="1" />
 				</StatusEffect>
 			</Containable>
 		</ItemContainer>
