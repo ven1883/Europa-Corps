@@ -11,7 +11,7 @@
 
 		<!--AK-74 30 round mag-->
 	<Item name="" 
-	identifier="ammo_545_rifle"
+	identifier="ammo_rifle_545"
 	description="" 
 	cargocontaineridentifier="scp_ammocrate" 
 	tags="smallitem,ak74ammo,ehaammo,ak7430mag" 
@@ -53,8 +53,8 @@
 
 		<!--AK-74 AP 30 round mag-->
 	<Item name="" 
-	identifier="ammo_545_rifle_piercing" 
-	variantof="ammo_545_rifle"
+	identifier="ammo_rifle_545_piercing" 
+	variantof="ammo_rifle_545"
 	description="" 
 	maxstacksize="12" maxstacksizecharacterinventory="8">
 
@@ -87,8 +87,8 @@
 
 		<!--AK-74 DU 30 round mag-->
 	<Item name="" 
-	identifier="ammo_545_rifle_uranium" 
-	variantof="ammo_545_rifle"
+	identifier="ammo_rifle_545_uranium" 
+	variantof="ammo_rifle_545"
 	description="" 
 	maxstacksize="4">
 
@@ -121,8 +121,8 @@
 
 		<!--AK-74 60 round mag-->
 	<Item name="" 
-	identifier="ammo_545_rifle_extended" 
-	variantof="ammo_545_rifle"
+	identifier="ammo_rifle_545_extended" 
+	variantof="ammo_rifle_545"
 	description="" 
 	maxstacksize="4" maxstacksizecharacterinventory="2" 
 	health="60">
@@ -299,7 +299,7 @@
 
 		<!--5.56x45 mag-->
 	<Item name=""
-	identifier="ammo_556_rifle" 
+	identifier="ammo_rifle_556" 
 	description="" 
 	category="Weapon" subcategory="Coalition" 
 	cargocontaineridentifier="scp_ammocrate" 
@@ -340,8 +340,8 @@
 
 		<!--5.56x45 extended mag-->
 	<Item name=""
-	identifier="ammo_556_rifle_extended" 
-	variantof="ammo_556_rifle"
+	identifier="ammo_rifle_556_extended" 
+	variantof="ammo_rifle_556"
 	description="" 
 	scale="0.5" 
 	maxstacksize="4" maxstacksizecharacterinventory="1" 
@@ -356,7 +356,7 @@
 		<!--5.56x45	AP mag-->
 	<Item name=""
 	identifier="mag_ar_standard_piercing" 
-	variantof="ammo_556_rifle"
+	variantof="ammo_rifle_556"
 	description=""
 	scale="0.48" 
 	maxstacksize="12" maxstacksizecharacterinventory="4" 
@@ -389,8 +389,8 @@
 
 		<!--5.56x45 30rnd durasteel magazine-->
 	<Item name=""
-	identifier="ammo_556_rifle_durasteel"
-	variantof="ammo_556_rifle"
+	identifier="ammo_rifle_556_durasteel"
+	variantof="ammo_rifle_556"
 	description="" 
 	scale="0.48" 
 	maxstacksize="6" maxstacksizecharacterinventory="3" 
@@ -584,7 +584,7 @@
 
 		<!--30 round 6.5mm caseless magazine-->
 	<Item name="" 
-	identifier="mag_caseless_standard" 
+	identifier="ammo_rifle_65" 
 	description="" 
 	cargocontaineridentifier="scp_ammocrate" 
 	tags="smallitem,65ammo,ehaammo,mx30mag" 
@@ -622,8 +622,8 @@
 
 		<!--30 Round 6.5mm Caseless Incendiary Magazine-->
 	<Item name="" 
-	identifier="mag_caseless_standard_incendiary" 
-	variantof="mag_caseless_standard"
+	identifier="ammo_rifle_65_incendiary" 
+	variantof="ammo_rifle_65"
 	description="" 
 	maxstacksize="6" maxstacksizecharacterinventory="3">
 
@@ -769,7 +769,7 @@
 
 		<!--AK-103 30 round mag-->
 	<Item name="" 
-	identifier="mag_oar_standard" 
+	identifier="ammo_rifle_762short" 
 	description="" 
 	tags="smallitem,akammo,ehaammo,ak30mag" 
 	category="Weapon" subcategory="Renegade" 
@@ -812,8 +812,8 @@
 
 		<!--AK-103 75 round mag-->
 	<Item name="" 
-	identifier="mag_oar_extended" 
-	variantof="mag_oar_standard" 
+	identifier="ammo_rifle_762short_extended" 
+	variantof="ammo_rifle_762short" 
 	description="" 
 	maxstacksize="3" maxstacksizecharacterinventory="1" 
 	health="75">
@@ -849,8 +849,8 @@
 
 		<!--AK-103 AP 30 round mag-->
 	<Item name="" 
-	identifier="mag_oar_standard_piercing" 
-	variantof="mag_oar_standard"
+	identifier="ammo_rifle_762short_piercing" 
+	variantof="ammo_rifle_762short"
 	description="" 
 	maxstacksize="6" maxstacksizecharacterinventory="4">
 		
@@ -885,8 +885,8 @@
 
 		<!--AK-103 DU 30 round mag-->
 	<Item name="" 
-	identifier="mag_oar_standard_uranium" 
-	variantof="mag_oar_standard"
+	identifier="ammo_rifle_762short_uranium" 
+	variantof="ammo_rifle_762short"
 	description="" >
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/renegadeammo.png" depth="0.54" sourcerect="88,1,42,51" origin="0.5,0.5" />
@@ -1022,7 +1022,7 @@
 
 		<!--###-->
 
-		<!--7.62x39mm durasteel round-->
+		<!--7.62x39mm uranium round-->
 	<Item name="" 
 	identifier="projectile_762x39_uranium" 
 	tags="smallitem,akammo" 
@@ -1083,7 +1083,7 @@
 
 		<!--20 Round 7.62x51 box mag-->
 	<Item name="" 
-	identifier="mag_br_standard" 
+	identifier="ammo_rifle_762nato" 
 	description="" 
 	tags="smallitem,762ammo,ehaammo,76251mag" 
 	maxstacksize="6" maxstacksizecharacterinventory="2" 
@@ -1124,8 +1124,8 @@
 
 		<!--40rnd 7.62x51 drum magazine-->
 	<Item name="" 
-	identifier="mag_br_extended" 
-	variantof="mag_br_standard"
+	identifier="ammo_rifle_762nato_extended" 
+	variantof="ammo_rifle_762nato"
 	description="" 
 	health="40">
 
@@ -1156,8 +1156,8 @@
 
 		<!--7.62x51 Durasteel mag-->
 	<Item name="" 
-	identifier="mag_br_standard_durasteel" 
-	variantof="mag_br_standard" 
+	identifier="ammo_rifle_762nato_durasteel" 
+	variantof="ammo_rifle_762nato" 
 	description="" 
 	maxstacksize="4" maxstacksizecharacterinventory="2">
 
@@ -1436,7 +1436,7 @@
 
 		<!--AS Val 20 round mag-->
 	<Item name="" 
-	identifier="mag_covert_standard" 
+	identifier="ammo_rifle_9" 
 	description="" 
 	tags="smallitem,valammo,ehaammo" 
 	Scale="0.7" 
@@ -1478,8 +1478,8 @@
 
 		<!--SR-3 30 round mag-->
 	<Item name="" 
-	identifier="mag_covert_extended" 
-	variantof="mag_covert_standard"
+	identifier="ammo_rifle_9_extended" 
+	variantof="ammo_rifle_9"
 	description="" 
 	maxstacksize="6" maxstacksizecharacterinventory="3"
 	health="30">
@@ -1511,8 +1511,8 @@
 
 		<!--AS Val 40 round mag-->
 	<Item name="" 
-	identifier="mag_covert_large" 
-	variantof="mag_covert_standard"
+	identifier="ammo_rifle_9_large" 
+	variantof="ammo_rifle_9"
 	description="" 
 	maxstacksize="2" maxstacksizecharacterinventory="1" 
 	health="40">
@@ -1656,7 +1656,7 @@
 		<!--TODO: fuck some of these definately used special ammo as their root items. not fixing it rn-->
 		<!--10 round 12.7x55 magazine-->
 	<Item name="" 
-	identifier="mag_obr_short_durasteel" 
+	identifier="ammo_rifle_50short_durasteel" 
 	description="" 
 	cargocontaineridentifier="scp_ammocrate" 
 	tags="smallitem,ashammo,ehaammo" 
@@ -1698,8 +1698,8 @@
 
 		<!--20 round 12.7x55 magazine-->
 	<Item name="" 
-	identifier="mag_obr_standard" 
-	variantof="mag_obr_short_durasteel" 
+	identifier="ammo_rifle_50short" 
+	variantof="ammo_rifle_50short_durasteel" 
 	description="" 
 	maxstacksize="2" maxstacksizecharacterinventory="1" 
 	health="20">

@@ -442,7 +442,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-80">
-				<RequiredItem items="mag_caseless_standard_incendiary" type="Contained" />
+				<RequiredItem items="ammo_rifle_65_incendiary" type="Contained" />
 			</StatusEffect>
 
 		</RangedWeapon>
@@ -1217,7 +1217,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-35">
-				<RequiredItem items="mag_caseless_standard_incendiary" type="Contained" />
+				<RequiredItem items="ammo_rifle_65_incendiary" type="Contained" />
 			</StatusEffect>
 		</RangedWeapon>
 
@@ -1302,7 +1302,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-35">
-				<RequiredItem items="mag_caseless_standard_incendiary" type="Contained" />
+				<RequiredItem items="ammo_rifle_65_incendiary" type="Contained" />
 			</StatusEffect>
 		</RangedWeapon>
 
@@ -1384,7 +1384,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-25">
-				<RequiredItem items="mag_caseless_standard_incendiary" type="Contained" />
+				<RequiredItem items="ammo_rifle_65_incendiary" type="Contained" />
 			</StatusEffect>
 			
 			<StatusEffect type="Always" target="This" reload="2.5" reloadnoskill="3.5" stackable="false" setvalue="true">
@@ -1518,7 +1518,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-55">
-				<RequiredItem items="mag_oar_extended" type="Contained" />
+				<RequiredItem items="ammo_rifle_762short_extended" type="Contained" />
 			</StatusEffect>
 
 		</RangedWeapon>
@@ -1620,7 +1620,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-55">
-				<RequiredItem items="mag_oar_extended" type="Contained" />
+				<RequiredItem items="ammo_rifle_762short_extended" type="Contained" />
 			</StatusEffect>
 
 		</RangedWeapon>
@@ -1700,7 +1700,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-45">
-				<RequiredItem items="mag_oar_extended" type="Contained" />
+				<RequiredItem items="ammo_rifle_762short_extended" type="Contained" />
 			</StatusEffect>
 
 		</RangedWeapon>
@@ -1782,7 +1782,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-35">
-				<RequiredItem items="mag_oar_extended" type="Contained" />
+				<RequiredItem items="ammo_rifle_762short_extended" type="Contained" />
 			</StatusEffect>
 			
 			<StatusEffect type="Always" target="This" reload="2.5" reloadnoskill="3.5" stackable="false" setvalue="true">
@@ -1940,7 +1940,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-250">
-				<RequiredItem items="mag_br_extended" type="Contained" />
+				<RequiredItem items="ammo_rifle_762nato_extended" type="Contained" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
@@ -2027,7 +2027,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-100">
-				<RequiredItem items="mag_br_extended" type="Contained" />
+				<RequiredItem items="ammo_rifle_762nato_extended" type="Contained" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
@@ -2198,7 +2198,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="This" condition="-100">
-				<RequiredItem items="mag_br_extended" type="Contained" />
+				<RequiredItem items="ammo_rifle_762nato_extended" type="Contained" />
 			</StatusEffect>
 
 		</RangedWeapon>
@@ -2377,7 +2377,7 @@
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
 
-			<Containable items="akammo" hide="false" itempos="-7,-8" excludeditems="mag_oar_extended" />
+			<Containable items="akammo" hide="false" itempos="-7,-8" excludeditems="ammo_rifle_762short_extended" />
 
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
 
@@ -2453,7 +2453,7 @@
 			<RequiredSkill identifier="weapons" level="75" />
 
 			<StatusEffect type="OnUse" target="This" condition="-200">
-				<RequiredItem items="mag_br_extended" type="Contained" />
+				<RequiredItem items="ammo_rifle_762nato_extended" type="Contained" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
@@ -2990,7 +2990,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-100">
-				<RequiredItem items="mag_covert_standard" type="Contained" />
+				<RequiredItem items="ammo_rifle_9" type="Contained" />
 			</StatusEffect>
 		</RangedWeapon>
 
@@ -3224,7 +3224,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-100">
-				<RequiredItem items="mag_obr_short_durasteel" type="Contained" />
+				<RequiredItem items="ammo_rifle_50short_durasteel" type="Contained" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
@@ -3338,7 +3338,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" condition="-100">
-				<RequiredItem items="mag_obr_short_durasteel" type="Contained" />
+				<RequiredItem items="ammo_rifle_50short_durasteel" type="Contained" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />

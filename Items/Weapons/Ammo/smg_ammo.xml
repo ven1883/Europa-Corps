@@ -7,7 +7,7 @@
 		<!--9x19 30 round magazine-->
 		<!--Submachinegun Magazine-->
 	<Item name="" 
-	identifier="ammo_9mm_smg" 
+	identifier="ammo_smg_9mm" 
 	description="" 
 	tags="smallitem,9mmammo,ehaammo,9mmsmgmag" 
 	category="Weapon" subcategory="Coalition" 
@@ -49,9 +49,9 @@
 		<!--9x19 50 round magazine-->
 		<!--Submachinegun Drum Magazine-->
 	<Item name="" 
-	identifier="ammo_9mm_smg_drum" 
+	identifier="ammo_smg_9mm_drum" 
 	description="" 
-	variantof="ammo_9mm_smg"
+	variantof="ammo_smg_9mm"
 	maxstacksize="2"
 	health="50">
 
@@ -64,9 +64,9 @@
 		<!--9x19 30 round AP magazine-->
 		<!--Submachinegun AP Magazine-->
 	<Item name="" 
-	identifier="ammo_9mm_smg_ap" 
+	identifier="ammo_smg_9mm_ap" 
 	description="" 
-	variantof="ammo_9mm_smg"
+	variantof="ammo_smg_9mm"
 	maxstacksize="12" maxstacksizecharacterinventory="3">
 		
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="56,142,37,66" origin="0.5,0.5" />
@@ -102,7 +102,7 @@
 
 		<!--25 round 11.43 box magazine-->
 	<Item name="" 
-	identifier="ammo_45acp_smg" 
+	identifier="ammo_smg_45acp" 
 	description="" 
 	tags="smallitem,45ammo,ehaammo,ump45mag" 
 	category="Weapon" subcategory="Coalition" 
@@ -143,9 +143,9 @@
 
 		<!--25 round 11.43 incendiary box magazine-->
 	<Item name="" 
-	identifier="ammo_45acp_smg_incendiary" 
+	identifier="ammo_smg_45acp_incendiary" 
 	description="" 
-	variantof="ammo_45acp_smg">
+	variantof="ammo_smg_45acp">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" sourcerect="196,143,14,66" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/improvedammo.png" depth="0.54" sourcerect="196,143,14,66" origin="0.5,0.5" />

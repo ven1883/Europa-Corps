@@ -9,7 +9,7 @@
 
 		<!--9x19 16 round magazine-->
 	<Item name="" 
-	identifier="ammo_9mm_pistol" 
+	identifier="ammo_pistol_9mm" 
 	description="" 
 	tags="smallitem,9mmpistolammo,ehaammo" 
 	cargocontaineridentifier="scp_ammocrate" 
@@ -49,9 +49,9 @@
 
 		<!--9x19 16 round AP magazine-->
 	<Item name="" 
-	identifier="ammo_9mm_pistol_ap" 
+	identifier="ammo_pistol_9mm_ap" 
 	description="" 
-	variantof="ammo_9mm_pistol"
+	variantof="ammo_pistol_9mm"
 	maxstacksize="10" maxstacksizecharacterinventory="5">
 
 		<Sprite texture="%ModDir%/Sprites/Items/Weapons/Ammo/ammo.png" depth="0.54" sourcerect="67,3,28,56" origin="0.5,0.5" />
@@ -188,7 +188,7 @@
 		<!--10mm 10-round magazine-->
 		<!--Assault Pistol Magazine-->
 	<Item name="" 
-	identifier="ammo_10mm_pistol" 
+	identifier="ammo_pistol_10mm" 
 	description="" 
 	tags="smallitem,10mmpistolammo,ehaammo" 
 	cargocontaineridentifier="scp_ammocrate" 
@@ -233,9 +233,9 @@
 		<!--10mm 20-round magazine-->
 		<!--Assault Pistol Extended Magazine-->
 	<Item name="" 
-	identifier="ammo_10mm_pistol_extended" 
+	identifier="ammo_pistol_10mm_extended" 
 	description="" 
-	variantof="ammo_10mm_pistol"
+	variantof="ammo_pistol_10mm"
 	maxstacksize="3"
 	health="20">
 
@@ -326,7 +326,7 @@
 		<!--11.43x23 10 round magazine-->
 		<!--Heavy Pistol Magazine-->
 	<Item name="" 
-	identifier="ammo_45acp_pistol" 
+	identifier="ammo_pistol_45acp" 
 	description="" 
 	tags="smallitem,45pistolammo,ehaammo,handheldammo,4510mag" 
 	cargocontaineridentifier="scp_ammocrate" 
@@ -370,9 +370,9 @@
 		<!--11.43x23 10 round Incendiary magazine-->
 		<!--Heavy Pistol Burner Magazine-->
 	<Item name="" 
-	identifier="ammo_45acp_pistol_incendiary" 
+	identifier="ammo_pistol_45acp_incendiary" 
 	description="" 
-	variantof="ammo_45acp_pistol"
+	variantof="ammo_pistol_45acp"
 	maxstacksize="6" maxstacksizecharacterinventory="3" 
 	health="10">
 
@@ -722,7 +722,7 @@
 		<!--.50 AE Deagle magazine-->
 		<!--Oppressor Heavy Pistol Magazine-->
 	<Item name="" 
-	identifier="ammo_50ae_pistol" 
+	identifier="ammo_pistol_50ae" 
 	description="" 
 	tags="smallitem,deagleammo,ehaammo" 
 	cargocontaineridentifier="scp_ammocrate" 
