@@ -273,7 +273,8 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/g36.ogg" type="OnUse" range="3000" selectionmode="Random" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/g36.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/g36.ogg" type="OnUse" range="3000" frequencymultiplier="1.02" />
-
+		</RangedWeapon>
+		
 		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 		
 		<Quality>
