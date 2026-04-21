@@ -50,10 +50,7 @@
 				<Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
 			</StatusEffect>
 
-			<RequiredItems items="revolverammo" type="Contained" msg="ItemMsgAmmoRequired" />
-			
 			<RequiredSkill identifier="weapons" level="40" />
-
 		</RangedWeapon>
 		
 		<ItemContainer capacity="1" maxstacksize="12" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56"/>	
@@ -584,8 +581,6 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/65kh.ogg" type="OnUse" range="3000" selectionmode="Random" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/65kh.ogg" type="OnUse" range="3000" frequencymultiplier="0.95" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/65kh.ogg" type="OnUse" range="3000" frequencymultiplier="1.02" />
-
-			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="65ammo" />
 			
 			<RequiredSkill identifier="weapons" level="70" />
 		</RangedWeapon>
@@ -933,6 +928,14 @@
 			drawhudwhenequipped="true" 
 			crosshairscale="0.2">
 
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use/>
+			</StatusEffect>
+
 			<RequiredSkill identifier="weapons" level="75" />
 
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
@@ -956,19 +959,6 @@
 				<Affliction identifier="stun" strength="0.1" />
 				<Affliction identifier="blunttrauma" strength="5" probability="0.65" />
 			</StatusEffect>
-			
-			<StatusEffect type="OnUse" target="This">
-				<Conditional condition="lt 35" />
-
-				<ParticleEmitter particle="weldspark" particleamount="5" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnUse" target="This" condition="-250">
-				<RequiredItem items="scp_scarextmag" type="Contained" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
-		
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56" itempos="-3,-2">
@@ -1326,36 +1316,7 @@
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="2.0,10.0" colormultiplier="255,200,200,200" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/scar20.ogg" type="OnUse" range="3000" />
 
-			<StatusEffect type="OnUse" target="This" Condition="-700" />
-
-			<StatusEffect type="Always" target="This" Condition="5">
-				<Conditional condition="gt 0" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This">
-				<sound file="%ModDir%/Sounds/Weapons/Guns/battleriflejam.ogg" type="OnUse" range="900.0" loop="false" volume="1.2" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnBroken" target="This" Condition="40" disabledeltatime="true" delay="3.2" stackable="false" />
-
-			<StatusEffect type="OnUse" target="This">
-				<Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="26" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnUse" target="Contained">
-				<Use />
-			</StatusEffect>
-			
-			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="762ammo" />
-			
 			<RequiredSkill identifier="weapons" level="75" />
-
-			<StatusEffect type="OnUse" target="This" condition="-200">
-				<RequiredItem items="scp_scarextmag" type="Contained" />
-			</StatusEffect>
-			
-			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
-		
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56" itempos="-10.5,-10" />
@@ -1527,6 +1488,14 @@
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/riflebolt50.ogg" type="OnUse" range="1000" />
 			</StatusEffect>
 
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use/>
+			</StatusEffect>
+
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
 				<Conditional skillrequirement="true" weapons="lt 70" />
 				<Conditional skillrequirement="true" weapons="gte 50" />
@@ -1604,6 +1573,14 @@
 				<Sound file="%ModDir%/Sounds/Weapons/Guns/riflebolt50.ogg" type="OnUse" range="1000" />
 			</StatusEffect>
 			
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use/>
+			</StatusEffect>
+
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
 				<Conditional skillrequirement="true" weapons="lt 70" />
 				<Conditional skillrequirement="true" weapons="gte 50" />
@@ -1697,8 +1674,6 @@
 			
 			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
 
-			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="t5000ammo" />
-			
 			<RequiredSkill identifier="weapons" level="85" />
 		
 		</RangedWeapon>
@@ -1780,8 +1755,6 @@
 
 			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
 
-			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="t5000ammo" />
-			
 			<RequiredSkill identifier="weapons" level="80" />
 		
 		</RangedWeapon>
@@ -1976,9 +1949,7 @@
 			<StatusEffect type="OnUse" target="Contained">
 				<Use />
 			</StatusEffect>
-			
-			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="valammo,9x39_magazine" />
-			
+
 			<RequiredSkill identifier="weapons" level="60" />
 
 			<StatusEffect type="OnUse" target="This" comparison="and">
@@ -2034,6 +2005,14 @@
 			
 			<ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.8,4.9" colormultiplier="255,200,200,200" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/malyuk12.ogg" type="OnUse" range="3000" selectionmode="Random" volume="1.1" />
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use/>
+			</StatusEffect>
 
 			<RequiredSkill identifier="weapons" level="75" />
 
@@ -2116,6 +2095,14 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/ash121.ogg" type="OnUse" range="3000" volume="1.25" frequencymultiplier="0.95" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/ash121.ogg" type="OnUse" range="3000" volume="1.25" frequencymultiplier="1.02" />
 
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use/>
+			</StatusEffect>
+
 			<RequiredSkill identifier="weapons" level="80" />
 
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
@@ -2191,6 +2178,15 @@
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/ash121.ogg" type="OnUse" range="3000" volume="1.3" frequencymultiplier="1.02" />
 			<Sound file="%ModDir%/Sounds/Weapons/Guns/ash121.ogg" type="OnUse" range="3000" volume="1.3" frequencymultiplier="0.95" />
 
+
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
+			</StatusEffect>
+
+			<StatusEffect type="OnUse" target="Contained">
+				<Use/>
+			</StatusEffect>
+
 			<RequiredSkill identifier="weapons" level="80" />
 
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
@@ -2254,7 +2250,7 @@
 			weapondamagemodifier="1.25" 
 			barrelpos="90,9"
 			spread="6" unskilledspread="36" 
-			combatPriority="80" 
+			combatPriority="80" 	
 			drawhudwhenequipped="true" 
 			crosshairscale="0.2">
 			

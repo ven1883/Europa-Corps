@@ -30,7 +30,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="556ammo" />
@@ -81,7 +81,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="65ammo" />
@@ -130,7 +130,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="akammo" />
@@ -179,7 +179,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<Use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="762ammo" />
@@ -228,7 +228,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<Use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="t5000ammo" />
@@ -277,7 +277,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<Use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="valammo" />
@@ -326,7 +326,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="ashammo" />
@@ -375,7 +375,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="ak74ammo" />
@@ -424,7 +424,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="revolverammo" />
@@ -484,7 +484,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="Contained">
-				<Use />
+				<use/>
 			</StatusEffect>
 
 			<RequiredItems msg="ItemmsgAmmoRequired" type="Contained" tags="rifleammo" />
