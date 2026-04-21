@@ -270,48 +270,48 @@
         <!--9x39mm AP round--> <!--TODO TAG-->
     <!--Ammo_shotgun_ammo-->
         <!--12g magnum buckshot-->
-            <entityname.scp_12gmagbuck>12 Gauge Shotgun Magnum Buckshot</entityname.scp_12gmagbuck>
-            <entitydescription.scp_12gmagbuck>A 12 gauge shotgun shell containing larger shot with a greater powder load, increasing per pellet power but reducing accuracy and has minimal effect against armour.</entitydescription.scp_12gmagbuck>
+            <entityname.ammo_shotgun_12g_magnum>12 Gauge Shotgun Magnum Buckshot</entityname.ammo_shotgun_12g_magnum>
+            <entitydescription.ammo_shotgun_12g_magnum>A 12 gauge shotgun shell containing larger shot with a greater powder load, increasing per pellet power but reducing accuracy and has minimal effect against armour.</entitydescription.ammo_shotgun_12g_magnum>
         <!--12g slug-->
-            <entityname.scp_12gslug>12 Gauge Shotgun Slug</entityname.scp_12gslug>
-            <entitydescription.scp_12gslug>A 12 gauge shotgun shell containing a singular large lead projectile, being moderately more effective against armour.</entitydescription.scp_12gslug>
+            <entityname.ammo_shotgun_12g_slug>12 Gauge Shotgun Slug</entityname.ammo_shotgun_12g_slug>
+            <entitydescription.ammo_shotgun_12g_slug>A 12 gauge shotgun shell containing a singular large lead projectile, being moderately more effective against armour.</entitydescription.ammo_shotgun_12g_slug>
         <!--12g ap sabot shell-->
-            <entityname.scp_12gapslug>12 Gauge Shotgun AP Slug</entityname.scp_12gapslug>
-            <entitydescription.scp_12gapslug>A 12 gauge shotgun shell containing a single titanium sabot penetrator, meant to better defeat hard armour vests.</entitydescription.scp_12gapslug>
+            <entityname.ammo_shotgun_12g_slug_piercing>12 Gauge Shotgun AP Slug</entityname.ammo_shotgun_12g_slug_piercing>
+            <entitydescription.ammo_shotgun_12g_slug_piercing>A 12 gauge shotgun shell containing a single titanium sabot penetrator, meant to better defeat hard armour vests.</entitydescription.ammo_shotgun_12g_slug_piercing>
         <!--12g breach shot-->
-            <entityname.scp_12gbreachslug>12 Gauge Shotgun Breaching Slug</entityname.scp_12gbreachslug>
-            <entitydescription.scp_12gbreachslug>A 12 gauge shotgun shell containing a slug designed for blowing holes through doors, though is atrocious for combat against much of anything.</entitydescription.scp_12gbreachslug>
+            <entityname.ammo_shotgun_12g_slug_breaching>12 Gauge Shotgun Breaching Slug</entityname.ammo_shotgun_12g_slug_breaching>
+            <entitydescription.ammo_shotgun_12g_slug_breaching>A 12 gauge shotgun shell containing a slug designed for blowing holes through doors, though is atrocious for combat against much of anything.</entitydescription.ammo_shotgun_12g_slug_breaching>
         <!--12g devils breath slug-->
-            <entityname.scp_12devilslug>12 Gauge Shotgun Devil's Blood Slug</entityname.scp_12devilslug>
-            <entitydescription.scp_12devilslug>A 12 gauge shotgun shell containing a small payload of Devil's Blood, dispersing in a small area.</entitydescription.scp_12devilslug>
+            <entityname.ammo_shotgun_12g_dragonsbreath>12 Gauge Shotgun Devil's Blood Slug</entityname.ammo_shotgun_12g_dragonsbreath>
+            <entitydescription.ammo_shotgun_12g_dragonsbreath>A 12 gauge shotgun shell containing a small payload of Devil's Blood, dispersing in a small area.</entitydescription.ammo_shotgun_12g_dragonsbreath>
         <!--5 round 12 gauge saiga magazine-->
-            <entityname.scp_saigamag>Combat Shotgun Magazine</entityname.scp_saigamag>
-            <entitydescription.scp_saigamag>A 5 round 12 gauge magazine containing buckshot, whilst it has poor capacity, quite a few can be carried around.</entitydescription.scp_saigamag>
+            <entityname.ammo_shotgun_12g_magazine>Combat Shotgun Magazine</entityname.ammo_shotgun_12g_magazine>
+            <entitydescription.ammo_shotgun_12g_magazine>A 5 round 12 gauge magazine containing buckshot, whilst it has poor capacity, quite a few can be carried around.</entitydescription.ammo_shotgun_12g_magazine>
         <!--10 round 12 gauge saiga magazine-->
-            <entityname.scp_saigaextmag>Combat Shotgun Extended Magazine</entityname.scp_saigaextmag>
-            <entitydescription.scp_saigaextmag>A 10 round 12 gauge extended magazine containing buckshot.</entitydescription.scp_saigaextmag>
+            <entityname.ammo_shotgun_12g_magazine_extended>Combat Shotgun Extended Magazine</entityname.ammo_shotgun_12g_magazine_extended>
+            <entitydescription.ammo_shotgun_12g_magazine_extended>A 10 round 12 gauge extended magazine containing buckshot.</entitydescription.ammo_shotgun_12g_magazine_extended>
         <!--20 round 12 gauge saiga drum-->
-            <entityname.scp_saigadrummag>Combat Shotgun Drum</entityname.scp_saigadrummag>
-            <entitydescription.scp_saigadrummag>A bulky 20 round 12 gauge drum magazine containing buckshot shells that rattle a lot.</entitydescription.scp_saigadrummag>
+            <entityname.ammo_shotgun_12g_magazine_drum>Combat Shotgun Drum</entityname.ammo_shotgun_12g_magazine_drum>
+            <entitydescription.ammo_shotgun_12g_magazine_drum>A bulky 20 round 12 gauge drum magazine containing buckshot shells that rattle a lot.</entitydescription.ammo_shotgun_12g_magazine_drum>
         <!--12g saiga buckshot projectile--> <!--TODO TAG-->
         <!--8-gauge shell-->
-            <entityname.heavyshotshell>8-Gauge Shotgun Shell</entityname.heavyshotshell>
-            <entitydescription.heavyshotshell>Packed with 12 Steel pellets, the shell has a tendancy to take off doors and limbs alike. It does a better job punching through lighter armor than it's lesser counterpart, though can still make a mess of heavier plate.</entitydescription.heavyshotshell>
+            <entityname.ammo_shotgun_8g>8-Gauge Shotgun Shell</entityname.ammo_shotgun_8g>
+            <entitydescription.ammo_shotgun_8g>Packed with 12 Steel pellets, the shell has a tendancy to take off doors and limbs alike. It does a better job punching through lighter armor than it's lesser counterpart, though can still make a mess of heavier plate.</entitydescription.ammo_shotgun_8g>
         <!--8-Gauge Stun Shot-->
-            <entityname.heavystunshell>8-Gauge Riot Shotgun Shell</entityname.heavystunshell>
-            <entitydescription.heavystunshell>Seated with 4 rubber balls, other non-lethal options are suggested for unskilled users, with heavy recoil still being present.</entitydescription.heavystunshell>
+            <entityname.ammo_shotgun_8g_stun>8-Gauge Riot Shotgun Shell</entityname.ammo_shotgun_8g_stun>
+            <entitydescription.ammo_shotgun_8g_stun>Seated with 4 rubber balls, other non-lethal options are suggested for unskilled users, with heavy recoil still being present.</entitydescription.ammo_shotgun_8g_stun>
         <!--8-Gauge Shredder Slug-->
-            <entityname.heavysliceshell>8-Gauge "Shredder" Slug Shotgun Shell</entityname.heavysliceshell>
-            <entitydescription.heavysliceshell>Contains a Titanium fragmenting slug that causes immense bleeding on target, even through heavy armor.</entitydescription.heavysliceshell>
+            <entityname.ammo_shotgun_8g_slug>8-Gauge "Shredder" Slug Shotgun Shell</entityname.ammo_shotgun_8g_slug>
+            <entitydescription.ammo_shotgun_8g_slug>Contains a Titanium fragmenting slug that causes immense bleeding on target, even through heavy armor.</entitydescription.ammo_shotgun_8g_slug>
         <!--8-Gauge Incendiary Shotshell-->
-            <entityname.heavyhotshell>8-Gauge Incendiary Shell</entityname.heavyhotshell>
-            <entitydescription.heavyhotshell>Stocked with magnesium shreds, it spreads violently with a hot mess of sparks, usually leaving targets heavily charred.</entitydescription.heavyhotshell>
+            <entityname.ammo_shotgun_8g_dragonsbreath>8-Gauge Incendiary Shell</entityname.ammo_shotgun_8g_dragonsbreath>
+            <entitydescription.ammo_shotgun_8g_dragonsbreath>Stocked with magnesium shreds, it spreads violently with a hot mess of sparks, usually leaving targets heavily charred.</entitydescription.ammo_shotgun_8g_dragonsbreath>
         <!--23x75mm Shrapnel-25 Shell-->
-            <entityname.scp_4gshell>Big Bore Shotgun Shell</entityname.scp_4gshell>
-            <entitydescription.scp_4gshell>A 6 Gauge shotgun shell containing large and heavy buckshot. Such buckshot is utterly devastating against unarmoured targets and to some degree can cause serious damage to armoured targets.</entitydescription.scp_4gshell>
+            <entityname.ammo_shotgun_4g>Big Bore Shotgun Shell</entityname.ammo_shotgun_4g>
+            <entitydescription.ammo_shotgun_4g>A 6 Gauge shotgun shell containing large and heavy buckshot. Such buckshot is utterly devastating against unarmoured targets and to some degree can cause serious damage to armoured targets.</entitydescription.ammo_shotgun_4g>
         <!--23x75mm Slug Shell-->
-            <entityname.scp_4gslug>Big Bore Shotgun Slug</entityname.scp_4gslug>
-            <entitydescription.scp_4gslug>A 6 Gauge shotgun shell with a very large armour-penetrating slug, its sheer mass capable of blasting apart soft tissue and armour alike.</entitydescription.scp_4gslug>
+            <entityname.ammo_shotgun_4g_slug>Big Bore Shotgun Slug</entityname.ammo_shotgun_4g_slug>
+            <entitydescription.ammo_shotgun_4g_slug>A 6 Gauge shotgun shell with a very large armour-penetrating slug, its sheer mass capable of blasting apart soft tissue and armour alike.</entitydescription.ammo_shotgun_4g_slug>
     <!--Ammo_smg_ammo-->
         <!--Submachinegun Magazine-->
             <entityname.ammo_9mm_smg>Submachine Gun Magazine</entityname.ammo_9mm_smg>

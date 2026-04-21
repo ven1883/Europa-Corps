@@ -121,7 +121,7 @@
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="12" maxstacksize="20" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
-			<Containable items="shotgunammo,heavyshotshell" />
+			<Containable items="shotgunammo,ammo_shotgun_8g" />
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_uniammobox" description="" tags="mediumitem,ammocrate" scale="0.25" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
@@ -153,7 +153,7 @@
 		<Body width="150" height="85" density="10" />
 		<Holdable slots="RightHand+LeftHand" holdpos="0,-90" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
 		<ItemContainer capacity="12" maxstacksize="20" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
-			<Containable items="ehaammo,smgammo,assaultrifleammo,revolverammo,shotgunammo,heavyshotshell" excludeditems="toolbox,backpack,aliengun,crate,weaponcrate,ammocrate" />
+			<Containable items="ehaammo,smgammo,assaultrifleammo,revolverammo,shotgunammo,ammo_shotgun_8g" excludeditems="toolbox,backpack,aliengun,crate,weaponcrate,ammocrate" />
 		</ItemContainer>
 	</Item>
 	<Item name="" identifier="scp_alienweaponcrate" description="" tags="weaponcrate,crate,allowcleanup" scale="0.5" waterproof="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">

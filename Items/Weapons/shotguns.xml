@@ -567,7 +567,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This">
-				<RequiredItem items="heavyhotshell" type="contained" />
+				<RequiredItem items="ammo_shotgun_8g_dragonsbreath" type="contained" />
 				<ParticleEmitter particle="weldspark" particleamount="10" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1.5" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
 			</StatusEffect>
 			
@@ -577,7 +577,7 @@
 				<Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
 			</StatusEffect>
 
-			<RequiredItems items="heavyshotshell" type="Contained" msg="ItemMsgAmmoRequired" />
+			<RequiredItems items="ammo_shotgun_8g" type="Contained" msg="ItemMsgAmmoRequired" />
 
 			<RequiredSkill identifier="weapons" level="40" />
 			
@@ -599,7 +599,7 @@
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="2" itempos="27,10" containedstateindicatorslot="0" iteminterval="0,-4" hideitems="false" containedstateindicatorstyle="bullet">
-			<Containable items="heavyshotshell" hide="true" />
+			<Containable items="ammo_shotgun_8g" hide="true" />
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
 
 			<SubContainer capacity="1" maxstacksize="1">
@@ -666,7 +666,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This">
-				<RequiredItem items="heavyhotshell" type="contained" />
+				<RequiredItem items="ammo_shotgun_8g_dragonsbreath" type="contained" />
 				<ParticleEmitter particle="weldspark" particleamount="10" velocitymin="2000" velocitymax="3000" scalemin="0.8" scalemax="1.5" anglemin="-20" anglemax="20" copyentityangle="true" colormultiplier="255,200,200,225" />
 			</StatusEffect>
 			
@@ -680,7 +680,7 @@
 				<Explosion range="150.0" force="3.4" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="35.0" />
 			</StatusEffect>
 
-			<RequiredItems items="heavyshotshell" type="Contained" msg="ItemMsgAmmoRequired" />
+			<RequiredItems items="ammo_shotgun_8g" type="Contained" msg="ItemMsgAmmoRequired" />
 
 			<RequiredSkill identifier="weapons" level="65" />
 			
@@ -716,7 +716,7 @@
 		</RangedWeapon>
 
 		<ItemContainer capacity="1" maxstacksize="6" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-			<Containable items="heavyshotshell" hide="true" />
+			<Containable items="ammo_shotgun_8g" hide="true" />
 			<SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
 
 			<SubContainer capacity="1" maxstacksize="1">

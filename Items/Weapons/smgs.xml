@@ -331,16 +331,16 @@
 				<Conditional HasStatusTag="neq grenadeloaded" />
 			</StatusEffect>
 
-			<RequiredItems items="10mmpistolammo,10mmsmgammo,heavyshotshell" type="Contained" msg="ItemMsgAmmoRequired" />
+			<RequiredItems items="10mmpistolammo,10mmsmgammo,ammo_shotgun_8g" type="Contained" msg="ItemMsgAmmoRequired" />
 
 			<RequiredSkill identifier="weapons" level="65" />
 		</RangedWeapon>
 
 		<!--TODO: fix this brick-->
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="1" containedspritedepth="0.56">
-			<Containable items="heavyshotshell" hide="true">
+			<Containable items="ammo_shotgun_8g" hide="true">
 				<StatusEffect type="OnContaining" target="This" tags="grenadeloaded" duration="0.05" stackable="false">
-					<RequiredItem items="heavyshotshell" type="Contained"></RequiredItem>
+					<RequiredItem items="ammo_shotgun_8g" type="Contained"></RequiredItem>
 				</StatusEffect>
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" delay="1.0" condition="100" stackable="false" />
 				<StatusEffect type="OnInserted" target="This" targetslot="0" disabledeltatime="true" condition="-100" stackable="false" />
