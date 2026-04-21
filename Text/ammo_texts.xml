@@ -40,35 +40,35 @@
             <entitydescription.glshotshell>Using 24 Steel BB's, the shell's the "short-range" option for explosive specialists to clear paths in-front of them without harming themselves in the process.</entitydescription.glshotshell>
     <!--Ammo_heavy_ammo-->
         <!--100 round 5.56x45 box mag-->
-            <entityname.scp_m249mag>Light Machine Gun Box Magazine</entityname.scp_m249mag>
-            <entitydescription.scp_m249mag>A 100 round 5.56x45mm box magazine for use in the Squad Machine Gun.</entitydescription.scp_m249mag>
+            <entityname.ammo_mg_556>Light Machine Gun Box Magazine</entityname.ammo_mg_556>
+            <entitydescription.ammo_mg_556>A 100 round 5.56x45mm box magazine for use in the Squad Machine Gun.</entitydescription.ammo_mg_556>
         <!--50 Round box mag-->
-            <entityname.scp_pkpsmallboxmag>Small General Purpose Machine Gun Box Magazine</entityname.scp_pkpsmallboxmag>
-            <entitydescription.scp_pkpsmallboxmag>A 50 round 7.62x51mm belt fed box magazine for General Purpose Machine Guns.</entitydescription.scp_pkpsmallboxmag>
+            <entityname.ammo_mg_762>Small General Purpose Machine Gun Box Magazine</entityname.ammo_mg_762>
+            <entitydescription.ammo_mg_762>A 50 round 7.62x51mm belt fed box magazine for General Purpose Machine Guns.</entitydescription.ammo_mg_762>
         <!--100 Round box mag-->
-            <entityname.scp_pkpboxmag>General Purpose Machine Gun Box Magazine</entityname.scp_pkpboxmag>
-            <entitydescription.scp_pkpboxmag>A bulky 100 round 7.62x51mm belt fed box magazine for General Purpose Machine Guns.</entitydescription.scp_pkpboxmag>
+            <entityname.ammo_mg_762_extended>General Purpose Machine Gun Box Magazine</entityname.ammo_mg_762_extended>
+            <entitydescription.ammo_mg_762_extended>A bulky 100 round 7.62x51mm belt fed box magazine for General Purpose Machine Guns.</entitydescription.ammo_mg_762_extended>
         <!--10 Round 8.6x70mm box mag-->
-            <entityname.scp_t5000boxmag>Precision Rifle Magazine</entityname.scp_t5000boxmag>
-            <entitydescription.scp_t5000boxmag>A small 5 round 8.6x70mm box magazine containing FMJ ammunition.</entitydescription.scp_t5000boxmag>
+            <entityname.ammo_mg_86>Precision Rifle Magazine</entityname.ammo_mg_86>
+            <entitydescription.ammo_mg_86>A small 5 round 8.6x70mm box magazine containing FMJ ammunition.</entitydescription.ammo_mg_86>
         <!--8.6x70mm round-->
-            <entityname.scp_86projectile>8.6x70mm round</entityname.scp_86projectile>
-            <entitydescription.scp_86projectile>None</entitydescription.scp_86projectile>
+            <entityname.projectile_86x70_standard>8.6x70mm round</entityname.projectile_86x70_standard>
+            <entitydescription.projectile_86x70_standard>None</entitydescription.projectile_86x70_standard>
         <!--.50 BMG FMJ-->
-            <entityname.scp_50bmgfmj>Anti-Materiel Cartridge</entityname.scp_50bmgfmj>
-            <entitydescription.scp_50bmgfmj>A large 12.7x99mm FMJ cartridge which is easily the largest available for a handheld weapon. It is incredibly powerful when used against even armoured targets, capable of penetrating submarine hulls.</entitydescription.scp_50bmgfmj>
+            <entityname.projectile_127x99_standard>Anti-Materiel Cartridge</entityname.projectile_127x99_standard>
+            <entitydescription.projectile_127x99_standard>A large 12.7x99mm FMJ cartridge which is easily the largest available for a handheld weapon. It is incredibly powerful when used against even armoured targets, capable of penetrating submarine hulls.</entitydescription.projectile_127x99_standard>
         <!--.50 BMG Durasteel-->
-            <entityname.scp_50bmgdura>Anti-Materiel Durasteel Cartridge</entityname.scp_50bmgdura>
-            <entitydescription.scp_50bmgdura>A special 12.7x99mm cartridge with a reinforced casing, potent powder and Durasteel projectile, capable of reaching immense speeds and penetrating even the thickest of body armour.</entitydescription.scp_50bmgdura>
+            <entityname.projectile_127x99_durasteel>Anti-Materiel Durasteel Cartridge</entityname.projectile_127x99_durasteel>
+            <entitydescription.projectile_127x99_durasteel>A special 12.7x99mm cartridge with a reinforced casing, potent powder and Durasteel projectile, capable of reaching immense speeds and penetrating even the thickest of body armour.</entitydescription.projectile_127x99_durasteel>
         <!--.50 BMG AP-I-->
-            <entityname.scp_50bmgapi>Anti-Materiel AP-I Cartridge</entityname.scp_50bmgapi>
-            <entitydescription.scp_50bmgapi>A large 12.7x99mm cartridge utilizing a steel projectile and an Ignis Latex core, igniting upon impact and capable of melting through very thick armour, including submarine hulls.</entitydescription.scp_50bmgapi>
+            <entityname.projectile_127x99_apit>Anti-Materiel AP-I Cartridge</entityname.projectile_127x99_apit>
+            <entitydescription.projectile_127x99_apit>A large 12.7x99mm cartridge utilizing a steel projectile and an Ignis Latex core, igniting upon impact and capable of melting through very thick armour, including submarine hulls.</entitydescription.projectile_127x99_apit>
         <!--microgun box-->
-            <entityname.scp_microgunmag>Microgun Box</entityname.scp_microgunmag>
-            <entitydescription.scp_microgunmag>A very heavy 200 round 5.56x45mm box of FMJ cartridges.</entitydescription.scp_microgunmag>
+            <entityname.ammo_mg_microgun>Microgun Box</entityname.ammo_mg_microgun>
+            <entitydescription.ammo_mg_microgun>A very heavy 200 round 5.56x45mm box of FMJ cartridges.</entitydescription.ammo_mg_microgun>
         <!--Microgun Projectile-->
-            <entityname.scp_microproj>microgun Projectile</entityname.scp_microproj>
-            <entitydescription.scp_microproj>None</entitydescription.scp_microproj>
+            <entityname.projectile_mg_microgun>microgun Projectile</entityname.projectile_mg_microgun>
+            <entitydescription.projectile_mg_microgun>None</entitydescription.projectile_mg_microgun>
     <!--Ammo_overrides_ammo-->
         <!--Surplus Defensive Revolver Round-->
             <entityname.revolverround>Surplus Defensive Revolver Round</entityname.revolverround>

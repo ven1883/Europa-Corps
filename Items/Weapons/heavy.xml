@@ -571,7 +571,7 @@
 			
 			<StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.75" setvalue="true" disabledeltatime="true" />
 			
-			<RequiredItems items="scp_microgunmag" type="Contained" msg="ItemMsgAmmoRequired" />
+			<RequiredItems items="ammo_mg_microgun" type="Contained" msg="ItemMsgAmmoRequired" />
 			<RequiredSkill identifier="weapons" level="100" />
 			
 			<StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" targetlimbs="LeftHand,RightHand">
@@ -607,11 +607,11 @@
 
 		<RepairTool firedamage="0.0" structurefixamount="0.0" range="0" barrelpos="100,35" combatpriority="10" spread="0" unskilledspread="0">
 			<sound file="%ModDir%/Sounds/Weapons/Guns/microgun.ogg" type="OnUse" range="3500.0" loop="true" volume="1.65" />
-			<RequiredItems items="scp_microgunmag" type="Contained" msg="ItemMsgAmmoRequired" />
+			<RequiredItems items="ammo_mg_microgun" type="Contained" msg="ItemMsgAmmoRequired" />
 		</RepairTool>
 
 		<ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-35,-37" containedstateindicatorstyle="bullet">
-			<Containable items="scp_microgunmag" />
+			<Containable items="ammo_mg_microgun" />
 		</ItemContainer>
 
 		<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
