@@ -1,0 +1,69 @@
+<Items>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Helmet-->
+
+	<item identifier="invishelmet" name="Familiar Helmet" description="A helmet that looks identical to a familiar face. Looking at it is almost unnerving." variantof="ballistichelmet1" noninteractable="true" hideinmenus="true">
+		<sprite name="Ballistic Helmet 1 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="0,0,1,1" origin="0.5,0.5" />
+		
+		<Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+			<sprite name="Ballistic Helmet 1 Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" sourcerect="0,0,1,1" origin="0.5,0.5" />
+			
+			<StatusEffect type="Always" target="This" NonInteractable="False" setvalue="true" />
+            <StatusEffect type="OnWearing" target="Character" HideFace="true" />
+		</Wearable>
+	</item>
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Outerwear-->
+
+
+		<!--++++++++++++++++++++++++++++++++++++-->
+		<!--Innerwear-->
+
+    <Item name="" identifier="inquisitorrobes" category="Equipment" tags="smallitem,clothing,huskcult,stealthitem" fireproof="false" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+        <InventoryIcon texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="409,2,63,45" origin="0.5,0.5" />
+        <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="383,359,117,65" depth="0.6" origin="0.5,0.5" />
+        <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+        <Wearable slots="Any,InnerClothes" variants="1" msg="ItemMsgPickUpSelect">
+        <sprite name="Cultist Torso" texture="stealthsuit.png" limb="Torso" hidelimb="true" hideotherwearables="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Right Hand" texture="stealthsuit.png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Left Hand" texture="stealthsuit.png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Right Lower Arm" texture="stealthsuit.png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Left Lower Arm" texture="stealthsuit.png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Right Upper Arm" texture="stealthsuit.png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Left Upper Arm" texture="stealthsuit.png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Waist" texture="stealthsuit.png" limb="Waist" hidelimb="true" hideotherwearables="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Right Thigh" texture="stealthsuit.png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Left Thigh" texture="stealthsuit.png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Right Leg" texture="stealthsuit.png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Left Leg" texture="stealthsuit.png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Left Shoe" texture="stealthsuit.png" limb="LeftFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Right Shoe" texture="stealthsuit.png" limb="RightFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+        <sprite name="Cultist Head" texture="stealthsuit.png" limb="Head" hidelimb="true" hidewearablesoftype="Hair,Moustache,Beard" hideotherwearables="true" inheritlimbdepth="true" sourcerect="453,14,47,42" scale="0.65" origin="0.55,0.5" />
+        <StatusEffect type="OnWearing" target="Character" interval="0.5" disabledeltatime="true">
+            <Affliction identifier="disguisedashusk" amount="1.0" />
+        </StatusEffect>
+        <StatusEffect target="Character" type="OnWearing">
+            <Conditional cultistmarker="gt 0" />
+            <ReduceAffliction type="damage" amount="0.5" />
+            <ReduceAffliction type="bleeding" amount="1" />
+        </StatusEffect>
+        <StatusEffect target="Character,This" type="Always" Comparison="And">
+            <Conditional CurrentSpeed="lte 1.0" />
+            <!--walkspeed is 1.7, runspeed is 3.0 -->
+            <Conditional cultistmarker="gt 0" />
+            <Conditional Vitality="gt 0" />
+            <Affliction identifier="concealed" strength="2.1" />
+        </StatusEffect>
+        <StatusEffect target="Character,This" type="Always" Comparison="Or">
+            <Conditional CurrentSpeed="gt 2.7" />
+            <!--walkspeed is 1.7, runspeed is 3.0 -->
+            <Conditional Vitality="lte 0" />
+            <Affliction identifier="concealed" strength="-1.6" />
+        </StatusEffect>
+        <StatusEffect type="OnNotContained" target="This" SpriteColor="255,255,255,255" />
+        </Wearable>
+    </Item>
+
+</Items>

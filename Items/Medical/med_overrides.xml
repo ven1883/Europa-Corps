@@ -279,35 +279,55 @@
 				reload="1.0" 
 				msg="ItemMsgPickUpSelect">
 
-				<RequiredSkill identifier="medical" level="10" />
+        		<RequiredSkill identifier="medical" level="10" />
 
-				<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
-				<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
-				
-				<StatusEffect tags="medical" type="OnSuccess" target="This, Limb" duration="24.0">
-					<Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
-					<Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
+        		<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+        		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
 
-					<ReduceAffliction identifier="bleeding" amount="1" />
-					<ReduceAffliction identifier="lacerations" amount="0.75" />
-					<ReduceAffliction identifier="bitewounds" amount="0.75" />
-					<ReduceAffliction type="burn" amount="0.75" />
+				<!-- always -->
+        		<StatusEffect type="OnUse" target="UseTarget" duration="1">
+					<Affliction identifier="bandaged" amount="61"/> <!--61 so that the target will reach 60 at the end of the status effect-->
 				</StatusEffect>
+			
+				<!-- on success -->
+        		<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="20.0">
+        		  <ReduceAffliction identifier="bleeding" amount="0.75" />
+        		  <ReduceAffliction identifier="lacerations" amount="0.75" />
+        		  <ReduceAffliction identifier="bitewounds" amount="0.75" />
+        		  <ReduceAffliction type="burn" amount="1" />
+        		</StatusEffect>
+			
+        		<StatusEffect tags="medical" type="OnSuccess" target="This, Limb" duration="20.0">
+        		  <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        		  <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
 
-				<StatusEffect tags="medical" type="OnFailure" target="Limb, This" duration="24.0">
-					<Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
-					<Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        		  <ReduceAffliction identifier="bleeding" amount="0.75" />
+        		  <ReduceAffliction identifier="lacerations" amount="0.75" />
+        		  <ReduceAffliction identifier="bitewounds" amount="0.75" />
+        		  <ReduceAffliction type="burn" amount="1" />
+        		</StatusEffect>
+			
+				<!-- on failure -->
+        		<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="10.0">
+        		  <ReduceAffliction identifier="lacerations" amount="0.75" />
+        		  <ReduceAffliction identifier="bitewounds" amount="0.75" />
+        		  <ReduceAffliction type="burn" amount="1" />
+        		</StatusEffect>
+			
+        		<StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="10.0">
+        		  <Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        		  <Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
 
-					<ReduceAffliction identifier="bleeding" amount="0.75" />
-					<ReduceAffliction identifier="lacerations" amount="0.5" />
-					<ReduceAffliction identifier="bitewounds" amount="0.5" />
-					<ReduceAffliction type="burn" amount="0.5" />
-				</StatusEffect>
-
-				<!-- Remove the item when fully used -->
-				<StatusEffect type="OnBroken" target="This">
-					<Remove />
-				</StatusEffect>
+        		  <ReduceAffliction identifier="bleeding" amount="1" />
+        		  <ReduceAffliction identifier="lacerations" amount="0.75" />
+        		  <ReduceAffliction identifier="bitewounds" amount="0.75" />
+        		  <ReduceAffliction type="burn" amount="1" />
+        		</StatusEffect>
+			
+        		<!-- Remove the item when fully used -->
+        		<StatusEffect type="OnBroken" target="This">
+        		  <Remove />
+        		</StatusEffect>
 
 			</MeleeWeapon>
 
@@ -334,35 +354,55 @@
 				reload="1.0" 
 				msg="ItemMsgPickUpSelect">
 
-				<RequiredSkill identifier="medical" level="22"/>
+        		<RequiredSkill identifier="medical" level="80"/>
 
-				<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
-				<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+        		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+        		<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
 
-				<StatusEffect tags="medical" type="OnSuccess" target="This, Limb" duration="12">
-					<Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-					<Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
-
-					<ReduceAffliction identifier="bleeding" amount="4" />
-					<ReduceAffliction identifier="lacerations" amount="3" />
-					<ReduceAffliction identifier="bitewounds" amount="3" />
-					<ReduceAffliction type="burn" amount="3" />
+				<!-- always -->
+        		<StatusEffect type="OnUse" target="UseTarget" duration="1">
+					<Affliction identifier="bandaged" amount="61"/> <!--61 so that the target will reach 60 at the end of the status effect-->
 				</StatusEffect>
+			
+				<!-- on success -->
+        		<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="20.0">
+        			<ReduceAffliction identifier="bleeding" amount="0.375" />
+        			<ReduceAffliction identifier="lacerations" amount="1.5" />
+        			<ReduceAffliction identifier="bitewounds" amount="1.5" />
+        			<ReduceAffliction type="burn" amount="1.5" />
+        		</StatusEffect>
+			
+        		<StatusEffect tags="medical" type="OnSuccess" target="This, Limb" duration="20.0">
+        			<Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        			<Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
 
-				<StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="12">
-					<Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-					<Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        			<ReduceAffliction identifier="bleeding" amount="0.375" />
+        			<ReduceAffliction identifier="lacerations" amount="1.5" />
+        			<ReduceAffliction identifier="bitewounds" amount="1.5" />
+        			<ReduceAffliction type="burn" amount="1.5" />
+        		</StatusEffect>
+			
+				<!-- on failure -->
+        		<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="10.0">
+        			<ReduceAffliction identifier="bleeding" amount="0.375" />
+        			<ReduceAffliction identifier="lacerations" amount="1.5" />
+        			<ReduceAffliction identifier="bitewounds" amount="1.5" />
+        			<ReduceAffliction type="burn" amount="1.5" />
+        		</StatusEffect>
+			
+        		<StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="10.0">
+        			<Sound file="Content/Items/Medical/Bandage1.ogg" type="OnUse" range="500" />
+        			<Sound file="Content/Items/Medical/Bandage2.ogg" type="OnUse" range="500" />
 
-					<ReduceAffliction identifier="bleeding" amount="2" />
-					<ReduceAffliction identifier="lacerations" amount="1.5" />
-					<ReduceAffliction identifier="bitewounds" amount="1.5" />
-					<ReduceAffliction type="burn" amount="1.5" />
-				</StatusEffect>
-
-				<!-- Remove the item when fully used -->
-				<StatusEffect type="OnBroken" target="This">
-					<Remove />
-				</StatusEffect>
+        			<ReduceAffliction identifier="bleeding" amount="0.375" />
+        			<ReduceAffliction identifier="lacerations" amount="1.5" />
+        			<ReduceAffliction identifier="bitewounds" amount="1.5" />
+        			<ReduceAffliction type="burn" amount="1.5" />
+        		</StatusEffect>
+        		<!-- Remove the item when fully used -->
+        		<StatusEffect type="OnBroken" target="This">
+        			<Remove />
+        		</StatusEffect>
 				
 			</MeleeWeapon>
 
@@ -390,39 +430,33 @@
 				reload="1.0" 
 				msg="ItemMsgPickUpSelect">
 
-				<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
-				<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+        		<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+        		<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
 
-				<RequiredSkill identifier="medical" level="55" />
+        		<RequiredSkill identifier="medical" level="80" />
 
-				<StatusEffect tags="medical" type="OnSuccess" target="This, Limb" duration="5.0">
-					<Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        		<StatusEffect tags="medical" type="OnSuccess" target="This, UseTarget" duration="20.0">
+        		  <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+				  
+        		  <ReduceAffliction identifier="bleeding" amount="10" />
+        		  <ReduceAffliction identifier="lacerations" amount="1" />
+        		  <ReduceAffliction identifier="bitewounds" amount="1" />
+				  <Affliction identifier="bloodclot" amount="10"/>
+        		</StatusEffect>
 
-					<ReduceAffliction identifier="bleeding" amount="15" />
-					<ReduceAffliction identifier="lacerations" amount="15" />
-					<ReduceAffliction identifier="bitewounds" amount="15" />
-					<ReduceAffliction type="burn" amount="15" />
-				</StatusEffect>
+        		<StatusEffect tags="medical" type="OnFailure" target="This, UseTarget" duration="10.0">
+        		  <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
 
-				<StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="5.0">
-					<Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        		  <ReduceAffliction identifier="bleeding" amount="10" />
+        		  <ReduceAffliction identifier="lacerations" amount="1.5" />
+        		  <ReduceAffliction identifier="bitewounds" amount="1.5" />
+				  <Affliction identifier="bloodclot" amount="10"/>
+        		</StatusEffect>
 
-					<ReduceAffliction identifier="bleeding" amount="10" />
-					<ReduceAffliction identifier="lacerations" amount="10" />
-					<ReduceAffliction identifier="bitewounds" amount="10" />
-					<ReduceAffliction type="burn" amount="10" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="10.0">
-					<Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
-
-					<Affliction identifier="organdamage" amount="1.25" />
-				</StatusEffect>
-
-				<!-- Remove the item when fully used -->
-				<StatusEffect type="OnBroken" target="This">
-					<Remove />
-				</StatusEffect>
+        		<!-- Remove the item when fully used -->
+        		<StatusEffect type="OnBroken" target="This">
+        		  <Remove />
+        		</StatusEffect>
 
 			</MeleeWeapon>
 
@@ -1187,73 +1221,57 @@
 
 		</Item>
 
-    <!--++++++++++++++++++++++++++++++++++++-->
+		<!--++++++++++++++++++++++++++++++++++++-->
 
-    	<pomegrenadeextract name="" identifier="pomegrenadeextract" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+			<pomegrenadeextract name="" identifier="pomegrenadeextract" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
-    		<InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,384,64,64" origin="0.5,0.5" />
-    		<Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="228,379,37,69" depth="0.6" origin="0.5,0.5" />
+				<InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,384,64,64" origin="0.5,0.5" />
+				<Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="228,379,37,69" depth="0.6" origin="0.5,0.5" />
 
-    		<Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
-    		<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+				<Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+				<MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
 
-    			<RequiredSkill identifier="medical" level="25" />
-
-    			<StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
-    			<StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
-
-    			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="60">
-    				<ReduceAffliction type="damage" amount="0.25" />
-    				<ReduceAffliction type="burn" amount="0.25" />
-    				<Affliction identifier="OxygenLow" strength="3.25"/>
-    			</StatusEffect>
+        			<RequiredSkill identifier="medical" level="10" />
+        			<StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true" />
+							
+					<!--always-->
+        			<StatusEffect type="OnUse" target="UseTarget">
+        			  <Conditional entitytype="eq Character" />
+        			  <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        			</StatusEffect>
 				
-    			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="60">
-    				<ReduceAffliction type="damage" amount="0.2" />
-    				<ReduceAffliction type="burn" amount="0.2" />
-    				<Affliction identifier="OxygenLow" strength="3.25"/>
-    			</StatusEffect>
+					<!--on success-->
+        			<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="20">
+        			  <ReduceAffliction type="damage" amount="1" />
+        			  <ReduceAffliction type="burn" amount="1" />
+        			  <Affliction identifier="OxygenLow" strength="2" />
+        			  <Affliction identifier="pomegrenadeoverdose" strength="4" /> <!--60, plus 1/s to nullify natural expiration-->
+        			</StatusEffect>
+				
+					<!--on failure-->
+        			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="10">
+        			  <ReduceAffliction type="damage" amount="1" />
+        			  <ReduceAffliction type="burn" amount="1" />
+        			  <Affliction identifier="OxygenLow" strength="4" />
+        			  <Affliction identifier="pomegrenadeoverdose" strength="7" /> <!--60, plus 1/s to nullify natural expiration-->
+        			</StatusEffect>
+				
+        			<StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
+        			  <Affliction identifier="stun" amount="0.1" />
+        			</StatusEffect>
+				
+        			<!-- Remove the item when fully used -->
+        			<StatusEffect type="OnBroken" target="This">
+        			  <Remove />
+        			</StatusEffect>
 
-    			<StatusEffect type="OnSuccess" target="UseTarget" duration="60" CheckConditionalAlways="True">
-    				<Conditional oxygenlow="lte 75"/>
+				</MeleeWeapon>
 
-    				<Affliction identifier="oxygenlow" strength="2.75"/>
-    			</StatusEffect>
+				<Projectile characterusable="false" launchimpulse="18.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
 
-    			<StatusEffect type="OnFailure" target="UseTarget" duration="60" CheckConditionalAlways="True">
-    				<Conditional oxygenlow="lt 75"/>
+				<SkillRequirementHint identifier="medical" level="25" />
 
-    				<Affliction identifier="oxygenlow" strength="2.75"/>
-    			</StatusEffect>
-
-    			<StatusEffect type="OnSuccess" target="UseTarget">
-    				<Conditional entitytype="eq Character"/>
-
-    				<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-    			</StatusEffect>
-
-    			<StatusEffect type="OnFailure" target="UseTarget">
-    				<Conditional entitytype="eq Character"/>
-
-    				<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-    			</StatusEffect>
-
-    			<StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
-    				<Affliction identifier="stun" amount="0.1" />
-    			</StatusEffect>
-
-    			<!-- Remove the item when fully used -->
-    			<StatusEffect type="OnBroken" target="This">
-    				<Remove />
-    			</StatusEffect>
-
-    		</MeleeWeapon>
-
-    		<Projectile characterusable="false" launchimpulse="18.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
-
-    		<SkillRequirementHint identifier="medical" level="25" />
-
-    	</pomegrenadeextract>
+			</pomegrenadeextract>
 		
 	</Items>
 	

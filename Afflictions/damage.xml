@@ -14,7 +14,7 @@
 		karmachangeonapplied="-100" 
 		maxstrength="40">
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="10" 
 			minvitalitydecrease="0" maxvitalitydecrease="0" 
 			strengthchange="-1" 
@@ -24,14 +24,14 @@
 			minfacetint="0,0,0,0" maxfacetint="0,25,0,25" 
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
 
-      <StatusEffect target="Character">
-        <Conditional HasStatusTag="!equals cbrnsuit" />
-        <Affliction identifier="organdamage" amount="2" />
-        <Affliction identifier="scp_hexgasdamage" amount="6" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character">
+				<Conditional HasStatusTag="!equals cbrnsuit" />
+				<Affliction identifier="organdamage" amount="2" />
+				<Affliction identifier="scp_hexgasdamage" amount="6" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="10" maxstrength="40" 
 			minvitalitydecrease="0" maxvitalitydecrease="0" 
 			strengthchange="-2" 
@@ -41,15 +41,15 @@
 			minfacetint="0,0,0,0" maxfacetint="0,25,0,25" 
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
 
-      <StatusEffect target="Character">
-        <Conditional HasStatusTag="!equals cbrnsuit" />
-        <Affliction identifier="organdamage" amount="2" />
-        <Affliction identifier="scp_vomitingblood" amount="8" />
-        <Affliction identifier="paralysis" amount="0.1" />
-        <Affliction identifier="scp_hexgasdamage" amount="12" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
+			<StatusEffect target="Character">
+				<Conditional HasStatusTag="!equals cbrnsuit" />
+				<Affliction identifier="organdamage" amount="2" />
+				<Affliction identifier="scp_vomitingblood" amount="8" />
+				<Affliction identifier="paralysis" amount="0.1" />
+				<Affliction identifier="scp_hexgasdamage" amount="12" />
+			</StatusEffect>
+		</Effect>
+	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
@@ -63,48 +63,49 @@
 		karmachangeonapplied="-100"
 		maxstrength="200">
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="15" 
 			minscreenblur="0" maxscreenblur="0.3" 
 			minvitalitydecrease="0" maxvitalitydecrease="30" 
 			screeneffectfluctuationfrequency="1">
 
-      <StatusEffect target="Character" interval="1">
-        <Affliction identifier="scp_vomitingblood" amount="300" />
-        <Affliction identifier="organdamage" amount="1" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" interval="1">
+				<Affliction identifier="scp_vomitingblood" amount="300" />
+				<Affliction identifier="organdamage" amount="1" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect
+		<Effect
 			minstrength="15" maxstrength="30" 
 			minvitalitydecrease="30" maxvitalitydecrease="60" 
 			minscreenblur="0.3" maxscreenblur="0.6" 
 			screeneffectfluctuationfrequency="0.5">
 
-      <StatusEffect target="Character" interval="1">
-        <Affliction identifier="scp_vomitingblood" amount="300" />
-        <Affliction identifier="organdamage" amount="2" />
-        <Affliction identifier="paralysis" amount="75" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" interval="1">
+				<Affliction identifier="scp_vomitingblood" amount="300" />
+				<Affliction identifier="organdamage" amount="2" />
+				<Affliction identifier="paralysis" amount="75" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="30" maxstrength="200" 
 			minvitalitydecrease="60" maxvitalitydecrease="300" 
 			minscreenblur="0.6" maxscreenblur="0.9" 
 			screeneffectfluctuationfrequency="0.33">
 			
-      <StatusEffect target="Character" interval="1">
-        <Affliction identifier="scp_vomitingblood" amount="300" />
-        <Affliction identifier="organdamage" amount="4" />
-        <Affliction identifier="paralysis" amount="125" />
-      </StatusEffect>
-    </Effect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
-  </Affliction>
+			<StatusEffect target="Character" interval="1">
+				<Affliction identifier="scp_vomitingblood" amount="300" />
+				<Affliction identifier="organdamage" amount="4" />
+				<Affliction identifier="paralysis" amount="125" />
+			</StatusEffect>
+		</Effect>
+		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
+	</Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
 
+<!-- fucking psi bullshit
 	<Affliction 
 		identifier="scp_psidamage" 
 		description="" 
@@ -116,11 +117,11 @@
 		karmachangeonapplied="-100" 
 		maxstrength="200">
 		
-    <Description textidentifier="descscppsimin" minstrength="0" maxstrength="50" />
-    <Description textidentifier="descscppsimod" minstrength="50" maxstrength="100" />
-    <Description textidentifier="descscppsisev" minstrength="100" maxstrength="200" />
+		<Description textidentifier="descscppsimin" minstrength="0" maxstrength="50" />
+		<Description textidentifier="descscppsimod" minstrength="50" maxstrength="100" />
+		<Description textidentifier="descscppsisev" minstrength="100" maxstrength="200" />
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="50" 
 			minvitalitydecrease="0" maxvitalitydecrease="25"
 			dialogflag="psimin" 
@@ -131,16 +132,16 @@
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.15"
 			screeneffectfluctuationfrequency="0.1" >
 			
-      <StatusEffect target="Character" interval="2">
-        <Affliction identifier="nausea" amount="100" probability="0.05" />
-        <Affliction identifier="psychosis" amount="3" />
-        <Affliction identifier="stun" amount="2" probability="0.05" />
-        <Affliction identifier="scp_psidamagechronic" amount="20" probability="0.3" />
-        <Affliction identifier="scp_psidamagechronic" amount="10" probability="0.1" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" interval="2">
+				<Affliction identifier="nausea" amount="100" probability="0.05" />
+				<Affliction identifier="psychosis" amount="3" />
+				<Affliction identifier="stun" amount="2" probability="0.05" />
+				<Affliction identifier="scp_psidamagechronic" amount="20" probability="0.3" />
+				<Affliction identifier="scp_psidamagechronic" amount="10" probability="0.1" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="50" maxstrength="100" 
 			minvitalitydecrease="25" maxvitalitydecrease="50"
 			dialogflag="psimid" 
@@ -150,25 +151,25 @@
 			minafflictionoverlayalphamultiplier="0.15" maxafflictionoverlayalphamultiplier="0.5"
 			screeneffectfluctuationfrequency="1" >
 
-      <StatusEffect target="Character" interval="1">
-        <Affliction identifier="nausea" amount="300" probability="0.2" />
-        <Affliction identifier="psychosis" amount="3" />
-        <Affliction identifier="scp_ae035scare" amount="2000" probability="0.005" />
-        <Affliction identifier="scp_ae035tragscare" amount="2000" probability="0.005" />
-        <Affliction identifier="stun" amount="3" probability="0.2" />
-        <Affliction identifier="stun" amount="5" probability="0.25" />
-        <Affliction identifier="scp_psidamagechronic" amount="40" probability="0.4" />
-        <Affliction identifier="scp_psidamagechronic" amount="20" probability="0.2" />
-      </StatusEffect>
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_psidamage="gte 75" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" interval="1">
+				<Affliction identifier="nausea" amount="300" probability="0.2" />
+				<Affliction identifier="psychosis" amount="3" />
+				<Affliction identifier="scp_ae035scare" amount="2000" probability="0.005" />
+				<Affliction identifier="scp_ae035tragscare" amount="2000" probability="0.005" />
+				<Affliction identifier="stun" amount="3" probability="0.2" />
+				<Affliction identifier="stun" amount="5" probability="0.25" />
+				<Affliction identifier="scp_psidamagechronic" amount="40" probability="0.4" />
+				<Affliction identifier="scp_psidamagechronic" amount="20" probability="0.2" />
+			</StatusEffect>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_psidamage="gte 75" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/Medical/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="100" maxstrength="200" 
 			minvitalitydecrease="50" maxvitalitydecrease="250"
 			dialogflag="psimax" 
@@ -179,81 +180,83 @@
 			minafflictionoverlayalphamultiplier="0.5" maxafflictionoverlayalphamultiplier="0.95"
 			screeneffectfluctuationfrequency="2" >
 
-      <StatusEffect target="Character" interval="1">
-        <Affliction identifier="nausea" amount="300" />
-        <Affliction identifier="psychosis" amount="4" />
-        <Affliction identifier="paralysis" amount="1" probability="0.05" />
-        <Affliction identifier="scp_ae035scare" amount="2000" probability="0.005" />
-        <Affliction identifier="scp_ae035tragscare" amount="2000" probability="0.005" />
-        <Affliction identifier="stun" amount="5" probability="0.5" />
-        <Affliction identifier="stun" amount="10" probability="0.35" />
-        <Affliction identifier="scp_psidamagechronic" amount="65" probability="0.65" />
-        <Affliction identifier="scp_psidamagechronic" amount="35" probability="0.3" />
-      </StatusEffect>
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_psidamage="gte 100" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" interval="1">
+				<Affliction identifier="nausea" amount="300" />
+				<Affliction identifier="psychosis" amount="4" />
+				<Affliction identifier="paralysis" amount="1" probability="0.05" />
+				<Affliction identifier="scp_ae035scare" amount="2000" probability="0.005" />
+				<Affliction identifier="scp_ae035tragscare" amount="2000" probability="0.005" />
+				<Affliction identifier="stun" amount="5" probability="0.5" />
+				<Affliction identifier="stun" amount="10" probability="0.35" />
+				<Affliction identifier="scp_psidamagechronic" amount="65" probability="0.65" />
+				<Affliction identifier="scp_psidamagechronic" amount="35" probability="0.3" />
+			</StatusEffect>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_psidamage="gte 100" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/Medical/psiringing.ogg" volume="0.3" dontmuffle="True" loop="true" frequencymultiplier="0.8" />
+			</StatusEffect>
+		</Effect>
 
-    <PeriodicEffect 
+		<PeriodicEffect 
 			mininterval="5" maxinterval="10">
 
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_psidamage="gte 25" />
-        <Conditional scp_psidamage="lt 65" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Sounds/strangenoise1.ogg" volume="1" selectionmode="Random" dontmuffle="True" frequencymultiplier="0.75" />
-        <sound file="%ModDir%/Sounds/strangenoise2.ogg" volume="1.1" dontmuffle="True" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.6" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.8" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" />
-        <sound file="Content/Sounds/Hull/Hull5.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="Content/Sounds/Hull/Hull3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="%ModDir%/Medical/Sounds/wastingdisease3.ogg" volume="2.5" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_emp.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle1.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle2.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-      </StatusEffect>
-    </PeriodicEffect>
-    <PeriodicEffect 
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_psidamage="gte 25" />
+				<Conditional scp_psidamage="lt 65" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/strangenoise1.ogg" volume="1" selectionmode="Random" dontmuffle="True" frequencymultiplier="0.75" />
+				<sound file="%ModDir%/Sounds/strangenoise2.ogg" volume="1.1" dontmuffle="True" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.6" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.8" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" />
+				<sound file="Content/Sounds/Hull/Hull5.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="Content/Sounds/Hull/Hull3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="%ModDir%/Medical/Sounds/wastingdisease3.ogg" volume="2.5" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_emp.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle1.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle2.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+			</StatusEffect>
+		</PeriodicEffect>
+		<PeriodicEffect 
 			mininterval="0" maxinterval="2">
 
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_psidamage="gte 65" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Sounds/strangenoise1.ogg" volume="1.5" selectionmode="Random" dontmuffle="True" frequencymultiplier="0.75" />
-        <sound file="%ModDir%/Sounds/strangenoise2.ogg" volume="1.5" dontmuffle="True" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.6" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.8" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" />
-        <sound file="Content/Sounds/Hull/Hull5.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="Content/Sounds/Hull/Hull3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="%ModDir%/Medical/Sounds/wastingdisease3.ogg" volume="2.5" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_emp.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle1.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle2.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-      </StatusEffect>
-    </PeriodicEffect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1040,0,128,128" color="0,200,0,255" origin="0,0" />
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/psiblindness.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
-  </Affliction>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_psidamage="gte 65" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/strangenoise1.ogg" volume="1.5" selectionmode="Random" dontmuffle="True" frequencymultiplier="0.75" />
+				<sound file="%ModDir%/Sounds/strangenoise2.ogg" volume="1.5" dontmuffle="True" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.6" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.8" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" />
+				<sound file="Content/Sounds/Hull/Hull5.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="Content/Sounds/Hull/Hull3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="%ModDir%/Medical/Sounds/wastingdisease3.ogg" volume="2.5" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_emp.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle1.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle2.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+			</StatusEffect>
+		</PeriodicEffect>
+		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1040,0,128,128" color="0,200,0,255" origin="0,0" />
+		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psiblindness.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+	</Affliction>
+-->
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-  <Affliction 
+<!--
+	<Affliction 
 		identifier="scp_psidamagechronic" 
 		description="" 
 		type="psiradiationchronic" 
@@ -264,11 +267,11 @@
 		karmachangeonapplied="-100"
 		maxstrength="200" >
 
-    <Description textidentifier="descscppsichronmin" minstrength="0" maxstrength="50" />
-    <Description textidentifier="descscppsichronmod" minstrength="50" maxstrength="100" />
-    <Description textidentifier="descscppsichronsev" minstrength="100" maxstrength="200" />
+		<Description textidentifier="descscppsichronmin" minstrength="0" maxstrength="50" />
+		<Description textidentifier="descscppsichronmod" minstrength="50" maxstrength="100" />
+		<Description textidentifier="descscppsichronsev" minstrength="100" maxstrength="200" />
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="50" 
 			minvitalitydecrease="0" maxvitalitydecrease="10" 
 			strengthchange="-0.02"
@@ -277,14 +280,14 @@
 			minchromaticaberration="0" maxchromaticaberration="0.5" 
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.2">
 			
-      <StatusEffect target="Character" interval="8">
-        <Affliction identifier="psychosis" amount="3" />
-        <Affliction identifier="stun" amount="2" probability="0.1" />
-        <Affliction identifier="stun" amount="10" probability="0.1" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" interval="8">
+				<Affliction identifier="psychosis" amount="3" />
+				<Affliction identifier="stun" amount="2" probability="0.1" />
+				<Affliction identifier="stun" amount="10" probability="0.1" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="50" maxstrength="100" 
 			minvitalitydecrease="10" maxvitalitydecrease="20" 
 			minskillmultiplier="0.8" maxskillmultiplier="0.6" 
@@ -293,17 +296,17 @@
 			minafflictionoverlayalphamultiplier="0.2" maxafflictionoverlayalphamultiplier="0.6"
 			screeneffectfluctuationfrequency="0.2" >
 
-      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
-      <StatusEffect target="Character" interval="4">
-        <Affliction identifier="psychosis" amount="3" />
-        <Affliction identifier="organdamage" amount="15" probability="0.1" />
-        <Affliction identifier="stun" amount="3" probability="0.1" />
-        <Affliction identifier="stun" amount="5" probability="0.1" />
-        <Affliction identifier="stun" amount="10" probability="0.1" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
+			<StatusEffect target="Character" interval="4">
+				<Affliction identifier="psychosis" amount="3" />
+				<Affliction identifier="organdamage" amount="15" probability="0.1" />
+				<Affliction identifier="stun" amount="3" probability="0.1" />
+				<Affliction identifier="stun" amount="5" probability="0.1" />
+				<Affliction identifier="stun" amount="10" probability="0.1" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="100" maxstrength="200" 
 			minvitalitydecrease="20" maxvitalitydecrease="50" 
 			strengthchange="0"
@@ -313,72 +316,72 @@
 			minafflictionoverlayalphamultiplier="0.6" maxafflictionoverlayalphamultiplier="0.9"
 			screeneffectfluctuationfrequency="0.3" >
 
-      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" />
-      <StatusEffect target="Character" interval="1">
-        <Affliction identifier="psychosis" amount="4" />
-        <Affliction identifier="organdamage" amount="30" probability="0.25" />
-        <Affliction identifier="stun" amount="5" probability="0.25" />
-        <Affliction identifier="stun" amount="10" probability="0.2" />
-        <Affliction identifier="stun" amount="30" probability="0.1" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" />
+			<StatusEffect target="Character" interval="1">
+				<Affliction identifier="psychosis" amount="4" />
+				<Affliction identifier="organdamage" amount="30" probability="0.25" />
+				<Affliction identifier="stun" amount="5" probability="0.25" />
+				<Affliction identifier="stun" amount="10" probability="0.2" />
+				<Affliction identifier="stun" amount="30" probability="0.1" />
+			</StatusEffect>
+		</Effect>
 
-    <PeriodicEffect 
+		<PeriodicEffect 
 			mininterval="15" maxinterval="25">
 
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_psidamagechronic="gte 25" />
-        <Conditional scp_psidamagechronic="lt 65" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Sounds/strangenoise1.ogg" volume="1" selectionmode="Random" dontmuffle="True" frequencymultiplier="0.75" />
-        <sound file="%ModDir%/Sounds/strangenoise2.ogg" volume="1.1" dontmuffle="True" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.6" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.8" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" />
-        <sound file="Content/Sounds/Hull/Hull5.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="Content/Sounds/Hull/Hull3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="%ModDir%/Medical/Sounds/wastingdisease3.ogg" volume="2.5" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_emp.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle1.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle2.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
-      </StatusEffect>
-    </PeriodicEffect>
-    <PeriodicEffect 
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_psidamagechronic="gte 25" />
+				<Conditional scp_psidamagechronic="lt 65" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/strangenoise1.ogg" volume="1" selectionmode="Random" dontmuffle="True" frequencymultiplier="0.75" />
+				<sound file="%ModDir%/Sounds/strangenoise2.ogg" volume="1.1" dontmuffle="True" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.6" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.8" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="0.5" dontmuffle="True" />
+				<sound file="Content/Sounds/Hull/Hull5.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="Content/Sounds/Hull/Hull3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="%ModDir%/Medical/Sounds/wastingdisease3.ogg" volume="2.5" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_emp.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle1.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle2.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle3.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="0.5" dontmuffle="True" frequencymultiplier="0.65" />
+			</StatusEffect>
+		</PeriodicEffect>
+		<PeriodicEffect 
 			mininterval="5" maxinterval="8">
 
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_psidamagechronic="gte 65" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Sounds/strangenoise1.ogg" volume="1.5" selectionmode="Random" dontmuffle="True" frequencymultiplier="0.75" />
-        <sound file="%ModDir%/Sounds/strangenoise2.ogg" volume="1.5" dontmuffle="True" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.6" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.8" />
-        <sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" />
-        <sound file="Content/Sounds/Hull/Hull5.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="Content/Sounds/Hull/Hull3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="%ModDir%/Medical/Sounds/wastingdisease3.ogg" volume="2.5" dontmuffle="True" frequencymultiplier="0.5" />
-        <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_emp.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle1.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle2.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-        <sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
-      </StatusEffect>
-    </PeriodicEffect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1299,0,128,128" color="0,200,0,255" origin="0,0" />
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/psiblindness2.png" sourcerect="0,0,1024,680" colormultiplier="0,0,0,255" origin="0,0" />
-  </Affliction>
-
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_psidamagechronic="gte 65" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/strangenoise1.ogg" volume="1.5" selectionmode="Random" dontmuffle="True" frequencymultiplier="0.75" />
+				<sound file="%ModDir%/Sounds/strangenoise2.ogg" volume="1.5" dontmuffle="True" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.6" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.8" />
+				<sound file="%ModDir%/Sounds/strangenoise3.ogg" volume="1" dontmuffle="True" />
+				<sound file="Content/Sounds/Hull/Hull5.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="Content/Sounds/Hull/Hull3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="%ModDir%/Medical/Sounds/wastingdisease3.ogg" volume="2.5" dontmuffle="True" frequencymultiplier="0.5" />
+				<sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack1.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Bonethresher/TIGERTRESHERb_attack2.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_emp.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle1.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle2.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle3.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+				<sound file="Content/Characters/Jove/JOVE_idle4.ogg" volume="1" dontmuffle="True" frequencymultiplier="0.65" />
+			</StatusEffect>
+		</PeriodicEffect>
+		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1299,0,128,128" color="0,200,0,255" origin="0,0" />
+		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psiblindness2.png" sourcerect="0,0,1024,680" colormultiplier="0,0,0,255" origin="0,0" />
+	</Affliction>
+-->
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-  <Affliction 
+	<Affliction 
 		name="" 
 		identifier="scp_firelatexburn" 
 		description="" 
@@ -390,18 +393,19 @@
 		burnoverlayalpha="1" 
 		healcostmultiplier="5">
 
-    <Description textidentifier="scpfirelatexburnmin" minstrength="0" maxstrength="30" />
-    <Description textidentifier="scpfirelatexburnmod" minstrength="30" maxstrength="60" />
-    <Description textidentifier="scpfirelatexburnsev" minstrength="60" maxstrength="200" />
+		<Description textidentifier="scpfirelatexburnmin" minstrength="0" maxstrength="30" />
+		<Description textidentifier="scpfirelatexburnmod" minstrength="30" maxstrength="60" />
+		<Description textidentifier="scpfirelatexburnsev" minstrength="60" maxstrength="200" />
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="200" 
 			multiplybymaxvitality="true" 
 			invitalitydecrease="0" maxvitalitydecrease="3">
 		</Effect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="1170,0,128,128" color="195,104,60,255" origin="0,0" />
-  </Affliction>
+		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="1170,0,128,128" color="195,104,60,255" origin="0,0" />
+	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
+
 
 </Afflictions>

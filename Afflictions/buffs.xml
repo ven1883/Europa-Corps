@@ -37,12 +37,12 @@
 				<Affliction identifier="pain" amount="-18" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="256,0,128,128" color="70,199,66,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="256,0,128,128" color="70,199,66,255" origin="0,0" />
 	</Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-  <Affliction
+	<Affliction
 		name="" 
 		identifier="scp_psiresistance" 
 		description=""
@@ -50,13 +50,64 @@
 		limbspecific="false" indicatorlimb="Head" 
 		maxstrength="100">
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="100" 
 			strengthchange="-0.2" 
 			resistancefor="psiradiation" 
 			minresistance="0" maxresistance="0.6">
 		</Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
-  </Affliction>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+	</Affliction>
 
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction
+		name="" 
+		identifier="poison_airborne_immunity" 
+		description=""
+		type="resistance" isbuff="true" 
+		limbspecific="false" indicatorlimb="Head" 
+		maxstrength="1"
+		showiconthreshold="9999" showinhealthscannerthreshold="9999">
+
+		<Effect 
+			minstrength="0" maxstrength="1" 
+			strengthchange="-1" 
+			resistancefor="poison_airborne" 
+			minresistance="1" maxresistance="1">
+		</Effect>
+		<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+	</Affliction>
+
+	<Affliction 
+		name="bandaged" 
+		identifier="bandaged" 
+		description="bandagé." 
+		type="resistance" 
+		isbuff="true" 
+		causeofdeathdescription="" selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		maxstrength="300">
+
+		<Effect 
+			minstrength="0" maxstrength="10" strengthchange="-1" 
+			resistancefor="bloodloss" 
+			minresistance="0" maxresistance="1.0">
+  			<StatusEffect target="Character">
+				<ReduceAffliction identifier="bleeding" amount="0.5"/>
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="10" maxstrength="300" strengthchange="-1" 
+			resistancefor="bloodloss" 
+			minresistance="1.0" maxresistance="1.0">
+  			<StatusEffect target="Character">
+				<ReduceAffliction identifier="bleeding" amount="0.5"/>
+			</StatusEffect>
+		</Effect>
+
+    	<icon texture="%ModDir%/Afflictions/new_afflictions.png" sourcerect="128,384,128,128" color="215,252,104,255" origin="0,0" />
+  	</Affliction>
+	
 </Afflictions>

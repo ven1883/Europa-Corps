@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCSets>
+  <NPCSet Identifier="europacorpsbosses">
+
+    <!--Bandits: Denise-->
+    <npc identifier="denisemcneil_bandit_vetmud" job="securityofficer" moduleflags="none" behavior="Passive">
+      <Character speciesname="human" gender="female" headspriteid="7" hairindex="16" beardindex="0" moustacheindex="0" faceattachmentindex="11" skincolor="244,190,152,255" haircolor="58,58,60,255" facialhaircolor="58,58,60,255" personality="tough" startitemsgiven="false">
+        <job identifier="securityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+        <talents>
+          <talent identifier="sgt_stunimmune" />
+          <talent identifier="sgt_bulky" />
+          <talent identifier="swole" />
+        </talents>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" showpreview="false" />
+        <!--Armor-->
+        <Item identifier="vetmudraptorhelmet" equip="true" />
+        <Item identifier="vetmudraptorfullplate" equip="true" />
+        <Item identifier="sgt_banditclothes1" equip="true" />
+        <Item identifier="bandolier" equip="true">
+          <Item identifier="scp_12gmagbuck" amount="48" />
+          <Item identifier="scp_12gapslug" amount="48" />
+        </Item>
+        <!--Weapons-->
+        <Item identifier="scp_domique">
+          <Item identifier="scp_12gmagbuck" amount="8" />
+        </Item>
+        <Item identifier="sgt_sbracers" />
+        <!--Gear-->
+        <!--Meds-->
+        <Item identifier="deusizine" amount="8" />
+        <Item identifier="stypticpowder" amount="8" />
+        <Item identifier="antibleeding2" amount="8" />
+        <Item identifier="antibloodloss2" amount="4" />
+        <Item identifier="scp_painkillers" amount="1" />
+        <Item identifier="scp_armykit" amount="1" />
+      </ItemSet>
+    </npc>
+
+    <!--Bandits: Jacquline McNeil-->
+    <npc identifier="jacqulinemcneil_bandit_endworm" job="securityofficer" moduleflags="none" behavior="Passive">
+      <Character speciesname="human" gender="female" headspriteid="14" hairindex="10" beardindex="0" moustacheindex="0" faceattachmentindex="15" skincolor="200,165,131,255" haircolor="172,73,52,255" facialhaircolor="172,73,52,255" personality="tough" startitemsgiven="false">
+        <job identifier="securityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+        <talents>
+          <talent identifier="sgt_stunimmune" />
+          <talent identifier="sgt_bulky" />
+          <talent identifier="swole" />
+        </talents>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" showpreview="false" />
+        <!--Armor-->
+        <Item identifier="endwormhelmet" equip="true" />
+        <Item identifier="endwormfullplate" equip="true" />
+        <Item identifier="sgt_banditclothes1" equip="true" />
+        <Item identifier="bandolier" equip="true">
+          <Item identifier="scp_12gmagbuck" amount="48" />
+          <Item identifier="scp_12gapslug" amount="48" />
+        </Item>
+        <!--Weapons-->
+        <Item identifier="scp_domique">
+          <Item identifier="scp_12gmagbuck" amount="8" />
+        </Item>
+        <Item identifier="sgt_sbracers" equip="true" />
+        <!--Gear-->
+        <!--Meds-->
+        <Item identifier="deusizine" amount="8" />
+        <Item identifier="stypticpowder" amount="8" />
+        <Item identifier="antibleeding2" amount="8" />
+        <Item identifier="antibloodloss2" amount="4" />
+        <Item identifier="scp_painkillers" amount="1" />
+        <Item identifier="scp_armykit" amount="1" />
+      </ItemSet>
+    </npc>
+
+    <!--Renegades: Codi Ram-->
+    <npc identifier="codiram_renegade_infiltrator" job="securityofficer" moduleflags="none" behavior="Passive">
+      <Character speciesname="human" gender="male" headspriteid="3" hairindex="3" beardindex="1" moustacheindex="0" faceattachmentindex="15" skincolor="200,165,131,255" haircolor="187,169,129,255" facialhaircolor="187,169,129,255" personality="laid-back" startitemsgiven="false">
+        <job identifier="securityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+        <talents>
+          <talent identifier="sgt_stunimmune" />
+          <talent identifier="sgt_heavy" />
+          <talent identifier="firstaidtraining" />
+          <talent identifier="commando" />
+        </talents>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" showpreview="false" />
+        <!--Armor-->
+        <Item identifier="scp_yuihelmet" equip="true" />
+        <Item identifier="scp_yuirig" equip="true" />
+        <Item identifier="scp_specopsuniform" equip="true" />
+        <Item identifier="bandolier" equip="true">
+          <Item identifier="scp_ash12extmag" amount="6" />
+          <Item identifier="scp_ash12mag" amount="4" />
+        </Item>
+        <!--Weapons-->
+        <Item identifier="scp_kir">
+          <Item identifier="scp_ash12extmag" amount="1" />
+        </Item>
+        <!--Gear-->
+        <!--Meds-->
+        <Item identifier="deusizine" amount="8" />
+        <Item identifier="stypticpowder" amount="8" />
+        <Item identifier="antibleeding2" amount="8" />
+        <Item identifier="antibloodloss2" amount="4" />
+        <Item identifier="scp_painkillers" amount="1" />
+        <Item identifier="scp_armykit" amount="1" />
+      </ItemSet>
+    </npc>
+
+    <!--Coalition: Sergei Quill-->
+    <npc identifier="sergeiquill_coalie_blackopsmarksman" faction="coalition" job="securityofficer" moduleflags="none" behavior="Passive">
+      <Character speciesname="human" gender="male" headspriteid="2" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="200,165,131,255" haircolor="210,163,111,255" facialhaircolor="210,163,111,255" personality="professional" startitemsgiven="false">
+        <job identifier="securityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+        <talents>
+          <talent identifier="sgt_stunimmune" />
+          <talent identifier="sgt_light" />
+          <talent identifier="skedaddle" />
+          <talent identifier="crustyseaman" />
+        </talents>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" showpreview="false" />
+        <!--Armor-->
+        <Item identifier="sgt_blackopshelm" equip="true" />
+        <Item identifier="sgt_boarmorleg" equip="true" />
+        <Item identifier="sgt_combatrig" equip="true" />
+        <Item identifier="sgt_bobag" equip="true">
+          <Item identifier="sgt_bopmr">
+            <Item identifier="riflebullet" amount="5" />
+          </Item>
+          <Item identifier="riflebullet" amount="24" />
+        </Item>
+        <!--Weapons-->
+        <!--Gun wouldn't fucking spawn even if I put it here with equip so into the backpack it goes-->
+        <Item identifier="riflebullet" amount="30" />
+        <!--Gear-->
+        <!--Meds-->
+        <Item identifier="deusizine" amount="8" />
+        <Item identifier="stypticpowder" amount="8" />
+        <Item identifier="antibleeding2" amount="8" />
+        <Item identifier="antibloodloss2" amount="4" />
+        <Item identifier="scp_painkillers" amount="1" />
+        <Item identifier="scp_armykit" amount="1" />
+      </ItemSet>
+    </npc>
+
+    <!--Cultists: Practitioner Proctor-->
+    <npc identifier="practitionerproctor_cultist_kidnapper" job="securityofficer" moduleflags="none" behavior="Passive">
+      <Character speciesname="human" gender="female" headspriteid="3" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="255,255,255,255" haircolor="255,255,255,255" facialhaircolor="255,255,255,255" personality="crazy" startitemsgiven="false" salary="4076" experiencepoints="0" additionaltalentpoints="0" ragdoll="">
+        <job identifier="securityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+        <talents>
+          <talent identifier="sgt_stunimmune" />
+          <talent identifier="sgt_light" />
+          <talent identifier="skedaddle" />
+          <talent identifier="crustyseaman" />
+          <talent identifier="firemanscarry" />
+        </talents>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="scanheadset" equip="true" showpreview="false" />
+        <!--Armor-->
+        <Item identifier="scp_hardeneddivingmask" equip="true">
+          <Item Identifier="oxygenitetank" />
+        </Item>
+        <Item identifier="lynxexoskeletonsuit" equip="true">
+          <Item Identifier="infbatterycell" />
+        </Item>
+        <Item identifier="disciplerobes" equip="true" />
+        <Item identifier="toolbelt" equip="true">
+          <Item identifier="deusizine" amount="8" />
+          <Item identifier="stypticpowder" amount="8" />
+          <Item identifier="antibleeding2" amount="8" />
+          <Item identifier="antibloodloss2" amount="4" />
+          <Item identifier="scp_painkillers" amount="1" />
+          <Item identifier="scp_armykit" amount="1" />
+        </Item>
+        <!--Weapons-->
+        <Item identifier="sgt_raffica">
+          <Item identifier="sgt_10mmmagext" amount="1" />
+        </Item>
+        <Item identifier="sgt_10mmmagext" amount="8" />
+        <!--Gear-->
+        <Item identifier="smokegrenade" amount="8" />
+        <Item identifier="chloroform" amount="4" />
+        <Item identifier="handcuffs" amount="4" />
+        <!--Meds-->
+      </ItemSet>
+    </npc>
+
+  </NPCSet>
+</NPCSets>
