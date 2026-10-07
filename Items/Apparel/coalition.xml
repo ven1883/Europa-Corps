@@ -12,9 +12,9 @@
 
 		<Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
 
-			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourmedimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="armourmedimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="armourmedimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourmedimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="armourmedimpact" DamageParticle="impactfirearm" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="armourmedimpact" deflectprojectiles="true" />
 
 			<sprite name="Heavy Security Vest Wearable" texture="%ModDir%/Sprites/Items/Apparel/heavyarmor.png" limb="Torso" hidelimb="false" inheritscale="true" scale="1" inheritorigin="false" origin="0.5,0.565" inheritsourcerect="false" sourcerect="11,7,97,115" />
 			<sprite name="Heavy Security Vest Holster" texture="%ModDir%/Sprites/Items/Apparel/renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
@@ -54,13 +54,16 @@
 
 		<Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
 
-			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourmedimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourmedimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourmedimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourmedimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="armourmedimpact" DamageParticle="impactfirearm" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourmedimpact" deflectprojectiles="true" />
 
-			<SkillModifier skillidentifier="weapons" skillvalue="-10" />
-			<SkillModifier skillidentifier="mechanical" skillvalue="-15" />
-			<SkillModifier skillidentifier="electrical" skillvalue="-20" />
+    		<SkillModifier skillidentifier="weapons" skillvalue="-5" />
+    		<SkillModifier skillidentifier="mechanical" skillvalue="-15" />
+    		<SkillModifier skillidentifier="electrical" skillvalue="-20" />
+
+    		<StatValue stattype="WalkingSpeed" value="-0.075" />
+    		<StatValue stattype="SwimmingSpeed" value="-0.05" />
 
 			<sprite name="Heavy Rig Wearable" texture="%ModDir%/Sprites/Items/Apparel/heavyarmorrig.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Heavy Rig Holster" texture="renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
@@ -69,9 +72,6 @@
 			<sprite name="Heavy Rig Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyarmorrig.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Heavy Rig Left Kneepad" texture="%ModDir%/Sprites/Items/Apparel/heavyarmorrig.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Heavy Rig Right Kneepad" texture="%ModDir%/Sprites/Items/Apparel/heavyarmorrig.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
-
-			<StatValue stattype="WalkingSpeed" value="-0.075" />
-			<StatValue stattype="SwimmingSpeed" value="-0.05" />
 
 		</Wearable>
 
@@ -97,13 +97,16 @@
 
 		<Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
 
-			<damagemodifier afflictionidentifiers="lacerations,gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="lacerations,gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourheavyimpact" DamageParticle="impactfirearm" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bitewounds,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="armourheavyimpact" deflectprojectiles="true" />
 
-			<SkillModifier skillidentifier="weapons" skillvalue="-10" />
-			<SkillModifier skillidentifier="medical" skillvalue="-10" />
-			<SkillModifier skillidentifier="mechanical" skillvalue="-40" />
-			<SkillModifier skillidentifier="electrical" skillvalue="-40" />
+    		<SkillModifier skillidentifier="weapons" skillvalue="-10" />
+    		<SkillModifier skillidentifier="medical" skillvalue="-10" />
+    		<SkillModifier skillidentifier="mechanical" skillvalue="-40" />
+    		<SkillModifier skillidentifier="electrical" skillvalue="-40" />
+
+    		<StatValue stattype="WalkingSpeed" value="-0.1" />
+    		<StatValue stattype="SwimmingSpeed" value="-0.2" />
 
 			<sprite name="Special Rig Wearable" texture="%ModDir%/Sprites/Items/Apparel/specialrig.png" sound="footstep_armor_heavy" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" hideotherwearables="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Special Rig Right Protector" texture="%ModDir%/Sprites/Items/Apparel/specialrig.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
@@ -112,9 +115,6 @@
 			<sprite name="Special Rig Left Armpad" texture="%ModDir%/Sprites/Items/Apparel/specialrig.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Special Rig Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/specialrig.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Special Rig Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/specialrig.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
-
-			<StatValue stattype="WalkingSpeed" value="-0.1" />
-			<StatValue stattype="SwimmingSpeed" value="-0.2" />
 
 		</Wearable>
 
@@ -154,11 +154,11 @@
 
 		<Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
 
-			<damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.85" />
-			<damagemodifier afflictionidentifiers="blunttrauma,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.85" />
+    		<damagemodifier afflictionidentifiers="blunttrauma,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" DamageParticle="impactfirearm" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
 
 			<sprite name="Wearable" texture="%ModDir%/Sprites/Items/Apparel/protectrig.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Holster" texture="renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
@@ -193,10 +193,10 @@
 
 		<Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
 
-			<damagemodifier afflictionidentifiers="blunttrauma,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="blunttrauma,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourheavyimpact" DamageParticle="impactfirearm" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
 
 			<SkillModifier skillidentifier="weapons" skillvalue="15" />
 
@@ -235,12 +235,10 @@
 
 		<Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
 
-			<damagemodifier afflictionidentifiers="lacerations,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-
-			<SkillModifier skillidentifier="weapons" skillvalue="10" />
+    		<damagemodifier afflictionidentifiers="lacerations,blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+			
+    		<SkillModifier skillidentifier="weapons" skillvalue="10" />
 
 			<sprite name="scp_softvestwear" texture="%ModDir%/Sprites/Items/Apparel/softvest.png" limb="Torso" hidelimb="false" inheritscale="true" scale="0.69" inheritorigin="false" origin="0.4,0.5" inheritsourcerect="false" sourcerect="12,9,124,179" />
 
@@ -288,14 +286,14 @@
 
 		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect"
 		>
-			<damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage,bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="blunttrauma,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage,bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="armourheavyimpact" DamageParticle="impactfirearm" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="blunttrauma,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
 
-			<SkillModifier skillidentifier="weapons" skillvalue="-5" />
-			<SkillModifier skillidentifier="medical" skillvalue="-10" />
-			<SkillModifier skillidentifier="mechanical" skillvalue="-25" />
-			<SkillModifier skillidentifier="electrical" skillvalue="-25" />
+    		<SkillModifier skillidentifier="weapons" skillvalue="-5" />
+    		<SkillModifier skillidentifier="medical" skillvalue="-10" />
+    		<SkillModifier skillidentifier="mechanical" skillvalue="-25" />
+    		<SkillModifier skillidentifier="electrical" skillvalue="-25" />
 
 			<sprite name="Heavy Combat Helmet Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.8" hidewearablesoftype="hair" sourcerect="82,0,83,77" origin="0.59,0.47" />
 			
@@ -317,18 +315,18 @@
 
 				<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
 
-					<damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="armourmedimpact" deflectprojectiles="true" />
-					<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourmedimpact" deflectprojectiles="true" />
-					<damagemodifier afflictionidentifiers="blunttrauma,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="armourmedimpact" deflectprojectiles="true" />
-					<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
-					
-					<SkillModifier skillidentifier="mechanical" skillvalue="-5" />
-					<SkillModifier skillidentifier="electrical" skillvalue="-10" />
+    				<damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="armourmedimpact" DamageParticle="impactfirearm" deflectprojectiles="true" />
+    				<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourmedimpact" deflectprojectiles="true" />
+    				<damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="armourmedimpact" deflectprojectiles="true" />
+    				<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+
+    				<SkillModifier skillidentifier="mechanical" skillvalue="-5" />
+    				<SkillModifier skillidentifier="electrical" skillvalue="-10" />
 					
 					<sprite name="Combat Helmet Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.85" hidewearablesoftype="hair" sourcerect="1,1,69,72" origin="0.58,0.5" />
 					
 					<StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"></StatusEffect>
-			 
+
 				</Wearable>
 			
 		</Item>
@@ -345,10 +343,10 @@
 
 		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
 
-			<damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.35" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="lacerations,gunshotwound,explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" DamageParticle="impactfirearm" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
 
 			<SkillModifier skillidentifier="weapons" skillvalue="25" />
 			<SkillModifier skillidentifier="mechanical" skillvalue="-20" />
@@ -373,9 +371,9 @@
 
 		<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
 
-			<damagemodifier afflictionidentifiers="lacerations,gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="lacerations,gunshotwound,bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="armourheavyimpact" deflectprojectiles="true" />
 			<damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="armourmedimpact" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="armourmedimpact" deflectprojectiles="true" />
 			<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
 
 			<SkillModifier skillidentifier="weapons" skillvalue="5" />
@@ -426,17 +424,15 @@
 			<sprite name="Heavy Uniform Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyuniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Heavy Uniform Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyuniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 
-			<damagemodifier afflictionidentifiers="burn,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="explosiondamage,lacerations" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="explosiondamage,lacerations,bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="burn,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
 
-			<SkillModifier skillidentifier="weapons" skillvalue="-5" />
-			<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
-			<SkillModifier skillidentifier="electrical" skillvalue="-10" />
-
-			<StatValue stattype="WalkingSpeed" value="-0.05" />
-			<StatValue stattype="SwimmingSpeed" value="-0.05" />
+    		<SkillModifier skillidentifier="weapons" skillvalue="-5" />
+    		<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+    		<SkillModifier skillidentifier="electrical" skillvalue="-10" />
+			
+    		<StatValue stattype="WalkingSpeed" value="-0.05" />
+    		<StatValue stattype="SwimmingSpeed" value="-0.07" />
 
 		</Wearable>
 
@@ -468,16 +464,16 @@
 			<sprite name="Combat Medic Right Shoe" texture="combatmedic.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
 			<sprite name="Combat Medic Left Shoe" texture="combatmedic.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
 
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.8" />
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,scp_psidamage" damagemultiplier="0.75" />
+    		<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.8" />
+    		<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.75" />
+			
+    		<SkillModifier skillidentifier="medical" skillvalue="10" />
+    		<SkillModifier skillidentifier="weapons" skillvalue="5" />
+    		<SkillModifier skillidentifier="electrical" skillvalue="-10" />
+    		<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
 
-			<SkillModifier skillidentifier="medical" skillvalue="10" />
-			<SkillModifier skillidentifier="weapons" skillvalue="10" />
-			<SkillModifier skillidentifier="electrical" skillvalue="-10" />
-			<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
-
-			<StatValue stattype="WalkingSpeed" value="0.025" />
-			<StatValue stattype="SwimmingSpeed" value="0.025" />
+    		<StatValue stattype="WalkingSpeed" value="0.05" />
+    		<StatValue stattype="SwimmingSpeed" value="0.05" />
 
 		</Wearable>
 
@@ -516,8 +512,8 @@
 			<sprite name="Combat Medic Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/marauderuniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
 			<sprite name="Combat Medic Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/marauderuniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,786,256" origin="0.5,0.5" />
 
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.6" />
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.7" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.6" deflectprojectiles="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.7" deflectprojectiles="true" />
 
 			<SkillModifier skillidentifier="weapons" skillvalue="10" />
 
@@ -574,7 +570,7 @@
 			<damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.7" />
 			<damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
 			<damagemodifier afflictionidentifiers="explosiondamage,lacerations" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
 			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
 
 			<StatValue stattype="WalkingSpeed" value="-0.03" />
@@ -620,10 +616,13 @@
 			<sprite name="Heavy Uniform Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/lightuniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Heavy Uniform Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/lightuniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 
-			<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
 
-			<SkillModifier skillidentifier="weapons" skillvalue="5" />
+    		<SkillModifier skillidentifier="weapons" skillvalue="5" />
+
+    		<StatValue stattype="WalkingSpeed" value="0.1" />
+    		<StatValue stattype="SwimmingSpeed" value="0.1" />
 
 		</Wearable>
 
@@ -672,19 +671,20 @@
 			<sprite name="Heavy Uniform Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/cbrnsuit.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Heavy Uniform Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/cbrnsuit.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection" damagemultiplier="0" probabilitymultiplier="0" />
-			<damagemodifier afflictionidentifiers="acidburn,burn" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictiontypes="alieninfection" armorsector="0.0,360.0" damagemultiplier="0.75" probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
-			<damagemodifier armorsector="0.0,360.0" afflictiontypes="poison_airborne" damagemultiplier="0" probabilitymultiplier="0" />
+    		<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection" damagemultiplier="0" probabilitymultiplier="0" />
+    		<damagemodifier afflictionidentifiers="acidburn" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="huskinfection" armorsector="0.0,360.0" damagemultiplier="0.75" probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+    		<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+			
+    		<SkillModifier skillidentifier="weapons" skillvalue="-5" />
+    		<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+    		<SkillModifier skillidentifier="electrical" skillvalue="-10" />
 
-			<SkillModifier skillidentifier="weapons" skillvalue="-5" />
-			<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
-			<SkillModifier skillidentifier="electrical" skillvalue="-10" />
-			<StatValue stattype="WalkingSpeed" value="-0.1" />
-			<StatValue stattype="SwimmingSpeed" value="-0.1" />
+    		<StatValue stattype="WalkingSpeed" value="-0.1" />
+    		<StatValue stattype="SwimmingSpeed" value="-0.1" />
 
 			<StatusEffect tags="cbrnsuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
 
@@ -767,6 +767,13 @@
 			<sprite name="combathardsuit Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/combathardsuit.png" limb="LeftFoot" sound="heavysuitfootstep" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
 			<sprite name="combathardsuit Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/combathardsuit.png" limb="RightFoot" sound="heavysuitfootstep" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
 
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,blunttrauma" damagemultiplier="0.1" damagesound="armourheavyimpact" />
+    		<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bleeding,explosiondamage,burn" damagemultiplier="0.25" damagesound="armourheavyimpact" DamageParticle="impactfirearm" deflectprojectiles="true" />
+    		<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness,bitewounds,stun" damagemultiplier="0.5" damagesound="armourheavyimpact" />
+    		<SkillModifier skillidentifier="weapons" skillvalue="-10" />
+    		<SkillModifier skillidentifier="mechanical" skillvalue="-50" />
+    		<SkillModifier skillidentifier="electrical" skillvalue="-75" />
+
 			<StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
 
 			<StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="6500.0" SpeedMultiplier="0.7" PropulsionSpeedMultiplier="0.5" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
@@ -821,15 +828,8 @@
 				<Conditional Voltage="lte 0.5" />
 			</StatusEffect>
 
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,blunttrauma,burn" damagemultiplier="0.25" damagesound="armourheavyimpact" />
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bleeding,explosiondamage" damagemultiplier="0.3" damagesound="armourheavyimpact" deflectprojectiles="true" />
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness,bitewounds,scp_psidamage" damagemultiplier="0.5" damagesound="armourheavyimpact" />
+    		<sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.15" loop="true" frequencymultiplier="0.75" />
 
-			<sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.15" loop="true" frequencymultiplier="0.75" />
-
-			<SkillModifier skillidentifier="weapons" skillvalue="-10" />
-			<SkillModifier skillidentifier="mechanical" skillvalue="-50" />
-			<SkillModifier skillidentifier="electrical" skillvalue="-75" />
 		</Wearable>
 
 		<Holdable 

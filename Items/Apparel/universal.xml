@@ -8,18 +8,19 @@
 		
 		<Item name="" identifier="scp_simplehelmet" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.5">
 				
-				<Sprite name="Simple Helmet" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" sourcerect="168,0,72,55" depth="0.6" origin="0.5,0.5" />
+			<Sprite name="Simple Helmet" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" sourcerect="168,0,72,55" depth="0.6" origin="0.5,0.5" />
+			
+			<Body radius="30" density="50" />
+			
+			<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
+					
+				<damagemodifier afflictionidentifiers="gunshotwound,bleeding,lacerations" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+				<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+				<damagemodifier afflictionidentifiers="blunttrauma,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
 				
-				<Body radius="30" density="50" />
-				
-				<Wearable slots="Any,Head" msg="ItemMsgPickUpSelect">
-						
-						<damagemodifier afflictionidentifiers="gunshotwound,bleeding,lacerations" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
-						<damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
-						
-						<sprite name="Simple Helmet Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.74" hidewearablesoftype="hair" sourcerect="168,0,72,79" origin="0.49987426,0.54756904" />
-						
-				</Wearable>
+				<sprite name="Simple Helmet Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.74" hidewearablesoftype="hair" sourcerect="168,0,72,79" origin="0.49987426,0.54756904" />
+					
+			</Wearable>
 				
 		</Item>
 		
@@ -31,86 +32,87 @@
 		
 		<Item name="" identifier="scp_heavyhazmatuniform" category="Equipment" subcategory="Renegade" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
 
-				<ItemContainer 
-						capacity="1" maxstacksize="1" 
-						hideitems="true" 
-						containedstateindicatorstyle="tank">
+			<ItemContainer 
+					capacity="1" maxstacksize="1" 
+					hideitems="true" 
+					containedstateindicatorstyle="tank">
 
-						<Containable items="oxygensource,weldingtoolfuel" />
+					<Containable items="oxygensource,weldingtoolfuel" />
 
-				</ItemContainer>
+			</ItemContainer>
 
-				<InventoryIcon name="heavyhazmatinv" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" sourcerect="677,0,78,67" origin="0.5,0.5" />
-				<Sprite name="heavyhazmatground" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" sourcerect="640,69,115,62" depth="0.6" origin="0.5,0.5" />
+			<InventoryIcon name="heavyhazmatinv" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" sourcerect="677,0,78,67" origin="0.5,0.5" />
+			<Sprite name="heavyhazmatground" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" sourcerect="640,69,115,62" depth="0.6" origin="0.5,0.5" />
 
-				<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+			<Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
 
-				<Wearable slots="Any,InnerClothes+Head" msg="ItemMsgPickUpSelect">
+			<Wearable slots="Any,InnerClothes+Head" msg="ItemMsgPickUpSelect">
 
-						<sprite name="HAZMAT helm Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.77" hidewearablesoftype="hair,beard" sourcerect="678,13,88,86" origin="0.5065703,0.5108439" />
-						<sprite name="Heavy HAZMAT Torso" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Right Hand" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Left Hand" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Right Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Left Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Waist" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Right Thigh" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Left Thigh" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Right Leg" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Left Leg" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
-						<sprite name="Heavy HAZMAT Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="HAZMAT helm Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.77" hidewearablesoftype="hair,beard" sourcerect="678,13,88,86" origin="0.5065703,0.5108439" />
+				<sprite name="Heavy HAZMAT Torso" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Right Hand" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Left Hand" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Right Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Left Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Waist" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Right Thigh" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Left Thigh" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Right Leg" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Left Leg" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
+				<sprite name="Heavy HAZMAT Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
 
-						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection" damagemultiplier="0" probabilitymultiplier="0" />
-						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.15" />
-						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn,burn,scp_psidamage" damagemultiplier="0.5" />
-						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,gunshotwound" damagemultiplier="0.85" />
+    			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="poison_skin" damagemultiplier="0.25" probabilitymultiplier="0" />
+    			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.35" />
+    			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.45" />
+    			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.6" />
+    			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,gunshotwound" damagemultiplier="0.9" />
 
-						<SkillModifier skillidentifier="electrical" skillvalue="5" />
-						<SkillModifier skillidentifier="weapons" skillvalue="-20" />
-						<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+				<SkillModifier skillidentifier="electrical" skillvalue="5" />
+				<SkillModifier skillidentifier="weapons" skillvalue="-20" />
+				<SkillModifier skillidentifier="mechanical" skillvalue="-10" />
 
-						<StatValue stattype="WalkingSpeed" value="-0.15" />
-						<StatValue stattype="SwimmingSpeed" value="-0.1" />
+				<StatValue stattype="WalkingSpeed" value="-0.15" />
+				<StatValue stattype="SwimmingSpeed" value="-0.1" />
 
-						<StatusEffect tags="cbrnsuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
-						
-						<StatusEffect type="OnWearing" target="Character" HideFace="true" disabledeltatime="true" />
+				<StatusEffect tags="cbrnsuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
+				
+				<StatusEffect type="OnWearing" target="Character" HideFace="true" disabledeltatime="true" />
 
-						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
-								<Conditional IsDead="false" />
-								<RequiredItem items="oxygentank" type="Contained" />
+				<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
+					<Conditional IsDead="false" />
+					<RequiredItem items="oxygentank" type="Contained" />
 
-								<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
-						</StatusEffect>
+					<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
+				</StatusEffect>
 
-						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
-								<Conditional IsDead="false" />
-								<RequiredItem items="weldingfueltank" type="Contained" />
-						</StatusEffect>
+				<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+					<Conditional IsDead="false" />
+					<RequiredItem items="weldingfueltank" type="Contained" />
+				</StatusEffect>
 
-						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
-								<RequiredItem items="incendiumfueltank" type="Contained" />
-								<Affliction identifier="burn" amount="0.1" />
-						</StatusEffect>
+				<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+					<RequiredItem items="incendiumfueltank" type="Contained" />
+					<Affliction identifier="burn" amount="0.1" />
+				</StatusEffect>
 
-						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
-								<Conditional IsDead="false" />
-								<RequiredItem items="oxygenitetank" type="Contained" />
+				<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+					<Conditional IsDead="false" />
+					<RequiredItem items="oxygenitetank" type="Contained" />
 
-								<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
-						</StatusEffect>
+					<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
+				</StatusEffect>
 
-						<StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
-								<Conditional IsDead="false" />
-								<RequiredItem items="oxygenitetank" type="Contained" />
-						</StatusEffect>
+				<StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+					<Conditional IsDead="false" />
+					<RequiredItem items="oxygenitetank" type="Contained" />
+				</StatusEffect>
 
-						<StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+				<StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
 
-				</Wearable>
+			</Wearable>
 
 		</Item>
 	
@@ -333,7 +335,7 @@
 				<Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
 						
 						<sprite name="Proto Backpack Wearable" texture="%ModDir%/Sprites/Items/Apparel/protopack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="40,13,113,147" origin="0.62,0.54" scale="0.6" />
-					 
+					
 						<SkillModifier skillidentifier="mechanical" skillvalue="-5" />
 						<SkillModifier skillidentifier="electrical" skillvalue="-5" />
 				
@@ -347,64 +349,64 @@
 		
 		<!--Misc-->
 		
-		<Item name="" identifier="scp_hardeneddivingmask" scale="0.4" category="Diving,Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+	<Item name="" identifier="scp_hardeneddivingmask" scale="0.4" category="Diving,Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
 
-				<Sprite name="hardeneddivmask" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" depth="0.55" sourcerect="685,198,86,72" origin="0.5,0.5" />
-				<Body width="40" height="35" density="15" />
+		<Sprite name="hardeneddivmask" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" depth="0.55" sourcerect="685,198,86,72" origin="0.5,0.5" />
+		<Body width="40" height="35" density="15" />
 
-				<Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-						
-						<sprite name="hardeneddivmaskwear" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" hideotherwearables="false" sourcerect="685,198,86,72" origin="0.42363268,0.46066296" hidewearablesoftype="moustache,beard" />
-						
-						<StatusEffect type="OnWearing" target="Character" HideFace="true" SpeedMultiplier="0.95" setvalue="true" disabledeltatime="true" />
-						
-						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
-								<Conditional IsDead="false" />
-								<RequiredItem items="oxygentank" type="Contained" />
+		<Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+				
+			<sprite name="hardeneddivmaskwear" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidelimb="false" hideotherwearables="false" sourcerect="685,198,86,72" origin="0.42363268,0.46066296" hidewearablesoftype="moustache,beard" />
+			
+			<StatusEffect type="OnWearing" target="Character" HideFace="true" SpeedMultiplier="0.95" setvalue="true" disabledeltatime="true" />
+			
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.25" comparison="Or">
+				<Conditional IsDead="false" />
+				<RequiredItem items="oxygentank" type="Contained" />
 
-								<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
-						</StatusEffect>
-						
-						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
-								<Conditional IsDead="false" />
-								<RequiredItem items="weldingfueltank" type="Contained" />
-						</StatusEffect>
-						
-						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
-								<RequiredItem items="incendiumfueltank" type="Contained" />
-								<Affliction identifier="burn" amount="0.1" />
-						</StatusEffect>
-						
-						<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
-								<Conditional IsDead="false" />
-								<RequiredItem items="oxygenitetank" type="Contained" />
+				<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
+			</StatusEffect>
+			
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">
+				<Conditional IsDead="false" />
+				<RequiredItem items="weldingfueltank" type="Contained" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-7.0" Condition="-5.0">
+				<RequiredItem items="incendiumfueltank" type="Contained" />
+				<Affliction identifier="burn" amount="0.1" />
+			</StatusEffect>
+			
+			<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1500.0" Condition="-0.1" comparison="Or">
+				<Conditional IsDead="false" />
+				<RequiredItem items="oxygenitetank" type="Contained" />
 
-								<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
-						</StatusEffect>
-						
-						<StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
-								<Conditional IsDead="false" />
-								<RequiredItem items="oxygenitetank" type="Contained" />
-						</StatusEffect>
-						
-						<damagemodifier afflictionidentifiers="lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
-						<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
-						<damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
-						
-						<StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"/>
+				<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
+			</StatusEffect>
+			
+			<StatusEffect type="OnWearing" target="Contained,Character" SpeedMultiplier="1.2" setvalue="true" comparison="Or">
+				<Conditional IsDead="false" />
+				<RequiredItem items="oxygenitetank" type="Contained" />
+			</StatusEffect>
+			
+			<damagemodifier afflictionidentifiers="lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+			<damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+			
+			<StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVisionAmount="0.6"/>
 
-				</Wearable>
+		</Wearable>
 
-				<ItemContainer 
-						capacity="1" maxstacksize="1" 
-						hideitems="true" 
-						containedstateindicatorstyle="tank">
+		<ItemContainer 
+			capacity="1" maxstacksize="1" 
+			hideitems="true" 
+			containedstateindicatorstyle="tank">
 
-						<Containable items="oxygensource,weldingtoolfuel" />
+			<Containable items="oxygensource,weldingtoolfuel" />
 
-				</ItemContainer>
+		</ItemContainer>
 
-		</Item>
+	</Item>
 	
 		<!--###-->
 <!--check later since i manually changed the sprite paths -Derek -->
