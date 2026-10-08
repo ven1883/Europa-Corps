@@ -13,7 +13,7 @@
 	<!--+++++++-->
 	<Affliction 
 		name="" 
-		identifier="scp_presolatexinfection" 
+		identifier="preso_latex_infection" 
 		description="" 
 		type="poison" 
 		damageoverlayalpha="1" 
@@ -96,7 +96,7 @@
 			mininterval="1" maxinterval="3">
 
 			<StatusEffect target="Character" comparison="and">
-				<Conditional scp_presolatexinfection="gte 65" />
+				<Conditional preso_latex_infection="gte 65" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
 				<sound file="%ModDir%/Sounds/Medical/latexspread1.ogg" volume="0.75" selectionmode="Random" />
@@ -112,7 +112,7 @@
 
 	<Affliction 
 		name="" 
-		identifier="scp_presolatexexposure" 
+		identifier="preso_latex_exposure" 
 		description="" 
 		type="poison_skin" 
 		causeofdeathdescription="" 
@@ -150,8 +150,8 @@
 			<StatusEffect target="Character">
 				<Conditional HasStatusTag="!equals cbrnsuit" />
 				<Affliction identifier="organdamage" amount="3.5" />
-				<Affliction identifier="scp_vomiting" amount="2" />
-				<Affliction identifier="scp_presolatexinfection" amount="0.1" />
+				<Affliction identifier="vomiting" amount="2" />
+				<Affliction identifier="preso_latex_infection" amount="0.1" />
 			</StatusEffect>
 		</Effect>
 	</Affliction>
@@ -160,7 +160,7 @@
 	
 	<Affliction 
 		name="" 
-		identifier="scp_latexcontamination" 
+		identifier="preso_latex_contamination" 
 		description="" 
 		type="poison_skin" 
 		causeofdeathdescription="" 
@@ -192,7 +192,7 @@
 
 	<Affliction 
 		name="" 
-		identifier="scp_devilpoisoning" 
+		identifier="devils_blood_poisoning" 
 		description="" 
 		type="poison" 
 		damageoverlayalpha="1" 
@@ -238,11 +238,11 @@
 			<StatusEffect target="Character" SpeedMultiplier="0.9" setvalue="true" />
 			<StatusEffect target="Character">
 				<Affliction identifier="bleeding" amount="0.1" setvalue="true" />
-				<Affliction identifier="scp_vomitingblood" amount="3" setvalue="true" />
+				<Affliction identifier="vomiting_blood" amount="3" setvalue="true" />
 				<Affliction identifier="organdamage" amount="0.25" />
 			</StatusEffect>
 			<StatusEffect target="Character" comparison="and">
-				<Conditional scp_devilpoisoning="gte 35" />
+				<Conditional devils_blood_poisoning="gte 35" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
 				<sound file="%ModDir%/Sounds/Medical/heartbeat.ogg" volume="1" dontmuffle="True" loop="true" />
@@ -263,11 +263,11 @@
 			<StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
 			<StatusEffect target="Character" interval="1">
 				<Affliction identifier="bleeding" amount="3" />
-				<Affliction identifier="scp_vomitingblood" amount="50" />
+				<Affliction identifier="vomiting_blood" amount="50" />
 				<Affliction identifier="organdamage" amount="0.5" />
 			</StatusEffect>
 			<StatusEffect target="Character" comparison="and">
-				<Conditional scp_devilpoisoning="gte 100" />
+				<Conditional devils_blood_poisoning="gte 100" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
 				<sound file="%ModDir%/Sounds/Medical/heartbeat.ogg" volume="1.5" dontmuffle="True" loop="true" frequencymultiplier="1.1" />
@@ -291,7 +291,7 @@
 				<Affliction identifier="organdamage" amount="4" />
 			</StatusEffect>
 			<StatusEffect target="Character" comparison="and">
-				<Conditional scp_devilpoisoning="gte 150" />
+				<Conditional devils_blood_poisoning="gte 150" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
 				<sound file="%ModDir%/Sounds/Medical/heartbeat.ogg" volume="2" dontmuffle="True" loop="true" frequencymultiplier="1.2" />
@@ -302,7 +302,7 @@
 			mininterval="1" maxinterval="3">
 
 			<StatusEffect target="Character" comparison="and">
-				<Conditional scp_devilpoisoning="gte 50" />
+				<Conditional devils_blood_poisoning="gte 50" />
 				<Conditional IsLocalPlayer="True" />
 				<Conditional IsDead="False" />
 				<sound file="%ModDir%/Sounds/Medical/latexspread1.ogg" volume="0.65" selectionmode="Random" />
@@ -318,7 +318,7 @@
 
 	<Affliction 
 		name="" 
-		identifier="scp_devilsbreathexposure" 
+		identifier="devils_breath_exposure" 
 		description="" 
 		type="poison_airborne" 
 		causeofdeathdescription="" 
@@ -358,7 +358,7 @@
 				<Conditional HasStatusTag="!equals cbrnsuit" />
 				<Affliction identifier="organdamage" amount="2" />
 				<Affliction identifier="bloodloss" amount="1" />
-				<Affliction identifier="scp_devilpoisoning" amount="0.1" probability="0.25" />
+				<Affliction identifier="devils_blood_poisoning" amount="0.1" probability="0.25" />
 			</StatusEffect>
 		</Effect>
 	</Affliction>

@@ -329,7 +329,7 @@
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
-        <Item identifier="scp_vodka" />
+        <Item identifier="scp_condensed_ethanol" />
       </Item>
       <Item identifier="scp_sg550" >
         <Item identifier="scp_556mag" />
@@ -475,7 +475,7 @@
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
-        <Item identifier="scp_vodka" />
+        <Item identifier="scp_condensed_ethanol" />
       </Item>
       <Item identifier="scp_m4s90" >
         <Item identifier="scp_12gmagbuck" amount="9" />
@@ -860,7 +860,7 @@
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
-        <Item identifier="scp_vodka" />
+        <Item identifier="scp_condensed_ethanol" />
       </Item>
       <Item identifier="scp_sg550" >
         <Item identifier="scp_556mag" />
@@ -970,7 +970,7 @@
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="antibloodloss1" />
         <Item identifier="deusizine" amount="2" />
-        <Item identifier="scp_vodka" />
+        <Item identifier="scp_condensed_ethanol" />
       </Item>
       <!--weapons-->
       <Item identifier="scp_ar50" equip="true">
@@ -1054,7 +1054,7 @@
     <ItemSet>
       <item identifier="idcard" equip="true" />
       <Item identifier="commonerclothes4" equip="true" />
-      <item identifier="scp_vodka" />
+      <item identifier="scp_condensed_ethanol" />
       <Item identifier="antidama1" />
     </ItemSet>
     <ItemSet>
@@ -1124,7 +1124,7 @@
         <Item identifier="antipsychosis" amount="2" />
         <Item identifier="scp_psyblock" amount="2" />
         <Item identifier="stabilozine" amount="5" />
-        <Item identifier="scp_condensedstabilozine" />
+        <Item identifier="condensed_stabilozine" />
       </Item>
       <Item identifier="antibleeding1" amount="8" />
       <Item identifier="pomegrenadeextract" amount="4" />
@@ -1267,7 +1267,7 @@
         <Item identifier="revolverround" amount="6" />
       </Item>
       <Item identifier="revolver">
-        <Item identifier="revolverround" amount="" />
+        <Item identifier="revolverround" amount="6" />
       </Item>
       <Item identifier="revolverround" amount="24" />
       <Item identifier="flare" />

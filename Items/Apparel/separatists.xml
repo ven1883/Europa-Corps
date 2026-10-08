@@ -424,7 +424,7 @@
 			<sprite name="highperfhazmat Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/highperfhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
 			<sprite name="highperfhazmat Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/highperfhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
 
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection,scp_hexgasdamage" damagemultiplier="0" probabilitymultiplier="0" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="preso_latex_infection,hexanova_damage" damagemultiplier="0" probabilitymultiplier="0" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness,scp_psidamage" damagemultiplier="0.05" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn,burn" damagemultiplier="0.1" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,gunshotwound" damagemultiplier="0.75" />

@@ -9,40 +9,40 @@
 	<afflictiondescription.stamina.0>Stamina: 0</afflictiondescription.stamina.0>
 	
 	<!--Preso Latex-->
-	<afflictionname.scp_presolatexinfection>Preso Latex Petrification</afflictionname.scp_presolatexinfection>
-	<afflictiondescription.scp_presolatexinfection>The patient's dermal, subcutaneous and muscle tissues are rapidly being converted into Preso Latex. The affected areas beginning to rapidly shut down, with the patient's skin turning an anoxic black.</afflictiondescription.scp_presolatexinfection>
-	<afflictioncauseofdeath.scp_presolatexinfection>Turned into a lifeless rubber statue.</afflictioncauseofdeath.scp_presolatexinfection>
-	<afflictioncauseofdeathself.scp_presolatexinfection>You have been converted into a lifeless rubber statue of your former self.</afflictioncauseofdeathself.scp_presolatexinfection>
+	<afflictionname.preso_latex_infection>Preso Latex Petrification</afflictionname.preso_latex_infection>
+	<afflictiondescription.preso_latex_infection>The patient's dermal, subcutaneous and muscle tissues are rapidly being converted into Preso Latex. The affected areas beginning to rapidly shut down, with the patient's skin turning an anoxic black.</afflictiondescription.preso_latex_infection>
+	<afflictioncauseofdeath.preso_latex_infection>Turned into a lifeless rubber statue.</afflictioncauseofdeath.preso_latex_infection>
+	<afflictioncauseofdeathself.preso_latex_infection>You have been converted into a lifeless rubber statue of your former self.</afflictioncauseofdeathself.preso_latex_infection>
 	<descscppresomin>The patient's upper cutaneous skin layers are beginning to grow an anoxic black, a sense of numbness present in the affected areas.</descscppresomin>
 	<descscppresomod>The patient's body is growing lethargic, the Preso Latex converting the subcutaneous tissue layers and clouding their vision.</descscppresomod>
 	<descscppresosev>The patient's internal organs are being rapidly converted, their consciousness rapidly degrading and are showing signs of respiratory arrest.</descscppresosev>
 	<descscppresomax>The patient has entirely turned into a completely lifeless rubber statue inside and out, the skin cold to the touch.</descscppresomax>	
 	<!--Devil's Blood-->
-	<afflictionname.scp_devilpoisoning>Devil's Blood Toxicosis</afflictionname.scp_devilpoisoning>
-	<afflictiondescription.scp_devilpoisoning>The patient's skin is slowly becoming vividly flushed, the epidermal and dermal tissues showing apparent signs of spontaneous hemorrhaging, along with the patient suffering from severe expistaxis and subconjunctival hemorrhages to the major eye blood vessels.</afflictiondescription.scp_devilpoisoning>
-	<afflictioncauseofdeath.scp_devilpoisoning>Liquefied from the inside.</afflictioncauseofdeath.scp_devilpoisoning>
-	<afflictioncauseofdeathself.scp_devilpoisoning>Your internal organs have been liquefied by Devil's Blood.</afflictioncauseofdeathself.scp_devilpoisoning>
+	<afflictionname.devils_blood_poisoning>Devil's Blood Toxicosis</afflictionname.devils_blood_poisoning>
+	<afflictiondescription.devils_blood_poisoning>The patient's skin is slowly becoming vividly flushed, the epidermal and dermal tissues showing apparent signs of spontaneous hemorrhaging, along with the patient suffering from severe expistaxis and subconjunctival hemorrhages to the major eye blood vessels.</afflictiondescription.devils_blood_poisoning>
+	<afflictioncauseofdeath.devils_blood_poisoning>Liquefied from the inside.</afflictioncauseofdeath.devils_blood_poisoning>
+	<afflictioncauseofdeathself.devils_blood_poisoning>Your internal organs have been liquefied by Devil's Blood.</afflictioncauseofdeathself.devils_blood_poisoning>
 	<descscpdevilmin>The patient's skin is growing strangely sore looking, with the ears and eyes beginning to spontaneously bleed.</descscpdevilmin>
 	<descscpdevilmod>The patient's mouth is dripping with blood and the skin is developing bleeding lesions that pour out blood at an alarming rate.</descscpdevilmod>
 	<descscpdevilsev>The patient is rapidly falling into hypovolemic shock as blood pours out of every oraphace, the skin all over gushing out blood.</descscpdevilsev>
 	<descscpdevilmax>The patient has been completely exsanguinated, a bloody mess of ruptured veins and arteries is all that's left.</descscpdevilmax>
 
 	<!--Vomiting-->
-	<afflictionname.scp_vomiting>Profuse Vomiting</afflictionname.scp_vomiting>
-	<afflictiondescription.scp_vomiting>The patient's GI tract is significantly disturbed by something, near constantly having to stop in order to vomit, the signs of hematemesis visible as blood is beginning to appear.</afflictiondescription.scp_vomiting>
-	<afflictioncauseofdeath.scp_vomiting>Choked on vomit.</afflictioncauseofdeath.scp_vomiting>
-	<afflictioncauseofdeathself.scp_vomiting>You have choked on your own vomit.</afflictioncauseofdeathself.scp_vomiting>
+	<afflictionname.vomiting>Profuse Vomiting</afflictionname.vomiting>
+	<afflictiondescription.vomiting>The patient's GI tract is significantly disturbed by something, near constantly having to stop in order to vomit, the signs of hematemesis visible as blood is beginning to appear.</afflictiondescription.vomiting>
+	<afflictioncauseofdeath.vomiting>Choked on vomit.</afflictioncauseofdeath.vomiting>
+	<afflictioncauseofdeathself.vomiting>You have choked on your own vomit.</afflictioncauseofdeathself.vomiting>
 	<!--Vomiting Blood-->
-	<afflictionname.scp_vomitingblood>Hematemesis</afflictionname.scp_vomitingblood>
-	<afflictiondescription.scp_vomitingblood>The patient's GI tract is showing signs of rupturing, occasionally vomiting large volumes of blood.</afflictiondescription.scp_vomitingblood>
-	<afflictioncauseofdeath.scp_vomitingblood>Bled to death internally.</afflictioncauseofdeath.scp_vomitingblood>
-	<afflictioncauseofdeathself.scp_vomitingblood>You have bled to death internally.</afflictioncauseofdeathself.scp_vomitingblood>
+	<afflictionname.vomiting_blood>Hematemesis</afflictionname.vomiting_blood>
+	<afflictiondescription.vomiting_blood>The patient's GI tract is showing signs of rupturing, occasionally vomiting large volumes of blood.</afflictiondescription.vomiting_blood>
+	<afflictioncauseofdeath.vomiting_blood>Bled to death internally.</afflictioncauseofdeath.vomiting_blood>
+	<afflictioncauseofdeathself.vomiting_blood>You have bled to death internally.</afflictioncauseofdeathself.vomiting_blood>
 
 	<!--Hexa Nova-->
-	<afflictionname.scp_hexgasdamage>Hexa-Nova Gas Intoxication</afflictionname.scp_hexgasdamage>
-	<afflictiondescription.scp_hexgasdamage>The patient is experiencing rapid degredation of the CNS, cardiovascular and muscular systems, their skin growing necrotic before your eyes.</afflictiondescription.scp_hexgasdamage>
-	<afflictioncauseofdeath.scp_hexgasdamage>Rapidly burnt away on the inside and out.</afflictioncauseofdeath.scp_hexgasdamage>
-	<afflictioncauseofdeathself.scp_hexgasdamage>You haved died from the effects of Hexa-Nova exposure.</afflictioncauseofdeathself.scp_hexgasdamage>
+	<afflictionname.hexanova_damage>Hexa-Nova Gas Intoxication</afflictionname.hexanova_damage>
+	<afflictiondescription.hexanova_damage>The patient is experiencing rapid degredation of the CNS, cardiovascular and muscular systems, their skin growing necrotic before your eyes.</afflictiondescription.hexanova_damage>
+	<afflictioncauseofdeath.hexanova_damage>Rapidly burnt away on the inside and out.</afflictioncauseofdeath.hexanova_damage>
+	<afflictioncauseofdeathself.hexanova_damage>You haved died from the effects of Hexa-Nova exposure.</afflictioncauseofdeathself.hexanova_damage>
 
 	<!--Psi Damage-->
 	<afflictionname.scp_psidamage>Psi-Radiation Exposure</afflictionname.scp_psidamage>
@@ -65,10 +65,10 @@
 	<afflictiondescription.scp_psiresistance>The patient's body is inhibiting Serotonin and has become more resistant to Psi-Radiation induced overstimulation.</afflictiondescription.scp_psiresistance>
 
 	<!--Ignis Latex-->
-	<afflictionname.scp_firelatexburn>Ignis Latex Burns</afflictionname.scp_firelatexburn>
-	<afflictiondescription.scp_firelatexburn>The patient is suffering severe burns that encompass the entire body part internally and externally, causing unfathomable pain.</afflictiondescription.scp_firelatexburn>
-	<afflictioncauseofdeath.scp_firelatexburn>Ignis Latex incineration</afflictioncauseofdeath.scp_firelatexburn>
-	<afflictioncauseofdeathself.scp_firelatexburn>Your body was incinerated via Ignis Latex.</afflictioncauseofdeathself.scp_firelatexburn>
+	<afflictionname.ignis_latex_burn>Ignis Latex Burns</afflictionname.ignis_latex_burn>
+	<afflictiondescription.ignis_latex_burn>The patient is suffering severe burns that encompass the entire body part internally and externally, causing unfathomable pain.</afflictiondescription.ignis_latex_burn>
+	<afflictioncauseofdeath.ignis_latex_burn>Ignis Latex incineration</afflictioncauseofdeath.ignis_latex_burn>
+	<afflictioncauseofdeathself.ignis_latex_burn>Your body was incinerated via Ignis Latex.</afflictioncauseofdeathself.ignis_latex_burn>
 	<scpfirelatexburnmin>The patient has Ignis Latex stuck onto their body, the tissue damage however appears minimal for the time being.</scpfirelatexburnmin>
 	<scpfirelatexburnmod>The patient is experiencing significant burn damage from Ignis Latex, the injury seeping deep into the affected body part.</scpfirelatexburnmod>
 	<scpfirelatexburnsev>The patient is suffering severe Ignis Latex burns that encompass the entire body part internally and externally, leaving a horrific scene.</scpfirelatexburnsev>

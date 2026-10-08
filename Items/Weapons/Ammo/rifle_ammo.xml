@@ -747,7 +747,7 @@
 
 				<!--possible damage-->
 				<Affliction identifier="gunshotwound" strength="6.5" probability="0.125" />
-				<Affliction identifier="scp_firelatexburn" strength="5" probability="0.6" />
+				<Affliction identifier="ignis_latex_burn" strength="5" probability="0.6" />
 				<Affliction identifier="stun" strength="0.15" probability="0.2" />
 			</Attack>
 

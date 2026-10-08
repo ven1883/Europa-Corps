@@ -344,7 +344,7 @@
 	
 	<!--+++++++++++++++++++++++++++++++++++-->
 
-	<Item name="" description="" identifier="scp_condensedstabilozine" maxstacksize="2" maxstacksizecharacterinventory="1" category="Medical" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+	<Item name="" description="" identifier="condensed_stabilozine" maxstacksize="2" maxstacksizecharacterinventory="1" category="Medical" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
 
 			<InventoryIcon name="constabinv" texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="124,292,56,62" origin="0.5,0.5" />
 			<Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="360,106,65,10" depth="0.6" origin="0.5,0.5" />

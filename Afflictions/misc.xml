@@ -57,7 +57,7 @@
 
 	<Affliction 
 		name="" 
-		identifier="scp_vomitingblood" 
+		identifier="vomiting_blood" 
 		description="" 
 		type="nausea" 
 		causeofdeathdescription="" 
@@ -113,7 +113,7 @@
 
 	<Affliction 
 		name="" 
-		identifier="scp_vomiting" 
+		identifier="vomiting" 
 		description="" 
 		type="nausea" 
 		causeofdeathdescription="Choked on vomit." 
@@ -213,65 +213,10 @@
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
+	<!--TODO: This is literally pointless since you can just use a status effect-->
 	<Affliction 
-		identifier="npcprotection" 
-		type="npcprotection" 
-		isbuff="true" 
-		hideiconafterdelay="true" 
-		limbspecific="false" 
-		maxstrength="1" 
-		showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000"
-		treatmentthreshold="1000">
-
-			<Effect 
-			minstrength="0" maxstrength="1" 
-			strengthchange="0" 
-			resistancefor="oxygenlow" 
-			minresistance="1" maxresistance="1">
-
-				<AbilityFlag flagtype="ImmuneToPressure" />
-
-				<StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
-					<ReduceAffliction identifier="oxygenlow" strength="100" />
-				</StatusEffect>
-
-			</Effect>
-
-	</Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-	<Affliction 
-		identifier="scp_npcprotection" 
-		type="npcprotection" 
-		isbuff="true" 
-		hideiconafterdelay="true" 
-		limbspecific="false" 
-		maxstrength="1" 
-		showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000"
-		treatmentthreshold="1000">
-
-		<Effect 
-			minstrength="0" maxstrength="1" 
-			strengthchange="0" 
-			resistancefor="oxygenlow" 
-			minresistance="1" maxresistance="1">
-
-				<AbilityFlag flagtype="ImmuneToPressure" />
-
-				<StatusEffect target="Character" usehulloxygen="false" interval="1" setvalue="true">
-						<ReduceAffliction identifier="oxygenlow" strength="100" />
-				</StatusEffect>
-
-		</Effect>
-
-	 </Affliction>
-
-	<!--++++++++++++++++++++++++++++++++++++-->
-
-	 <Affliction 
 		name="heavyweaponbulk" 
-		identifier="scp_protobulk" 
+		identifier="heavy_weapon_bulk" 
 		description="heavy weapon moment" 
 		type="misc" 
 		limbspecific="false" indicatorlimb="Torso" 
@@ -279,14 +224,14 @@
 		affectmachines="true" 
 		showiconthreshold="6" showinhealthscannerthreshold="6">
 	
-		 <Effect 
+		<Effect 
 			minstrength="0" maxstrength="5" 
 			minspeedmultiplier="1" maxspeedmultiplier="0.7" 
 			strengthchange="-0.6">
 		</Effect>
 
-		 <icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
-	 </Affliction>
+		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="910,0,128,128" color="0,200,0,255" origin="0,0" />
+	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 

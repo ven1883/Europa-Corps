@@ -233,7 +233,7 @@
 			<Affliction identifier="bleeding" strength="5" />
 			<Affliction identifier="blunttrauma" strength="15" />
 			<Affliction identifier="stun" strength="0.2" />
-			<Affliction identifier="scp_devilpoisoning" strength="1" probability="0.15" />
+			<Affliction identifier="devils_blood_poisoning" strength="1" probability="0.15" />
 		</Attack>
 
 		<StatusEffect type="OnImpact" target="UseTarget">
@@ -247,7 +247,7 @@
 		</StatusEffect>
 
 		<StatusEffect type="OnImpact" target="UseTarget">
-			<SpawnItem identifiers="scp_devilgasshotgun" spawnposition="This" />
+			<SpawnItem identifiers="gas_devils_blood_sg" spawnposition="This" />
 		</StatusEffect>
 
 		</Projectile>

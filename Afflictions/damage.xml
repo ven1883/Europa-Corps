@@ -4,7 +4,7 @@
 
 	<Affliction 
 		name="" 
-		identifier="scp_hexgasexposure" 
+		identifier="hexanova_exposure" 
 		description=""
 		type="chemicalexposure" 
 		causeofdeathdescription="" 
@@ -27,7 +27,7 @@
 			<StatusEffect target="Character">
 				<Conditional HasStatusTag="!equals cbrnsuit" />
 				<Affliction identifier="organdamage" amount="2" />
-				<Affliction identifier="scp_hexgasdamage" amount="6" />
+				<Affliction identifier="hexanova_damage" amount="6" />
 			</StatusEffect>
 		</Effect>
 
@@ -44,9 +44,9 @@
 			<StatusEffect target="Character">
 				<Conditional HasStatusTag="!equals cbrnsuit" />
 				<Affliction identifier="organdamage" amount="2" />
-				<Affliction identifier="scp_vomitingblood" amount="8" />
+				<Affliction identifier="vomiting_blood" amount="8" />
 				<Affliction identifier="paralysis" amount="0.1" />
-				<Affliction identifier="scp_hexgasdamage" amount="12" />
+				<Affliction identifier="hexanova_damage" amount="12" />
 			</StatusEffect>
 		</Effect>
 	</Affliction>
@@ -54,7 +54,7 @@
 	<!--++++++++++++++++++++++++++++++++++++-->
 
 	<Affliction 
-		identifier="scp_hexgasdamage" 
+		identifier="hexanova_damage" 
 		description="" 
 		type="poison" 
 		causeofdeathdescription="" 
@@ -70,7 +70,7 @@
 			screeneffectfluctuationfrequency="1">
 
 			<StatusEffect target="Character" interval="1">
-				<Affliction identifier="scp_vomitingblood" amount="300" />
+				<Affliction identifier="vomiting_blood" amount="300" />
 				<Affliction identifier="organdamage" amount="1" />
 			</StatusEffect>
 		</Effect>
@@ -82,7 +82,7 @@
 			screeneffectfluctuationfrequency="0.5">
 
 			<StatusEffect target="Character" interval="1">
-				<Affliction identifier="scp_vomitingblood" amount="300" />
+				<Affliction identifier="vomiting_blood" amount="300" />
 				<Affliction identifier="organdamage" amount="2" />
 				<Affliction identifier="paralysis" amount="75" />
 			</StatusEffect>
@@ -95,7 +95,7 @@
 			screeneffectfluctuationfrequency="0.33">
 			
 			<StatusEffect target="Character" interval="1">
-				<Affliction identifier="scp_vomitingblood" amount="300" />
+				<Affliction identifier="vomiting_blood" amount="300" />
 				<Affliction identifier="organdamage" amount="4" />
 				<Affliction identifier="paralysis" amount="125" />
 			</StatusEffect>
@@ -383,7 +383,7 @@
 
 	<Affliction 
 		name="" 
-		identifier="scp_firelatexburn" 
+		identifier="ignis_latex_burn" 
 		description="" 
 		type="burn" 
 		causeofdeathdescription="" 
