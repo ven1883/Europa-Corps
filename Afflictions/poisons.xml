@@ -1,4 +1,13 @@
 <Afflictions>
+
+<!-- different affliction types for poisons that should be resisted different ways: -->
+<!-- poison: already in the blood (injections, etc) -->
+<!-- poison_airborne: inhaled. resisted by breathing from tanks instead of air -->
+<!-- poison_skin: skin contact. resisted only by special suits -->
+<!-- poison_contaminant: anything contact. nothing resists. -->
+
+
+
 	<!--+++++++-->
 	<!--POISONS--> 
 	<!--+++++++-->
@@ -15,12 +24,12 @@
 		karmachangeonapplied="-100" 
 		maxstrength="200">
 
-    <Description textidentifier="descscppresomin" minstrength="0" maxstrength="50" />
-    <Description textidentifier="descscppresomod" minstrength="50" maxstrength="100" />
-    <Description textidentifier="descscppresosev" minstrength="100" maxstrength="175" />
-    <Description textidentifier="descscppresomax" minstrength="175" maxstrength="200" />
+		<Description textidentifier="descscppresomin" minstrength="0" maxstrength="50" />
+		<Description textidentifier="descscppresomod" minstrength="50" maxstrength="100" />
+		<Description textidentifier="descscppresosev" minstrength="100" maxstrength="175" />
+		<Description textidentifier="descscppresomax" minstrength="175" maxstrength="200" />
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="25" 
 			minvitalitydecrease="0" maxvitalitydecrease="0" 
 			strengthchange="1" 
@@ -32,7 +41,7 @@
 			maxafflictionoverlayalphamultiplier="0.1">
 		</Effect>
 
-    <Effect	
+		<Effect	
 			minstrength="25" maxstrength="100" 
 			minvitalitydecrease="0" maxvitalitydecrease="15" 
 			strengthchange="2" 
@@ -43,13 +52,13 @@
 			minbodytint="0,0,0,100" maxbodytint="0,0,0,200" 
 			minafflictionoverlayalphamultiplier="0.1" maxafflictionoverlayalphamultiplier="0.6">
 
-      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
-      <StatusEffect target="Character" interval="1">
-        <Affliction identifier="organdamage" amount="10" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
+			<StatusEffect target="Character" interval="1">
+				<Affliction identifier="organdamage" amount="10" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="100" maxstrength="150" 
 			minvitalitydecrease="15" maxvitalitydecrease="50" 
 			strengthchange="2" 
@@ -60,13 +69,13 @@
 			minbodytint="0,0,0,200" maxbodytint="0,0,0,255" 
 			minafflictionoverlayalphamultiplier="0.6" maxafflictionoverlayalphamultiplier="0.8">
 
-      <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
-      <StatusEffect target="Character" interval="0.75">
-        <Affliction identifier="organdamage" amount="20" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
+			<StatusEffect target="Character" interval="0.75">
+				<Affliction identifier="organdamage" amount="20" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="150" maxstrength="200" 
 			minvitalitydecrease="50" maxvitalitydecrease="200" 
 			strengthchange="3" 
@@ -77,27 +86,27 @@
 			minbodytint="0,0,0,255" maxbodytint="0,0,0,255" 
 			minafflictionoverlayalphamultiplier="0.8" maxafflictionoverlayalphamultiplier="1">
 
-      <StatusEffect target="Character" SpeedMultiplier="0.4" setvalue="true" />
-      <StatusEffect target="Character" interval="0.5">
-        <Affliction identifier="organdamage" amount="40" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" SpeedMultiplier="0.4" setvalue="true" />
+			<StatusEffect target="Character" interval="0.5">
+				<Affliction identifier="organdamage" amount="40" />
+			</StatusEffect>
+		</Effect>
 
-    <PeriodicEffect 
+		<PeriodicEffect 
 			mininterval="1" maxinterval="3">
 
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_presolatexinfection="gte 65" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/latexspread1.ogg" volume="0.75" selectionmode="Random" />
-        <sound file="%ModDir%/Medical/Sounds/latexspread2.ogg" volume="0.75" />
-        <sound file="%ModDir%/Medical/Sounds/latexspread3.ogg" volume="0.75" />
-      </StatusEffect>
-    </PeriodicEffect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="2,0,128,128" color="106,106,106,255" origin="-3.6302634E-08,0" />
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/presolatexoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
-  </Affliction>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_presolatexinfection="gte 65" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread1.ogg" volume="0.75" selectionmode="Random" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread2.ogg" volume="0.75" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread3.ogg" volume="0.75" />
+			</StatusEffect>
+		</PeriodicEffect>
+		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="2,0,128,128" color="106,106,106,255" origin="-3.6302634E-08,0" />
+		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/presolatexoverlay.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
@@ -105,7 +114,7 @@
 		name="" 
 		identifier="scp_presolatexexposure" 
 		description="" 
-		type="chemicalexposure" 
+		type="poison_skin" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
 		limbspecific="false" indicatorlimb="Head" 
@@ -113,7 +122,7 @@
 		karmachangeonapplied="-100" 
 		maxstrength="40">
 		
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="20" 
 			minvitalitydecrease="0" maxvitalitydecrease="0" 
 			strengthchange="-5" 
@@ -123,13 +132,13 @@
 			minfacetint="0,0,0,0" maxfacetint="0,25,0,25" 
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
 
-      <StatusEffect target="Character">
-        <Conditional HasStatusTag="!equals cbrnsuit" />
-        <Affliction identifier="organdamage" amount="2" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character">
+				<Conditional HasStatusTag="!equals cbrnsuit" />
+				<Affliction identifier="organdamage" amount="2" />
+			</StatusEffect>
+		</Effect>
 		
-    <Effect 
+		<Effect 
 			minstrength="20" maxstrength="40"
 			minvitalitydecrease="0" maxvitalitydecrease="0" 
 			strengthchange="-5" 
@@ -138,22 +147,22 @@
 			minchromaticaberration="0.0" maxchromaticaberration="0"
 			minfacetint="0,0,0,0" maxfacetint="0,25,0,25" 
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
-      <StatusEffect target="Character">
-        <Conditional HasStatusTag="!equals cbrnsuit" />
-        <Affliction identifier="organdamage" amount="3.5" />
-        <Affliction identifier="scp_vomiting" amount="2" />
-        <Affliction identifier="scp_presolatexinfection" amount="0.1" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
+			<StatusEffect target="Character">
+				<Conditional HasStatusTag="!equals cbrnsuit" />
+				<Affliction identifier="organdamage" amount="3.5" />
+				<Affliction identifier="scp_vomiting" amount="2" />
+				<Affliction identifier="scp_presolatexinfection" amount="0.1" />
+			</StatusEffect>
+		</Effect>
+	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 	
-  <Affliction 
+	<Affliction 
 		name="" 
 		identifier="scp_latexcontamination" 
 		description="" 
-		type="airborneinfection" 
+		type="poison_skin" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
 		limbspecific="false" indicatorlimb="Head" 
@@ -161,7 +170,7 @@
 		karmachangeonapplied="-100" 
 		maxstrength="300">
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="3" 
 			minvitalitydecrease="0" maxvitalitydecrease="0" 
 			strengthchange="-1" 
@@ -171,17 +180,17 @@
 			minfacetint="0,0,0,0" 
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
 
-      <StatusEffect target="Character">
-        <Conditional HasStatusTag="!equals cbrnsuit" />
-        <Affliction identifier="organdamage" amount="2" />
-        <Affliction identifier="organdamage" amount="4" probability="0.5" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
+			<StatusEffect target="Character">
+				<Conditional HasStatusTag="!equals cbrnsuit" />
+				<Affliction identifier="organdamage" amount="2" />
+				<Affliction identifier="organdamage" amount="4" probability="0.5" />
+			</StatusEffect>
+		</Effect>
+	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
 
-  <Affliction 
+	<Affliction 
 		name="" 
 		identifier="scp_devilpoisoning" 
 		description="" 
@@ -194,12 +203,12 @@
 		karmachangeonapplied="-100" 
 		maxstrength="200">
 
-    <Description textidentifier="descscpdevilmin" minstrength="0" maxstrength="25" />
-    <Description textidentifier="descscpdevilmod" minstrength="25" maxstrength="75" />
-    <Description textidentifier="descscpdevilsev" minstrength="75" maxstrength="175" />
-    <Description textidentifier="descscpdevilmax" minstrength="175" maxstrength="200" />
+		<Description textidentifier="descscpdevilmin" minstrength="0" maxstrength="25" />
+		<Description textidentifier="descscpdevilmod" minstrength="25" maxstrength="75" />
+		<Description textidentifier="descscpdevilsev" minstrength="75" maxstrength="175" />
+		<Description textidentifier="descscpdevilmax" minstrength="175" maxstrength="200" />
 
-    <Effect 
+		<Effect 
 			minstrength="0" maxstrength="20" 
 			minvitalitydecrease="0" maxvitalitydecrease="0" 
 			strengthchange="0.5"
@@ -210,12 +219,12 @@
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.1" 
 			screeneffectfluctuationfrequency="1">
 
-      <StatusEffect target="Character">
-        <Affliction identifier="organdamage" amount="0.01" setvalue="true" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character">
+				<Affliction identifier="organdamage" amount="0.01" setvalue="true" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="20" maxstrength="100" 
 			minvitalitydecrease="0" maxvitalitydecrease="20" 
 			strengthchange="2" 
@@ -226,21 +235,21 @@
 			minafflictionoverlayalphamultiplier="0.1" maxafflictionoverlayalphamultiplier="0.3" 
 			screeneffectfluctuationfrequency="1.25">
 
-      <StatusEffect target="Character" SpeedMultiplier="0.9" setvalue="true" />
-      <StatusEffect target="Character">
-        <Affliction identifier="bleeding" amount="0.1" setvalue="true" />
-        <Affliction identifier="scp_vomitingblood" amount="3" setvalue="true" />
-        <Affliction identifier="organdamage" amount="0.25" />
-      </StatusEffect>
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_devilpoisoning="gte 35" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/heartbeat.ogg" volume="1" dontmuffle="True" loop="true" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" SpeedMultiplier="0.9" setvalue="true" />
+			<StatusEffect target="Character">
+				<Affliction identifier="bleeding" amount="0.1" setvalue="true" />
+				<Affliction identifier="scp_vomitingblood" amount="3" setvalue="true" />
+				<Affliction identifier="organdamage" amount="0.25" />
+			</StatusEffect>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_devilpoisoning="gte 35" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/Medical/heartbeat.ogg" volume="1" dontmuffle="True" loop="true" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="100" maxstrength="150" 
 			minvitalitydecrease="20" maxvitalitydecrease="60" 
 			strengthchange="2" 
@@ -251,21 +260,21 @@
 			minafflictionoverlayalphamultiplier="0.3" maxafflictionoverlayalphamultiplier="0.6" 
 			screeneffectfluctuationfrequency="1.75">
 
-      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
-      <StatusEffect target="Character" interval="1">
-        <Affliction identifier="bleeding" amount="3" />
-        <Affliction identifier="scp_vomitingblood" amount="50" />
-        <Affliction identifier="organdamage" amount="0.5" />
-      </StatusEffect>
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_devilpoisoning="gte 100" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/heartbeat.ogg" volume="1.5" dontmuffle="True" loop="true" frequencymultiplier="1.1" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true" />
+			<StatusEffect target="Character" interval="1">
+				<Affliction identifier="bleeding" amount="3" />
+				<Affliction identifier="scp_vomitingblood" amount="50" />
+				<Affliction identifier="organdamage" amount="0.5" />
+			</StatusEffect>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_devilpoisoning="gte 100" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/Medical/heartbeat.ogg" volume="1.5" dontmuffle="True" loop="true" frequencymultiplier="1.1" />
+			</StatusEffect>
+		</Effect>
 		
-    <Effect 
+		<Effect 
 			minstrength="150" maxstrength="200" 
 			minvitalitydecrease="60" maxvitalitydecrease="150" 
 			strengthchange="3" 
@@ -276,34 +285,34 @@
 			minafflictionoverlayalphamultiplier="0.6" maxafflictionoverlayalphamultiplier="1.0" 
 			screeneffectfluctuationfrequency="2">
 
-      <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
-      <StatusEffect target="Character" interval="1">
-        <Affliction identifier="bleeding" amount="12" />
-        <Affliction identifier="organdamage" amount="4" />
-      </StatusEffect>
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_devilpoisoning="gte 150" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/heartbeat.ogg" volume="2" dontmuffle="True" loop="true" frequencymultiplier="1.2" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
+			<StatusEffect target="Character" interval="1">
+				<Affliction identifier="bleeding" amount="12" />
+				<Affliction identifier="organdamage" amount="4" />
+			</StatusEffect>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_devilpoisoning="gte 150" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/Medical/heartbeat.ogg" volume="2" dontmuffle="True" loop="true" frequencymultiplier="1.2" />
+			</StatusEffect>
+		</Effect>
 
-    <PeriodicEffect 
+		<PeriodicEffect 
 			mininterval="1" maxinterval="3">
 
-      <StatusEffect target="Character" comparison="and">
-        <Conditional scp_devilpoisoning="gte 50" />
-        <Conditional IsLocalPlayer="True" />
-        <Conditional IsDead="False" />
-        <sound file="%ModDir%/Medical/Sounds/latexspread1.ogg" volume="0.65" selectionmode="Random" />
-        <sound file="%ModDir%/Medical/Sounds/latexspread2.ogg" volume="0.65" />
-        <sound file="%ModDir%/Medical/Sounds/latexspread3.ogg" volume="0.65" />
-      </StatusEffect>
-    </PeriodicEffect>
-    <icon texture="%ModDir%/Afflictions/Sprites/afflictions.png" sourcerect="133,1,128,128" color="106,106,106,255" origin="0,1.2100878E-09" />
-    <AfflictionOverlay texture="%ModDir%/Afflictions/Sprites/devilsblood.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
-  </Affliction>
+			<StatusEffect target="Character" comparison="and">
+				<Conditional scp_devilpoisoning="gte 50" />
+				<Conditional IsLocalPlayer="True" />
+				<Conditional IsDead="False" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread1.ogg" volume="0.65" selectionmode="Random" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread2.ogg" volume="0.65" />
+				<sound file="%ModDir%/Sounds/Medical/latexspread3.ogg" volume="0.65" />
+			</StatusEffect>
+		</PeriodicEffect>
+		<icon texture="%ModDir%/Sprites/Afflictions/afflictions.png" sourcerect="133,1,128,128" color="106,106,106,255" origin="0,1.2100878E-09" />
+		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/devilsblood.png" sourcerect="0,0,1024,680" color="255,255,255,255" origin="0,0" />
+	</Affliction>
 	
 	<!--++++++++++++++++++++++++++++++++++++-->
 
@@ -311,7 +320,7 @@
 		name="" 
 		identifier="scp_devilsbreathexposure" 
 		description="" 
-		type="chemicalexposure" 
+		type="poison_airborne" 
 		causeofdeathdescription="" 
 		selfcauseofdeathdescription="" 
 		limbspecific="false" indicatorlimb="Head" 
@@ -319,7 +328,7 @@
 		karmachangeonapplied="-100" 
 		maxstrength="40">
 
-    <Effect
+		<Effect
 			minstrength="0" maxstrength="20" 
 			minvitalitydecrease="0" maxvitalitydecrease="0" 
 			strengthchange="-3" 
@@ -329,13 +338,13 @@
 			minfacetint="0,0,0,0" maxfacetint="0,25,0,25" 
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
 
-      <StatusEffect target="Character">
-        <Conditional HasStatusTag="!equals cbrnsuit" />
-        <Affliction identifier="organdamage" amount="1" />
-      </StatusEffect>
-    </Effect>
+			<StatusEffect target="Character">
+				<Conditional HasStatusTag="!equals cbrnsuit" />
+				<Affliction identifier="organdamage" amount="1" />
+			</StatusEffect>
+		</Effect>
 
-    <Effect 
+		<Effect 
 			minstrength="20" maxstrength="40" 
 			minvitalitydecrease="0" maxvitalitydecrease="0" 
 			strengthchange="-5" 
@@ -345,22 +354,22 @@
 			minfacetint="0,0,0,0" maxfacetint="0,25,0,25" 
 			minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0">
 
-      <StatusEffect target="Character">
-        <Conditional HasStatusTag="!equals cbrnsuit" />
-        <Affliction identifier="organdamage" amount="2" />
-        <Affliction identifier="bloodloss" amount="1" />
-        <Affliction identifier="scp_devilpoisoning" amount="0.1" probability="0.25" />
-      </StatusEffect>
-    </Effect>
-  </Affliction>
+			<StatusEffect target="Character">
+				<Conditional HasStatusTag="!equals cbrnsuit" />
+				<Affliction identifier="organdamage" amount="2" />
+				<Affliction identifier="bloodloss" amount="1" />
+				<Affliction identifier="scp_devilpoisoning" amount="0.1" probability="0.25" />
+			</StatusEffect>
+		</Effect>
+	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
-
+	
 	<Affliction
 		name="Ants" 
 		identifier="ants" 
 		description="The patient is showing signs of great pain and torture." 
-		type="resistance" 
+		type="resistance"
 		causeofdeathdescription="Tortured to death" 
 		selfcauseofdeathdescription="You have were tortured to death." 
 		limbspecific="false" indicatorlimb="Torso" 
@@ -397,7 +406,7 @@
 				<Affliction identifier="ants" amount="1" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="128,0,128,128" color="195,76,60,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="128,0,128,128" color="195,76,60,255" origin="0,0" />
 	</Affliction>
 
 	<!--++++++++++++++++++++++++++++++++++++-->
@@ -445,12 +454,951 @@
 			multiplybymaxvitality="true" 
 			minvitalitydecrease="0" maxvitalitydecrease="1" 
 			strengthchange="1">
+
 			<StatusEffect target="Character">
 				<Affliction identifier="bloodloss" amount="1.5" />
 				<Affliction identifier="organdamage" amount="1" />
 			</StatusEffect>
 		</Effect>
-		<icon texture="%ModDir%/Afflictions/Sprites/new_afflictions.png" sourcerect="640,0,128,128" color="195,101,60,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/new_afflictions.png" sourcerect="640,0,128,128" color="195,101,60,255" origin="0,0" />
 	</Affliction>
 
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--~FENITER CHEMICAL-AGENTS START~-->
+	<!--Credit to feniter for these. Made the original chemical agents mod that I'm integrating here.-->
+
+	<Affliction
+		name="" 
+		identifier="nerveagent" 
+		description="" 
+		type="poison_skin" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="35" showinhealthscannerthreshold="10" 
+		maxstrength="100" 
+		affectmachines="false" 
+		medicalskillgain="9.0" 
+		damageoverlayalpha="0">
+
+		<Effect
+			minstrength="0" maxstrength="5" 
+			minvitalitydecrease="0" maxvitalitydecrease="0" 
+			strengthchange="-0.2">
+		</Effect>
+
+		<Effect 
+			minstrength="5" maxstrength="20" 
+			minvitalitydecrease="0" maxvitalitydecrease="0" 
+			strengthchange="0.1" 
+			minscreendistort="0.01" maxscreendistort="0.02" 
+			minscreenblur="0.0" maxscreenblur="0.02" 
+			minspeedmultiplier="0.99" maxspeedmultiplier="0.9" 
+			minskillmultiplier="1" maxskillmultiplier="1" 
+			MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.09" 
+			minchromaticaberration="0.1" maxchromaticaberration="0.3" 
+			dialogflag="nerveagent">
+
+			<StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+				<Conditional IsHuman="false" />
+				<Affliction identifier="nerveagent" amount="0.95" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="20" maxstrength="40" 
+			minvitalitydecrease="0" maxvitalitydecrease="0" 
+			strengthchange="0.2" 
+			minscreendistort="0.02" maxscreendistort="0.06" 
+			minscreenblur="0.02" maxscreenblur="0.1" 
+			minspeedmultiplier="0.9" maxspeedmultiplier="0.6" 
+			minskillmultiplier="1" maxskillmultiplier="1" 
+			MinAfflictionOverlayAlphaMultiplier="0.09" MaxAfflictionOverlayAlphaMultiplier="0.17" 
+			minchromaticaberration="0.3" maxchromaticaberration="0.5" 
+			dialogflag="nerveagent">
+
+			<StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+				<Conditional IsHuman="false" />
+				<Affliction identifier="nerveagent" amount="1.5" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="40" maxstrength="80" 
+			minvitalitydecrease="0" maxvitalitydecrease="3" 
+			strengthchange="0.6" 
+			minscreendistort="0.06" maxscreendistort="1.6" 
+			minscreenblur="0.1" maxscreenblur="1.5" 
+			minspeedmultiplier="0.6" maxspeedmultiplier="0.1" 
+			minskillmultiplier="1" maxskillmultiplier="0.01" 
+			MinAfflictionOverlayAlphaMultiplier="0.17" MaxAfflictionOverlayAlphaMultiplier="1" 
+			minchromaticaberration="0.5" maxchromaticaberration="0.7">
+
+			<StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+				<Conditional IsHuman="false" />
+				<Affliction identifier="nerveagent" amount="3" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="80" maxstrength="95" 
+			minvitalitydecrease="3" maxvitalitydecrease="140" 
+			strengthchange="1" 
+			minscreendistort="1.6" maxscreendistort="2" 
+			minscreenblur="1.5" maxscreenblur="2" 
+			minspeedmultiplier="0.1" maxspeedmultiplier="0" 
+			minskillmultiplier="0.1" maxskillmultiplier="0" 
+			MinAfflictionOverlayAlphaMultiplier="1" 
+			MaxAfflictionOverlayAlphaMultiplier="2" 
+			minchromaticaberration="0.6" 
+			maxchromaticaberration="0.95">
+
+			<StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+				<Conditional IsHuman="false" />
+				<Affliction identifier="nerveagent" amount="6" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" OxygenAvailable="-1000.0" setvalue="true">
+				<Affliction identifier="stun" amount="100" />
+			</StatusEffect>
+		</Effect>
+		
+		<Effect 
+			minstrength="95" maxstrength="100" 
+			minvitalitydecrease="140" maxvitalitydecrease="10000" 
+			strengthchange="100"
+			minscreendistort="1" maxscreendistort="1" 
+			minscreenblur="1" maxscreenblur="1" 
+			minspeedmultiplier="0" maxspeedmultiplier="0" 
+			minskillmultiplier="0" maxskillmultiplier="0" 
+			MinAfflictionOverlayAlphaMultiplier="2" MaxAfflictionOverlayAlphaMultiplier="2.5" 
+			minchromaticaberration="1" maxchromaticaberration="1">
+			
+			<StatusEffect target="Character" setvalue="true">
+				<Affliction identifier="stun" amount="100" />
+			</StatusEffect>
+		</Effect>
+
+		<Description textidentifier="afflictiondescription.nerveagent.self" target="Self" minstrength="35" maxstrength="60" />
+		<Description textidentifier="afflictiondescription.nerveagent" target="OtherCharacter" minstrength="35" maxstrength="60" />
+		<Description textidentifier="afflictiondescription.nerveagent.high.self" target="Self" minstrength="60" maxstrength="100" />
+		<Description textidentifier="afflictiondescription.nerveagent.high" target="OtherCharacter" minstrength="60" maxstrength="100" />
+
+		<PeriodicEffect 
+			mininterval="2" maxinterval="5" 
+			multiplyafflictionsbymaxvitality="true">
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional nerveagent="gte 40" />
+				<Affliction identifier="stun" amount="2" />
+			</StatusEffect>
+		</PeriodicEffect>
+		
+		<PeriodicEffect 
+			mininterval="14" maxinterval="15" 
+			multiplyafflictionsbymaxvitality="true">
+
+			<StatusEffect target="Character" OxygenAvailable="-2000.0" duration="6" comparison="and">
+				<Conditional nerveagent="gte 35" />
+				<Conditional nerveagent="lt 60" />
+				<Conditional ishuman="true" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath1.ogg" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath2.ogg" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath3.ogg" />
+			</StatusEffect>
+		</PeriodicEffect>
+
+		<PeriodicEffect 
+			mininterval="24" maxinterval="30" 
+			multiplyafflictionsbymaxvitality="true">
+
+			<StatusEffect target="Character" OxygenAvailable="-2000.0" duration="12" comparison="and">
+				<Conditional nerveagent="gte 60" />
+				<Conditional nerveagent="lt 100" />
+				<Conditional ishuman="true" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath1.ogg" selectionmode="Random" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath2.ogg" />
+				<Sound file="%ModDir%/Sounds/Medical/outofbreath3.ogg" />
+			</StatusEffect>
+		</PeriodicEffect>
+
+		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/respiratoryfailure.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+		<icon texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="0,0,128,128" color="122,122,23,255" origin="0,0" />
+	</Affliction>
+	
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="" 
+		identifier="nerveagentcontamination" 
+		description="" 
+		type="poison_contaminant" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="101" showinhealthscannerthreshold="1"
+		maxstrength="100" 
+		affectmachines="true">
+
+		<Effect 
+			minstrength="0" maxstrength="100" 
+			minvitalitydecrease="0" maxvitalitydecrease="0" 
+			strengthchange="-0.2">
+		</Effect>
+
+		<PeriodicEffect 
+			mininterval="2" maxinterval="5">
+
+			<StatusEffect target="NearbyCharacters" range="200">
+				<Affliction identifier="nerveagent" amount="1" />
+			</StatusEffect>
+		</PeriodicEffect>
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--feniterpulmonaryagent1-->
+
+	<Affliction 
+		name="" 
+		identifier="pulmonaryagentbuildup" 
+		type="poison_airborne" 
+		description="" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="40" showinhealthscannerthreshold="20" 
+		maxstrength="100" 
+		affectmachines="true">
+
+
+		<Effect 
+			minstrength="0" maxstrength="20" strengthchange="0.5">
+		</Effect>
+
+    	<Effect 
+			minstrength="20" maxstrength="40" strengthchange="0.4">
+		</Effect>
+
+    	<Effect 
+			minstrength="40" maxstrength="60" strengthchange="0.3" 
+			resistancefor="OxygenLow" minresistance="0" maxresistance="-0.4">
+		</Effect>
+
+   		<Effect 
+			minstrength="60" maxstrength="80" strengthchange="0.3" 
+			resistancefor="OxygenLow" minresistance="-0.4" maxresistance="-0.8" 
+			graincolor="0,0,20,255" mingrainstrength="0" maxgrainstrength="2" 
+			minscreendistort="0" maxscreendistort="0.5" 
+			minscreenblur="0" maxscreenblur="1">
+		</Effect>
+
+    	<Effect 
+			minstrength="80" maxstrength="100" strengthchange="0.2" 
+			resistancefor="OxygenLow" minresistance="-0.8" maxresistance="-1.2" 
+			graincolor="0,0,20,255" mingrainstrength="2" maxgrainstrength="3" 
+			minscreendistort="0.5" maxscreendistort="1" 
+			minscreenblur="1" maxscreenblur="2" 
+			minspeedmultiplier="1" maxspeedmultiplier="0.8" >
+		</Effect>	
+
+		<Description textidentifier="afflictiondescription.pulmonaryagentbuildup.self" target="Self" minstrength="40" maxstrength="60" />
+		<Description textidentifier="afflictiondescription.pulmonaryagentbuildup" target="OtherCharacter" minstrength="40" maxstrength="60" />
+		<Description textidentifier="afflictiondescription.pulmonaryagentbuildup.high.self" target="Self" minstrength="60" maxstrength="100" />
+		<Description textidentifier="afflictiondescription.pulmonaryagentbuildup.high" target="OtherCharacter" minstrength="60" maxstrength="100" />
+
+		<PeriodicEffect 
+			mininterval="10" maxinterval="20">
+
+    		<StatusEffect target="Character" duration="5" comparison="and">
+    		  <Conditional pulmonaryagentbuildup="gte 40" />
+    		  <Conditional pulmonaryagentbuildup="lt 50" />
+
+    		  <Affliction identifier="incrementalstun" amount="9" />
+    		  <Affliction identifier="Oxygenlow" amount="4" />
+    		</StatusEffect>
+    	</PeriodicEffect>
+
+    	<PeriodicEffect 
+			mininterval="20" maxinterval="30">
+
+    		<StatusEffect target="Character" duration="10" comparison="and">
+    			<Conditional pulmonaryagentbuildup="gte 50" />
+    			<Conditional pulmonaryagentbuildup="lt 60" />
+
+    			<Affliction identifier="incrementalstun" amount="9" />
+    			<Affliction identifier="Oxygenlow" amount="3" />
+    		</StatusEffect>
+    	</PeriodicEffect>
+		
+    	<PeriodicEffect 
+			mininterval="20" maxinterval="40">
+
+    		<StatusEffect target="Character" duration="12" comparison="and">
+    			<Conditional pulmonaryagentbuildup="gte 60" />
+    			<Conditional pulmonaryagentbuildup="lt 101" />
+
+    			<Affliction identifier="incrementalstun" amount="9" />
+    			<Affliction identifier="Oxygenlow" amount="2" />
+    		</StatusEffect>
+    	</PeriodicEffect>
+
+		<icon texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="128,0,128,128" color="122,122,23,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--feniterpulmonaryagent2-->
+
+	<Affliction 
+		name="" 
+		identifier="pulmonaryagentexposure" 
+		description="" 
+		causeofdeathdescription="Perforated lungs resulting in asphyxiation." 
+		selfcauseofdeathdescription="Your lungs are perforated by pulmonary agents." 
+		type="poison_contaminant" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="90" 
+		showinhealthscannerthreshold="10" 
+		maxstrength="200" 
+		affectmachines="false">
+
+		<Effect 
+			minstrength="0" maxstrength="80" 
+			minvitalitydecrease="0" maxvitalitydecrease="0" 
+			strengthchange="-0.2" 
+			minscreendistort="0.015" maxscreendistort="0.040" 
+			minscreenblur="0.015" maxscreenblur="0.040" 
+			minspeedmultiplier="0.95" maxspeedmultiplier="0.9" 
+			minchromaticaberration="0.015" maxchromaticaberration="0.025">
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional pulmonaryagentbuildup="lt 1" />
+				<Conditional hastag="neq facerespirator" />
+				<Affliction identifier="pulmonaryagentbuildup" amount="0.01" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			minvitalitydecrease="0" maxvitalitydecrease="8" 
+			strengthchange="-0.2" 
+			minscreendistort="0.040" maxscreendistort="0.2" 
+			minscreenblur="0.040" maxscreenblur="0.2" 
+			minspeedmultiplier="0.9" maxspeedmultiplier="0.8" 
+			minchromaticaberration="0.025" maxchromaticaberration="0.4">
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional pulmonaryagentbuildup="lt 1" />
+				<Conditional hastag="neq facerespirator" />
+				<Affliction identifier="pulmonaryagentbuildup" amount="0.01" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="100" maxstrength="200" 
+			minvitalitydecrease="8" maxvitalitydecrease="1000" 
+			strengthchange="-0.1" 
+			minscreendistort="0.2" maxscreendistort="1" 
+			minscreenblur="0.2" maxscreenblur="1" 
+			minspeedmultiplier="0.8" maxspeedmultiplier="0.3" 
+			minchromaticaberration="0.4" maxchromaticaberration="0.9">
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional pulmonaryagentbuildup="lt 1" />
+				<Conditional hastag="neq facerespirator" />
+				<Affliction identifier="pulmonaryagentbuildup" amount="0.01" />
+			</StatusEffect>
+		</Effect>
+
+		<Description textidentifier="afflictiondescription.pulmonaryagentexposure.self" target="Self" minstrength="80" maxstrength="100" />
+		<Description textidentifier="afflictiondescription.pulmonaryagentexposure" target="OtherCharacter" minstrength="80" maxstrength="100" />
+		<Description textidentifier="afflictiondescription.pulmonaryagentexposure.high.self" target="Self" minstrength="100" maxstrength="200" />
+		<Description textidentifier="afflictiondescription.pulmonaryagentexposure.high" target="OtherCharacter" minstrength="100" maxstrength="200" />
+
+		<icon texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="128,128,128,128" color="122,122,23,255" origin="0,0" />
+	</Affliction>
+	
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="" 
+		identifier="bloodagent" 
+		type="poison_skin" 
+		description=""
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="0" 
+		showinhealthscannerthreshold="1" 
+		maxstrength="100" 
+		affectmachines="false">
+
+		<Effect 
+			minstrength="0" maxstrength="60" 
+			minvitalitydecrease="0" maxvitalitydecrease="60" 
+			strengthchange="-0.08"
+			minscreendistort="0" maxscreendistort="1.2" 
+			minscreenblur="0" maxscreenblur="1.5"
+			minspeedmultiplier="1" maxspeedmultiplier="0.15" 
+			minchromaticaberration="0" maxchromaticaberration="0.45" 
+			MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.8" 
+			minskillmultiplier="1" maxskillmultiplier="0.2" 
+			minbodytint="115,115,0,40" maxbodytint="153,153,0,90" 
+			minfacetint="153,153,0,40" maxfacetint="153,153,0,90">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="bloodloss" amount="0.3" />
+				<Affliction identifier="nausea" amount="1.1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="60" maxstrength="95" 
+			minvitalitydecrease="60" maxvitalitydecrease="80" 
+			strengthchange="0.05" 
+			minscreendistort="1.2" maxscreendistort="2" 
+			minscreenblur="1.5" maxscreenblur="2"
+			minspeedmultiplier="0.4" maxspeedmultiplier="0" 
+			minchromaticaberration="0.45" maxchromaticaberration="1" 
+			MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="1" 
+			minskillmultiplier="0.2" maxskillmultiplier="0.1" 
+			minbodytint="115,115,0,90" maxbodytint="153,153,0,110" 
+			minfacetint="153,153,0,90" maxfacetint="153,153,0,110">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="bloodloss" amount="2" />
+				<Affliction identifier="nausea" amount="2" />
+			</StatusEffect>
+			<StatusEffect target="Character" setvalue="true">
+				<Affliction identifier="stun" amount="100" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="95" maxstrength="100" 
+			minvitalitydecrease="80" maxvitalitydecrease="10000" 
+			strengthchange="0.8" 
+			minscreendistort="2" maxscreendistort="4" 
+			minscreenblur="2" maxscreenblur="4" 
+			minspeedmultiplier="0" maxspeedmultiplier="0" 
+			minchromaticaberration="1" maxchromaticaberration="3" 
+			MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1" 
+			minskillmultiplier="0.1" maxskillmultiplier="0" 
+			minbodytint="115,115,0,110" maxbodytint="153,153,0,110" 
+			minfacetint="153,153,0,110" maxfacetint="153,153,0,110">
+
+			<StatusEffect target="Character" setvalue="true">
+				<Affliction identifier="stun" amount="100" />
+				<Affliction identifier="bloodloss" amount="2" />
+			</StatusEffect>
+		</Effect>
+
+		<Description textidentifier="afflictiondescription.bloodagent.self" target="Self" />
+		<Description textidentifier="afflictiondescription.bloodagent" target="OtherCharacter" />
+
+		<PeriodicEffect 
+			mininterval="2" maxinterval="5" 
+			multiplyafflictionsbymaxvitality="true">
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional bloodagent="gte 10" />
+				<Affliction identifier="stun" amount="1" />
+			</StatusEffect>
+		</PeriodicEffect>
+
+		<PeriodicEffect 
+			mininterval="70" maxinterval="120" 
+			multiplyafflictionsbymaxvitality="true">
+
+			<StatusEffect target="Character" duration="30">
+				<Conditional bloodagent="gte 20" />
+				<Affliction identifier="stun" amount="30" />
+			</StatusEffect>
+		</PeriodicEffect>
+
+		<icon texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="256,0,128,128" color="122,122,23,255" origin="0,0" />
+		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/bloodonscreen.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="" 
+		identifier="blisteragentinternal" 
+		type="poison_airborne" 
+		description="" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		limbspecific="false" indicatorlimb="Torso" 
+		maxstrength="100">
+
+		<Effect 
+			minstrength="0" maxstrength="2" 
+			minvitalitydecrease="0" maxvitalitydecrease="10" 
+			strengthchange="-0.01" 
+			mingrainstrength="0" maxgrainstrength="2.0" graincolor="20,0,0,255"
+			minscreendistort="0" maxscreendistort="1" 
+			minscreenblur="0" maxscreenblur="3" 
+			minspeedmultiplier="1" maxspeedmultiplier="0.8" 
+			minskillmultiplier="1" maxskillmultiplier="0.25" 
+			minchromaticaberration="0" maxchromaticaberration="1">
+
+			<StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+				<Conditional isLocalPlayer="true" />
+				<Explosion showeffects="false" camerashake="5" camerashakerange="60" force="0" range="1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="2" maxstrength="60" 
+			minvitalitydecrease="10" maxvitalitydecrease="30" 
+			strengthchange="-0.08" 
+			mingrainstrength="2" maxgrainstrength="10.0" graincolor="20,0,0,255"	
+			minscreendistort="1" maxscreendistort="2" 
+			minscreenblur="3" maxscreenblur="7"
+			minspeedmultiplier="1" maxspeedmultiplier="0.8" 
+			minskillmultiplier="0.25" maxskillmultiplier="0.15" 
+			minchromaticaberration="1" maxchromaticaberration="2">
+
+			<StatusEffect target="Character" comparison="and">
+				<Affliction identifier="organdamage" amount="0.05" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+				<Conditional isLocalPlayer="true" />
+				<Conditional blisteragentinternal="gte 2" />
+				<Conditional blisteragentinternal="lt 10" />
+				<Explosion showeffects="false" camerashake="1" camerashakerange="200" force="0" range="1" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+				<Conditional isLocalPlayer="true" />
+				<Conditional blisteragentinternal="gte 10" />
+				<Explosion showeffects="false" camerashake="2" camerashakerange="200" force="0" range="1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="60" maxstrength="95" 
+			minvitalitydecrease="30" maxvitalitydecrease="99" 
+			strengthchange="-0.04" 
+			mingrainstrength="10" maxgrainstrength="20.0" graincolor="20,0,0,255" 
+			minscreendistort="2" maxscreendistort="4" 
+			minscreenblur="7" maxscreenblur="8" 
+			minspeedmultiplier="0.8" maxspeedmultiplier="0" 
+			minskillmultiplier="0.15" maxskillmultiplier="0" 
+			minchromaticaberration="1" maxchromaticaberration="3">
+
+			<StatusEffect target="Character" comparison="and">
+				<Affliction identifier="organdamage" amount="0.15" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+				<Conditional isLocalPlayer="true" />
+				<Explosion showeffects="false" camerashake="4" camerashakerange="250" force="0" range="1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="95" maxstrength="100" 
+			minvitalitydecrease="60" maxvitalitydecrease="10000" 
+			strengthchange="0.02" 
+			mingrainstrength="20" maxgrainstrength="40.0" graincolor="20,0,0,255" 
+			minscreendistort="4" maxscreendistort="8" 
+			minscreenblur="8" maxscreenblur="8" 
+			minspeedmultiplier="0" maxspeedmultiplier="0" 
+			minskillmultiplier="0" maxskillmultiplier="0" 
+			minchromaticaberration="3" maxchromaticaberration="3">
+
+			<StatusEffect target="Character" setvalue="true">
+				<Affliction identifier="stun" amount="100" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" comparison="and">
+				<Affliction identifier="organdamage" amount="0.5" />
+			</StatusEffect>
+		</Effect>
+
+		<Description textidentifier="afflictiondescription.blisteragentinternal.self" target="Self" />
+		<Description textidentifier="afflictiondescription.blisteragentinternal" target="OtherCharacter" />
+
+		<PeriodicEffect 
+			mininterval="8" maxinterval="9">
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional blisteragentinternal="gte 20" />
+				<Affliction identifier="bloodloss" amount="1.15" />
+				<Affliction identifier="organdamage" amount="0.185" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional ishuman="true" />
+				<Conditional blisteragentinternal="gte 5" />
+				<Conditional hasspecifiertag="male" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional ishuman="true" />
+				<Conditional blisteragentinternal="gt 5" />
+				<Conditional hasspecifiertag="female" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" targetlimbs="Head" duration="1" SpeedMultiplier="0.0" comparison="and">
+				<Conditional blisteragentinternal="gte 5" />
+				<ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="25" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" colormultiplier="100,0,0,255" />
+				<ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="25" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" colormultiplier="176,153,0,255" />
+				<Conditional HideFace="eq False" />
+			</StatusEffect>
+		</PeriodicEffect>
+		
+		<icon texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="128,128,128,128" color="122,122,23,255" origin="0,0" />
+	</Affliction>
+	
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="" 
+		identifier="blisteragentcontamination" 
+		description="" 
+		type="poison_contaminant" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="101" 
+		showinhealthscannerthreshold="1" 
+		maxstrength="100" 
+		affectmachines="true">
+
+		<Effect 
+			minstrength="0" maxstrength="100" 
+			strengthchange="-0.215">
+		</Effect>
+
+		<PeriodicEffect 
+			mininterval="2" maxinterval="5">
+
+			<StatusEffect target="NearbyCharacters" range="200">
+				<Affliction identifier="blisteragentinternal" amount="0.325" />
+				<Affliction identifier="acidburn" amount="0.325" />
+			</StatusEffect>
+		</PeriodicEffect>
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+	
+	<Affliction 
+		name="" 
+		identifier="teargas"
+		aliases="teargas"
+		description="" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		type="chemical_airborne" 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="1" showinhealthscannerthreshold="1"
+		maxstrength="100" 
+		affectmachines="false">
+
+		<Effect
+			minstrength="0" maxstrength="5" 
+			minvitalitydecrease="0" maxvitalitydecrease="3" 
+			strengthchange="-0.1"
+			minscreendistort="0" maxscreendistort="0.8" 
+			minscreenblur="0" maxscreenblur="0.8" 
+			minspeedmultiplier="1" maxspeedmultiplier="0.95" 
+			minchromaticaberration="0.015" maxchromaticaberration="0.95" 
+			minskillmultiplier="1" maxskillmultiplier="0.95" 
+			dialogflag="teargas">
+
+			<StatusEffect target="Character" targetlimbs="Torso">
+				<Affliction identifier="organdamage" amount="0.1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect 
+			minstrength="5" maxstrength="45" 
+			minvitalitydecrease="3" maxvitalitydecrease="45" 
+			strengthchange="-0.5" 
+			mingrainstrength="0" maxgrainstrength="10.0" graincolor="20,20,20,255" 
+			minscreendistort="0.8" maxscreendistort="4" 
+			minscreenblur="0.8" maxscreenblur="3" 
+			minspeedmultiplier="0.95" maxspeedmultiplier="0.9" 
+			minchromaticaberration="0.95" maxchromaticaberration="5" 
+			minskillmultiplier="0.45" maxskillmultiplier="0.1" 
+			dialogflag="teargas">
+
+			<StatusEffect target="Character" targetlimbs="Torso">
+				<Affliction identifier="organdamage" amount="0.2" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+				<Conditional isLocalPlayer="true" />
+				<Conditional teargas="lt 10" />
+				<Explosion showeffects="false" camerashake="10" camerashakerange="100" force="0" range="1" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" interval="0.1" disabledeltatime="true" comparison="and">
+				<Conditional isLocalPlayer="true" />
+				<Conditional teargas="gte 10" />
+				<Explosion showeffects="false" camerashake="20" camerashakerange="100" force="0" range="1" />
+			</StatusEffect>
+		</Effect>
+
+		<Effect
+			minstrength="45" maxstrength="100" 
+			minvitalitydecrease="45" maxvitalitydecrease="80" 
+			strengthchange="-1" 
+			mingrainstrength="10" maxgrainstrength="20.0" graincolor="20,20,20,255" 
+			minscreendistort="4" maxscreendistort="6" 
+			minscreenblur="3" maxscreenblur="3" 
+			minspeedmultiplier="0.9" maxspeedmultiplier="0" 
+			minchromaticaberration="5" maxchromaticaberration="5" 
+			minskillmultiplier="0.1" maxskillmultiplier="0" 
+			dialogflag="teargas">
+
+			<StatusEffect target="Character" targetlimbs="Torso">
+				<Affliction identifier="organdamage" amount="0.8" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" interval="0.1" disabledeltatime="true">
+				<Conditional isLocalPlayer="true" />
+				<Explosion showeffects="false" camerashake="50" camerashakerange="150" force="0" range="1" />
+			</StatusEffect>
+		</Effect>
+
+		<Description textidentifier="afflictiondescription.teargas.self" target="Self" />
+		<Description textidentifier="afflictiondescription.teargas" target="OtherCharacter" />
+
+		<PeriodicEffect 
+			mininterval="1" maxinterval="2">
+
+			<StatusEffect target="Character">
+				<Affliction identifier="stun" amount="0.5" />
+			</StatusEffect>
+		</PeriodicEffect>
+
+		<PeriodicEffect 
+			mininterval="3" maxinterval="4" multiplyafflictionsbymaxvitality="true">
+
+			<StatusEffect target="Character" targetlimbs="Torso" comparison="and">
+				<Conditional teargas="gte 1" />
+				<Conditional teargas="lt 50" />
+				<Affliction identifier="organdamage" amount="0.25" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" targetlimbs="Torso" comparison="and">
+				<Conditional teargas="gte 50" />
+				<Conditional teargas="lte 100" />
+				<Affliction identifier="organdamage" amount="0.45" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional ishuman="true" />
+				<Conditional hasspecifiertag="male" />
+				<Conditional teargas="gte 1" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
+				<Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" comparison="and">
+				<Conditional ishuman="true" />
+				<Conditional hasspecifiertag="female" />
+				<Conditional teargas="gte 1" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
+				<Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
+			</StatusEffect>
+
+			<StatusEffect target="Character" targetlimbs="Head" duration="1" SpeedMultiplier="0.0" comparison="and">
+				<ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="25" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" colormultiplier="176,153,0,255" />
+				<Conditional HideFace="eq False" />
+				<Conditional teargas="gte 1" />
+			</StatusEffect>
+		</PeriodicEffect>
+
+		<icon texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="512,128,128,128" color="122,122,23,255" origin="0,0" />
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="" 
+		identifier="psychochemicalagent" 
+		description="" 
+		causeofdeathdescription="" 
+		selfcauseofdeathdescription="" 
+		type="poison_airborne" 
+		limbspecific="false" indicatorlimb="Head" 
+		showiconthreshold="10" 
+		showinhealthscannerthreshold="10" 
+		maxstrength="100" affectmachines="false">
+
+    	<Effect 
+			minstrength="0" maxstrength="80" strengthchange="-0.2" 
+			minscreendistort="0.0" maxscreendistort="2.0" 
+			minscreenblur="0.0" maxscreenblur="1" 
+			minskillmultiplier="1" maxskillmultiplier="0.2" 
+			minspeedmultiplier="1" maxspeedmultiplier="0.8" 
+			mingrainstrength="0" maxgrainstrength="1" 
+			MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.6" 
+			dialogflag="psychochemicalagent">
+
+    		<StatusEffect target="Character">
+    			<Affliction identifier="psychosis" amount="1" />
+    		</StatusEffect>
+    	</Effect>
+
+    	<Effect 
+			minstrength="80" maxstrength="100" strengthchange="-0.1" 
+			minscreendistort="2" maxscreendistort="4" 
+			minscreenblur="1" maxscreenblur="1" 
+			minspeedmultiplier="0.8" maxspeedmultiplier="0.7" 
+			minskillmultiplier="0.2" maxskillmultiplier="0" 
+			mingrainstrength="1" maxgrainstrength="2" 
+			MinAfflictionOverlayAlphaMultiplier="0.6" MaxAfflictionOverlayAlphaMultiplier="0.6">
+			
+    		<StatusEffect target="Character">
+    		 	<Affliction identifier="psychosis" amount="1" />
+    		</StatusEffect>
+    	</Effect>
+
+		<Description textidentifier="afflictiondescription.psychochemicalagent.self" target="Self" />
+		<Description textidentifier="afflictiondescription.psychochemicalagent" target="OtherCharacter" />
+
+   		<PeriodicEffect 
+			mininterval="5" maxinterval="10">
+
+   			<StatusEffect target="Character">
+   				<Conditional psychochemicalhallucination1="lt 1" />
+   				<Affliction identifier="psychochemicalhallucination1" amount="0.1" />
+   			</StatusEffect>
+
+   			<StatusEffect target="Character">
+   				<Conditional psychochemicalhallucination2="lt 1" />
+   				<Affliction identifier="psychochemicalhallucination2" amount="0.1" />
+   			</StatusEffect>
+   		</PeriodicEffect>
+
+   		<PeriodicEffect 
+			mininterval="10" maxinterval="20">
+
+   			<StatusEffect target="Character">
+   				<Conditional IsLocalPlayer="True" />
+   				<Sound file="%ModDir%/Sounds/Medical/whisper.ogg" selectionmode="Random" />
+   				<Sound file="%ModDir%/Sounds/Medical/insect.ogg" />
+   			</StatusEffect>
+   		</PeriodicEffect>
+
+   		<PeriodicEffect 
+			mininterval="100" maxinterval="200">
+
+   			<StatusEffect target="Character">
+   				<Conditional IsLocalPlayer="True" />
+   				<Sound file="%ModDir%/Sounds/Medical/knock.ogg" />
+   			</StatusEffect>
+   		</PeriodicEffect>
+
+   		<PeriodicEffect 
+			mininterval="2" maxinterval="3">
+
+   			<StatusEffect target="Character">
+   				<Affliction identifier="invertcontrols" amount="1" />
+   			</StatusEffect>
+
+   			<StatusEffect target="Character" setvalue="true">
+   				<Conditional invertcontrols="gte 2" />
+   				<ReduceAffliction identifier="invertcontrols" amount="1000" />
+   			</StatusEffect>
+
+   		</PeriodicEffect>
+
+   		<PeriodicEffect 
+			mininterval="15" maxinterval="30">
+
+   			<StatusEffect target="Character" duration="5">
+   				<Conditional psychochemicalagent="gt 90" />
+   				<Affliction identifier="watchersgaze" amount="40" />
+   				<Affliction identifier="organdamage" amount="3" />
+   				<Affliction identifier="nausea" amount="2" />
+   			</StatusEffect>
+
+   		</PeriodicEffect>
+		
+		<icon texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="512,0,128,128" color="122,122,23,255" origin="0,0" />
+		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psychosismain.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="" 
+		identifier="psychochemicalhallucination1" 
+		description="" 
+		type="poison" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="101" 
+		showinhealthscannerthreshold="101" 
+		maxstrength="101" 
+		affectmachines="false">
+
+		<Effect 
+			minstrength="0" maxstrength="80" 
+			strengthchange="0.1" 
+			MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="1">
+		</Effect> 
+
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			strengthchange="2" 
+			MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="0">
+
+			<StatusEffect target="Character" setvalue="true">
+				<Conditional psychochemicalhallucination1="gte 99" />
+				<ReduceAffliction identifier="psychochemicalhallucination1" amount="1000" />
+			</StatusEffect>
+		</Effect>
+
+		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psychosishallucination1.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+
+	</Affliction>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<Affliction 
+		name="" 
+		identifier="psychochemicalhallucination2" 
+		description="" 
+		type="poison" 
+		limbspecific="false" indicatorlimb="Torso" 
+		showiconthreshold="101" 
+		showinhealthscannerthreshold="101" 
+		maxstrength="101" 
+		affectmachines="false">
+
+		<Effect 
+			minstrength="0" maxstrength="80" 
+			strengthchange="0.1" 
+			MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="1">
+		</Effect>
+
+		<Effect 
+			minstrength="80" maxstrength="100" 
+			strengthchange="2" 
+			MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="0">
+
+			<StatusEffect target="Character" setvalue="true">
+				<Conditional psychochemicalhallucination2="gte 99" />
+				<ReduceAffliction identifier="psychochemicalhallucination2" amount="1000" />
+			</StatusEffect>
+		</Effect>
+
+		<AfflictionOverlay texture="%ModDir%/Sprites/Afflictions/psychosishallucination2.png" sourcerect="0,0,1024,680" color="0,0,0,255" origin="0,0" />
+
+	</Affliction>
 </Afflictions>

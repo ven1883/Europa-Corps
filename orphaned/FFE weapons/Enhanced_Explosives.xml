@@ -2,24 +2,8 @@
 <Items>
   <!--Timed Detonator-->
   <Item name="" identifier="sgt_timedet" aliases="Timed Detonator" category="Equipment,Weapon" subcategory="Renegade" cargocontaineridentifier="metalcrate" tags="smallitem,weapon" scale="0.22" impactsoundtag="impact_metal_heavy" isshootable="true" hideinmenus="false" maxstacksize="1">
-    <Price baseprice="75" soldeverywhere="false">
-      <Price storeidentifier="merchantoutpost" multiplier="0.75" sold="false" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="4" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
-    </Price>
-    <Deconstruct time="15">
-      <Item identifier="fpgacircuit" outcondition="0.5" />
-      <Item identifier="copper" outcondition="0.25" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20" amount="2">
-      <RequiredSkill identifier="weapons" level="45" />
-      <RequiredItem identifier="fpgacircuit" />
-      <RequiredItem identifier="copper" mincondition="0.5" usecondition="true" />
-    </Fabricate>
-    <InventoryIcon texture="%ModDir%/Weapons/Explosives.png" sourcerect="0,0,100,100" />
-    <Sprite texture="%ModDir%/Weapons/Explosives.png" sourcerect="0,0,100,100" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Weapons/explosives.png" sourcerect="0,0,100,100" />
+    <Sprite texture="%ModDir%/Sprites/Weapons/explosives.png" sourcerect="0,0,100,100" depth="0.55" origin="0.5,0.5" />
     <Body width="104" height="86" density="18" />
     <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand+LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" holdpos="40,-10" aimpos="50,-5" handle1="0,-13" handle2="0,-13" attachable="true" Attached="false" AttachedByDefault="false" aimable="true">
       <RequiredItem identifier="wrench" type="Equipped" />
@@ -28,7 +12,7 @@
     <!-- Old Code Back-up
     <LightComponent LightColor="255,0,0,255" range="20" blinkfrequency="1" powerconsumption="0" IsOn="false" canbeselected="false" AllowInGameEditing="false">
       <StatusEffect type="OnActive" targettype="This" Condition="-1.667">
-        <Sound file="%ModDir%/Sounds/satchelbeep.ogg" loop="true" range="1000" />
+        <Sound file="%ModDir%/Sounds/Weapons/Explosives/satchelbeep.ogg" loop="true" range="1000" />
       </StatusEffect>
     </LightComponent>
   -->
@@ -36,12 +20,12 @@
   <!--Normal Speed-->
   <StatusEffect type="OnActive" targettype="This" Condition="-1.667" comparison="And">
     <Conditional condition="gt 8.3333" />
-    <Sound file="%ModDir%/Sounds/satchelbeep.ogg" loop="true" range="1000" />
+    <Sound file="%ModDir%/Sounds/Weapons/Explosives/satchelbeep.ogg" loop="true" range="1000" />
   </StatusEffect>
   <!-- T-5s -->
   <StatusEffect type="OnActive" targettype="This" Condition="-1.667" comparison="And">
     <Conditional condition="lte 8.3333" />
-    <Sound file="%ModDir%/Sounds/satchelbeepfast.ogg" loop="true" range="1000" />
+    <Sound file="%ModDir%/Sounds/Weapons/Explosives/satchelbeepfast.ogg" loop="true" range="1000" />
   </StatusEffect>
   </LightComponent>
     <ItemComponent characterusable="false">

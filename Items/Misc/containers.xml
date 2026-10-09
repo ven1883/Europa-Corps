@@ -1,109 +1,155 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="" identifier="scp_armory" description="" tags="locker,container,securecontainer,secarmcab" linkable="false" spritecolor="255,255,255,255" pickdistance="150" waterproof="true" scale="0.5">
+	<Item name="" identifier="scp_armory" description="" tags="locker,container,securecontainer,secarmcab" linkable="false" spritecolor="255,255,255,255" pickdistance="150" waterproof="true" scale="0.5">
 
-    <Sprite texture="%ModDir%/Misc/containers.png" depth="0.84" sourcerect="0,0,346,371" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/Sprites/Items/Misc/containers.png" depth="0.84" sourcerect="0,0,346,371" origin="0.5,0.5" />
 
-    <ItemContainer 
-      capacity="45" slotsperrow="5" 
-      canbeselected="true" 
-      hideitems="true" 
-      msg="ItemMsgInteractSelect">
+		<ItemContainer 
+		capacity="45" slotsperrow="5" 
+		canbeselected="true" 
+		hideitems="true" 
+		msg="ItemMsgInteractSelect">
 
-      <GuiFrame relativesize="0.24,0.64" anchor="Center" style="ItemUI" />
-      <RequiredItem items="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" ignoreineditor="true" />
-      <Containable items="smallitem,mediumitem" />
-    </ItemContainer>
+		<GuiFrame relativesize="0.24,0.64" anchor="Center" style="ItemUI" />
+		<RequiredItem items="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" ignoreineditor="true" />
+		<Containable items="smallitem,mediumitem" />
+		</ItemContainer>
 
-  </Item>
+	</Item>
 
-  <!--###-->
+	<!--###-->
 
-  <Item name="" identifier="scp_engineeringcab" tags="locker,container,securecontainer,storagecab,engcab" linkable="true" spritecolor="255,255,255,255" pickdistance="150" waterproof="true" scale="0.5">
-    <Sprite texture="%ModDir%/Misc/containers.png" depth="0.84" sourcerect="350,0,509,399" origin="0.5,0.5" />
-    <ItemContainer capacity="45" slotsperrow="5" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
-      <GuiFrame relativesize="0.3,0.65" anchor="Center" style="ItemUI" />
-      <Containable items="smallitem,mediumitem" />
-    </ItemContainer>
-  </Item>
+	<Item name="" identifier="scp_engineeringcab" tags="locker,container,securecontainer,storagecab,engcab" linkable="true" spritecolor="255,255,255,255" pickdistance="150" waterproof="true" scale="0.5">
+		<Sprite texture="%ModDir%/Sprites/Items/Misc/containers.png" depth="0.84" sourcerect="350,0,509,399" origin="0.5,0.5" />
+		<ItemContainer capacity="45" slotsperrow="5" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+		<GuiFrame relativesize="0.3,0.65" anchor="Center" style="ItemUI" />
+		<Containable items="smallitem,mediumitem" />
+		</ItemContainer>
+	</Item>
 
-  <!--###-->
+	<!--###-->
 
-  <Item name="" identifier="scp_leadbox" category="Equipment" tags="mediumitem,mobilecontainer,tool,radiationshielding" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+	<Item name="" identifier="scp_leadbox" category="Equipment" tags="mediumitem,mobilecontainer,tool,radiationshielding" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
 
-    <Sprite texture="%ModDir%/Misc/ammocrates.png" sourcerect="349,0,94,74" origin="0.5,0.5" depth="0.6" />
+		<Sprite texture="%ModDir%/Sprites/Items/Misc/ammocrates.png" sourcerect="349,0,94,74" origin="0.5,0.5" depth="0.6" />
 
-    <Body width="90" height="60" density="20" />
+		<Body width="90" height="60" density="20" />
 
-    <MeleeWeapon 
-      slots="RightHand,LeftHand" 
-      controlpose="true" 
-      aimpos="45,10" handle1="0,18" holdangle="90" reload="1.5" range="50" 
-      combatpriority="6" 
-      msg="ItemMsgPickUpSelect">
+		<MeleeWeapon 
+		slots="RightHand,LeftHand" 
+		controlpose="true" 
+		aimpos="45,10" handle1="0,18" holdangle="90" reload="1.5" range="50" 
+		combatpriority="6" 
+		msg="ItemMsgPickUpSelect">
 
-      <Attack 
-        structuredamage="0" itemdamage="1" 
-        targetimpulse="2">
+		<Attack 
+			structuredamage="0" itemdamage="1" 
+			targetimpulse="2">
 
-        <Affliction identifier="blunttrauma" strength="6" />
-        <Affliction identifier="stun" strength="0.8" />
+			<Affliction identifier="blunttrauma" strength="6" />
+			<Affliction identifier="stun" strength="0.8" />
 
-        <StatusEffect type="OnUse" target="UseTarget">
-          <Conditional entitytype="eq Character" />
+			<StatusEffect type="OnUse" target="UseTarget">
+			<Conditional entitytype="eq Character" />
 
-          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
-          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
-        </StatusEffect>
+			<Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+			<Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+			</StatusEffect>
 
-      </Attack>
+		</Attack>
 
-    </MeleeWeapon>
-    
-    <ItemContainer 
-      capacity="4" 
-      keepopenwhenequipped="true" 
-      movableframe="true">
+		</MeleeWeapon>
+		
+		<ItemContainer 
+		capacity="4" 
+		keepopenwhenequipped="true" 
+		movableframe="true">
 
-      <Containable items="smallitem" />
-    </ItemContainer>
+		<Containable items="smallitem" />
+		</ItemContainer>
 
-    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+		<aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
 
-  </Item>
+	</Item>
 
-  <!--###-->
+	<!--###-->
 
-  <Item name="" description="" identifier="scp_contrabandcontainer" tags="concealed,smallitem" category="Equipment" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+	<Item name="" description="" identifier="scp_contrabandcontainer" tags="concealed,smallitem" category="Equipment" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
 
-    <Sprite name="contrabandcontainer" texture="%ModDir%/Misc/containers.png" sourcerect="3,409,50,74" depth="0.85" origin="0.5,0.5" />
+		<Sprite name="contrabandcontainer" texture="%ModDir%/Sprites/Items/Misc/containers.png" sourcerect="3,409,50,74" depth="0.85" origin="0.5,0.5" />
 
-    <Body width="50" height="74" density="40" />
+		<Body width="50" height="74" density="40" />
 
-    <Holdable 
-      selectkey="Select" pickkey="Use" 
-      slots="Any,RightHand,LeftHand" 
-      msg="ItemMsgDetachWrench" 
-      PickingTime="3.0" 
-      aimpos="65,-10" handle1="0,0" 
-      attachable="true" 
-      aimable="false">
+		<Holdable 
+		selectkey="Select" pickkey="Use" 
+		slots="Any,RightHand,LeftHand" 
+		msg="ItemMsgDetachWrench" 
+		PickingTime="3.0" 
+		aimpos="65,-10" handle1="0,0" 
+		attachable="true" 
+		aimable="false">
 
-      <RequiredItem identifier="wrench" type="Equipped" />
+		<RequiredItem identifier="wrench" type="Equipped" />
 
-      <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
-        <Conditional attached="false" />
-      </StatusEffect>
+		<StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
+			<Conditional attached="false" />
+		</StatusEffect>
 
-    </Holdable>
+		</Holdable>
 
-    <ItemContainer capacity="3" canbeselected="true" hideitems="true" slotsperrow="5" allowuioverlap="true">
-      <Containable items="smallitem" excludeditems="toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,duffelbag,ammocrate" />
-      
-      <StatusEffect type="OnContained" target="This" setvalue="true" drawinventory="false" />
-      <StatusEffect type="OnNotContained" target="This" setvalue="true" drawinventory="true" />
-    </ItemContainer>
+		<ItemContainer capacity="3" canbeselected="true" hideitems="true" slotsperrow="5" allowuioverlap="true">
+		<Containable items="smallitem" excludeditems="toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,duffelbag,ammocrate" />
+		
+		<StatusEffect type="OnContained" target="This" setvalue="true" drawinventory="false" />
+		<StatusEffect type="OnNotContained" target="This" setvalue="true" drawinventory="true" />
+		</ItemContainer>
 
-  </Item>
+	</Item>
+
+	<Item name="" identifier="sgt_locker" tags="cabinet,weapons_cabinet" pickdistance="150" scale="0.6">
+		<Body width="80" height="240" density="20" />
+		<Sprite texture="%ModDir%/Sprites/Items/Misc/lockers.png" depth="0.84" sourcerect="0,224,192,304" origin="0.5,0.5" />
+		<BrokenSprite texture="%ModDir%/Sprites/Items/Misc/lockers.png" depth="0.84" sourcerect="512,0,192,304" origin="0.5,0.5" maxcondition="90" />
+		<DecorativeSprite name="Weapons Cabinet Doors" texture="%ModDir%/Sprites/Items/Misc/lockers.png" depth="0.82" sourcerect="192,224,192,304" origin="0.5,0.5" offset="0,0" />
+		<Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="ItemMsgDetachWrench" PickingTime="10.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="false">
+			<RequiredItem identifier="wrench" type="Equipped" />
+			<StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+			<StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
+				<Conditional attached="false" />
+			</StatusEffect>
+		</Holdable>
+		<ItemContainer capacity="4" canbeselected="true" maxstacksize="1" hideitems="false" msg="ItemMsgInteractSelect" autofill="False" slotsperrow="4" allowuioverlap="false" itempos="34,-120" iteminterval="38,0" itemrotation="90">
+			<RequiredItem identifiers="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" ignoreineditor="true" />
+			<GuiFrame relativesize="0.3,0.3" style="ItemUI" hudpos="0.5,0.5" anchor="LeftCenter" />
+			<Containable identifiers="weapon" />
+		</ItemContainer>
+		<ItemContainer capacity="8" canbeselected="true" hideitems="true" allowuioverlap="false" slotsperrow="4">
+			<RequiredItem identifiers="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" ignoreineditor="true" />
+			<GuiFrame relativesize="0.3,0.3" style="ItemUI" hudpos="0.5,0.5" anchor="RightCenter" />
+			<Containable identifiers="smallammocrate,ammocrate,ammobox,smallammobox">
+				<StatusEffect type="OnContaining" target="This" Condition="-12.5" disabledeltatime="true">
+				<Conditional Condition="eq 100" />
+				</StatusEffect>
+			</Containable>
+			<StatusEffect type="Always" target="This" Condition="10.0" disabledeltatime="true" delay="0.5">
+				<Conditional Condition="eq 90" />
+			</StatusEffect>
+		</ItemContainer>
+		<!-- Open in the year 2080 when container-mode finally works
+		
+		<ItemContainer autofill="False" capacity="10" canbeselected="true" hideitems="true" hudpos="0.5, 2" slotsperrow="5" allowuioverlap="true" >
+		<GuiFrame relativesize="0.2,0.3" anchor="Center" style="ItemUI" hudpos="0.5, 2" />
+		<RequiredItem identifiers="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" ignoreineditor="true"/>
+		<Containable identifiers="smallitem,magazine,round,shell,ek_microtorpedo,ek_ammobox_shotgun" >
+			<StatusEffect type="OnContaining" target="This" Condition="-10.0" disabledeltatime="true">
+			<Conditional Condition="eq 100" />
+			</StatusEffect>
+		</Containable>
+		<StatusEffect type="Always" target="This" Condition="10.0" disabledeltatime="true" delay="0.5">
+			<Conditional Condition="eq 90" />
+		</StatusEffect>
+		</ItemContainer>
+		-->
+	</Item>
 
 </Items>
