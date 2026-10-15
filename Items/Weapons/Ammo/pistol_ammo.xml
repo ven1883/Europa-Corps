@@ -38,7 +38,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_9x19pprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
+				<ParticleEmitter particle="casing_pistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -72,7 +72,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_9x19cappprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
+				<ParticleEmitter particle="casing_pistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
 			</StatusEffect>
 		
 		</ItemContainer>
@@ -223,7 +223,7 @@
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 
 				<SpawnItem identifier="sgt_10mmbullet" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
+				<ParticleEmitter particle="casing_pistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
 
 			</StatusEffect>
 
@@ -263,7 +263,7 @@
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 
 				<SpawnItem identifier="sgt_10mmbullet" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
+				<ParticleEmitter particle="casing_pistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="400" copyentityangle="true" scalemin="0.6" scalemax="0.6" />
 			
 			</StatusEffect>
 
@@ -367,7 +367,7 @@
 
 		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 			<SpawnItem identifier="scp_45projectile" spawnposition="ThisInventory" />
-			<ParticleEmitter particle="scp_spentcasingpistol" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
+			<ParticleEmitter particle="casing_pistol" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
 		</StatusEffect>
 
 		</ItemContainer>
@@ -402,7 +402,7 @@
 
 		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 			<SpawnItem identifier="scp_45incendprojectile" spawnposition="ThisInventory" />
-			<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
+			<ParticleEmitter particle="casing_pistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
 		</StatusEffect>
 
 		</ItemContainer>
@@ -497,7 +497,7 @@
 
 				<Affliction identifier="bleeding" strength="4" />
 				<Affliction identifier="gunshotwound" strength="12" />
-				<Affliction identifier="scp_firelatexburn" strength="8" probability="0.5" />
+				<Affliction identifier="ignis_latex_burn" strength="8" probability="0.5" />
 				<Affliction identifier="stun" strength="0.1" />
 			</Attack>
 
@@ -764,7 +764,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-17" disabledeltatime="true">
 				<SpawnItem identifier="scp_deagleprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingpistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.9" scalemax="0.9" />
+				<ParticleEmitter particle="casing_pistol" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.9" scalemax="0.9" />
 			</StatusEffect>
 
 		</ItemContainer>

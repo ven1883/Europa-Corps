@@ -262,7 +262,7 @@
 
 				<Affliction identifier="burn" strength="50" />
 				<Affliction identifier="bleeding" strength="100" probability="0.25" />
-				<Affliction identifier="scp_presolatexinfection" strength="5" />
+				<Affliction identifier="preso_latex_infection" strength="5" />
 
 				</Explosion>
 
@@ -313,7 +313,7 @@
 
 				<Affliction identifier="burn" strength="50" />
 				<Affliction identifier="bleeding" strength="100" probability="0.25" />
-				<Affliction identifier="scp_devilpoisoning" strength="5" probability="0.55" />
+				<Affliction identifier="devils_blood_poisoning" strength="5" probability="0.55" />
 				</Explosion>
 
 				<ParticleEmitter particle="explosionsmoke" particleamount="12" velocitymin="15" velocitymax="25" scalemin="3" scalemax="4" colormultiplier="200,50,50,255" />
@@ -469,7 +469,7 @@
 			<Attack structuredamage="40" severlimbsprobability="5">
 
 				<Affliction identifier="explosiondamage" strength="45" />
-				<Affliction identifier="scp_presolatexinfection" strength="5" />
+				<Affliction identifier="preso_latex_infection" strength="5" />
 			</Attack>
 
 			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random" />
@@ -477,7 +477,7 @@
 
 			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
 
-				<SpawnItem identifiers="scp_presoliquid40mm" spawnposition="This" />
+				<SpawnItem identifiers="liquid_preso_latex_gl" spawnposition="This" />
 
 				<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
 
@@ -488,7 +488,7 @@
 					severlimbsprobability="0.4" 
 					decal="explosion" decalsize="0.3">
 
-					<Affliction identifier="scp_presolatexinfection" strength="8" probability="0.33" />
+					<Affliction identifier="preso_latex_infection" strength="8" probability="0.33" />
 					<Affliction identifier="stun" strength="2" />
 				</Explosion>
 
@@ -514,7 +514,7 @@
 			<Attack structuredamage="40" severlimbsprobability="5">
 
 				<Affliction identifier="explosiondamage" strength="30" />
-				<Affliction identifier="scp_devilpoisoning" strength="5" probability="0.33" />
+				<Affliction identifier="devils_blood_poisoning" strength="5" probability="0.33" />
 			</Attack>
 
 			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random" />
@@ -522,7 +522,7 @@
 
 			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
 
-				<SpawnItem identifiers="scp_devilgas40mm" spawnposition="This" />
+				<SpawnItem identifiers="gas_devils_blood_gl" spawnposition="This" />
 
 				<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
 
@@ -533,7 +533,7 @@
 					severlimbsprobability="0.4" 
 					decal="explosion" decalsize="0.3">
 
-					<Affliction identifier="scp_devilpoisoning" strength="5" />
+					<Affliction identifier="devils_blood_poisoning" strength="5" />
 					<Affliction identifier="stun" strength="2" />
 				</Explosion>
 
@@ -559,7 +559,7 @@
 			<Attack structuredamage="40" severlimbsprobability="5">
 
 				<Affliction identifier="explosiondamage" strength="20" />
-				<Affliction identifier="scp_hexgasdamage" strength="3" probability="0.33" />
+				<Affliction identifier="hexanova_damage" strength="3" probability="0.33" />
 			</Attack>
 
 			<sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random" />
@@ -567,7 +567,7 @@
 
 			<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
 
-				<SpawnItem identifiers="scp_hexgas40mm" spawnposition="This" />
+				<SpawnItem identifiers="gas_hexanova_gl" spawnposition="This" />
 
 				<sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
 
@@ -579,7 +579,7 @@
 					decal="explosion" 
 					decalsize="0.3">
 
-					<Affliction identifier="scp_hexgasdamage" strength="4" />
+					<Affliction identifier="hexanova_damage" strength="4" />
 					<Affliction identifier="stun" strength="2" />
 				</Explosion>
 

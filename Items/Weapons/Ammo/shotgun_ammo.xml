@@ -233,7 +233,7 @@
 			<Affliction identifier="bleeding" strength="5" />
 			<Affliction identifier="blunttrauma" strength="15" />
 			<Affliction identifier="stun" strength="0.2" />
-			<Affliction identifier="scp_devilpoisoning" strength="1" probability="0.15" />
+			<Affliction identifier="devils_blood_poisoning" strength="1" probability="0.15" />
 		</Attack>
 
 		<StatusEffect type="OnImpact" target="UseTarget">
@@ -247,7 +247,7 @@
 		</StatusEffect>
 
 		<StatusEffect type="OnImpact" target="UseTarget">
-			<SpawnItem identifiers="scp_devilgasshotgun" spawnposition="This" />
+			<SpawnItem identifiers="gas_devils_blood_sg" spawnposition="This" />
 		</StatusEffect>
 
 		</Projectile>
@@ -293,7 +293,7 @@
 			
 			<SpawnItem identifier="scp_12gbucksaiga" spawnposition="ThisInventory" />
 
-			<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+			<ParticleEmitter particle="casing_shotgun" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 		</StatusEffect>
 		
 		</ItemContainer>

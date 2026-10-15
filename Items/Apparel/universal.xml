@@ -63,7 +63,7 @@
 						<sprite name="Heavy HAZMAT Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
 						<sprite name="Heavy HAZMAT Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
 
-						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection" damagemultiplier="0" probabilitymultiplier="0" />
+						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="preso_latex_infection" damagemultiplier="0" probabilitymultiplier="0" />
 						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.15" />
 						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn,burn,scp_psidamage" damagemultiplier="0.5" />
 						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,gunshotwound" damagemultiplier="0.85" />
@@ -326,17 +326,16 @@
 						
 						<StatusEffect type="Always" target="Character" interval="0.5">
 								<RequiredItem item="bulkyweapon" type="Contained" targetslot="16" />
-								<Affliction identifier="scp_protobulk" amount="120" />
+								<!--TODO: This is literally pointless since you can just use a status effect-->
+								<Affliction identifier="heavy_weapon_bulk" amount="120" />
 						</StatusEffect>
 				</Holdable>
 
 				<Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
-						
 						<sprite name="Proto Backpack Wearable" texture="%ModDir%/Sprites/Items/Apparel/protopack.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" hideotherwearables="false" canbehiddenbyotherwearables="false" sourcerect="40,13,113,147" origin="0.62,0.54" scale="0.6" />
-					 
 						<SkillModifier skillidentifier="mechanical" skillvalue="-5" />
 						<SkillModifier skillidentifier="electrical" skillvalue="-5" />
-				
+
 				</Wearable>
 
 		</Item>

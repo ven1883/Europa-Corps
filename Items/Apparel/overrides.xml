@@ -138,7 +138,7 @@
 				<sprite name="Heavy Uniform Right Shoe" texture="%ModDir:Enhanced Armaments%/Jobgear/cbrnsuit.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 				
 				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="feniternerveagent,feniterpulmonaryagent2,feniterbloodagent,feniterblisteragentinternal,feniternonlethalagent,feniterpsychoagent,anesthesia" damagemultiplier="0" probabilitymultiplier="0" />
-				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection" damagemultiplier="0" probabilitymultiplier="0" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="preso_latex_infection" damagemultiplier="0" probabilitymultiplier="0" />
 				<damagemodifier afflictionidentifiers="acidburn,burn" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
 				<damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
 				<damagemodifier afflictiontypes="alieninfection" armorsector="0.0,360.0" damagemultiplier="0.75" probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />

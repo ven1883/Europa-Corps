@@ -356,11 +356,11 @@
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="This,Character" delay="0.6">
 					<Conditional skillrequirement="true" weapons="gte 20" />
-					<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="0.25" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+					<ParticleEmitter particle="casing_rifle_small" emitinterval="0.25" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 				</StatusEffect>
 				<StatusEffect type="OnUse" target="This,Character" delay="2.3">
 					<Conditional skillrequirement="true" weapons="lt 20" />
-					<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="0.25" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+					<ParticleEmitter particle="casing_rifle_small" emitinterval="0.25" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 				</StatusEffect>
 
 				<RequiredItems items="rifleammo,grenade" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -434,7 +434,7 @@
 				<RequiredSkill identifier="weapons" level="45" />
 
 				<StatusEffect type="OnUse" target="This" delay="0.62">
-					<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" anglemin="85" anglemax="95" velocitymin="0" velocitymax="0" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+					<ParticleEmitter particle="casing_shotgun" emitinterval="0.25" particleamount="1" anglemin="85" anglemax="95" velocitymin="0" velocitymax="0" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 				</StatusEffect>
 			</RangedWeapon>
 
@@ -488,7 +488,7 @@
 				<RequiredSkill identifier="weapons" level="70" />
 
 				<StatusEffect type="OnUse" target="This">
-					<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+					<ParticleEmitter particle="casing_shotgun" emitinterval="0.25" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 				</StatusEffect>
 			</RangedWeapon>
 
@@ -541,7 +541,7 @@
 
 				<RequiredSkill identifier="weapons" level="60" />
 				<StatusEffect type="OnBroken" target="This" delay="0.28">
-					<ParticleEmitter particle="scp_spentcasingshotgun" particleamount="2" anglemin="180" anglemax="190" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+					<ParticleEmitter particle="casing_shotgun" particleamount="2" anglemin="180" anglemax="190" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 				</StatusEffect>
 			</RangedWeapon>
 
@@ -821,10 +821,10 @@
 				<StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="1.5" disabledeltatime="true" checkconditionalalways="true" />
 				<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
 					<sound file="%ModDir%/Sounds/Weapons/Explosives/flashbangthrow.ogg" range="1000" />
-					<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="200,200,200,255" />
+					<ParticleEmitter particle="grenade_pin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="200,200,200,255" />
 				</StatusEffect>
 				<StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">
-					<ParticleEmitter particle="scp_grenadespoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.55" scalemax="0.55" anglemin="-35" anglemax="35" />
+					<ParticleEmitter particle="grenade_spoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.55" scalemax="0.55" anglemin="-35" anglemax="35" />
 				</StatusEffect>
 				<StatusEffect type="OnBroken" target="This" delay="2">
 					<Remove />
@@ -872,10 +872,10 @@
 				<StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3.0" disabledeltatime="true" checkconditionalalways="true" />
 				<StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" checkconditionalalways="true">
 					<sound file="%ModDir%/Sounds/Weapons/Explosives/grenadethrow.ogg" range="1000" />
-					<ParticleEmitter particle="scp_grenadepin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="255,255,255,255" />
+					<ParticleEmitter particle="grenade_pin" particleamount="1" velocitymin="35" velocitymax="75" scalemin="0.5" scalemax="0.5" anglemin="-35" anglemax="35" colormultiplier="255,255,255,255" />
 				</StatusEffect>
 				<StatusEffect type="OnSecondaryUse" target="This" delay="0.2" disabledeltatime="true" checkconditionalalways="true">
-					<ParticleEmitter particle="scp_grenadespoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.55" scalemax="0.55" anglemin="-35" anglemax="35" />
+					<ParticleEmitter particle="grenade_spoon" particleamount="1" velocitymin="175" velocitymax="300" scalemin="0.55" scalemax="0.55" anglemin="-35" anglemax="35" />
 				</StatusEffect>
 			</Throwable>
 			

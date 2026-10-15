@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-	<Item name="" description="" maxstacksize="4" maxstacksizecharacterinventory="2" identifier="scp_replicatinglatex" category="Weapon" subcategory="Chemical Weapons" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.55" impactsoundtag="impact_soft" RequireAimToUse="True">
+	<Item name="" description="" maxstacksize="4" maxstacksizecharacterinventory="2" identifier="preso_latex" category="Weapon" subcategory="Chemical Weapons" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.55" impactsoundtag="impact_soft" RequireAimToUse="True">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="342,259,31,61" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="342,259,31,61" depth="0.6" origin="0.5,0.5" />
@@ -23,20 +23,20 @@
 				<Sound file="%ModDir%/Sounds/Medical/latex.ogg" type="OnUse" range="100" />
 
 				<Affliction identifier="nausea" amount="3" />
-				<Affliction identifier="scp_presolatexinfection" amount="2.5" />
+				<Affliction identifier="preso_latex_infection" amount="2.5" />
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="5.0">
 				<Sound file="%ModDir%/Sounds/Medical/latexfail.ogg" type="OnUse" range="1500" />
 
 				<Affliction identifier="nausea" amount="3" />
-				<Affliction identifier="scp_presolatexinfection" amount="1" />
+				<Affliction identifier="preso_latex_infection" amount="1" />
 			</StatusEffect>
 
 			<StatusEffect type="Always" target="NearbyCharacters,This" range="200" interval="5">
 				<Conditional hastag="neq radiationshielding" targetcontainer="true" />
 
-				<Affliction identifier="scp_latexcontamination" amount="50" probability="0.4" />
+				<Affliction identifier="preso_latex_contamination" amount="50" probability="0.4" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This">
@@ -49,7 +49,7 @@
 
 	<!--###-->
 
-	<Item name="" description="" maxstacksize="4" maxstacksizecharacterinventory="2" identifier="scp_firelatex" category="Weapon" subcategory="Chemical Weapons" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.55" impactsoundtag="impact_soft" RequireAimToUse="True">
+	<Item name="" description="" maxstacksize="4" maxstacksizecharacterinventory="2" identifier="ignis_latex" category="Weapon" subcategory="Chemical Weapons" Tags="smallitem,medical" useinhealthinterface="true" cargocontaineridentifier="mediccrate" scale="0.55" impactsoundtag="impact_soft" RequireAimToUse="True">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="374,259,31,61" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/Sprites/Items/Medical/eha_medical.png" sourcerect="374,259,31,61" depth="0.6" origin="0.5,0.5" />
@@ -71,18 +71,18 @@
 			<StatusEffect tags="medical" type="OnUse" target="UseTarget" duration="10.0">
 				<Sound file="%ModDir%/Sounds/Medical/latex.ogg" type="OnUse" range="300" />
 
-				<Affliction identifier="scp_firelatexburn" amount="3" />
+				<Affliction identifier="ignis_latex_burn" amount="3" />
 				<Affliction identifier="organdamage" amount="1.5" />
 			</StatusEffect>
 			
 			<StatusEffect tags="medical" type="OnUse" target="UseTarget">
-				<Affliction identifier="scp_devilpoisoning" amount="1" probability="0.1" />
+				<Affliction identifier="devils_blood_poisoning" amount="1" probability="0.1" />
 			</StatusEffect>
 
 			<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="5.0">
 				<Sound file="%ModDir%/Sounds/Medical/latexfail.ogg" type="OnUse" range="1500" />
 
-				<Affliction identifier="scp_firelatexburn" amount="1.5" />
+				<Affliction identifier="ignis_latex_burn" amount="1.5" />
 			</StatusEffect>
 
 			<StatusEffect type="OnBroken" target="This">
@@ -92,8 +92,8 @@
 			<StatusEffect type="Always" target="NearbyCharacters,This" range="200" interval="5">
 				<Conditional hastag="neq radiationshielding" targetcontainer="true" />
 
-				<Affliction identifier="scp_firelatexburn" amount="35" probability="0.1" />
-				<Affliction identifier="scp_firelatexburn" amount="45" probability="0.05" />
+				<Affliction identifier="ignis_latex_burn" amount="35" probability="0.1" />
+				<Affliction identifier="ignis_latex_burn" amount="45" probability="0.05" />
 			</StatusEffect>
 		</MeleeWeapon>
 	</Item>
@@ -395,7 +395,7 @@
 
 				<Affliction identifier="scp_psidamage" amount="35" probability="0.5" />
 				<Affliction identifier="scp_psidamage" amount="125" probability="0.25" />
-				<Affliction identifier="scp_vomiting" amount="300" probability="0.1" />
+				<Affliction identifier="vomiting" amount="300" probability="0.1" />
 				<Affliction identifier="psychosis" amount="60" probability="0.3" />
 			</StatusEffect>
 
