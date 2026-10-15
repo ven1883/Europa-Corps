@@ -42,7 +42,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="disciplerobes" equip="true" />
-      <Item identifier="blackmolochhelmet" equip="true" />
+      <Item identifier="helmet_moloch_black" equip="true" />
       <Item identifier="armor_coalition_heavy_pockets" equip="true" />
       <Item identifier="sgt_longrangeradio" equip="true">
         <Item identifier="antibleeding2" amount="8" />
@@ -85,7 +85,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="disciplerobes" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
       <Item identifier="armor_coalition_light" equip="true" />
       <Item identifier="toolbelt" equip="true">
         <Item identifier="scp_ak74mag" amount="4" />
@@ -122,7 +122,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="disciplerobes" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
       <Item identifier="armor_coalition_heavy_pockets" equip="true" />
       <Item identifier="sgt_longrangeradio" equip="true">
         <Item identifier="scp_ak74mag" amount="4" />
@@ -160,7 +160,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="uniform_cult_stealth" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
       <Item identifier="armor_coalition_light" equip="true" />
       <Item identifier="sgt_longrangeradio" equip="true">
         <Item identifier="scp_saigaextmag" amount="3" />
@@ -199,7 +199,7 @@
       <Item identifier="thermheadset" equip="true" />
       <Item identifier="uniform_cult_stealth" equip="true" />
       <Item identifier="piratebandana" equip="true" />
-      <Item identifier="lynxexoskeletonsuitsuit" equip="true" >
+      <Item identifier="backpack_speedskeletonsuit" equip="true" >
         <Item identifier="fulguriumbatterycell" />
       </Item>
       <Item identifier="sgt_longrangeradio" equip="true">
@@ -221,7 +221,7 @@
       <Item identifier="thermheadset" equip="true" />
       <Item identifier="zealotrobes" equip="true" />
       <Item identifier="hardeneddivingmask" equip="true" />
-      <Item identifier="lynxexoskeletonsuitsuit" equip="true" >
+      <Item identifier="backpack_speedskeletonsuit" equip="true" >
         <Item identifier="fulguriumbatterycell" />
       </Item>
       <Item identifier="sgt_longrangeradio" equip="true">
@@ -259,7 +259,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="disciplerobes" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
       <Item identifier="genesplicer" equip="true">
         <Item identifier="geneticmaterialcrawler" />
       </Item>
@@ -1021,7 +1021,7 @@
       <item identifier="idcard" equip="true" />
       <item identifier="sgt_heavymechanicsuit" equip="true" />
       <item identifier="safetyharness" equip="true" />
-      <item identifier="hardhelmet" equip="true" />
+      <item identifier="helmet_engineer" equip="true" />
       <item identifier="screwdriver" />
       <item identifier="wrench" />
       <item identifier="redwire" />
@@ -1192,7 +1192,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="vetmudraptorhelmet" equip="true" />
+      <Item identifier="helmet_mudraptor_veteran" equip="true" />
       <Item identifier="antibleeding1" amount="6" />
       <Item identifier="deusizine" amount="2" />
       <Item identifier="antibloodloss1" amount="2" />
@@ -1379,7 +1379,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="piratebodyarmor" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="vetmudraptorhelmet" equip="true" />
+      <Item identifier="helmet_mudraptor_veteran" equip="true" />
       <Item identifier="scp_hk21">
         <Item identifier="scp_pkpsmallboxmag" />
       </Item>
@@ -1486,7 +1486,7 @@
       <!--clothes+armor-->
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
       <Item identifier="tricksterrig" equip="true" />
       <Item identifier="sgt_bandolier" equip="true">
         <Item identifier="antibleeding1" amount="8" />
@@ -1758,7 +1758,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
-      <Item identifier="hardhelmet" equip="true" />
+      <Item identifier="helmet_engineer" equip="true" />
       <Item identifier="sgt_heavymechanicsuit" equip="true" />
       <Item identifier="safetyharness" equip="true" />
       <Item identifier="backpack" equip="true">

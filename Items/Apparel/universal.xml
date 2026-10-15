@@ -408,7 +408,7 @@
 	
 		<!--###-->
 <!--check later since i manually changed the sprite paths -Derek -->
-	<Item name="" identifier="hazmatsuit" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate">
+	<Item name="" identifier="suit_hazmat" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Apparel/hazmatextra.png" sourcerect="0,0,150,120" origin="0.5,0.5" />
 		<Sprite name="Diving Suit Item" texture="%ModDir%/Sprites/Items/Utilities/chemicalwarfaremisc.png" sourcerect="133,83,94,78" depth="0.55" origin="0.5,0.5" />
@@ -585,7 +585,7 @@
 	
 		<!--###-->
 
-	<Item name="" identifier="eodsuit" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate">
+	<Item name="" identifier="suit_eod" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Apparel/hazmatextra.png" sourcerect="300,0,150,120" origin="0.5,0.5" />
 		<Sprite name="Diving Suit Item" texture="%ModDir%/Sprites/Items/Apparel/bombsuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
@@ -700,7 +700,7 @@
 
 		<!--###-->
 
-  <Item name="Hard Helmet" identifier="hardhelmet" aliases="hardhat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A relatively modern, brightly colored lightweight aluminium helmet designed with a head harness system, designed to greatly reduce impact of blunt force trauma to the skull. However, it does very little against threats such as predator's maws, and absolutely nothing against a bullet." impactsoundtag="impact_metal_heavy" scale="0.325">
+  <Item name="Hard Helmet" identifier="helmet_engineer" aliases="hardhat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A relatively modern, brightly colored lightweight aluminium helmet designed with a head harness system, designed to greatly reduce impact of blunt force trauma to the skull. However, it does very little against threats such as predator's maws, and absolutely nothing against a bullet." impactsoundtag="impact_metal_heavy" scale="0.325">
     <Upgrade gameversion="0.9.6.0" scale="0.325" />
     <PreferredContainer primary="secarmcab" notcampaign="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
@@ -733,7 +733,7 @@
 
 		<!--###-->
 
-  <Item name="Lynx Exoskeleton Suit" identifier="lynxexoskeletonsuit" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A relatively slim, lightweight minimally-powered exoskeleton, greatly increasing it's wearer's speed, strength and stability. While it fails to offer the protection of full-body diving suits or body armor, it makes the wearer much more agile, though it does absolutely nothing for the water." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
+  <Item name="Lynx Exoskeleton Suit" identifier="backpack_speedskeleton" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A relatively slim, lightweight minimally-powered exoskeleton, greatly increasing it's wearer's speed, strength and stability. While it fails to offer the protection of full-body diving suits or body armor, it makes the wearer much more agile, though it does absolutely nothing for the water." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
     <Price baseprice="700" sold="false" minleveldifficulty="25">
       <Price storeidentifier="merchantoutpost" />
       <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="1" sold="true">
@@ -821,7 +821,7 @@
 
 		<!--###-->
 
-  <Item name="Mudraptor Fullplate" identifier="mudraptorfullplate" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="An exorbinantly heavy set of near full-body Mudraptor shell pieces, jointed in a manner akin to plate armor of old. Extremely protective, but cumbersome." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+  <Item name="Mudraptor Fullplate" identifier="armor_mudraptor" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="An exorbinantly heavy set of near full-body Mudraptor shell pieces, jointed in a manner akin to plate armor of old. Extremely protective, but cumbersome." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1150" sold="false"></Price>
     <Deconstruct time="45">
       <Item identifier="mudraptorshell" />
@@ -862,7 +862,7 @@
 
 		<!--###-->
 
-  <Item name="Mudraptor Helmet" identifier="mudraptorhelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A fearsome helmet crafted from the shell of a Mudraptor, built to resemble the beast's wicked mandibles." impactsoundtag="impact_metal_heavy" scale="0.325">
+  <Item name="Mudraptor Helmet" identifier="helmet_mudraptor" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A fearsome helmet crafted from the shell of a Mudraptor, built to resemble the beast's wicked mandibles." impactsoundtag="impact_metal_heavy" scale="0.325">
     <Upgrade gameversion="0.9.6.0" scale="0.325" />
     <PreferredContainer primary="secarmcab" notcampaign="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
@@ -890,7 +890,7 @@
 
 		<!--###-->
 
-  <Item name="Veteran Mudraptor Fullplate" identifier="vetmudraptorfullplate" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="An exorbinantly heavy set of near full-body Mudraptor shell pieces, jointed in a manner akin to plate armor of old. Extremely protective, but cumbersome. Darkened with hydroxyapatite, to resemble a more fearsome predator." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+  <Item name="Veteran Mudraptor Fullplate" identifier="armor_mudraptor_veteran" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="An exorbinantly heavy set of near full-body Mudraptor shell pieces, jointed in a manner akin to plate armor of old. Extremely protective, but cumbersome. Darkened with hydroxyapatite, to resemble a more fearsome predator." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1150" sold="false"></Price>
     <Deconstruct time="45">
       <Item identifier="mudraptorshell" />
@@ -932,7 +932,7 @@
 
 		<!--###-->
 
-  <Item name="Veteran Mudraptor Helmet" identifier="vetmudraptorhelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A fearsome helmet crafted from the shell of a Mudraptor, built to resemble the beast's wicked mandibles. Darkened with ground hydroxyapatite, to resemble a more fearsome predator." impactsoundtag="impact_metal_heavy" scale="0.325">
+  <Item name="Veteran Mudraptor Helmet" identifier="helmet_mudraptor_veteran" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A fearsome helmet crafted from the shell of a Mudraptor, built to resemble the beast's wicked mandibles. Darkened with ground hydroxyapatite, to resemble a more fearsome predator." impactsoundtag="impact_metal_heavy" scale="0.325">
     <Upgrade gameversion="0.9.6.0" scale="0.325" />
     <PreferredContainer primary="secarmcab" notcampaign="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
@@ -961,7 +961,7 @@
 
 		<!--###-->
 
-  <Item name="Chitin Armor" identifier="chitinarmor" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.3" fireproof="true" description="A sturdy set of upper-body armor made from deceptively lightweight chitin." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+  <Item name="Chitin Armor" identifier="armor_orangeboy" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.3" fireproof="true" description="A sturdy set of upper-body armor made from deceptively lightweight chitin." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
     <Price baseprice="400" sold="false"></Price>
     <Deconstruct time="45">
       <Item identifier="chitin" />
@@ -988,7 +988,7 @@
 
 		<!--###-->
 
-  <Item name="Watcher Armor" identifier="watcherarmor" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A thick, spiney suit of armor crafted from thick Watcher shell chunks. Very protective and extremely fire resistant, but cumbersome." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
+  <Item name="Watcher Armor" identifier="armor_watcher" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A thick, spiney suit of armor crafted from thick Watcher shell chunks. Very protective and extremely fire resistant, but cumbersome." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
     <Price baseprice="750" sold="false"></Price>
     <Deconstruct time="45">
       <Item identifier="watchershell" />
@@ -1022,7 +1022,7 @@
 
 		<!--###-->
 
-  <Item name="Watcher Helmet" identifier="watcherhelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A thick, spiney helmet crafted from spikey chunks of Watcher shell. Very protective, and extremely fire resistant." impactsoundtag="impact_metal_heavy" scale="0.325">
+  <Item name="Watcher Helmet" identifier="helmet_watcher" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A thick, spiney helmet crafted from spikey chunks of Watcher shell. Very protective, and extremely fire resistant." impactsoundtag="impact_metal_heavy" scale="0.325">
     <Upgrade gameversion="0.9.6.0" scale="0.325" />
     <PreferredContainer primary="secarmcab" notcampaign="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
@@ -1048,7 +1048,7 @@
 
 		<!--###-->
 
-  <Item name="Moloch Armor" identifier="molocharmor" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A thick set of armor crafted from smooth moloch shell chunks, deceptively lightweight and manueverable, yet highly protective." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
+  <Item name="Moloch Armor" identifier="armor_moloch" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A thick set of armor crafted from smooth moloch shell chunks, deceptively lightweight and manueverable, yet highly protective." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
     <Price baseprice="650" sold="false"></Price>
     <Deconstruct time="45">
       <Item identifier="shellshield" />
@@ -1081,7 +1081,7 @@
 
 		<!--###-->
 
-  <Item name="Moloch Helmet" identifier="molochhelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A protective, masked helmet made from smooth chunks of strong Moloch shell. A trophy of a great hunter." impactsoundtag="impact_metal_heavy" scale="0.325">
+  <Item name="Moloch Helmet" identifier="helmet_moloch" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A protective, masked helmet made from smooth chunks of strong Moloch shell. A trophy of a great hunter." impactsoundtag="impact_metal_heavy" scale="0.325">
     <Upgrade gameversion="0.9.6.0" scale="0.325" />
     <PreferredContainer primary="secarmcab" notcampaign="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
@@ -1107,7 +1107,7 @@
 
 		<!--###-->
 
-  <Item name="Black Moloch Armor" identifier="blackmolocharmor" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A thick set of armor crafted from smooth moloch shell chunks, deceptively lightweight and manueverable, yet highly protective. Darkened with ground hydroxyapitite, to resemble a more fearsome predator." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
+  <Item name="Black Moloch Armor" identifier="armor_moloch_black" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A thick set of armor crafted from smooth moloch shell chunks, deceptively lightweight and manueverable, yet highly protective. Darkened with ground hydroxyapitite, to resemble a more fearsome predator." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
     <InventoryIcon texture="%ModDir%/Sprites/Items/Apparel/blackmolochgear_icon.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
     <Sprite name="moloch Gear Item" texture="%ModDir%/Sprites/Items/Apparel/blackmolochgear_items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
     <Body radius="45" width="34" density="20" />
@@ -1132,7 +1132,7 @@
 
 		<!--###-->
 
-  <Item name="Black Moloch Helmet" identifier="blackmolochhelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A protective, masked helmet made from smooth chunks of strong Moloch shell. A trophy of a great hunter. Darkened with ground hydroxyapatite, to resemble a more fearsome predator." impactsoundtag="impact_metal_heavy" scale="0.325">
+  <Item name="Black Moloch Helmet" identifier="helmet_moloch_black" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A protective, masked helmet made from smooth chunks of strong Moloch shell. A trophy of a great hunter. Darkened with ground hydroxyapatite, to resemble a more fearsome predator." impactsoundtag="impact_metal_heavy" scale="0.325">
     <Upgrade gameversion="0.9.6.0" scale="0.325" />
     <PreferredContainer primary="secarmcab" notcampaign="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
@@ -1159,7 +1159,7 @@
 
 		<!--###-->
 
-  <Item name="Endworm Fullplate" identifier="endwormfullplate" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="An extremely durable suit of onyx-black heavy armor crafted from the shell of a mighty Endworm. Provides almost unparalleled protection, but it is very, very heavy." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+  <Item name="Endworm Fullplate" identifier="armor_endworm" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="An extremely durable suit of onyx-black heavy armor crafted from the shell of a mighty Endworm. Provides almost unparalleled protection, but it is very, very heavy." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
     <Price baseprice="1450" sold="false"></Price>
     <Deconstruct time="45">
       <Item identifier="endwormshell" />
@@ -1200,7 +1200,7 @@
 
 		<!--###-->
 
-  <Item name="Endworm Helmet" identifier="endwormhelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A fearsome, incredibly tough helmet carved from the iron-like shell of a mighty Endworm. A true trophy and a sight to behold." impactsoundtag="impact_metal_heavy" scale="0.325">
+  <Item name="Endworm Helmet" identifier="helmet_endworm" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="A fearsome, incredibly tough helmet carved from the iron-like shell of a mighty Endworm. A true trophy and a sight to behold." impactsoundtag="impact_metal_heavy" scale="0.325">
     <Upgrade gameversion="0.9.6.0" scale="0.325" />
     <PreferredContainer primary="secarmcab" notcampaign="true" />
     <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
@@ -1225,7 +1225,7 @@
     </Wearable>
   </Item>
 
-	<Item name="Paramedic Pack" identifier="paramedpack" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer,largemobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
+	<Item name="Paramedic Pack" identifier="backpack_paramedic" scale="0.6" category="Equipment" subcategory="Coalition" tags="mediumitem,toolbelt,toolbox,mobilecontainer,largemobilecontainer" waterproof="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft">
     	<InventoryIcon name="smolpaccinv" texture="%ModDir%/Sprites/Items/Apparel/paramedpack.png" sourcerect="122,5,61,61" origin="0.5,0.5" />
     	<Sprite name="smolpaccground" texture="%ModDir%/Sprites/Items/Apparel/paramedpack.png" depth="0.6" sourcerect="117,68,80,49" origin="0.5,0.5" />
     	<Body width="100" height="50" density="15" />
