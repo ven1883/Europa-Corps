@@ -42,7 +42,7 @@
 
 				<SpawnItem identifier="scp_545x39projectile" spawnposition="ThisInventory" />
 
-				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+				<ParticleEmitter particle="casing_rifle_small" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -78,7 +78,7 @@
 				
 				<SpawnItem identifier="scp_545x39approjectile" spawnposition="ThisInventory" />
 
-				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+				<ParticleEmitter particle="casing_rifle_small" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -113,7 +113,7 @@
 
 				<SpawnItem identifier="scp_545x39duprojectile" spawnposition="ThisInventory" />
 
-				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+				<ParticleEmitter particle="casing_rifle_small" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -336,7 +336,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
 				<SpawnItem identifier="scp_556projectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflesmall"	emitinterval="1.5"	particleamount="1"	particlespersecond="50"	anglemin="70"	anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5"/>
+				<ParticleEmitter particle="casing_rifle_small"	emitinterval="1.5"	particleamount="1"	particlespersecond="50"	anglemin="70"	anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5"/>
 			</StatusEffect>
 		</ItemContainer>
 
@@ -384,7 +384,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="1" disabledeltatime="true">
 				<SpawnItem identifier="scp_556approjectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+				<ParticleEmitter particle="casing_rifle_small" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -418,7 +418,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_556duraprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" colormultiplier="75,75,200,255" />
+				<ParticleEmitter particle="casing_rifle_small" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.5" scalemax="0.5" colormultiplier="75,75,200,255" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -805,7 +805,7 @@
 
 				<SpawnItem identifier="scp_762x39projectile" spawnposition="ThisInventory" />
 
-				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_rifle_medium" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -843,7 +843,7 @@
 
 				<SpawnItem identifier="scp_762x39projectile" spawnposition="ThisInventory" />
 
-				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
+				<ParticleEmitter particle="casing_rifle_medium" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -880,7 +880,7 @@
 
 				<SpawnItem identifier="scp_762x39renapprojectile" spawnposition="ThisInventory" />
 
-				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
+				<ParticleEmitter particle="casing_rifle_medium" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -914,7 +914,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_762x39duprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
+				<ParticleEmitter particle="casing_rifle_medium" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.325" scalemax="0.325" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -1124,7 +1124,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_762natoprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_rifle_medium" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -1159,7 +1159,7 @@
 			
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_762natoprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_rifle_medium" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -1192,7 +1192,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_762natoduraprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflemed" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" colormultiplier="75,75,200,255" />
+				<ParticleEmitter particle="casing_rifle_medium" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" colormultiplier="75,75,200,255" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -1483,7 +1483,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_127x55duraprojectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.28" scalemax="0.28" />
+				<ParticleEmitter particle="casing_rifle_large" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.28" scalemax="0.28" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -1519,7 +1519,7 @@
 
 			<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 				<SpawnItem identifier="scp_127x55projectile" spawnposition="ThisInventory" />
-				<ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.28" scalemax="0.28" />
+				<ParticleEmitter particle="casing_rifle_large" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.28" scalemax="0.28" />
 			</StatusEffect>
 
 		</ItemContainer>
@@ -1670,7 +1670,7 @@
 
 		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 			<SpawnItem identifier="scp_valapprojectile" spawnposition="ThisInventory" />
-			<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="300" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+			<ParticleEmitter particle="casing_rifle_small" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="300" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 		</StatusEffect>
 
 		</ItemContainer>
@@ -1706,7 +1706,7 @@
 
 		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 			<SpawnItem identifier="scp_valprojectile" spawnposition="ThisInventory" />
-			<ParticleEmitter particle="scp_spentcasingriflesmall" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="300" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+			<ParticleEmitter particle="casing_rifle_small" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="300" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 		</StatusEffect>
 
 		</ItemContainer>

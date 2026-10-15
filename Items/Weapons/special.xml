@@ -128,7 +128,7 @@
 
 			<LightComponent LightColor="255,255,255,255" Flicker="0.2" range="0" IsOn="false" drawbehindsubs="false" ignorecontinuoustoggle="true" copyentityangle="true" powerconsumption="1">
 
-				<Sprite texture="%ModDir%/Particles/HeavyBlasterHeat.png" origin="0.48,0.55" alpha="1.0" />
+				<Sprite texture="%ModDir%/Particles/heavy_blaster_heat.png" origin="0.48,0.55" alpha="1.0" />
 
 				<!--Turn lights on when shooting-->
 				<StatusEffect type="OnUse" target="This" IsOn="true" setvalue="true" disabledeltatime="true" comparison="And" stackable="false">

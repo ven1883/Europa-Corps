@@ -293,7 +293,7 @@
 			
 			<SpawnItem identifier="scp_12gbucksaiga" spawnposition="ThisInventory" />
 
-			<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+			<ParticleEmitter particle="casing_shotgun" emitinterval="1.5" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 		</StatusEffect>
 		
 		</ItemContainer>
