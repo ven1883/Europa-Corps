@@ -212,7 +212,7 @@
 		<!--++++++++++++++++++++++++++++++++++++-->
 
   <Item name="Chloroform Cloth" identifier="chloroform" category="Medical" maxstacksize="8" maxstacksizecharacterinventory="4" cargocontaineridentifier="chemicalcrate" Tags="smallitem,chem,poison" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_soft" RequireAimToUse="True">
-    <Sprite name="chloroform" texture="%ModDir%/Sprites/Items/Medical/drugs.pn" sourcerect="64,0,30,33" depth="0.55" origin="0.5,0.5" />
+    <Sprite name="chloroform" texture="%ModDir%/Sprites/Items/Medical/drugs.png" sourcerect="64,0,30,33" depth="0.55" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <PreferredContainer primary="toxcab" secondary="toxcontainer" />
     <PreferredContainer primary="wrecktoxcab,abandonedtoxcab,piratetoxcab" spawnprobability="0.1" />
