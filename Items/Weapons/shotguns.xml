@@ -65,7 +65,7 @@
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="This" delay="0.42">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="0" velocitymax="0" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_shotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="0" velocitymax="0" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 			
 		</RangedWeapon>
@@ -150,7 +150,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" delay="0.37">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_shotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 
 		</RangedWeapon>
@@ -229,7 +229,7 @@
 			<RequiredSkill identifier="weapons" level="70" />
 			
 			<StatusEffect type="OnUse" target="This" delay="0.52">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_shotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 			
 		</RangedWeapon>
@@ -320,7 +320,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" delay="0.37">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_shotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 			
 		</RangedWeapon>
@@ -417,7 +417,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" delay="0.37">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_shotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 			
 		</RangedWeapon>
@@ -573,7 +573,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" delay="0.05">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_shotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 			
 		</RangedWeapon>
@@ -654,7 +654,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" origin="1,1" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
+				<ParticleEmitter particle="casing_shotgun" emitinterval="0.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" origin="1,1" copyentityangle="true" scalemin="0.35" scalemax="0.35" />
 			</StatusEffect>
 			
 		</RangedWeapon>
@@ -1109,7 +1109,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This" delay="0.9">
-				<ParticleEmitter particle="scp_spentcasingshotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+				<ParticleEmitter particle="casing_shotgun" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 			</StatusEffect>
 			
 		</RangedWeapon>

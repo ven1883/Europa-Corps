@@ -726,13 +726,13 @@
 			<StatusEffect type="OnUse" target="This,Character" delay="0.6">
 				<Conditional skillrequirement="true" weapons="gte 50" />
 
-				<ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+				<ParticleEmitter particle="casing_rifle_large" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This,Character" delay="2.3">
 				<Conditional skillrequirement="true" weapons="lt 50" />
 
-				<ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+				<ParticleEmitter particle="casing_rifle_large" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 			</StatusEffect>
 		</RangedWeapon>
 
@@ -838,13 +838,13 @@
 			<StatusEffect type="OnUse" target="This,Character" delay="0.6">
 				<Conditional skillrequirement="true" weapons="gte 50" />
 				
-				<ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+				<ParticleEmitter particle="casing_rifle_large" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 			</StatusEffect>
 
 			<StatusEffect type="OnUse" target="This,Character" delay="2.3">
 				<Conditional skillrequirement="true" weapons="lt 50" />
 				
-				<ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+				<ParticleEmitter particle="casing_rifle_large" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 			</StatusEffect>
 
 		</RangedWeapon>
@@ -929,7 +929,7 @@
 			</StatusEffect>
 			
 			<StatusEffect type="OnUse" target="This">
-				<ParticleEmitter particle="scp_spentcasingriflelarge" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+				<ParticleEmitter particle="casing_rifle_large" emitinterval="0.25" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 			</StatusEffect>
 
 		</RangedWeapon>

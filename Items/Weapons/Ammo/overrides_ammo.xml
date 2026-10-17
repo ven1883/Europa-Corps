@@ -85,7 +85,7 @@
 				<Containable items="smground" />
 				<StatusEffect type="OnUse" target="This" condition="-4" disabledeltatime="true">
 					<SpawnItem identifiers="smground" spawnposition="ThisInventory" />
-					<ParticleEmitter particle="scp_spentcasingpistol" particleamount="1" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
+					<ParticleEmitter particle="casing_pistol" particleamount="1" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="250" velocitymax="350" copyentityangle="true" scalemin="0.7" scalemax="0.7" />
 				</StatusEffect>
 			</ItemContainer>
 		</Item>
@@ -137,7 +137,7 @@
 				<Containable items="assaultrifleround" />
 				<StatusEffect type="OnUse" target="This" condition="-5.0" disabledeltatime="true">
 					<SpawnItem identifiers="assaultrifleround" spawnposition="ThisInventory" />
-					<ParticleEmitter particle="scp_spentcasingriflemed" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.32" scalemax="0.32" />
+					<ParticleEmitter particle="casing_rifle_medium" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.32" scalemax="0.32" />
 				</StatusEffect>
 			</ItemContainer>
 		</Item>
@@ -347,8 +347,8 @@
 				<Containable items="hmground" />
 				<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 					<SpawnItem identifiers="hmground" spawnposition="ThisInventory" />
-					<ParticleEmitter particle="scp_spentcasingriflelarge" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.24" scalemax="0.24" />
-					<ParticleEmitter particle="scp_mglink" particleamount="1" anglemin="70" anglemax="100" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
+					<ParticleEmitter particle="casing_rifle_large" particleamount="1" anglemin="70" anglemax="100" velocitymin="250" velocitymax="500" copyentityangle="true" scalemin="0.24" scalemax="0.24" />
+					<ParticleEmitter particle="belt_link" particleamount="1" anglemin="70" anglemax="100" velocitymin="90" velocitymax="175" copyentityangle="true" scalemin="0.4" scalemax="0.4" />
 				</StatusEffect>
 			</ItemContainer>
 		</Item>
