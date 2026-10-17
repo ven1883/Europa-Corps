@@ -63,7 +63,8 @@
 						<sprite name="Heavy HAZMAT Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
 						<sprite name="Heavy HAZMAT Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/heavyhazmat.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,755,256" origin="0.5,0.5" />
 
-						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="preso_latex_infection" damagemultiplier="0" probabilitymultiplier="0" />
+						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="poison_skin" damagemultiplier="0.5"/>
+						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="poison_airborne" damagemultiplier="0.25"/>
 						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.15" />
 						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn,burn,scp_psidamage" damagemultiplier="0.5" />
 						<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,gunshotwound" damagemultiplier="0.85" />
@@ -510,10 +511,11 @@
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness,acidburn" damagemultiplier="0" damagesound="impact_metal_heavy" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.05" damagesound="impact_metal_heavy" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidreaction" damagemultiplier="0.01" probabilitymultiplier="0" damagesound="impact_metal_heavy" />
-			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="poison_airborne" damagemultiplier="0" probabilitymultiplier="0" damagesound="impact_metal_heavy" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.7" damagesound="" deflectprojectiles="true" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="" deflectprojectiles="true" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.8" damagesound="" deflectprojectiles="true" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="poison_airborne" damagemultiplier="0" probabilitymultiplier="0" damagesound="impact_metal_heavy" />
+			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="poison_skin" damagemultiplier="0" probabilitymultiplier="0" damagesound="impact_metal_heavy" />
 			
 			<StatValue stattype="FlowResistance" value="1" />
 			<StatValue stattype="SwimmingSpeed" value="-0.85" />
@@ -623,7 +625,6 @@
 				<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.2" comparison="Or">
 				<Conditional IsDead="false" />
 				<RequiredItem items="oxygensource" type="Contained" />
-				<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 			</StatusEffect>
 
 				<StatusEffect type="OnWearing" target="Contained,Character" Oxygen="-10.0" Condition="-0.5" interval="1" disabledeltatime="true">
@@ -652,6 +653,7 @@
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,explosiondamage,radiationsickness,acidreaction,lacerations" damagemultiplier="0.25" damagesound="" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="impact_metal_heavy" />
 			<damagemodifier armorsector="0.0,360.0" afflictiontypes="poison_airborne" damagemultiplier="0" probabilitymultiplier="0" />
+			<damagemodifier armorsector="0.0,360.0" afflictiontypes="poison_skin" damagemultiplier="0" probabilitymultiplier="0" />
 			<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds,bleeding" damagemultiplier="0.5" damagesound="impact_metal_heavy" />
 			<damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
 				
