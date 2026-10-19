@@ -734,7 +734,7 @@
 
 		<!--###-->
 
-  <Item name="Lynx Exoskeleton Suit" identifier="backpack_speedskeleton" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A relatively slim, lightweight minimally-powered exoskeleton, greatly increasing it's wearer's speed, strength and stability. While it fails to offer the protection of full-body diving suits or body armor, it makes the wearer much more agile, though it does absolutely nothing for the water." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
+  <Item name="Lynx Exoskeleton Suit" identifier="armor_speedskeleton" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="A relatively slim, lightweight minimally-powered exoskeleton, greatly increasing it's wearer's speed, strength and stability. While it fails to offer the protection of full-body diving suits or body armor, it makes the wearer much more agile, though it does absolutely nothing for the water." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
     <Price baseprice="700" sold="false" minleveldifficulty="25">
       <Price storeidentifier="merchantoutpost" />
       <Price storeidentifier="merchantresearch" minavailable="0" maxavailable="1" sold="true">
