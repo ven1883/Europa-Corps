@@ -3,7 +3,7 @@
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Helmets-->
 
-	<Item name="" identifier="scp_clownbatmask" category="Equipment" subcategory="Clown" tags="smallitem,clothing,clownmask,clowns" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
+	<Item name="" identifier="helmet_clown_combat" category="Equipment" subcategory="Clown" tags="smallitem,clothing,clownmask,clowns" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4">
 
 		<Sprite name="Clownbat Helm" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" sourcerect="423,446,100,102" depth="0.6" origin="0.5,0.5" />
 
@@ -22,50 +22,120 @@
 		<!--Outerwear-->
 
   <!--Modified Lynx from THG for the sakes of the thingy-->
-  <Item name="" identifier="enforcer_exoskeleton" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
-    <InventoryIcon texture="%ModDir:2967303974%/exoskeleton_icon.png" sourcerect="0,0,96,96" origin="0.5,0.5" />
-    <Sprite name="Lynx Suit Item" texture="%ModDir:2967303974%/exoskeleton_items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
-    <ContainedSprite name="Exoskeleton Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:2967303974%/armoredsuit_items.png" sourcerect="0,0,87,190" depth="0.55" origin="0.5,0.5" />
-    <ContainedSprite name="Exoskeleton Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:2967303974%/armoredsuit.png" sourcerect="0,0,80,207" depth="0.55" origin="-0.12,-0.14" />
-    <ContainedSprite name="Exoskeleton Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:2967303974%/armoredsuit_items.png" sourcerect="0,0,225,66" depth="0.55" origin="0.6,0.5" />
-    <Body radius="45" width="34" density="20" />
-    <Wearable slots="Bag" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
-      <sprite name="exoskeleton Torso" texture="%ModDir:2967303974%/exoskeleton.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true">
-        <LightComponent range="0" lightcolor="250,0,0,0" powerconsumption="10" IsOn="true" allowingameediting="false" offset="-50,-50">
-          <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
-        </LightComponent>
-      </sprite>
-      <sprite name="exoskeletonRight Lower Arm" texture="%ModDir:2967303974%/exoskeleton.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="exoskeletonLeft Lower Arm" texture="%ModDir:2967303974%/exoskeleton.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="exoskeletonRight Upper Arm" texture="%ModDir:2967303974%/exoskeleton.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="exoskeletonLeft Upper Arm" texture="%ModDir:2967303974%/exoskeleton.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="exoskeletonWaist" texture="%ModDir:2967303974%/exoskeleton.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="exoskeletonRight Thigh" texture="%ModDir:2967303974%/exoskeleton.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="exoskeletonLeft Thigh" texture="%ModDir:2967303974%/exoskeleton.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="exoskeletonRight Leg" texture="%ModDir:2967303974%/exoskeleton.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="exoskeletonLeft Leg" texture="%ModDir:2967303974%/exoskeleton.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-      <StatusEffect type="OnWearing" target="Character,This" disabledeltatime="true" comparison="and" interval="1">
-        <Conditional enforcer_implant="lt 1" />
-        <Dropitem />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
-        <Affliction identifier="enforcer_rigging" amount="100" />
-      </StatusEffect>
-    </Wearable>
-    <ItemContainer capacity="1" containedstateindicatorslot="" containedstateindicatorstyle="" containedspritedepth="0.2">
-      <Containable items="shield" />
-      <SlotIcon slotindex="0" texture="Content/UI/InventoryUIAtlas.png" sourcerect="565,333,64,64" origin="0.5,0.5" />
-      <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="weapon" excludedtags="bulkyweapon,explosive" />
-        <SlotIcon slotindex="0" texture="%ModDir%/wpnicon.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-      </SubContainer>
-    </ItemContainer>
-  </Item>
+	<Item name="" identifier="enforcer_exoskeleton" category="Equipment" tags="mediumitem,clothing" cargocontaineridentifier="metalcrate" scale="0.45" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="4">
+		<InventoryIcon texture="%ModDir%/Sprites/Items/Apparel/exoskeleton_icon.png" sourcerect="0,0,96,96" origin="0.5,0.5" />
+		<Sprite name="Lynx Suit Item" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton_items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
+		<ContainedSprite name="Exoskeleton Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit_items.png" sourcerect="0,0,87,190" depth="0.55" origin="0.5,0.5" />
+		<ContainedSprite name="Exoskeleton Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" sourcerect="0,0,80,207" depth="0.55" origin="-0.12,-0.14" />
+		<ContainedSprite name="Exoskeleton Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit_items.png" sourcerect="0,0,225,66" depth="0.55" origin="0.6,0.5" />
+		<Body radius="45" width="34" density="20" />
+
+		<Wearable slots="Bag" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+			<sprite name="exoskeleton Torso" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true">
+				<LightComponent range="0" lightcolor="250,0,0,0" powerconsumption="10" IsOn="true" allowingameediting="false" offset="-50,-50">
+						<LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.0,1.0" />
+				</LightComponent>
+			</sprite>
+			<sprite name="exoskeletonRight Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="exoskeletonLeft Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="exoskeletonRight Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="exoskeletonLeft Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="exoskeletonWaist" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="exoskeletonRight Thigh" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="exoskeletonLeft Thigh" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="exoskeletonRight Leg" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="exoskeletonLeft Leg" texture="%ModDir%/Sprites/Items/Apparel/exoskeleton.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+			<StatusEffect type="OnWearing" target="Character,This" disabledeltatime="true" comparison="and" interval="1">
+				<Conditional enforcer_implant="lt 1" />
+				<Dropitem />
+			</StatusEffect>
+			<StatusEffect type="OnWearing" target="Character" interval="1" disabledeltatime="true">
+				<Affliction identifier="enforcer_rigging" amount="100" />
+			</StatusEffect>
+		</Wearable>
+
+		<ItemContainer capacity="1" containedstateindicatorslot="" containedstateindicatorstyle="" containedspritedepth="0.2">
+			<Containable items="shield" />
+			<SlotIcon slotindex="0" texture="Content/UI/InventoryUIAtlas.png" sourcerect="565,333,64,64" origin="0.5,0.5" />
+			<SubContainer capacity="1" maxstacksize="1">
+				<Containable items="weapon" excludedtags="bulkyweapon,explosive" />
+				<SlotIcon slotindex="0" texture="%ModDir%/Sprites/Misc/wpnicon.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+			</SubContainer>
+		</ItemContainer>
+	</Item>
+	
+	<Item 
+		name="Rhino Assault Suit" 
+		identifier="suit_enforcer" 
+		category="Equipment" 
+		tags="mediumitem,clothing,powersuit" 
+		cargocontaineridentifier="metalcrate" 
+		scale="0.45" 
+		fireproof="true" 
+		description="A heavy-duty, fully armored combat suit designed for war and atmospheric combat, not for deep-sea diving. Still, it provides a modicum of pressure resistance suitable enough for shallow water diving, though it lacks any integral life support systems. Includes a wide number of tactical drop pouches and bits of room for equipment, and makes you practically bulletproof." 
+		allowdroppingonswapwith="diving" 
+		impactsoundtag="impact_metal_heavy"
+		health="100">
+
+			<InventoryIcon texture="%ModDir%/Sprites/Items/Apparel/armoredsuit_icon.png" sourcerect="0,0,92,92" origin="0.5,0.5" />
+			<Sprite name="Rhino Suit Item" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit_items.png" sourcerect="0,0,157,121" depth="0.55" origin="0.5,0.5" />
+			<ContainedSprite name="Rhino Suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit_items.png" sourcerect="164,0,87,190" depth="0.55" origin="0.5,0.5" />
+			<ContainedSprite name="Rhino Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.14" />
+			<ContainedSprite name="Rhino Suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit_items.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
+			<Body radius="45" width="34" density="20" />
+
+			<Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+				<sprite name="rhino Torso" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Right Hand" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Left Hand" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Right Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Left Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Waist" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Right Thigh" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Left Thigh" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Right Leg" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Left Leg" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<sprite name="rhino Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/armoredsuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bleeding" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds,lacerations" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.6" damagesound="" deflectprojectiles="true" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier=".8" damagesound="LimbArmor" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+				<damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+				<StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.125" />
+				<StatValue stattype="BuffDurationMultiplier" value="-0.5" />
+
+				<StatusEffect type="OnWearing" target="Character,This" disabledeltatime="true" comparison="and" interval="1">
+					<Conditional enforcer_rigging="lt 1" />
+					<Dropitem />
+				</StatusEffect>
+				
+				<StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" PressureProtection="2500.0" SpeedMultiplier="0.6" PropulsionSpeedMultiplier="0.6" setvalue="true" disabledeltatime="true"></StatusEffect>
+				<StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+					<Affliction identifier="recoilstabilized" amount="1" />
+					<Affliction identifier="enforcersuitaffliction1" amount="1" />
+				</StatusEffect>
+				<StatusEffect tags="powersuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
+
+					<!--EMP Sensitivity-->
+					<StatusEffect type="Always" target="Character,This" comparison="and" interval="0.25" condition="150">
+					<Conditional enforcer_emp="lt 1" />
+				</StatusEffect>
+			</Wearable>
+
+			<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+			<ItemContainer capacity="2" depth="0.5">
+				<Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
+			</ItemContainer>
+		</Item>
 
 		<!--++++++++++++++++++++++++++++++++++++-->
 		<!--Innerwear-->
 
-	<Item name="" identifier="scp_clownbatuniform" category="Equipment" subcategory="Clown" description="" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,clowngear,clowns" scale="0.5" impactsoundtag="impact_soft">
+	<Item name="" identifier="uniform_clown_combat" category="Equipment" subcategory="Clown" description="" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,clowngear,clowns" scale="0.5" impactsoundtag="impact_soft">
 
 		<InventoryIcon name="clownbatinv" texture="%ModDir%/Sprites/Items/Apparel/clowncombatdress.png" sourcerect="690,2,96,86" origin="0.5,0.5" />
 		<Sprite name="clownbatinv" texture="%ModDir%/Sprites/Items/Apparel/clowncombatdress.png" sourcerect="668,92,117,73" depth="0.6" origin="0.5,0.5" />

@@ -42,8 +42,8 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="disciplerobes" equip="true" />
-      <Item identifier="blackmolochhelmet" equip="true" />
-      <Item identifier="scp_heavyrig" equip="true" />
+      <Item identifier="helmet_moloch_black" equip="true" />
+      <Item identifier="armor_coalition_heavy_pockets" equip="true" />
       <Item identifier="sgt_longrangeradio" equip="true">
         <Item identifier="antibleeding2" amount="8" />
         <Item identifier="omnizine" amount="4" />
@@ -85,8 +85,8 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="disciplerobes" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
-      <Item identifier="scp_softvest" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
+      <Item identifier="armor_coalition_light" equip="true" />
       <Item identifier="toolbelt" equip="true">
         <Item identifier="scp_ak74mag" amount="4" />
         <Item identifier="antibleeding1" amount="8" />
@@ -122,8 +122,8 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="disciplerobes" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
-      <Item identifier="scp_heavyrig" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
+      <Item identifier="armor_coalition_heavy_pockets" equip="true" />
       <Item identifier="sgt_longrangeradio" equip="true">
         <Item identifier="scp_ak74mag" amount="4" />
         <Item identifier="antibleeding1" amount="8" />
@@ -159,9 +159,9 @@
       <!--clothes+armor-->
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="inquisitorrobes" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
-      <Item identifier="scp_softvest" equip="true" />
+      <Item identifier="uniform_cult_stealth" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
+      <Item identifier="armor_coalition_light" equip="true" />
       <Item identifier="sgt_longrangeradio" equip="true">
         <Item identifier="scp_saigaextmag" amount="3" />
         <Item identifier="antibleeding1" amount="8" />
@@ -197,9 +197,9 @@
       <!--clothes+armor-->
       <Item identifier="idcard" equip="true" />
       <Item identifier="thermheadset" equip="true" />
-      <Item identifier="inquisitorrobes" equip="true" />
+      <Item identifier="uniform_cult_stealth" equip="true" />
       <Item identifier="piratebandana" equip="true" />
-      <Item identifier="lynxexoskeletonsuitsuit" equip="true" >
+      <Item identifier="backpack_speedskeletonsuit" equip="true" >
         <Item identifier="fulguriumbatterycell" />
       </Item>
       <Item identifier="sgt_longrangeradio" equip="true">
@@ -220,8 +220,8 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="thermheadset" equip="true" />
       <Item identifier="zealotrobes" equip="true" />
-      <Item identifier="scp_hardeneddivingmask" equip="true" />
-      <Item identifier="lynxexoskeletonsuitsuit" equip="true" >
+      <Item identifier="hardeneddivingmask" equip="true" />
+      <Item identifier="backpack_speedskeletonsuit" equip="true" >
         <Item identifier="fulguriumbatterycell" />
       </Item>
       <Item identifier="sgt_longrangeradio" equip="true">
@@ -259,7 +259,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="disciplerobes" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
       <Item identifier="genesplicer" equip="true">
         <Item identifier="geneticmaterialcrawler" />
       </Item>
@@ -325,7 +325,7 @@
       <Item identifier="sgt_lightuniform" equip="true" />
       <Item identifier="ballistichelmet1" equip="true" />
       <Item identifier="sgt_longrangeradio" equip="true" />
-      <Item identifier="scp_softvest" equip="true">
+      <Item identifier="armor_coalition_light" equip="true">
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
@@ -360,7 +360,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="securityuniform2" equip="true" />
       <Item identifier="sgt_fieldcap" equip="true" />
-      <Item identifier="scp_softvest" equip="true">
+      <Item identifier="armor_coalition_light" equip="true">
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
@@ -394,8 +394,8 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="coalitionbeltlight" equip="true" />
-      <Item identifier="scp_lightuniform" equip="true" />
-      <Item identifier="scp_heavycombathelmet" equip="true" />
+      <Item identifier="uniform_coalition_light" equip="true" />
+      <Item identifier="helmet_coalition_heavy" equip="true" />
       <Item identifier="bodyarmor" equip="true">
         <Item identifier="antibleeding1" amount="8" />
         <Item identifier="deusizine" amount="3" />
@@ -434,7 +434,7 @@
       <Item identifier="coalitionbeltlight" equip="true" />
       <Item identifier="sgt_lightuniform" equip="true" />
       <Item identifier="ballistichelmet1" equip="true" />
-      <Item identifier="scp_softvest" equip="true">
+      <Item identifier="armor_coalition_light" equip="true">
         <Item identifier="antibleeding1" amount="8" />
         <Item identifier="deusizine" amount="3" />
         <Item identifier="antibloodloss1" amount="2" />
@@ -469,9 +469,9 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_heavyuniform" equip="true" />
+      <Item identifier="uniform_coalition_heavy" equip="true" />
       <Item identifier="sgt_blackopshelm4" equip="true" />
-      <Item identifier="scp_renegadevest" equip="true">
+      <Item identifier="armor_renegade_light" equip="true">
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
@@ -507,7 +507,7 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_heavyuniform" equip="true" />
+      <Item identifier="uniform_coalition_heavy" equip="true" />
       <Item identifier="ballistichelmet3" equip="true" />
       <Item identifier="sgt_securityvest" equip="true" />
       <Item identifier="stunbaton" equip="true">
@@ -546,9 +546,9 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_heavyuniform" equip="true" />
+      <Item identifier="uniform_coalition_heavy" equip="true" />
       <Item identifier="ballistichelmet1" equip="true" />
-      <Item identifier="scp_heavyvest" equip="true">
+      <Item identifier="armor_coalition_heavy" equip="true">
         <Item identifier="antibleeding2" amount="8" />
         <Item identifier="stypticpowder" amount="4" />
         <Item identifier="antibloodloss1" amount="4" />
@@ -581,9 +581,9 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_heavyuniform" equip="true" />
-      <Item identifier="scp_heavycombathelmet" equip="true" />
-      <Item identifier="scp_specialrig" equip="true" />
+      <Item identifier="uniform_coalition_heavy" equip="true" />
+      <Item identifier="helmet_coalition_heavy" equip="true" />
+      <Item identifier="armor_coalition_superheavy" equip="true" />
       <Item identifier="scp_p226" equip="true">
         <Item identifier="scp_9mmmag" />
       </Item>
@@ -616,9 +616,9 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_heavyuniform" equip="true" />
+      <Item identifier="uniform_coalition_heavy" equip="true" />
       <Item identifier="sgt_blackopshelm4" equip="true" />
-      <Item identifier="scp_softvest" equip="true">
+      <Item identifier="armor_coalition_light" equip="true">
         <Item identifier="antibleeding2" amount="4" />
         <Item identifier="antibloodloss1" amount="4" />
         <Item identifier="deusizine" amount="4" />
@@ -656,7 +656,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="coalitionbeltlight" equip="true" />
-      <Item identifier="scp_combatmedicuniform" equip="true">
+      <Item identifier="uniform_coalition_medic" equip="true">
         <Item identifier="batterycell" amount="4" />
         <Item identifier="basebionic" />
         <Item identifier="divingmask">
@@ -713,7 +713,7 @@
       <Item identifier="coalitionbeltlight" equip="true" />
       <Item identifier="orangejumpsuit2" equip="true" />
       <Item identifier="scp_combathelmet" equip="true" />
-      <Item identifier="scp_softvest" equip="true">
+      <Item identifier="armor_coalition_light" equip="true">
         <Item identifier="antibleeding2" amount="5" />
         <Item identifier="stypticpowder" amount="4" />
         <Item identifier="deusizine" amount="2" />
@@ -761,7 +761,7 @@
       <Item identifier="coalitionbeltlight" equip="true" />
       <Item identifier="ballistichelmet1" equip="true" />
       <Item identifier="bluejumpsuit2" equip="true" />
-      <Item identifier="scp_softvest" equip="true">
+      <Item identifier="armor_coalition_light" equip="true">
         <Item identifier="antibleeding2" amount="5" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
@@ -815,7 +815,7 @@
       <Item identifier="bandolier" equip="true">
         <Item identifier="scp_scarmag" amount="8" />
       </Item>
-      <Item identifier="scp_marauderrig" equip="true" >
+      <Item identifier="armor_coalition_infiltrator" equip="true" >
         <Item identifier="antibleeding2" amount="8" />
         <Item identifier="deusizine" amount="4" />
         <Item identifier="antibloodloss2" amount="4" />
@@ -851,12 +851,12 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_cbrnsuit" equip="true" />
-      <Item identifier="scp_hardeneddivingmask" equip="true">
+      <Item identifier="uniform_coalition_cbrn" equip="true" />
+      <Item identifier="hardeneddivingmask" equip="true">
         <Item identifier="oxygentank" />
       </Item>
       <Item identifier="sgt_longrangeradio" equip="true" />
-      <Item identifier="scp_softvest" equip="true">
+      <Item identifier="armor_coalition_light" equip="true">
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
@@ -889,11 +889,11 @@
       <!--clothes+armor-->
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_cbrnsuit" equip="true" />
-      <Item identifier="scp_hardeneddivingmask" equip="true">
+      <Item identifier="uniform_coalition_cbrn" equip="true" />
+      <Item identifier="hardeneddivingmask" equip="true">
         <Item identifier="oxygentank" />
       </Item>
-      <Item identifier="scp_softvest" equip="true">
+      <Item identifier="armor_coalition_light" equip="true">
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
@@ -926,11 +926,11 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_cbrnsuit" equip="true" />
+      <Item identifier="uniform_coalition_cbrn" equip="true" />
       <Item identifier="scp_cbrnhelmet" equip="true">
         <Item identifier="oxygentank" />
       </Item>
-      <Item identifier="scp_heavyvest" equip="true">
+      <Item identifier="armor_coalition_heavy" equip="true">
         <Item identifier="antibleeding2" amount="8" />
         <Item identifier="stypticpowder" amount="8" />
         <Item identifier="antibloodloss1" amount="4" />
@@ -1007,10 +1007,10 @@
     <!--scrap hunter-->
     <ItemSet>
       <item identifier="quartermasterclothes" equip="true" />
-      <item identifier="scp_softvest" equip="true" />
+      <item identifier="armor_coalition_light" equip="true" />
       <item identifier="crowbar" />
       <item identifier="scrap" amount="2" />
-      <item identifier="scp_assaultpack" equip="true">
+      <item identifier="backpack_light" equip="true">
         <item identifier="scrap" amount="3" />
         <item identifier="scp_wreckorepile" />
         <item identifier="scp_wreckmetalpile" />
@@ -1021,7 +1021,7 @@
       <item identifier="idcard" equip="true" />
       <item identifier="sgt_heavymechanicsuit" equip="true" />
       <item identifier="safetyharness" equip="true" />
-      <item identifier="hardhelmet" equip="true" />
+      <item identifier="helmet_engineer" equip="true" />
       <item identifier="screwdriver" />
       <item identifier="wrench" />
       <item identifier="redwire" />
@@ -1085,7 +1085,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="sgt_combatmedicuniform" equip="true" />
       <Item identifier="ballistichelmet1" equip="true" />
-      <Item identifier="scp_softvest" equip="true">
+      <Item identifier="armor_coalition_light" equip="true">
         <Item identifier="antibleeding2" amount="4" />
         <Item identifier="stypticpowder" />
         <Item identifier="stypticpowder" />
@@ -1117,7 +1117,7 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="medicalofficerclothes" equip="true" />
-      <Item identifier="scp_hardeneddivingmask" equip="true" />
+      <Item identifier="hardeneddivingmask" equip="true" />
       <Item identifier="oxygentank" />
       <Item identifier="toolbelt">
         <Item identifier="decontaminant" amount="6" />
@@ -1155,8 +1155,8 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="scp_simplehelmet" equip="true" />
-      <Item identifier="scp_renegadevest" equip="true">
+      <Item identifier="helmet_light" equip="true" />
+      <Item identifier="armor_renegade_light" equip="true">
         <Item identifier="antibleeding1" amount="6" />
         <Item identifier="deusizine" amount="2" />
         <Item identifier="antibloodloss1" amount="2" />
@@ -1192,7 +1192,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="vetmudraptorhelmet" equip="true" />
+      <Item identifier="helmet_mudraptor_veteran" equip="true" />
       <Item identifier="antibleeding1" amount="6" />
       <Item identifier="deusizine" amount="2" />
       <Item identifier="antibloodloss1" amount="2" />
@@ -1227,7 +1227,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="scp_simplehelmet" equip="true" />
+      <Item identifier="helmet_light" equip="true" />
       <Item identifier="bandolier" equip="true" />
       <Item identifier="smg">
         <Item identifier="smgmagazine" />
@@ -1244,8 +1244,8 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="scp_simplehelmet" equip="true" />
-      <Item identifier="scp_softvest" equip="true" />
+      <Item identifier="helmet_light" equip="true" />
+      <Item identifier="armor_coalition_light" equip="true" />
       <Item identifier="shotgun">
         <Item identifier="shotgunshell" amount="6" />
       </Item>
@@ -1261,8 +1261,8 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="scp_simplehelmet" equip="true" />
-      <Item identifier="scp_softvest" equip="true" />
+      <Item identifier="helmet_light" equip="true" />
+      <Item identifier="armor_coalition_light" equip="true" />
       <Item identifier="revolver">
         <Item identifier="revolverround" amount="6" />
       </Item>
@@ -1298,7 +1298,7 @@
     <Itemset>
       <item identifier="idcard" equip="true" />
       <item identifier="headset" equip="true" />
-      <item identifier="scp_hardeneddivingmask" equip="true">
+      <item identifier="hardeneddivingmask" equip="true">
         <item identifier="oxygenitetank" />
       </item>
       <item identifier="pirateclotheshard" equip="true" />
@@ -1339,9 +1339,9 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="scp_simplehelmet" equip="true" />
+      <Item identifier="helmet_light" equip="true" />
       <Item identifier="respawndivingsuit" equip="true" />
-      <Item identifier="scp_assaultpack" equip="true">
+      <Item identifier="backpack_light" equip="true">
         <Item identifier="antibleeding1" amount="6" />
         <Item identifier="deusizine" amount="2" />
         <Item identifier="antibloodloss1" amount="2" />
@@ -1379,7 +1379,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="piratebodyarmor" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
-      <Item identifier="vetmudraptorhelmet" equip="true" />
+      <Item identifier="helmet_mudraptor_veteran" equip="true" />
       <Item identifier="scp_hk21">
         <Item identifier="scp_pkpsmallboxmag" />
       </Item>
@@ -1412,7 +1412,7 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_heavyrig" equip="true" />
+      <Item identifier="armor_coalition_heavy_pockets" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
       <Item identifier="piratehelmet" equip="true" />
       <Item identifier="scp_akms">
@@ -1448,7 +1448,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="pirateclotheshard" equip="true" />
       <Item identifier="piratecaptainhat" equip="true" />
-      <Item identifier="scp_heavyvest" equip="true">
+      <Item identifier="armor_coalition_heavy" equip="true">
         <Item identifier="antibleeding1" amount="8" />
         <Item identifier="antibloodloss1" amount="4" />
         <Item identifier="heavyshotshell" amount="6" />
@@ -1486,7 +1486,7 @@
       <!--clothes+armor-->
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="invishelmet" equip="true" />
+      <Item identifier="helmet_nosprite" equip="true" />
       <Item identifier="tricksterrig" equip="true" />
       <Item identifier="sgt_bandolier" equip="true">
         <Item identifier="antibleeding1" amount="8" />
@@ -1540,14 +1540,14 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
-      <Item identifier="scp_heavyrenuniform" equip="true">
+      <Item identifier="uniform_renegade_heavy" equip="true">
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="antibiotics" />
         <Item identifier="pomegrenadeextract" amount="2" />
         <Item identifier="antibloodloss1" />
       </Item>
       <Item identifier="sgt_fieldcap2b" equip="true" />
-      <Item identifier="scp_renegadespecialrig" equip="true" />
+      <Item identifier="armor_renegade_heavy" equip="true" />
       <Item identifier="hmg" equip="true">
         <Item identifier="hmgmagazine" />
       </Item>
@@ -1576,8 +1576,8 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
       <Item identifier="sgt_renegadeuniform" equip="true" />
-      <Item identifier="scp_renegadehelmet" equip="true" />
-      <Item identifier="scp_renegadevest" equip="true">
+      <Item identifier="helmet_renegade" equip="true" />
+      <Item identifier="armor_renegade_light" equip="true">
         <Item identifier="antibleeding1" amount="8" />
         <Item identifier="pomegrenadeextract" amount="5" />
         <Item identifier="antibloodloss1" amount="2" />
@@ -1596,8 +1596,8 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
       <Item identifier="sgt_renegadeuniform" equip="true" />
-      <Item identifier="scp_renegadehelmet" equip="true" />
-      <Item identifier="scp_renegadevest" equip="true">
+      <Item identifier="helmet_renegade" equip="true" />
+      <Item identifier="armor_renegade_light" equip="true">
         <Item identifier="antibleeding1" amount="8" />
         <Item identifier="pomegrenadeextract" amount="5" />
         <Item identifier="antibloodloss1" amount="2" />
@@ -1633,9 +1633,9 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
-      <Item identifier="scp_renegadeuniform" equip="true" />
-      <Item identifier="scp_renegadeheavyhelmet" equip="true" />
-      <Item identifier="scp_renegadeplatecarrier" equip="true">
+      <Item identifier="uniform_renegade" equip="true" />
+      <Item identifier="helmet_renegade_heavy" equip="true" />
+      <Item identifier="armor_renegade_medium" equip="true">
         <Item identifier="antibleeding1" amount="8" />
         <Item identifier="pomegrenadeextract" amount="8" />
         <Item identifier="antibloodloss1" amount="3" />
@@ -1671,10 +1671,10 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="securityseparatistsuniform3" equip="true" />
-      <Item identifier="scp_hardeneddivingmask" equip="true">
+      <Item identifier="hardeneddivingmask" equip="true">
         <Item identifier="oxygentank" />
       </Item>
-      <Item identifier="scp_renegadeplatecarrier" equip="true">
+      <Item identifier="armor_renegade_medium" equip="true">
         <Item identifier="antibleeding1" amount="6" />
         <Item identifier="pomegrenadeextract" amount="4" />
         <Item identifier="antibloodloss1" />
@@ -1714,12 +1714,12 @@
         <Item identifier="combatstimulantsyringe" />
       </Item>
       <Item identifier="beltlight" equip="true" />
-      <Item identifier="scp_renegadecaptainuniform" equip="true" />
-      <Item identifier="scp_renegadecaptainhat" equip="true" />
+      <Item identifier="uniform_renegade_captain" equip="true" />
+      <Item identifier="hat_renegade_captain" equip="true" />
       <Item identifier="bandolier" equip="true">
         <Item identifier="scp_akdumag" amount="8" />
       </Item>
-      <Item identifier="scp_livrig" equip="true" />
+      <Item identifier="armor_renegade_superheavy" equip="true" />
       <Item identifier="handcannon">
         <Item identifier="handcannonround" amount="6" />
         <Item identifier="antibleeding2" amount="8" />
@@ -1758,7 +1758,7 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
-      <Item identifier="hardhelmet" equip="true" />
+      <Item identifier="helmet_engineer" equip="true" />
       <Item identifier="sgt_heavymechanicsuit" equip="true" />
       <Item identifier="safetyharness" equip="true" />
       <Item identifier="backpack" equip="true">
@@ -1804,9 +1804,9 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
-      <Item identifier="scp_simplehelmet" equip="true" />
+      <Item identifier="helmet_light" equip="true" />
       <Item identifier="scp_heavymechanicsuit1" equip="true" />
-      <Item identifier="scp_renegadevest" equip="true">
+      <Item identifier="armor_renegade_light" equip="true">
         <Item identifier="antibleeding2" amount="6" />
         <Item identifier="stypticpowder" amount="2" />
         <Item identifier="deusizine" amount="2" />
@@ -1815,7 +1815,7 @@
         <Item identifier="weldingfueltank" amount="2" />
         <Item identifier="oxygentank" amount="2" />
       </Item>
-      <Item identifier="scp_specialrig" equip="true" />
+      <Item identifier="armor_coalition_superheavy" equip="true" />
       <Item identifier="scp_m4s90" >
         <Item identifier="scp_12gmagbuck" amount="9" />
         <Item identifier="flashlight">
@@ -1854,9 +1854,9 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
-      <Item identifier="scp_heavyrenuniform" equip="true" />
+      <Item identifier="uniform_renegade_heavy" equip="true" />
       <Item identifier="thghelmet2" equip="true" />
-      <Item identifier="scp_specialrig" equip="true" />
+      <Item identifier="armor_coalition_superheavy" equip="true" />
       <Item identifier="scp_m4s90" equip="true">
         <Item identifier="scp_12gmagbuck" amount="9" />
       </Item>
@@ -1890,9 +1890,9 @@
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
       <Item identifier="beltlight" equip="true" />
-      <Item identifier="scp_livuniform" equip="true" />
+      <Item identifier="uniform_renegade_superheavy" equip="true" />
       <Item identifier="ballistichelmet1" equip="true" />
-      <Item identifier="scp_heavyvest" equip="true">
+      <Item identifier="armor_coalition_heavy" equip="true">
         <Item identifier="handcuffs" amount="6" />
         <Item identifier="teargasgrenade" />
       </Item>
@@ -1954,7 +1954,7 @@
         <Item identifier="stypticpowder" amount="8" />
         <Item identifier="antibloodloss2" amount="8" />
       </Item>
-      <Item identifier="scp_renegadevest" equip="true">
+      <Item identifier="armor_renegade_light" equip="true">
         <Item identifier="autosurgeon">
           <Item identifier="surgeonprogrambullet" />
           <Item identifier="batterycell" />
@@ -1991,7 +1991,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="sgt_renegadeuniform" equip="true" />
       <Item identifier="piratebandana" equip="true" />
-      <Item identifier="scp_renegadevest" equip="true">
+      <Item identifier="armor_renegade_light" equip="true">
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" />
         <Item identifier="deusizine" amount="2" />
@@ -2024,7 +2024,7 @@
       <Item identifier="headset" equip="true" />
       <Item identifier="separatistcommoner2" equip="true" />
       <Item identifier="sgt_fieldcap2b" equip="true" />
-      <Item identifier="scp_renegadevest" equip="true">
+      <Item identifier="armor_renegade_light" equip="true">
         <Item identifier="antibleeding1" amount="4" />
         <Item identifier="stypticpowder" />
         <Item identifier="pomegrenadeextract" />
@@ -2056,13 +2056,13 @@
     <ItemSet>
       <Item identifier="idcard" equip="true" />
       <Item identifier="headset" equip="true" />
-      <Item identifier="scp_heavyrenuniform" equip="true">
+      <Item identifier="uniform_renegade_heavy" equip="true">
         <Item identifier="antibleeding2" amount="8" />
         <Item identifier="stypticpowder" amount="4" />
         <Item identifier="antibloodloss1" amount="4" />
         <Item identifier="deusizine" amount="4" />
       </Item>
-      <Item identifier="scp_renegadehelmet" equip="true" />
+      <Item identifier="helmet_renegade" equip="true" />
       <Item identifier="piratebodyarmor" equip="true" />
       <Item identifier="scp_pkp">
         <Item identifier="scp_pkpboxdumag" />

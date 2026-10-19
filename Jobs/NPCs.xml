@@ -22,8 +22,8 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="headset" equip="true" showpreview="false" />
         <!--Armor-->
-        <Item identifier="vetmudraptorhelmet" equip="true" />
-        <Item identifier="vetmudraptorfullplate" equip="true" />
+        <Item identifier="helmet_mudraptor_veteran" equip="true" />
+        <Item identifier="armor_mudraptor_veteran" equip="true" />
         <Item identifier="sgt_banditclothes1" equip="true" />
         <Item identifier="bandolier" equip="true">
           <Item identifier="scp_12gmagbuck" amount="48" />
@@ -65,8 +65,8 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="headset" equip="true" showpreview="false" />
         <!--Armor-->
-        <Item identifier="endwormhelmet" equip="true" />
-        <Item identifier="endwormfullplate" equip="true" />
+        <Item identifier="helmet_endworm" equip="true" />
+        <Item identifier="armor_endworm" equip="true" />
         <Item identifier="sgt_banditclothes1" equip="true" />
         <Item identifier="bandolier" equip="true">
           <Item identifier="scp_12gmagbuck" amount="48" />
@@ -109,9 +109,9 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="headset" equip="true" showpreview="false" />
         <!--Armor-->
-        <Item identifier="scp_yuihelmet" equip="true" />
-        <Item identifier="scp_yuirig" equip="true" />
-        <Item identifier="scp_specopsuniform" equip="true" />
+        <Item identifier="helmet_renegade_infiltrator" equip="true" />
+        <Item identifier="armor_renegade_infiltrator" equip="true" />
+        <Item identifier="uniform_renegade_infiltrator" equip="true" />
         <Item identifier="bandolier" equip="true">
           <Item identifier="scp_ash12extmag" amount="6" />
           <Item identifier="scp_ash12mag" amount="4" />
@@ -197,10 +197,10 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="scanheadset" equip="true" showpreview="false" />
         <!--Armor-->
-        <Item identifier="scp_hardeneddivingmask" equip="true">
+        <Item identifier="hardeneddivingmask" equip="true">
           <Item Identifier="oxygenitetank" />
         </Item>
-        <Item identifier="lynxexoskeletonsuit" equip="true">
+        <Item identifier="backpack_speedskeleton" equip="true">
           <Item Identifier="infbatterycell" />
         </Item>
         <Item identifier="disciplerobes" equip="true" />
