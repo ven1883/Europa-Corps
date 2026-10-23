@@ -33,6 +33,8 @@
 					<Conditional IsDead="false" />
 
 					<RequiredItem items="oxygensource" type="Contained" />
+
+					<Affliction identifier="poison_airborne_immunity" amount="1000.0"/>
 				</StatusEffect>
 
 				<StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-5.0">

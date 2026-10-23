@@ -1,0 +1,130 @@
+scp_replicatinglatex -> preso_latex
+scp_replicatinglatexrefined -> refined_preso_latex
+scp_presolatexinfection -> preso_latex_infection
+scp_latexcontamination -> preso_latex_contamination
+scp_presoliquid -> liquid_preso_latex
+scp_presoliquid40mm -> liquid_preso_latex_gl
+
+scp_firelatex -> ignis_latex
+scp_firelatexhot -> ignis_latex_syringe
+scp_firelatexburn -> ignis_latex_burn
+
+scp_devilsblood -> devils_blood
+scp_devilpoisoning ->  devils_blood_poisoning
+scp_devilsbreathexposure -> devils_breath_exposure
+scp_devilgas -> gas_devils_blood
+scp_devilgasshotgun -> gas_devils_blood_sg
+scp_devilgas40mm -> gas_devils_blood_gl
+
+scp_hexgasexposure -> hexanova_exposure
+scp_hexgasdamage -> hexanova_damage
+scp_hexgas -> gas_hexanova 
+scp_hexgas40mm -> gas_hexanova_gl
+
+scp_vodka -> scp_condensed_ethanol
+scp_condensedstabilozine -> scp_condensedstabilozine
+
+scp_vomiting -> vomiting
+scp_vomitingblood -> vomiting_blood
+
+scp_protobulk -> heavy_weapon_bulk
+
+heavyblasterheat -> heavy_blaster_heat
+scp_spentcasingriflesmall -> casing_rifle_small
+scp_spentcasingriflemed -> casing_rifle_medium
+scp_spentcasingriflelarge -> casing_rifle_large
+scp_spentcasingpistol -> casing_pistol
+scp_spentcasingshotgun -> casing_shotgun
+scp_grenadepin -> grenade_pin
+scp_grenadespoon -> grenade_spoon
+scp_mglink -> belt_link
+
+scp_renegadeheavyhelmet -> helmet_renegade_heavy
+scp_renegadespecialrig -> armor_renegade_heavy
+scp_heavyrenuniform -> uniform_renegade_heavy
+scp_renegadehelmet -> helmet_renegade
+scp_renegadeplatecarrier -> armor_renegade_medium
+scp_renegadevest -> armor_renegade_light
+scp_renegadeuniform -> uniform_renegade
+
+scp_yuirig -> armor_renegade_infiltrator
+scp_yuihelmet -> helmet_renegade_infiltrator
+scp_specopsuniform -> uniform_renegade_infiltrator
+
+scp_livhelmet -> helmet_renegade_superheavy
+scp_livrig -> armor_renegade_superheavy
+scp_livuniform -> uniform_renegade_superheavy
+
+scp_renegadecaptainhat -> hat_renegade_captain
+scp_renegadecaptainuniform -> uniform_renegade_captain
+
+scp_liquidatorsuit -> suit_renegade_liquidator
+scp_renegadecombatmedicuniform -> uniform_renegade_medic
+scp_renegadedivingsuit -> suit_renegade
+scp_interceptorsuit -> suit_renegade_fast
+
+scp_veronhelmet -> helmet_coalition_ultraheavy
+scp_veronrig -> armor_coalition_ultraheavy
+scp_veronuniform -> uniform_coalition_ultraheavy
+
+scp_marauderhelmet -> helmet_coalition_infiltrator
+scp_marauderrig -> armor_coalition_infiltrator
+scp_marauderuniform -> uniform_coalition_infiltrator
+
+scp_heavycombathelmet -> helmet_coalition_heavy
+scp_specialrig -> armor_coalition_superheavy
+scp_heavyvest -> armor_coalition_heavy
+scp_heavyrig -> armor_coalition_heavy_pockets
+scp_heavyuniform -> uniform_coalition_heavy
+
+scp_softvest -> armor_coalition_light
+scp_riotvest -> armor_coalition_riot
+scp_combatmedicuniform -> uniform_coalition_medic
+scp_lightuniform -> uniform_coalition_light
+scp_cbrnsuit -> uniform_coalition_cbrn
+
+scp_combathardsuit -> suit_coalition_spartan
+
+inquisitorrobes -> uniform_cult_stealth
+
+scp_clownbatmask -> helmet_clown_combat
+scp_clownbatuniform -> uniform_clown_combat
+
+scp_simplehelmet -> helmet_light
+scp_heavyhazmatuniform -> uniform_hazmat
+
+scp_assaultpack -> backpack_light
+scp_heavypack -> backpack_superheavy
+scp_tacpack -> backpack_medium
+scp_fieldpack -> backpack_heavy
+scp_protopack -> backpack_heavy_holster
+hardeneddivingmask -> hardeneddivingmask
+
+rhinoassaultsuit -> suit_enforcer
+hazmatsuit -> suit_hazmat
+eodsuit -> suit_eod
+hardhelmet -> helmet_engineer
+lynxexoskeletonsuit -> armor_speedskeleton
+mudraptorfullplate -> armor_mudraptor
+mudraptorhelmet -> helmet_mudraptor
+vetmudraptorfullplate -> armor_mudraptor_veteran
+vetmudraptorhelmet -> helmet_mudraptor_veteran
+chitinarmor -> armor_orangeboy
+watcherarmor -> armor_watcher
+watcherhelmet -> helmet_watcher
+molocharmor -> armor_moloch
+molochhelmet -> helmet_moloch
+blackmolocharmor -> armor_moloch_black
+blackmolochhelmet -> helmet_moloch_black
+endwormfullplate -> armor_endworm
+endwormhelmet -> helmet_endworm
+paramedpack -> backpack_paramedic
+invishelmet -> helmet_nosprite
+
+fenitergasgrenade1 -> nervegasgrenade
+fenitergasgrenade2 -> pulmonarygasgrenade
+fenitergasgrenade3 -> bloodgasgrenade
+fenitergasgrenade4 -> blistergasgrenade
+fenitergasgrenade5 -> teargasgrenade
+fenitergasgrenade6 -> psychogasgrenade
+fenitergasgrenade7 -> sleepgasgrenade
