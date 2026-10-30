@@ -589,26 +589,26 @@
 	<Item name="" identifier="suit_eod" category="Equipment" tags="smallitem,clothing" scale="0.5" fireproof="true" impactsoundtag="impact_metal_light" cargocontaineridentifier="metalcrate">
 
 		<InventoryIcon texture="%ModDir%/Sprites/Items/Apparel/hazmatextra.png" sourcerect="300,0,150,120" origin="0.5,0.5" />
-		<Sprite name="Diving Suit Item" texture="%ModDir%/Sprites/Items/Apparel/bombsuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
+		<Sprite name="Diving Suit Item" texture="%ModDir%/Sprites/Items/Apparel/bombgear_items.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
 
 		<Body width="160" height="110" density="30" />
 		<Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
 			
-			<sprite name="CBRN EOD Suit Torso" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" limbdepth="8" />
+			<sprite name="CBRN EOD Suit Torso" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" limbdepth="8" />
 			<sprite name="CBRN EOD Helmet Wearable" texture="%ModDir%/Sprites/Items/Apparel/helmets.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.675" hidelimb="false" sourcerect="160,0,160,160" origin="0.5,0.57" alphaclipotherwearables="true" />
-			<sprite name="CBRN EOD Suit Right Hand" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Left Hand" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Right Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Left Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Waist" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Right Thigh" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Left Thigh" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Right Leg" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Left Leg" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
-			<sprite name="CBRN EOD Suit Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/bombsuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Hand" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Hand" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Upper Arm" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Waist" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Thigh" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Thigh" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Leg" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Leg" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Left Shoe" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+			<sprite name="CBRN EOD Suit Right Shoe" texture="%ModDir%/Sprites/Items/Apparel/bombgear.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
 		
 			<StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
 			

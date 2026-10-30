@@ -63,7 +63,7 @@
 			<SkillModifier skillidentifier="electrical" skillvalue="-20" />
 
 			<sprite name="Heavy Rig Wearable" texture="%ModDir%/Sprites/Items/Apparel/heavyarmorrig.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
-			<sprite name="Heavy Rig Holster" texture="renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Heavy Rig Holster" texture="%ModDir%/Sprites/Items/Apparel/renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Heavy Rig Right Armpad" texture="%ModDir%/Sprites/Items/Apparel/heavyarmorrig.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Heavy Rig Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyarmorrig.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Heavy Rig Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/heavyarmorrig.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
@@ -161,7 +161,7 @@
 			<damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="armourheavyimpact" deflectprojectiles="true" />
 
 			<sprite name="Wearable" texture="%ModDir%/Sprites/Items/Apparel/protectrig.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
-			<sprite name="Holster" texture="renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Holster" texture="%ModDir%/Sprites/Items/Apparel/renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Armpad" texture="%ModDir%/Sprites/Items/Apparel/protectrig.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Special Rig Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/marauderrig.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Special Rig Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/marauderrig.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
@@ -201,7 +201,7 @@
 			<SkillModifier skillidentifier="weapons" skillvalue="15" />
 
 			<sprite name="Wearable" texture="%ModDir%/Sprites/Items/Apparel/marauderrig.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
-			<sprite name="Holster" texture="renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+			<sprite name="Holster" texture="%ModDir%/Sprites/Items/Apparel/renegadeplatecarrier.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Armpad" texture="%ModDir%/Sprites/Items/Apparel/protectrig.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Special Rig Right Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/marauderrig.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
 			<sprite name="Special Rig Left Lower Arm" texture="%ModDir%/Sprites/Items/Apparel/marauderrig.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
