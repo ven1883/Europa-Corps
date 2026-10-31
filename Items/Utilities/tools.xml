@@ -124,8 +124,8 @@
       <GuiFrame style="ItemUI" absoluteoffset="50,0" anchor="BottomCenter" relativesize="0.12,0.08" />
       <TextBox text="Detonation Code" propertyname="channel" maxtextlength="4" />
     </CustomInterface>
-    <Sprite texture="%ModDir%/remotetrigger.png" sourcerect="0,0,128,128" depth="0.8" origin="0.45,0.65" />
-    <InventoryIcon texture="%ModDir%/remotetrigger_inv.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Utilities/remotetrigger.png" sourcerect="0,0,128,128" depth="0.8" origin="0.45,0.65" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Utilities/remotetrigger_inv.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
   </Item>
 
   <Item name="" identifier="remotedetonator" description="" category="Equipment,Weapon" Tags="smallitem,detonator" Scale="0.5" health="2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_light" isshootable="true">
@@ -168,8 +168,8 @@
         <Use />
       </StatusEffect>
     </MotionSensor>
-    <InventoryIcon texture="%ModDir%/remoteexplosives.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/remoteexplosives.png" depth="0.55" sourcerect="64,0,64,64" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Utilities/remoteexplosives.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Utilities/remoteexplosives.png" depth="0.55" sourcerect="64,0,64,64" origin="0.5,0.5" />
   </Item>
 
   <Item name="" identifier="pager" Tags="smallitem" Scale="0.3" impactsoundtag="impact_metal_light">
