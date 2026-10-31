@@ -174,8 +174,8 @@
 
   <Item name="" identifier="pager" Tags="smallitem" Scale="0.3" impactsoundtag="impact_metal_light">
     <Body width="36" height="40" density="20" />
-    <Sprite texture="%ModDir%/pager.png" depth="0.55" sourcerect="0,0,87,80" origin="0.7,0.2" />
-    <InventoryIcon texture="%ModDir%/pager.png" depth="0.55" sourcerect="0,0,87,80" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Sprites/Items/Utilities/pager.png" depth="0.55" sourcerect="0,0,87,80" origin="0.7,0.2" />
+    <InventoryIcon texture="%ModDir%/Sprites/Items/Utilities/pager.png" depth="0.55" sourcerect="0,0,87,80" origin="0.5,0.5" />
     <lightcomponent Range="10" CastShadows="false" LightColor="0,155,0" IsOn="True" BlinkFrequency="0.5" />
     <Holdable slots="Any,RightHand+LeftHand" msg="ItemMsgFoldTableSelect" holdpos="45,5" handle1="-40,-40" holdangle="-10" aimable="false"></Holdable>
   </Item>
