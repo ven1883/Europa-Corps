@@ -579,4 +579,35 @@
 	</Affliction>
 	</Override>
 
+	<Override>
+	<Affliction
+		name="Stabilozine Effects"
+		identifier="stabilozineeffect"
+		type="resistance"
+		isbuff="true"
+		limbspecific="false"
+		indicatorlimb="Torso"
+		maxstrength="120"
+		affectmachines="false"
+		MedicalSkillGain="0.01">
+		<Description
+			textidentifier="afflictiondescription.stabilozineeffect.self"
+			target="Self" />
+		<Description
+			textidentifier="afflictiondescription.stabilozineeffect"
+			target="OtherCharacter " />
+		<Effect minstrength="0" maxstrength="300"
+			strengthchange="-1"
+			resistancefor="poison,poison_skin,poison_airborne"
+			minresistance="0.5"
+			maxresistance="0.5">
+		<StatusEffect target="Character" interval="1" disabledeltatime="true">
+			<ReduceAffliction type="poison" amount="0.5" /> <!--lower than vanilla values since it also confers 50% resistance now-->
+			<ReduceAffliction type="poison_skin" amount="0.5" />
+			<ReduceAffliction type="poison_airborne" amount="0.5" />
+		</StatusEffect>
+		</Effect>
+		<Icon texture="Content/UI/TalentsIcons4.png" sourcerect="896,256,128,128" color="10,193,114,255" origin="0,0"/>
+	</Affliction>
+	</Override>
 </Afflictions>

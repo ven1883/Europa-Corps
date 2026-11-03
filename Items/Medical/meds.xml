@@ -273,41 +273,19 @@
 
 			<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
 			<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
-			
-			<!-- Check all poisons -->
-			<StatusEffect tags="medical" type="OnUse" Target="UseTarget" duration="1.0">
-				<Conditional morbusinepoisoning="lt 16" />
-
-				<ReduceAffliction identifier="morbusinepoisoning" amount="100" />
-			</StatusEffect>
-
-			<StatusEffect tags="medical" type="OnUse" Target="UseTarget" duration="1.0">
-				<Conditional cyanidepoisoning="lt 16" />
-
-				<ReduceAffliction identifier="cyanidepoisoning" amount="100" />
-			</StatusEffect>
-
-			<StatusEffect tags="medical" type="OnUse" Target="UseTarget" duration="1.0">
-				<Conditional sufforinpoisoning="lt 16" />
-
-				<ReduceAffliction identifier="sufforinpoisoning" amount="100" />
-			</StatusEffect>
-
-			<!-- Lower deliriumine, not cure, as it wont work for some reason, good for delaying for an antidote -->
-			<StatusEffect tags="medical" type="OnUse" Target="UseTarget" duration="3.0">
-				<Conditional deliriuminepoisoning="lt 25" />
-
-				<ReduceAffliction identifier="deliriuminepoisoning" amount="100" />
-			</StatusEffect>
 
 			<!-- Rid of good stuff too -->
 			<StatusEffect tags="medical" type="OnUse" Target="UseTarget" duration="1.0">
 				<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
 
 				<Affliction identifier="instavomit" amount="1" />
-				<Affliction identifier="nausea" amount="9" />
+				<Affliction identifier="nausea" amount="30" />
 
-				<ReduceAffliction identifier="drunk" amount="25" />
+				<ReduceAffliction type="poison" amount="75" />
+				<ReduceAffliction type="poison_airborne" amount="75" />
+				<ReduceAffliction type="poison_skin" amount="75" />
+
+				<ReduceAffliction identifier="drunk" amount="5" />
 				<ReduceAffliction identifier="opiateoverdose" amount="30" />
 				<ReduceAffliction identifier="methoverdose" amount="30" />
 				<ReduceAffliction identifier="steroidoverdose" amount="30" />
