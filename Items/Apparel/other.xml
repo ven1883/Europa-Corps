@@ -236,11 +236,11 @@
 			<sprite texture="Content/Items/Tools/tools.png" sourcerect="374,140,62,20" alpha="1.0" origin="0.5,0.5" />
 			<StatusEffect type="OnUse" targettype="This" IsOn="true" delay="0.5">
 				<Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
-				<sound file="%ModDir%/chemlightcrack.ogg" range="800.0" />
+				<sound file="%ModDir%/Sounds/XMLDefined/chemlightcrack.ogg" range="800.0" />
 			</StatusEffect>
 			<StatusEffect type="OnUse" targettype="This" IsOn="false" delay="0.5">
 				<Conditional IsOn="eq True" targetitemcomponent="LightComponent" />
-				<sound file="%ModDir%/chemlightcrack.ogg" range="800.0" />
+				<sound file="%ModDir%/Sounds/XMLDefined/chemlightcrack.ogg" range="800.0" />
 			</StatusEffect>
 			<StatusEffect type="OnContained" targettype="Character,This" LightColor="250,255,50,0" disabledeltatime="True">
 				<Conditional IsOn="eq True" targetitemcomponent="LightComponent" />
@@ -270,11 +270,11 @@
 			<sprite texture="Content/Items/Tools/tools.png" sourcerect="374,140,62,20" alpha="1.0" origin="0.5,0.5" />
 			<StatusEffect type="OnUse" targettype="This" IsOn="true" delay="0.5">
 				<Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
-				<sound file="%ModDir%/chemlightcrack.ogg" range="800.0" />
+				<sound file="%ModDir%/Sounds/XMLDefined/chemlightcrack.ogg" range="800.0" />
 			</StatusEffect>
 			<StatusEffect type="OnUse" targettype="This" IsOn="false" delay="0.5">
 				<Conditional IsOn="eq True" targetitemcomponent="LightComponent" />
-				<sound file="%ModDir%/chemlightcrack.ogg" range="800.0" />
+				<sound file="%ModDir%/Sounds/XMLDefined/chemlightcrack.ogg" range="800.0" />
 			</StatusEffect>
 			<StatusEffect type="OnContained" targettype="Character,This" LightColor="250,255,50,0" disabledeltatime="True">
 				<Conditional IsOn="eq True" targetitemcomponent="LightComponent" />
