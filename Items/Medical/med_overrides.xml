@@ -1105,28 +1105,38 @@
 
 			<MeleeWeapon 
 				canBeCombined="true" removeOnCombined="true" 
-				slots="Any,RightHand,LeftHand" 
-				aimpos="40,5" handle1="-5,0" holdangle="220" 
+				slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" 
 				reload="1.0" 
-				msg="ItemMsgPickUpSelect">
+				msg="ItemMsgPickUpSelect" 
+				HitOnlyCharacters="true">
 
-				<RequiredSkill identifier="medical" level="20"/>
+				<RequiredSkill identifier="medical" level="25" />
 
-				<StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
-				<StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+				<StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
+				<StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
 
-				<StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="30">
-					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-
-					<ReduceAffliction identifier="organrejection" amount="4" />
-					<ReduceAffliction identifier="poison" amount="1" />
+				<StatusEffect type="OnSuccess" target="UseTarget">
+					<Affliction identifier="stabilozineeffect" amount="180" />
+					<ReduceAffliction identifier="organrejection" amount="100" />
 				</StatusEffect>
 
-				<StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="30">
-					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+				<StatusEffect type="OnFailure" target="UseTarget">
+					<Affliction identifier="stabilozineeffect" amount="90" />
+					<ReduceAffliction identifier="organrejection" amount="50" />
+				</StatusEffect>
 
-					<ReduceAffliction identifier="organrejection" amount="2" />
-					<ReduceAffliction identifier="poison" amount="0.5" />
+				<StatusEffect type="OnSuccess" target="UseTarget">
+					<Conditional entitytype="eq Character"/>
+					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+				</StatusEffect>
+
+				<StatusEffect type="OnFailure" target="UseTarget">
+					<Conditional entitytype="eq Character"/>
+					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+				</StatusEffect>
+
+				<StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
+					<Affliction identifier="stun" amount="0.1" />
 				</StatusEffect>
 
 				<!-- Remove the item when fully used -->
@@ -1137,20 +1147,14 @@
 			</MeleeWeapon>
 
 			<Projectile 
-				characterusable="false" 
-				launchimpulse="20.0" 
+				characterusable="false"
+				launchimpulse="18.0" launchrotation="-90" 
 				sticktocharacters="true" 
-				launchrotation="-90">
+				inheritstatuseffectsfrom="MeleeWeapon" 
+				inheritrequiredskillsfrom="MeleeWeapon" 
+			/>
 
-				<StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
-					<Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
-				</StatusEffect>
-
-				<StatusEffect tags="medical" type="OnImpact" target="UseTarget" duration="30">
-					<ReduceAffliction identifier="poison" amount="0.5" />
-				</StatusEffect>
-
-			</Projectile>
+			<SkillRequirementHint identifier="medical" level="25" />
 		</Stabilozine>
 
 		<!--++++++++++++++++++++++++++++++++++++-->

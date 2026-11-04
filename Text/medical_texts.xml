@@ -138,10 +138,10 @@
 	<entitydescription.calomel>An aggressive purging agent designed to rid of poisons in early stages.
 
 	On Use:
+	‖color:154,213,163,255‖-75% Poison‖color:end‖
 	‖color:245,105,105,255‖-60% All Buffs‖color:end‖
 	‖color:245,105,105,255‖-30% Slow Metabolism‖color:end‖
 	‖color:154,213,163,255‖-10% Drunk ‖color:end‖
-	‖color:154,213,163,255‖-100% Poison (if below 15%) ‖color:end‖
 	‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
 	</entitydescription.calomel>
 
@@ -377,7 +377,7 @@
 	
 	On Use:
 	‖color:154,213,163,255‖-120% Organ Rejection‖color:end‖
-	‖color:154,213,163,255‖-1% Poison/s ~ 30s‖color:end‖
+	‖color:154,213,163,255‖-0.5% Poison/s + 50% Poison Resistance ~ 180s‖color:end‖
 	‖color:243,162,50,255‖(Healing reduced if skill requirement not met.)‖color:end‖
 	</entitydescription.stabilozine>
 
