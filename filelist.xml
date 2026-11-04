@@ -16,14 +16,16 @@
 	<Item file="%ModDir%/Items/Weapons/rifles.xml"/>
 	<Item file="%ModDir%/Items/Weapons/shotguns.xml"/>
 	<Item file="%ModDir%/Items/Weapons/smgs.xml"/>
-	<Item file="%ModDir%/Items/Weapons/special.xml"/>
-	<Item file="%ModDir%/Items/Weapons/Ammo/explosive_ammo.xml"/>
+	<Item file="%ModDir%/Items/Weapons/special.xml"/-->
+	<Item file="%ModDir%/Items/Weapons/chemicals.xml"/>
+	<!--Item file="%ModDir%/Items/Weapons/Ammo/explosive_ammo.xml"/>
 	<Item file="%ModDir%/Items/Weapons/Ammo/heavy_ammo.xml"/>
 	<Item file="%ModDir%/Items/Weapons/Ammo/pistol_ammo.xml"/>
 	<Item file="%ModDir%/Items/Weapons/Ammo/rifle_ammo.xml"/>
 	<Item file="%ModDir%/Items/Weapons/Ammo/shotgun_ammo.xml"/>
 	<Item file="%ModDir%/Items/Weapons/Ammo/smg_ammo.xml"/>
 	<Item file="%ModDir%/Items/Weapons/Ammo/special_ammo.xml"/-->
+	<Item file="%ModDir%/Items/Weapons/Ammo/chemical_ammo.xml"/>
 
 	<!--Apparel-->
 
