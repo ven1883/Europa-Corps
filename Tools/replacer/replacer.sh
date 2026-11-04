@@ -7,7 +7,6 @@ for file in subs/**.sub; do
 	filenoext=$(basename -- "$file" .sub)
 
     echo "Processing $file"
-	echo "No Extension Name: $filenoext"
 
 	#copy the file and rename it to an archive
 	cp "subs/$file" output/
@@ -15,7 +14,6 @@ for file in subs/**.sub; do
 
 	#extract and rename to XML
 	7z e -y "output/$filenoext.gzip" -ooutput/
-	echo FUCKING DO YOUR FUCKING JOB YOU CUNT FUCK
 	mv "output/$filenoext" "output/$filenoext.xml" # ease of reading
 
 	# some fucking bullshit here to find and repalce the identifiers
