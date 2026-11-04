@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+
+		<!--Nerve Agent-->
+	<Item name="" identifier="nervegasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="" health="15">
+	
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="20,11,27,53" depth="0.55" origin="0.5,0.5" />
+		
+		<Body width="26" height="54" density="30" />
+		
+		<ItemComponent characterusable="false">
+			<StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
+		</ItemComponent>
+		
+		<Throwable 
+			slots="Any,RightHand,LeftHand" 
+			holdpos="0,0" handle1="0,0" throwforce="3.5" 
+			msg="ItemMsgPickUpSelect">
+		
+			<StatusEffect type="OnSecondaryUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="255,69,0,155" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<Explosion showeffects="false" range="500">
+					<Affliction identifier="nerveagent" strength="1" />
+					<Affliction identifier="nerveagentcontamination" strength="2" />
+				</Explosion>
+			</StatusEffect>
+
+		</Throwable>
+	
+	</Item>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--Pulmonary Agent-->
+	<Item name="" identifier="pulmonarygasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="30">
+
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="20,81,27,53" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="26" height="54" density="30" />
+
+		<ItemComponent characterusable="false">
+			<StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
+		</ItemComponent>
+
+		<Throwable 
+			slots="Any,RightHand,LeftHand" 
+			holdpos="0,0" handle1="0,0" 
+			throwforce="3.5" 
+			msg="ItemMsgPickUpSelect">
+
+			<StatusEffect type="OnSecondaryUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" EmitInterval="0.1" ParticleAmount="2" ColorMultiplier="0,0,155,150" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<Explosion showeffects="false" range="600">
+					<Affliction identifier="pulmonaryagentexposure" strength="3" />
+				</Explosion>
+			</StatusEffect>
+
+		</Throwable>
+
+	</Item>
+
+
+	<Item identifier="pulmgasgrenadeactive" variantof="pulmonarygasgrenade" descriptionidentifier="pulmonarygasgrenade" tags="smallitem,weapon,explosive,armed"/>
+
+
+	<Item identifier="pulmgasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
+
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="128,0,128,128" depth="0.1" origin="0.5,0.5" />
+
+		<LightComponent 
+			range="1" 
+			color="0,0,0,0" 
+			IsOn="True">
+
+			<StatusEffect type="Always" interval="1" target="This">
+				<Conditional IsOn="eq True"/>
+
+				<Explosion showeffects="false" range="500">
+					<Affliction identifier="pulmonaryagentexposure" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional IsOn="eq True"/>
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" EmitInterval="0.1" ParticleAmount="2" ColorMultiplier="0,0,155,200" />
+			</StatusEffect>
+
+		</LightComponent>
+
+		<WifiComponent range="500"/>
+
+		<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+			<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+			<RequiredItem items="screwdriver" type="Equipped" />
+			<input name="toggle" displayname="connection.togglestate" />
+			<input name="set_state" displayname="connection.setstate" />
+		</ConnectionPanel>
+
+	</Item>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--Blood Agent-->
+	<Item name="" identifier="bloodgasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="10">
+
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="20,151,27,53" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="26" height="54" density="30" />
+
+		<ItemComponent characterusable="false">
+			<StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
+		</ItemComponent>
+
+		<Throwable 
+			slots="Any,RightHand,LeftHand" 
+			holdpos="0,0" handle1="0,0" 
+			throwforce="3.5" 
+			msg="ItemMsgPickUpSelect">
+
+			<StatusEffect type="OnSecondaryUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="4" ColorMultiplier="5,0,0,255" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<Explosion showeffects="false" range="600">
+					<Affliction identifier="bloodagent" strength="7" />
+					<Affliction identifier="restrictedvision" strength="500" />
+				</Explosion>
+
+			</StatusEffect>
+
+		</Throwable>
+
+	</Item>
+
+
+	<Item identifier="bloodgasgrenadeactive" variantof="bloodgasgrenade" descriptionidentifier="bloodgasgrenade" tags="smallitem,weapon,explosive,armed"/>
+
+
+	<Item identifier="bloodgasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
+
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="256,0,128,128" depth="0.1" origin="0.5,0.5" />
+
+		<LightComponent 
+			range="1" 
+			color="0,0,0,0" 
+			IsOn="True">
+
+			<StatusEffect type="Always" interval="1" target="This">
+				<Conditional IsOn="eq True"/>
+
+				<Explosion showeffects="false" range="500">
+					<Affliction identifier="bloodagent" strength="7" />
+					<Affliction identifier="restrictedvision" strength="500" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional IsOn="eq True"/>
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="4" ColorMultiplier="5,0,0,255" />
+			</StatusEffect>
+
+		</LightComponent>
+
+		<WifiComponent range="500"/>
+
+		<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+			<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+			<RequiredItem items="screwdriver" type="Equipped" />
+			<input name="toggle" displayname="connection.togglestate" />
+			<input name="set_state" displayname="connection.setstate" />
+		</ConnectionPanel>
+
+	</Item>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--Blistering Agent-->
+	<Item name="" identifier="blistergasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="15">
+
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="19,222,27,53" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="26" height="54" density="30" />
+
+		<ItemComponent characterusable="false">
+			<StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
+		</ItemComponent>
+
+		<Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
+
+			<StatusEffect type="OnSecondaryUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="255,225,0,155" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<Explosion showeffects="false" range="600">
+					<Affliction identifier="blisteragentinternal" strength="3" />
+					<Affliction identifier="blisteragentcontamination" strength="5" />
+					<Affliction identifier="acidburn" strength="10" />
+				</Explosion>
+			</StatusEffect>
+
+		</Throwable>
+
+	</Item>
+
+
+	<Item identifier="blistergasgrenadeactive" variantof="blistergasgrenade" descriptionidentifier="blistergasgrenade" tags="smallitem,weapon,explosive,armed"/>
+
+
+	<Item identifier="blistergasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
+
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="384,0,128,128" depth="0.1" origin="0.5,0.5" />
+
+		<LightComponent
+			range="1" 
+			color="0,0,0,0" 
+			IsOn="True">
+
+			<StatusEffect type="Always" interval="1" target="This">
+				<Conditional IsOn="eq True"/>
+
+				<Explosion showeffects="false" range="500">
+					<Affliction identifier="blisteragentinternal" strength="4" />
+					<Affliction identifier="blisteragentcontamination" strength="8" />
+					<Affliction identifier="acidburn" strength="8" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional IsOn="eq True"/>
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="4" ColorMultiplier="5,0,0,255" />
+			</StatusEffect>
+
+		</LightComponent>
+
+		<WifiComponent range="500"/>
+
+		<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+			<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+			<RequiredItem items="screwdriver" type="Equipped" />
+			<input name="toggle" displayname="connection.togglestate" />
+			<input name="set_state" displayname="connection.setstate" />
+		</ConnectionPanel>
+		
+	</Item>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--Tear Gas-->
+	<Item name="" identifier="teargasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="30">
+
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="19,291,27,53" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="26" height="54" density="30" />
+
+		<ItemComponent characterusable="false">
+			<StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
+		</ItemComponent>
+
+		<Throwable 
+			slots="Any,RightHand,LeftHand" 
+			holdpos="0,0" handle1="0,0" 
+			throwforce="3.5" 
+			msg="ItemMsgPickUpSelect">
+
+			<StatusEffect type="OnSecondaryUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="255,225,255,155" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<Explosion showeffects="false" range="250">
+					<Affliction identifier="teargas" strength="2.5" />
+				</Explosion>
+
+			</StatusEffect>
+
+		</Throwable>
+
+	</Item>
+
+
+	<Item identifier="teargasgrenadeactive" variantof="teargasgrenade" descriptionidentifier="teargasgrenade" tags="smallitem,weapon,explosive,armed"/>
+
+
+	<Item identifier="teargasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
+
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="512,128,128,128" depth="0.1" origin="0.5,0.5" />
+
+		<LightComponent 
+			range="1" 
+			color="0,0,0,0" 
+			IsOn="True">
+
+			<StatusEffect type="Always" interval="1" target="This">
+				<Conditional IsOn="eq True"/>
+
+				<Explosion showeffects="false" range="500">
+					<Affliction identifier="teargas" strength="0.5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional IsOn="eq True"/>
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="255,225,255,155" />
+			</StatusEffect>
+
+		</LightComponent>
+
+		<WifiComponent range="500"/>
+
+		<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+			<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+			<RequiredItem items="screwdriver" type="Equipped" />
+			<input name="toggle" displayname="connection.togglestate" />
+			<input name="set_state" displayname="connection.setstate" />
+		</ConnectionPanel>
+
+	</Item>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--Psychochemical Agent-->
+	<Item name="" identifier="psychogasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="20">
+
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="19,361,27,53" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="26" height="54" density="30" />
+
+		<ItemComponent characterusable="false">
+			<StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
+		</ItemComponent>
+
+		<Throwable 
+			slots="Any,RightHand,LeftHand" 
+			holdpos="0,0" handle1="0,0" throwforce="3.5" 
+			msg="ItemMsgPickUpSelect">
+
+			<StatusEffect type="OnSecondaryUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="0,155,0,127" />
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<Explosion showeffects="false" range="500">
+					<Affliction identifier="psychochemicalagent" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+		</Throwable>
+
+	</Item>
+
+
+	<Item identifier="psychogasgrenadeactive" variantof="psychogasgrenade" descriptionidentifier="psychogasgrenade" tags="smallitem,weapon,explosive,armed"/>
+
+
+	<Item identifier="psychogasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
+
+		<Sprite texture="%ModDir%/Sprites/Afflictions/chemicalagentsafflictions.png" sourcerect="512,0,128,128" depth="0.1" origin="0.5,0.5" />
+
+		<LightComponent 
+			range="1" 
+			color="0,0,0,0" 
+			IsOn="True">
+
+			<StatusEffect type="Always" interval="1" target="This">
+				<Conditional IsOn="eq True"/>
+
+				<Explosion showeffects="false" range="500">
+					<Affliction identifier="psychochemicalagent" strength="3" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional IsOn="eq True"/>
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="0,155,0,127" />
+			</StatusEffect>
+
+		</LightComponent>
+
+		<WifiComponent range="500"/>
+
+		<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+			<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+			<RequiredItem items="screwdriver" type="Equipped" />
+			<input name="toggle" displayname="connection.togglestate" />
+			<input name="set_state" displayname="connection.setstate" />
+		</ConnectionPanel>
+
+	</Item>
+
+	<!--++++++++++++++++++++++++++++++++++++-->
+
+	<!--Incapacitating Agent-->
+	<Item name="" identifier="sleepgasgrenade" category="Weapon" maxstacksize="8" cargocontaineridentifier="chemicalcrate" tags="smallitem,weapon,explosive" Scale="0.5" impactsoundtag="impact_metal_heavy" health="15">
+
+		<Sprite texture="%ModDir%/Sprites/Items/Weapons/chemicalwarfaremain.png" sourcerect="19,431,27,53" depth="0.55" origin="0.5,0.5" />
+
+		<Body width="26" height="54" density="30" />
+
+		<ItemComponent characterusable="false">
+			<StatusEffect type="OnUse" target="This" disabledeltatime="false" tags="armed" />
+		</ItemComponent>
+
+		<Throwable 
+			slots="Any,RightHand,LeftHand" 
+			holdpos="0,0" handle1="0,0" 
+			throwforce="3.5" 
+			msg="ItemMsgPickUpSelect">
+
+			<StatusEffect type="OnSecondaryUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="191,63,173,100" LifeTimeMultiplier="1.5"/>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5" offset="0,100" condition="-0.5">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+
+				<Explosion showeffects="false" range="800">
+					<Affliction identifier="anesthesia" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+		</Throwable>
+
+	</Item>
+
+
+	<Item identifier="sleepgasgrenadeactive" variantof="sleepgasgrenade" descriptionidentifier="sleepgasgrenade" tags="smallitem,weapon,explosive,armed"/>
+
+
+	<Item identifier="sleepgasemitter" category="weapon" tags="" scale="0.5" noninteractable="true" hiddeningame="true">
+		<sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" origin="0.5,0.5"/>
+
+		<LightComponent
+			range="1" 
+			color="0,0,0,0" 
+			IsOn="True">
+
+			<StatusEffect type="Always" interval="1" target="This">
+				<Conditional IsOn="eq True"/>
+
+				<Explosion showeffects="false" range="500">
+					<Affliction identifier="anesthesia" strength="5" />
+				</Explosion>
+			</StatusEffect>
+
+			<StatusEffect type="Always" target="This" interval="0.1" comparison="And">
+				<Conditional IsOn="eq True"/>
+
+				<ParticleEmitter particle="chemmist" AngleMax="360" DistanceMax="50" VelocityMin="100" VelocityMax="150" ScaleMultiplier="2,2" ParticleAmount="2" ColorMultiplier="191,63,173,100" LifeTimeMultiplier="1.5"/>
+			</StatusEffect>
+
+		</LightComponent>
+
+		<WifiComponent range="500"/>
+
+		<ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+			<GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+			<RequiredItem items="screwdriver" type="Equipped" />
+			<input name="toggle" displayname="connection.togglestate" />
+			<input name="set_state" displayname="connection.setstate" />
+		</ConnectionPanel>
+		
+	</Item>
+</Items>

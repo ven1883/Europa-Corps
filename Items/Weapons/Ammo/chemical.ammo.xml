@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+
+	<!--! this is SUPER FUCKED-->
+
+
+	<!--40mm Tear Gas-->
+	<Item name="" identifier="feniterglround1" category="Weapon" maxstacksize="1" interactthroughwalls="true" health="4" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="0,128,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="0,202,49,19" depth="0.55" origin="0.5,0.5" />
+		<Body width="38" height="15" density="30" />
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		<Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
+			<Attack structuredamage="15" targetforce="60" itemdamage="5" severlimbsprobability="0">
+				<Affliction identifier="blunttrauma" strength="15" />
+				<Affliction identifier="stun" strength="1" />
+				<Affliction identifier="concussion" strength="100" />
+			</Attack>
+			<StatusEffect type="OnUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+			<StatusEffect type="NotInWater" target="This" disabledeltatime="false" comparison="and" interval="0.5">
+				<Conditional hastag="eq armed" />
+				<Conditional condition="gt 0" />
+				<Explosion range="550.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" force="0" severlimbsprobability="0" showeffects="false">
+					<Affliction identifier="teargas" strength="0.425" />
+				</Explosion>
+			</StatusEffect>
+			<StatusEffect type="NotInWater" target="This" disabledeltatime="false" condition="-0.165" comparison="and">
+				<Conditional hastag="eq armed" />
+				<Conditional condition="gt 0" />
+				<ParticleEmitter particle="fensmoke" anglemax="360" velocitymin="10" velocitymax="40" particlespersecond="1" />
+				<ParticleEmitter particle="fensmokevent" anglemin="70" anglemax="100" velocitymax="200" particlespersecond="20" />
+			</StatusEffect>
+		</Projectile>
+	</Item>
+
+	<!--40mm Blistering Agent-->
+	<Item name="" identifier="feniterglround2" category="Weapon" maxstacksize="8" interactthroughwalls="true" health="4" cargocontaineridentifier="metalcrate" tags="grenade" Scale="0.5" impactsoundtag="impact_metal_light">
+		<PreferredContainer primary="grenadelauncher" amount="1" spawnprobability="0.01" />
+		<PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.01" />
+		<Price baseprice="640" sold="false">
+			<Price storeidentifier="merchantoutpost" multiplier="1.5" />
+			<Price storeidentifier="merchantcity" multiplier="1.25" />
+			<Price storeidentifier="merchantresearch" multiplier="1.25" />
+			<Price storeidentifier="merchantmilitary" multiplier="0.9" />
+			<Price storeidentifier="merchantmine" multiplier="1.25" />
+			<Price storeidentifier="merchantarmory" multiplier="0.9" />
+		</Price>
+		<Deconstruct time="10">
+			<Item identifier="iron" amount="2" />
+			<Item identifier="lead" mincondition="0.95" />
+			<Item identifier="phosphorus" mincondition="0.95" />
+			<Item identifier="sufforin" mincondition="0.95" />
+			<Item identifier="carbon" mincondition="0.95" />
+		</Deconstruct>
+		<Fabricate suitablefabricators="fabricator" requiredtime="50">
+			<RequiredSkill identifier="weapons" level="90" />
+			<RequiredItem identifier="iron" amount="2" />
+			<RequiredItem identifier="lead" amount="2" />
+			<RequiredItem identifier="sulphuricacid" amount="4" />
+			<RequiredItem identifier="sufforin" amount="2" />
+			<RequiredItem identifier="carbon" amount="2" />
+		</Fabricate>
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="64,128,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="0,221,49,19" depth="0.55" origin="0.5,0.5" />
+		<Body width="38" height="15" density="30" />
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		<Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
+			<Attack structuredamage="15" targetforce="60" itemdamage="5" severlimbsprobability="0">
+				<Affliction identifier="blunttrauma" strength="195" />
+				<Affliction identifier="stun" strength="12" />
+				<Affliction identifier="concussion" strength="100" />
+				<Affliction identifier="paralysis" strength="100" probability="0.1" />
+			</Attack>
+			<StatusEffect type="OnUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+			<StatusEffect type="Always" target="This" disabledeltatime="false" comparison="And" interval="0.5">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+				<Explosion range="650.0" ballastfloradamage="420" structuredamage="0" itemdamage="0" force="0" severlimbsprobability="0" showeffects="false">
+					<Affliction identifier="feniterblisteragentcon" strength="1.65" />
+					<Affliction identifier="feniterblisteragentinternal" strength="4.45" />
+				</Explosion>
+			</StatusEffect>
+			<StatusEffect type="Always" target="This" disabledeltatime="false" condition="-0.135" comparison="And">
+				<Conditional condition="gt 0" />
+				<Conditional hastag="eq armed" />
+				<ParticleEmitter particle="fensmoke" anglemax="360" velocitymin="10" velocitymax="40" particlespersecond="1" colormultiplier="176,153,0,255" />
+				<ParticleEmitter particle="fensmokevent" anglemin="70" anglemax="100" velocitymin="180" velocitymax="200" particlespersecond="20" colormultiplier="176,153,0,255" />
+			</StatusEffect>
+			<StatusEffect type="OnBroken">
+				<SpawnItem identifiers="feniterblisteringgas" spawnposition="This" />
+			</StatusEffect>
+		</Projectile>
+	</Item>
+
+	<!--40mm Sedative Gas-->
+	<Item name="" identifier="feniterglround3" category="Weapon" maxstacksize="1" interactthroughwalls="true" health="4" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.5" impactsoundtag="impact_metal_light">
+		<PreferredContainer primary="grenadelauncher" amount="1" spawnprobability="0.01" />
+		<PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.01" />
+		<Price baseprice="590" sold="false">
+			<Price storeidentifier="merchantoutpost" multiplier="1.5" />
+			<Price storeidentifier="merchantcity" multiplier="1.25" />
+			<Price storeidentifier="merchantresearch" multiplier="1.25" />
+			<Price storeidentifier="merchantmilitary" multiplier="0.9" />
+			<Price storeidentifier="merchantmine" multiplier="1.25" />
+			<Price storeidentifier="merchantarmory" multiplier="0.9" />
+		</Price>
+		<Deconstruct time="5">
+			<Item identifier="iron" amount="2" />
+			<Item identifier="lead" amount="2" />
+			<Item identifier="antidama2" mincondition="0.95" />
+			<Item identifier="chloralhydrate" mincondition="0.95" />
+		</Deconstruct>
+		<Fabricate suitablefabricators="fabricator" requiredtime="50">
+			<RequiredSkill identifier="weapons" level="40" />
+			<RequiredItem identifier="iron" amount="2" />
+			<RequiredItem identifier="lead" amount="2" />
+			<RequiredItem identifier="antidama2" amount="3" />
+			<RequiredItem identifier="chloralhydrate" amount="3" />
+		</Fabricate>
+		<InventoryIcon texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="0,128,64,64" origin="0.5,0.5" />
+		<Sprite texture="%ModDir%/thecodelol/Items/chemicalwarfareammo.png" sourcerect="0,202,49,19" depth="0.55" origin="0.5,0.5" />
+		<Body width="38" height="15" density="30" />
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+		<Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="false">
+			<Attack structuredamage="15" targetforce="60" itemdamage="5" severlimbsprobability="0">
+				<Affliction identifier="blunttrauma" strength="195" />
+				<Affliction identifier="stun" strength="12" />
+				<Affliction identifier="concussion" strength="100" />
+				<Affliction identifier="paralysis" strength="100" probability="0.1" />
+			</Attack>
+			<StatusEffect type="OnUse" target="This" delay="2" disabledeltatime="false" tags="armed" />
+			<StatusEffect type="NotInWater" target="This" disabledeltatime="false" comparison="and" interval="0.5">
+				<Conditional hastag="eq armed" />
+				<Conditional condition="gt 0" />
+				<Explosion range="550.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" force="0" severlimbsprobability="0" showeffects="false">
+					<Affliction identifier="fenitersleepingagent" strength="0.425" />
+				</Explosion>
+			</StatusEffect>
+			<StatusEffect type="NotInWater" target="This" disabledeltatime="false" condition="-0.165" comparison="and">
+				<Conditional hastag="eq armed" />
+				<Conditional condition="gt 0" />
+			</StatusEffect>
+		</Projectile>
+	</Item>
+
+</Items>

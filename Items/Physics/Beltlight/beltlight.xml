@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<huskappendage>
+  <limb id="15" name="Chemlight Decorative" ignorecollisions="True" type="None" inheritlimbdepth="None" width="0" height="0" notes="" flip="True" healthindex="1" attackpriority="0" steerforce="-200" stepoffset="0,0" radius="20" mass="2" density="5" pullpos="0,0" refjoint="-1" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="5" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1.1" attackforcemultiplier="1" minseverancedamage="0.8" severedfadeouttime="0" applytailangle="False" applysinemovement="True">
+    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="278,157,50,9" depth="0.1" origin="0.5,0.5" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="255,255,255" ignoretint="true" />
+    <lightsource color="255,184,0,255" range="0" castshadows="false" scale="1" offset="0,0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <sprite texture="Content/Items/Tools/tools.png" sourcerect="374,140,62,20" alpha="1.0" origin="0.5,0.5" depth="0.1" />
+    </lightsource>
+    <damagemodifier armorsector="0,360" afflictiontypes="damage,bleeding,burn,poison,chemicalexposure,airborneinfection,chemicalagent,chemicalcontamination" damagemultiplier="0.0" />
+  </limb>
+  <limb id="16" name="Chemlight Actual Source" ignorecollisions="True" type="None" inheritlimbdepth="Head" width="0" height="0" notes="" flip="True" healthindex="1" attackpriority="0" steerforce="-200" stepoffset="0,0" radius="1" mass="0.1" density="5" pullpos="0,0" refjoint="-1" friction="0.3" restitution="0.05" spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="5" mouthpos="0,0" constanttorque="0" constantangle="0" scale="1.1" attackforcemultiplier="1" minseverancedamage="0.8" severedfadeouttime="0" applytailangle="False" applysinemovement="True">
+    <Sprite texture="Content/Items/Tools/tools.png" sourcerect="278,157,50,9" depth="0.55" origin="0.5,0.5" color="255,255,255,0" deadcolor="255,255,255,255" deadcolortime="255,255,255" ignoretint="true" />
+    <lightsource color="200,170,90,50" range="500" castshadows="false" scale="1" offset="0,0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+    </lightsource>
+    <damagemodifier armorsector="0,360" afflictiontypes="damage,bleeding,burn,poison,chemicalexposure,airborneinfection,chemicalagent,chemicalcontamination" damagemultiplier="0.0" />
+  </limb>
+  <!-- Head to husk appendage -->
+  <joint name="Head to Base" limb1="0" limb2="15" limb1anchor="-15.0,-55.8" limb2anchor="-25,0" upperlimit="-80" weldjoint="false" lowerlimit="-120" canbesevered="False" limitenabled="True" stiffness="0.01" />
+  <joint name="Head to Base2" limb1="15" limb2="16" limb1anchor="15,0" limb2anchor="0,0" weldjoint="false" canbesevered="False" limitenabled="False" stiffness="0.01" />
+</huskappendage>
